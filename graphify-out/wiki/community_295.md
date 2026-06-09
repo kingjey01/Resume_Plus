@@ -1,15 +1,15 @@
-# Community 295: utils
+# Community 295: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_h`, File, degree: 2)
-- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
-- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
+- **urls** (`backend_users_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_users_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_users_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
-- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
+- backend_users_urls_py → backend_users_urls_py_import_django_urls_path (imports)
+- backend_users_urls_py → backend_users_urls_py_import_views (imports)
 

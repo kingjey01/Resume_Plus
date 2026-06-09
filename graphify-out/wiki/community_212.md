@@ -1,19 +1,19 @@
-# Community 212: filiere_promotion.g
+# Community 212: check_accessible_courses
 
 **Members:** 5
 
 ## Nodes
 
-- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
-- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
-- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
-- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
-- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
+- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
+- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
+- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
 

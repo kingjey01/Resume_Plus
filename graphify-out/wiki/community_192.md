@@ -1,21 +1,21 @@
-# Community 192: 0003_service_abonnement
+# Community 192: check_database_tables()
 
 **Members:** 6
 
 ## Nodes
 
-- **0003_service_abonnement** (`backend_courses_migrations_0003_service_abonnement_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0003_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0003_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0003_service_abonnement_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0003_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0003_service_abonnement_py_migration`, Class, degree: 1)
+- **check_database_tables()** (`backend_check_db_services_py_check_database_tables`, Function, degree: 2)
+- **check_django_settings()** (`backend_check_db_services_py_check_django_settings`, Function, degree: 2)
+- **check_tokens()** (`backend_check_db_services_py_check_tokens`, Function, degree: 2)
+- **check_users()** (`backend_check_db_services_py_check_users`, Function, degree: 2)
+- **main()** (`backend_check_db_services_py_main`, Function, degree: 6)
+- **test_token_authentication()** (`backend_check_db_services_py_test_token_authentication`, Function, degree: 2)
 
 ## Relationships
 
-- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_db_models (imports)
-- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_migration (defines)
+- backend_check_db_services_py_main → backend_check_db_services_py_test_token_authentication (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_database_tables (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_django_settings (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_tokens (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_users (calls)
 

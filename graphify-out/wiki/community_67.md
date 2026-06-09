@@ -1,31 +1,29 @@
-# Community 67: login_screen
+# Community 67: test_notification_logic
 
-**Members:** 11
+**Members:** 10
 
 ## Nodes
 
-- **login_screen** (`lib_features_auth_screens_login_screen_dart`, File, degree: 10)
-- **package:dio/dio.dart** (`lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/forgot_password_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/register_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_LoginScreenState()** (`lib_features_auth_screens_login_screen_dart_loginscreenstate`, Function, degree: 1)
+- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
+- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
+- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
+- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
+- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_loginscreenstate (defines)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
 

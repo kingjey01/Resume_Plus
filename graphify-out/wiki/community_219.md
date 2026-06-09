@@ -1,19 +1,19 @@
-# Community 219: check_database_users()
+# Community 219: MainFlutterWindow
 
 **Members:** 5
 
 ## Nodes
 
-- **check_database_users()** (`backend_quick_server_test_py_check_database_users`, Function, degree: 2)
-- **generate_curl_commands()** (`backend_quick_server_test_py_generate_curl_commands`, Function, degree: 2)
-- **main()** (`backend_quick_server_test_py_main`, Function, degree: 6)
-- **test_server_basic()** (`backend_quick_server_test_py_test_server_basic`, Function, degree: 2)
-- **test_tokens_quickly()** (`backend_quick_server_test_py_test_tokens_quickly`, Function, degree: 2)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
+- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
+- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py_main → backend_quick_server_test_py_check_database_users (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_tokens_quickly (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_generate_curl_commands (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_server_basic (calls)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
 

@@ -1,15 +1,15 @@
-# Community 313: urls
+# Community 313: privacy_policy_screen
 
 **Members:** 3
 
 ## Nodes
 
-- **urls** (`backend_security_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
+- **privacy_policy_screen** (`lib_features_settings_screens_privacy_policy_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
-- backend_security_urls_py → backend_security_urls_py_import_views (imports)
+- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

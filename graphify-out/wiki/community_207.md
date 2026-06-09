@@ -1,19 +1,19 @@
-# Community 207: fix_settings_mysql
+# Community 207: summary_card
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
-- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
-- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
-- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
-- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
+- **summary_card** (`lib_features_home_widgets_summary_card_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

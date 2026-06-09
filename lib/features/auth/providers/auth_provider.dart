@@ -141,12 +141,19 @@ class AuthNotifier extends StateNotifier<AsyncValue<User?>> {
           debugPrint('⚠️ [Auth] FCM token deletion error: $e');
         }
       }
+      
+      // Réinitialiser la session ApiService en mémoire (jetons et caches)
+      _apiService.clearSession();
+      
       // Appeler la méthode de déconnexion du repository
       await _authRepository.logout();
       
       // Mettre à jour l'état avec un utilisateur null (non connecté)
       state = const AsyncValue.data(null);
     } catch (e, stackTrace) {
+      // S'assurer de réinitialiser la session même en cas d'erreur
+      _apiService.clearSession();
+      
       // En cas d'erreur, forcer la déconnexion locale de toute façon
       await _authRepository.logout();
       state = const AsyncValue.data(null);

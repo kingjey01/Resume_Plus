@@ -1,15 +1,17 @@
-# Community 288: terms_of_service_screen
+# Community 288: apps
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **terms_of_service_screen** (`lib_features_settings_screens_terms_of_service_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **apps** (`backend_payments_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
+- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
+- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
+- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
 

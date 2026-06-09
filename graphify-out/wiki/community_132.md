@@ -1,25 +1,25 @@
-# Community 132: check_db_encoding
+# Community 132: filiere_summaries_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
-- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
-- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
-- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
-- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
+- **filiere_summaries_screen** (`lib_features_filiere_screens_filiere_summaries_screen_dart`, File, degree: 7)
+- **_FiliereSummariesScreenState()** (`lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate (defines)
 

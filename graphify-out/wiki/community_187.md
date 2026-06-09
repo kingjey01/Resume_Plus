@@ -1,21 +1,21 @@
-# Community 187: auth_repository
+# Community 187: onboarding_screen
 
 **Members:** 6
 
 ## Nodes
 
-- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
-- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **onboarding_screen** (`lib_features_onboarding_onboarding_screen_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_OnboardingScreenState()** (`lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate (defines)
 

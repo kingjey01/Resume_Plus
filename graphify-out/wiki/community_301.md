@@ -1,15 +1,15 @@
-# Community 301: apps
+# Community 301: wsgi
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_courses_apps_py`, File, degree: 2)
-- **CoursesConfig** (`backend_courses_apps_py_coursesconfig`, Class, degree: 1)
-- **django.apps.AppConfig** (`backend_courses_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
+- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
+- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_apps_py → backend_courses_apps_py_import_django_apps_appconfig (imports)
-- backend_courses_apps_py → backend_courses_apps_py_coursesconfig (defines)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
 

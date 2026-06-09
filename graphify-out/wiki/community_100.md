@@ -1,27 +1,27 @@
-# Community 100: notification_service
+# Community 100: record_audio_screen_web_safe
 
 **Members:** 9
 
 ## Nodes
 
-- **notification_service** (`lib_services_notification_service_dart`, File, degree: 8)
-- **dart:async** (`lib_services_notification_service_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_notification_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/utils/logger.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_notification_service_dart_instance`, Function, degree: 1)
-- **_poll()** (`lib_services_notification_service_dart_poll`, Function, degree: 1)
-- **_unreadCount()** (`lib_services_notification_service_dart_unreadcount`, Function, degree: 1)
-- **_updateCount()** (`lib_services_notification_service_dart_updatecount`, Function, degree: 1)
+- **record_audio_screen_web_safe** (`lib_features_upload_screens_record_audio_screen_web_safe_dart`, File, degree: 8)
+- **package:flutter/foundation.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/course_selection_screen.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_RecordAudioScreenWebSafeState()** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_dart_async (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_instance (defines)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_unreadcount (defines)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_poll (defines)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_updatecount (defines)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate (defines)
 

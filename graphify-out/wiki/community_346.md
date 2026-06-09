@@ -1,8 +1,8 @@
-# Community 346: __init__
+# Community 346: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
 

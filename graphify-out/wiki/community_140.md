@@ -1,25 +1,25 @@
-# Community 140: exercise_quiz_screen
+# Community 140: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **exercise_quiz_screen** (`lib_features_exercises_screens_exercise_quiz_screen_dart`, File, degree: 7)
-- **_ExerciseQuizScreenState()** (`lib_features_exercises_screens_exercise_quiz_screen_dart_exercisequizscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/secure_screen_wrapper.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart`, Module, degree: 1)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
-- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
-- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports)
-- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_exercisequizscreenstate (defines)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

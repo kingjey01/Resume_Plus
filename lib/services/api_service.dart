@@ -50,6 +50,18 @@ class ApiService {
     ));
   }
 
+  /// Réinitialise complètement la session en mémoire (utilisé lors du logout)
+  void clearSession() {
+    _currentAccessToken = null;
+    _currentRefreshToken = null;
+    _refreshCompleter = null;
+    _cachedUniversites = null;
+    _cachedFilieresByUniversite.clear();
+    _cachedPromotionsByFiliere.clear();
+    _cacheTimestamp = null;
+    print('🧹 [API] Session en mémoire réinitialisée avec succès');
+  }
+
   Future<void> _onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
     final publicEndpoints = [
       '/auth/login/',

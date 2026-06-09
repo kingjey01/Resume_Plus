@@ -1,8 +1,8 @@
-# Community 347: exercise
+# Community 347: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_h`, File, degree: 0)
 

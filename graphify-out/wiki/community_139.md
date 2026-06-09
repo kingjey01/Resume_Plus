@@ -1,25 +1,30 @@
-# Community 139: settings_production_fixed
+# Community 139: generate_report()
 
 **Members:** 8
 
 ## Nodes
 
-- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
-- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
-- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
-- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
+- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
+- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
+- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
+- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
+- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
+- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
+- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
+- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
 
 ## Relationships
 
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
+- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
 

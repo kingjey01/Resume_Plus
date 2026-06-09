@@ -1,25 +1,25 @@
-# Community 142: exercise_generator
+# Community 142: check_services
 
 **Members:** 8
 
 ## Nodes
 
-- **exercise_generator** (`backend_courses_exercise_generator_py`, File, degree: 8)
-- **generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_generate_exercises_for_summary`, Function, degree: 1)
-- **.deepseek_service.deepseek_service** (`backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service`, Module, degree: 1)
-- **json** (`backend_courses_exercise_generator_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_exercise_generator_py_import_logging`, Module, degree: 1)
-- **.models.Exercise** (`backend_courses_exercise_generator_py_import_models_exercise`, Module, degree: 1)
-- **.models.ExerciseQuestion** (`backend_courses_exercise_generator_py_import_models_exercisequestion`, Module, degree: 1)
-- **.models.Summary** (`backend_courses_exercise_generator_py_import_models_summary`, Module, degree: 1)
+- **check_services** (`backend_check_services_py`, File, degree: 7)
+- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
+- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
+- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_json (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercise (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercisequestion (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_summary (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_logging (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_generate_exercises_for_summary (defines)
+- backend_check_services_py → backend_check_services_py_import_os (imports)
+- backend_check_services_py → backend_check_services_py_import_sys (imports)
+- backend_check_services_py → backend_check_services_py_import_django (imports)
+- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
+- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
+- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
+- backend_check_services_py → backend_check_services_py_check_services (defines)
 

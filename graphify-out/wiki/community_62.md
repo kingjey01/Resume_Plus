@@ -1,31 +1,31 @@
-# Community 62: fcm_service
+# Community 62: generated_plugin_registrant
 
 **Members:** 11
 
 ## Nodes
 
-- **fcm_service** (`lib_services_fcm_service_dart`, File, degree: 10)
-- **_currentToken()** (`lib_services_fcm_service_dart_currenttoken`, Function, degree: 1)
-- **_firebaseBackgroundHandler()** (`lib_services_fcm_service_dart_firebasebackgroundhandler`, Function, degree: 1)
-- **dart:io** (`lib_services_fcm_service_dart_import_dart_io`, Module, degree: 1)
-- **package:firebase_messaging/firebase_messaging.dart** (`lib_services_fcm_service_dart_import_package_firebase_messaging_firebase_messaging_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_fcm_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_local_notifications/flutter_local_notifications.dart** (`lib_services_fcm_service_dart_import_package_flutter_local_notifications_flutter_local_notifications_dart`, Module, degree: 1)
-- **package:flutter/material.dart'** (`lib_services_fcm_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_fcm_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/notification_service.dart** (`lib_services_fcm_service_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_fcm_service_dart_instance`, Function, degree: 1)
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_cc`, File, degree: 10)
+- **audioplayers_windows/audioplayers_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h`, Module, degree: 1)
+- **file_selector_windows/file_selector_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h`, Module, degree: 1)
+- **firebase_core/firebase_core_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h`, Module, degree: 1)
+- **flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h`, Module, degree: 1)
+- **flutter_tts/flutter_tts_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h`, Module, degree: 1)
+- **generated_plugin_registrant.h** (`windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
+- **permission_handler_windows/permission_handler_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h`, Module, degree: 1)
+- **record_windows/record_windows_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h`, Module, degree: 1)
+- **url_launcher_windows/url_launcher_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h`, Module, degree: 1)
+- **RegisterPlugins()** (`windows_flutter_generated_plugin_registrant_cc_registerplugins`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_dart_io (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_firebase_messaging_firebase_messaging_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_local_notifications_flutter_local_notifications_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_firebasebackgroundhandler (defines)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_instance (defines)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_currenttoken (defines)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_registerplugins (defines)
 

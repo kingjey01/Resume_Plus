@@ -1,33 +1,33 @@
-# Community 51: create_test_data_postgresql
+# Community 51: clear_data()
 
 **Members:** 12
 
 ## Nodes
 
-- **create_test_data_postgresql** (`backend_create_test_data_postgresql_py`, File, degree: 11)
-- **create_test_data()** (`backend_create_test_data_postgresql_py_create_test_data`, Function, degree: 1)
-- **courses.models.Course** (`backend_create_test_data_postgresql_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_create_test_data_postgresql_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_create_test_data_postgresql_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_create_test_data_postgresql_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_create_test_data_postgresql_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_create_test_data_postgresql_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.transaction** (`backend_create_test_data_postgresql_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_create_test_data_postgresql_py_import_os`, Module, degree: 1)
-- **sys** (`backend_create_test_data_postgresql_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_create_test_data_postgresql_py_import_users_models_userprofile`, Module, degree: 1)
+- **clear_data()** (`backend_seed_data_py_clear_data`, Function, degree: 2)
+- **create_courses()** (`backend_seed_data_py_create_courses`, Function, degree: 2)
+- **create_filieres()** (`backend_seed_data_py_create_filieres`, Function, degree: 2)
+- **create_promotions()** (`backend_seed_data_py_create_promotions`, Function, degree: 2)
+- **create_services()** (`backend_seed_data_py_create_services`, Function, degree: 2)
+- **create_sessions()** (`backend_seed_data_py_create_sessions`, Function, degree: 2)
+- **create_summaries()** (`backend_seed_data_py_create_summaries`, Function, degree: 2)
+- **create_universites()** (`backend_seed_data_py_create_universites`, Function, degree: 2)
+- **create_users()** (`backend_seed_data_py_create_users`, Function, degree: 2)
+- **link_filieres_promotions()** (`backend_seed_data_py_link_filieres_promotions`, Function, degree: 2)
+- **link_universites_filieres()** (`backend_seed_data_py_link_universites_filieres`, Function, degree: 2)
+- **run_seed()** (`backend_seed_data_py_run_seed`, Function, degree: 12)
 
 ## Relationships
 
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_os (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_sys (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_django (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_universite (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_filiere (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_promotion (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_course (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_django_contrib_auth_models_user (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_users_models_userprofile (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_django_db_transaction (imports)
-- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_create_test_data (defines)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_summaries (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_clear_data (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_filieres (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_link_universites_filieres (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_courses (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_sessions (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_universites (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_link_filieres_promotions (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_services (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_users (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_promotions (calls)
 

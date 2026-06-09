@@ -1,17 +1,17 @@
-# Community 280: 0012_add_summary_title_price_to_session
+# Community 280: theme_provider
 
 **Members:** 4
 
 ## Nodes
 
-- **0012_add_summary_title_price_to_session** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration`, Class, degree: 1)
+- **theme_provider** (`lib_features_settings_providers_theme_provider_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration (defines)
+- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
 

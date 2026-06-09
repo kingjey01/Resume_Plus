@@ -1,29 +1,31 @@
-# Community 90: create_test_services
+# Community 90: debug_wsgi_user
 
-**Members:** 10
+**Members:** 9
 
 ## Nodes
 
-- **create_test_services** (`backend_create_test_services_py`, File, degree: 9)
-- **create_test_services()** (`backend_create_test_services_py_create_test_services`, Function, degree: 1)
-- **datetime.timedelta** (`backend_create_test_services_py_import_datetime_timedelta`, Module, degree: 1)
-- **django** (`backend_create_test_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_create_test_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.utils.timezone** (`backend_create_test_services_py_import_django_utils_timezone`, Module, degree: 1)
-- **os** (`backend_create_test_services_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_create_test_services_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_create_test_services_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_create_test_services_py_import_sys`, Module, degree: 1)
+- **debug_wsgi_user** (`backend_debug_wsgi_user_py`, File, degree: 8)
+- **check_python_path()** (`backend_debug_wsgi_user_py_check_python_path`, Function, degree: 2)
+- **django** (`backend_debug_wsgi_user_py_import_django`, Module, degree: 1)
+- **os** (`backend_debug_wsgi_user_py_import_os`, Module, degree: 1)
+- **sys** (`backend_debug_wsgi_user_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_debug_wsgi_user_py_main`, Function, degree: 5)
+- **test_audio_processing_import()** (`backend_debug_wsgi_user_py_test_audio_processing_import`, Function, degree: 2)
+- **test_imports()** (`backend_debug_wsgi_user_py_test_imports`, Function, degree: 2)
+- **test_view_import()** (`backend_debug_wsgi_user_py_test_view_import`, Function, degree: 2)
 
 ## Relationships
 
-- backend_create_test_services_py → backend_create_test_services_py_import_os (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_sys (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_django (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_payments_models_service (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_payments_models_abonnement (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_django_contrib_auth_models_user (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_django_utils_timezone (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_datetime_timedelta (imports)
-- backend_create_test_services_py → backend_create_test_services_py_create_test_services (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_os (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_sys (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_django (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_imports (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_audio_processing_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_view_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_check_python_path (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_main (defines)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_view_import (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_imports (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_check_python_path (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_audio_processing_import (calls)
 

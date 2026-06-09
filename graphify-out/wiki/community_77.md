@@ -1,29 +1,29 @@
-# Community 77: notifications_screen
+# Community 77: signals
 
 **Members:** 10
 
 ## Nodes
 
-- **notifications_screen** (`lib_features_notifications_screens_notifications_screen_dart`, File, degree: 9)
-- **dart:async** (`lib_features_notifications_screens_notifications_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/notifications/providers/notification_provider.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/notifications/screens/notification_detail_screen.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_NotificationsScreenState()** (`lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate`, Function, degree: 1)
+- **signals** (`backend_payments_signals_py`, File, degree: 9)
+- **datetime.timedelta** (`backend_payments_signals_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.db.models.signals.post_save** (`backend_payments_signals_py_import_django_db_models_signals_post_save`, Module, degree: 1)
+- **django.dispatch.receiver** (`backend_payments_signals_py_import_django_dispatch_receiver`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_signals_py_import_django_utils_timezone`, Module, degree: 1)
+- **logging** (`backend_payments_signals_py_import_logging`, Module, degree: 1)
+- **.models.Abonnement** (`backend_payments_signals_py_import_models_abonnement`, Module, degree: 1)
+- **.models.Purchase** (`backend_payments_signals_py_import_models_purchase`, Module, degree: 1)
+- **on_abonnement_created_or_updated()** (`backend_payments_signals_py_on_abonnement_created_or_updated`, Function, degree: 1)
+- **on_purchase_completed()** (`backend_payments_signals_py_on_purchase_completed`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_dart_async (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate (defines)
+- backend_payments_signals_py → backend_payments_signals_py_import_logging (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_django_db_models_signals_post_save (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_django_dispatch_receiver (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_django_utils_timezone (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_datetime_timedelta (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_models_abonnement (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_models_purchase (imports)
+- backend_payments_signals_py → backend_payments_signals_py_on_abonnement_created_or_updated (defines)
+- backend_payments_signals_py → backend_payments_signals_py_on_purchase_completed (defines)
 

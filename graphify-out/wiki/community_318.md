@@ -1,13 +1,13 @@
-# Community 318: simple_seed
+# Community 318: logger
 
 **Members:** 2
 
 ## Nodes
 
-- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
-- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+- **logger** (`lib_utils_logger_dart`, File, degree: 1)
+- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
+- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
 

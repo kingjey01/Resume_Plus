@@ -1,19 +1,19 @@
-# Community 213: edit_summary_screen
+# Community 213: diagnostic_complet
 
 **Members:** 5
 
 ## Nodes
 
-- **edit_summary_screen** (`lib_features_validation_screens_edit_summary_screen_dart`, File, degree: 4)
-- **_EditSummaryScreenState()** (`lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **diagnostic_complet** (`backend_diagnostic_complet_py`, File, degree: 12)
+- **datetime** (`backend_diagnostic_complet_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_diagnostic_complet_py_import_json`, Module, degree: 1)
+- **jwt** (`backend_diagnostic_complet_py_import_jwt`, Module, degree: 1)
+- **requests** (`backend_diagnostic_complet_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate (defines)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_requests (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_json (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_jwt (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_datetime (imports)
 

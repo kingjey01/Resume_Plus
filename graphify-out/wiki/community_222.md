@@ -1,19 +1,19 @@
-# Community 222: MainFlutterWindow
+# Community 222: debug_access
 
 **Members:** 5
 
 ## Nodes
 
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
-- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
-- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
+- **debug_access** (`backend_debug_access_py`, File, degree: 4)
+- **courses.models.Course** (`backend_debug_access_py_import_courses_models_course`, Module, degree: 1)
+- **django** (`backend_debug_access_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_access_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_access_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
+- backend_debug_access_py → backend_debug_access_py_import_os (imports)
+- backend_debug_access_py → backend_debug_access_py_import_django (imports)
+- backend_debug_access_py → backend_debug_access_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_access_py → backend_debug_access_py_import_courses_models_course (imports)
 

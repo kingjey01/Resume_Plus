@@ -1,23 +1,23 @@
-# Community 170: linked_dropdowns
+# Community 170: filiere_promotion
 
 **Members:** 7
 
 ## Nodes
 
-- **linked_dropdowns** (`lib_widgets_linked_dropdowns_dart`, File, degree: 6)
-- **package:flutter/material.dart** (`lib_widgets_linked_dropdowns_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/filiere.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_filiere_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/promotion.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_promotion_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/universite.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_universite_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **_LinkedDropdownsState()** (`lib_widgets_linked_dropdowns_dart_linkeddropdownsstate`, Function, degree: 1)
+- **filiere_promotion** (`lib_models_filiere_promotion_dart`, File, degree: 6)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere.dart** (`lib_models_filiere_promotion_dart_import_filiere_dart`, Module, degree: 1)
+- **filiere_promotion.g.dart** (`lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart`, Module, degree: 1)
+- **package:json_annotation/json_annotation.dart** (`lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
+- **promotion.dart** (`lib_models_filiere_promotion_dart_import_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_universite_dart (imports)
-- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_filiere_dart (imports)
-- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_promotion_dart (imports)
-- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_linkeddropdownsstate (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_promotion_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotiontojson (defines)
 

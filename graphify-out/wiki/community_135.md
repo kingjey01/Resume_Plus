@@ -1,25 +1,28 @@
-# Community 135: generated_plugin_registrant
+# Community 135: AuthAPITest
 
 **Members:** 8
 
 ## Nodes
 
-- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_cc`, File, degree: 7)
-- **fl_register_plugins()** (`linux_flutter_generated_plugin_registrant_cc_fl_register_plugins`, Function, degree: 1)
-- **audioplayers_linux/audioplayers_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h`, Module, degree: 1)
-- **file_selector_linux/file_selector_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h`, Module, degree: 1)
-- **flutter_secure_storage_linux/flutter_secure_storage_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h`, Module, degree: 1)
-- **generated_plugin_registrant.h** (`linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
-- **record_linux/record_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h`, Module, degree: 1)
-- **url_launcher_linux/url_launcher_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h`, Module, degree: 1)
+- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
+- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
+- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
+- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
+- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
+- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
+- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
+- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
 
 ## Relationships
 
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_fl_register_plugins (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
+- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
 

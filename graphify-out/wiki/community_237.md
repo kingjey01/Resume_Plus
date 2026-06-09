@@ -1,19 +1,19 @@
-# Community 237: ExerciseAdmin
+# Community 237: fix_user_promotion
 
 **Members:** 5
 
 ## Nodes
 
-- **ExerciseAdmin** (`backend_courses_admin_py_exerciseadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_exerciseadmin_get_queryset`, Method, degree: 2)
-- **ProfesseurAdmin** (`backend_courses_admin_py_professeuradmin`, Class, degree: 3)
-- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
-- **.list_filieres()** (`backend_courses_admin_py_professeuradmin_list_filieres`, Method, degree: 1)
+- **fix_user_promotion** (`backend_fix_user_promotion_py`, File, degree: 4)
+- **courses.models.Promotion** (`backend_fix_user_promotion_py_import_courses_models_promotion`, Module, degree: 1)
+- **django** (`backend_fix_user_promotion_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_user_promotion_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_user_promotion_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_admin_py_exerciseadmin → backend_courses_admin_py_exerciseadmin_get_queryset (defines)
-- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_list_filieres (defines)
-- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_get_queryset (defines)
-- backend_courses_admin_py_exerciseadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_os (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_courses_models_promotion (imports)
 

@@ -1,8 +1,8 @@
-# Community 342: exercise
+# Community 342: filiere
 
 **Members:** 1
 
 ## Nodes
 
-- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
+- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
 

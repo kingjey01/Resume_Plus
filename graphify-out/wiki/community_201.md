@@ -1,21 +1,21 @@
-# Community 201: 0001_initial
+# Community 201: SubscriptionNotificationTest
 
 **Members:** 6
 
 ## Nodes
 
-- **0001_initial** (`backend_notifications_migrations_0001_initial_py`, File, degree: 5)
-- **django.conf.settings** (`backend_notifications_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_notifications_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_notifications_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_notifications_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_notifications_migrations_0001_initial_py_migration`, Class, degree: 1)
+- **SubscriptionNotificationTest** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest`, Class, degree: 6)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_subscriptions_notifications()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications`, Method, degree: 1)
+- **.test_subscription_expired_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification`, Method, degree: 1)
+- **.test_subscription_expiring_soon_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification`, Method, degree: 1)
+- **.test_subscription_paid_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_notifications_migrations_0001_initial_py → backend_notifications_migrations_0001_initial_py_import_django_conf_settings (imports)
-- backend_notifications_migrations_0001_initial_py → backend_notifications_migrations_0001_initial_py_import_django_db_migrations (imports)
-- backend_notifications_migrations_0001_initial_py → backend_notifications_migrations_0001_initial_py_import_django_db_models (imports)
-- backend_notifications_migrations_0001_initial_py → backend_notifications_migrations_0001_initial_py_import_django_db_models_deletion (imports)
-- backend_notifications_migrations_0001_initial_py → backend_notifications_migrations_0001_initial_py_migration (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications (defines)
 

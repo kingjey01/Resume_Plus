@@ -1,21 +1,21 @@
-# Community 181: settings_corrected
+# Community 181: AppDelegate
 
 **Members:** 6
 
 ## Nodes
 
-- **settings_corrected** (`backend_settings_corrected_py`, File, degree: 5)
-- **datetime.timedelta** (`backend_settings_corrected_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_corrected_py_import_decouple_config`, Module, degree: 1)
-- **os** (`backend_settings_corrected_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_corrected_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_corrected_py_import_pymysql`, Module, degree: 1)
+- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
+- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
+- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
+- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
+- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pathlib_path (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_datetime_timedelta (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_decouple_config (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_os (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pymysql (imports)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
 

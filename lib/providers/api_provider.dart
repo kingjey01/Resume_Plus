@@ -8,13 +8,13 @@ final apiServiceProvider = Provider<ApiService>((ref) {
 });
 
 /// 🔥 Provider pour vérifier l'état de connexion
-final authStateProvider = FutureProvider<bool>((ref) async {
+final authStateProvider = FutureProvider.autoDispose<bool>((ref) async {
   final apiService = ref.read(apiServiceProvider);
   return await apiService.isLoggedIn();
 });
 
 /// 🔥 Provider pour les données utilisateur
-final userProfileProvider = FutureProvider<Map<String, dynamic>?>((ref) async {
+final userProfileProvider = FutureProvider.autoDispose<Map<String, dynamic>?>((ref) async {
   final apiService = ref.read(apiServiceProvider);
   final isLoggedIn = await apiService.isLoggedIn();
   

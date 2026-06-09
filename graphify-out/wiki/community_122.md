@@ -1,27 +1,25 @@
-# Community 122: tasks
+# Community 122: check_db_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **tasks** (`backend_courses_tasks_py`, File, degree: 7)
-- **generate_summary_task()** (`backend_courses_tasks_py_generate_summary_task`, Function, degree: 1)
-- **celery.shared_task** (`backend_courses_tasks_py_import_celery_shared_task`, Module, degree: 1)
-- **django.utils.timezone** (`backend_courses_tasks_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_courses_tasks_py_import_logging`, Module, degree: 1)
-- **process_audio_session_task()** (`backend_courses_tasks_py_process_audio_session_task`, Function, degree: 2)
-- **transcribe_audio_task()** (`backend_courses_tasks_py_transcribe_audio_task`, Function, degree: 2)
-- **_validate_and_fix_duration()** (`backend_courses_tasks_py_validate_and_fix_duration`, Function, degree: 3)
+- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
+- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
+- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
+- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
+- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
+- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_tasks_py → backend_courses_tasks_py_import_logging (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_celery_shared_task (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_django_utils_timezone (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_validate_and_fix_duration (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_transcribe_audio_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_generate_summary_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_process_audio_session_task (defines)
-- backend_courses_tasks_py_transcribe_audio_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
-- backend_courses_tasks_py_process_audio_session_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
 

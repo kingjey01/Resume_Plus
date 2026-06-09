@@ -1,23 +1,23 @@
-# Community 165: NotificationTargetingLogicTest
+# Community 165: test_simple_audio_upload
 
 **Members:** 7
 
 ## Nodes
 
-- **NotificationTargetingLogicTest** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest`, Class, degree: 7)
-- **.setUp()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup`, Method, degree: 1)
-- **.test_case_1_no_filters_global()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global`, Method, degree: 1)
-- **.test_case_2_universite_only()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only`, Method, degree: 1)
-- **.test_case_3_universite_filiere()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere`, Method, degree: 1)
-- **.test_case_4_universite_filiere_promotion()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion`, Method, degree: 1)
-- **.test_cp_receives_own_notification()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification`, Method, degree: 1)
+- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
+- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
+- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
+- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
+- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
 

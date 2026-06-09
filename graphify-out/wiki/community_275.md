@@ -1,17 +1,17 @@
-# Community 275: purchase_badge_provider
+# Community 275: test_flutter_api
 
 **Members:** 4
 
 ## Nodes
 
-- **purchase_badge_provider** (`lib_providers_purchase_badge_provider_dart`, File, degree: 3)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **test_flutter_api** (`test_flutter_api_dart`, File, degree: 3)
+- **lib/services/api_service.dart** (`test_flutter_api_dart_import_lib_services_api_service_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`test_flutter_api_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **main()** (`test_flutter_api_dart_main`, Function, degree: 1)
 
 ## Relationships
 
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- test_flutter_api_dart → test_flutter_api_dart_import_package_flutter_material_dart (imports)
+- test_flutter_api_dart → test_flutter_api_dart_import_lib_services_api_service_dart (imports)
+- test_flutter_api_dart → test_flutter_api_dart_main (defines)
 

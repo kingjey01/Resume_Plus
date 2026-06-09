@@ -1,23 +1,23 @@
-# Community 159: urls
+# Community 159: purchases_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **urls** (`backend_payments_urls_py`, File, degree: 6)
-- **django.urls.path** (`backend_payments_urls_py_import_django_urls_path`, Module, degree: 1)
-- **.flexpay_integration.create_subscription_after_payment** (`backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment`, Module, degree: 1)
-- **.flexpay_integration.flexpay_callback** (`backend_payments_urls_py_import_flexpay_integration_flexpay_callback`, Module, degree: 1)
-- **.flexpay_integration.initiate_subscription_payment** (`backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment`, Module, degree: 1)
-- **.flexpay_integration.initiate_summary_purchase** (`backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase`, Module, degree: 1)
-- **..views** (`backend_payments_urls_py_import_views`, Module, degree: 1)
+- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 6)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_urls_py → backend_payments_urls_py_import_django_urls_path (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_views (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_flexpay_callback (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
 

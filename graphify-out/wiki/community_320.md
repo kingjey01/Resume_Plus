@@ -1,13 +1,13 @@
-# Community 320: api_service_debug
+# Community 320: generated_plugin_registrant
 
 **Members:** 2
 
 ## Nodes
 
-- **api_service_debug** (`lib_services_api_service_debug_dart`, File, degree: 1)
-- **package:dio/dio.dart** (`lib_services_api_service_debug_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_debug_dart → lib_services_api_service_debug_dart_import_package_dio_dio_dart (imports)
+- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
 

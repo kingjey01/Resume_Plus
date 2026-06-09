@@ -1,13 +1,13 @@
-# Community 328: payment_method
+# Community 328: gunicorn.conf
 
 **Members:** 2
 
 ## Nodes
 
-- **payment_method** (`lib_models_payment_method_dart`, File, degree: 1)
-- **PaymentMethodType** (`lib_models_payment_method_dart_paymentmethodtype`, Enum, degree: 1)
+- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
+- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_payment_method_dart → lib_models_payment_method_dart_paymentmethodtype (defines)
+- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
 

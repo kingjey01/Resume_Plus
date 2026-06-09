@@ -1,33 +1,31 @@
-# Community 59: clear_data()
+# Community 59: fix_auth_issues
 
-**Members:** 12
+**Members:** 11
 
 ## Nodes
 
-- **clear_data()** (`backend_seed_data_py_clear_data`, Function, degree: 2)
-- **create_courses()** (`backend_seed_data_py_create_courses`, Function, degree: 2)
-- **create_filieres()** (`backend_seed_data_py_create_filieres`, Function, degree: 2)
-- **create_promotions()** (`backend_seed_data_py_create_promotions`, Function, degree: 2)
-- **create_services()** (`backend_seed_data_py_create_services`, Function, degree: 2)
-- **create_sessions()** (`backend_seed_data_py_create_sessions`, Function, degree: 2)
-- **create_summaries()** (`backend_seed_data_py_create_summaries`, Function, degree: 2)
-- **create_universites()** (`backend_seed_data_py_create_universites`, Function, degree: 2)
-- **create_users()** (`backend_seed_data_py_create_users`, Function, degree: 2)
-- **link_filieres_promotions()** (`backend_seed_data_py_link_filieres_promotions`, Function, degree: 2)
-- **link_universites_filieres()** (`backend_seed_data_py_link_universites_filieres`, Function, degree: 2)
-- **run_seed()** (`backend_seed_data_py_run_seed`, Function, degree: 12)
+- **fix_auth_issues** (`backend_fix_auth_issues_py`, File, degree: 17)
+- **decouple.config** (`backend_fix_auth_issues_py_import_decouple_config`, Module, degree: 1)
+- **django** (`backend_fix_auth_issues_py_import_django`, Module, degree: 1)
+- **django.conf** (`backend_fix_auth_issues_py_import_django_conf`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_auth_issues_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_auth_issues_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_fix_auth_issues_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_fix_auth_issues_py_import_pymysql`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_fix_auth_issues_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_fix_auth_issues_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_summaries (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_clear_data (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_filieres (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_link_universites_filieres (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_courses (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_sessions (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_universites (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_link_filieres_promotions (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_services (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_users (calls)
-- backend_seed_data_py_run_seed → backend_seed_data_py_create_promotions (calls)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_os (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_sys (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pymysql (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pathlib_path (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_conf (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_decouple_config (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_users_models_userprofile (imports)
 

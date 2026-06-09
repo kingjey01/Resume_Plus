@@ -1,23 +1,27 @@
-# Community 173: settings_development
+# Community 173: ExerciseGenerator
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_development** (`backend_settings_development_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_development_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_development_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_development_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_development_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_development_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_development_py_import_pymysql`, Module, degree: 1)
+- **ExerciseGenerator** (`backend_courses_exercise_generator_py_exercisegenerator`, Class, degree: 7)
+- **.generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary`, Method, degree: 2)
+- **._generate_mock_questions()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions`, Method, degree: 2)
+- **._generate_questions_with_ai()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai`, Method, degree: 4)
+- **.__init__()** (`backend_courses_exercise_generator_py_exercisegenerator_init`, Method, degree: 1)
+- **._parse_ai_response()** (`backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response`, Method, degree: 3)
+- **._validate_question_structure()** (`backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure`, Method, degree: 2)
 
 ## Relationships
 
-- backend_settings_development_py → backend_settings_development_py_import_pathlib_path (imports)
-- backend_settings_development_py → backend_settings_development_py_import_datetime_timedelta (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_config (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_csv (imports)
-- backend_settings_development_py → backend_settings_development_py_import_os (imports)
-- backend_settings_development_py → backend_settings_development_py_import_pymysql (imports)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_init (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (defines)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (calls)
 

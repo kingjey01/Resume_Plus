@@ -1,15 +1,15 @@
-# Community 302: apps
+# Community 302: main
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_security_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
-- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

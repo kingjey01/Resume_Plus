@@ -1,28 +1,25 @@
-# Community 121: AuthAPITest
+# Community 121: health_check
 
 **Members:** 8
 
 ## Nodes
 
-- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
-- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
-- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
-- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
-- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
-- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
-- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
-- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
+- **health_check** (`backend_health_check_py`, File, degree: 7)
+- **health_check()** (`backend_health_check_py_health_check`, Function, degree: 1)
+- **django.conf.settings** (`backend_health_check_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_health_check_py_import_django_db_connection`, Module, degree: 1)
+- **django.http.JsonResponse** (`backend_health_check_py_import_django_http_jsonresponse`, Module, degree: 1)
+- **django.views.decorators.csrf.csrf_exempt** (`backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt`, Module, degree: 1)
+- **django.views.decorators.http.require_http_methods** (`backend_health_check_py_import_django_views_decorators_http_require_http_methods`, Module, degree: 1)
+- **json** (`backend_health_check_py_import_json`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
-- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_health_check_py → backend_health_check_py_import_django_http_jsonresponse (imports)
+- backend_health_check_py → backend_health_check_py_import_django_views_decorators_http_require_http_methods (imports)
+- backend_health_check_py → backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt (imports)
+- backend_health_check_py → backend_health_check_py_import_django_db_connection (imports)
+- backend_health_check_py → backend_health_check_py_import_django_conf_settings (imports)
+- backend_health_check_py → backend_health_check_py_import_json (imports)
+- backend_health_check_py → backend_health_check_py_health_check (defines)
 

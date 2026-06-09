@@ -1315,3 +1315,279 @@ IMPORTANT :
 Avant toute modification, explique la cause exacte des bugs détectés. Ensuite applique la correction la plus robuste possible.
 
 - lorsque qu'un utilisateur s'abonne la notification est envoyer à tout le monde, probleme grave: * les notifiation sur un abonnement ou un achat resumé doit etre fermement individuel, uniquement l'utilisateur effectuant l'opération qui doit etre informer
+OBJECTIF
+
+Analyser les modèles existants et modifier uniquement les relations qui imposent actuellement des affectations une par une, afin de permettre des affectations en masse tout en conservant la cohérence du système, les permissions, les validations et la logique métier existante.
+
+RÈGLES IMPORTANTES
+
+* Ne rien casser dans le système actuel.
+* Conserver les contrôles d'accès et permissions.
+* Conserver les validations existantes.
+* Adapter les formulaires, API, serializers, vues et interfaces concernées.
+* Mettre à jour les tests si nécessaire.
+* Vérifier les impacts avant toute modification.
+* Utiliser les relations ManyToMany lorsque cela est nécessaire.
+
+---
+
+1. RELATION PROFESSEUR ↔ FILIÈRE
+
+---
+
+Situation actuelle :
+
+* Un professeur peut être lié à une ou plusieurs filières.
+* Cette partie fonctionne correctement.
+
+Aucune modification majeure requise sauf vérification de cohérence avec les autres modules.
+
+---
+
+2. RELATION FILIÈRE ↔ PROMOTION
+
+---
+
+Problème actuel :
+
+Une table intermédiaire impose d'affecter chaque filière à chaque promotion manuellement.
+
+Exemple :
+
+* 100 filières
+* 100 promotions
+
+Cela oblige à créer énormément d'associations une par une.
+
+Modification souhaitée :
+
+Une filière peut appartenir à une ou plusieurs promotions.
+
+Une promotion peut contenir une ou plusieurs filières.
+
+Relation souhaitée :
+
+ManyToMany
+
+Exemple :
+
+Filière Informatique
+→ Licence 1
+→ Licence 2
+→ Licence 3
+
+En une seule opération.
+
+---
+
+3. RELATION UNIVERSITÉ ↔ FILIÈRE
+
+---
+
+Problème actuel :
+
+Une université doit être reliée aux filières une par une via une table intermédiaire.
+
+Modification souhaitée :
+
+Une université peut contenir une ou plusieurs filières.
+
+Une filière peut être associée à une ou plusieurs universités si la logique métier le permet.
+
+Relation souhaitée :
+
+ManyToMany
+
+Objectif :
+
+Permettre la sélection multiple de filières lors de la création ou modification d'une université.
+
+---
+
+4. NOTIFICATION ↔ UNIVERSITÉ
+
+---
+
+Problème actuel :
+
+Une notification ne peut cibler qu'une seule université.
+
+Modification souhaitée :
+
+Une notification peut cibler :
+
+* une université
+* plusieurs universités
+
+Relation :
+
+ManyToMany
+
+---
+
+5. NOTIFICATION ↔ FILIÈRE
+
+---
+
+Problème actuel :
+
+Une notification ne peut cibler qu'une seule filière.
+
+Modification souhaitée :
+
+Une notification peut cibler :
+
+* une filière
+* plusieurs filières
+
+Relation :
+
+ManyToMany
+
+---
+
+6. NOTIFICATION ↔ PROMOTION
+
+---
+
+Problème actuel :
+
+Une notification ne peut cibler qu'une seule promotion.
+
+Modification souhaitée :
+
+Une notification peut cibler :
+
+* une promotion
+* plusieurs promotions
+
+Relation :
+
+ManyToMany
+
+---
+
+7. NOTIFICATION ↔ UTILISATEUR
+
+---
+
+Problème actuel :
+
+Une notification est destinée à un seul utilisateur.
+
+Modification souhaitée :
+
+Une notification peut être envoyée à :
+
+* un utilisateur
+* plusieurs utilisateurs
+
+Relation :
+
+ManyToMany
+
+Objectif :
+
+Permettre l'envoi de notifications groupées.
+
+---
+
+8. INTERFACES UTILISATEUR
+
+---
+
+Mettre à jour les écrans concernés :
+
+* Création Université
+* Création Filière
+* Création Promotion
+* Création Notification
+* Modification Notification
+
+Utiliser des sélecteurs multiples.
+
+Exemples :
+
+□ Université A
+□ Université B
+□ Université C
+
+□ Filière Informatique
+□ Filière Réseau
+□ Filière Gestion
+
+□ Promotion L1
+□ Promotion L2
+□ Promotion L3
+
+---
+
+9. API ET SERIALIZERS
+
+---
+
+Les endpoints doivent accepter :
+
+Ancien format :
+
+university_id
+
+Nouveau format :
+
+university_ids
+
+Exemple :
+
+{
+"university_ids": [1, 2, 3],
+"filiere_ids": [5, 8, 10],
+"promotion_ids": [2, 4]
+}
+
+Même logique pour les utilisateurs.
+
+---
+
+10. MIGRATIONS
+
+---
+
+Créer les migrations nécessaires.
+
+Migrer les données existantes vers les nouvelles relations.
+
+Conserver les données déjà enregistrées.
+
+Ne supprimer aucune donnée existante.
+
+---
+
+11. CONTRÔLES À EFFECTUER
+
+---
+
+Vérifier :
+
+* Cohérence des données
+* Permissions
+* API
+* Serializers
+* Vues
+* Formulaires
+* Tests unitaires
+* Performance des requêtes
+
+---
+
+## RÉSULTAT ATTENDU
+
+Le système doit fonctionner exactement comme aujourd'hui mais avec la possibilité de sélectionner :
+
+* une ou plusieurs universités
+* une ou plusieurs filières
+* une ou plusieurs promotions
+* un ou plusieurs utilisateurs
+
+afin de faciliter les affectations et les notifications en masse.
+- dans résumé achaté et historique de paement:
+* le resumé chargé dans ces onglet doit venir de la base de donéé , et affcihé les donnée de l'utilisateur connecté et non d'afficher tout du cache sans vérifié l'utilisateur connecté 

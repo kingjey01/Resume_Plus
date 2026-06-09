@@ -1,19 +1,21 @@
-# Community 205: 0005_purchase_service
+# Community 205: win32_window
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **0005_purchase_service** (`backend_payments_migrations_0005_purchase_service_py`, File, degree: 4)
-- **django.db.migrations** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0005_purchase_service_py_migration`, Class, degree: 1)
+- **win32_window** (`windows_runner_win32_window_h`, File, degree: 5)
+- **functional** (`windows_runner_win32_window_h_import_functional`, Module, degree: 1)
+- **memory** (`windows_runner_win32_window_h_import_memory`, Module, degree: 1)
+- **string** (`windows_runner_win32_window_h_import_string`, Module, degree: 1)
+- **windows.h** (`windows_runner_win32_window_h_import_windows_h`, Module, degree: 1)
+- **Size** (`windows_runner_win32_window_h_size`, Struct, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_migration (defines)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_windows_h (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_functional (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_memory (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_string (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_size (defines)
 

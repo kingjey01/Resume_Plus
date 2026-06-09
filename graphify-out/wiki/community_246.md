@@ -1,20 +1,19 @@
-# Community 246: test_api_only
+# Community 246: filiere_promotion.g
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api_only** (`backend_test_api_only_py`, File, degree: 4)
-- **json** (`backend_test_api_only_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_api_only_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_api_only_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_api_only_py_test_endpoint`, Function, degree: 2)
+- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
+- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_api_only_py → backend_test_api_only_py_import_requests (imports)
-- backend_test_api_only_py → backend_test_api_only_py_import_json (imports)
-- backend_test_api_only_py → backend_test_api_only_py_test_endpoint (defines)
-- backend_test_api_only_py → backend_test_api_only_py_main (defines)
-- backend_test_api_only_py_main → backend_test_api_only_py_test_endpoint (calls)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
 

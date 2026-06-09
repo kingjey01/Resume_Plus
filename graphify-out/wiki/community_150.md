@@ -1,23 +1,23 @@
-# Community 150: settings_production
+# Community 150: test_exercise_generation
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_production** (`backend_settings_production_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_production_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_production_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_production_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_production_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_production_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_production_py_import_pymysql`, Module, degree: 1)
+- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
+- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
+- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
+- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
+- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
 
 ## Relationships
 
-- backend_settings_production_py → backend_settings_production_py_import_pathlib_path (imports)
-- backend_settings_production_py → backend_settings_production_py_import_datetime_timedelta (imports)
-- backend_settings_production_py → backend_settings_production_py_import_decouple_config (imports)
-- backend_settings_production_py → backend_settings_production_py_import_decouple_csv (imports)
-- backend_settings_production_py → backend_settings_production_py_import_os (imports)
-- backend_settings_production_py → backend_settings_production_py_import_pymysql (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
 

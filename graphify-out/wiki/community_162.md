@@ -1,23 +1,23 @@
-# Community 162: .calculate_score()
+# Community 162: periodic_tasks
 
 **Members:** 7
 
 ## Nodes
 
-- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
-- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
-- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
-- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
-- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
-- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 2)
-- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
+- **periodic_tasks** (`backend_notifications_periodic_tasks_py`, File, degree: 6)
+- **check_subscriptions_expired()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expired`, Function, degree: 1)
+- **check_subscriptions_expiring_soon()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon`, Function, degree: 1)
+- **celery.shared_task** (`backend_notifications_periodic_tasks_py_import_celery_shared_task`, Module, degree: 1)
+- **datetime.timedelta** (`backend_notifications_periodic_tasks_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.utils.timezone** (`backend_notifications_periodic_tasks_py_import_django_utils_timezone`, Module, degree: 1)
+- **logging** (`backend_notifications_periodic_tasks_py_import_logging`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_save (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
-- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_logging (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_celery_shared_task (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_django_utils_timezone (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_datetime_timedelta (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon (defines)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expired (defines)
 

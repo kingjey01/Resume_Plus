@@ -1,19 +1,19 @@
-# Community 216: enhanced_auth_widget
+# Community 216: UniversiteFiliereTest
 
 **Members:** 5
 
 ## Nodes
 
-- **enhanced_auth_widget** (`lib_widgets_enhanced_auth_widget_dart`, File, degree: 4)
-- **_EnhancedAuthWidgetState()** (`lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/providers/api_provider.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **UniversiteFiliereTest** (`backend_courses_tests_py_universitefilieretest`, Class, degree: 5)
+- **.setUp()** (`backend_courses_tests_py_universitefilieretest_setup`, Method, degree: 1)
+- **.setUpTestData()** (`backend_courses_tests_py_universitefilieretest_setuptestdata`, Method, degree: 1)
+- **.test_relation_universite_filiere()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere`, Method, degree: 1)
+- **.test_relation_universite_filiere_creation()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation`, Method, degree: 1)
 
 ## Relationships
 
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate (defines)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setup (defines)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation (defines)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setuptestdata (defines)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere (defines)
 

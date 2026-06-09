@@ -1,29 +1,29 @@
-# Community 75: fix_migration
+# Community 75: seeddata
 
 **Members:** 10
 
 ## Nodes
 
-- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
-- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
-- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
-- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
-- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
+- **seeddata** (`backend_courses_management_commands_seeddata_py`, File, degree: 10)
+- **courses.models.Course** (`backend_courses_management_commands_seeddata_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Session** (`backend_courses_management_commands_seeddata_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_courses_management_commands_seeddata_py_import_courses_models_summary`, Module, degree: 1)
+- **datetime.timedelta** (`backend_courses_management_commands_seeddata_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand`, Module, degree: 1)
+- **payments.models.Purchase** (`backend_courses_management_commands_seeddata_py_import_payments_models_purchase`, Module, degree: 1)
+- **random** (`backend_courses_management_commands_seeddata_py_import_random`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_courses_management_commands_seeddata_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
-- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
-- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_users_models_userprofile (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_course (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_session (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_summary (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_payments_models_purchase (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_datetime_timedelta (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_random (imports)
 

@@ -1,21 +1,23 @@
-# Community 178: 0001_initial
+# Community 178: SubscriptionExpirationTest
 
-**Members:** 6
+**Members:** 7
 
 ## Nodes
 
-- **0001_initial** (`backend_courses_migrations_0001_initial_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0001_initial_py_migration`, Class, degree: 1)
+- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
+- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
+- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
+- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
+- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
+- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
+- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_db_models (imports)
-- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_migration (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
 

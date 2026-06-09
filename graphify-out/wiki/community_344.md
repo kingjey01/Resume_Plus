@@ -1,8 +1,8 @@
-# Community 344: app_notification
+# Community 344: resource
 
 **Members:** 1
 
 ## Nodes
 
-- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
+- **resource** (`windows_runner_resource_h`, File, degree: 0)
 

@@ -1,25 +1,29 @@
-# Community 136: audio_test_page
+# Community 136: test_production_api
 
 **Members:** 8
 
 ## Nodes
 
-- **audio_test_page** (`lib_pages_audio_test_page_dart`, File, degree: 7)
-- **_AudioTestPageState()** (`lib_pages_audio_test_page_dart_audiotestpagestate`, Function, degree: 1)
-- **dart:html'** (`lib_pages_audio_test_page_dart_import_dart_html`, Module, degree: 1)
-- **dart:typed_data** (`lib_pages_audio_test_page_dart_import_dart_typed_data`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/api_service.dart** (`lib_pages_audio_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../services/web_audio_recorder.dart** (`lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart`, Module, degree: 1)
+- **test_production_api** (`backend_test_production_api_py`, File, degree: 7)
+- **json** (`backend_test_production_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_production_api_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_production_api_py_main`, Function, degree: 5)
+- **test_audio_files_access()** (`backend_test_production_api_py_test_audio_files_access`, Function, degree: 2)
+- **test_encoding_in_api_response()** (`backend_test_production_api_py_test_encoding_in_api_response`, Function, degree: 2)
+- **test_flutter_api_simulation()** (`backend_test_production_api_py_test_flutter_api_simulation`, Function, degree: 2)
+- **test_sessions_endpoint()** (`backend_test_production_api_py_test_sessions_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_typed_data (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_html (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_api_service_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_audiotestpagestate (defines)
+- backend_test_production_api_py → backend_test_production_api_py_import_requests (imports)
+- backend_test_production_api_py → backend_test_production_api_py_import_json (imports)
+- backend_test_production_api_py → backend_test_production_api_py_test_sessions_endpoint (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_audio_files_access (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_flutter_api_simulation (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_encoding_in_api_response (defines)
+- backend_test_production_api_py → backend_test_production_api_py_main (defines)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_audio_files_access (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_encoding_in_api_response (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_flutter_api_simulation (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_sessions_endpoint (calls)
 

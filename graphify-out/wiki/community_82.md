@@ -1,36 +1,29 @@
-# Community 82: create_courses()
+# Community 82: service_card
 
 **Members:** 10
 
 ## Nodes
 
-- **create_courses()** (`backend_seed_database_py_create_courses`, Function, degree: 3)
-- **create_filieres()** (`backend_seed_database_py_create_filieres`, Function, degree: 3)
-- **create_promotions()** (`backend_seed_database_py_create_promotions`, Function, degree: 3)
-- **create_relations()** (`backend_seed_database_py_create_relations`, Function, degree: 3)
-- **create_services()** (`backend_seed_database_py_create_services`, Function, degree: 3)
-- **create_sessions_and_summaries()** (`backend_seed_database_py_create_sessions_and_summaries`, Function, degree: 3)
-- **create_universites()** (`backend_seed_database_py_create_universites`, Function, degree: 3)
-- **create_users()** (`backend_seed_database_py_create_users`, Function, degree: 3)
-- **main()** (`backend_seed_database_py_main`, Function, degree: 12)
-- **print_section()** (`backend_seed_database_py_print_section`, Function, degree: 9)
+- **service_card** (`lib_features_subscriptions_widgets_service_card_dart`, File, degree: 9)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_seed_database_py_create_universites → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_filieres → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_promotions → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_relations → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_courses → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_users → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_sessions_and_summaries → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_services → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_users (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_sessions_and_summaries (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_filieres (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_relations (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_universites (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_promotions (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_courses (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_services (calls)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
 

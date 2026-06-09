@@ -1,8 +1,8 @@
-# Community 334: summary
+# Community 334: sw
 
 **Members:** 1
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **sw** (`web_sw_js`, File, degree: 0)
 

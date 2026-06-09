@@ -1,8 +1,13 @@
-# Community 332: filiere
+# Community 332: simple_seed
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
+- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
+- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+
+## Relationships
+
+- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
 

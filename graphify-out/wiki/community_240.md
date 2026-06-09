@@ -1,19 +1,19 @@
-# Community 240: 0010_professeurfilieres_alter_professeur_filieres
+# Community 240: enhanced_auth_demo_page
 
 **Members:** 5
 
 ## Nodes
 
-- **0010_professeurfilieres_alter_professeur_filieres** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_migration`, Class, degree: 1)
+- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models (imports)
-- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_migration (defines)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
 

@@ -1,26 +1,25 @@
-# Community 137: quick_server_test
+# Community 137: test_advanced_audio_functionality
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
-- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
-- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
-- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
-- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
-- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
-- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
-- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
+- **test_advanced_audio_functionality** (`backend_test_advanced_audio_functionality_py`, File, degree: 12)
+- **create_comprehensive_test_report()** (`backend_test_advanced_audio_functionality_py_create_comprehensive_test_report`, Function, degree: 1)
+- **json** (`backend_test_advanced_audio_functionality_py_import_json`, Module, degree: 1)
+- **os** (`backend_test_advanced_audio_functionality_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_test_advanced_audio_functionality_py_import_pathlib_path`, Module, degree: 1)
+- **requests** (`backend_test_advanced_audio_functionality_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_advanced_audio_functionality_py_import_sys`, Module, degree: 1)
+- **wave** (`backend_test_advanced_audio_functionality_py_import_wave`, Module, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
-- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
-- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_os (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_sys (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_requests (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_json (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_wave (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_pathlib_path (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_create_comprehensive_test_report (defines)
 

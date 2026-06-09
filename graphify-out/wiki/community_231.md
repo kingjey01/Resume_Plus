@@ -1,19 +1,19 @@
-# Community 231: AppDelegate
+# Community 231: service_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **AppDelegate** (`ios_runner_appdelegate_swift`, File, degree: 4)
-- **application** (`ios_runner_appdelegate_swift_application`, Function, degree: 1)
-- **FirebaseCore** (`ios_runner_appdelegate_swift_import_firebasecore`, Module, degree: 1)
-- **Flutter** (`ios_runner_appdelegate_swift_import_flutter`, Module, degree: 1)
-- **UIKit** (`ios_runner_appdelegate_swift_import_uikit`, Module, degree: 1)
+- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_application (defines)
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_flutter (imports)
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_uikit (imports)
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_firebasecore (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

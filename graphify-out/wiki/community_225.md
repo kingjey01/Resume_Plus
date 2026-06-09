@@ -1,19 +1,19 @@
-# Community 225: universite_filiere.g
+# Community 225: 0004_alter_purchase_summary
 
 **Members:** 5
 
 ## Nodes
 
-- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
-- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
-- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
+- **0004_alter_purchase_summary** (`backend_payments_migrations_0004_alter_purchase_summary_py`, File, degree: 4)
+- **django.db.migrations** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0004_alter_purchase_summary_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models (imports)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_migration (defines)
 

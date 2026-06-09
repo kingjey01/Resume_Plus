@@ -1,31 +1,27 @@
-# Community 102: debug_wsgi_user
+# Community 102: AbonnementCreateSerializer
 
 **Members:** 9
 
 ## Nodes
 
-- **debug_wsgi_user** (`backend_debug_wsgi_user_py`, File, degree: 8)
-- **check_python_path()** (`backend_debug_wsgi_user_py_check_python_path`, Function, degree: 2)
-- **django** (`backend_debug_wsgi_user_py_import_django`, Module, degree: 1)
-- **os** (`backend_debug_wsgi_user_py_import_os`, Module, degree: 1)
-- **sys** (`backend_debug_wsgi_user_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_debug_wsgi_user_py_main`, Function, degree: 5)
-- **test_audio_processing_import()** (`backend_debug_wsgi_user_py_test_audio_processing_import`, Function, degree: 2)
-- **test_imports()** (`backend_debug_wsgi_user_py_test_imports`, Function, degree: 2)
-- **test_view_import()** (`backend_debug_wsgi_user_py_test_view_import`, Function, degree: 2)
+- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
+- **AbonnementSerializer** (`backend_courses_serializers_py_abonnementserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementserializer_create`, Method, degree: 2)
+- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
+- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
+- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
+- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
+- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
 
 ## Relationships
 
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_os (imports)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_sys (imports)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_django (imports)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_imports (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_audio_processing_import (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_view_import (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_check_python_path (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_main (defines)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_view_import (calls)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_imports (calls)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_check_python_path (calls)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_audio_processing_import (calls)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
+- backend_courses_serializers_py_abonnementserializer → backend_courses_serializers_py_abonnementserializer_create (defines)
+- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
+- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- backend_courses_serializers_py_abonnementserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
 

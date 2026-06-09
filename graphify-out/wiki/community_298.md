@@ -1,15 +1,15 @@
-# Community 298: test_seed_creation
+# Community 298: exercise_urls
 
 **Members:** 3
 
 ## Nodes
 
-- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
-- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
-- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
+- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
-- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
 

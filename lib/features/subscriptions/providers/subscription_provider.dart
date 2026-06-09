@@ -8,7 +8,7 @@ final subscriptionApiProvider = Provider<SubscriptionApi>((ref) {
   return SubscriptionApi(apiService);
 });
 
-final subscriptionsProvider = FutureProvider<List<Abonnement>>((ref) async {
+final subscriptionsProvider = FutureProvider.autoDispose<List<Abonnement>>((ref) async {
   final subscriptionApi = ref.watch(subscriptionApiProvider);
   return subscriptionApi.getSubscriptions();
 });

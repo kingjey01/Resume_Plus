@@ -1,19 +1,20 @@
-# Community 236: AbonnementListCreateView
+# Community 236: test_api_only
 
 **Members:** 5
 
 ## Nodes
 
-- **AbonnementListCreateView** (`backend_payments_views_py_abonnementlistcreateview`, Class, degree: 4)
-- **.get_queryset()** (`backend_payments_views_py_abonnementlistcreateview_get_queryset`, Method, degree: 1)
-- **.list()** (`backend_payments_views_py_abonnementlistcreateview_list`, Method, degree: 2)
-- **.perform_create()** (`backend_payments_views_py_abonnementlistcreateview_perform_create`, Method, degree: 1)
-- **initiate_subscription_payment_view()** (`backend_payments_views_py_initiate_subscription_payment_view`, Function, degree: 2)
+- **test_api_only** (`backend_test_api_only_py`, File, degree: 4)
+- **json** (`backend_test_api_only_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_only_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_api_only_py_main`, Function, degree: 2)
+- **test_endpoint()** (`backend_test_api_only_py_test_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_get_queryset (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_perform_create (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_list (defines)
-- backend_payments_views_py_initiate_subscription_payment_view → backend_payments_views_py_abonnementlistcreateview_list (calls)
+- backend_test_api_only_py → backend_test_api_only_py_import_requests (imports)
+- backend_test_api_only_py → backend_test_api_only_py_import_json (imports)
+- backend_test_api_only_py → backend_test_api_only_py_test_endpoint (defines)
+- backend_test_api_only_py → backend_test_api_only_py_main (defines)
+- backend_test_api_only_py_main → backend_test_api_only_py_test_endpoint (calls)
 

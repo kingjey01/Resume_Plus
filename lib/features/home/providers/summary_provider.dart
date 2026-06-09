@@ -10,7 +10,7 @@ final apiServiceProvider = Provider<ApiService>((ref) => ApiService());
 final searchQueryProvider = StateProvider<String>((ref) => '');
 
 // 3. FutureProvider pour récupérer les résumés avec recherche (triés en ordre décroissant)
-final summariesProvider = FutureProvider<List<model.Summary>>((ref) async {
+final summariesProvider = FutureProvider.autoDispose<List<model.Summary>>((ref) async {
   final apiService = ref.watch(apiServiceProvider);
   final searchQuery = ref.watch(searchQueryProvider);
   // La méthode getSummaries retourne maintenant directement la liste des résumés parsée.
@@ -18,8 +18,8 @@ final summariesProvider = FutureProvider<List<model.Summary>>((ref) async {
   
   // Trier en ordre décroissant (plus récents d'abord)
   summaries.sort((a, b) {
-    final dateA = a.createdAt ?? DateTime(1970);
-    final dateB = b.createdAt ?? DateTime(1970);
+    final dateA = a.createdAt;
+    final dateB = b.createdAt;
     return dateB.compareTo(dateA); // Décroissant (plus récents d'abord)
   });
   

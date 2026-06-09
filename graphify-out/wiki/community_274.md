@@ -1,17 +1,17 @@
-# Community 274: check_user_profile
+# Community 274: secure_screen_wrapper
 
 **Members:** 4
 
 ## Nodes
 
-- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
-- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
+- **secure_screen_wrapper** (`lib_widgets_secure_screen_wrapper_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/screen_security_service.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart`, Module, degree: 1)
+- **_SecureScreenWrapperState()** (`lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate (defines)
 
