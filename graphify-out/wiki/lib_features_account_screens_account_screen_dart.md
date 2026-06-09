@@ -1,0 +1,16 @@
+# account_screen
+
+- **ID:** `lib_features_account_screens_account_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\account\screens\account_screen.dart`
+
+## Relationships
+
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports, Extracted)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports, Extracted)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports, Extracted)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports, Extracted)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines, Extracted)
+

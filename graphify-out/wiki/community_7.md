@@ -1,0 +1,57 @@
+# Community 7: tests
+
+**Members:** 24
+
+## Nodes
+
+- **tests** (`backend_courses_tests_py`, File, degree: 19)
+- **CourseModelTest** (`backend_courses_tests_py_coursemodeltest`, Class, degree: 2)
+- **.test_course_creation()** (`backend_courses_tests_py_coursemodeltest_test_course_creation`, Method, degree: 1)
+- **FilierePromotionTest** (`backend_courses_tests_py_filierepromotiontest`, Class, degree: 3)
+- **.setUp()** (`backend_courses_tests_py_filierepromotiontest_setup`, Method, degree: 1)
+- **.test_relation_filiere_promotion_creation()** (`backend_courses_tests_py_filierepromotiontest_test_relation_filiere_promotion_creation`, Method, degree: 1)
+- **django.contrib.auth.models.User** (`backend_courses_tests_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.Client** (`backend_courses_tests_py_import_django_test_client`, Module, degree: 1)
+- **django.test.TestCase** (`backend_courses_tests_py_import_django_test_testcase`, Module, degree: 1)
+- **django.urls.reverse** (`backend_courses_tests_py_import_django_urls_reverse`, Module, degree: 1)
+- **.models.Course** (`backend_courses_tests_py_import_models_course`, Module, degree: 1)
+- **.models.Filiere** (`backend_courses_tests_py_import_models_filiere`, Module, degree: 1)
+- **.models.FilierePromotion** (`backend_courses_tests_py_import_models_filierepromotion`, Module, degree: 1)
+- **.models.Promotion** (`backend_courses_tests_py_import_models_promotion`, Module, degree: 1)
+- **.models.Session** (`backend_courses_tests_py_import_models_session`, Module, degree: 1)
+- **.models.Summary** (`backend_courses_tests_py_import_models_summary`, Module, degree: 1)
+- **.models.Universite** (`backend_courses_tests_py_import_models_universite`, Module, degree: 1)
+- **.models.UniversiteFiliere** (`backend_courses_tests_py_import_models_universitefiliere`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_courses_tests_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **rest_framework.status** (`backend_courses_tests_py_import_rest_framework_status`, Module, degree: 1)
+- **rest_framework.test.APITestCase** (`backend_courses_tests_py_import_rest_framework_test_apitestcase`, Module, degree: 1)
+- **SummaryAPITest** (`backend_courses_tests_py_summaryapitest`, Class, degree: 3)
+- **.setUpTestData()** (`backend_courses_tests_py_summaryapitest_setuptestdata`, Method, degree: 1)
+- **.test_summary_creation()** (`backend_courses_tests_py_summaryapitest_test_summary_creation`, Method, degree: 1)
+
+## Relationships
+
+- backend_courses_tests_py → backend_courses_tests_py_import_django_test_testcase (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_django_test_client (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_django_contrib_auth_models_user (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_django_urls_reverse (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_rest_framework_test_apitestcase (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_rest_framework_status (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_rest_framework_authtoken_models_token (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_course (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_session (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_summary (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_universite (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_filiere (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_promotion (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_universitefiliere (imports)
+- backend_courses_tests_py → backend_courses_tests_py_import_models_filierepromotion (imports)
+- backend_courses_tests_py → backend_courses_tests_py_coursemodeltest (defines)
+- backend_courses_tests_py_coursemodeltest → backend_courses_tests_py_coursemodeltest_test_course_creation (defines)
+- backend_courses_tests_py → backend_courses_tests_py_summaryapitest (defines)
+- backend_courses_tests_py_summaryapitest → backend_courses_tests_py_summaryapitest_setuptestdata (defines)
+- backend_courses_tests_py_summaryapitest → backend_courses_tests_py_summaryapitest_test_summary_creation (defines)
+- backend_courses_tests_py → backend_courses_tests_py_filierepromotiontest (defines)
+- backend_courses_tests_py_filierepromotiontest → backend_courses_tests_py_filierepromotiontest_setup (defines)
+- backend_courses_tests_py_filierepromotiontest → backend_courses_tests_py_filierepromotiontest_test_relation_filiere_promotion_creation (defines)
+

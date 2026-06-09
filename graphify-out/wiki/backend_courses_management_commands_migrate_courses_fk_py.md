@@ -1,0 +1,15 @@
+# migrate_courses_fk
+
+- **ID:** `backend_courses_management_commands_migrate_courses_fk_py`
+- **Type:** File
+- **File:** `.\backend\courses\management\commands\migrate_courses_fk.py`
+
+## Relationships
+
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand (imports, Extracted)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course (imports, Extracted)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite (imports, Extracted)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere (imports, Extracted)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion (imports, Extracted)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_command (defines, Extracted)
+

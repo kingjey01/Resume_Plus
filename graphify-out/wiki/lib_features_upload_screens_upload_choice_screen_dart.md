@@ -1,0 +1,15 @@
+# upload_choice_screen
+
+- **ID:** `lib_features_upload_screens_upload_choice_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\upload\screens\upload_choice_screen.dart`
+
+## Relationships
+
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart (imports, Extracted)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart (imports, Extracted)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart (imports, Extracted)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart (imports, Extracted)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+

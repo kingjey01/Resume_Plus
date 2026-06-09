@@ -1,0 +1,15 @@
+# purchases_screen
+
+- **ID:** `lib_features_purchases_screens_purchases_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\purchases\screens\purchases_screen.dart`
+
+## Relationships
+
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports, Extracted)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports, Extracted)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports, Extracted)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines, Extracted)
+

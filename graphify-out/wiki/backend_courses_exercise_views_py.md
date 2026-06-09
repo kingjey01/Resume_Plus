@@ -1,0 +1,34 @@
+# exercise_views
+
+- **ID:** `backend_courses_exercise_views_py`
+- **Type:** File
+- **File:** `.\backend\courses\exercise_views.py`
+
+## Relationships
+
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_rest_framework_status (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_rest_framework_permissions (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_rest_framework_decorators_api_view (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_rest_framework_decorators_permission_classes (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_rest_framework_response_response (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_django_shortcuts_get_object_or_404 (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_django_contrib_auth_models_user (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_models_summary (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_models_exercise (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_models_exercisequestion (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_models_exerciseattempt (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_payments_models_service (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_payments_models_abonnement (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_exercise_generator_generate_exercises_for_summary (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_permissions_hasactivesubscription (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_django_utils_timezone (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_logging (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_import_threading (imports, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_generate_exercise_view (defines, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_get_exercise_view (defines, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_submit_exercise_view (defines, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_get_attempt_result_view (defines, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_get_exercise_attempts_view (defines, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_check_exercise_subscription_view (defines, Extracted)
+- backend_courses_exercise_views_py → backend_courses_exercise_views_py_has_exercise_subscription (defines, Extracted)
+

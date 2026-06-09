@@ -1,0 +1,33 @@
+# test_notifications_simple
+
+- **ID:** `backend_test_notifications_simple_py`
+- **Type:** File
+- **File:** `.\backend\test_notifications_simple.py`
+
+## Relationships
+
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_os (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_sys (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_django (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_time (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_django_contrib_auth_models_user (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_django_utils_timezone (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_datetime_timedelta (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_decimal_decimal (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_payments_models_service (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_payments_models_abonnement (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_payments_models_purchase (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_courses_models_summary (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_courses_models_course (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_courses_models_universite (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_courses_models_filiere (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_courses_models_promotion (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_notifications_models_appnotification (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_import_notifications_models_usernotification (imports, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_test_subscription_notification_creation (defines, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_test_expiring_soon_notification (defines, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_test_expired_notification (defines, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_test_purchase_notification (defines, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_test_multiple_notifications (defines, Extracted)
+- backend_test_notifications_simple_py → backend_test_notifications_simple_py_main (defines, Extracted)
+

@@ -1,0 +1,13 @@
+# exercise_result_screen
+
+- **ID:** `lib_features_exercises_screens_exercise_result_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\exercises\screens\exercise_result_screen.dart`
+
+## Relationships
+
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports, Extracted)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports, Extracted)
+

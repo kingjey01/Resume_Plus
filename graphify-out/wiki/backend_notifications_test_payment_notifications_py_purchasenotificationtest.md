@@ -1,0 +1,15 @@
+# PurchaseNotificationTest
+
+- **ID:** `backend_notifications_test_payment_notifications_py_purchasenotificationtest`
+- **Type:** Class
+- **File:** `.\backend\notifications\test_payment_notifications.py`
+- **Location:** L155
+
+## Relationships
+
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_purchasenotificationtest (defines, Extracted)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines, Extracted)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines, Extracted)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines, Extracted)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines, Extracted)
+

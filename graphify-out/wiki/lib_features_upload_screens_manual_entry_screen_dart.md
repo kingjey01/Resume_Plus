@@ -1,0 +1,16 @@
+# manual_entry_screen
+
+- **ID:** `lib_features_upload_screens_manual_entry_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\upload\screens\manual_entry_screen.dart`
+
+## Relationships
+
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports, Extracted)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart (imports, Extracted)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart (imports, Extracted)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports, Extracted)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate (defines, Extracted)
+

@@ -1,0 +1,43 @@
+# Community 23: home_screen
+
+**Members:** 17
+
+## Nodes
+
+- **home_screen** (`lib_features_home_screens_home_screen_dart`, File, degree: 16)
+- **_HomeScreenState()** (`lib_features_home_screens_home_screen_dart_homescreenstate`, Function, degree: 1)
+- **dart:async** (`lib_features_home_screens_home_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_home_screens_home_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_home_screens_home_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/profile_completion_screen.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_auth_screens_profile_completion_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/widgets/course_tile.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_course_tile_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/notifications/providers/notification_provider.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/notifications/screens/notifications_screen.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notifications_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/settings/screens/settings_screen.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_settings_screens_settings_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/audio_sessions_screen.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_audio_sessions_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/notification_service.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+
+## Relationships
+
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_dart_async (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_course_tile_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_audio_sessions_screen_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_settings_screens_settings_screen_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_auth_screens_profile_completion_screen_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notifications_screen_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
+- lib_features_home_screens_home_screen_dart → lib_features_home_screens_home_screen_dart_homescreenstate (defines)
+

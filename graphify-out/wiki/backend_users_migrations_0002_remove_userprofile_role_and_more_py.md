@@ -1,0 +1,13 @@
+# 0002_remove_userprofile_role_and_more
+
+- **ID:** `backend_users_migrations_0002_remove_userprofile_role_and_more_py`
+- **Type:** File
+- **File:** `.\backend\users\migrations\0002_remove_userprofile_role_and_more.py`
+
+## Relationships
+
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations (imports, Extracted)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models (imports, Extracted)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion (imports, Extracted)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration (defines, Extracted)
+

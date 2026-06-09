@@ -1,0 +1,29 @@
+# AudioProcessor
+
+- **ID:** `backend_courses_audio_processing_py_audioprocessor`
+- **Type:** Class
+- **File:** `.\backend\courses\audio_processing.py`
+- **Location:** L22
+
+## Relationships
+
+- backend_courses_audio_processing_py → backend_courses_audio_processing_py_audioprocessor (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_init (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_get_audio_info (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_is_supported_format (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_get_audio_duration (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_format_duration (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_process_audio_session (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_step1_transcribe_audio (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_step2_generate_summary (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_generate_local_summary (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_clean_transcript (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_structure_summary (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_simulate_transcription (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_batch_process_sessions (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_auto_process_pending_sessions (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_get_processing_stats (defines, Extracted)
+- backend_courses_audio_processing_py_audioprocessor → backend_courses_audio_processing_py_audioprocessor_cleanup_old_audio_files (defines, Extracted)
+

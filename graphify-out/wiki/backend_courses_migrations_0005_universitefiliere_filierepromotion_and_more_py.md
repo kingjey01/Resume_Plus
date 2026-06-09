@@ -1,0 +1,13 @@
+# 0005_universitefiliere_filierepromotion_and_more
+
+- **ID:** `backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py`
+- **Type:** File
+- **File:** `.\backend\courses\migrations\0005_universitefiliere_filierepromotion_and_more.py`
+
+## Relationships
+
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_migrations (imports, Extracted)
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models (imports, Extracted)
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models_deletion (imports, Extracted)
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_migration (defines, Extracted)
+

@@ -1,0 +1,20 @@
+# .handle()
+
+- **ID:** `backend_courses_management_commands_seed_production_py_command_handle`
+- **Type:** Method
+- **File:** `.\backend\courses\management\commands\seed_production.py`
+- **Location:** L29
+
+## Relationships
+
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_handle (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_professeurs (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_users (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_sample_summaries (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_promotions (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_universites (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_filieres (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_clear_data (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_courses (calls, Inferred)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_services (calls, Inferred)
+

@@ -1,0 +1,27 @@
+# Community 95: payment_status_screen
+
+**Members:** 9
+
+## Nodes
+
+- **payment_status_screen** (`lib_features_purchases_screens_payment_status_screen_dart`, File, degree: 8)
+- **dart:async** (`lib_features_purchases_screens_payment_status_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/purchase_badge_provider.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PaymentState** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstate`, Enum, degree: 1)
+- **_PaymentStatusScreenState()** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate`, Function, degree: 1)
+
+## Relationships
+
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_dart_async (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate (defines)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstate (defines)
+

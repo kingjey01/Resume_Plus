@@ -1,0 +1,13 @@
+# edit_summary_screen
+
+- **ID:** `lib_features_validation_screens_edit_summary_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\validation\screens\edit_summary_screen.dart`
+
+## Relationships
+
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports, Extracted)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate (defines, Extracted)
+

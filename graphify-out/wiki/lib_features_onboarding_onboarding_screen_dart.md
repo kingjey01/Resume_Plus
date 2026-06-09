@@ -1,0 +1,14 @@
+# onboarding_screen
+
+- **ID:** `lib_features_onboarding_onboarding_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\onboarding\onboarding_screen.dart`
+
+## Relationships
+
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports, Extracted)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports, Extracted)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate (defines, Extracted)
+

@@ -1,0 +1,25 @@
+# Community 141: manual_entry_screen
+
+**Members:** 8
+
+## Nodes
+
+- **manual_entry_screen** (`lib_features_upload_screens_manual_entry_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/professeur.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_ManualEntryScreenState()** (`lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate`, Function, degree: 1)
+
+## Relationships
+
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate (defines)
+

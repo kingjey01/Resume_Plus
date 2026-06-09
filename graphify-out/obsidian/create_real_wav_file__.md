@@ -1,0 +1,12 @@
+---
+id: backend_demo_audio_complete_py_create_real_wav_file
+type: Function
+source: .\backend\demo_audio_complete.py
+community: 13
+community_label: test_audio_files_locally()
+---
+
+## Connections
+
+- [[demo_audio_complete]] (defines)
+- [[create_demo_sessions_with_audio__]] (calls)

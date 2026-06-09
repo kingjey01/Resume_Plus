@@ -1,0 +1,19 @@
+# test_notification_logic
+
+- **ID:** `backend_notifications_test_notification_logic_py`
+- **Type:** File
+- **File:** `.\backend\notifications\test_notification_logic.py`
+
+## Relationships
+
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports, Extracted)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_notificationtargetinglogictest (defines, Extracted)
+

@@ -1,0 +1,53 @@
+# views
+
+- **ID:** `backend_users_views_py`
+- **Type:** File
+- **File:** `.\backend\users\views.py`
+
+## Relationships
+
+- backend_users_views_py → backend_users_views_py_import_rest_framework_status (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_rest_framework_generics (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_rest_framework_permissions (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_rest_framework_decorators_api_view (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_rest_framework_decorators_permission_classes (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_rest_framework_response_response (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_rest_framework_simplejwt_tokens_refreshtoken (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_rest_framework_simplejwt_tokens_accesstoken (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_contrib_auth_models_user (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_contrib_auth_tokens_default_token_generator (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_utils_http_urlsafe_base64_encode (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_utils_http_urlsafe_base64_decode (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_utils_encoding_force_bytes (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_utils_encoding_force_str (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_utils_timezone (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_conf_settings (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_core_mail_send_mail (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_django_template_loader_render_to_string (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_serializers_registerserializer (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_serializers_loginserializer (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_serializers_userserializer (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_serializers_refreshtokenserializer (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_models_userprofile (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_courses_permissions_canassignrole (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_logging (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_traceback (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_import_secrets (imports, Extracted)
+- backend_users_views_py → backend_users_views_py_register_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_login_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_profile_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_test_auth (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_update_profile_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_refresh_token_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_user_info_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_logout_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_forgot_password_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_verify_reset_code_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_reset_password_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_change_password_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_request_otp_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_verify_otp_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_complete_profile_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_request_delete_otp_view (defines, Extracted)
+- backend_users_views_py → backend_users_views_py_delete_account_view (defines, Extracted)
+

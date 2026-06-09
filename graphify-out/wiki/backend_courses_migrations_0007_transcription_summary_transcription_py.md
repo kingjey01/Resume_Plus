@@ -1,0 +1,13 @@
+# 0007_transcription_summary_transcription
+
+- **ID:** `backend_courses_migrations_0007_transcription_summary_transcription_py`
+- **Type:** File
+- **File:** `.\backend\courses\migrations\0007_transcription_summary_transcription.py`
+
+## Relationships
+
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_migrations (imports, Extracted)
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models (imports, Extracted)
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models_deletion (imports, Extracted)
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_migration (defines, Extracted)
+

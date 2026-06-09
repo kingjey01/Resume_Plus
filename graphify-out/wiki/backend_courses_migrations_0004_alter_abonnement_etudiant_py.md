@@ -1,0 +1,14 @@
+# 0004_alter_abonnement_etudiant
+
+- **ID:** `backend_courses_migrations_0004_alter_abonnement_etudiant_py`
+- **Type:** File
+- **File:** `.\backend\courses\migrations\0004_alter_abonnement_etudiant.py`
+
+## Relationships
+
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings (imports, Extracted)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations (imports, Extracted)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models (imports, Extracted)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion (imports, Extracted)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration (defines, Extracted)
+

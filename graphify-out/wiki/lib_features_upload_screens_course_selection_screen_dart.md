@@ -1,0 +1,15 @@
+# course_selection_screen
+
+- **ID:** `lib_features_upload_screens_course_selection_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\upload\screens\course_selection_screen.dart`
+
+## Relationships
+
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports, Extracted)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart (imports, Extracted)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports, Extracted)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate (defines, Extracted)
+

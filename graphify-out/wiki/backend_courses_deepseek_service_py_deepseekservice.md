@@ -1,0 +1,23 @@
+# DeepSeekService
+
+- **ID:** `backend_courses_deepseek_service_py_deepseekservice`
+- **Type:** Class
+- **File:** `.\backend\courses\deepseek_service.py`
+- **Location:** L18
+
+## Relationships
+
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_deepseekservice (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_init (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_get_api_key (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_is_configured (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_generate_summary (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_clean_text (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_call_api (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_generate_exercises (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_translate_summary (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_reformulate_summary (defines, Extracted)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_simplify_summary (defines, Extracted)
+

@@ -1,0 +1,13 @@
+# 0010_professeurfilieres_alter_professeur_filieres
+
+- **ID:** `backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py`
+- **Type:** File
+- **File:** `.\backend\courses\migrations\0010_professeurfilieres_alter_professeur_filieres.py`
+
+## Relationships
+
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_migrations (imports, Extracted)
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models (imports, Extracted)
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models_deletion (imports, Extracted)
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_migration (defines, Extracted)
+

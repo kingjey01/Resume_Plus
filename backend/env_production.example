@@ -1,0 +1,37 @@
+# ========================================
+# FICHIER .env POUR PRODUCTION - Resume+
+# ========================================
+# Copiez ce fichier en .env et modifiez les valeurs
+
+# ========================================
+# SÉCURITÉ (OBLIGATOIRE - À CHANGER!)
+# ========================================
+# Générez une nouvelle clé avec: python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+SECRET_KEY=votre-cle-secrete-generee-ici-minimum-50-caracteres
+
+# Mode debug - TOUJOURS False en production!
+DEBUG=False
+
+# ========================================
+# HOSTS AUTORISÉS
+# ========================================
+ALLOWED_HOSTS=localhost,127.0.0.1,resumecours.gestionhospitaliare.site,www.resumecours.gestionhospitaliare.site
+
+# ========================================
+# BASE DE DONNÉES MySQL
+# ========================================
+DB_NAME=jey_resume
+DB_USER=jey_resume
+DB_PASSWORD=votre_mot_de_passe_securise
+DB_HOST=localhost
+DB_PORT=3306
+
+# ========================================
+# API EXTERNES
+# ========================================
+DEEPGRAM_API_KEY=votre_cle_deepgram_api
+
+# ========================================
+# CORS (optionnel)
+# ========================================
+CORS_ALLOW_ALL=False

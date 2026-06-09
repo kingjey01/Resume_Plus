@@ -1,0 +1,17 @@
+# Community 252: 0003_alter_purchase_payment_method_alter_service_currency
+
+**Members:** 4
+
+## Nodes
+
+- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
+- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
+
+## Relationships
+
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
+

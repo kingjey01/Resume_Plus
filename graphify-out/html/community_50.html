@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Command — Community 50</title>
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0f0f1a; color: #e0e0e0; font-family: 'Segoe UI', system-ui, sans-serif; display: flex; height: 100vh; overflow: hidden; }
+#sidebar { width: 320px; min-width: 320px; background: #1a1a2e; padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; border-right: 1px solid #2a2a4a; }
+#sidebar h2 { font-size: 18px; color: #4E79A7; margin-bottom: 4px; }
+#sidebar h3 { font-size: 14px; color: #9ca3af; margin-bottom: 8px; }
+.nav-link { display: flex; align-items: center; gap: 8px; font-size: 13px; padding: 6px 8px; border-radius: 4px; color: #e0e0e0; text-decoration: none; }
+.nav-link:hover { background: #2a2a4a; }
+.legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+#graph-container { flex: 1; position: relative; }
+#search { width: 100%; padding: 8px 12px; border-radius: 6px; border: 1px solid #3a3a5a; background: #0f0f1a; color: #e0e0e0; font-size: 14px; }
+#search:focus { outline: none; border-color: #4E79A7; }
+#info-panel { background: #0f0f1a; border-radius: 8px; padding: 12px; font-size: 13px; line-height: 1.6; min-height: 100px; }
+#info-panel .prop { color: #9ca3af; }
+#info-panel .val { color: #e0e0e0; }
+</style>
+</head>
+<body>
+<div id="sidebar">
+    <div>
+        <h2>Command</h2>
+        <p style="font-size:12px;color:#666;">12 nodes · Community 50</p>
+    </div>
+    <input id="search" type="text" placeholder="Search nodes…" />
+    <div>
+        <h3>Node Info</h3>
+        <div id="info-panel"><i style="color:#666">Click a node to see details</i></div>
+    </div>
+    <div>
+        <h3>Navigation</h3>
+        <a href="index.html" class="nav-link" style="font-weight:bold;">← Overview</a><a href="community_22.html" class="nav-link"><span class="legend-dot" style="background:#E15759"></span>users.models.UserProfile (22) (1 links)</a>
+    </div>
+</div>
+<div id="graph-container"></div>
+<script>
+(function() {
+    var nodesData = [{id:"backend_courses_management_commands_seed_production_py_command",label:"Command",title:"Command\nType: Class\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 12",color:"#4E79A7",size:21.9},{id:"backend_courses_management_commands_seed_production_py_command_add_arguments",label:".add_arguments()",title:".add_arguments()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 1",color:"#4E79A7",size:12.0},{id:"backend_courses_management_commands_seed_production_py_command_handle",label:".handle()",title:".handle()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 10",color:"#4E79A7",size:20.6},{id:"backend_courses_management_commands_seed_production_py_command_clear_data",label:".clear_data()",title:".clear_data()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_promotions",label:".create_promotions()",title:".create_promotions()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_filieres",label:".create_filieres()",title:".create_filieres()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_universites",label:".create_universites()",title:".create_universites()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_courses",label:".create_courses()",title:".create_courses()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_users",label:".create_users()",title:".create_users()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_professeurs",label:".create_professeurs()",title:".create_professeurs()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_services",label:".create_services()",title:".create_services()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7},{id:"backend_courses_management_commands_seed_production_py_command_create_sample_summaries",label:".create_sample_summaries()",title:".create_sample_summaries()\nType: Method\nFile: .\\backend\\courses\\management\\commands\\seed_production.py\nDegree: 2",color:"#4E79A7",size:13.7}];
+    var edgesData = [{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_add_arguments",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_add_arguments\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_handle",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_handle\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_clear_data",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_clear_data\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_promotions",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_promotions\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_filieres",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_filieres\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_universites",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_universites\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_courses",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_courses\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_users",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_users\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_professeurs",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_professeurs\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_services",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_services\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command",to:"backend_courses_management_commands_seed_production_py_command_create_sample_summaries",label:"defines",dashes:false,title:"defines: backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_sample_summaries\nConfidence: Extracted"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_professeurs",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_professeurs\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_users",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_users\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_sample_summaries",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_sample_summaries\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_promotions",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_promotions\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_universites",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_universites\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_filieres",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_filieres\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_clear_data",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_clear_data\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_courses",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_courses\nConfidence: Inferred"},{from:"backend_courses_management_commands_seed_production_py_command_handle",to:"backend_courses_management_commands_seed_production_py_command_create_services",label:"calls",dashes:true,title:"calls: backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_services\nConfidence: Inferred"}];
+    var container = document.getElementById('graph-container');
+    var nodes = new vis.DataSet(nodesData);
+    var edges = new vis.DataSet(edgesData);
+    var options = {
+        physics: {solver:'forceAtlas2Based',forceAtlas2Based:{gravitationalConstant:-50,centralGravity:0.01,springLength:120,springConstant:0.08,damping:0.4,avoidOverlap:0.5},stabilization:{iterations:200}},
+        nodes: { shape: 'dot', font: { color: '#e0e0e0', size: 12 }, borderWidth: 2 },
+        edges: { color: { color: '#4a4a6a', highlight: '#4E79A7', hover: '#4E79A7' }, font: { color: '#888', size: 10 }, arrows: { to: { enabled: false } }, smooth: { type: 'continuous' } },
+        interaction: { hover: true, tooltipDelay: 200, zoomView: true, dragView: true }
+    };
+    var network = new vis.Network(container, { nodes: nodes, edges: edges }, options);
+    network.on('stabilizationIterationsDone', function() { network.setOptions({ physics: { enabled: false } }); });
+    network.on('click', function(params) {
+        var panel = document.getElementById('info-panel');
+        if (params.nodes.length > 0) {
+            var node = nodes.get(params.nodes[0]);
+            if (node) {
+                panel.innerHTML = '<div><span class="prop">Label:</span> <span class="val">' + node.label + '</span></div><div><span class="prop">ID:</span> <span class="val">' + node.id + '</span></div>';
+                network.focus(params.nodes[0], { scale: 1.2, animation: true });
+            }
+        }
+    });
+    var searchEl = document.getElementById('search');
+    var sTimer = null;
+    searchEl.addEventListener('input', function() {
+        clearTimeout(sTimer);
+        sTimer = setTimeout(function() {
+            var term = searchEl.value.toLowerCase();
+            var updates = [];
+            nodes.forEach(function(n) {
+                var h = term && !n.label.toLowerCase().includes(term);
+                if (n.hidden !== h) { updates.push({ id: n.id, hidden: h }); }
+            });
+            if (updates.length > 0) { nodes.update(updates); }
+        }, 200);
+    });
+})();
+</script>
+</body>
+</html>

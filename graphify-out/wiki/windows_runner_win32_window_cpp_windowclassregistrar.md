@@ -1,0 +1,49 @@
+# WindowClassRegistrar
+
+- **ID:** `windows_runner_win32_window_cpp_windowclassregistrar`
+- **Type:** Class
+- **File:** `.\windows\runner\win32_window.cpp`
+- **Location:** L59
+
+## Relationships
+
+- windows_runner_win32_window_cpp → windows_runner_win32_window_cpp_windowclassregistrar (defines, Extracted)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_windowclassregistrar_windowclassregistrar (defines, Extracted)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_windowclassregistrar_getinstance (defines, Extracted)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_windowclassregistrar_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_windowclassregistrar_getinstance (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_getwindowclass (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_unregisterwindowclass (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_win32window (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_create (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_show (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_wndproc (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_messagehandler (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_destroy (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_getthisfromhandle (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_setchildcontent (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_getclientarea (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_gethandle (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_setquitonclose (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_oncreate (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_ondestroy (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar → windows_runner_win32_window_cpp_updatetheme (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar_windowclassregistrar → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_windowclassregistrar_getinstance → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_getwindowclass → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_unregisterwindowclass → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_win32window → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_create → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_show → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_wndproc → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_messagehandler → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_destroy → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_getthisfromhandle → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_setchildcontent → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_getclientarea → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_gethandle → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_setquitonclose → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_oncreate → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_ondestroy → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+- windows_runner_win32_window_cpp_updatetheme → windows_runner_win32_window_cpp_windowclassregistrar (uses, Inferred)
+

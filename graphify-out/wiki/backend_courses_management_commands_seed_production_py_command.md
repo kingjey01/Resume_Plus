@@ -1,0 +1,22 @@
+# Command
+
+- **ID:** `backend_courses_management_commands_seed_production_py_command`
+- **Type:** Class
+- **File:** `.\backend\courses\management\commands\seed_production.py`
+- **Location:** L19
+
+## Relationships
+
+- backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_command (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_add_arguments (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_handle (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_clear_data (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_promotions (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_filieres (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_universites (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_courses (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_users (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_professeurs (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_services (defines, Extracted)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_sample_summaries (defines, Extracted)
+

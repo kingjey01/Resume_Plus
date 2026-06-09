@@ -1,0 +1,45 @@
+# Community 21: record_audio_screen
+
+**Members:** 18
+
+## Nodes
+
+- **record_audio_screen** (`lib_features_upload_screens_record_audio_screen_dart`, File, degree: 17)
+- **dart:async** (`lib_features_upload_screens_record_audio_screen_dart_import_dart_async`, Module, degree: 1)
+- **dart:io** (`lib_features_upload_screens_record_audio_screen_dart_import_dart_io`, Module, degree: 1)
+- **dart:typed_data** (`lib_features_upload_screens_record_audio_screen_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:audioplayers/audioplayers.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_audioplayers_audioplayers_dart`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:file_picker/file_picker.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_file_picker_file_picker_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/course_selection_screen.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/professeur.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_models_professeur_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **../../../services/mobile_audio_recorder.dart** (`lib_features_upload_screens_record_audio_screen_dart_import_services_mobile_audio_recorder_dart`, Module, degree: 1)
+- **_RecordAudioScreenState()** (`lib_features_upload_screens_record_audio_screen_dart_recordaudioscreenstate`, Function, degree: 1)
+- **RecordingState** (`lib_features_upload_screens_record_audio_screen_dart_recordingstate`, Enum, degree: 1)
+
+## Relationships
+
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_dart_async (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_dart_io (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_dart_typed_data (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_file_picker_file_picker_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_models_professeur_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_services_mobile_audio_recorder_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_audioplayers_audioplayers_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_recordaudioscreenstate (defines)
+- lib_features_upload_screens_record_audio_screen_dart → lib_features_upload_screens_record_audio_screen_dart_recordingstate (defines)
+

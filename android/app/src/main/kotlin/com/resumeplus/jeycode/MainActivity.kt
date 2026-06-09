@@ -1,0 +1,5 @@
+package com.resumeplus.jeycode
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity()

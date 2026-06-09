@@ -1,0 +1,52 @@
+# Community 47: DeepSeekService
+
+**Members:** 13
+
+## Nodes
+
+- **DeepSeekService** (`backend_courses_deepseek_service_py_deepseekservice`, Class, degree: 13)
+- **._build_exercises_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt`, Method, degree: 2)
+- **._build_summary_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt`, Method, degree: 2)
+- **._call_api()** (`backend_courses_deepseek_service_py_deepseekservice_call_api`, Method, degree: 6)
+- **._clean_text()** (`backend_courses_deepseek_service_py_deepseekservice_clean_text`, Method, degree: 5)
+- **.generate_exercises()** (`backend_courses_deepseek_service_py_deepseekservice_generate_exercises`, Method, degree: 4)
+- **.generate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_generate_summary`, Method, degree: 5)
+- **._get_api_key()** (`backend_courses_deepseek_service_py_deepseekservice_get_api_key`, Method, degree: 2)
+- **.__init__()** (`backend_courses_deepseek_service_py_deepseekservice_init`, Method, degree: 2)
+- **.is_configured()** (`backend_courses_deepseek_service_py_deepseekservice_is_configured`, Method, degree: 6)
+- **.reformulate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_reformulate_summary`, Method, degree: 4)
+- **.simplify_summary()** (`backend_courses_deepseek_service_py_deepseekservice_simplify_summary`, Method, degree: 4)
+- **.translate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_translate_summary`, Method, degree: 4)
+
+## Relationships
+
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_init (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_get_api_key (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_is_configured (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_generate_summary (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_clean_text (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_call_api (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_generate_exercises (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_translate_summary (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_reformulate_summary (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_simplify_summary (defines)
+- backend_courses_deepseek_service_py_deepseekservice_init → backend_courses_deepseek_service_py_deepseekservice_get_api_key (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_exercises → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_exercises → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_exercises → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+

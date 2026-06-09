@@ -1,0 +1,37 @@
+# flexpay_integration
+
+- **ID:** `backend_payments_flexpay_integration_py`
+- **Type:** File
+- **File:** `.\backend\payments\flexpay_integration.py`
+
+## Relationships
+
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_random (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_string (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_json (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_requests (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_django_conf_settings (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_django_http_jsonresponse (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_django_views_decorators_csrf_csrf_exempt (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_django_views_decorators_http_require_post (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_django_utils_timezone (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_datetime_timedelta (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_rest_framework_generics (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_rest_framework_permissions (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_rest_framework_status (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_rest_framework_decorators_api_view (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_rest_framework_decorators_permission_classes (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_rest_framework_response_response (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_models_service (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_models_abonnement (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_models_purchase (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_serializers_abonnementserializer (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_import_courses_models_summary (imports, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_get_random_string (defines, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_initiate_subscription_payment (defines, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_process_subscription_payment (defines, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_process_summary_purchase (defines, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_initiate_summary_purchase (defines, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_flexpay_callback (defines, Extracted)
+- backend_payments_flexpay_integration_py → backend_payments_flexpay_integration_py_create_subscription_after_payment (defines, Extracted)
+

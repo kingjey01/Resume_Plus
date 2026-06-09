@@ -1,0 +1,27 @@
+# Community 110: delete_account_screen
+
+**Members:** 9
+
+## Nodes
+
+- **delete_account_screen** (`lib_features_settings_screens_delete_account_screen_dart`, File, degree: 8)
+- **_DeleteAccountScreenState()** (`lib_features_settings_screens_delete_account_screen_dart_deleteaccountscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/login_screen.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_screens_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+
+## Relationships
+
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_screens_login_screen_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_deleteaccountscreenstate (defines)
+

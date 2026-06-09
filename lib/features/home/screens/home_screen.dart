@@ -1,0 +1,568 @@
+import 'dart:async';
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:resume_plus_clean/features/home/providers/summary_provider.dart';
+import 'package:resume_plus_clean/features/home/widgets/summary_card.dart';
+import 'package:resume_plus_clean/features/home/widgets/course_tile.dart';
+import 'package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart';
+import 'package:resume_plus_clean/features/upload/screens/audio_sessions_screen.dart';
+import 'package:resume_plus_clean/features/settings/screens/settings_screen.dart';
+import 'package:resume_plus_clean/services/api_service.dart';
+import 'package:resume_plus_clean/features/auth/screens/profile_completion_screen.dart';
+import 'package:resume_plus_clean/theme/app_theme.dart';
+import 'package:resume_plus_clean/features/notifications/providers/notification_provider.dart';
+import 'package:resume_plus_clean/features/notifications/screens/notifications_screen.dart';
+import 'package:resume_plus_clean/services/notification_service.dart';
+
+class HomeScreen extends ConsumerStatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  ConsumerState<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAliveClientMixin {
+  final TextEditingController _searchController = TextEditingController();
+  final FocusNode _searchFocusNode = FocusNode();
+  final ApiService _apiService = ApiService();
+  Timer? _debounceTimer;
+  String _userRole = 'ETUDIANT';
+  bool _isLoadingProfile = true;
+  List<Map<String, dynamic>> _courses = [];
+  bool _isLoadingCourses = true;
+  bool _showAllCourses = false;
+
+  @override
+  bool get wantKeepAlive => true;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadUserProfile();
+    NotificationService().startPolling();
+  }
+
+  Future<void> _loadUserProfile() async {
+    try {
+      final profile = await _apiService.getUserProfile();
+      print('👤 Profil utilisateur: $profile');
+      
+      final userProfile = profile['profile'];
+      if (userProfile != null) {
+        final universite = userProfile['universite'];
+        final promotion = userProfile['promotion']; 
+        final filiere = userProfile['filiere'];
+        
+        print('🎓 Université: $universite');
+        print('📚 Promotion: $promotion');
+        print('📖 Filière: $filiere');
+        
+        if (universite == null || promotion == null || filiere == null) {
+          print('⚠️ Profil incomplet - redirection vers complétion');
+          // Rediriger vers la complétion de profil
+          if (mounted) {
+            Navigator.of(context).pushReplacement(
+              MaterialPageRoute(
+                builder: (_) => const ProfileCompletionScreen(),
+              ),
+            );
+            return;
+          }
+        }
+      }
+      
+      setState(() {
+        _userRole = profile['profile']?['groupe'] ?? 'ETUDIANT';
+        _isLoadingProfile = false;
+      });
+      // Charger les cours seulement après le profil
+      _loadCourses();
+    } catch (e) {
+      print('❌ Erreur chargement profil: $e');
+      setState(() {
+        _isLoadingProfile = false;
+        _isLoadingCourses = false;
+      });
+    }
+  }
+
+  Future<void> _loadCourses() async {
+    try {
+      print('🔄 Chargement des cours...');
+      final coursesData = await _apiService.getCourses();
+      print('✅ Cours chargés: ${coursesData.length} cours');
+      setState(() {
+        _courses = coursesData.map((c) => {
+          'id': c['id'] ?? 0,
+          'title': c['nom'] ?? 'Cours sans nom',
+          'filiere': c['filiere_nom'] ?? c['filiere'] ?? 'Non définie',
+        }).toList();
+        _isLoadingCourses = false;
+      });
+    } catch (e) {
+      print('❌ Erreur chargement cours: $e');
+      setState(() {
+        _isLoadingCourses = false;
+      });
+    }
+  }
+
+  void _onSearchChanged(String query) {
+    _debounceTimer?.cancel();
+    final cursorPosition = _searchController.selection;
+    _debounceTimer = Timer(const Duration(seconds: 3), () {
+      if (mounted) {
+        ref.read(searchQueryProvider.notifier).state = query;
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted && _searchFocusNode.canRequestFocus) {
+            _searchFocusNode.requestFocus();
+            _searchController.selection = cursorPosition;
+          }
+        });
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    super.build(context);
+    final summariesAsync = ref.watch(summariesProvider);
+    final theme = Theme.of(context);
+    final topPadding = MediaQuery.of(context).padding.top;
+
+    return Scaffold(
+      backgroundColor: theme.scaffoldBackgroundColor,
+      floatingActionButton: _isLoadingProfile
+          ? null
+          : (_userRole != 'ETUDIANT'
+              ? FloatingActionButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => const UploadChoiceScreen()),
+                    );
+                  },
+                  backgroundColor: AppTheme.primaryBlue,
+                  child: const Icon(Icons.add, color: Colors.white, size: 28),
+                )
+              : null),
+      body: summariesAsync.when(
+        loading: () => const Center(
+          child: CircularProgressIndicator(color: AppTheme.primaryBlue),
+        ),
+        error: (err, stack) => Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.error_outline, size: 48, color: AppTheme.error),
+              const SizedBox(height: 16),
+              Text('Erreur de chargement', style: theme.textTheme.titleMedium),
+              const SizedBox(height: 8),
+              TextButton(
+                onPressed: () => ref.invalidate(summariesProvider),
+                child: const Text('Réessayer'),
+              ),
+            ],
+          ),
+        ),
+        data: (summaries) => SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Header bleu courbé
+              _buildCurvedHeader(context, topPadding),
+              
+              const SizedBox(height: 20),
+
+              // Section résumés récents
+              if (summaries.isEmpty)
+                _buildEmptyState(context)
+              else ...[
+                _buildSectionHeader(context, 'Résumés récents', Icons.access_time_rounded, showViewAll: summaries.length > 4),
+                const SizedBox(height: 12),
+                SizedBox(
+                  height: 200,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    itemCount: summaries.length > 4 ? 4 : summaries.length,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 260,
+                        margin: const EdgeInsets.only(right: 14),
+                        child: SummaryCard(summary: summaries[index], showAuthorBadge: _userRole == 'CP' || _userRole == 'ADMIN'),
+                      );
+                    },
+                  ),
+                ),
+                const SizedBox(height: 24),
+                _buildSectionHeader(context, 'Parcourir les cours', Icons.school_rounded, showViewAll: _courses.length > 4, onViewAll: () => setState(() => _showAllCourses = !_showAllCourses)),
+                const SizedBox(height: 12),
+                if (_isLoadingCourses)
+                  const Center(
+                    child: Padding(
+                      padding: EdgeInsets.all(24),
+                      child: CircularProgressIndicator(color: AppTheme.primaryBlue),
+                    ),
+                  )
+                else if (_courses.isEmpty)
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                    child: Text(
+                      'Aucun cours disponible',
+                      style: theme.textTheme.bodyMedium,
+                    ),
+                  )
+                else
+                  ListView.builder(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    itemCount: _showAllCourses ? _courses.length : (_courses.length > 4 ? 4 : _courses.length),
+                    itemBuilder: (context, index) {
+                      final course = _courses[index];
+                      return Padding(
+                        padding: const EdgeInsets.only(bottom: 10),
+                        child: CourseTile(
+                          courseId: course['id'] as int,
+                          title: course['title'] as String,
+                          filiere: course['filiere'] as String,
+                        ),
+                      );
+                    },
+                  ),
+              ],
+              const SizedBox(height: 100),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCurvedHeader(BuildContext context, double topPadding) {
+    return Stack(
+      children: [
+        // Fond courbé bleu
+        ClipPath(
+          clipper: _HeaderClipper(),
+          child: Container(
+            height: 260 + topPadding,
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  AppTheme.primaryBlueDark,
+                  AppTheme.primaryBlue,
+                  AppTheme.primaryBlueLight,
+                ],
+              ),
+            ),
+          ),
+        ),
+        // Contenu du header
+        Padding(
+          padding: EdgeInsets.only(top: topPadding + 16, left: 20, right: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              // Top row: titre + actions
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Résumé+',
+                          style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                        if (_userRole == 'ETUDIANT') ...[
+                          const SizedBox(height: 4),
+                          Text(
+                            'Trouvez vos résumés de cours',
+                            style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                              color: Colors.white.withOpacity(0.8),
+                            ),
+                          ),
+                        ],
+                      ],
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      _buildHeaderIconButton(
+                        Icons.refresh_rounded,
+                        () {
+                          ref.invalidate(summariesProvider);
+                          setState(() {
+                            _isLoadingCourses = true;
+                          });
+                          _loadCourses();
+                        },
+                      ),
+                      const SizedBox(width: 8),
+                      if (_userRole != 'ETUDIANT')
+                        _buildHeaderIconButton(
+                          Icons.mic_rounded,
+                          () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const AudioSessionsScreen()),
+                          ),
+                        ),
+                      if (_userRole != 'ETUDIANT') const SizedBox(width: 8),
+                      _buildHeaderIconButton(
+                        Icons.settings_rounded,
+                        () => Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const SettingsScreen()),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(height: 24),
+              // Search bar (85%) + notification bell (15%)
+              Row(
+                children: [
+                  Expanded(
+                    flex: 85,
+                    child: Container(
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(25),
+                        boxShadow: [
+                          BoxShadow(
+                            color: AppTheme.primaryBlueDark.withOpacity(0.15),
+                            blurRadius: 20,
+                            offset: const Offset(0, 8),
+                          ),
+                        ],
+                      ),
+                      child: TextField(
+                        controller: _searchController,
+                        focusNode: _searchFocusNode,
+                        onChanged: _onSearchChanged,
+                        style: const TextStyle(color: Colors.black87),
+                        decoration: InputDecoration(
+                          hintText: 'Rechercher un résumé...',
+                          hintStyle: const TextStyle(color: Colors.black54),
+                          prefixIcon: const Icon(Icons.search_rounded, color: Colors.black54),
+                          suffixIcon: _searchController.text.isNotEmpty
+                              ? IconButton(
+                                  icon: const Icon(Icons.close_rounded, color: Colors.black54, size: 20),
+                                  onPressed: () {
+                                    _searchController.clear();
+                                    _debounceTimer?.cancel();
+                                    ref.read(searchQueryProvider.notifier).state = '';
+                                    _searchFocusNode.requestFocus();
+                                    setState(() {});
+                                  },
+                                )
+                              : null,
+                          border: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                          focusedBorder: InputBorder.none,
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+                          filled: false,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    flex: 15,
+                    child: _buildSearchRowNotificationButton(context),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildHeaderIconButton(IconData icon, VoidCallback onTap) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        width: 42,
+        height: 42,
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.2),
+          shape: BoxShape.circle,
+        ),
+        child: Icon(icon, color: Colors.white, size: 22),
+      ),
+    );
+  }
+
+  Widget _buildSearchRowNotificationButton(BuildContext context) {
+    final unread = ref.watch(unreadCountProvider);
+    return GestureDetector(
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute(builder: (_) => const NotificationsScreen()),
+      ),
+      child: Container(
+        height: 50,
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.2),
+          shape: BoxShape.circle,
+        ),
+        child: Stack(
+          children: [
+            const Center(
+              child: Icon(Icons.notifications_rounded, color: Colors.white, size: 24),
+            ),
+            if (unread > 0)
+              Positioned(
+                top: 8,
+                right: 8,
+                child: Container(
+                  width: 17,
+                  height: 17,
+                  decoration: const BoxDecoration(
+                    color: Color(0xFFEF4444),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Center(
+                    child: Text(
+                      unread > 99 ? '99' : '$unread',
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 9,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSectionHeader(BuildContext context, String title, IconData icon, {bool showViewAll = false, VoidCallback? onViewAll}) {
+    final theme = Theme.of(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Row(
+        children: [
+          Container(
+            width: 36,
+            height: 36,
+            decoration: BoxDecoration(
+              color: AppTheme.primaryBlue.withOpacity(0.1),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Icon(icon, color: AppTheme.primaryBlue, size: 20),
+          ),
+          const SizedBox(width: 10),
+          Text(
+            title,
+            style: theme.textTheme.titleLarge?.copyWith(
+              fontWeight: FontWeight.w700,
+              color: theme.colorScheme.onSurface,
+            ),
+          ),
+          const Spacer(),
+          if (showViewAll)
+            TextButton(
+              onPressed: onViewAll,
+              child: Text(
+                'Voir tout',
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: AppTheme.primaryBlue,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildEmptyState(BuildContext context) {
+    // Message personnalisé selon le niveau de l'utilisateur
+    final isCP = _userRole == 'CP';
+    final title = isCP ? 'Aucun résumé pour le moment' : 'Aucun résumé disponible';
+    final message = isCP 
+        ? 'Créez votre premier résumé en cliquant sur le bouton +'
+        : 'Retrouvez les résumés réels de votre promotion à partir des scéances de cours';
+    
+    final theme = Theme.of(context);
+    
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(40),
+        child: Column(
+          children: [
+            Container(
+              width: 100,
+              height: 100,
+              decoration: BoxDecoration(
+                color: AppTheme.primaryBlue.withOpacity(0.1),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                Icons.menu_book_rounded,
+                size: 48,
+                color: AppTheme.primaryBlue,
+              ),
+            ),
+            const SizedBox(height: 24),
+            Text(
+              title,
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.w600,
+                color: theme.colorScheme.onSurface,
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              message,
+              textAlign: TextAlign.center,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurface.withOpacity(0.7),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    _searchFocusNode.dispose();
+    _debounceTimer?.cancel();
+    super.dispose();
+  }
+}
+
+class _HeaderClipper extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    final path = Path();
+    path.lineTo(0, size.height - 50);
+    path.quadraticBezierTo(
+      size.width / 2,
+      size.height + 10,
+      size.width,
+      size.height - 50,
+    );
+    path.lineTo(size.width, 0);
+    path.close();
+    return path;
+  }
+
+  @override
+  bool shouldReclip(covariant CustomClipper<Path> oldClipper) => false;
+}

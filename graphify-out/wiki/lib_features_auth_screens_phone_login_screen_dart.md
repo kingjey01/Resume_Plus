@@ -1,0 +1,16 @@
+# phone_login_screen
+
+- **ID:** `lib_features_auth_screens_phone_login_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\auth\screens\phone_login_screen.dart`
+
+## Relationships
+
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports, Extracted)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports, Extracted)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports, Extracted)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports, Extracted)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines, Extracted)
+

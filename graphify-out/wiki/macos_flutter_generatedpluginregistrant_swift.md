@@ -1,0 +1,25 @@
+# GeneratedPluginRegistrant
+
+- **ID:** `macos_flutter_generatedpluginregistrant_swift`
+- **Type:** File
+- **File:** `.\macos\Flutter\GeneratedPluginRegistrant.swift`
+
+## Relationships
+
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_registergeneratedplugins (defines, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_fluttermacos (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_foundation (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_audioplayers_darwin (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_file_picker (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_file_selector_macos (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_firebase_core (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_firebase_messaging (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_flutter_local_notifications (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_flutter_secure_storage_macos (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_flutter_tts (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_path_provider_foundation (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_record_darwin (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_shared_preferences_foundation (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_sqflite_darwin (imports, Extracted)
+- macos_flutter_generatedpluginregistrant_swift → macos_flutter_generatedpluginregistrant_swift_import_url_launcher_macos (imports, Extracted)
+

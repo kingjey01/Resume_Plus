@@ -1,0 +1,18 @@
+# register_screen
+
+- **ID:** `lib_features_auth_screens_register_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\auth\screens\register_screen.dart`
+
+## Relationships
+
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_universite_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_promotion_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_filiere_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_services_api_service_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_widgets_linked_dropdowns_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_registerscreenstate (defines, Extracted)
+

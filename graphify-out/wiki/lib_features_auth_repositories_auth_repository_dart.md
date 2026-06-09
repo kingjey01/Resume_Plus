@@ -1,0 +1,14 @@
+# auth_repository
+
+- **ID:** `lib_features_auth_repositories_auth_repository_dart`
+- **Type:** File
+- **File:** `.\lib\features\auth\repositories\auth_repository.dart`
+
+## Relationships
+
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports, Extracted)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports, Extracted)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports, Extracted)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports, Extracted)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports, Extracted)
+

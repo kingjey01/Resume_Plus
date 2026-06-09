@@ -1,0 +1,14 @@
+# GeneratedPluginRegistrant
+
+- **ID:** `android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`
+- **Type:** File
+- **File:** `.\android\app\src\main\java\io\flutter\plugins\GeneratedPluginRegistrant.java`
+
+## Relationships
+
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports, Extracted)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports, Extracted)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports, Extracted)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports, Extracted)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines, Extracted)
+

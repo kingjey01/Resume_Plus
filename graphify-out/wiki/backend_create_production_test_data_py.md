@@ -1,0 +1,28 @@
+# create_production_test_data
+
+- **ID:** `backend_create_production_test_data_py`
+- **Type:** File
+- **File:** `.\backend\create_production_test_data.py`
+
+## Relationships
+
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_os (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_sys (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_django (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_pathlib_path (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_wave (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_struct (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_math (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_courses_models_session (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_courses_models_course (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_courses_models_summary (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_django_core_files_base_contentfile (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_django_contrib_auth_models_user (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_import_django_utils_timezone (imports, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_create_production_audio_files (defines, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_create_melodic_wav_file (defines, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_create_ai_summary_for_session (defines, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_verify_production_setup (defines, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_create_production_test_page (defines, Extracted)
+- backend_create_production_test_data_py → backend_create_production_test_data_py_main (defines, Extracted)
+

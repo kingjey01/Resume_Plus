@@ -1,0 +1,12 @@
+---
+id: backend_test_file_permissions_py_check_wsgi_user
+type: Function
+source: .\backend\test_file_permissions.py
+community: 53
+community_label: test_media_permissions()
+---
+
+## Connections
+
+- [[test_file_permissions]] (defines)
+- [[main__]] (calls)

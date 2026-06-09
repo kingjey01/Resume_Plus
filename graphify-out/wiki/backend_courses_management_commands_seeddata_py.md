@@ -1,0 +1,19 @@
+# seeddata
+
+- **ID:** `backend_courses_management_commands_seeddata_py`
+- **Type:** File
+- **File:** `.\backend\courses\management\commands\seeddata.py`
+
+## Relationships
+
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_users_models_userprofile (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_course (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_session (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_summary (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_payments_models_purchase (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_datetime_timedelta (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_random (imports, Extracted)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_command (defines, Extracted)
+

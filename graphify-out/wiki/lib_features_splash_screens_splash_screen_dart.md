@@ -1,0 +1,16 @@
+# splash_screen
+
+- **ID:** `lib_features_splash_screens_splash_screen_dart`
+- **Type:** File
+- **File:** `.\lib\features\splash\screens\splash_screen.dart`
+
+## Relationships
+
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart (imports, Extracted)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports, Extracted)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports, Extracted)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports, Extracted)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart (imports, Extracted)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports, Extracted)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_splashscreenstate (defines, Extracted)
+

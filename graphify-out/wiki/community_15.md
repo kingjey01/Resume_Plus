@@ -1,0 +1,49 @@
+# Community 15: test_payment_notifications
+
+**Members:** 20
+
+## Nodes
+
+- **test_payment_notifications** (`backend_notifications_test_payment_notifications_py`, File, degree: 21)
+- **courses.models.Course** (`backend_notifications_test_payment_notifications_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_notifications_test_payment_notifications_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_notifications_test_payment_notifications_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Summary** (`backend_notifications_test_payment_notifications_py_import_courses_models_summary`, Module, degree: 1)
+- **courses.models.Universite** (`backend_notifications_test_payment_notifications_py_import_courses_models_universite`, Module, degree: 1)
+- **datetime.timedelta** (`backend_notifications_test_payment_notifications_py_import_datetime_timedelta`, Module, degree: 1)
+- **decimal.Decimal** (`backend_notifications_test_payment_notifications_py_import_decimal_decimal`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_notifications_test_payment_notifications_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_notifications_test_payment_notifications_py_import_django_test_testcase`, Module, degree: 1)
+- **django.utils.timezone** (`backend_notifications_test_payment_notifications_py_import_django_utils_timezone`, Module, degree: 1)
+- **notifications.models.AppNotification** (`backend_notifications_test_payment_notifications_py_import_notifications_models_appnotification`, Module, degree: 1)
+- **notifications.models.UserNotification** (`backend_notifications_test_payment_notifications_py_import_notifications_models_usernotification`, Module, degree: 1)
+- **notifications.tasks.notify_subscription_expired** (`backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_subscription_expired`, Module, degree: 1)
+- **notifications.tasks.notify_subscription_expiring_soon** (`backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_subscription_expiring_soon`, Module, degree: 1)
+- **notifications.tasks.notify_subscription_paid** (`backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_subscription_paid`, Module, degree: 1)
+- **notifications.tasks.notify_summary_purchased** (`backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_summary_purchased`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_notifications_test_payment_notifications_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Purchase** (`backend_notifications_test_payment_notifications_py_import_payments_models_purchase`, Module, degree: 1)
+- **payments.models.Service** (`backend_notifications_test_payment_notifications_py_import_payments_models_service`, Module, degree: 1)
+
+## Relationships
+
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_django_test_testcase (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_django_contrib_auth_models_user (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_django_utils_timezone (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_datetime_timedelta (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_decimal_decimal (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_payments_models_service (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_payments_models_abonnement (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_payments_models_purchase (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_courses_models_summary (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_courses_models_course (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_courses_models_universite (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_courses_models_filiere (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_courses_models_promotion (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_notifications_models_appnotification (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_notifications_models_usernotification (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_subscription_paid (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_subscription_expiring_soon (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_subscription_expired (imports)
+- backend_notifications_test_payment_notifications_py → backend_notifications_test_payment_notifications_py_import_notifications_tasks_notify_summary_purchased (imports)
+

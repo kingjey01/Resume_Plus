@@ -1,0 +1,17 @@
+# auth_provider
+
+- **ID:** `lib_features_auth_providers_auth_provider_dart`
+- **Type:** File
+- **File:** `.\lib\features\auth\providers\auth_provider.dart`
+
+## Relationships
+
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_dart_async (imports, Extracted)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_flutter_foundation_dart (imports, Extracted)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports, Extracted)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports, Extracted)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_models_user_dart (imports, Extracted)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_storage_service_dart (imports, Extracted)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports, Extracted)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_fcm_service_dart (imports, Extracted)
+

@@ -1,0 +1,31 @@
+# Community 66: generated_plugin_registrant
+
+**Members:** 11
+
+## Nodes
+
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_cc`, File, degree: 10)
+- **audioplayers_windows/audioplayers_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h`, Module, degree: 1)
+- **file_selector_windows/file_selector_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h`, Module, degree: 1)
+- **firebase_core/firebase_core_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h`, Module, degree: 1)
+- **flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h`, Module, degree: 1)
+- **flutter_tts/flutter_tts_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h`, Module, degree: 1)
+- **generated_plugin_registrant.h** (`windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
+- **permission_handler_windows/permission_handler_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h`, Module, degree: 1)
+- **record_windows/record_windows_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h`, Module, degree: 1)
+- **url_launcher_windows/url_launcher_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h`, Module, degree: 1)
+- **RegisterPlugins()** (`windows_flutter_generated_plugin_registrant_cc_registerplugins`, Function, degree: 1)
+
+## Relationships
+
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_registerplugins (defines)
+

@@ -1,0 +1,16 @@
+# generated_plugin_registrant
+
+- **ID:** `linux_flutter_generated_plugin_registrant_cc`
+- **Type:** File
+- **File:** `.\linux\flutter\generated_plugin_registrant.cc`
+
+## Relationships
+
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports, Extracted)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h (imports, Extracted)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h (imports, Extracted)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h (imports, Extracted)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h (imports, Extracted)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h (imports, Extracted)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_fl_register_plugins (defines, Extracted)
+
