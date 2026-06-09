@@ -1,17 +1,17 @@
-# Community 264: debug_page
+# Community 264: 0013_make_professeur_optional
 
 **Members:** 4
 
 ## Nodes
 
-- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
-- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **0013_make_professeur_optional** (`backend_courses_migrations_0013_make_professeur_optional_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0013_make_professeur_optional_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_migration (defines)
 

@@ -1,17 +1,17 @@
-# Community 282: manage
+# Community 282: 0006_migrate_existing_relations
 
 **Members:** 4
 
 ## Nodes
 
-- **manage** (`backend_manage_py`, File, degree: 3)
-- **os** (`backend_manage_py_import_os`, Module, degree: 1)
-- **sys** (`backend_manage_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_manage_py_main`, Function, degree: 1)
+- **0006_migrate_existing_relations** (`backend_courses_migrations_0006_migrate_existing_relations_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations`, Module, degree: 1)
+- **migrate_existing_relations()** (`backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations`, Function, degree: 1)
+- **Migration** (`backend_courses_migrations_0006_migrate_existing_relations_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_manage_py → backend_manage_py_import_os (imports)
-- backend_manage_py → backend_manage_py_import_sys (imports)
-- backend_manage_py → backend_manage_py_main (defines)
+- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations (defines)
+- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migration (defines)
 

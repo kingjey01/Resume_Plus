@@ -1,36 +1,29 @@
-# Community 73: test_mobile_simulation
+# Community 73: fix_migration
 
 **Members:** 10
 
 ## Nodes
 
-- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
-- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
-- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
-- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
-- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
-- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
-- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
-- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
-- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
+- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
+- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
+- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
+- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
+- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
-- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
+- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
+- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
+- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
 

@@ -1,15 +1,15 @@
-# Community 292: upload_screen
+# Community 292: demo_data_service
 
 **Members:** 3
 
 ## Nodes
 
-- **upload_screen** (`lib_features_upload_screens_upload_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart`, Module, degree: 1)
+- **demo_data_service** (`lib_services_demo_data_service_dart`, File, degree: 2)
+- **package:resume_plus_clean/models/summary.dart'** (`lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_demo_data_service_dart_instance`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart (imports)
+- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_instance (defines)
 

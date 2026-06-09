@@ -14525,24 +14525,31 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart",
+      "label": "package:intl/intl.dart",
+      "source_file": ".\\lib\\features\\home\\widgets\\summary_card.dart",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart",
       "label": "package:resume_plus_clean/models/summary.dart",
       "source_file": ".\\lib\\features\\home\\widgets\\summary_card.dart",
-      "source_location": "L2",
+      "source_location": "L3",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart",
       "label": "package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart",
       "source_file": ".\\lib\\features\\home\\widgets\\summary_card.dart",
-      "source_location": "L3",
+      "source_location": "L4",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\home\\widgets\\summary_card.dart",
-      "source_location": "L4",
+      "source_location": "L5",
       "node_type": "module"
     },
     {
@@ -14951,6 +14958,26 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_settings_screens_about_screen_dart",
+      "label": "about_screen",
+      "source_file": ".\\lib\\features\\settings\\screens\\about_screen.dart",
+      "node_type": "file"
+    },
+    {
+      "id": "lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "source_file": ".\\lib\\features\\settings\\screens\\about_screen.dart",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "label": "package:resume_plus_clean/theme/app_theme.dart",
+      "source_file": ".\\lib\\features\\settings\\screens\\about_screen.dart",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_settings_screens_delete_account_screen_dart",
       "label": "delete_account_screen",
       "source_file": ".\\lib\\features\\settings\\screens\\delete_account_screen.dart",
@@ -15210,6 +15237,13 @@
       "label": "package:resume_plus_clean/features/settings/screens/delete_account_screen.dart",
       "source_file": ".\\lib\\features\\settings\\screens\\settings_screen.dart",
       "source_location": "L15",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_settings_screens_settings_screen_dart_import_package_resume_plus_clean_features_settings_screens_about_screen_dart",
+      "label": "package:resume_plus_clean/features/settings/screens/about_screen.dart",
+      "source_file": ".\\lib\\features\\settings\\screens\\settings_screen.dart",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
@@ -15657,52 +15691,59 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart",
+      "label": "package:intl/intl.dart",
+      "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
       "label": "package:resume_plus_clean/features/home/providers/summary_provider.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L3",
+      "source_location": "L4",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
       "label": "package:resume_plus_clean/features/home/widgets/summary_card.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L4",
+      "source_location": "L5",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
       "label": "package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L5",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
       "label": "package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L6",
+      "source_location": "L7",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L7",
+      "source_location": "L8",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
       "label": "package:resume_plus_clean/widgets/api_error_view.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L8",
+      "source_location": "L9",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate",
       "label": "_AllSummariesScreenState()",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L14",
+      "source_location": "L15",
       "node_type": "function"
     },
     {
@@ -41019,7 +41060,7 @@
     },
     {
       "source": "lib_features_home_widgets_summary_card_dart",
-      "target": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart",
+      "target": "lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41029,7 +41070,7 @@
     },
     {
       "source": "lib_features_home_widgets_summary_card_dart",
-      "target": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart",
+      "target": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41039,12 +41080,22 @@
     },
     {
       "source": "lib_features_home_widgets_summary_card_dart",
-      "target": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\home\\widgets\\summary_card.dart",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_home_widgets_summary_card_dart",
+      "target": "lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\home\\widgets\\summary_card.dart",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -41558,6 +41609,26 @@
       "weight": 1.0
     },
     {
+      "source": "lib_features_settings_screens_about_screen_dart",
+      "target": "lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\settings\\screens\\about_screen.dart",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_settings_screens_about_screen_dart",
+      "target": "lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\settings\\screens\\about_screen.dart",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "lib_features_settings_screens_delete_account_screen_dart",
       "target": "lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_material_dart",
       "relation": "imports",
@@ -41895,6 +41966,16 @@
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\settings\\screens\\settings_screen.dart",
       "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_settings_screens_settings_screen_dart",
+      "target": "lib_features_settings_screens_settings_screen_dart_import_package_resume_plus_clean_features_settings_screens_about_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\settings\\screens\\settings_screen.dart",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -42439,7 +42520,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42449,7 +42530,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42459,7 +42540,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42469,7 +42550,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42479,7 +42560,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42489,7 +42570,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42499,12 +42580,22 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_summaries_screens_all_summaries_screen_dart",
       "target": "lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L14",
+      "source_location": "L15",
       "weight": 1.0
     },
     {

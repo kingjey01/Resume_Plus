@@ -1,19 +1,19 @@
-# Community 212: check_accessible_courses
+# Community 212: audio_playback_test_page
 
 **Members:** 5
 
 ## Nodes
 
-- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
-- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
+- **audio_playback_test_page** (`lib_pages_audio_playback_test_page_dart`, File, degree: 4)
+- **_AudioPlaybackTestPageState()** (`lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/api_service.dart** (`lib_pages_audio_playback_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../widgets/audio_file_player_widget.dart** (`lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_services_api_service_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate (defines)
 

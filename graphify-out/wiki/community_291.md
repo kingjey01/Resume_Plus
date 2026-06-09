@@ -1,15 +1,15 @@
-# Community 291: 0015_merge_20260523_2104
+# Community 291: api_provider
 
 **Members:** 3
 
 ## Nodes
 
-- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
-- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
+- **api_provider** (`lib_providers_api_provider_dart`, File, degree: 2)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
 

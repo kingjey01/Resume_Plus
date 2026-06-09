@@ -1,19 +1,17 @@
-# Community 252: otp_service
+# Community 252: test_services_endpoint
 
-**Members:** 5
+**Members:** 4
 
 ## Nodes
 
-- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **test_services_endpoint** (`backend_test_services_endpoint_py`, File, degree: 3)
+- **json** (`backend_test_services_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_services_endpoint_py_import_requests`, Module, degree: 1)
+- **test_services_with_auth()** (`backend_test_services_endpoint_py_test_services_with_auth`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_requests (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_json (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_test_services_with_auth (defines)
 

@@ -1,8 +1,8 @@
-# Community 333: exercise
+# Community 333: sw
 
 **Members:** 1
 
 ## Nodes
 
-- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
+- **sw** (`web_sw_js`, File, degree: 0)
 

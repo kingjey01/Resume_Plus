@@ -1,17 +1,17 @@
-# Community 279: check_user_profile
+# Community 279: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
 
 **Members:** 4
 
 ## Nodes
 
-- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
-- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
+- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
 

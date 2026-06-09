@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:resume_plus_clean/models/summary.dart';
 import 'package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
@@ -120,8 +121,30 @@ class SummaryCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
+                    // Professeur (si disponible)
+                    if (summary.professorName.isNotEmpty) ...[  
+                      const SizedBox(height: 4),
+                      Row(
+                        children: [
+                          Icon(Icons.school_rounded, size: 12, color: const Color(0xFF9C27B0).withOpacity(0.8)),
+                          const SizedBox(width: 4),
+                          Flexible(
+                            child: Text(
+                              summary.professorName,
+                              style: TextStyle(
+                                color: const Color(0xFF9C27B0).withOpacity(0.8),
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                     const SizedBox(height: 8),
-                    // Prix + auteur
+                    // Prix + date
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -143,25 +166,39 @@ class SummaryCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        // Auteur
-                        Flexible(
-                          child: Row(
-                            children: [
-                              Icon(Icons.person_outline_rounded, size: 14, color: theme.colorScheme.onSurface.withOpacity(0.5)),
-                              const SizedBox(width: 3),
-                              Flexible(
-                                child: Text(
-                                  summary.authorName,
-                                  style: TextStyle(
-                                    color: theme.colorScheme.onSurface.withOpacity(0.6),
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
+                        // Date
+                        Row(
+                          children: [
+                            Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                            const SizedBox(width: 3),
+                            Text(
+                              DateFormat('dd/MM/yyyy').format(summary.createdAt),
+                              style: TextStyle(
+                                color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                fontSize: 10,
+                                fontWeight: FontWeight.w500,
                               ),
-                            ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 4),
+                    // Auteur
+                    Row(
+                      children: [
+                        Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                        const SizedBox(width: 3),
+                        Flexible(
+                          child: Text(
+                            summary.authorName,
+                            style: TextStyle(
+                              color: theme.colorScheme.onSurface.withOpacity(0.5),
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
                           ),
                         ),
                       ],

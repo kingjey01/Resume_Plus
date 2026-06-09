@@ -1,17 +1,17 @@
-# Community 286: test_services_endpoint
+# Community 286: check_user_profile
 
 **Members:** 4
 
 ## Nodes
 
-- **test_services_endpoint** (`backend_test_services_endpoint_py`, File, degree: 3)
-- **json** (`backend_test_services_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_services_endpoint_py_import_requests`, Module, degree: 1)
-- **test_services_with_auth()** (`backend_test_services_endpoint_py_test_services_with_auth`, Function, degree: 1)
+- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
+- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_requests (imports)
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_json (imports)
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_test_services_with_auth (defines)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
 

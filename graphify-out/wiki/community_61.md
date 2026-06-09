@@ -1,31 +1,31 @@
-# Community 61: login_screen
+# Community 61: create_test_user_fixed
 
 **Members:** 11
 
 ## Nodes
 
-- **login_screen** (`lib_features_auth_screens_login_screen_dart`, File, degree: 10)
-- **package:dio/dio.dart** (`lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/forgot_password_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/register_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_LoginScreenState()** (`lib_features_auth_screens_login_screen_dart_loginscreenstate`, Function, degree: 1)
+- **create_test_user_fixed** (`backend_create_test_user_fixed_py`, File, degree: 10)
+- **create_admin_user()** (`backend_create_test_user_fixed_py_create_admin_user`, Function, degree: 1)
+- **create_cp_user()** (`backend_create_test_user_fixed_py_create_cp_user`, Function, degree: 1)
+- **create_test_user()** (`backend_create_test_user_fixed_py_create_test_user`, Function, degree: 1)
+- **django** (`backend_create_test_user_fixed_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_create_test_user_fixed_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_create_test_user_fixed_py_import_os`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_create_test_user_fixed_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_create_test_user_fixed_py_import_sys`, Module, degree: 1)
+- **traceback** (`backend_create_test_user_fixed_py_import_traceback`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_create_test_user_fixed_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_loginscreenstate (defines)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_import_os (imports)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_import_sys (imports)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_import_django (imports)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_import_django_contrib_auth_models_user (imports)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_import_rest_framework_authtoken_models_token (imports)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_import_users_models_userprofile (imports)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_create_test_user (defines)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_create_admin_user (defines)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_create_cp_user (defines)
+- backend_create_test_user_fixed_py → backend_create_test_user_fixed_py_import_traceback (imports)
 

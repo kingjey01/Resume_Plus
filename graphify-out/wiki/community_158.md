@@ -1,23 +1,23 @@
-# Community 158: main
+# Community 158: recording_page
 
 **Members:** 7
 
 ## Nodes
 
-- **main** (`windows_runner_main_cpp`, File, degree: 6)
-- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
-- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
-- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
+- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
+- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
 

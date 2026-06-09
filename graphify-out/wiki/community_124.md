@@ -4,22 +4,22 @@
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

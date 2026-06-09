@@ -1,19 +1,20 @@
-# Community 250: 0005_purchase_service
+# Community 250: create_simple_audio_file()
 
 **Members:** 5
 
 ## Nodes
 
-- **0005_purchase_service** (`backend_payments_migrations_0005_purchase_service_py`, File, degree: 4)
-- **django.db.migrations** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0005_purchase_service_py_migration`, Class, degree: 1)
+- **create_simple_audio_file()** (`backend_test_simple_audio_upload_py_create_simple_audio_file`, Function, degree: 3)
+- **main()** (`backend_test_simple_audio_upload_py_main`, Function, degree: 4)
+- **test_audio_upload_direct()** (`backend_test_simple_audio_upload_py_test_audio_upload_direct`, Function, degree: 3)
+- **test_simple_endpoints()** (`backend_test_simple_audio_upload_py_test_simple_endpoints`, Function, degree: 2)
+- **test_with_different_course_ids()** (`backend_test_simple_audio_upload_py_test_with_different_course_ids`, Function, degree: 3)
 
 ## Relationships
 
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_migration (defines)
+- backend_test_simple_audio_upload_py_test_audio_upload_direct → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_test_with_different_course_ids → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_with_different_course_ids (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_audio_upload_direct (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_simple_endpoints (calls)
 

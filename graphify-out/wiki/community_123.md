@@ -1,25 +1,25 @@
-# Community 123: exercises_screen
+# Community 123: permissions
 
 **Members:** 8
 
 ## Nodes
 
-- **exercises_screen** (`lib_features_exercises_screens_exercises_screen_dart`, File, degree: 7)
-- **_ExercisesScreenState()** (`lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **permissions** (`backend_users_permissions_py`, File, degree: 4)
+- **rest_framework.permissions** (`backend_users_permissions_py_import_rest_framework_permissions`, Module, degree: 1)
+- **IsAdminOrReadOnly** (`backend_users_permissions_py_isadminorreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_isadminorreadonly_has_permission`, Method, degree: 1)
+- **IsCPOrReadOnly** (`backend_users_permissions_py_iscporreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_iscporreadonly_has_permission`, Method, degree: 1)
+- **IsOwnerOrReadOnly** (`backend_users_permissions_py_isownerorreadonly`, Class, degree: 2)
+- **.has_object_permission()** (`backend_users_permissions_py_isownerorreadonly_has_object_permission`, Method, degree: 1)
 
 ## Relationships
 
-- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
-- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart (imports)
-- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
-- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate (defines)
+- backend_users_permissions_py → backend_users_permissions_py_import_rest_framework_permissions (imports)
+- backend_users_permissions_py → backend_users_permissions_py_isownerorreadonly (defines)
+- backend_users_permissions_py_isownerorreadonly → backend_users_permissions_py_isownerorreadonly_has_object_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_iscporreadonly (defines)
+- backend_users_permissions_py_iscporreadonly → backend_users_permissions_py_iscporreadonly_has_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_isadminorreadonly (defines)
+- backend_users_permissions_py_isadminorreadonly → backend_users_permissions_py_isadminorreadonly_has_permission (defines)
 

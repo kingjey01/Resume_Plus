@@ -1,29 +1,29 @@
-# Community 70: register_screen
+# Community 70: service_card
 
 **Members:** 10
 
 ## Nodes
 
-- **register_screen** (`lib_features_auth_screens_register_screen_dart`, File, degree: 9)
-- **../../../models/filiere.dart** (`lib_features_auth_screens_register_screen_dart_import_models_filiere_dart`, Module, degree: 1)
-- **../../../models/promotion.dart** (`lib_features_auth_screens_register_screen_dart_import_models_promotion_dart`, Module, degree: 1)
-- **../../../models/universite.dart** (`lib_features_auth_screens_register_screen_dart_import_models_universite_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_register_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_register_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_register_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **../../../services/api_service.dart** (`lib_features_auth_screens_register_screen_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../../../widgets/linked_dropdowns.dart** (`lib_features_auth_screens_register_screen_dart_import_widgets_linked_dropdowns_dart`, Module, degree: 1)
-- **_RegisterScreenState()** (`lib_features_auth_screens_register_screen_dart_registerscreenstate`, Function, degree: 1)
+- **service_card** (`lib_features_subscriptions_widgets_service_card_dart`, File, degree: 9)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_universite_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_promotion_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_filiere_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_services_api_service_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_widgets_linked_dropdowns_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_registerscreenstate (defines)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
 

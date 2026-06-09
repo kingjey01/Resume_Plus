@@ -1,23 +1,23 @@
-# Community 166: universite_filiere
+# Community 166: auto_login_service
 
 **Members:** 7
 
 ## Nodes
 
-- **universite_filiere** (`lib_models_universite_filiere_dart`, File, degree: 6)
-- **filiere.dart** (`lib_models_universite_filiere_dart_import_filiere_dart`, Module, degree: 1)
-- **package:json_annotation/json_annotation.dart** (`lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
-- **universite.dart** (`lib_models_universite_filiere_dart_import_universite_dart`, Module, degree: 1)
-- **universite_filiere.g.dart** (`lib_models_universite_filiere_dart_import_universite_filiere_g_dart`, Module, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_dart_universitefilieretojson`, Function, degree: 1)
+- **auto_login_service** (`lib_services_auto_login_service_dart`, File, degree: 6)
+- **AppStartState** (`lib_services_auto_login_service_dart_appstartstate`, Enum, degree: 1)
+- **dart:math** (`lib_services_auto_login_service_dart_import_dart_math`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_auto_login_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_filiere_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_filiere_g_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilieretojson (defines)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_dart_math (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_appstartstate (defines)
 

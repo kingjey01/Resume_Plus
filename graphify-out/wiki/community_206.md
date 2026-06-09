@@ -1,21 +1,21 @@
-# Community 206: 0004_alter_abonnement_etudiant
+# Community 206: AppDelegate
 
 **Members:** 6
 
 ## Nodes
 
-- **0004_alter_abonnement_etudiant** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration`, Class, degree: 1)
+- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
+- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
+- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
+- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
+- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
 

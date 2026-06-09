@@ -1,15 +1,15 @@
-# Community 298: exercise_urls
+# Community 298: api_service copy
 
 **Members:** 3
 
 ## Nodes
 
-- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
+- **api_service copy** (`lib_services_api_service_copy_dart`, File, degree: 2)
+- **package:dio/dio.dart** (`lib_services_api_service_copy_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
-- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_dio_dio_dart (imports)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
 

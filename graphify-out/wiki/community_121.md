@@ -1,25 +1,25 @@
-# Community 121: health_check
+# Community 121: audio_test_page
 
 **Members:** 8
 
 ## Nodes
 
-- **health_check** (`backend_health_check_py`, File, degree: 7)
-- **health_check()** (`backend_health_check_py_health_check`, Function, degree: 1)
-- **django.conf.settings** (`backend_health_check_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_health_check_py_import_django_db_connection`, Module, degree: 1)
-- **django.http.JsonResponse** (`backend_health_check_py_import_django_http_jsonresponse`, Module, degree: 1)
-- **django.views.decorators.csrf.csrf_exempt** (`backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt`, Module, degree: 1)
-- **django.views.decorators.http.require_http_methods** (`backend_health_check_py_import_django_views_decorators_http_require_http_methods`, Module, degree: 1)
-- **json** (`backend_health_check_py_import_json`, Module, degree: 1)
+- **audio_test_page** (`lib_pages_audio_test_page_dart`, File, degree: 7)
+- **_AudioTestPageState()** (`lib_pages_audio_test_page_dart_audiotestpagestate`, Function, degree: 1)
+- **dart:html'** (`lib_pages_audio_test_page_dart_import_dart_html`, Module, degree: 1)
+- **dart:typed_data** (`lib_pages_audio_test_page_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/api_service.dart** (`lib_pages_audio_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../services/web_audio_recorder.dart** (`lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_health_check_py → backend_health_check_py_import_django_http_jsonresponse (imports)
-- backend_health_check_py → backend_health_check_py_import_django_views_decorators_http_require_http_methods (imports)
-- backend_health_check_py → backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt (imports)
-- backend_health_check_py → backend_health_check_py_import_django_db_connection (imports)
-- backend_health_check_py → backend_health_check_py_import_django_conf_settings (imports)
-- backend_health_check_py → backend_health_check_py_import_json (imports)
-- backend_health_check_py → backend_health_check_py_health_check (defines)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_typed_data (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_html (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_api_service_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_audiotestpagestate (defines)
 

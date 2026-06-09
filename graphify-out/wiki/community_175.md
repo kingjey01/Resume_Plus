@@ -1,28 +1,23 @@
-# Community 175: Command
+# Community 175: purchases_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **Command** (`backend_courses_management_commands_seeddata_py_command`, Class, degree: 7)
-- **.create_courses()** (`backend_courses_management_commands_seeddata_py_command_create_courses`, Method, degree: 2)
-- **.create_purchases()** (`backend_courses_management_commands_seeddata_py_command_create_purchases`, Method, degree: 2)
-- **.create_sessions()** (`backend_courses_management_commands_seeddata_py_command_create_sessions`, Method, degree: 2)
-- **.create_summaries()** (`backend_courses_management_commands_seeddata_py_command_create_summaries`, Method, degree: 2)
-- **.create_users()** (`backend_courses_management_commands_seeddata_py_command_create_users`, Method, degree: 2)
-- **.handle()** (`backend_courses_management_commands_seeddata_py_command_handle`, Method, degree: 6)
+- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 6)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_handle (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_users (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_courses (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_sessions (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_summaries (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_purchases (defines)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_summaries (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_users (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_courses (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_sessions (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_purchases (calls)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
 

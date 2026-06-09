@@ -1,21 +1,21 @@
-# Community 187: onboarding_screen
+# Community 187: summary_card
 
 **Members:** 6
 
 ## Nodes
 
-- **onboarding_screen** (`lib_features_onboarding_onboarding_screen_dart`, File, degree: 5)
-- **package:flutter/material.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_OnboardingScreenState()** (`lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate`, Function, degree: 1)
+- **summary_card** (`lib_features_home_widgets_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate (defines)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

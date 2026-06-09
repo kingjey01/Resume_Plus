@@ -1,26 +1,25 @@
-# Community 130: serializers
+# Community 130: fix_production_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **serializers** (`backend_security_serializers_py`, File, degree: 5)
-- **CreateSecurityLogSerializer** (`backend_security_serializers_py_createsecuritylogserializer`, Class, degree: 3)
-- **.create()** (`backend_security_serializers_py_createsecuritylogserializer_create`, Method, degree: 2)
-- **.get_client_ip()** (`backend_security_serializers_py_createsecuritylogserializer_get_client_ip`, Method, degree: 2)
-- **.models.SecurityLog** (`backend_security_serializers_py_import_models_securitylog`, Module, degree: 1)
-- **rest_framework.serializers** (`backend_security_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
-- **Meta** (`backend_security_serializers_py_meta`, Class, degree: 1)
-- **SecurityLogSerializer** (`backend_security_serializers_py_securitylogserializer`, Class, degree: 1)
+- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
+- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_serializers_py → backend_security_serializers_py_import_rest_framework_serializers (imports)
-- backend_security_serializers_py → backend_security_serializers_py_import_models_securitylog (imports)
-- backend_security_serializers_py → backend_security_serializers_py_securitylogserializer (defines)
-- backend_security_serializers_py → backend_security_serializers_py_meta (defines)
-- backend_security_serializers_py → backend_security_serializers_py_createsecuritylogserializer (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_create (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (defines)
-- backend_security_serializers_py_createsecuritylogserializer_create → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (calls)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
 

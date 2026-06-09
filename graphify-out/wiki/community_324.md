@@ -1,13 +1,13 @@
-# Community 324: my_application
+# Community 324: gunicorn.conf
 
 **Members:** 2
 
 ## Nodes
 
-- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
-- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
+- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
+- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
 

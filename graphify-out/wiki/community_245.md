@@ -1,19 +1,19 @@
-# Community 245: check_existing_data()
+# Community 245: fix_user_university
 
 **Members:** 5
 
 ## Nodes
 
-- **check_existing_data()** (`backend_fix_encoding_sqlite_py_check_existing_data`, Function, degree: 2)
-- **clean_invalid_utf8_data()** (`backend_fix_encoding_sqlite_py_clean_invalid_utf8_data`, Function, degree: 2)
-- **fix_sqlite_encoding()** (`backend_fix_encoding_sqlite_py_fix_sqlite_encoding`, Function, degree: 2)
-- **main()** (`backend_fix_encoding_sqlite_py_main`, Function, degree: 5)
-- **test_emoji_insertion()** (`backend_fix_encoding_sqlite_py_test_emoji_insertion`, Function, degree: 2)
+- **fix_user_university** (`backend_fix_user_university_py`, File, degree: 4)
+- **courses.models.Universite** (`backend_fix_user_university_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_fix_user_university_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_user_university_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_user_university_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_check_existing_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_fix_sqlite_encoding (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_clean_invalid_utf8_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_test_emoji_insertion (calls)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_os (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_django (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_courses_models_universite (imports)
 

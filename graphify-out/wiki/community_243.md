@@ -1,20 +1,19 @@
-# Community 243: create_test_audio_upload()
+# Community 243: MainFlutterWindow
 
 **Members:** 5
 
 ## Nodes
 
-- **create_test_audio_upload()** (`backend_test_advanced_audio_functionality_py_create_test_audio_upload`, Function, degree: 2)
-- **main()** (`backend_test_advanced_audio_functionality_py_main`, Function, degree: 5)
-- **test_audio_files_existence()** (`backend_test_advanced_audio_functionality_py_test_audio_files_existence`, Function, degree: 3)
-- **test_django_setup()** (`backend_test_advanced_audio_functionality_py_test_django_setup`, Function, degree: 3)
-- **test_local_server_endpoints()** (`backend_test_advanced_audio_functionality_py_test_local_server_endpoints`, Function, degree: 2)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
+- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
+- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py_test_audio_files_existence → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_create_test_audio_upload (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_audio_files_existence (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_local_server_endpoints (calls)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
 

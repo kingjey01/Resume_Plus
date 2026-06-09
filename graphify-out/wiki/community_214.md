@@ -1,19 +1,19 @@
-# Community 214: universite_filiere.g
+# Community 214: deepseek_service
 
 **Members:** 5
 
 ## Nodes
 
-- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
-- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
-- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
+- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
+- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
 

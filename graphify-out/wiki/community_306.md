@@ -1,15 +1,15 @@
-# Community 306: api_exception
+# Community 306: utils
 
 **Members:** 3
 
 ## Nodes
 
-- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
-- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
-- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **utils** (`windows_runner_utils_h`, File, degree: 2)
+- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
+- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
 
 ## Relationships
 
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
+- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
+- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
 

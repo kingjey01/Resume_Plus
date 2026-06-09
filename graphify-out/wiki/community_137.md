@@ -1,25 +1,25 @@
-# Community 137: test_advanced_audio_functionality
+# Community 137: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **test_advanced_audio_functionality** (`backend_test_advanced_audio_functionality_py`, File, degree: 12)
-- **create_comprehensive_test_report()** (`backend_test_advanced_audio_functionality_py_create_comprehensive_test_report`, Function, degree: 1)
-- **json** (`backend_test_advanced_audio_functionality_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_advanced_audio_functionality_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_test_advanced_audio_functionality_py_import_pathlib_path`, Module, degree: 1)
-- **requests** (`backend_test_advanced_audio_functionality_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_advanced_audio_functionality_py_import_sys`, Module, degree: 1)
-- **wave** (`backend_test_advanced_audio_functionality_py_import_wave`, Module, degree: 1)
+- **admin** (`backend_notifications_admin_py`, File, degree: 7)
+- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_notifications_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.AppNotification** (`backend_notifications_admin_py_import_models_appnotification`, Module, degree: 1)
+- **.models.UserDevice** (`backend_notifications_admin_py_import_models_userdevice`, Module, degree: 1)
+- **.models.UserNotification** (`backend_notifications_admin_py_import_models_usernotification`, Module, degree: 1)
+- **UserDeviceAdmin** (`backend_notifications_admin_py_userdeviceadmin`, Class, degree: 1)
+- **UserNotificationAdmin** (`backend_notifications_admin_py_usernotificationadmin`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_os (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_sys (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_requests (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_json (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_wave (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_pathlib_path (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_create_comprehensive_test_report (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_django_contrib_admin (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_userdevice (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_appnotification (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_usernotification (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_userdeviceadmin (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_appnotificationadmin (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_usernotificationadmin (defines)
 

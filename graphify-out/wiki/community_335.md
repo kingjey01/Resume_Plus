@@ -1,8 +1,8 @@
-# Community 335: GeneratedPluginRegistrant
+# Community 335: resource
 
 **Members:** 1
 
 ## Nodes
 
-- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
+- **resource** (`windows_runner_resource_h`, File, degree: 0)
 

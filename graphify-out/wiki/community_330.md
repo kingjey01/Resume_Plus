@@ -1,13 +1,13 @@
-# Community 330: professeur
+# Community 330: logger
 
 **Members:** 2
 
 ## Nodes
 
-- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
-- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
+- **logger** (`lib_utils_logger_dart`, File, degree: 1)
+- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
+- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
 

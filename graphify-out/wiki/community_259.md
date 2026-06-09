@@ -1,17 +1,17 @@
-# Community 259: 0003_alter_purchase_payment_method_alter_service_currency
+# Community 259: course_tile
 
 **Members:** 4
 
 ## Nodes
 
-- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
-- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
+- **course_tile** (`lib_features_home_widgets_course_tile_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/course/screens/course_summaries_screen.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

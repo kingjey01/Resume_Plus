@@ -1,20 +1,19 @@
-# Community 218: create_simple_audio_file()
+# Community 218: summary_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **create_simple_audio_file()** (`backend_test_simple_audio_upload_py_create_simple_audio_file`, Function, degree: 3)
-- **main()** (`backend_test_simple_audio_upload_py_main`, Function, degree: 4)
-- **test_audio_upload_direct()** (`backend_test_simple_audio_upload_py_test_audio_upload_direct`, Function, degree: 3)
-- **test_simple_endpoints()** (`backend_test_simple_audio_upload_py_test_simple_endpoints`, Function, degree: 2)
-- **test_with_different_course_ids()** (`backend_test_simple_audio_upload_py_test_with_different_course_ids`, Function, degree: 3)
+- **summary_provider** (`lib_features_home_providers_summary_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart'** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_simple_audio_upload_py_test_audio_upload_direct → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
-- backend_test_simple_audio_upload_py_test_with_different_course_ids → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_with_different_course_ids (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_audio_upload_direct (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_simple_endpoints (calls)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
 

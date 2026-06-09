@@ -1,21 +1,23 @@
-# Community 179: main()
+# Community 179: deepgram_service
 
-**Members:** 6
+**Members:** 7
 
 ## Nodes
 
-- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
-- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
-- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
-- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
-- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
-- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
+- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
+- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
+- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
+- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
+- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
 

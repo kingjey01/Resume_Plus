@@ -1,17 +1,17 @@
-# Community 268: web_audio_service
+# Community 268: subscription_card
 
 **Members:** 4
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
 

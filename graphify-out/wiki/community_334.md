@@ -1,8 +1,8 @@
-# Community 334: sw
+# Community 334: __init__
 
 **Members:** 1
 
 ## Nodes
 
-- **sw** (`web_sw_js`, File, degree: 0)
+- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
 

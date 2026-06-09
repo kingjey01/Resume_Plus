@@ -1,25 +1,25 @@
-# Community 141: fix_encoding_sqlite
+# Community 141: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
-- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
+- **admin** (`backend_payments_admin_py`, File, degree: 7)
+- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
+- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
+- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
+- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
+- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
 
 ## Relationships
 
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
+- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
+- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
+- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
 

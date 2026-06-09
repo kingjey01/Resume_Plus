@@ -1,25 +1,25 @@
-# Community 133: fix_production_encoding
+# Community 133: manual_entry_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
-- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
+- **manual_entry_screen** (`lib_features_upload_screens_manual_entry_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/professeur.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_ManualEntryScreenState()** (`lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate (defines)
 

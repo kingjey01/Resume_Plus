@@ -1,29 +1,29 @@
-# Community 72: create_test_courses
+# Community 72: urls
 
 **Members:** 10
 
 ## Nodes
 
-- **create_test_courses** (`backend_create_test_courses_py`, File, degree: 9)
-- **create_test_courses()** (`backend_create_test_courses_py_create_test_courses`, Function, degree: 1)
-- **courses.models.Course** (`backend_create_test_courses_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_create_test_courses_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_create_test_courses_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_create_test_courses_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_create_test_courses_py_import_django`, Module, degree: 1)
-- **django.utils.timezone** (`backend_create_test_courses_py_import_django_utils_timezone`, Module, degree: 1)
-- **os** (`backend_create_test_courses_py_import_os`, Module, degree: 1)
-- **sys** (`backend_create_test_courses_py_import_sys`, Module, degree: 1)
+- **urls** (`backend_resume_backend_urls_py`, File, degree: 9)
+- **django.conf.settings** (`backend_resume_backend_urls_py_import_django_conf_settings`, Module, degree: 1)
+- **django.conf.urls.static.static** (`backend_resume_backend_urls_py_import_django_conf_urls_static_static`, Module, degree: 1)
+- **django.contrib.admin** (`backend_resume_backend_urls_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.urls.include** (`backend_resume_backend_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_resume_backend_urls_py_import_django_urls_path`, Module, degree: 1)
+- **drf_yasg.openapi** (`backend_resume_backend_urls_py_import_drf_yasg_openapi`, Module, degree: 1)
+- **drf_yasg.views.get_schema_view** (`backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view`, Module, degree: 1)
+- **health_check** (`backend_resume_backend_urls_py_import_health_check`, Module, degree: 1)
+- **rest_framework.permissions** (`backend_resume_backend_urls_py_import_rest_framework_permissions`, Module, degree: 1)
 
 ## Relationships
 
-- backend_create_test_courses_py → backend_create_test_courses_py_import_os (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_sys (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_django (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_course (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_universite (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_filiere (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_promotion (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_django_utils_timezone (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_create_test_courses (defines)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_contrib_admin (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_path (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_include (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_settings (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_urls_static_static (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_rest_framework_permissions (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_openapi (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_health_check (imports)
 

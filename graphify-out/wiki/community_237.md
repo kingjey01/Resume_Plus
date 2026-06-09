@@ -1,19 +1,20 @@
-# Community 237: fix_user_promotion
+# Community 237: create_test_audio_upload()
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_user_promotion** (`backend_fix_user_promotion_py`, File, degree: 4)
-- **courses.models.Promotion** (`backend_fix_user_promotion_py_import_courses_models_promotion`, Module, degree: 1)
-- **django** (`backend_fix_user_promotion_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_user_promotion_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_user_promotion_py_import_os`, Module, degree: 1)
+- **create_test_audio_upload()** (`backend_test_advanced_audio_functionality_py_create_test_audio_upload`, Function, degree: 2)
+- **main()** (`backend_test_advanced_audio_functionality_py_main`, Function, degree: 5)
+- **test_audio_files_existence()** (`backend_test_advanced_audio_functionality_py_test_audio_files_existence`, Function, degree: 3)
+- **test_django_setup()** (`backend_test_advanced_audio_functionality_py_test_django_setup`, Function, degree: 3)
+- **test_local_server_endpoints()** (`backend_test_advanced_audio_functionality_py_test_local_server_endpoints`, Function, degree: 2)
 
 ## Relationships
 
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_os (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_courses_models_promotion (imports)
+- backend_test_advanced_audio_functionality_py_test_audio_files_existence → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_create_test_audio_upload (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_audio_files_existence (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_local_server_endpoints (calls)
 

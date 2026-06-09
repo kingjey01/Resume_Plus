@@ -1,36 +1,31 @@
-# Community 68: utils
+# Community 68: fcm_service
 
-**Members:** 10
+**Members:** 11
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
-- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
-- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
-- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
-- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
-- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
-- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
-- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
+- **fcm_service** (`lib_services_fcm_service_dart`, File, degree: 10)
+- **_currentToken()** (`lib_services_fcm_service_dart_currenttoken`, Function, degree: 1)
+- **_firebaseBackgroundHandler()** (`lib_services_fcm_service_dart_firebasebackgroundhandler`, Function, degree: 1)
+- **dart:io** (`lib_services_fcm_service_dart_import_dart_io`, Module, degree: 1)
+- **package:firebase_messaging/firebase_messaging.dart** (`lib_services_fcm_service_dart_import_package_firebase_messaging_firebase_messaging_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_fcm_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter_local_notifications/flutter_local_notifications.dart** (`lib_services_fcm_service_dart_import_package_flutter_local_notifications_flutter_local_notifications_dart`, Module, degree: 1)
+- **package:flutter/material.dart'** (`lib_services_fcm_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_fcm_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/notification_service.dart** (`lib_services_fcm_service_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_fcm_service_dart_instance`, Function, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_dart_io (imports)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_firebase_messaging_firebase_messaging_dart (imports)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_local_notifications_flutter_local_notifications_dart (imports)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_firebasebackgroundhandler (defines)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_instance (defines)
+- lib_services_fcm_service_dart → lib_services_fcm_service_dart_currenttoken (defines)
 

@@ -14,6 +14,7 @@ class Summary {
   final int? courseId; // ID du cours associé
   final String authorType; // 'cp' ou 'ai'
   final bool isValidated;
+  final String professorName;
 
   const Summary({
     required this.id,
@@ -31,6 +32,7 @@ class Summary {
     this.courseId,
     this.authorType = 'cp',
     this.isValidated = false,
+    this.professorName = '',
   });
 
   bool get isAiGenerated => authorType == 'ai';
@@ -47,6 +49,7 @@ class Summary {
       price: _parseDouble(json['prix']),
       isFree: json['is_free'] ?? true,
       authorName: json['author_name'] ?? 'Auteur inconnu',
+      professorName: _parseProfessorName(json),
       createdAt: _parseDateTime(json['created_at']),
       updatedAt: json['updated_at'] != null ? _parseDateTime(json['updated_at']) : null,
       isPurchased: json['is_purchased'] ?? false,
@@ -66,6 +69,17 @@ class Summary {
       }
     }
     return DateTime.now();
+  }
+
+  static String _parseProfessorName(Map<String, dynamic> json) {
+    final info = json['professeur_info'];
+    if (info is Map) {
+      final fullName = info['user_full_name'];
+      if (fullName is String && fullName.trim().isNotEmpty) return fullName.trim();
+      final username = info['user_username'];
+      if (username is String && username.trim().isNotEmpty) return username.trim();
+    }
+    return '';
   }
 
   static double _parseDouble(dynamic value) {
@@ -95,6 +109,7 @@ class Summary {
       'course': courseId,
       'author_type': authorType,
       'is_validated': isValidated,
+      'professor_name': professorName,
     };
   }
 }

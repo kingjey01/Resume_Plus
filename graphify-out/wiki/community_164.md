@@ -1,23 +1,23 @@
-# Community 164: deepgram_service
+# Community 164: main
 
 **Members:** 7
 
 ## Nodes
 
-- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
-- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
-- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
-- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
+- **main** (`windows_runner_main_cpp`, File, degree: 6)
+- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
+- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
+- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
 

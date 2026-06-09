@@ -1,15 +1,15 @@
-# Community 309: production_settings
+# Community 309: api_exception
 
 **Members:** 3
 
 ## Nodes
 
-- **production_settings** (`backend_production_settings_py`, File, degree: 2)
-- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
-- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
+- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
+- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
+- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
-- backend_production_settings_py → backend_production_settings_py_import_os (imports)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
 

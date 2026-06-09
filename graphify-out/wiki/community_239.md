@@ -1,19 +1,19 @@
-# Community 239: edit_summary_screen
+# Community 239: test_simple_page
 
 **Members:** 5
 
 ## Nodes
 
-- **edit_summary_screen** (`lib_features_validation_screens_edit_summary_screen_dart`, File, degree: 4)
-- **_EditSummaryScreenState()** (`lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
+- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
+- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate (defines)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
 

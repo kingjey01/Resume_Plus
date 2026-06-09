@@ -1,30 +1,25 @@
-# Community 139: generate_report()
+# Community 139: health_check
 
 **Members:** 8
 
 ## Nodes
 
-- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
-- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
-- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
-- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
-- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
-- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
-- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
-- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
+- **health_check** (`backend_health_check_py`, File, degree: 7)
+- **health_check()** (`backend_health_check_py_health_check`, Function, degree: 1)
+- **django.conf.settings** (`backend_health_check_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_health_check_py_import_django_db_connection`, Module, degree: 1)
+- **django.http.JsonResponse** (`backend_health_check_py_import_django_http_jsonresponse`, Module, degree: 1)
+- **django.views.decorators.csrf.csrf_exempt** (`backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt`, Module, degree: 1)
+- **django.views.decorators.http.require_http_methods** (`backend_health_check_py_import_django_views_decorators_http_require_http_methods`, Module, degree: 1)
+- **json** (`backend_health_check_py_import_json`, Module, degree: 1)
 
 ## Relationships
 
-- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
+- backend_health_check_py → backend_health_check_py_import_django_http_jsonresponse (imports)
+- backend_health_check_py → backend_health_check_py_import_django_views_decorators_http_require_http_methods (imports)
+- backend_health_check_py → backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt (imports)
+- backend_health_check_py → backend_health_check_py_import_django_db_connection (imports)
+- backend_health_check_py → backend_health_check_py_import_django_conf_settings (imports)
+- backend_health_check_py → backend_health_check_py_import_json (imports)
+- backend_health_check_py → backend_health_check_py_health_check (defines)
 

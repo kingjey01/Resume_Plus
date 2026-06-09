@@ -1,27 +1,31 @@
-# Community 102: AbonnementCreateSerializer
+# Community 102: debug_api_calls
 
 **Members:** 9
 
 ## Nodes
 
-- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
-- **AbonnementSerializer** (`backend_courses_serializers_py_abonnementserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementserializer_create`, Method, degree: 2)
-- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
-- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
-- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
-- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
-- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
+- **debug_api_calls** (`backend_debug_api_calls_py`, File, degree: 8)
+- **check_django_urls()** (`backend_debug_api_calls_py_check_django_urls`, Function, degree: 2)
+- **generate_flutter_debug_code()** (`backend_debug_api_calls_py_generate_flutter_debug_code`, Function, degree: 2)
+- **datetime** (`backend_debug_api_calls_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_debug_api_calls_py_import_json`, Module, degree: 1)
+- **requests** (`backend_debug_api_calls_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_debug_api_calls_py_main`, Function, degree: 5)
+- **simulate_flutter_calls()** (`backend_debug_api_calls_py_simulate_flutter_calls`, Function, degree: 2)
+- **test_all_possible_urls()** (`backend_debug_api_calls_py_test_all_possible_urls`, Function, degree: 2)
 
 ## Relationships
 
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
-- backend_courses_serializers_py_abonnementserializer → backend_courses_serializers_py_abonnementserializer_create (defines)
-- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
-- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
-- backend_courses_serializers_py_abonnementserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_requests (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_json (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_datetime (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_test_all_possible_urls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_simulate_flutter_calls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_check_django_urls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_generate_flutter_debug_code (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_main (defines)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_simulate_flutter_calls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_check_django_urls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_test_all_possible_urls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_generate_flutter_debug_code (calls)
 

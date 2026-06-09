@@ -1,23 +1,23 @@
-# Community 150: test_exercise_generation
+# Community 150: storage_service
 
 **Members:** 7
 
 ## Nodes
 
-- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
-- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
-- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
-- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
-- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
+- **storage_service** (`lib_services_storage_service_dart`, File, degree: 6)
+- **accessToken()** (`lib_services_storage_service_dart_accesstoken`, Function, degree: 1)
+- **deleteTokens()** (`lib_services_storage_service_dart_deletetokens`, Function, degree: 1)
+- **dart:convert** (`lib_services_storage_service_dart_import_dart_convert`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_storage_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter_secure_storage/flutter_secure_storage.dart** (`lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
+- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart (imports)
+- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_services_storage_service_dart → lib_services_storage_service_dart_import_dart_convert (imports)
+- lib_services_storage_service_dart → lib_services_storage_service_dart_accesstoken (defines)
+- lib_services_storage_service_dart → lib_services_storage_service_dart_deletetokens (defines)
 

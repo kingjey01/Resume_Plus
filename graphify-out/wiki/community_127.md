@@ -1,25 +1,25 @@
-# Community 127: account_screen
+# Community 127: check_db_services
 
 **Members:** 8
 
 ## Nodes
 
-- **account_screen** (`lib_features_account_screens_account_screen_dart`, File, degree: 7)
-- **_AccountScreenState()** (`lib_features_account_screens_account_screen_dart_accountscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/splash/screens/splash_screen.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **check_db_services** (`backend_check_db_services_py`, File, degree: 13)
+- **django** (`backend_check_db_services_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_db_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.connection** (`backend_check_db_services_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_check_db_services_py_import_os`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_check_db_services_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_check_db_services_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_check_db_services_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines)
+- backend_check_db_services_py → backend_check_db_services_py_import_os (imports)
+- backend_check_db_services_py → backend_check_db_services_py_import_sys (imports)
+- backend_check_db_services_py → backend_check_db_services_py_import_django (imports)
+- backend_check_db_services_py → backend_check_db_services_py_import_django_contrib_auth_models_user (imports)
+- backend_check_db_services_py → backend_check_db_services_py_import_rest_framework_authtoken_models_token (imports)
+- backend_check_db_services_py → backend_check_db_services_py_import_users_models_userprofile (imports)
+- backend_check_db_services_py → backend_check_db_services_py_import_django_db_connection (imports)
 

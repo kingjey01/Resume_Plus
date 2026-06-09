@@ -1,23 +1,23 @@
-# Community 146: GeneratedPluginRegistrant
+# Community 146: urls
 
 **Members:** 7
 
 ## Nodes
 
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
-- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
-- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
-- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
-- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
-- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
+- **urls** (`backend_payments_urls_py`, File, degree: 6)
+- **django.urls.path** (`backend_payments_urls_py_import_django_urls_path`, Module, degree: 1)
+- **.flexpay_integration.create_subscription_after_payment** (`backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment`, Module, degree: 1)
+- **.flexpay_integration.flexpay_callback** (`backend_payments_urls_py_import_flexpay_integration_flexpay_callback`, Module, degree: 1)
+- **.flexpay_integration.initiate_subscription_payment** (`backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment`, Module, degree: 1)
+- **.flexpay_integration.initiate_summary_purchase** (`backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase`, Module, degree: 1)
+- **..views** (`backend_payments_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
+- backend_payments_urls_py → backend_payments_urls_py_import_django_urls_path (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_views (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_flexpay_callback (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment (imports)
 

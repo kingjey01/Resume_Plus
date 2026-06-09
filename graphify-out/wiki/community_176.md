@@ -1,23 +1,23 @@
-# Community 176: middleware
+# Community 176: check_production_data()
 
 **Members:** 7
 
 ## Nodes
 
-- **middleware** (`backend_users_middleware_py`, File, degree: 4)
-- **datetime** (`backend_users_middleware_py_import_datetime`, Module, degree: 1)
-- **django.utils.deprecation.MiddlewareMixin** (`backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin`, Module, degree: 1)
-- **logging** (`backend_users_middleware_py_import_logging`, Module, degree: 1)
-- **JWTAuthenticationMiddleware** (`backend_users_middleware_py_jwtauthenticationmiddleware`, Class, degree: 3)
-- **.process_request()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_request`, Method, degree: 1)
-- **.process_response()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_response`, Method, degree: 1)
+- **check_production_data()** (`backend_fix_production_encoding_py_check_production_data`, Function, degree: 2)
+- **check_production_database()** (`backend_fix_production_encoding_py_check_production_database`, Function, degree: 2)
+- **clean_production_invalid_data()** (`backend_fix_production_encoding_py_clean_production_invalid_data`, Function, degree: 2)
+- **fix_production_encoding()** (`backend_fix_production_encoding_py_fix_production_encoding`, Function, degree: 2)
+- **main()** (`backend_fix_production_encoding_py_main`, Function, degree: 7)
+- **set_production_connection_encoding()** (`backend_fix_production_encoding_py_set_production_connection_encoding`, Function, degree: 2)
+- **test_production_emoji_insertion()** (`backend_fix_production_encoding_py_test_production_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- backend_users_middleware_py → backend_users_middleware_py_import_logging (imports)
-- backend_users_middleware_py → backend_users_middleware_py_import_datetime (imports)
-- backend_users_middleware_py → backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin (imports)
-- backend_users_middleware_py → backend_users_middleware_py_jwtauthenticationmiddleware (defines)
-- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_request (defines)
-- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_response (defines)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_test_production_emoji_insertion (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_clean_production_invalid_data (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_database (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_set_production_connection_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_fix_production_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_data (calls)
 

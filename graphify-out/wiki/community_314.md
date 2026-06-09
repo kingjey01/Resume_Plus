@@ -1,15 +1,15 @@
-# Community 314: apps
+# Community 314: about_screen
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_notifications_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_notifications_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **NotificationsConfig** (`backend_notifications_apps_py_notificationsconfig`, Class, degree: 1)
+- **about_screen** (`lib_features_settings_screens_about_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_apps_py → backend_notifications_apps_py_import_django_apps_appconfig (imports)
-- backend_notifications_apps_py → backend_notifications_apps_py_notificationsconfig (defines)
+- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

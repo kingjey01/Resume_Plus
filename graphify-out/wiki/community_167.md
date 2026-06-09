@@ -1,23 +1,23 @@
-# Community 167: urls
+# Community 167: test_simple_audio_upload
 
 **Members:** 7
 
 ## Nodes
 
-- **urls** (`backend_payments_urls_py`, File, degree: 6)
-- **django.urls.path** (`backend_payments_urls_py_import_django_urls_path`, Module, degree: 1)
-- **.flexpay_integration.create_subscription_after_payment** (`backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment`, Module, degree: 1)
-- **.flexpay_integration.flexpay_callback** (`backend_payments_urls_py_import_flexpay_integration_flexpay_callback`, Module, degree: 1)
-- **.flexpay_integration.initiate_subscription_payment** (`backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment`, Module, degree: 1)
-- **.flexpay_integration.initiate_summary_purchase** (`backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase`, Module, degree: 1)
-- **..views** (`backend_payments_urls_py_import_views`, Module, degree: 1)
+- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
+- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
+- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
+- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
+- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_urls_py → backend_payments_urls_py_import_django_urls_path (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_views (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_flexpay_callback (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
 

@@ -1,13 +1,13 @@
-# Community 318: logger
+# Community 318: generated_plugin_registrant
 
 **Members:** 2
 
 ## Nodes
 
-- **logger** (`lib_utils_logger_dart`, File, degree: 1)
-- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
 
 ## Relationships
 
-- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
+- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
 

@@ -1,19 +1,19 @@
-# Community 222: debug_access
+# Community 222: UniversiteFiliereTest
 
 **Members:** 5
 
 ## Nodes
 
-- **debug_access** (`backend_debug_access_py`, File, degree: 4)
-- **courses.models.Course** (`backend_debug_access_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_debug_access_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_debug_access_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_debug_access_py_import_os`, Module, degree: 1)
+- **UniversiteFiliereTest** (`backend_courses_tests_py_universitefilieretest`, Class, degree: 5)
+- **.setUp()** (`backend_courses_tests_py_universitefilieretest_setup`, Method, degree: 1)
+- **.setUpTestData()** (`backend_courses_tests_py_universitefilieretest_setuptestdata`, Method, degree: 1)
+- **.test_relation_universite_filiere()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere`, Method, degree: 1)
+- **.test_relation_universite_filiere_creation()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation`, Method, degree: 1)
 
 ## Relationships
 
-- backend_debug_access_py → backend_debug_access_py_import_os (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django_contrib_auth_models_user (imports)
-- backend_debug_access_py → backend_debug_access_py_import_courses_models_course (imports)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setup (defines)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation (defines)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setuptestdata (defines)
+- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere (defines)
 

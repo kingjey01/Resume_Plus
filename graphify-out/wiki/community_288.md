@@ -1,17 +1,15 @@
-# Community 288: apps
+# Community 288: file_helper_stub
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_payments_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
-- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
+- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
+- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
+- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
-- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
-- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
 

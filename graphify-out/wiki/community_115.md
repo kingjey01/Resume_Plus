@@ -1,25 +1,28 @@
-# Community 115: check_db_services
+# Community 115: AuthAPITest
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_services** (`backend_check_db_services_py`, File, degree: 13)
-- **django** (`backend_check_db_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_db_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_services_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_services_py_import_os`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_check_db_services_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_check_db_services_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_check_db_services_py_import_users_models_userprofile`, Module, degree: 1)
+- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
+- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
+- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
+- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
+- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
+- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
+- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
+- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
 
 ## Relationships
 
-- backend_check_db_services_py → backend_check_db_services_py_import_os (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_sys (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_rest_framework_authtoken_models_token (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_users_models_userprofile (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_db_connection (imports)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
+- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
 

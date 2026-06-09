@@ -1,19 +1,19 @@
-# Community 238: summary_provider
+# Community 238: AppDelegate
 
 **Members:** 5
 
 ## Nodes
 
-- **summary_provider** (`lib_features_home_providers_summary_provider_dart`, File, degree: 4)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart'** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **AppDelegate** (`ios_runner_appdelegate_swift`, File, degree: 4)
+- **application** (`ios_runner_appdelegate_swift_application`, Function, degree: 1)
+- **FirebaseCore** (`ios_runner_appdelegate_swift_import_firebasecore`, Module, degree: 1)
+- **Flutter** (`ios_runner_appdelegate_swift_import_flutter`, Module, degree: 1)
+- **UIKit** (`ios_runner_appdelegate_swift_import_uikit`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_application (defines)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_flutter (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_uikit (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_firebasecore (imports)
 

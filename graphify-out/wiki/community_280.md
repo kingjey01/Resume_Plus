@@ -1,17 +1,17 @@
-# Community 280: theme_provider
+# Community 280: api_error_view
 
 **Members:** 4
 
 ## Nodes
 
-- **theme_provider** (`lib_features_settings_providers_theme_provider_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **api_error_view** (`lib_widgets_api_error_view_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_api_error_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

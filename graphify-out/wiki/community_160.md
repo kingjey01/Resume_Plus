@@ -1,23 +1,23 @@
-# Community 160: setup_exercise_service
+# Community 160: settings_development
 
 **Members:** 7
 
 ## Nodes
 
-- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
-- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
-- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
-- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
-- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
-- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
+- **settings_development** (`backend_settings_development_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_development_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_development_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_development_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_development_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_development_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_development_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
+- backend_settings_development_py → backend_settings_development_py_import_pathlib_path (imports)
+- backend_settings_development_py → backend_settings_development_py_import_datetime_timedelta (imports)
+- backend_settings_development_py → backend_settings_development_py_import_decouple_config (imports)
+- backend_settings_development_py → backend_settings_development_py_import_decouple_csv (imports)
+- backend_settings_development_py → backend_settings_development_py_import_os (imports)
+- backend_settings_development_py → backend_settings_development_py_import_pymysql (imports)
 

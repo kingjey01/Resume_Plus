@@ -1,23 +1,23 @@
-# Community 165: test_simple_audio_upload
+# Community 165: error_handler_mixin
 
 **Members:** 7
 
 ## Nodes
 
-- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
-- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
-- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
-- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
-- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
+- **error_handler_mixin** (`lib_mixins_error_handler_mixin_dart`, File, degree: 6)
+- **ErrorHandlerMixin** (`lib_mixins_error_handler_mixin_dart_errorhandlermixin`, Class, degree: 1)
+- **package:dio/dio.dart** (`lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/utils/logger.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_errorhandlermixin (defines)
 

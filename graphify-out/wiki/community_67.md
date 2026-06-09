@@ -1,29 +1,34 @@
-# Community 67: test_notification_logic
+# Community 67: test_file_permissions
 
-**Members:** 10
+**Members:** 11
 
 ## Nodes
 
-- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
-- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
-- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
-- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
-- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
+- **test_file_permissions** (`backend_test_file_permissions_py`, File, degree: 10)
+- **check_wsgi_user()** (`backend_test_file_permissions_py_check_wsgi_user`, Function, degree: 2)
+- **django** (`backend_test_file_permissions_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_test_file_permissions_py_import_django_conf_settings`, Module, degree: 1)
+- **django.core.files.base.ContentFile** (`backend_test_file_permissions_py_import_django_core_files_base_contentfile`, Module, degree: 1)
+- **django.core.files.storage.default_storage** (`backend_test_file_permissions_py_import_django_core_files_storage_default_storage`, Module, degree: 1)
+- **os** (`backend_test_file_permissions_py_import_os`, Module, degree: 1)
+- **sys** (`backend_test_file_permissions_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_test_file_permissions_py_main`, Function, degree: 4)
+- **test_django_file_upload()** (`backend_test_file_permissions_py_test_django_file_upload`, Function, degree: 2)
+- **test_media_permissions()** (`backend_test_file_permissions_py_test_media_permissions`, Function, degree: 2)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_os (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_sys (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_conf_settings (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_base_contentfile (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_storage_default_storage (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_test_media_permissions (defines)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_test_django_file_upload (defines)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_check_wsgi_user (defines)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_main (defines)
+- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_django_file_upload (calls)
+- backend_test_file_permissions_py_main → backend_test_file_permissions_py_check_wsgi_user (calls)
+- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_media_permissions (calls)
 

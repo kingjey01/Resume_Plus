@@ -1,15 +1,15 @@
-# Community 305: test_local_server
+# Community 305: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
-- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
-- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
+- **apps** (`backend_security_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
-- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
+- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
+- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
 

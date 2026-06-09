@@ -1,25 +1,25 @@
-# Community 116: phone_login_screen
+# Community 116: check_db_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **phone_login_screen** (`lib_features_auth_screens_phone_login_screen_dart`, File, degree: 7)
-- **package:dio/dio.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter/services.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/otp_verification_screen.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PhoneLoginScreenState()** (`lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate`, Function, degree: 1)
+- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
+- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
+- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
+- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
+- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
+- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
 

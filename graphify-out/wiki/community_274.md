@@ -1,17 +1,17 @@
-# Community 274: secure_screen_wrapper
+# Community 274: apps
 
 **Members:** 4
 
 ## Nodes
 
-- **secure_screen_wrapper** (`lib_widgets_secure_screen_wrapper_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/screen_security_service.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart`, Module, degree: 1)
-- **_SecureScreenWrapperState()** (`lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate`, Function, degree: 1)
+- **apps** (`backend_payments_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
+- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
 
 ## Relationships
 
-- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart (imports)
-- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate (defines)
+- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
+- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
+- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
 

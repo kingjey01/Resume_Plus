@@ -1,23 +1,23 @@
-# Community 163: recording_page
+# Community 163: check_cors_configuration()
 
 **Members:** 7
 
 ## Nodes
 
-- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
-- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
-- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
+- **check_cors_configuration()** (`backend_fix_auth_issues_py_check_cors_configuration`, Function, degree: 2)
+- **config()** (`backend_fix_auth_issues_py_config`, Function, degree: 2)
+- **create_missing_tokens()** (`backend_fix_auth_issues_py_create_missing_tokens`, Function, degree: 2)
+- **fix_test_users()** (`backend_fix_auth_issues_py_fix_test_users`, Function, degree: 2)
+- **generate_flutter_auth_config()** (`backend_fix_auth_issues_py_generate_flutter_auth_config`, Function, degree: 2)
+- **main()** (`backend_fix_auth_issues_py_main`, Function, degree: 7)
+- **test_tokens_validity()** (`backend_fix_auth_issues_py_test_tokens_validity`, Function, degree: 2)
 
 ## Relationships
 
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_check_cors_configuration (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_generate_flutter_auth_config (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_create_missing_tokens (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_fix_test_users (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_config (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_test_tokens_validity (calls)
 

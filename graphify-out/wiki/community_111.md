@@ -1,27 +1,27 @@
-# Community 111: profile_completion_screen
+# Community 111: debug_auth_headers
 
 **Members:** 9
 
 ## Nodes
 
-- **profile_completion_screen** (`lib_features_auth_screens_profile_completion_screen_dart`, File, degree: 8)
-- **package:dio/dio.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_ProfileCompletionScreenState()** (`lib_features_auth_screens_profile_completion_screen_dart_profilecompletionscreenstate`, Function, degree: 1)
+- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
+- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
+- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
+- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
+- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
+- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
+- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_profilecompletionscreenstate (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
 

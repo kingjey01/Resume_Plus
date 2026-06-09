@@ -1,15 +1,15 @@
-# Community 311: test_seed_creation
+# Community 311: wsgi
 
 **Members:** 3
 
 ## Nodes
 
-- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
-- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
-- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
+- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
+- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
+- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
-- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
 

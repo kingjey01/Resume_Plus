@@ -1,17 +1,17 @@
-# Community 278: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
+# Community 278: create_exercise_service
 
 **Members:** 4
 
 ## Nodes
 
-- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
+- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
+- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
+- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
+- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
 

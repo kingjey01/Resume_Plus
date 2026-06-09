@@ -1,29 +1,29 @@
-# Community 69: fix_migration
+# Community 69: test_url_routing
 
 **Members:** 10
 
 ## Nodes
 
-- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
-- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
-- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
-- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
-- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
+- **test_url_routing** (`backend_test_url_routing_py`, File, degree: 9)
+- **django** (`backend_test_url_routing_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_test_url_routing_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.Client** (`backend_test_url_routing_py_import_django_test_client`, Module, degree: 1)
+- **django.urls.resolve** (`backend_test_url_routing_py_import_django_urls_resolve`, Module, degree: 1)
+- **django.urls.reverse** (`backend_test_url_routing_py_import_django_urls_reverse`, Module, degree: 1)
+- **os** (`backend_test_url_routing_py_import_os`, Module, degree: 1)
+- **rest_framework_simplejwt.tokens.RefreshToken** (`backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken`, Module, degree: 1)
+- **sys** (`backend_test_url_routing_py_import_sys`, Module, degree: 1)
+- **test_url_routing()** (`backend_test_url_routing_py_test_url_routing`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
-- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
-- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_os (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_sys (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_reverse (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_resolve (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_test_client (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_contrib_auth_models_user (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_test_url_routing (defines)
 

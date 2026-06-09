@@ -1,35 +1,35 @@
-# Community 47: ExerciseAdmin
+# Community 47: mobile_audio_recorder
 
 **Members:** 13
 
 ## Nodes
 
-- **ExerciseAdmin** (`backend_courses_admin_py_exerciseadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_exerciseadmin_get_queryset`, Method, degree: 2)
-- **ExerciseQuestionAdmin** (`backend_courses_admin_py_exercisequestionadmin`, Class, degree: 3)
-- **.get_queryset()** (`backend_courses_admin_py_exercisequestionadmin_get_queryset`, Method, degree: 2)
-- **.question_text_short()** (`backend_courses_admin_py_exercisequestionadmin_question_text_short`, Method, degree: 1)
-- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
-- **ProfesseurFilieresAdmin** (`backend_courses_admin_py_professeurfilieresadmin`, Class, degree: 5)
-- **.get_queryset()** (`backend_courses_admin_py_professeurfilieresadmin_get_queryset`, Method, degree: 2)
-- **.has_add_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_add_permission`, Method, degree: 1)
-- **.has_change_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_change_permission`, Method, degree: 1)
-- **.has_delete_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_delete_permission`, Method, degree: 1)
-- **SummaryAdmin** (`backend_courses_admin_py_summaryadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_summaryadmin_get_queryset`, Method, degree: 2)
+- **mobile_audio_recorder** (`lib_services_mobile_audio_recorder_dart`, File, degree: 12)
+- **_currentPath()** (`lib_services_mobile_audio_recorder_dart_currentpath`, Function, degree: 1)
+- **dart:async** (`lib_services_mobile_audio_recorder_dart_import_dart_async`, Module, degree: 1)
+- **dart:io** (`lib_services_mobile_audio_recorder_dart_import_dart_io`, Module, degree: 1)
+- **dart:typed_data** (`lib_services_mobile_audio_recorder_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_mobile_audio_recorder_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:path_provider/path_provider.dart** (`lib_services_mobile_audio_recorder_dart_import_package_path_provider_path_provider_dart`, Module, degree: 1)
+- **package:permission_handler/permission_handler.dart** (`lib_services_mobile_audio_recorder_dart_import_package_permission_handler_permission_handler_dart`, Module, degree: 1)
+- **package:record/record.dart** (`lib_services_mobile_audio_recorder_dart_import_package_record_record_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_mobile_audio_recorder_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_mobile_audio_recorder_dart_ispaused`, Function, degree: 1)
+- **_isRecording()** (`lib_services_mobile_audio_recorder_dart_isrecording`, Function, degree: 1)
+- **_recordingStartTime()** (`lib_services_mobile_audio_recorder_dart_recordingstarttime`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_admin_py_summaryadmin → backend_courses_admin_py_summaryadmin_get_queryset (defines)
-- backend_courses_admin_py_exerciseadmin → backend_courses_admin_py_exerciseadmin_get_queryset (defines)
-- backend_courses_admin_py_exercisequestionadmin → backend_courses_admin_py_exercisequestionadmin_question_text_short (defines)
-- backend_courses_admin_py_exercisequestionadmin → backend_courses_admin_py_exercisequestionadmin_get_queryset (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_add_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_change_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_delete_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_get_queryset (defines)
-- backend_courses_admin_py_summaryadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exerciseadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exercisequestionadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_professeurfilieresadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_async (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_typed_data (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_record_record_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_permission_handler_permission_handler_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_path_provider_path_provider_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_io (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_instance (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_currentpath (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_isrecording (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_ispaused (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_recordingstarttime (defines)
 

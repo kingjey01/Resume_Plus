@@ -1,19 +1,20 @@
-# Community 227: deepseek_service
+# Community 227: test_correct_endpoints
 
 **Members:** 5
 
 ## Nodes
 
-- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
-- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
+- **test_correct_endpoints** (`backend_test_correct_endpoints_py`, File, degree: 4)
+- **json** (`backend_test_correct_endpoints_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_correct_endpoints_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_correct_endpoints_py_main`, Function, degree: 2)
+- **test_endpoint()** (`backend_test_correct_endpoints_py_test_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_requests (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_json (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_test_endpoint (defines)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_main (defines)
+- backend_test_correct_endpoints_py_main → backend_test_correct_endpoints_py_test_endpoint (calls)
 

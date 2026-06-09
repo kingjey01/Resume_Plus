@@ -1,25 +1,25 @@
-# Community 120: quick_test
+# Community 120: migrate_courses_fk
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_test** (`backend_quick_test_py`, File, degree: 7)
-- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
-- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
-- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
-- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
-- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
-- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
-- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
+- **migrate_courses_fk** (`backend_courses_management_commands_migrate_courses_fk_py`, File, degree: 6)
+- **Command** (`backend_courses_management_commands_migrate_courses_fk_py_command`, Class, degree: 2)
+- **.handle()** (`backend_courses_management_commands_migrate_courses_fk_py_command_handle`, Method, degree: 1)
+- **courses.models.Course** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite`, Module, degree: 1)
+- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand`, Module, degree: 1)
 
 ## Relationships
 
-- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
-- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
-- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
-- backend_quick_test_py → backend_quick_test_py_import_os (imports)
-- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
-- backend_quick_test_py → backend_quick_test_py_import_time (imports)
-- backend_quick_test_py → backend_quick_test_py_start_server (defines)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_command (defines)
+- backend_courses_management_commands_migrate_courses_fk_py_command → backend_courses_management_commands_migrate_courses_fk_py_command_handle (defines)
 

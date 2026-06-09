@@ -1,8 +1,8 @@
-# Community 340: universite
+# Community 340: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **universite** (`lib_models_universite_dart`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_h`, File, degree: 0)
 

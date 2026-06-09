@@ -1,15 +1,15 @@
-# Community 302: main
+# Community 302: test_seed_creation
 
 **Members:** 3
 
 ## Nodes
 
-- **main** (`linux_runner_main_cc`, File, degree: 2)
-- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
-- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
+- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
+- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
+- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
-- linux_runner_main_cc → linux_runner_main_cc_main (defines)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
 
