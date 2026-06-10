@@ -1,33 +1,29 @@
-# Community 74: test_registration
+# Community 74: seeddata
 
 **Members:** 10
 
 ## Nodes
 
-- **test_registration** (`backend_test_registration_py`, File, degree: 9)
-- **generate_random_user()** (`backend_test_registration_py_generate_random_user`, Function, degree: 2)
-- **json** (`backend_test_registration_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_registration_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_registration_py_import_requests`, Module, degree: 1)
-- **string** (`backend_test_registration_py_import_string`, Module, degree: 1)
-- **main()** (`backend_test_registration_py_main`, Function, degree: 4)
-- **test_api_with_jwt_token()** (`backend_test_registration_py_test_api_with_jwt_token`, Function, degree: 2)
-- **test_login_with_new_user()** (`backend_test_registration_py_test_login_with_new_user`, Function, degree: 2)
-- **test_registration()** (`backend_test_registration_py_test_registration`, Function, degree: 3)
+- **seeddata** (`backend_courses_management_commands_seeddata_py`, File, degree: 10)
+- **courses.models.Course** (`backend_courses_management_commands_seeddata_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Session** (`backend_courses_management_commands_seeddata_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_courses_management_commands_seeddata_py_import_courses_models_summary`, Module, degree: 1)
+- **datetime.timedelta** (`backend_courses_management_commands_seeddata_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand`, Module, degree: 1)
+- **payments.models.Purchase** (`backend_courses_management_commands_seeddata_py_import_payments_models_purchase`, Module, degree: 1)
+- **random** (`backend_courses_management_commands_seeddata_py_import_random`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_courses_management_commands_seeddata_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_registration_py → backend_test_registration_py_import_requests (imports)
-- backend_test_registration_py → backend_test_registration_py_import_json (imports)
-- backend_test_registration_py → backend_test_registration_py_import_random (imports)
-- backend_test_registration_py → backend_test_registration_py_import_string (imports)
-- backend_test_registration_py → backend_test_registration_py_generate_random_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_registration (defines)
-- backend_test_registration_py → backend_test_registration_py_test_login_with_new_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_api_with_jwt_token (defines)
-- backend_test_registration_py → backend_test_registration_py_main (defines)
-- backend_test_registration_py_test_registration → backend_test_registration_py_generate_random_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_login_with_new_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_registration (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_api_with_jwt_token (calls)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_users_models_userprofile (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_course (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_session (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_summary (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_payments_models_purchase (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_datetime_timedelta (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_random (imports)
 

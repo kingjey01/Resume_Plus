@@ -1,23 +1,23 @@
-# Community 163: recording_page
+# Community 163: GeneratedPluginRegistrant
 
 **Members:** 7
 
 ## Nodes
 
-- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
-- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
-- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
+- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
+- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
+- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
+- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
+- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
 

@@ -1,36 +1,29 @@
-# Community 73: test_mobile_simulation
+# Community 73: test_notification_logic
 
 **Members:** 10
 
 ## Nodes
 
-- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
-- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
-- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
-- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
-- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
-- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
-- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
-- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
-- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
+- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
+- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
+- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
+- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
+- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
-- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
 

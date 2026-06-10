@@ -1,13 +1,13 @@
-# Community 328: gunicorn.conf
+# Community 328: badge_icon
 
 **Members:** 2
 
 ## Nodes
 
-- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
-- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
+- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
+- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
 

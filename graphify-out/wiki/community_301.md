@@ -1,15 +1,15 @@
-# Community 301: wsgi
+# Community 301: api_service copy
 
 **Members:** 3
 
 ## Nodes
 
-- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
-- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
-- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
+- **api_service copy** (`lib_services_api_service_copy_dart`, File, degree: 2)
+- **package:dio/dio.dart** (`lib_services_api_service_copy_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_dio_dio_dart (imports)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
 

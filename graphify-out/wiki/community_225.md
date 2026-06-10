@@ -1,19 +1,19 @@
-# Community 225: 0004_alter_purchase_summary
+# Community 225: AbonnementListCreateView
 
 **Members:** 5
 
 ## Nodes
 
-- **0004_alter_purchase_summary** (`backend_payments_migrations_0004_alter_purchase_summary_py`, File, degree: 4)
-- **django.db.migrations** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0004_alter_purchase_summary_py_migration`, Class, degree: 1)
+- **AbonnementListCreateView** (`backend_payments_views_py_abonnementlistcreateview`, Class, degree: 4)
+- **.get_queryset()** (`backend_payments_views_py_abonnementlistcreateview_get_queryset`, Method, degree: 1)
+- **.list()** (`backend_payments_views_py_abonnementlistcreateview_list`, Method, degree: 2)
+- **.perform_create()** (`backend_payments_views_py_abonnementlistcreateview_perform_create`, Method, degree: 1)
+- **initiate_subscription_payment_view()** (`backend_payments_views_py_initiate_subscription_payment_view`, Function, degree: 2)
 
 ## Relationships
 
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_migration (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_get_queryset (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_perform_create (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_list (defines)
+- backend_payments_views_py_initiate_subscription_payment_view → backend_payments_views_py_abonnementlistcreateview_list (calls)
 

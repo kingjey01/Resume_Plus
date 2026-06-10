@@ -1,25 +1,25 @@
-# Community 127: account_screen
+# Community 127: quick_test
 
 **Members:** 8
 
 ## Nodes
 
-- **account_screen** (`lib_features_account_screens_account_screen_dart`, File, degree: 7)
-- **_AccountScreenState()** (`lib_features_account_screens_account_screen_dart_accountscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/splash/screens/splash_screen.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **quick_test** (`backend_quick_test_py`, File, degree: 7)
+- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
+- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
+- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
+- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
+- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
+- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
+- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines)
+- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
+- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
+- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
+- backend_quick_test_py → backend_quick_test_py_import_os (imports)
+- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
+- backend_quick_test_py → backend_quick_test_py_import_time (imports)
+- backend_quick_test_py → backend_quick_test_py_start_server (defines)
 

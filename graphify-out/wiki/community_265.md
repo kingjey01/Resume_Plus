@@ -1,17 +1,17 @@
-# Community 265: 0005_userprofile_profile_picture
+# Community 265: simple_login_page
 
 **Members:** 4
 
 ## Nodes
 
-- **0005_userprofile_profile_picture** (`backend_users_migrations_0005_userprofile_profile_picture_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0005_userprofile_profile_picture_py_migration`, Class, degree: 1)
+- **simple_login_page** (`lib_pages_simple_login_page_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_pages_simple_login_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
+- **_SimpleLoginPageState()** (`lib_pages_simple_login_page_dart_simpleloginpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations (imports)
-- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models (imports)
-- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_migration (defines)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_simpleloginpagestate (defines)
 

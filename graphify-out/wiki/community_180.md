@@ -1,21 +1,21 @@
-# Community 180: test_audio_functionality
+# Community 180: purchased_summary_card
 
 **Members:** 6
 
 ## Nodes
 
-- **test_audio_functionality** (`backend_test_audio_functionality_py`, File, degree: 5)
-- **json** (`backend_test_audio_functionality_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_audio_functionality_py_import_os`, Module, degree: 1)
-- **requests** (`backend_test_audio_functionality_py_import_requests`, Module, degree: 1)
-- **test_audio_endpoints()** (`backend_test_audio_functionality_py_test_audio_endpoints`, Function, degree: 1)
-- **test_database_content()** (`backend_test_audio_functionality_py_test_database_content`, Function, degree: 1)
+- **purchased_summary_card** (`lib_features_summaries_widgets_purchased_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/purchase.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_audio_functionality_py → backend_test_audio_functionality_py_import_requests (imports)
-- backend_test_audio_functionality_py → backend_test_audio_functionality_py_import_json (imports)
-- backend_test_audio_functionality_py → backend_test_audio_functionality_py_import_os (imports)
-- backend_test_audio_functionality_py → backend_test_audio_functionality_py_test_audio_endpoints (defines)
-- backend_test_audio_functionality_py → backend_test_audio_functionality_py_test_database_content (defines)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

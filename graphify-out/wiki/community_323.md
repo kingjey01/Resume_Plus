@@ -1,13 +1,13 @@
-# Community 323: api_service_debug
+# Community 323: abonnement
 
 **Members:** 2
 
 ## Nodes
 
-- **api_service_debug** (`lib_services_api_service_debug_dart`, File, degree: 1)
-- **package:dio/dio.dart** (`lib_services_api_service_debug_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **abonnement** (`lib_models_abonnement_dart`, File, degree: 1)
+- **id()** (`lib_models_abonnement_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_debug_dart → lib_services_api_service_debug_dart_import_package_dio_dio_dart (imports)
+- lib_models_abonnement_dart → lib_models_abonnement_dart_id (defines)
 

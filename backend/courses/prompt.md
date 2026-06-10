@@ -1317,12 +1317,14 @@ Avant toute modification, explique la cause exacte des bugs détectés. Ensuite 
 - lorsque qu'un utilisateur s'abonne la notification est envoyer à tout le monde, probleme grave: * les notifiation sur un abonnement ou un achat resumé doit etre fermement individuel, uniquement l'utilisateur effectuant l'opération qui doit etre informer
 OBJECTIF
 
-Analyser les modèles existants et modifier uniquement les relations qui imposent actuellement des affectations une par une, afin de permettre des affectations en masse tout en conservant la cohérence du système, les permissions, les validations et la logique métier existante.
+Analyser les modèles existants et modifier uniquement les relations qui imposent actuellement des affectations une par une, afin de permettre des affectations en masse côté administration, tout en conservant la cohérence du système, les permissions, les validations et la logique métier existante.
+
 
 RÈGLES IMPORTANTES
 
 * Ne rien casser dans le système actuel.
 * Conserver les contrôles d'accès et permissions.
+
 * Conserver les validations existantes.
 * Adapter les formulaires, API, serializers, vues et interfaces concernées.
 * Mettre à jour les tests si nécessaire.
@@ -1361,9 +1363,9 @@ Cela oblige à créer énormément d'associations une par une.
 
 Modification souhaitée :
 
-Une filière peut appartenir à une ou plusieurs promotions.
+Une filière peut contenir  une ou plusieurs promotions.
 
-Une promotion peut contenir une ou plusieurs filières.
+Une promotion peut a partenir à une ou plusieurs filières.
 
 Relation souhaitée :
 
@@ -1392,7 +1394,6 @@ Modification souhaitée :
 
 Une université peut contenir une ou plusieurs filières.
 
-Une filière peut être associée à une ou plusieurs universités si la logique métier le permet.
 
 Relation souhaitée :
 
@@ -1473,7 +1474,7 @@ ManyToMany
 
 Problème actuel :
 
-Une notification est destinée à un seul utilisateur.
+Une notification est destinée à un seul utilisateur coté  administration.
 
 Modification souhaitée :
 
@@ -1488,63 +1489,14 @@ ManyToMany
 
 Objectif :
 
-Permettre l'envoi de notifications groupées.
+Permettre l'envoi de notifications groupées a partir de l'administration.
 
 ---
 
-8. INTERFACES UTILISATEUR
+
 
 ---
 
-Mettre à jour les écrans concernés :
-
-* Création Université
-* Création Filière
-* Création Promotion
-* Création Notification
-* Modification Notification
-
-Utiliser des sélecteurs multiples.
-
-Exemples :
-
-□ Université A
-□ Université B
-□ Université C
-
-□ Filière Informatique
-□ Filière Réseau
-□ Filière Gestion
-
-□ Promotion L1
-□ Promotion L2
-□ Promotion L3
-
----
-
-9. API ET SERIALIZERS
-
----
-
-Les endpoints doivent accepter :
-
-Ancien format :
-
-university_id
-
-Nouveau format :
-
-university_ids
-
-Exemple :
-
-{
-"university_ids": [1, 2, 3],
-"filiere_ids": [5, 8, 10],
-"promotion_ids": [2, 4]
-}
-
-Même logique pour les utilisateurs.
 
 ---
 
@@ -1578,6 +1530,9 @@ Vérifier :
 * Performance des requêtes
 
 ---
+COURS - PROMOTION/FILIRER/UNIVERSITE
+permetre qu'un cours puis appartenir à une ou plusieur université,filiere,promotion 
+objectif : permetre la selection et l'appartenance multiple coté administrateur en fin de facilité la création de cours et évité les repétions inutilise pouvant surcharger la base de données
 
 ## RÉSULTAT ATTENDU
 
@@ -1589,5 +1544,6 @@ Le système doit fonctionner exactement comme aujourd'hui mais avec la possibili
 * un ou plusieurs utilisateurs
 
 afin de faciliter les affectations et les notifications en masse.
+
 - dans résumé achaté et historique de paement:
 * le resumé chargé dans ces onglet doit venir de la base de donéé , et affcihé les donnée de l'utilisateur connecté et non d'afficher tout du cache sans vérifié l'utilisateur connecté 

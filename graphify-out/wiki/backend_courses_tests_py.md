@@ -20,7 +20,6 @@
 - backend_courses_tests_py → backend_courses_tests_py_import_models_filiere (imports, Extracted)
 - backend_courses_tests_py → backend_courses_tests_py_import_models_promotion (imports, Extracted)
 - backend_courses_tests_py → backend_courses_tests_py_import_models_universitefiliere (imports, Extracted)
-- backend_courses_tests_py → backend_courses_tests_py_import_models_filierepromotion (imports, Extracted)
 - backend_courses_tests_py → backend_courses_tests_py_coursemodeltest (defines, Extracted)
 - backend_courses_tests_py → backend_courses_tests_py_summaryapitest (defines, Extracted)
 - backend_courses_tests_py → backend_courses_tests_py_universitefilieretest (defines, Extracted)

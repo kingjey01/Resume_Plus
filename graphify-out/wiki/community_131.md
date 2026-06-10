@@ -1,25 +1,25 @@
-# Community 131: audio_test_page
+# Community 131: fix_encoding_sqlite
 
 **Members:** 8
 
 ## Nodes
 
-- **audio_test_page** (`lib_pages_audio_test_page_dart`, File, degree: 7)
-- **_AudioTestPageState()** (`lib_pages_audio_test_page_dart_audiotestpagestate`, Function, degree: 1)
-- **dart:html'** (`lib_pages_audio_test_page_dart_import_dart_html`, Module, degree: 1)
-- **dart:typed_data** (`lib_pages_audio_test_page_dart_import_dart_typed_data`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/api_service.dart** (`lib_pages_audio_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../services/web_audio_recorder.dart** (`lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart`, Module, degree: 1)
+- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
+- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_typed_data (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_html (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_api_service_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_audiotestpagestate (defines)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
 

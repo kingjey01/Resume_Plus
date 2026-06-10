@@ -1,21 +1,21 @@
-# Community 203: RunnerTests
+# Community 203: models
 
 **Members:** 6
 
 ## Nodes
 
-- **RunnerTests** (`ios_runnertests_runnertests_swift`, File, degree: 5)
-- **Flutter** (`ios_runnertests_runnertests_swift_import_flutter`, Module, degree: 1)
-- **UIKit** (`ios_runnertests_runnertests_swift_import_uikit`, Module, degree: 1)
-- **XCTest** (`ios_runnertests_runnertests_swift_import_xctest`, Module, degree: 1)
-- **RunnerTests** (`ios_runnertests_runnertests_swift_runnertests`, Class, degree: 1)
-- **testExample** (`ios_runnertests_runnertests_swift_testexample`, Function, degree: 1)
+- **models** (`backend_security_models_py`, File, degree: 4)
+- **django.contrib.auth.models.User** (`backend_security_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_security_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_security_models_py_meta`, Class, degree: 1)
+- **SecurityLog** (`backend_security_models_py_securitylog`, Class, degree: 2)
+- **.__str__()** (`backend_security_models_py_securitylog_str`, Method, degree: 1)
 
 ## Relationships
 
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_runnertests (defines)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_testexample (defines)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_flutter (imports)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_uikit (imports)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_xctest (imports)
+- backend_security_models_py → backend_security_models_py_import_django_db_models (imports)
+- backend_security_models_py → backend_security_models_py_import_django_contrib_auth_models_user (imports)
+- backend_security_models_py → backend_security_models_py_securitylog (defines)
+- backend_security_models_py_securitylog → backend_security_models_py_securitylog_str (defines)
+- backend_security_models_py → backend_security_models_py_meta (defines)
 

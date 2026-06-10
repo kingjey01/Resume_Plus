@@ -1,25 +1,25 @@
-# Community 132: filiere_summaries_screen
+# Community 132: splash_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **filiere_summaries_screen** (`lib_features_filiere_screens_filiere_summaries_screen_dart`, File, degree: 7)
-- **_FiliereSummariesScreenState()** (`lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **splash_screen** (`lib_features_splash_screens_splash_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/auto_login_service.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SplashScreenState()** (`lib_features_splash_screens_splash_screen_dart_splashscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate (defines)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_splashscreenstate (defines)
 

@@ -1,17 +1,17 @@
-# Community 254: file_helper_io
+# Community 254: admin
 
 **Members:** 4
 
 ## Nodes
 
-- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
-- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
-- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
+- **admin** (`backend_security_admin_py`, File, degree: 3)
+- **django.contrib.admin** (`backend_security_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.SecurityLog** (`backend_security_admin_py_import_models_securitylog`, Module, degree: 1)
+- **SecurityLogAdmin** (`backend_security_admin_py_securitylogadmin`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
+- backend_security_admin_py → backend_security_admin_py_import_django_contrib_admin (imports)
+- backend_security_admin_py → backend_security_admin_py_import_models_securitylog (imports)
+- backend_security_admin_py → backend_security_admin_py_securitylogadmin (defines)
 

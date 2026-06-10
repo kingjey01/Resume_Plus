@@ -15,7 +15,6 @@
 - backend_seed_production_py → backend_seed_production_py_import_courses_models_filiere (imports, Extracted)
 - backend_seed_production_py → backend_seed_production_py_import_courses_models_universite (imports, Extracted)
 - backend_seed_production_py → backend_seed_production_py_import_courses_models_universitefiliere (imports, Extracted)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_filierepromotion (imports, Extracted)
 - backend_seed_production_py → backend_seed_production_py_import_payments_models_service (imports, Extracted)
 - backend_seed_production_py → backend_seed_production_py_seed_promotions (defines, Extracted)
 - backend_seed_production_py → backend_seed_production_py_seed_filieres (defines, Extracted)

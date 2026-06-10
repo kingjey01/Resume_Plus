@@ -1,23 +1,23 @@
-# Community 174: error_handler_mixin
+# Community 174: settings_production
 
 **Members:** 7
 
 ## Nodes
 
-- **error_handler_mixin** (`lib_mixins_error_handler_mixin_dart`, File, degree: 6)
-- **ErrorHandlerMixin** (`lib_mixins_error_handler_mixin_dart_errorhandlermixin`, Class, degree: 1)
-- **package:dio/dio.dart** (`lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/utils/logger.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
+- **settings_production** (`backend_settings_production_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_production_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_production_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_production_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_production_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_production_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_production_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_errorhandlermixin (defines)
+- backend_settings_production_py → backend_settings_production_py_import_pathlib_path (imports)
+- backend_settings_production_py → backend_settings_production_py_import_datetime_timedelta (imports)
+- backend_settings_production_py → backend_settings_production_py_import_decouple_config (imports)
+- backend_settings_production_py → backend_settings_production_py_import_decouple_csv (imports)
+- backend_settings_production_py → backend_settings_production_py_import_os (imports)
+- backend_settings_production_py → backend_settings_production_py_import_pymysql (imports)
 

@@ -1,13 +1,13 @@
-# Community 327: flutter_usage_example
+# Community 327: simple_seed
 
 **Members:** 2
 
 ## Nodes
 
-- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
-- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
+- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
+- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
+- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
 

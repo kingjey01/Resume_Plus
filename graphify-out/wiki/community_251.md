@@ -1,19 +1,17 @@
-# Community 251: urls
+# Community 251: 0005_userprofile_profile_picture
 
-**Members:** 5
+**Members:** 4
 
 ## Nodes
 
-- **urls** (`backend_courses_urls_py`, File, degree: 4)
-- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
-- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
-- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
-- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
+- **0005_userprofile_profile_picture** (`backend_users_migrations_0005_userprofile_profile_picture_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0005_userprofile_profile_picture_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations (imports)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models (imports)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_migration (defines)
 

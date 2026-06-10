@@ -421,7 +421,7 @@ CELERY_TIMEZONE = TIME_ZONE
 CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 3600  # 60 minutes max par tâche (audio longue durée)
 CELERY_TASK_SOFT_TIME_LIMIT = 3300  # Alerte à 55 minutes
-flutte
+
 # =============================================
 # FIREBASE / FCM CONFIGURATION
 # =============================================

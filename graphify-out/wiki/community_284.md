@@ -1,17 +1,17 @@
-# Community 284: 0012_add_summary_title_price_to_session
+# Community 284: api_error_view
 
 **Members:** 4
 
 ## Nodes
 
-- **0012_add_summary_title_price_to_session** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration`, Class, degree: 1)
+- **api_error_view** (`lib_widgets_api_error_view_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_api_error_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration (defines)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

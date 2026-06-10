@@ -1,15 +1,15 @@
-# Community 312: apps
+# Community 312: exercise_urls
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_security_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
+- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
-- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
 

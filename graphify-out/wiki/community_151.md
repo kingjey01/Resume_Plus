@@ -1,23 +1,23 @@
-# Community 151: notification_detail_screen
+# Community 151: universite_filiere
 
 **Members:** 7
 
 ## Nodes
 
-- **notification_detail_screen** (`lib_features_notifications_screens_notification_detail_screen_dart`, File, degree: 6)
-- **package:flutter/material.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_NotificationDetailScreenState()** (`lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate`, Function, degree: 1)
+- **universite_filiere** (`lib_models_universite_filiere_dart`, File, degree: 6)
+- **filiere.dart** (`lib_models_universite_filiere_dart_import_filiere_dart`, Module, degree: 1)
+- **package:json_annotation/json_annotation.dart** (`lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
+- **universite.dart** (`lib_models_universite_filiere_dart_import_universite_dart`, Module, degree: 1)
+- **universite_filiere.g.dart** (`lib_models_universite_filiere_dart_import_universite_filiere_g_dart`, Module, degree: 1)
+- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_dart_universitefilierefromjson`, Function, degree: 1)
+- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_dart_universitefilieretojson`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart (imports)
-- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
-- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate (defines)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_filiere_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_filiere_g_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilierefromjson (defines)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilieretojson (defines)
 

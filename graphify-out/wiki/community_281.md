@@ -1,17 +1,17 @@
-# Community 281: celery
+# Community 281: subscription_card
 
 **Members:** 4
 
 ## Nodes
 
-- **celery** (`backend_resume_backend_celery_py`, File, degree: 3)
-- **debug_task()** (`backend_resume_backend_celery_py_debug_task`, Function, degree: 1)
-- **celery.Celery** (`backend_resume_backend_celery_py_import_celery_celery`, Module, degree: 1)
-- **os** (`backend_resume_backend_celery_py_import_os`, Module, degree: 1)
+- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_os (imports)
-- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_celery_celery (imports)
-- backend_resume_backend_celery_py → backend_resume_backend_celery_py_debug_task (defines)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
 

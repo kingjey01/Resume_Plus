@@ -1,20 +1,19 @@
-# Community 218: create_simple_audio_file()
+# Community 218: widget_test
 
 **Members:** 5
 
 ## Nodes
 
-- **create_simple_audio_file()** (`backend_test_simple_audio_upload_py_create_simple_audio_file`, Function, degree: 3)
-- **main()** (`backend_test_simple_audio_upload_py_main`, Function, degree: 4)
-- **test_audio_upload_direct()** (`backend_test_simple_audio_upload_py_test_audio_upload_direct`, Function, degree: 3)
-- **test_simple_endpoints()** (`backend_test_simple_audio_upload_py_test_simple_endpoints`, Function, degree: 2)
-- **test_with_different_course_ids()** (`backend_test_simple_audio_upload_py_test_with_different_course_ids`, Function, degree: 3)
+- **widget_test** (`test_widget_test_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
+- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
+- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_simple_audio_upload_py_test_audio_upload_direct → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
-- backend_test_simple_audio_upload_py_test_with_different_course_ids → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_with_different_course_ids (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_audio_upload_direct (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_simple_endpoints (calls)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_main (defines)
 

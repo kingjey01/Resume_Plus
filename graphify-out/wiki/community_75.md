@@ -1,29 +1,33 @@
-# Community 75: seeddata
+# Community 75: test_production_audio
 
 **Members:** 10
 
 ## Nodes
 
-- **seeddata** (`backend_courses_management_commands_seeddata_py`, File, degree: 10)
-- **courses.models.Course** (`backend_courses_management_commands_seeddata_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Session** (`backend_courses_management_commands_seeddata_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_courses_management_commands_seeddata_py_import_courses_models_summary`, Module, degree: 1)
-- **datetime.timedelta** (`backend_courses_management_commands_seeddata_py_import_datetime_timedelta`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand`, Module, degree: 1)
-- **payments.models.Purchase** (`backend_courses_management_commands_seeddata_py_import_payments_models_purchase`, Module, degree: 1)
-- **random** (`backend_courses_management_commands_seeddata_py_import_random`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_courses_management_commands_seeddata_py_import_users_models_userprofile`, Module, degree: 1)
+- **test_production_audio** (`backend_test_production_audio_py`, File, degree: 9)
+- **generate_production_test_report()** (`backend_test_production_audio_py_generate_production_test_report`, Function, degree: 5)
+- **datetime** (`backend_test_production_audio_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_test_production_audio_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_production_audio_py_import_requests`, Module, degree: 1)
+- **time** (`backend_test_production_audio_py_import_time`, Module, degree: 1)
+- **main()** (`backend_test_production_audio_py_main`, Function, degree: 2)
+- **test_media_directory_access()** (`backend_test_production_audio_py_test_media_directory_access`, Function, degree: 2)
+- **test_production_endpoints()** (`backend_test_production_audio_py_test_production_endpoints`, Function, degree: 2)
+- **test_specific_audio_sessions()** (`backend_test_production_audio_py_test_specific_audio_sessions`, Function, degree: 2)
 
 ## Relationships
 
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_users_models_userprofile (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_course (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_session (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_summary (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_payments_models_purchase (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_datetime_timedelta (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_random (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_requests (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_json (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_time (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_datetime (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_production_endpoints (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_specific_audio_sessions (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_media_directory_access (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_generate_production_test_report (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_main (defines)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_production_endpoints (calls)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_media_directory_access (calls)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_specific_audio_sessions (calls)
+- backend_test_production_audio_py_main → backend_test_production_audio_py_generate_production_test_report (calls)
 

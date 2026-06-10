@@ -1,21 +1,21 @@
-# Community 186: models
+# Community 186: win32_window
 
 **Members:** 6
 
 ## Nodes
 
-- **models** (`backend_security_models_py`, File, degree: 4)
-- **django.contrib.auth.models.User** (`backend_security_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.models** (`backend_security_models_py_import_django_db_models`, Module, degree: 1)
-- **Meta** (`backend_security_models_py_meta`, Class, degree: 1)
-- **SecurityLog** (`backend_security_models_py_securitylog`, Class, degree: 2)
-- **.__str__()** (`backend_security_models_py_securitylog_str`, Method, degree: 1)
+- **win32_window** (`windows_runner_win32_window_h`, File, degree: 5)
+- **functional** (`windows_runner_win32_window_h_import_functional`, Module, degree: 1)
+- **memory** (`windows_runner_win32_window_h_import_memory`, Module, degree: 1)
+- **string** (`windows_runner_win32_window_h_import_string`, Module, degree: 1)
+- **windows.h** (`windows_runner_win32_window_h_import_windows_h`, Module, degree: 1)
+- **Size** (`windows_runner_win32_window_h_size`, Struct, degree: 1)
 
 ## Relationships
 
-- backend_security_models_py → backend_security_models_py_import_django_db_models (imports)
-- backend_security_models_py → backend_security_models_py_import_django_contrib_auth_models_user (imports)
-- backend_security_models_py → backend_security_models_py_securitylog (defines)
-- backend_security_models_py_securitylog → backend_security_models_py_securitylog_str (defines)
-- backend_security_models_py → backend_security_models_py_meta (defines)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_windows_h (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_functional (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_memory (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_string (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_size (defines)
 

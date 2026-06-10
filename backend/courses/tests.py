@@ -4,7 +4,7 @@ from django.urls import reverse
 from rest_framework.test import APITestCase
 from rest_framework import status
 from rest_framework.authtoken.models import Token
-from .models import Course, Session, Summary, Universite, Filiere, Promotion, UniversiteFiliere, FilierePromotion
+from .models import Course, Session, Summary, Universite, Filiere, Promotion, UniversiteFiliere
 
 
 class CourseModelTest(TestCase):
@@ -88,13 +88,9 @@ class FilierePromotionTest(TestCase):
         )
     
     def test_relation_filiere_promotion_creation(self):
-        relation = FilierePromotion.objects.create(
-            filiere=self.filiere,
-            promotion=self.promotion
-        )
-        self.assertEqual(str(relation), f"{self.filiere.nom} - {self.promotion.nom}")
+        self.filiere.promotions.add(self.promotion)
         
-        # Vérifier la relation inverse
+        # Vérifier la relation dans les deux sens
         self.assertIn(self.promotion, self.filiere.promotions.all())
         self.assertIn(self.filiere, self.promotion.filieres.all())
 

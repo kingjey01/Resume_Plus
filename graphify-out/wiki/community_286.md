@@ -1,17 +1,17 @@
-# Community 286: test_services_endpoint
+# Community 286: theme_selector
 
 **Members:** 4
 
 ## Nodes
 
-- **test_services_endpoint** (`backend_test_services_endpoint_py`, File, degree: 3)
-- **json** (`backend_test_services_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_services_endpoint_py_import_requests`, Module, degree: 1)
-- **test_services_with_auth()** (`backend_test_services_endpoint_py_test_services_with_auth`, Function, degree: 1)
+- **theme_selector** (`lib_features_settings_widgets_theme_selector_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/settings/providers/theme_provider.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_requests (imports)
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_json (imports)
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_test_services_with_auth (defines)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart (imports)
 

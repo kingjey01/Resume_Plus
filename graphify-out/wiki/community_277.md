@@ -1,17 +1,17 @@
-# Community 277: subscription_card
+# Community 277: 0002_filiere_promotion_universite
 
 **Members:** 4
 
 ## Nodes
 
-- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **0002_filiere_promotion_universite** (`backend_courses_migrations_0002_filiere_promotion_universite_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0002_filiere_promotion_universite_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_models (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_migration (defines)
 

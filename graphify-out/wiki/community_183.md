@@ -1,23 +1,21 @@
-# Community 183: test_encoding_fix
+# Community 183: 0001_initial
 
 **Members:** 6
 
 ## Nodes
 
-- **test_encoding_fix** (`backend_test_encoding_fix_py`, File, degree: 5)
-- **json** (`backend_test_encoding_fix_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_encoding_fix_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_encoding_fix_py_main`, Function, degree: 3)
-- **test_summary_retrieval()** (`backend_test_encoding_fix_py_test_summary_retrieval`, Function, degree: 2)
-- **test_summary_with_special_chars()** (`backend_test_encoding_fix_py_test_summary_with_special_chars`, Function, degree: 2)
+- **0001_initial** (`backend_security_migrations_0001_initial_py`, File, degree: 5)
+- **django.conf.settings** (`backend_security_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_security_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_security_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_security_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_security_migrations_0001_initial_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_requests (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_json (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_with_special_chars (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_retrieval (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_main (defines)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_with_special_chars (calls)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_retrieval (calls)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_conf_settings (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_db_migrations (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_db_models (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_db_models_deletion (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_migration (defines)
 

@@ -1,19 +1,19 @@
-# Community 221: simple_login_service
+# Community 221: test_api
 
 **Members:** 5
 
 ## Nodes
 
-- **simple_login_service** (`lib_services_simple_login_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_simple_login_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_simple_login_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **test_api** (`backend_test_api_py`, File, degree: 4)
+- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
+- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
+- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_apiservice (defines)
+- backend_test_api_py → backend_test_api_py_import_requests (imports)
+- backend_test_api_py → backend_test_api_py_import_json (imports)
+- backend_test_api_py → backend_test_api_py_test_services_api (defines)
+- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
 

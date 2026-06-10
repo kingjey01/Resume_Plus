@@ -1,27 +1,31 @@
-# Community 95: auth_provider
+# Community 95: debug_api_calls
 
 **Members:** 9
 
 ## Nodes
 
-- **auth_provider** (`lib_features_auth_providers_auth_provider_dart`, File, degree: 8)
-- **dart:async** (`lib_features_auth_providers_auth_provider_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/fcm_service.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_fcm_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **debug_api_calls** (`backend_debug_api_calls_py`, File, degree: 8)
+- **check_django_urls()** (`backend_debug_api_calls_py_check_django_urls`, Function, degree: 2)
+- **generate_flutter_debug_code()** (`backend_debug_api_calls_py_generate_flutter_debug_code`, Function, degree: 2)
+- **datetime** (`backend_debug_api_calls_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_debug_api_calls_py_import_json`, Module, degree: 1)
+- **requests** (`backend_debug_api_calls_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_debug_api_calls_py_main`, Function, degree: 5)
+- **simulate_flutter_calls()** (`backend_debug_api_calls_py_simulate_flutter_calls`, Function, degree: 2)
+- **test_all_possible_urls()** (`backend_debug_api_calls_py_test_all_possible_urls`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_dart_async (imports)
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_models_user_dart (imports)
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_fcm_service_dart (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_requests (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_json (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_datetime (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_test_all_possible_urls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_simulate_flutter_calls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_check_django_urls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_generate_flutter_debug_code (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_main (defines)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_simulate_flutter_calls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_check_django_urls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_test_all_possible_urls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_generate_flutter_debug_code (calls)
 

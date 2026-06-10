@@ -1,30 +1,25 @@
-# Community 139: generate_report()
+# Community 139: migrate_courses_fk
 
 **Members:** 8
 
 ## Nodes
 
-- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
-- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
-- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
-- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
-- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
-- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
-- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
-- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
+- **migrate_courses_fk** (`backend_courses_management_commands_migrate_courses_fk_py`, File, degree: 6)
+- **Command** (`backend_courses_management_commands_migrate_courses_fk_py_command`, Class, degree: 2)
+- **.handle()** (`backend_courses_management_commands_migrate_courses_fk_py_command_handle`, Method, degree: 1)
+- **courses.models.Course** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite`, Module, degree: 1)
+- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand`, Module, degree: 1)
 
 ## Relationships
 
-- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_command (defines)
+- backend_courses_management_commands_migrate_courses_fk_py_command → backend_courses_management_commands_migrate_courses_fk_py_command_handle (defines)
 

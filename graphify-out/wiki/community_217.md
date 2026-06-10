@@ -1,19 +1,19 @@
-# Community 217: 0002_remove_userprofile_role_and_more
+# Community 217: PurchaseNotificationTest
 
 **Members:** 5
 
 ## Nodes
 
-- **0002_remove_userprofile_role_and_more** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py`, File, degree: 4)
-- **django.db.migrations** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration`, Class, degree: 1)
+- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
+- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
+- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
 

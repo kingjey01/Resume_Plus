@@ -1,31 +1,33 @@
-# Community 60: UserProfile
+# Community 60: test_consecutive_subscriptions
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **UserProfile** (`backend_users_models_py_userprofile`, Class, degree: 11)
-- **.can_create_summary()** (`backend_users_models_py_userprofile_can_create_summary`, Method, degree: 1)
-- **.generate_otp()** (`backend_users_models_py_userprofile_generate_otp`, Method, degree: 1)
-- **.has_active_subscription()** (`backend_users_models_py_userprofile_has_active_subscription`, Method, degree: 1)
-- **.has_free_access()** (`backend_users_models_py_userprofile_has_free_access`, Method, degree: 1)
-- **.is_admin()** (`backend_users_models_py_userprofile_is_admin`, Method, degree: 1)
-- **.is_cp()** (`backend_users_models_py_userprofile_is_cp`, Method, degree: 1)
-- **.is_etudiant()** (`backend_users_models_py_userprofile_is_etudiant`, Method, degree: 1)
-- **.reset_otp()** (`backend_users_models_py_userprofile_reset_otp`, Method, degree: 1)
-- **.__str__()** (`backend_users_models_py_userprofile_str`, Method, degree: 1)
-- **.verify_otp()** (`backend_users_models_py_userprofile_verify_otp`, Method, degree: 1)
+- **test_consecutive_subscriptions** (`backend_test_consecutive_subscriptions_py`, File, degree: 11)
+- **datetime.timedelta** (`backend_test_consecutive_subscriptions_py_import_datetime_timedelta`, Module, degree: 1)
+- **django** (`backend_test_consecutive_subscriptions_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_test_consecutive_subscriptions_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.utils.timezone** (`backend_test_consecutive_subscriptions_py_import_django_utils_timezone`, Module, degree: 1)
+- **json** (`backend_test_consecutive_subscriptions_py_import_json`, Module, degree: 1)
+- **os** (`backend_test_consecutive_subscriptions_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_test_consecutive_subscriptions_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_test_consecutive_subscriptions_py_import_payments_models_service`, Module, degree: 1)
+- **requests** (`backend_test_consecutive_subscriptions_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_consecutive_subscriptions_py_import_sys`, Module, degree: 1)
+- **test_consecutive_subscriptions()** (`backend_test_consecutive_subscriptions_py_test_consecutive_subscriptions`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_str (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_cp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_admin (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_etudiant (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_can_create_summary (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_free_access (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_generate_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_verify_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_reset_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_active_subscription (defines)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_os (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_sys (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_django (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_requests (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_json (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_datetime_timedelta (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_django_contrib_auth_models_user (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_payments_models_service (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_payments_models_abonnement (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_django_utils_timezone (imports)
+- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_test_consecutive_subscriptions (defines)
 

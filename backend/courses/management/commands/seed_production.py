@@ -9,7 +9,7 @@ from users.models import UserProfile
 from courses.models import (
     Course, Session, Summary, 
     Universite, Filiere, Promotion,
-    UniversiteFiliere, FilierePromotion, Professeur
+    UniversiteFiliere, Professeur
 )
 from payments.models import Service
 from datetime import datetime, timedelta
@@ -66,7 +66,6 @@ class Command(BaseCommand):
         Professeur.objects.all().delete()
         Course.objects.all().delete()
         UniversiteFiliere.objects.all().delete()
-        FilierePromotion.objects.all().delete()
         Universite.objects.all().delete()
         Filiere.objects.all().delete()
         Promotion.objects.all().delete()
@@ -118,11 +117,7 @@ class Command(BaseCommand):
             self.stdout.write(f"  - Filière {filiere.nom}: {status}")
             
             # Associer toutes les promotions à chaque filière
-            for promo in promotions:
-                FilierePromotion.objects.get_or_create(
-                    filiere=filiere,
-                    promotion=promo
-                )
+            filiere.promotions.add(*promotions)
 
     def create_universites(self):
         """Créer les universités"""

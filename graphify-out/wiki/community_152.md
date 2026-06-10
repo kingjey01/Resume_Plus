@@ -1,23 +1,23 @@
-# Community 152: storage_service
+# Community 152: upload_choice_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **storage_service** (`lib_services_storage_service_dart`, File, degree: 6)
-- **accessToken()** (`lib_services_storage_service_dart_accesstoken`, Function, degree: 1)
-- **deleteTokens()** (`lib_services_storage_service_dart_deletetokens`, Function, degree: 1)
-- **dart:convert** (`lib_services_storage_service_dart_import_dart_convert`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_storage_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_secure_storage/flutter_secure_storage.dart** (`lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **upload_choice_screen** (`lib_features_upload_screens_upload_choice_screen_dart`, File, degree: 6)
+- **package:flutter/foundation.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/record_audio_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_dart_convert (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_accesstoken (defines)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_deletetokens (defines)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

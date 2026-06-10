@@ -1,17 +1,17 @@
-# Community 261: test_correct_courses_endpoint
+# Community 261: web_audio_service
 
 **Members:** 4
 
 ## Nodes
 
-- **test_correct_courses_endpoint** (`backend_test_correct_courses_endpoint_py`, File, degree: 3)
-- **json** (`backend_test_correct_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_correct_courses_endpoint_py_import_requests`, Module, degree: 1)
-- **test_correct_courses_endpoint()** (`backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint`, Function, degree: 1)
+- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
+- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_requests (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_json (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint (defines)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
 

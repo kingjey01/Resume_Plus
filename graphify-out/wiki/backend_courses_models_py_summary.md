@@ -3,7 +3,7 @@
 - **ID:** `backend_courses_models_py_summary`
 - **Type:** Class
 - **File:** `.\backend\courses\models.py`
-- **Location:** L226
+- **Location:** L211
 
 ## Relationships
 

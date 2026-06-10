@@ -1,31 +1,36 @@
-# Community 90: debug_wsgi_user
+# Community 90: test_mobile_simulation
 
-**Members:** 9
+**Members:** 10
 
 ## Nodes
 
-- **debug_wsgi_user** (`backend_debug_wsgi_user_py`, File, degree: 8)
-- **check_python_path()** (`backend_debug_wsgi_user_py_check_python_path`, Function, degree: 2)
-- **django** (`backend_debug_wsgi_user_py_import_django`, Module, degree: 1)
-- **os** (`backend_debug_wsgi_user_py_import_os`, Module, degree: 1)
-- **sys** (`backend_debug_wsgi_user_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_debug_wsgi_user_py_main`, Function, degree: 5)
-- **test_audio_processing_import()** (`backend_debug_wsgi_user_py_test_audio_processing_import`, Function, degree: 2)
-- **test_imports()** (`backend_debug_wsgi_user_py_test_imports`, Function, degree: 2)
-- **test_view_import()** (`backend_debug_wsgi_user_py_test_view_import`, Function, degree: 2)
+- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
+- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
+- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
+- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
+- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
+- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
+- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
+- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
+- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
 
 ## Relationships
 
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_os (imports)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_sys (imports)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_django (imports)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_imports (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_audio_processing_import (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_view_import (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_check_python_path (defines)
-- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_main (defines)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_view_import (calls)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_imports (calls)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_check_python_path (calls)
-- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_audio_processing_import (calls)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
+- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
+- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
+- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
 

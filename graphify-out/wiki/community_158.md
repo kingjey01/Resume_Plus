@@ -1,23 +1,23 @@
-# Community 158: main
+# Community 158: NotificationTargetingLogicTest
 
 **Members:** 7
 
 ## Nodes
 
-- **main** (`windows_runner_main_cpp`, File, degree: 6)
-- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
-- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
-- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
+- **NotificationTargetingLogicTest** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest`, Class, degree: 7)
+- **.setUp()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup`, Method, degree: 1)
+- **.test_case_1_no_filters_global()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global`, Method, degree: 1)
+- **.test_case_2_universite_only()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only`, Method, degree: 1)
+- **.test_case_3_universite_filiere()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere`, Method, degree: 1)
+- **.test_case_4_universite_filiere_promotion()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion`, Method, degree: 1)
+- **.test_cp_receives_own_notification()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification`, Method, degree: 1)
 
 ## Relationships
 
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification (defines)
 

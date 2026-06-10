@@ -1,19 +1,19 @@
-# Community 212: check_accessible_courses
+# Community 212: urls
 
 **Members:** 5
 
 ## Nodes
 
-- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
-- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
+- **urls** (`backend_courses_urls_py`, File, degree: 4)
+- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
+- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
+- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
 

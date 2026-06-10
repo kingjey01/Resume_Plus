@@ -1,19 +1,19 @@
-# Community 231: service_provider
+# Community 231: MainFlutterWindow
 
 **Members:** 5
 
 ## Nodes
 
-- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
+- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
+- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
 

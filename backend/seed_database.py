@@ -30,7 +30,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 from courses.models import (
     Universite, Filiere, Promotion, Course, Session, Summary, 
-    Service, Abonnement, UniversiteFiliere, FilierePromotion
+    Service, Abonnement, UniversiteFiliere
 )
 from users.models import UserProfile
 
@@ -229,11 +229,8 @@ def create_relations(universites, filieres, promotions):
             if filiere.nom == 'Médecine Générale' and promotion.annee > 5:
                 continue
             
-            relation, created = FilierePromotion.objects.get_or_create(
-                filiere=filiere,
-                promotion=promotion
-            )
-            if created:
+            if not filiere.promotions.filter(pk=promotion.pk).exists():
+                filiere.promotions.add(promotion)
                 fil_promo_count += 1
     
     print(f"  ✅ {fil_promo_count} relations filière-promotion créées")

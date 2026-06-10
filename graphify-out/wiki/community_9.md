@@ -1,10 +1,10 @@
 # Community 9: tests
 
-**Members:** 24
+**Members:** 23
 
 ## Nodes
 
-- **tests** (`backend_courses_tests_py`, File, degree: 19)
+- **tests** (`backend_courses_tests_py`, File, degree: 18)
 - **CourseModelTest** (`backend_courses_tests_py_coursemodeltest`, Class, degree: 2)
 - **.test_course_creation()** (`backend_courses_tests_py_coursemodeltest_test_course_creation`, Method, degree: 1)
 - **FilierePromotionTest** (`backend_courses_tests_py_filierepromotiontest`, Class, degree: 3)
@@ -16,7 +16,6 @@
 - **django.urls.reverse** (`backend_courses_tests_py_import_django_urls_reverse`, Module, degree: 1)
 - **.models.Course** (`backend_courses_tests_py_import_models_course`, Module, degree: 1)
 - **.models.Filiere** (`backend_courses_tests_py_import_models_filiere`, Module, degree: 1)
-- **.models.FilierePromotion** (`backend_courses_tests_py_import_models_filierepromotion`, Module, degree: 1)
 - **.models.Promotion** (`backend_courses_tests_py_import_models_promotion`, Module, degree: 1)
 - **.models.Session** (`backend_courses_tests_py_import_models_session`, Module, degree: 1)
 - **.models.Summary** (`backend_courses_tests_py_import_models_summary`, Module, degree: 1)
@@ -45,7 +44,6 @@
 - backend_courses_tests_py → backend_courses_tests_py_import_models_filiere (imports)
 - backend_courses_tests_py → backend_courses_tests_py_import_models_promotion (imports)
 - backend_courses_tests_py → backend_courses_tests_py_import_models_universitefiliere (imports)
-- backend_courses_tests_py → backend_courses_tests_py_import_models_filierepromotion (imports)
 - backend_courses_tests_py → backend_courses_tests_py_coursemodeltest (defines)
 - backend_courses_tests_py_coursemodeltest → backend_courses_tests_py_coursemodeltest_test_course_creation (defines)
 - backend_courses_tests_py → backend_courses_tests_py_summaryapitest (defines)

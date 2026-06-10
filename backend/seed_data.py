@@ -23,7 +23,7 @@ from decimal import Decimal
 
 from courses.models import (
     Universite, Filiere, Promotion, 
-    UniversiteFiliere, FilierePromotion,
+    UniversiteFiliere,
     Course, Session, Summary, Service
 )
 from users.models import UserProfile
@@ -36,7 +36,6 @@ def clear_data():
     Session.objects.all().delete()
     Course.objects.all().delete()
     Service.objects.all().delete()
-    FilierePromotion.objects.all().delete()
     UniversiteFiliere.objects.all().delete()
     Promotion.objects.all().delete()
     Filiere.objects.all().delete()
@@ -132,8 +131,7 @@ def link_filieres_promotions(filieres, promotions):
     """Lie les filieres aux promotions"""
     print("[LINK] Liaison filieres-promotions...")
     for filiere in filieres:
-        for promo in promotions:
-            FilierePromotion.objects.get_or_create(filiere=filiere, promotion=promo)
+        filiere.promotions.add(*promotions)
     print("  + Liaisons creees")
 
 

@@ -1,19 +1,20 @@
-# Community 227: deepseek_service
+# Community 227: create_simple_audio_file()
 
 **Members:** 5
 
 ## Nodes
 
-- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
-- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
+- **create_simple_audio_file()** (`backend_test_simple_audio_upload_py_create_simple_audio_file`, Function, degree: 3)
+- **main()** (`backend_test_simple_audio_upload_py_main`, Function, degree: 4)
+- **test_audio_upload_direct()** (`backend_test_simple_audio_upload_py_test_audio_upload_direct`, Function, degree: 3)
+- **test_simple_endpoints()** (`backend_test_simple_audio_upload_py_test_simple_endpoints`, Function, degree: 2)
+- **test_with_different_course_ids()** (`backend_test_simple_audio_upload_py_test_with_different_course_ids`, Function, degree: 3)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
+- backend_test_simple_audio_upload_py_test_audio_upload_direct → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_test_with_different_course_ids → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_with_different_course_ids (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_audio_upload_direct (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_simple_endpoints (calls)
 

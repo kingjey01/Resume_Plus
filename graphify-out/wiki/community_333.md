@@ -1,8 +1,8 @@
-# Community 333: exercise
+# Community 333: __init__
 
 **Members:** 1
 
 ## Nodes
 
-- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
+- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
 

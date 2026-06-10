@@ -1,20 +1,19 @@
-# Community 242: test_courses_api
+# Community 242: AppDelegate
 
 **Members:** 5
 
 ## Nodes
 
-- **test_courses_api** (`backend_test_courses_api_py`, File, degree: 4)
-- **json** (`backend_test_courses_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_courses_api_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_courses_api_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_courses_api_py_test_endpoint`, Function, degree: 2)
+- **AppDelegate** (`ios_runner_appdelegate_swift`, File, degree: 4)
+- **application** (`ios_runner_appdelegate_swift_application`, Function, degree: 1)
+- **FirebaseCore** (`ios_runner_appdelegate_swift_import_firebasecore`, Module, degree: 1)
+- **Flutter** (`ios_runner_appdelegate_swift_import_flutter`, Module, degree: 1)
+- **UIKit** (`ios_runner_appdelegate_swift_import_uikit`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_courses_api_py → backend_test_courses_api_py_import_requests (imports)
-- backend_test_courses_api_py → backend_test_courses_api_py_import_json (imports)
-- backend_test_courses_api_py → backend_test_courses_api_py_test_endpoint (defines)
-- backend_test_courses_api_py → backend_test_courses_api_py_main (defines)
-- backend_test_courses_api_py_main → backend_test_courses_api_py_test_endpoint (calls)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_application (defines)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_flutter (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_uikit (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_firebasecore (imports)
 

@@ -1,27 +1,23 @@
-# Community 144: tasks
+# Community 144: .calculate_score()
 
-**Members:** 8
+**Members:** 7
 
 ## Nodes
 
-- **tasks** (`backend_courses_tasks_py`, File, degree: 7)
-- **generate_summary_task()** (`backend_courses_tasks_py_generate_summary_task`, Function, degree: 1)
-- **celery.shared_task** (`backend_courses_tasks_py_import_celery_shared_task`, Module, degree: 1)
-- **django.utils.timezone** (`backend_courses_tasks_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_courses_tasks_py_import_logging`, Module, degree: 1)
-- **process_audio_session_task()** (`backend_courses_tasks_py_process_audio_session_task`, Function, degree: 2)
-- **transcribe_audio_task()** (`backend_courses_tasks_py_transcribe_audio_task`, Function, degree: 2)
-- **_validate_and_fix_duration()** (`backend_courses_tasks_py_validate_and_fix_duration`, Function, degree: 3)
+- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
+- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
+- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
+- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
+- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
+- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 2)
+- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_tasks_py → backend_courses_tasks_py_import_logging (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_celery_shared_task (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_django_utils_timezone (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_validate_and_fix_duration (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_transcribe_audio_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_generate_summary_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_process_audio_session_task (defines)
-- backend_courses_tasks_py_transcribe_audio_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
-- backend_courses_tasks_py_process_audio_session_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_save (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
+- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
 

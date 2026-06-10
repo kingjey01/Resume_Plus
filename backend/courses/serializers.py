@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import (
     Course, Session, Summary, Transcription, Universite, Promotion, Filiere, 
-    Service, Abonnement, UniversiteFiliere, FilierePromotion, Professeur
+    Service, Abonnement, UniversiteFiliere, Professeur
 )
 
 
@@ -290,12 +290,6 @@ class UniversiteFiliereSerializer(serializers.ModelSerializer):
     class Meta:
         model = UniversiteFiliere
         fields = ['id', 'universite', 'filiere', 'created_at']
-
-
-class FilierePromotionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = FilierePromotion
-        fields = ['id', 'filiere', 'promotion', 'created_at']
 
 
 class UniversiteSerializer(serializers.ModelSerializer):

@@ -1,25 +1,35 @@
-# Community 113: generated_plugin_registrant
+# Community 113: DeepgramService
 
-**Members:** 8
+**Members:** 9
 
 ## Nodes
 
-- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_cc`, File, degree: 7)
-- **fl_register_plugins()** (`linux_flutter_generated_plugin_registrant_cc_fl_register_plugins`, Function, degree: 1)
-- **audioplayers_linux/audioplayers_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h`, Module, degree: 1)
-- **file_selector_linux/file_selector_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h`, Module, degree: 1)
-- **flutter_secure_storage_linux/flutter_secure_storage_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h`, Module, degree: 1)
-- **generated_plugin_registrant.h** (`linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
-- **record_linux/record_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h`, Module, degree: 1)
-- **url_launcher_linux/url_launcher_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h`, Module, degree: 1)
+- **DeepgramService** (`backend_courses_deepgram_service_py_deepgramservice`, Class, degree: 9)
+- **._extract_confidence()** (`backend_courses_deepgram_service_py_deepgramservice_extract_confidence`, Method, degree: 3)
+- **._extract_transcript()** (`backend_courses_deepgram_service_py_deepgramservice_extract_transcript`, Method, degree: 3)
+- **._extract_words()** (`backend_courses_deepgram_service_py_deepgramservice_extract_words`, Method, degree: 2)
+- **._get_mime_type()** (`backend_courses_deepgram_service_py_deepgramservice_get_mime_type`, Method, degree: 2)
+- **.__init__()** (`backend_courses_deepgram_service_py_deepgramservice_init`, Method, degree: 1)
+- **.is_configured()** (`backend_courses_deepgram_service_py_deepgramservice_is_configured`, Method, degree: 3)
+- **.transcribe_bytes()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes`, Method, degree: 4)
+- **.transcribe_file()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_file`, Method, degree: 6)
 
 ## Relationships
 
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h (imports)
-- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_fl_register_plugins (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_init (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_is_configured (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_file (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_words (defines)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_words (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
 

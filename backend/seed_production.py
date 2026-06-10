@@ -13,7 +13,7 @@ django.setup()
 
 from decimal import Decimal
 from django.contrib.auth.models import User
-from courses.models import Promotion, Filiere, Universite, UniversiteFiliere, FilierePromotion
+from courses.models import Promotion, Filiere, Universite, UniversiteFiliere
 from payments.models import Service
 
 

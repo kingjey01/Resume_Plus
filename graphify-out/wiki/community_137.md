@@ -1,25 +1,25 @@
-# Community 137: test_advanced_audio_functionality
+# Community 137: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **test_advanced_audio_functionality** (`backend_test_advanced_audio_functionality_py`, File, degree: 12)
-- **create_comprehensive_test_report()** (`backend_test_advanced_audio_functionality_py_create_comprehensive_test_report`, Function, degree: 1)
-- **json** (`backend_test_advanced_audio_functionality_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_advanced_audio_functionality_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_test_advanced_audio_functionality_py_import_pathlib_path`, Module, degree: 1)
-- **requests** (`backend_test_advanced_audio_functionality_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_advanced_audio_functionality_py_import_sys`, Module, degree: 1)
-- **wave** (`backend_test_advanced_audio_functionality_py_import_wave`, Module, degree: 1)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_os (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_sys (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_requests (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_json (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_wave (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_pathlib_path (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_create_comprehensive_test_report (defines)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

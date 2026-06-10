@@ -1,25 +1,37 @@
-# Community 120: quick_test
+# Community 120: flutter_window
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_test** (`backend_quick_test_py`, File, degree: 7)
-- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
-- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
-- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
-- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
-- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
-- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
-- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
+- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
+- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
+- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
+- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
+- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
+- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
+- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
 
 ## Relationships
 
-- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
-- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
-- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
-- backend_quick_test_py → backend_quick_test_py_import_os (imports)
-- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
-- backend_quick_test_py → backend_quick_test_py_import_time (imports)
-- backend_quick_test_py → backend_quick_test_py_start_server (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
 

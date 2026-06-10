@@ -1,13 +1,13 @@
-# Community 329: service
+# Community 329: professeur
 
 **Members:** 2
 
 ## Nodes
 
-- **service** (`lib_models_service_dart`, File, degree: 1)
-- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
+- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
+- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_service_dart → lib_models_service_dart_id (defines)
+- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
 

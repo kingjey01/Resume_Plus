@@ -1,37 +1,25 @@
-# Community 114: flutter_window
+# Community 114: check_services
 
 **Members:** 8
 
 ## Nodes
 
-- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
-- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
-- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
-- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
-- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
-- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
-- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
+- **check_services** (`backend_check_services_py`, File, degree: 7)
+- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
+- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
+- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
+- backend_check_services_py → backend_check_services_py_import_os (imports)
+- backend_check_services_py → backend_check_services_py_import_sys (imports)
+- backend_check_services_py → backend_check_services_py_import_django (imports)
+- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
+- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
+- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
+- backend_check_services_py → backend_check_services_py_check_services (defines)
 

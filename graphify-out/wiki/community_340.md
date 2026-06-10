@@ -1,8 +1,8 @@
-# Community 340: universite
+# Community 340: app_notification
 
 **Members:** 1
 
 ## Nodes
 
-- **universite** (`lib_models_universite_dart`, File, degree: 0)
+- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
 

@@ -1,36 +1,31 @@
-# Community 68: utils
+# Community 68: subscriptions_screen
 
-**Members:** 10
+**Members:** 11
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
-- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
-- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
-- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
-- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
-- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
-- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
-- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
+- **subscriptions_screen** (`lib_features_subscriptions_screens_subscriptions_screen_dart`, File, degree: 10)
+- **package:flutter/material.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/service_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/widgets/service_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/widgets/subscription_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SubscriptionsScreenState()** (`lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate (defines)
 

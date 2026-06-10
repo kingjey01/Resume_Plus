@@ -8,7 +8,6 @@ router.register(r'universites', views.UniversiteViewSet, basename='universite')
 router.register(r'filieres', views.FiliereViewSet, basename='filiere')
 router.register(r'promotions', views.PromotionViewSet, basename='promotion')
 router.register(r'universite-filieres', views.UniversiteFiliereViewSet, basename='universite-filiere')
-router.register(r'filiere-promotions', views.FilierePromotionViewSet, basename='filiere-promotion')
 
 urlpatterns = [
     # Inclure les URLs du routeur

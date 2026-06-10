@@ -1,20 +1,19 @@
-# Community 243: create_test_audio_upload()
+# Community 243: simple_login_service
 
 **Members:** 5
 
 ## Nodes
 
-- **create_test_audio_upload()** (`backend_test_advanced_audio_functionality_py_create_test_audio_upload`, Function, degree: 2)
-- **main()** (`backend_test_advanced_audio_functionality_py_main`, Function, degree: 5)
-- **test_audio_files_existence()** (`backend_test_advanced_audio_functionality_py_test_audio_files_existence`, Function, degree: 3)
-- **test_django_setup()** (`backend_test_advanced_audio_functionality_py_test_django_setup`, Function, degree: 3)
-- **test_local_server_endpoints()** (`backend_test_advanced_audio_functionality_py_test_local_server_endpoints`, Function, degree: 2)
+- **simple_login_service** (`lib_services_simple_login_service_dart`, File, degree: 4)
+- **ApiService()** (`lib_services_simple_login_service_dart_apiservice`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_services_simple_login_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py_test_audio_files_existence → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_create_test_audio_upload (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_audio_files_existence (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_local_server_endpoints (calls)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_dio_dio_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_apiservice (defines)
 

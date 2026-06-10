@@ -1,35 +1,36 @@
-# Community 44: tests
+# Community 44: fix_audio_issues
 
 **Members:** 13
 
 ## Nodes
 
-- **tests** (`backend_users_tests_py`, File, degree: 12)
-- **courses.models.Filiere** (`backend_users_tests_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_users_tests_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_users_tests_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_users_tests_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.TestCase** (`backend_users_tests_py_import_django_test_testcase`, Module, degree: 1)
-- **django.urls.reverse** (`backend_users_tests_py_import_django_urls_reverse`, Module, degree: 1)
-- **.models.UserProfile** (`backend_users_tests_py_import_models_userprofile`, Module, degree: 1)
-- **rest_framework.status** (`backend_users_tests_py_import_rest_framework_status`, Module, degree: 1)
-- **rest_framework.test.APITestCase** (`backend_users_tests_py_import_rest_framework_test_apitestcase`, Module, degree: 1)
-- **UserProfileModelTest** (`backend_users_tests_py_userprofilemodeltest`, Class, degree: 3)
-- **.setUp()** (`backend_users_tests_py_userprofilemodeltest_setup`, Method, degree: 1)
-- **.test_user_profile_creation()** (`backend_users_tests_py_userprofilemodeltest_test_user_profile_creation`, Method, degree: 1)
+- **fix_audio_issues** (`backend_fix_audio_issues_py`, File, degree: 12)
+- **create_apache_media_config()** (`backend_fix_audio_issues_py_create_apache_media_config`, Function, degree: 1)
+- **create_audio_test_endpoint()** (`backend_fix_audio_issues_py_create_audio_test_endpoint`, Function, degree: 1)
+- **create_media_directories()** (`backend_fix_audio_issues_py_create_media_directories`, Function, degree: 1)
+- **create_real_audio_files()** (`backend_fix_audio_issues_py_create_real_audio_files`, Function, degree: 2)
+- **os** (`backend_fix_audio_issues_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_fix_audio_issues_py_import_pathlib_path`, Module, degree: 1)
+- **subprocess** (`backend_fix_audio_issues_py_import_subprocess`, Module, degree: 1)
+- **sys** (`backend_fix_audio_issues_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_fix_audio_issues_py_main`, Function, degree: 1)
+- **run_diagnostics()** (`backend_fix_audio_issues_py_run_diagnostics`, Function, degree: 1)
+- **setup_django()** (`backend_fix_audio_issues_py_setup_django`, Function, degree: 2)
+- **update_django_settings()** (`backend_fix_audio_issues_py_update_django_settings`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py → backend_users_tests_py_import_django_test_testcase (imports)
-- backend_users_tests_py → backend_users_tests_py_import_django_contrib_auth_models_user (imports)
-- backend_users_tests_py → backend_users_tests_py_import_django_urls_reverse (imports)
-- backend_users_tests_py → backend_users_tests_py_import_rest_framework_test_apitestcase (imports)
-- backend_users_tests_py → backend_users_tests_py_import_rest_framework_status (imports)
-- backend_users_tests_py → backend_users_tests_py_import_models_userprofile (imports)
-- backend_users_tests_py → backend_users_tests_py_import_courses_models_universite (imports)
-- backend_users_tests_py → backend_users_tests_py_import_courses_models_filiere (imports)
-- backend_users_tests_py → backend_users_tests_py_import_courses_models_promotion (imports)
-- backend_users_tests_py → backend_users_tests_py_userprofilemodeltest (defines)
-- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_setup (defines)
-- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_test_user_profile_creation (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_os (imports)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_sys (imports)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_subprocess (imports)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_pathlib_path (imports)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_setup_django (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_media_directories (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_apache_media_config (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_real_audio_files (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_update_django_settings (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_audio_test_endpoint (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_run_diagnostics (defines)
+- backend_fix_audio_issues_py → backend_fix_audio_issues_py_main (defines)
+- backend_fix_audio_issues_py_create_real_audio_files → backend_fix_audio_issues_py_setup_django (calls)
 

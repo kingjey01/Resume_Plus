@@ -13,7 +13,6 @@
 - backend_courses_models_py → backend_courses_models_py_filiere (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_universite (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_universitefiliere (defines, Extracted)
-- backend_courses_models_py → backend_courses_models_py_filierepromotion (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_professeurfilieres (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_course (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_session (defines, Extracted)

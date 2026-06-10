@@ -1,23 +1,23 @@
-# Community 154: splash_screen
+# Community 154: 0002_service_abonnement
 
 **Members:** 7
 
 ## Nodes
 
-- **splash_screen** (`lib_features_app_splash_screen_dart`, File, degree: 6)
-- **dart:async** (`lib_features_app_splash_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_app_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:lottie/lottie.dart** (`lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_SplashScreenAltState()** (`lib_features_app_splash_screen_dart_splashscreenaltstate`, Function, degree: 1)
+- **0002_service_abonnement** (`backend_payments_migrations_0002_service_abonnement_py`, File, degree: 6)
+- **django.conf.settings** (`backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0002_service_abonnement_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_dart_async (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_splashscreenaltstate (defines)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_migration (defines)
 

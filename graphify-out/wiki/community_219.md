@@ -1,19 +1,19 @@
-# Community 219: MainFlutterWindow
+# Community 219: fix_settings_mysql
 
 **Members:** 5
 
 ## Nodes
 
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
-- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
-- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
+- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
+- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
+- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
+- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
+- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
 
 ## Relationships
 
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
 

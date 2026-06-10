@@ -1,15 +1,15 @@
-# Community 307: settings_postgresql
+# Community 307: test_seed_creation
 
 **Members:** 3
 
 ## Nodes
 
-- **settings_postgresql** (`backend_settings_postgresql_py`, File, degree: 2)
-- **os** (`backend_settings_postgresql_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_postgresql_py_import_pathlib_path`, Module, degree: 1)
+- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
+- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
+- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- backend_settings_postgresql_py → backend_settings_postgresql_py_import_os (imports)
-- backend_settings_postgresql_py → backend_settings_postgresql_py_import_pathlib_path (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
 

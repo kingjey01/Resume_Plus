@@ -1,27 +1,27 @@
-# Community 100: record_audio_screen_web_safe
+# Community 100: debug_auth_headers
 
 **Members:** 9
 
 ## Nodes
 
-- **record_audio_screen_web_safe** (`lib_features_upload_screens_record_audio_screen_web_safe_dart`, File, degree: 8)
-- **package:flutter/foundation.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/course_selection_screen.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_RecordAudioScreenWebSafeState()** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate`, Function, degree: 1)
+- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
+- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
+- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
+- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
+- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
+- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
+- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
 

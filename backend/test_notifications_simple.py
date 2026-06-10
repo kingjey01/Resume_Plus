@@ -225,9 +225,9 @@ def test_purchase_notification():
     promotion = Promotion.objects.create(nom='L1')
     
     # Create relationships
-    from courses.models import UniversiteFiliere, FilierePromotion
+    from courses.models import UniversiteFiliere
     UniversiteFiliere.objects.create(universite=universite, filiere=filiere)
-    FilierePromotion.objects.create(filiere=filiere, promotion=promotion)
+    filiere.promotions.add(promotion)
     
     course = Course.objects.create(
         nom='Test Course',

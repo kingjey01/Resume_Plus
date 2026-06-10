@@ -1,23 +1,23 @@
-# Community 178: SubscriptionExpirationTest
+# Community 178: splash_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
-- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
-- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
-- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
-- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
-- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
-- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
+- **splash_screen** (`lib_features_app_splash_screen_dart`, File, degree: 6)
+- **dart:async** (`lib_features_app_splash_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_app_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:lottie/lottie.dart** (`lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SplashScreenAltState()** (`lib_features_app_splash_screen_dart_splashscreenaltstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_dart_async (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_splashscreenaltstate (defines)
 

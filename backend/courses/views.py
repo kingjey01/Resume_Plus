@@ -14,7 +14,7 @@ import mimetypes
 logger = logging.getLogger(__name__)
 from .models import (
     Course, Session, Summary, Universite, Promotion, Filiere, 
-    Service, Abonnement, UniversiteFiliere, FilierePromotion, Professeur
+    Service, Abonnement, UniversiteFiliere, Professeur
 )
 from payments.models import Purchase
 from .serializers import (
@@ -22,7 +22,7 @@ from .serializers import (
     SummaryCreateSerializer, UniversiteSerializer, PromotionSerializer, 
     FiliereSerializer, ServiceSerializer, AbonnementSerializer, 
     AbonnementCreateSerializer, UniversiteFiliereSerializer,
-    FilierePromotionSerializer, FiliereWithUniversiteSerializer,
+    FiliereWithUniversiteSerializer,
     ProfesseurSerializer
 )
 from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary, 
@@ -331,12 +331,6 @@ class UniversiteFiliereViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 
-class FilierePromotionViewSet(viewsets.ModelViewSet):
-    queryset = FilierePromotion.objects.all()
-    serializer_class = FilierePromotionSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-
 # CRUD Views pour Universites
 class UniversiteViewSet(viewsets.ModelViewSet):
     queryset = Universite.objects.all()
@@ -411,10 +405,7 @@ class FiliereViewSet(viewsets.ModelViewSet):
         
         try:
             promotion = Promotion.objects.get(id=promotion_id)
-            FilierePromotion.objects.get_or_create(
-                filiere=filiere,
-                promotion=promotion
-            )
+            filiere.promotions.add(promotion)
             return Response({"status": "Promotion ajoutée avec succès"}, status=status.HTTP_201_CREATED)
         except Promotion.DoesNotExist:
             return Response(
@@ -438,7 +429,7 @@ class PromotionViewSet(viewsets.ModelViewSet):
     def filieres(self, request, pk=None):
         """Récupère toutes les filières associées à une promotion"""
         promotion = self.get_object()
-        filieres = Filiere.objects.filter(filierepromotion__promotion=promotion)
+        filieres = promotion.filieres.all()
         serializer = FiliereSerializer(filieres, many=True)
         return Response(serializer.data)
 

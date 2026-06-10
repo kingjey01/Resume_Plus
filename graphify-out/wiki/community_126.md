@@ -1,25 +1,25 @@
-# Community 126: admin
+# Community 126: permissions
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_notifications_admin_py`, File, degree: 7)
-- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_notifications_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.AppNotification** (`backend_notifications_admin_py_import_models_appnotification`, Module, degree: 1)
-- **.models.UserDevice** (`backend_notifications_admin_py_import_models_userdevice`, Module, degree: 1)
-- **.models.UserNotification** (`backend_notifications_admin_py_import_models_usernotification`, Module, degree: 1)
-- **UserDeviceAdmin** (`backend_notifications_admin_py_userdeviceadmin`, Class, degree: 1)
-- **UserNotificationAdmin** (`backend_notifications_admin_py_usernotificationadmin`, Class, degree: 1)
+- **permissions** (`backend_users_permissions_py`, File, degree: 4)
+- **rest_framework.permissions** (`backend_users_permissions_py_import_rest_framework_permissions`, Module, degree: 1)
+- **IsAdminOrReadOnly** (`backend_users_permissions_py_isadminorreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_isadminorreadonly_has_permission`, Method, degree: 1)
+- **IsCPOrReadOnly** (`backend_users_permissions_py_iscporreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_iscporreadonly_has_permission`, Method, degree: 1)
+- **IsOwnerOrReadOnly** (`backend_users_permissions_py_isownerorreadonly`, Class, degree: 2)
+- **.has_object_permission()** (`backend_users_permissions_py_isownerorreadonly_has_object_permission`, Method, degree: 1)
 
 ## Relationships
 
-- backend_notifications_admin_py → backend_notifications_admin_py_import_django_contrib_admin (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_userdevice (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_appnotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_usernotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_userdeviceadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_appnotificationadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_usernotificationadmin (defines)
+- backend_users_permissions_py → backend_users_permissions_py_import_rest_framework_permissions (imports)
+- backend_users_permissions_py → backend_users_permissions_py_isownerorreadonly (defines)
+- backend_users_permissions_py_isownerorreadonly → backend_users_permissions_py_isownerorreadonly_has_object_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_iscporreadonly (defines)
+- backend_users_permissions_py_iscporreadonly → backend_users_permissions_py_iscporreadonly_has_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_isadminorreadonly (defines)
+- backend_users_permissions_py_isadminorreadonly → backend_users_permissions_py_isadminorreadonly_has_permission (defines)
 

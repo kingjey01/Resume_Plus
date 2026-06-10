@@ -1,25 +1,25 @@
-# Community 129: splash_screen
+# Community 129: fix_production_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **splash_screen** (`lib_features_splash_screens_splash_screen_dart`, File, degree: 7)
-- **package:flutter/material.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/auto_login_service.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_SplashScreenState()** (`lib_features_splash_screens_splash_screen_dart_splashscreenstate`, Function, degree: 1)
+- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
+- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_splashscreenstate (defines)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
 

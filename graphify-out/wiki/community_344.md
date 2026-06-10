@@ -1,8 +1,8 @@
-# Community 344: resource
+# Community 344: Runner-Bridging-Header
 
 **Members:** 1
 
 ## Nodes
 
-- **resource** (`windows_runner_resource_h`, File, degree: 0)
+- **Runner-Bridging-Header** (`ios_runner_runner_bridging_header_h`, File, degree: 0)
 

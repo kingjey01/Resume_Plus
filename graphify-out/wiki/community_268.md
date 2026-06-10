@@ -1,17 +1,17 @@
-# Community 268: web_audio_service
+# Community 268: secure_screen_wrapper
 
 **Members:** 4
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **secure_screen_wrapper** (`lib_widgets_secure_screen_wrapper_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/screen_security_service.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart`, Module, degree: 1)
+- **_SecureScreenWrapperState()** (`lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate (defines)
 

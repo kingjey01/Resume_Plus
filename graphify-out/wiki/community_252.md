@@ -1,19 +1,17 @@
-# Community 252: otp_service
+# Community 252: app_theme
 
-**Members:** 5
+**Members:** 4
 
 ## Nodes
 
-- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
+- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
 

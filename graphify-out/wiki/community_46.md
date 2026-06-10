@@ -1,35 +1,35 @@
-# Community 46: mobile_audio_recorder
+# Community 46: tests
 
 **Members:** 13
 
 ## Nodes
 
-- **mobile_audio_recorder** (`lib_services_mobile_audio_recorder_dart`, File, degree: 12)
-- **_currentPath()** (`lib_services_mobile_audio_recorder_dart_currentpath`, Function, degree: 1)
-- **dart:async** (`lib_services_mobile_audio_recorder_dart_import_dart_async`, Module, degree: 1)
-- **dart:io** (`lib_services_mobile_audio_recorder_dart_import_dart_io`, Module, degree: 1)
-- **dart:typed_data** (`lib_services_mobile_audio_recorder_dart_import_dart_typed_data`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_mobile_audio_recorder_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:path_provider/path_provider.dart** (`lib_services_mobile_audio_recorder_dart_import_package_path_provider_path_provider_dart`, Module, degree: 1)
-- **package:permission_handler/permission_handler.dart** (`lib_services_mobile_audio_recorder_dart_import_package_permission_handler_permission_handler_dart`, Module, degree: 1)
-- **package:record/record.dart** (`lib_services_mobile_audio_recorder_dart_import_package_record_record_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_mobile_audio_recorder_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_mobile_audio_recorder_dart_ispaused`, Function, degree: 1)
-- **_isRecording()** (`lib_services_mobile_audio_recorder_dart_isrecording`, Function, degree: 1)
-- **_recordingStartTime()** (`lib_services_mobile_audio_recorder_dart_recordingstarttime`, Function, degree: 1)
+- **tests** (`backend_users_tests_py`, File, degree: 12)
+- **courses.models.Filiere** (`backend_users_tests_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_users_tests_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_users_tests_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_tests_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_users_tests_py_import_django_test_testcase`, Module, degree: 1)
+- **django.urls.reverse** (`backend_users_tests_py_import_django_urls_reverse`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_tests_py_import_models_userprofile`, Module, degree: 1)
+- **rest_framework.status** (`backend_users_tests_py_import_rest_framework_status`, Module, degree: 1)
+- **rest_framework.test.APITestCase** (`backend_users_tests_py_import_rest_framework_test_apitestcase`, Module, degree: 1)
+- **UserProfileModelTest** (`backend_users_tests_py_userprofilemodeltest`, Class, degree: 3)
+- **.setUp()** (`backend_users_tests_py_userprofilemodeltest_setup`, Method, degree: 1)
+- **.test_user_profile_creation()** (`backend_users_tests_py_userprofilemodeltest_test_user_profile_creation`, Method, degree: 1)
 
 ## Relationships
 
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_async (imports)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_typed_data (imports)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_record_record_dart (imports)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_permission_handler_permission_handler_dart (imports)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_path_provider_path_provider_dart (imports)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_io (imports)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_instance (defines)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_currentpath (defines)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_isrecording (defines)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_ispaused (defines)
-- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_recordingstarttime (defines)
+- backend_users_tests_py → backend_users_tests_py_import_django_test_testcase (imports)
+- backend_users_tests_py → backend_users_tests_py_import_django_contrib_auth_models_user (imports)
+- backend_users_tests_py → backend_users_tests_py_import_django_urls_reverse (imports)
+- backend_users_tests_py → backend_users_tests_py_import_rest_framework_test_apitestcase (imports)
+- backend_users_tests_py → backend_users_tests_py_import_rest_framework_status (imports)
+- backend_users_tests_py → backend_users_tests_py_import_models_userprofile (imports)
+- backend_users_tests_py → backend_users_tests_py_import_courses_models_universite (imports)
+- backend_users_tests_py → backend_users_tests_py_import_courses_models_filiere (imports)
+- backend_users_tests_py → backend_users_tests_py_import_courses_models_promotion (imports)
+- backend_users_tests_py → backend_users_tests_py_userprofilemodeltest (defines)
+- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_setup (defines)
+- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_test_user_profile_creation (defines)
 
