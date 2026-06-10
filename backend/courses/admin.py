@@ -34,9 +34,14 @@ class SummaryAdmin(admin.ModelAdmin):
 
 @admin.register(Universite)
 class UniversiteAdmin(admin.ModelAdmin):
-    list_display = ['nom', 'adresse', 'created_at']
+    list_display = ['nom', 'adresse', 'list_filieres', 'created_at']
     search_fields = ['nom', 'adresse']
     readonly_fields = ['created_at']
+    filter_horizontal = ['filieres']
+
+    def list_filieres(self, obj):
+        return ", ".join(f.nom for f in obj.filieres.all())
+    list_filieres.short_description = "Filières"
 
 
 @admin.register(Promotion)
@@ -60,15 +65,6 @@ class FiliereAdmin(admin.ModelAdmin):
 
     def get_queryset(self, request):
         return super().get_queryset(request).prefetch_related('promotions')
-
-
-@admin.register(UniversiteFiliere)
-class UniversiteFiliereAdmin(admin.ModelAdmin):
-    list_display = ['universite', 'filiere', 'created_at']
-    list_filter = ['universite', 'filiere', 'created_at']
-    search_fields = ['universite__nom', 'filiere__nom']
-    readonly_fields = ['created_at']
-    #autocomplete_fields = ['universite', 'filiere']
 
 
 @admin.register(Transcription)

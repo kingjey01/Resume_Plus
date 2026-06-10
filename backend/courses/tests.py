@@ -4,7 +4,7 @@ from django.urls import reverse
 from rest_framework.test import APITestCase
 from rest_framework import status
 from rest_framework.authtoken.models import Token
-from .models import Course, Session, Summary, Universite, Filiere, Promotion, UniversiteFiliere
+from .models import Course, Session, Summary, Universite, Filiere, Promotion
 
 
 class CourseModelTest(TestCase):
@@ -53,29 +53,6 @@ class SummaryAPITest(TestCase):
         self.assertEqual(summary.author_user, self.user)
 
 
-class UniversiteFiliereTest(TestCase):
-    def setUp(self):
-        self.universite = Universite.objects.create(
-            nom='Université de Test',
-            adresse='123 Rue de Test'
-        )
-        self.filiere = Filiere.objects.create(
-            nom='Informatique',
-            description='Filière en informatique'
-        )
-    
-    def test_relation_universite_filiere_creation(self):
-        relation = UniversiteFiliere.objects.create(
-            universite=self.universite,
-            filiere=self.filiere
-        )
-        self.assertEqual(str(relation), f"{self.universite.nom} - {self.filiere.nom}")
-        
-        # Vérifier la relation inverse
-        self.assertIn(self.filiere, self.universite.filieres.all())
-        self.assertIn(self.universite, self.filiere.universites.all())
-
-
 class FilierePromotionTest(TestCase):
     def setUp(self):
         self.filiere = Filiere.objects.create(
@@ -95,23 +72,17 @@ class FilierePromotionTest(TestCase):
         self.assertIn(self.filiere, self.promotion.filieres.all())
 
 
-class UniversiteFiliereTest(TestCase):
+class UniversiteFiliereM2MTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         # Créer des données de test
         cls.universite = Universite.objects.create(nom='Université de Test')
         cls.filiere = Filiere.objects.create(nom='Informatique')
-    
+
     def test_relation_universite_filiere(self):
-        # Vérifier que la relation peut être créée via le modèle
+        # Vérifier que la relation peut être créée via le M2M auto
         self.universite.filieres.add(self.filiere)
-        
+
         # Vérifier que la relation a été créée
         self.assertIn(self.filiere, self.universite.filieres.all())
         self.assertIn(self.universite, self.filiere.universites.all())
-        
-        # Vérifier le modèle de relation
-        relation = UniversiteFiliere.objects.first()
-        self.assertIsNotNone(relation)
-        self.assertEqual(relation.universite, self.universite)
-        self.assertEqual(relation.filiere, self.filiere)

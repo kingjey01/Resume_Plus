@@ -22,8 +22,7 @@ from datetime import timedelta
 from decimal import Decimal
 
 from courses.models import (
-    Universite, Filiere, Promotion, 
-    UniversiteFiliere,
+    Universite, Filiere, Promotion,
     Course, Session, Summary, Service
 )
 from users.models import UserProfile
@@ -36,7 +35,6 @@ def clear_data():
     Session.objects.all().delete()
     Course.objects.all().delete()
     Service.objects.all().delete()
-    UniversiteFiliere.objects.all().delete()
     Promotion.objects.all().delete()
     Filiere.objects.all().delete()
     Universite.objects.all().delete()
@@ -106,24 +104,20 @@ def link_universites_filieres(universites, filieres):
     """Lie les universites aux filieres"""
     print("[LINK] Liaison universites-filieres...")
     # UNIKIN a toutes les filières
-    for filiere in filieres:
-        UniversiteFiliere.objects.get_or_create(universite=universites[0], filiere=filiere)
-    
+    universites[0].filieres.add(*filieres)
+
     # UNILU a Informatique, Médecine, Droit, Génie Civil
-    for filiere in [filieres[0], filieres[1], filieres[2], filieres[4]]:
-        UniversiteFiliere.objects.get_or_create(universite=universites[1], filiere=filiere)
-    
+    universites[1].filieres.add(*[filieres[0], filieres[1], filieres[2], filieres[4]])
+
     # UCC a Droit, Économie, Sciences Politiques
-    for filiere in [filieres[2], filieres[3], filieres[7]]:
-        UniversiteFiliere.objects.get_or_create(universite=universites[2], filiere=filiere)
-    
+    universites[2].filieres.add(*[filieres[2], filieres[3], filieres[7]])
+
     # UPC a Médecine, Pharmacie
-    for filiere in [filieres[1], filieres[5]]:
-        UniversiteFiliere.objects.get_or_create(universite=universites[3], filiere=filiere)
-    
+    universites[3].filieres.add(*[filieres[1], filieres[5]])
+
     # ISC a Économie
-    UniversiteFiliere.objects.get_or_create(universite=universites[4], filiere=filieres[3])
-    
+    universites[4].filieres.add(filieres[3])
+
     print("  + Liaisons creees")
 
 

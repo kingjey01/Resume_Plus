@@ -29,8 +29,8 @@ from django.utils import timezone
 
 from django.contrib.auth.models import User
 from courses.models import (
-    Universite, Filiere, Promotion, Course, Session, Summary, 
-    Service, Abonnement, UniversiteFiliere
+    Universite, Filiere, Promotion, Course, Session, Summary,
+    Service, Abonnement
 )
 from users.models import UserProfile
 
@@ -212,13 +212,10 @@ def create_relations(universites, filieres, promotions):
                 if filiere.nom not in ['Sciences Économiques et Gestion', 'Communication et Journalisme']:
                     continue
             
-            relation, created = UniversiteFiliere.objects.get_or_create(
-                universite=universite,
-                filiere=filiere
-            )
-            if created:
+            if not universite.filieres.filter(pk=filiere.pk).exists():
+                universite.filieres.add(filiere)
                 univ_fil_count += 1
-    
+
     print(f"  ✅ {univ_fil_count} relations université-filière créées")
     
     # Relations Filière-Promotion

@@ -13,16 +13,15 @@ import mimetypes
 
 logger = logging.getLogger(__name__)
 from .models import (
-    Course, Session, Summary, Universite, Promotion, Filiere, 
-    Service, Abonnement, UniversiteFiliere, Professeur
+    Course, Session, Summary, Universite, Promotion, Filiere,
+    Service, Abonnement, Professeur
 )
 from payments.models import Purchase
 from .serializers import (
     CourseSerializer, SessionSerializer, SessionCreateSerializer, SummarySerializer, 
     SummaryCreateSerializer, UniversiteSerializer, PromotionSerializer, 
     FiliereSerializer, ServiceSerializer, AbonnementSerializer, 
-    AbonnementCreateSerializer, UniversiteFiliereSerializer,
-    FiliereWithUniversiteSerializer,
+    AbonnementCreateSerializer, FiliereWithUniversiteSerializer,
     ProfesseurSerializer
 )
 from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary, 
@@ -324,13 +323,6 @@ def generate_summary_from_audio(request):
     return Response(SummarySerializer(summary).data, status=status.HTTP_201_CREATED)
 
 
-# Vues pour les relations ManyToMany
-class UniversiteFiliereViewSet(viewsets.ModelViewSet):
-    queryset = UniversiteFiliere.objects.all()
-    serializer_class = UniversiteFiliereSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-
 # CRUD Views pour Universites
 class UniversiteViewSet(viewsets.ModelViewSet):
     queryset = Universite.objects.all()
@@ -362,10 +354,7 @@ class UniversiteViewSet(viewsets.ModelViewSet):
         
         try:
             filiere = Filiere.objects.get(id=filiere_id)
-            UniversiteFiliere.objects.get_or_create(
-                universite=universite,
-                filiere=filiere
-            )
+            universite.filieres.add(filiere)
             return Response({"status": "Filière ajoutée avec succès"}, status=status.HTTP_201_CREATED)
         except Filiere.DoesNotExist:
             return Response(

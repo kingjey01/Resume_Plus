@@ -7,9 +7,9 @@ from decimal import Decimal
 from django.contrib.auth.models import User
 from users.models import UserProfile
 from courses.models import (
-    Course, Session, Summary, 
+    Course, Session, Summary,
     Universite, Filiere, Promotion,
-    UniversiteFiliere, Professeur
+    Professeur
 )
 from payments.models import Service
 from datetime import datetime, timedelta
@@ -65,7 +65,6 @@ class Command(BaseCommand):
         Session.objects.all().delete()
         Professeur.objects.all().delete()
         Course.objects.all().delete()
-        UniversiteFiliere.objects.all().delete()
         Universite.objects.all().delete()
         Filiere.objects.all().delete()
         Promotion.objects.all().delete()
@@ -142,11 +141,7 @@ class Command(BaseCommand):
             self.stdout.write(f"  - Université {univ.nom}: {status}")
             
             # Associer toutes les filières à chaque université
-            for filiere in filieres:
-                UniversiteFiliere.objects.get_or_create(
-                    universite=univ,
-                    filiere=filiere
-                )
+            univ.filieres.add(*filieres)
 
     def create_courses(self):
         """Créer les cours"""
