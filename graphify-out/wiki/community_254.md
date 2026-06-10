@@ -1,17 +1,17 @@
-# Community 254: 0012_add_summary_title_price_to_session
+# Community 254: subscription_card
 
 **Members:** 4
 
 ## Nodes
 
-- **0012_add_summary_title_price_to_session** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration`, Class, degree: 1)
+- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration (defines)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
 

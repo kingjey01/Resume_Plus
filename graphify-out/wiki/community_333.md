@@ -1,8 +1,8 @@
-# Community 333: sw
+# Community 333: promotion
 
 **Members:** 1
 
 ## Nodes
 
-- **sw** (`web_sw_js`, File, degree: 0)
+- **promotion** (`lib_models_promotion_dart`, File, degree: 0)
 

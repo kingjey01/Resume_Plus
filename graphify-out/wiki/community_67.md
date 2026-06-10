@@ -1,34 +1,33 @@
-# Community 67: test_file_permissions
+# Community 67: test_production_audio
 
-**Members:** 11
+**Members:** 10
 
 ## Nodes
 
-- **test_file_permissions** (`backend_test_file_permissions_py`, File, degree: 10)
-- **check_wsgi_user()** (`backend_test_file_permissions_py_check_wsgi_user`, Function, degree: 2)
-- **django** (`backend_test_file_permissions_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_file_permissions_py_import_django_conf_settings`, Module, degree: 1)
-- **django.core.files.base.ContentFile** (`backend_test_file_permissions_py_import_django_core_files_base_contentfile`, Module, degree: 1)
-- **django.core.files.storage.default_storage** (`backend_test_file_permissions_py_import_django_core_files_storage_default_storage`, Module, degree: 1)
-- **os** (`backend_test_file_permissions_py_import_os`, Module, degree: 1)
-- **sys** (`backend_test_file_permissions_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_test_file_permissions_py_main`, Function, degree: 4)
-- **test_django_file_upload()** (`backend_test_file_permissions_py_test_django_file_upload`, Function, degree: 2)
-- **test_media_permissions()** (`backend_test_file_permissions_py_test_media_permissions`, Function, degree: 2)
+- **test_production_audio** (`backend_test_production_audio_py`, File, degree: 9)
+- **generate_production_test_report()** (`backend_test_production_audio_py_generate_production_test_report`, Function, degree: 5)
+- **datetime** (`backend_test_production_audio_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_test_production_audio_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_production_audio_py_import_requests`, Module, degree: 1)
+- **time** (`backend_test_production_audio_py_import_time`, Module, degree: 1)
+- **main()** (`backend_test_production_audio_py_main`, Function, degree: 2)
+- **test_media_directory_access()** (`backend_test_production_audio_py_test_media_directory_access`, Function, degree: 2)
+- **test_production_endpoints()** (`backend_test_production_audio_py_test_production_endpoints`, Function, degree: 2)
+- **test_specific_audio_sessions()** (`backend_test_production_audio_py_test_specific_audio_sessions`, Function, degree: 2)
 
 ## Relationships
 
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_os (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_sys (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_conf_settings (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_base_contentfile (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_storage_default_storage (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_test_media_permissions (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_test_django_file_upload (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_check_wsgi_user (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_main (defines)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_django_file_upload (calls)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_check_wsgi_user (calls)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_media_permissions (calls)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_requests (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_json (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_time (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_datetime (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_production_endpoints (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_specific_audio_sessions (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_media_directory_access (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_generate_production_test_report (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_main (defines)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_production_endpoints (calls)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_media_directory_access (calls)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_specific_audio_sessions (calls)
+- backend_test_production_audio_py_main → backend_test_production_audio_py_generate_production_test_report (calls)
 

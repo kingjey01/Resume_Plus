@@ -1,15 +1,15 @@
-# Community 313: apps
+# Community 313: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_courses_apps_py`, File, degree: 2)
-- **CoursesConfig** (`backend_courses_apps_py_coursesconfig`, Class, degree: 1)
-- **django.apps.AppConfig** (`backend_courses_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **urls** (`backend_notifications_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_notifications_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_notifications_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_apps_py → backend_courses_apps_py_import_django_apps_appconfig (imports)
-- backend_courses_apps_py → backend_courses_apps_py_coursesconfig (defines)
+- backend_notifications_urls_py → backend_notifications_urls_py_import_django_urls_path (imports)
+- backend_notifications_urls_py → backend_notifications_urls_py_import_views (imports)
 

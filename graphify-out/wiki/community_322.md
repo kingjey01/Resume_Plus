@@ -1,13 +1,13 @@
-# Community 322: badge_icon
+# Community 322: __init__
 
 **Members:** 2
 
 ## Nodes
 
-- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
+- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
+- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
 

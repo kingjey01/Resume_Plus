@@ -1,8 +1,8 @@
-# Community 332: purchase
+# Community 332: filiere
 
 **Members:** 1
 
 ## Nodes
 
-- **purchase** (`lib_models_purchase_dart`, File, degree: 0)
+- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
 

@@ -1,20 +1,19 @@
-# Community 242: test_courses_api
+# Community 242: deepseek_service
 
 **Members:** 5
 
 ## Nodes
 
-- **test_courses_api** (`backend_test_courses_api_py`, File, degree: 4)
-- **json** (`backend_test_courses_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_courses_api_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_courses_api_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_courses_api_py_test_endpoint`, Function, degree: 2)
+- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
+- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_courses_api_py → backend_test_courses_api_py_import_requests (imports)
-- backend_test_courses_api_py → backend_test_courses_api_py_import_json (imports)
-- backend_test_courses_api_py → backend_test_courses_api_py_test_endpoint (defines)
-- backend_test_courses_api_py → backend_test_courses_api_py_main (defines)
-- backend_test_courses_api_py_main → backend_test_courses_api_py_test_endpoint (calls)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
 

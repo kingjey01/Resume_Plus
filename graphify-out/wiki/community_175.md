@@ -1,23 +1,23 @@
-# Community 175: purchases_screen
+# Community 175: main
 
 **Members:** 7
 
 ## Nodes
 
-- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 6)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
+- **main** (`windows_runner_main_cpp`, File, degree: 6)
+- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
+- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
+- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
 

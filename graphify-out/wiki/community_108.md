@@ -1,27 +1,31 @@
-# Community 108: serializers
+# Community 108: debug_wsgi_user
 
 **Members:** 9
 
 ## Nodes
 
-- **serializers** (`backend_notifications_serializers_py`, File, degree: 8)
-- **AppNotificationSerializer** (`backend_notifications_serializers_py_appnotificationserializer`, Class, degree: 1)
-- **.models.AppNotification** (`backend_notifications_serializers_py_import_models_appnotification`, Module, degree: 1)
-- **.models.UserDevice** (`backend_notifications_serializers_py_import_models_userdevice`, Module, degree: 1)
-- **.models.UserNotification** (`backend_notifications_serializers_py_import_models_usernotification`, Module, degree: 1)
-- **rest_framework.serializers** (`backend_notifications_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
-- **Meta** (`backend_notifications_serializers_py_meta`, Class, degree: 1)
-- **UserDeviceSerializer** (`backend_notifications_serializers_py_userdeviceserializer`, Class, degree: 1)
-- **UserNotificationSerializer** (`backend_notifications_serializers_py_usernotificationserializer`, Class, degree: 1)
+- **debug_wsgi_user** (`backend_debug_wsgi_user_py`, File, degree: 8)
+- **check_python_path()** (`backend_debug_wsgi_user_py_check_python_path`, Function, degree: 2)
+- **django** (`backend_debug_wsgi_user_py_import_django`, Module, degree: 1)
+- **os** (`backend_debug_wsgi_user_py_import_os`, Module, degree: 1)
+- **sys** (`backend_debug_wsgi_user_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_debug_wsgi_user_py_main`, Function, degree: 5)
+- **test_audio_processing_import()** (`backend_debug_wsgi_user_py_test_audio_processing_import`, Function, degree: 2)
+- **test_imports()** (`backend_debug_wsgi_user_py_test_imports`, Function, degree: 2)
+- **test_view_import()** (`backend_debug_wsgi_user_py_test_view_import`, Function, degree: 2)
 
 ## Relationships
 
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_rest_framework_serializers (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_userdevice (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_appnotification (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_usernotification (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_userdeviceserializer (defines)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_meta (defines)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_appnotificationserializer (defines)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_usernotificationserializer (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_os (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_sys (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_django (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_imports (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_audio_processing_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_view_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_check_python_path (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_main (defines)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_view_import (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_imports (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_check_python_path (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_audio_processing_import (calls)
 

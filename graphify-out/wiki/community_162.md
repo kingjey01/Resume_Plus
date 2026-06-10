@@ -1,23 +1,23 @@
-# Community 162: AbonnementCreateSerializer
+# Community 162: GeneratedPluginRegistrant
 
 **Members:** 7
 
 ## Nodes
 
-- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
-- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
-- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
-- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
-- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
-- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
+- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
+- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
+- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
+- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
+- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
-- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
-- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
 

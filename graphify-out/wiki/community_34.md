@@ -1,37 +1,39 @@
-# Community 34: models
+# Community 34: main_navigation_screen
 
-**Members:** 14
+**Members:** 15
 
 ## Nodes
 
-- **models** (`backend_notifications_models_py`, File, degree: 10)
-- **AppNotification** (`backend_notifications_models_py_appnotification`, Class, degree: 2)
-- **.__str__()** (`backend_notifications_models_py_appnotification_str`, Method, degree: 1)
-- **courses.models.Filiere** (`backend_notifications_models_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_notifications_models_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_notifications_models_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_notifications_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.models** (`backend_notifications_models_py_import_django_db_models`, Module, degree: 1)
-- **logging** (`backend_notifications_models_py_import_logging`, Module, degree: 1)
-- **Meta** (`backend_notifications_models_py_meta`, Class, degree: 1)
-- **UserDevice** (`backend_notifications_models_py_userdevice`, Class, degree: 2)
-- **.__str__()** (`backend_notifications_models_py_userdevice_str`, Method, degree: 1)
-- **UserNotification** (`backend_notifications_models_py_usernotification`, Class, degree: 2)
-- **.__str__()** (`backend_notifications_models_py_usernotification_str`, Method, degree: 1)
+- **main_navigation_screen** (`lib_features_app_screens_main_navigation_screen_dart`, File, degree: 14)
+- **package:flutter/material.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercises_screen.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercises_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/screens/home_screen.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_home_screens_home_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/purchases_screen.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_purchases_screens_purchases_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/screens/all_summaries_screen.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_summaries_screens_all_summaries_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/validation/screens/validation_screen.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_validation_screens_validation_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/purchase_badge_provider.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/notification_service.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/badge_icon.dart** (`lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_widgets_badge_icon_dart`, Module, degree: 1)
+- **_MainNavigationScreenState()** (`lib_features_app_screens_main_navigation_screen_dart_mainnavigationscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_notifications_models_py → backend_notifications_models_py_import_logging (imports)
-- backend_notifications_models_py → backend_notifications_models_py_import_django_db_models (imports)
-- backend_notifications_models_py → backend_notifications_models_py_import_django_contrib_auth_models_user (imports)
-- backend_notifications_models_py → backend_notifications_models_py_import_courses_models_universite (imports)
-- backend_notifications_models_py → backend_notifications_models_py_import_courses_models_filiere (imports)
-- backend_notifications_models_py → backend_notifications_models_py_import_courses_models_promotion (imports)
-- backend_notifications_models_py → backend_notifications_models_py_userdevice (defines)
-- backend_notifications_models_py → backend_notifications_models_py_meta (defines)
-- backend_notifications_models_py_userdevice → backend_notifications_models_py_userdevice_str (defines)
-- backend_notifications_models_py → backend_notifications_models_py_appnotification (defines)
-- backend_notifications_models_py_appnotification → backend_notifications_models_py_appnotification_str (defines)
-- backend_notifications_models_py → backend_notifications_models_py_usernotification (defines)
-- backend_notifications_models_py_usernotification → backend_notifications_models_py_usernotification_str (defines)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_home_screens_home_screen_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_summaries_screens_all_summaries_screen_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_purchases_screens_purchases_screen_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercises_screen_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_validation_screens_validation_screen_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_widgets_badge_icon_dart (imports)
+- lib_features_app_screens_main_navigation_screen_dart → lib_features_app_screens_main_navigation_screen_dart_mainnavigationscreenstate (defines)
 

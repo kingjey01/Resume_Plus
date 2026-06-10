@@ -1,23 +1,23 @@
-# Community 172: splash_screen
+# Community 172: urls
 
 **Members:** 7
 
 ## Nodes
 
-- **splash_screen** (`lib_features_app_splash_screen_dart`, File, degree: 6)
-- **dart:async** (`lib_features_app_splash_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_app_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:lottie/lottie.dart** (`lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_SplashScreenAltState()** (`lib_features_app_splash_screen_dart_splashscreenaltstate`, Function, degree: 1)
+- **urls** (`backend_payments_urls_py`, File, degree: 6)
+- **django.urls.path** (`backend_payments_urls_py_import_django_urls_path`, Module, degree: 1)
+- **.flexpay_integration.create_subscription_after_payment** (`backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment`, Module, degree: 1)
+- **.flexpay_integration.flexpay_callback** (`backend_payments_urls_py_import_flexpay_integration_flexpay_callback`, Module, degree: 1)
+- **.flexpay_integration.initiate_subscription_payment** (`backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment`, Module, degree: 1)
+- **.flexpay_integration.initiate_summary_purchase** (`backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase`, Module, degree: 1)
+- **..views** (`backend_payments_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_dart_async (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_splashscreenaltstate (defines)
+- backend_payments_urls_py → backend_payments_urls_py_import_django_urls_path (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_views (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_flexpay_callback (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment (imports)
 

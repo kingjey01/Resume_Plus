@@ -506,7 +506,6 @@ class _AllSummariesScreenState extends ConsumerState<AllSummariesScreen>
                     firstDate: DateTime(2020),
                     lastDate: DateTime.now(),
                     initialDateRange: tempDateRange,
-                    locale: const Locale('fr', 'FR'),
                     builder: (context, child) => Theme(
                       data: Theme.of(context).copyWith(
                         colorScheme: Theme.of(context).colorScheme.copyWith(primary: AppTheme.primaryBlue),

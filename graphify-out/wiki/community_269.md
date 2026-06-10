@@ -1,17 +1,17 @@
-# Community 269: 0003_alter_purchase_payment_method_alter_service_currency
+# Community 269: admin
 
 **Members:** 4
 
 ## Nodes
 
-- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
-- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
+- **admin** (`backend_security_admin_py`, File, degree: 3)
+- **django.contrib.admin** (`backend_security_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.SecurityLog** (`backend_security_admin_py_import_models_securitylog`, Module, degree: 1)
+- **SecurityLogAdmin** (`backend_security_admin_py_securitylogadmin`, Class, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
+- backend_security_admin_py → backend_security_admin_py_import_django_contrib_admin (imports)
+- backend_security_admin_py → backend_security_admin_py_import_models_securitylog (imports)
+- backend_security_admin_py → backend_security_admin_py_securitylogadmin (defines)
 

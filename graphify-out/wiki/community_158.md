@@ -1,23 +1,23 @@
-# Community 158: recording_page
+# Community 158: settings_cors_fixed
 
 **Members:** 7
 
 ## Nodes
 
-- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
-- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
-- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
+- **settings_cors_fixed** (`backend_settings_cors_fixed_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_cors_fixed_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_cors_fixed_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_cors_fixed_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_cors_fixed_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_cors_fixed_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_cors_fixed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pathlib_path (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_datetime_timedelta (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_config (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_csv (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_os (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pymysql (imports)
 

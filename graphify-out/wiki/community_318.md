@@ -1,13 +1,13 @@
-# Community 318: generated_plugin_registrant
+# Community 318: flutter_usage_example
 
 **Members:** 2
 
 ## Nodes
 
-- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
-- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
+- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
+- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
 
 ## Relationships
 
-- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
+- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
 

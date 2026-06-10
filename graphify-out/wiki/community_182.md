@@ -1,21 +1,21 @@
-# Community 182: create_admin_user()
+# Community 182: models
 
 **Members:** 6
 
 ## Nodes
 
-- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
-- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
-- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
-- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
-- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
-- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
+- **models** (`backend_security_models_py`, File, degree: 4)
+- **django.contrib.auth.models.User** (`backend_security_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_security_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_security_models_py_meta`, Class, degree: 1)
+- **SecurityLog** (`backend_security_models_py_securitylog`, Class, degree: 2)
+- **.__str__()** (`backend_security_models_py_securitylog_str`, Method, degree: 1)
 
 ## Relationships
 
-- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
-- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
+- backend_security_models_py → backend_security_models_py_import_django_db_models (imports)
+- backend_security_models_py → backend_security_models_py_import_django_contrib_auth_models_user (imports)
+- backend_security_models_py → backend_security_models_py_securitylog (defines)
+- backend_security_models_py_securitylog → backend_security_models_py_securitylog_str (defines)
+- backend_security_models_py → backend_security_models_py_meta (defines)
 

@@ -1,27 +1,27 @@
-# Community 94: test_subscription_creation
+# Community 94: debug_auth_headers
 
 **Members:** 9
 
 ## Nodes
 
-- **test_subscription_creation** (`backend_test_subscription_creation_py`, File, degree: 8)
-- **django** (`backend_test_subscription_creation_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_test_subscription_creation_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_test_subscription_creation_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_test_subscription_creation_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_test_subscription_creation_py_import_payments_models_service`, Module, degree: 1)
-- **requests** (`backend_test_subscription_creation_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_subscription_creation_py_import_sys`, Module, degree: 1)
-- **test_subscription_creation()** (`backend_test_subscription_creation_py_test_subscription_creation`, Function, degree: 1)
+- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
+- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
+- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
+- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
+- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
+- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
+- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_os (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_sys (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_requests (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django_contrib_auth_models_user (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_service (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_abonnement (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_test_subscription_creation (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
 

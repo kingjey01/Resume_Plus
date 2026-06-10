@@ -1,15 +1,15 @@
-# Community 291: api_provider
+# Community 291: snackbar_service
 
 **Members:** 3
 
 ## Nodes
 
-- **api_provider** (`lib_providers_api_provider_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
 
 ## Relationships
 
-- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
 

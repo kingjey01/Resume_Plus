@@ -7,8 +7,9 @@
 ## Relationships
 
 - lib_main_dart → lib_main_dart_import_package_flutter_material_dart (imports, Extracted)
-- lib_main_dart → lib_main_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports, Extracted)
 - lib_main_dart → lib_main_dart_import_package_flutter_services_dart (imports, Extracted)
+- lib_main_dart → lib_main_dart_import_package_flutter_localizations_flutter_localizations_dart (imports, Extracted)
+- lib_main_dart → lib_main_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports, Extracted)
 - lib_main_dart → lib_main_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports, Extracted)
 - lib_main_dart → lib_main_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports, Extracted)
 - lib_main_dart → lib_main_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports, Extracted)

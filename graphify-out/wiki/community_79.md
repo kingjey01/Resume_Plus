@@ -1,33 +1,32 @@
-# Community 79: test_registration
+# Community 79: fix_encoding_utf8_complete
 
 **Members:** 10
 
 ## Nodes
 
-- **test_registration** (`backend_test_registration_py`, File, degree: 9)
-- **generate_random_user()** (`backend_test_registration_py_generate_random_user`, Function, degree: 2)
-- **json** (`backend_test_registration_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_registration_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_registration_py_import_requests`, Module, degree: 1)
-- **string** (`backend_test_registration_py_import_string`, Module, degree: 1)
-- **main()** (`backend_test_registration_py_main`, Function, degree: 4)
-- **test_api_with_jwt_token()** (`backend_test_registration_py_test_api_with_jwt_token`, Function, degree: 2)
-- **test_login_with_new_user()** (`backend_test_registration_py_test_login_with_new_user`, Function, degree: 2)
-- **test_registration()** (`backend_test_registration_py_test_registration`, Function, degree: 3)
+- **fix_encoding_utf8_complete** (`backend_fix_encoding_utf8_complete_py`, File, degree: 9)
+- **clean_invalid_utf8_data()** (`backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data`, Function, degree: 2)
+- **fix_database_encoding()** (`backend_fix_encoding_utf8_complete_py_fix_database_encoding`, Function, degree: 2)
+- **django** (`backend_fix_encoding_utf8_complete_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_utf8_complete_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_utf8_complete_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_utf8_complete_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_utf8_complete_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_fix_encoding_utf8_complete_py_main`, Function, degree: 4)
+- **test_emoji_insertion()** (`backend_fix_encoding_utf8_complete_py_test_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- backend_test_registration_py → backend_test_registration_py_import_requests (imports)
-- backend_test_registration_py → backend_test_registration_py_import_json (imports)
-- backend_test_registration_py → backend_test_registration_py_import_random (imports)
-- backend_test_registration_py → backend_test_registration_py_import_string (imports)
-- backend_test_registration_py → backend_test_registration_py_generate_random_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_registration (defines)
-- backend_test_registration_py → backend_test_registration_py_test_login_with_new_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_api_with_jwt_token (defines)
-- backend_test_registration_py → backend_test_registration_py_main (defines)
-- backend_test_registration_py_test_registration → backend_test_registration_py_generate_random_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_login_with_new_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_registration (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_api_with_jwt_token (calls)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_os (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_sys (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_conf_settings (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_db_connection (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_fix_database_encoding (defines)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (defines)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (defines)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_main (defines)
+- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_fix_database_encoding (calls)
+- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (calls)
+- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (calls)
 

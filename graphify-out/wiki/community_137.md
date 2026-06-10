@@ -1,25 +1,31 @@
-# Community 137: admin
+# Community 137: ._build_summary_prompt()
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_notifications_admin_py`, File, degree: 7)
-- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_notifications_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.AppNotification** (`backend_notifications_admin_py_import_models_appnotification`, Module, degree: 1)
-- **.models.UserDevice** (`backend_notifications_admin_py_import_models_userdevice`, Module, degree: 1)
-- **.models.UserNotification** (`backend_notifications_admin_py_import_models_usernotification`, Module, degree: 1)
-- **UserDeviceAdmin** (`backend_notifications_admin_py_userdeviceadmin`, Class, degree: 1)
-- **UserNotificationAdmin** (`backend_notifications_admin_py_usernotificationadmin`, Class, degree: 1)
+- **._build_summary_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt`, Method, degree: 2)
+- **._call_api()** (`backend_courses_deepseek_service_py_deepseekservice_call_api`, Method, degree: 6)
+- **._clean_text()** (`backend_courses_deepseek_service_py_deepseekservice_clean_text`, Method, degree: 5)
+- **.generate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_generate_summary`, Method, degree: 5)
+- **.is_configured()** (`backend_courses_deepseek_service_py_deepseekservice_is_configured`, Method, degree: 6)
+- **.reformulate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_reformulate_summary`, Method, degree: 4)
+- **.simplify_summary()** (`backend_courses_deepseek_service_py_deepseekservice_simplify_summary`, Method, degree: 4)
+- **.translate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_translate_summary`, Method, degree: 4)
 
 ## Relationships
 
-- backend_notifications_admin_py → backend_notifications_admin_py_import_django_contrib_admin (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_userdevice (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_appnotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_usernotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_userdeviceadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_appnotificationadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_usernotificationadmin (defines)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
 

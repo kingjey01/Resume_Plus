@@ -1,19 +1,19 @@
-# Community 232: test_api
+# Community 232: urls
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api** (`backend_test_api_py`, File, degree: 4)
-- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
-- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
-- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
+- **urls** (`backend_courses_urls_py`, File, degree: 4)
+- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
+- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
+- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_api_py → backend_test_api_py_import_requests (imports)
-- backend_test_api_py → backend_test_api_py_import_json (imports)
-- backend_test_api_py → backend_test_api_py_test_services_api (defines)
-- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
 

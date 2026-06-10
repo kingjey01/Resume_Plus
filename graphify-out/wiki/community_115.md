@@ -1,28 +1,25 @@
-# Community 115: AuthAPITest
+# Community 115: check_db_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
-- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
-- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
-- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
-- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
-- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
-- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
-- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
+- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
+- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
+- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
+- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
+- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
+- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
-- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
 

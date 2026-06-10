@@ -1,17 +1,17 @@
-# Community 259: course_tile
+# Community 259: test_services_endpoint
 
 **Members:** 4
 
 ## Nodes
 
-- **course_tile** (`lib_features_home_widgets_course_tile_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/course/screens/course_summaries_screen.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_services_endpoint** (`backend_test_services_endpoint_py`, File, degree: 3)
+- **json** (`backend_test_services_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_services_endpoint_py_import_requests`, Module, degree: 1)
+- **test_services_with_auth()** (`backend_test_services_endpoint_py_test_services_with_auth`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart (imports)
-- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart (imports)
-- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_requests (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_json (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_test_services_with_auth (defines)
 

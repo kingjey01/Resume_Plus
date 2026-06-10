@@ -1,17 +1,17 @@
-# Community 272: app_theme
+# Community 272: apps
 
 **Members:** 4
 
 ## Nodes
 
-- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
-- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
+- **apps** (`backend_payments_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
+- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
 
 ## Relationships
 
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
+- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
+- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
+- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
 

@@ -1,19 +1,19 @@
-# Community 236: urls
+# Community 236: widget_test
 
 **Members:** 5
 
 ## Nodes
 
-- **urls** (`backend_courses_urls_py`, File, degree: 4)
-- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
-- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
-- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
-- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
+- **widget_test** (`test_widget_test_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
+- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
+- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_main (defines)
 

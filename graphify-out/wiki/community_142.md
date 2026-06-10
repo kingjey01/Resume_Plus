@@ -1,25 +1,25 @@
-# Community 142: check_services
+# Community 142: permissions
 
 **Members:** 8
 
 ## Nodes
 
-- **check_services** (`backend_check_services_py`, File, degree: 7)
-- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
-- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
+- **permissions** (`backend_users_permissions_py`, File, degree: 4)
+- **rest_framework.permissions** (`backend_users_permissions_py_import_rest_framework_permissions`, Module, degree: 1)
+- **IsAdminOrReadOnly** (`backend_users_permissions_py_isadminorreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_isadminorreadonly_has_permission`, Method, degree: 1)
+- **IsCPOrReadOnly** (`backend_users_permissions_py_iscporreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_iscporreadonly_has_permission`, Method, degree: 1)
+- **IsOwnerOrReadOnly** (`backend_users_permissions_py_isownerorreadonly`, Class, degree: 2)
+- **.has_object_permission()** (`backend_users_permissions_py_isownerorreadonly_has_object_permission`, Method, degree: 1)
 
 ## Relationships
 
-- backend_check_services_py → backend_check_services_py_import_os (imports)
-- backend_check_services_py → backend_check_services_py_import_sys (imports)
-- backend_check_services_py → backend_check_services_py_import_django (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
-- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_services_py → backend_check_services_py_check_services (defines)
+- backend_users_permissions_py → backend_users_permissions_py_import_rest_framework_permissions (imports)
+- backend_users_permissions_py → backend_users_permissions_py_isownerorreadonly (defines)
+- backend_users_permissions_py_isownerorreadonly → backend_users_permissions_py_isownerorreadonly_has_object_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_iscporreadonly (defines)
+- backend_users_permissions_py_iscporreadonly → backend_users_permissions_py_iscporreadonly_has_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_isadminorreadonly (defines)
+- backend_users_permissions_py_isadminorreadonly → backend_users_permissions_py_isadminorreadonly_has_permission (defines)
 

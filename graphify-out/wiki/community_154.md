@@ -1,23 +1,23 @@
-# Community 154: course_selection_screen
+# Community 154: models
 
 **Members:** 7
 
 ## Nodes
 
-- **course_selection_screen** (`lib_features_upload_screens_course_selection_screen_dart`, File, degree: 6)
-- **_CourseSelectionScreenState()** (`lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **models** (`backend_users_models_py`, File, degree: 7)
+- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate (defines)
+- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
+- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
+- backend_users_models_py → backend_users_models_py_meta (defines)
 

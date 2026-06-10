@@ -1,15 +1,15 @@
-# Community 307: urls
+# Community 307: production_settings
 
 **Members:** 3
 
 ## Nodes
 
-- **urls** (`backend_notifications_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_notifications_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_notifications_urls_py_import_views`, Module, degree: 1)
+- **production_settings** (`backend_production_settings_py`, File, degree: 2)
+- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
+- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_urls_py → backend_notifications_urls_py_import_django_urls_path (imports)
-- backend_notifications_urls_py → backend_notifications_urls_py_import_views (imports)
+- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
+- backend_production_settings_py → backend_production_settings_py_import_os (imports)
 

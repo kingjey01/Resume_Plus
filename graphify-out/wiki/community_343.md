@@ -1,8 +1,8 @@
-# Community 343: Runner-Bridging-Header
+# Community 343: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **Runner-Bridging-Header** (`ios_runner_runner_bridging_header_h`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
 

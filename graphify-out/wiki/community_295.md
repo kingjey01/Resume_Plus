@@ -1,15 +1,15 @@
-# Community 295: 0015_merge_20260523_2104
+# Community 295: main
 
 **Members:** 3
 
 ## Nodes
 
-- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
-- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

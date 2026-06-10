@@ -1,8 +1,8 @@
-# Community 336: GeneratedPluginRegistrant
+# Community 336: purchase
 
 **Members:** 1
 
 ## Nodes
 
-- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
+- **purchase** (`lib_models_purchase_dart`, File, degree: 0)
 

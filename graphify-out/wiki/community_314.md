@@ -1,15 +1,15 @@
-# Community 314: about_screen
+# Community 314: file_helper_stub
 
 **Members:** 3
 
 ## Nodes
 
-- **about_screen** (`lib_features_settings_screens_about_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
+- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
+- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
 

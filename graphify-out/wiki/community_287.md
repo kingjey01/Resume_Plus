@@ -1,15 +1,15 @@
-# Community 287: test_local_server
+# Community 287: test_seed_creation
 
 **Members:** 3
 
 ## Nodes
 
-- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
-- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
-- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
+- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
+- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
+- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
-- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
 

@@ -1,36 +1,29 @@
-# Community 84: create_courses()
+# Community 84: fix_migration
 
 **Members:** 10
 
 ## Nodes
 
-- **create_courses()** (`backend_seed_database_py_create_courses`, Function, degree: 3)
-- **create_filieres()** (`backend_seed_database_py_create_filieres`, Function, degree: 3)
-- **create_promotions()** (`backend_seed_database_py_create_promotions`, Function, degree: 3)
-- **create_relations()** (`backend_seed_database_py_create_relations`, Function, degree: 3)
-- **create_services()** (`backend_seed_database_py_create_services`, Function, degree: 3)
-- **create_sessions_and_summaries()** (`backend_seed_database_py_create_sessions_and_summaries`, Function, degree: 3)
-- **create_universites()** (`backend_seed_database_py_create_universites`, Function, degree: 3)
-- **create_users()** (`backend_seed_database_py_create_users`, Function, degree: 3)
-- **main()** (`backend_seed_database_py_main`, Function, degree: 12)
-- **print_section()** (`backend_seed_database_py_print_section`, Function, degree: 9)
+- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
+- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
+- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
+- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
+- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_seed_database_py_create_universites → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_filieres → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_promotions → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_relations → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_courses → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_users → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_sessions_and_summaries → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_services → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_users (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_sessions_and_summaries (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_filieres (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_relations (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_universites (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_promotions (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_courses (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_services (calls)
+- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
+- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
+- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
 

@@ -1,15 +1,15 @@
-# Community 308: terms_of_service_screen
+# Community 308: exercise_urls
 
 **Members:** 3
 
 ## Nodes
 
-- **terms_of_service_screen** (`lib_features_settings_screens_terms_of_service_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
 

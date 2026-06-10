@@ -1,27 +1,27 @@
-# Community 100: purchase_summary_screen
+# Community 100: audio_file_player_service
 
 **Members:** 9
 
 ## Nodes
 
-- **purchase_summary_screen** (`lib_features_purchases_screens_purchase_summary_screen_dart`, File, degree: 8)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchaseSummaryScreenState()** (`lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate`, Function, degree: 1)
+- **audio_file_player_service** (`lib_services_audio_file_player_service_dart`, File, degree: 8)
+- **_currentUrl()** (`lib_services_audio_file_player_service_dart_currenturl`, Function, degree: 1)
+- **_duration()** (`lib_services_audio_file_player_service_dart_duration`, Function, degree: 1)
+- **package:audioplayers/audioplayers.dart** (`lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_audio_file_player_service_dart_instance`, Function, degree: 1)
+- **_isInitialized()** (`lib_services_audio_file_player_service_dart_isinitialized`, Function, degree: 1)
+- **_isPaused()** (`lib_services_audio_file_player_service_dart_ispaused`, Function, degree: 1)
+- **_position()** (`lib_services_audio_file_player_service_dart_position`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart (imports)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_instance (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_isinitialized (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_ispaused (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_currenturl (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_duration (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_position (defines)
 

@@ -1,23 +1,23 @@
-# Community 170: 0002_service_abonnement
+# Community 170: recording_page
 
 **Members:** 7
 
 ## Nodes
 
-- **0002_service_abonnement** (`backend_payments_migrations_0002_service_abonnement_py`, File, degree: 6)
-- **django.conf.settings** (`backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
-- **django.utils.timezone** (`backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0002_service_abonnement_py_migration`, Class, degree: 1)
+- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
+- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_migration (defines)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
 

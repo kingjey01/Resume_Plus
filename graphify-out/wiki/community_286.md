@@ -1,17 +1,17 @@
-# Community 286: check_user_profile
+# Community 286: manage
 
 **Members:** 4
 
 ## Nodes
 
-- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
-- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
+- **manage** (`backend_manage_py`, File, degree: 3)
+- **os** (`backend_manage_py_import_os`, Module, degree: 1)
+- **sys** (`backend_manage_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_manage_py_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
+- backend_manage_py → backend_manage_py_import_os (imports)
+- backend_manage_py → backend_manage_py_import_sys (imports)
+- backend_manage_py → backend_manage_py_main (defines)
 

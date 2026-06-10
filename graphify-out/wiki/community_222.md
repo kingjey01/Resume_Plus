@@ -1,19 +1,19 @@
-# Community 222: UniversiteFiliereTest
+# Community 222: Summary
 
 **Members:** 5
 
 ## Nodes
 
-- **UniversiteFiliereTest** (`backend_courses_tests_py_universitefilieretest`, Class, degree: 5)
-- **.setUp()** (`backend_courses_tests_py_universitefilieretest_setup`, Method, degree: 1)
-- **.setUpTestData()** (`backend_courses_tests_py_universitefilieretest_setuptestdata`, Method, degree: 1)
-- **.test_relation_universite_filiere()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere`, Method, degree: 1)
-- **.test_relation_universite_filiere_creation()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation`, Method, degree: 1)
+- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
+- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
+- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
+- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
+- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setup (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setuptestdata (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
 

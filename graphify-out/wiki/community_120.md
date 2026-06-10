@@ -1,25 +1,25 @@
-# Community 120: migrate_courses_fk
+# Community 120: fix_encoding_sqlite
 
 **Members:** 8
 
 ## Nodes
 
-- **migrate_courses_fk** (`backend_courses_management_commands_migrate_courses_fk_py`, File, degree: 6)
-- **Command** (`backend_courses_management_commands_migrate_courses_fk_py_command`, Class, degree: 2)
-- **.handle()** (`backend_courses_management_commands_migrate_courses_fk_py_command_handle`, Method, degree: 1)
-- **courses.models.Course** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite`, Module, degree: 1)
-- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand`, Module, degree: 1)
+- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
+- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_command (defines)
-- backend_courses_management_commands_migrate_courses_fk_py_command → backend_courses_management_commands_migrate_courses_fk_py_command_handle (defines)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
 

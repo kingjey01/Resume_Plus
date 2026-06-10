@@ -1,8 +1,8 @@
-# Community 335: resource
+# Community 335: exercise
 
 **Members:** 1
 
 ## Nodes
 
-- **resource** (`windows_runner_resource_h`, File, degree: 0)
+- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
 

@@ -1,19 +1,19 @@
-# Community 248: service_provider
+# Community 248: fix_settings_mysql
 
 **Members:** 5
 
 ## Nodes
 
-- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
+- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
+- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
+- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
+- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
 

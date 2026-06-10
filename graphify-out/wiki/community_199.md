@@ -1,21 +1,21 @@
-# Community 199: 0010_professeur_session_professeur_fk_summary_professeur
+# Community 199: settings_corrected
 
 **Members:** 6
 
 ## Nodes
 
-- **0010_professeur_session_professeur_fk_summary_professeur** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_migration`, Class, degree: 1)
+- **settings_corrected** (`backend_settings_corrected_py`, File, degree: 5)
+- **datetime.timedelta** (`backend_settings_corrected_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_corrected_py_import_decouple_config`, Module, degree: 1)
+- **os** (`backend_settings_corrected_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_corrected_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_corrected_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models (imports)
-- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_migration (defines)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_pathlib_path (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_datetime_timedelta (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_decouple_config (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_os (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_pymysql (imports)
 

@@ -1,15 +1,15 @@
-# Community 301: snackbar_service
+# Community 301: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
+- **apps** (`backend_notifications_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_notifications_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **NotificationsConfig** (`backend_notifications_apps_py_notificationsconfig`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
+- backend_notifications_apps_py → backend_notifications_apps_py_import_django_apps_appconfig (imports)
+- backend_notifications_apps_py → backend_notifications_apps_py_notificationsconfig (defines)
 

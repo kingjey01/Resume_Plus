@@ -1,15 +1,15 @@
-# Community 315: user
+# Community 315: settings_postgresql
 
 **Members:** 3
 
 ## Nodes
 
-- **user** (`lib_models_user_dart`, File, degree: 2)
-- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
-- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
+- **settings_postgresql** (`backend_settings_postgresql_py`, File, degree: 2)
+- **os** (`backend_settings_postgresql_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_postgresql_py_import_pathlib_path`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_user_dart → lib_models_user_dart_groupe (defines)
-- lib_models_user_dart → lib_models_user_dart_id (defines)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_os (imports)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_pathlib_path (imports)
 

@@ -1,25 +1,25 @@
-# Community 135: migrate_courses_to_fk
+# Community 135: generated_plugin_registrant
 
 **Members:** 8
 
 ## Nodes
 
-- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
-- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
-- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
-- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_cc`, File, degree: 7)
+- **fl_register_plugins()** (`linux_flutter_generated_plugin_registrant_cc_fl_register_plugins`, Function, degree: 1)
+- **audioplayers_linux/audioplayers_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h`, Module, degree: 1)
+- **file_selector_linux/file_selector_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h`, Module, degree: 1)
+- **flutter_secure_storage_linux/flutter_secure_storage_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h`, Module, degree: 1)
+- **generated_plugin_registrant.h** (`linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
+- **record_linux/record_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h`, Module, degree: 1)
+- **url_launcher_linux/url_launcher_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h`, Module, degree: 1)
 
 ## Relationships
 
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_fl_register_plugins (defines)
 

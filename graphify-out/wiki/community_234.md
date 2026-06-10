@@ -1,19 +1,19 @@
-# Community 234: simple_login_service
+# Community 234: PurchaseNotificationTest
 
 **Members:** 5
 
 ## Nodes
 
-- **simple_login_service** (`lib_services_simple_login_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_simple_login_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_simple_login_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
+- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
+- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
 
 ## Relationships
 
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_apiservice (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
 

@@ -1,19 +1,19 @@
-# Community 223: fix_settings_mysql
+# Community 223: tts_reader_widget
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
-- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
-- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
-- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
-- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
+- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
+- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
+- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
 

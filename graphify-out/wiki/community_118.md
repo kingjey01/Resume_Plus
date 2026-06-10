@@ -1,25 +1,37 @@
-# Community 118: phone_login_screen
+# Community 118: flutter_window
 
 **Members:** 8
 
 ## Nodes
 
-- **phone_login_screen** (`lib_features_auth_screens_phone_login_screen_dart`, File, degree: 7)
-- **package:dio/dio.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter/services.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/otp_verification_screen.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PhoneLoginScreenState()** (`lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate`, Function, degree: 1)
+- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
+- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
+- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
+- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
+- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
+- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
+- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
 
 ## Relationships
 
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
 

@@ -1,13 +1,13 @@
-# Community 327: abonnement
+# Community 327: logger
 
 **Members:** 2
 
 ## Nodes
 
-- **abonnement** (`lib_models_abonnement_dart`, File, degree: 1)
-- **id()** (`lib_models_abonnement_dart_id`, Function, degree: 1)
+- **logger** (`lib_utils_logger_dart`, File, degree: 1)
+- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_abonnement_dart → lib_models_abonnement_dart_id (defines)
+- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
 

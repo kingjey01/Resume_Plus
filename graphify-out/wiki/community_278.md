@@ -1,17 +1,17 @@
-# Community 278: create_exercise_service
+# Community 278: celery
 
 **Members:** 4
 
 ## Nodes
 
-- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
-- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
-- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
-- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
+- **celery** (`backend_resume_backend_celery_py`, File, degree: 3)
+- **debug_task()** (`backend_resume_backend_celery_py_debug_task`, Function, degree: 1)
+- **celery.Celery** (`backend_resume_backend_celery_py_import_celery_celery`, Module, degree: 1)
+- **os** (`backend_resume_backend_celery_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_os (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_celery_celery (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_debug_task (defines)
 

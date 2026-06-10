@@ -1,8 +1,8 @@
-# Community 341: summary
+# Community 341: resource
 
 **Members:** 1
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **resource** (`windows_runner_resource_h`, File, degree: 0)
 

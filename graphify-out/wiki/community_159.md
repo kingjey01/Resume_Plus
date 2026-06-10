@@ -1,23 +1,23 @@
-# Community 159: test_exercise_generation
+# Community 159: error_handler_mixin
 
 **Members:** 7
 
 ## Nodes
 
-- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
-- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
-- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
-- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
-- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
+- **error_handler_mixin** (`lib_mixins_error_handler_mixin_dart`, File, degree: 6)
+- **ErrorHandlerMixin** (`lib_mixins_error_handler_mixin_dart_errorhandlermixin`, Class, degree: 1)
+- **package:dio/dio.dart** (`lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/utils/logger.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_errorhandlermixin (defines)
 

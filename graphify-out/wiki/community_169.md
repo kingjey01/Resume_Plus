@@ -1,23 +1,23 @@
-# Community 169: setup_exercise_service
+# Community 169: deepgram_service
 
 **Members:** 7
 
 ## Nodes
 
-- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
-- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
-- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
-- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
-- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
-- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
+- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
+- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
+- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
+- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
+- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
 

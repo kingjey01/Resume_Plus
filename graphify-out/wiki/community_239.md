@@ -1,19 +1,21 @@
-# Community 239: test_simple_page
+# Community 239: ._clean_transcript()
 
 **Members:** 5
 
 ## Nodes
 
-- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
-- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
-- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
+- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
+- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
+- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
+- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
+- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
 
 ## Relationships
 
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
 

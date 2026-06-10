@@ -1,27 +1,32 @@
-# Community 96: profile_completion_screen
+# Community 96: simple_auth_test
 
 **Members:** 9
 
 ## Nodes
 
-- **profile_completion_screen** (`lib_features_auth_screens_profile_completion_screen_dart`, File, degree: 8)
-- **package:dio/dio.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_ProfileCompletionScreenState()** (`lib_features_auth_screens_profile_completion_screen_dart_profilecompletionscreenstate`, Function, degree: 1)
+- **simple_auth_test** (`backend_simple_auth_test_py`, File, degree: 8)
+- **analyze_error_response()** (`backend_simple_auth_test_py_analyze_error_response`, Function, degree: 2)
+- **json** (`backend_simple_auth_test_py_import_json`, Module, degree: 1)
+- **requests** (`backend_simple_auth_test_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_simple_auth_test_py_main`, Function, degree: 6)
+- **suggest_solutions()** (`backend_simple_auth_test_py_suggest_solutions`, Function, degree: 2)
+- **test_auth_endpoint_without_token()** (`backend_simple_auth_test_py_test_auth_endpoint_without_token`, Function, degree: 2)
+- **test_server_basic()** (`backend_simple_auth_test_py_test_server_basic`, Function, degree: 2)
+- **test_token_with_different_methods()** (`backend_simple_auth_test_py_test_token_with_different_methods`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_profilecompletionscreenstate (defines)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_import_requests (imports)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_import_json (imports)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_test_server_basic (defines)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_test_auth_endpoint_without_token (defines)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_test_token_with_different_methods (defines)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_analyze_error_response (defines)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_suggest_solutions (defines)
+- backend_simple_auth_test_py → backend_simple_auth_test_py_main (defines)
+- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_server_basic (calls)
+- backend_simple_auth_test_py_main → backend_simple_auth_test_py_analyze_error_response (calls)
+- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_auth_endpoint_without_token (calls)
+- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_token_with_different_methods (calls)
+- backend_simple_auth_test_py_main → backend_simple_auth_test_py_suggest_solutions (calls)
 

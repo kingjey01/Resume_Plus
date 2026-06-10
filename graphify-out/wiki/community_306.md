@@ -1,15 +1,15 @@
-# Community 306: utils
+# Community 306: 0015_merge_20260523_2104
 
 **Members:** 3
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_h`, File, degree: 2)
-- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
-- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
+- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
+- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
-- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
 

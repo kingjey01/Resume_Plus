@@ -1,20 +1,19 @@
-# Community 250: create_simple_audio_file()
+# Community 250: AppDelegate
 
 **Members:** 5
 
 ## Nodes
 
-- **create_simple_audio_file()** (`backend_test_simple_audio_upload_py_create_simple_audio_file`, Function, degree: 3)
-- **main()** (`backend_test_simple_audio_upload_py_main`, Function, degree: 4)
-- **test_audio_upload_direct()** (`backend_test_simple_audio_upload_py_test_audio_upload_direct`, Function, degree: 3)
-- **test_simple_endpoints()** (`backend_test_simple_audio_upload_py_test_simple_endpoints`, Function, degree: 2)
-- **test_with_different_course_ids()** (`backend_test_simple_audio_upload_py_test_with_different_course_ids`, Function, degree: 3)
+- **AppDelegate** (`ios_runner_appdelegate_swift`, File, degree: 4)
+- **application** (`ios_runner_appdelegate_swift_application`, Function, degree: 1)
+- **FirebaseCore** (`ios_runner_appdelegate_swift_import_firebasecore`, Module, degree: 1)
+- **Flutter** (`ios_runner_appdelegate_swift_import_flutter`, Module, degree: 1)
+- **UIKit** (`ios_runner_appdelegate_swift_import_uikit`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_simple_audio_upload_py_test_audio_upload_direct → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
-- backend_test_simple_audio_upload_py_test_with_different_course_ids → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_with_different_course_ids (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_audio_upload_direct (calls)
-- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_simple_endpoints (calls)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_application (defines)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_flutter (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_uikit (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_firebasecore (imports)
 

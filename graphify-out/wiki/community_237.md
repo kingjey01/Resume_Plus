@@ -1,20 +1,19 @@
-# Community 237: create_test_audio_upload()
+# Community 237: subscription_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **create_test_audio_upload()** (`backend_test_advanced_audio_functionality_py_create_test_audio_upload`, Function, degree: 2)
-- **main()** (`backend_test_advanced_audio_functionality_py_main`, Function, degree: 5)
-- **test_audio_files_existence()** (`backend_test_advanced_audio_functionality_py_test_audio_files_existence`, Function, degree: 3)
-- **test_django_setup()** (`backend_test_advanced_audio_functionality_py_test_django_setup`, Function, degree: 3)
-- **test_local_server_endpoints()** (`backend_test_advanced_audio_functionality_py_test_local_server_endpoints`, Function, degree: 2)
+- **subscription_provider** (`lib_features_subscriptions_providers_subscription_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py_test_audio_files_existence → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_create_test_audio_upload (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_audio_files_existence (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_local_server_endpoints (calls)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

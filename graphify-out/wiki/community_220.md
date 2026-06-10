@@ -1,19 +1,19 @@
-# Community 220: ai_content_view
+# Community 220: test_api
 
 **Members:** 5
 
 ## Nodes
 
-- **ai_content_view** (`lib_widgets_ai_content_view_dart`, File, degree: 4)
-- **_AiContentViewState()** (`lib_widgets_ai_content_view_dart_aicontentviewstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_ai_content_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_api** (`backend_test_api_py`, File, degree: 4)
+- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
+- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
+- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
 
 ## Relationships
 
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_aicontentviewstate (defines)
+- backend_test_api_py → backend_test_api_py_import_requests (imports)
+- backend_test_api_py → backend_test_api_py_import_json (imports)
+- backend_test_api_py → backend_test_api_py_test_services_api (defines)
+- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
 

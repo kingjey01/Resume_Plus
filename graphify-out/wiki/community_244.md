@@ -1,19 +1,19 @@
-# Community 244: AbonnementListCreateView
+# Community 244: diagnostic_complet
 
 **Members:** 5
 
 ## Nodes
 
-- **AbonnementListCreateView** (`backend_payments_views_py_abonnementlistcreateview`, Class, degree: 4)
-- **.get_queryset()** (`backend_payments_views_py_abonnementlistcreateview_get_queryset`, Method, degree: 1)
-- **.list()** (`backend_payments_views_py_abonnementlistcreateview_list`, Method, degree: 2)
-- **.perform_create()** (`backend_payments_views_py_abonnementlistcreateview_perform_create`, Method, degree: 1)
-- **initiate_subscription_payment_view()** (`backend_payments_views_py_initiate_subscription_payment_view`, Function, degree: 2)
+- **diagnostic_complet** (`backend_diagnostic_complet_py`, File, degree: 12)
+- **datetime** (`backend_diagnostic_complet_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_diagnostic_complet_py_import_json`, Module, degree: 1)
+- **jwt** (`backend_diagnostic_complet_py_import_jwt`, Module, degree: 1)
+- **requests** (`backend_diagnostic_complet_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_get_queryset (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_perform_create (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_list (defines)
-- backend_payments_views_py_initiate_subscription_payment_view → backend_payments_views_py_abonnementlistcreateview_list (calls)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_requests (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_json (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_jwt (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_datetime (imports)
 

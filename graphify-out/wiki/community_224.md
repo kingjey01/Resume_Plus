@@ -1,19 +1,19 @@
-# Community 224: widget_test
+# Community 224: edit_summary_screen
 
 **Members:** 5
 
 ## Nodes
 
-- **widget_test** (`test_widget_test_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
-- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
-- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
+- **edit_summary_screen** (`lib_features_validation_screens_edit_summary_screen_dart`, File, degree: 4)
+- **_EditSummaryScreenState()** (`lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_main (defines)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate (defines)
 

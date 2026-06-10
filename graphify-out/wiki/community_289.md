@@ -1,15 +1,15 @@
-# Community 289: purchased_summaries_provider
+# Community 289: test_local_server
 
 **Members:** 3
 
 ## Nodes
 
-- **purchased_summaries_provider** (`lib_features_summaries_providers_purchased_summaries_provider_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
+- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
+- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_summaries_providers_purchased_summaries_provider_dart → lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_summaries_providers_purchased_summaries_provider_dart → lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
+- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
 

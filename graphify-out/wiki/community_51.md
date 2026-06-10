@@ -1,33 +1,33 @@
-# Community 51: otp_verification_screen
+# Community 51: debug_services_issue
 
 **Members:** 12
 
 ## Nodes
 
-- **otp_verification_screen** (`lib_features_auth_screens_otp_verification_screen_dart`, File, degree: 11)
-- **dart:async** (`lib_features_auth_screens_otp_verification_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart'** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter/services.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/fcm_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_fcm_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_OtpVerificationScreenState()** (`lib_features_auth_screens_otp_verification_screen_dart_otpverificationscreenstate`, Function, degree: 1)
+- **debug_services_issue** (`backend_debug_services_issue_py`, File, degree: 11)
+- **debug_services_issue()** (`backend_debug_services_issue_py_debug_services_issue`, Function, degree: 1)
+- **django** (`backend_debug_services_issue_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_services_issue_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_services_issue_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_debug_services_issue_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_debug_services_issue_py_import_payments_models_service`, Module, degree: 1)
+- **payments.views.AbonnementListCreateView** (`backend_debug_services_issue_py_import_payments_views_abonnementlistcreateview`, Module, degree: 1)
+- **payments.views.ServiceListCreateView** (`backend_debug_services_issue_py_import_payments_views_servicelistcreateview`, Module, degree: 1)
+- **rest_framework_simplejwt.tokens.RefreshToken** (`backend_debug_services_issue_py_import_rest_framework_simplejwt_tokens_refreshtoken`, Module, degree: 1)
+- **rest_framework.test.APIRequestFactory** (`backend_debug_services_issue_py_import_rest_framework_test_apirequestfactory`, Module, degree: 1)
+- **sys** (`backend_debug_services_issue_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_services_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_fcm_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_dart_async (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_otpverificationscreenstate (defines)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_os (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_sys (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_django (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_payments_models_service (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_payments_models_abonnement (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_payments_views_servicelistcreateview (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_payments_views_abonnementlistcreateview (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_rest_framework_test_apirequestfactory (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_import_rest_framework_simplejwt_tokens_refreshtoken (imports)
+- backend_debug_services_issue_py → backend_debug_services_issue_py_debug_services_issue (defines)
 

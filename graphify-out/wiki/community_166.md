@@ -1,23 +1,23 @@
-# Community 166: auto_login_service
+# Community 166: notification_detail_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **auto_login_service** (`lib_services_auto_login_service_dart`, File, degree: 6)
-- **AppStartState** (`lib_services_auto_login_service_dart_appstartstate`, Enum, degree: 1)
-- **dart:math** (`lib_services_auto_login_service_dart_import_dart_math`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_auto_login_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **notification_detail_screen** (`lib_features_notifications_screens_notification_detail_screen_dart`, File, degree: 6)
+- **package:flutter/material.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_NotificationDetailScreenState()** (`lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_dart_math (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_appstartstate (defines)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate (defines)
 

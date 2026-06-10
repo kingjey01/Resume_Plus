@@ -1,17 +1,17 @@
-# Community 280: api_error_view
+# Community 280: test_flutter_api
 
 **Members:** 4
 
 ## Nodes
 
-- **api_error_view** (`lib_widgets_api_error_view_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_widgets_api_error_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_flutter_api** (`test_flutter_api_dart`, File, degree: 3)
+- **lib/services/api_service.dart** (`test_flutter_api_dart_import_lib_services_api_service_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`test_flutter_api_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **main()** (`test_flutter_api_dart_main`, Function, degree: 1)
 
 ## Relationships
 
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- test_flutter_api_dart → test_flutter_api_dart_import_package_flutter_material_dart (imports)
+- test_flutter_api_dart → test_flutter_api_dart_import_lib_services_api_service_dart (imports)
+- test_flutter_api_dart → test_flutter_api_dart_main (defines)
 

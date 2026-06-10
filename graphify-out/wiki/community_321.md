@@ -1,13 +1,13 @@
-# Community 321: generated_plugin_registrant
+# Community 321: my_application
 
 **Members:** 2
 
 ## Nodes
 
-- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
-- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
+- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
+- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
 
 ## Relationships
 
-- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
+- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
 

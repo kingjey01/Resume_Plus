@@ -1,13 +1,13 @@
-# Community 320: my_application
+# Community 320: simple_seed
 
 **Members:** 2
 
 ## Nodes
 
-- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
-- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
+- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
+- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
 

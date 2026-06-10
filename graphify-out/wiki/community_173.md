@@ -1,23 +1,23 @@
-# Community 173: filiere_promotion
+# Community 173: ExerciseAttemptAdmin
 
 **Members:** 7
 
 ## Nodes
 
-- **filiere_promotion** (`lib_models_filiere_promotion_dart`, File, degree: 6)
-- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_dart_filierepromotionfromjson`, Function, degree: 1)
-- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_dart_filierepromotiontojson`, Function, degree: 1)
-- **filiere.dart** (`lib_models_filiere_promotion_dart_import_filiere_dart`, Module, degree: 1)
-- **filiere_promotion.g.dart** (`lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart`, Module, degree: 1)
-- **package:json_annotation/json_annotation.dart** (`lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
-- **promotion.dart** (`lib_models_filiere_promotion_dart_import_promotion_dart`, Module, degree: 1)
+- **ExerciseAttemptAdmin** (`backend_courses_admin_py_exerciseattemptadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_exerciseattemptadmin_get_queryset`, Method, degree: 2)
+- **ProfesseurAdmin** (`backend_courses_admin_py_professeuradmin`, Class, degree: 3)
+- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
+- **.list_filieres()** (`backend_courses_admin_py_professeuradmin_list_filieres`, Method, degree: 1)
+- **SummaryAdmin** (`backend_courses_admin_py_summaryadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_summaryadmin_get_queryset`, Method, degree: 2)
 
 ## Relationships
 
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_promotion_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotionfromjson (defines)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotiontojson (defines)
+- backend_courses_admin_py_summaryadmin → backend_courses_admin_py_summaryadmin_get_queryset (defines)
+- backend_courses_admin_py_exerciseattemptadmin → backend_courses_admin_py_exerciseattemptadmin_get_queryset (defines)
+- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_list_filieres (defines)
+- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_get_queryset (defines)
+- backend_courses_admin_py_summaryadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_courses_admin_py_exerciseattemptadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
 

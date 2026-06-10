@@ -1,31 +1,31 @@
-# Community 64: fix_auth_issues
+# Community 64: UserProfile
 
 **Members:** 11
 
 ## Nodes
 
-- **fix_auth_issues** (`backend_fix_auth_issues_py`, File, degree: 17)
-- **decouple.config** (`backend_fix_auth_issues_py_import_decouple_config`, Module, degree: 1)
-- **django** (`backend_fix_auth_issues_py_import_django`, Module, degree: 1)
-- **django.conf** (`backend_fix_auth_issues_py_import_django_conf`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_auth_issues_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_auth_issues_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_fix_auth_issues_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_fix_auth_issues_py_import_pymysql`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_fix_auth_issues_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_fix_auth_issues_py_import_users_models_userprofile`, Module, degree: 1)
+- **UserProfile** (`backend_users_models_py_userprofile`, Class, degree: 11)
+- **.can_create_summary()** (`backend_users_models_py_userprofile_can_create_summary`, Method, degree: 1)
+- **.generate_otp()** (`backend_users_models_py_userprofile_generate_otp`, Method, degree: 1)
+- **.has_active_subscription()** (`backend_users_models_py_userprofile_has_active_subscription`, Method, degree: 1)
+- **.has_free_access()** (`backend_users_models_py_userprofile_has_free_access`, Method, degree: 1)
+- **.is_admin()** (`backend_users_models_py_userprofile_is_admin`, Method, degree: 1)
+- **.is_cp()** (`backend_users_models_py_userprofile_is_cp`, Method, degree: 1)
+- **.is_etudiant()** (`backend_users_models_py_userprofile_is_etudiant`, Method, degree: 1)
+- **.reset_otp()** (`backend_users_models_py_userprofile_reset_otp`, Method, degree: 1)
+- **.__str__()** (`backend_users_models_py_userprofile_str`, Method, degree: 1)
+- **.verify_otp()** (`backend_users_models_py_userprofile_verify_otp`, Method, degree: 1)
 
 ## Relationships
 
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_os (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_sys (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pymysql (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pathlib_path (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_conf (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_decouple_config (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token (imports)
-- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_users_models_userprofile (imports)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_str (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_cp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_admin (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_etudiant (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_can_create_summary (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_free_access (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_generate_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_verify_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_reset_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_active_subscription (defines)
 

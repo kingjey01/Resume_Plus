@@ -1,19 +1,19 @@
-# Community 226: tts_reader_widget
+# Community 226: otp_service
 
 **Members:** 5
 
 ## Nodes
 
-- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
-- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
-- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
+- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
+- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
 

@@ -1,12 +1,16 @@
 # Community 2: views
 
-**Members:** 39
+**Members:** 44
 
 ## Nodes
 
 - **views** (`backend_payments_views_py`, File, degree: 30)
 - **AbonnementDetailView** (`backend_payments_views_py_abonnementdetailview`, Class, degree: 2)
 - **.get_queryset()** (`backend_payments_views_py_abonnementdetailview_get_queryset`, Method, degree: 1)
+- **AbonnementListCreateView** (`backend_payments_views_py_abonnementlistcreateview`, Class, degree: 4)
+- **.get_queryset()** (`backend_payments_views_py_abonnementlistcreateview_get_queryset`, Method, degree: 1)
+- **.list()** (`backend_payments_views_py_abonnementlistcreateview_list`, Method, degree: 2)
+- **.perform_create()** (`backend_payments_views_py_abonnementlistcreateview_perform_create`, Method, degree: 1)
 - **check_purchase_status()** (`backend_payments_views_py_check_purchase_status`, Function, degree: 1)
 - **check_subscription_status()** (`backend_payments_views_py_check_subscription_status`, Function, degree: 1)
 - **complete_purchase()** (`backend_payments_views_py_complete_purchase`, Function, degree: 1)
@@ -29,6 +33,7 @@
 - **.serializers.PurchaseSerializer** (`backend_payments_views_py_import_serializers_purchaseserializer`, Module, degree: 1)
 - **.serializers.ServiceSerializer** (`backend_payments_views_py_import_serializers_serviceserializer`, Module, degree: 1)
 - **initiate_purchase()** (`backend_payments_views_py_initiate_purchase`, Function, degree: 1)
+- **initiate_subscription_payment_view()** (`backend_payments_views_py_initiate_subscription_payment_view`, Function, degree: 2)
 - **PurchaseDetailView** (`backend_payments_views_py_purchasedetailview`, Class, degree: 2)
 - **.get_queryset()** (`backend_payments_views_py_purchasedetailview_get_queryset`, Method, degree: 1)
 - **PurchaseListCreateView** (`backend_payments_views_py_purchaselistcreateview`, Class, degree: 4)
@@ -79,9 +84,15 @@
 - backend_payments_views_py → backend_payments_views_py_servicedetailview (defines)
 - backend_payments_views_py_servicedetailview → backend_payments_views_py_servicedetailview_perform_update (defines)
 - backend_payments_views_py_servicedetailview → backend_payments_views_py_servicedetailview_perform_destroy (defines)
+- backend_payments_views_py → backend_payments_views_py_abonnementlistcreateview (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_get_queryset (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_perform_create (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_list (defines)
 - backend_payments_views_py → backend_payments_views_py_abonnementdetailview (defines)
 - backend_payments_views_py_abonnementdetailview → backend_payments_views_py_abonnementdetailview_get_queryset (defines)
 - backend_payments_views_py → backend_payments_views_py_initiate_purchase (defines)
+- backend_payments_views_py → backend_payments_views_py_initiate_subscription_payment_view (defines)
 - backend_payments_views_py → backend_payments_views_py_check_subscription_status (defines)
 - backend_payments_views_py → backend_payments_views_py_check_purchase_status (defines)
+- backend_payments_views_py_initiate_subscription_payment_view → backend_payments_views_py_abonnementlistcreateview_list (calls)
 

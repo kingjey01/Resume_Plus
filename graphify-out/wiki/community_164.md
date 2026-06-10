@@ -1,23 +1,23 @@
-# Community 164: main
+# Community 164: filiere_promotion
 
 **Members:** 7
 
 ## Nodes
 
-- **main** (`windows_runner_main_cpp`, File, degree: 6)
-- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
-- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
-- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
+- **filiere_promotion** (`lib_models_filiere_promotion_dart`, File, degree: 6)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere.dart** (`lib_models_filiere_promotion_dart_import_filiere_dart`, Module, degree: 1)
+- **filiere_promotion.g.dart** (`lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart`, Module, degree: 1)
+- **package:json_annotation/json_annotation.dart** (`lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
+- **promotion.dart** (`lib_models_filiere_promotion_dart_import_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_promotion_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotiontojson (defines)
 

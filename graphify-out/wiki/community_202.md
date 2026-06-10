@@ -1,21 +1,21 @@
-# Community 202: exercise_subscription_screen
+# Community 202: create_admin_user()
 
 **Members:** 6
 
 ## Nodes
 
-- **exercise_subscription_screen** (`lib_features_exercises_screens_exercise_subscription_screen_dart`, File, degree: 5)
-- **_ExerciseSubscriptionScreenState()** (`lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
+- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
+- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
+- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
+- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
+- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate (defines)
+- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
+- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
 

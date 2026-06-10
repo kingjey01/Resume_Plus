@@ -1,23 +1,21 @@
-# Community 179: deepgram_service
+# Community 179: summary_card
 
-**Members:** 7
+**Members:** 6
 
 ## Nodes
 
-- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
-- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
-- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
-- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
+- **summary_card** (`lib_features_home_widgets_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

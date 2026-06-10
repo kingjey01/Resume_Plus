@@ -1,19 +1,19 @@
-# Community 208: exercise_result_screen
+# Community 208: enhanced_auth_demo_page
 
 **Members:** 5
 
 ## Nodes
 
-- **exercise_result_screen** (`lib_features_exercises_screens_exercise_result_screen_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/secure_screen_wrapper.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart`, Module, degree: 1)
+- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
 

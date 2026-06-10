@@ -1,21 +1,19 @@
-# Community 206: AppDelegate
+# Community 206: fix_user_promotion
 
-**Members:** 6
+**Members:** 5
 
 ## Nodes
 
-- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
-- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
-- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
-- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
-- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
+- **fix_user_promotion** (`backend_fix_user_promotion_py`, File, degree: 4)
+- **courses.models.Promotion** (`backend_fix_user_promotion_py_import_courses_models_promotion`, Module, degree: 1)
+- **django** (`backend_fix_user_promotion_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_user_promotion_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_user_promotion_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_os (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_courses_models_promotion (imports)
 

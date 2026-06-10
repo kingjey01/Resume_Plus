@@ -1,29 +1,33 @@
-# Community 82: test_notification_logic
+# Community 82: test_registration
 
 **Members:** 10
 
 ## Nodes
 
-- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
-- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
-- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
-- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
-- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
+- **test_registration** (`backend_test_registration_py`, File, degree: 9)
+- **generate_random_user()** (`backend_test_registration_py_generate_random_user`, Function, degree: 2)
+- **json** (`backend_test_registration_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_registration_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_registration_py_import_requests`, Module, degree: 1)
+- **string** (`backend_test_registration_py_import_string`, Module, degree: 1)
+- **main()** (`backend_test_registration_py_main`, Function, degree: 4)
+- **test_api_with_jwt_token()** (`backend_test_registration_py_test_api_with_jwt_token`, Function, degree: 2)
+- **test_login_with_new_user()** (`backend_test_registration_py_test_login_with_new_user`, Function, degree: 2)
+- **test_registration()** (`backend_test_registration_py_test_registration`, Function, degree: 3)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
+- backend_test_registration_py → backend_test_registration_py_import_requests (imports)
+- backend_test_registration_py → backend_test_registration_py_import_json (imports)
+- backend_test_registration_py → backend_test_registration_py_import_random (imports)
+- backend_test_registration_py → backend_test_registration_py_import_string (imports)
+- backend_test_registration_py → backend_test_registration_py_generate_random_user (defines)
+- backend_test_registration_py → backend_test_registration_py_test_registration (defines)
+- backend_test_registration_py → backend_test_registration_py_test_login_with_new_user (defines)
+- backend_test_registration_py → backend_test_registration_py_test_api_with_jwt_token (defines)
+- backend_test_registration_py → backend_test_registration_py_main (defines)
+- backend_test_registration_py_test_registration → backend_test_registration_py_generate_random_user (calls)
+- backend_test_registration_py_main → backend_test_registration_py_test_login_with_new_user (calls)
+- backend_test_registration_py_main → backend_test_registration_py_test_registration (calls)
+- backend_test_registration_py_main → backend_test_registration_py_test_api_with_jwt_token (calls)
 

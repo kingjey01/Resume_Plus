@@ -1,8 +1,8 @@
-# Community 347: __init__
+# Community 347: filiere
 
 **Members:** 1
 
 ## Nodes
 
-- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
+- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
 

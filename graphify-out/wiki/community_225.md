@@ -1,19 +1,21 @@
-# Community 225: 0009_add_course_fk_fields
+# Community 225: DeepSeekService
 
 **Members:** 5
 
 ## Nodes
 
-- **0009_add_course_fk_fields** (`backend_courses_migrations_0009_add_course_fk_fields_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0009_add_course_fk_fields_py_migration`, Class, degree: 1)
+- **DeepSeekService** (`backend_courses_deepseek_service_py_deepseekservice`, Class, degree: 13)
+- **._build_exercises_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt`, Method, degree: 2)
+- **.generate_exercises()** (`backend_courses_deepseek_service_py_deepseekservice_generate_exercises`, Method, degree: 4)
+- **._get_api_key()** (`backend_courses_deepseek_service_py_deepseekservice_get_api_key`, Method, degree: 2)
+- **.__init__()** (`backend_courses_deepseek_service_py_deepseekservice_init`, Method, degree: 2)
 
 ## Relationships
 
-- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models (imports)
-- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_migration (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_init (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_get_api_key (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_generate_exercises (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (defines)
+- backend_courses_deepseek_service_py_deepseekservice_init → backend_courses_deepseek_service_py_deepseekservice_get_api_key (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_exercises → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (calls)
 

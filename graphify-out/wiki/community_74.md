@@ -1,36 +1,29 @@
-# Community 74: utils
+# Community 74: validation_screen
 
 **Members:** 10
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
-- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
-- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
-- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
-- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
-- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
-- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
-- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
+- **validation_screen** (`lib_features_validation_screens_validation_screen_dart`, File, degree: 9)
+- **dart:async** (`lib_features_validation_screens_validation_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
+- **_ValidationScreenState()** (`lib_features_validation_screens_validation_screen_dart_validationscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_dart_async (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_validationscreenstate (defines)
 

@@ -1,36 +1,27 @@
-# Community 89: test_mobile_simulation
+# Community 89: payment_status_screen
 
-**Members:** 10
+**Members:** 9
 
 ## Nodes
 
-- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
-- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
-- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
-- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
-- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
-- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
-- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
-- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
-- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
+- **payment_status_screen** (`lib_features_purchases_screens_payment_status_screen_dart`, File, degree: 8)
+- **dart:async** (`lib_features_purchases_screens_payment_status_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/purchase_badge_provider.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PaymentState** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstate`, Enum, degree: 1)
+- **_PaymentStatusScreenState()** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
-- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_dart_async (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate (defines)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstate (defines)
 

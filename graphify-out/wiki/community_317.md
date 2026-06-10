@@ -1,13 +1,13 @@
-# Community 317: payment_method
+# Community 317: professeur
 
 **Members:** 2
 
 ## Nodes
 
-- **payment_method** (`lib_models_payment_method_dart`, File, degree: 1)
-- **PaymentMethodType** (`lib_models_payment_method_dart_paymentmethodtype`, Enum, degree: 1)
+- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
+- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_payment_method_dart → lib_models_payment_method_dart_paymentmethodtype (defines)
+- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
 
