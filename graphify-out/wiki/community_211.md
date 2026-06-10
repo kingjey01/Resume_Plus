@@ -1,19 +1,19 @@
-# Community 211: 0002_remove_userprofile_role_and_more
+# Community 211: ProfesseurFilieresAdmin
 
 **Members:** 5
 
 ## Nodes
 
-- **0002_remove_userprofile_role_and_more** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py`, File, degree: 4)
-- **django.db.migrations** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration`, Class, degree: 1)
+- **ProfesseurFilieresAdmin** (`backend_courses_admin_py_professeurfilieresadmin`, Class, degree: 5)
+- **.get_queryset()** (`backend_courses_admin_py_professeurfilieresadmin_get_queryset`, Method, degree: 2)
+- **.has_add_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_add_permission`, Method, degree: 1)
+- **.has_change_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_change_permission`, Method, degree: 1)
+- **.has_delete_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_delete_permission`, Method, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration (defines)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_add_permission (defines)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_change_permission (defines)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_delete_permission (defines)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_get_queryset (defines)
 

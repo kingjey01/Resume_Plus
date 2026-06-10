@@ -1,23 +1,23 @@
-# Community 165: purchases_screen
+# Community 165: setup_exercise_service
 
 **Members:** 7
 
 ## Nodes
 
-- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 6)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
+- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
+- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
+- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
+- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
+- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
+- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
+- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
 

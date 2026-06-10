@@ -1,13 +1,15 @@
-# Community 317: professeur
+# Community 317: production_settings
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
-- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
+- **production_settings** (`backend_production_settings_py`, File, degree: 2)
+- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
+- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
+- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
+- backend_production_settings_py → backend_production_settings_py_import_os (imports)
 

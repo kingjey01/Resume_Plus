@@ -1,27 +1,25 @@
-# Community 110: purchase_summary_screen
+# Community 110: phone_login_screen
 
-**Members:** 9
+**Members:** 8
 
 ## Nodes
 
-- **purchase_summary_screen** (`lib_features_purchases_screens_purchase_summary_screen_dart`, File, degree: 8)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchaseSummaryScreenState()** (`lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate`, Function, degree: 1)
+- **phone_login_screen** (`lib_features_auth_screens_phone_login_screen_dart`, File, degree: 7)
+- **package:dio/dio.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/otp_verification_screen.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PhoneLoginScreenState()** (`lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate (defines)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines)
 

@@ -1,21 +1,21 @@
-# Community 189: win32_window
+# Community 189: auth_repository
 
 **Members:** 6
 
 ## Nodes
 
-- **win32_window** (`windows_runner_win32_window_h`, File, degree: 5)
-- **functional** (`windows_runner_win32_window_h_import_functional`, Module, degree: 1)
-- **memory** (`windows_runner_win32_window_h_import_memory`, Module, degree: 1)
-- **string** (`windows_runner_win32_window_h_import_string`, Module, degree: 1)
-- **windows.h** (`windows_runner_win32_window_h_import_windows_h`, Module, degree: 1)
-- **Size** (`windows_runner_win32_window_h_size`, Struct, degree: 1)
+- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
+- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_windows_h (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_functional (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_memory (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_string (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_size (defines)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
 

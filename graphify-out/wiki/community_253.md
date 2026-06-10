@@ -1,17 +1,19 @@
-# Community 253: 0006_migrate_existing_relations
+# Community 253: deepseek_service
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **0006_migrate_existing_relations** (`backend_courses_migrations_0006_migrate_existing_relations_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations`, Module, degree: 1)
-- **migrate_existing_relations()** (`backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations`, Function, degree: 1)
-- **Migration** (`backend_courses_migrations_0006_migrate_existing_relations_py_migration`, Class, degree: 1)
+- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
+- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations (defines)
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migration (defines)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
 

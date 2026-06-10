@@ -12,31 +12,47 @@ class AboutScreen extends StatelessWidget {
       backgroundColor: theme.scaffoldBackgroundColor,
       body: CustomScrollView(
         slivers: [
-          // ─── Header ───────────────────────────────────────────────────────
+          // ─── Header fixe ────────────────────────────────────────────────────
           SliverAppBar(
-            expandedHeight: 180,
             pinned: true,
+            floating: false,
+            snap: false,
+            elevation: 0,
             backgroundColor: AppTheme.primaryBlueDark,
             foregroundColor: Colors.white,
-            flexibleSpace: FlexibleSpaceBar(
-              titlePadding: const EdgeInsets.only(left: 72, bottom: 16, right: 16),
-              title: const Text(
-                'À propos',
-                style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700, fontSize: 18),
-              ),
-              background: Container(
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [AppTheme.primaryBlueDark, AppTheme.primaryBlue, AppTheme.primaryBlueLight],
-                  ),
+            title: const Text(
+              'À propos',
+              style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
+            ),
+            centerTitle: true,
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_rounded),
+              onPressed: () => Navigator.of(context).pop(),
+            ),
+          ),
+
+          // ─── Contenu ──────────────────────────────────────────────────────
+          // ─── Bannière Résumé+ (scrollable) ─────────────────────────────────
+          SliverToBoxAdapter(
+            child: Container(
+              decoration: const BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [AppTheme.primaryBlueDark, AppTheme.primaryBlue, AppTheme.primaryBlueLight],
                 ),
-                child: Center(
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(24),
+                  bottomRight: Radius.circular(24),
+                ),
+              ),
+              child: SafeArea(
+                top: false,
+                bottom: false,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 24),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(height: 20),
                       Container(
                         width: 72,
                         height: 72,

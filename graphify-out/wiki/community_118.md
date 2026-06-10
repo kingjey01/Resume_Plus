@@ -1,37 +1,26 @@
-# Community 118: flutter_window
+# Community 118: quick_server_test
 
 **Members:** 8
 
 ## Nodes
 
-- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
-- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
-- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
-- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
-- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
-- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
-- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
+- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
+- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
+- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
+- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
+- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
+- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
+- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
+- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
+- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
+- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
 

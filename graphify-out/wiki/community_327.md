@@ -1,13 +1,13 @@
-# Community 327: logger
+# Community 327: __init__
 
 **Members:** 2
 
 ## Nodes
 
-- **logger** (`lib_utils_logger_dart`, File, degree: 1)
-- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
+- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
 
 ## Relationships
 
-- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
+- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
 

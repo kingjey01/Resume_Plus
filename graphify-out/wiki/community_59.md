@@ -1,34 +1,31 @@
-# Community 59: test_file_permissions
+# Community 59: generated_plugin_registrant
 
 **Members:** 11
 
 ## Nodes
 
-- **test_file_permissions** (`backend_test_file_permissions_py`, File, degree: 10)
-- **check_wsgi_user()** (`backend_test_file_permissions_py_check_wsgi_user`, Function, degree: 2)
-- **django** (`backend_test_file_permissions_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_file_permissions_py_import_django_conf_settings`, Module, degree: 1)
-- **django.core.files.base.ContentFile** (`backend_test_file_permissions_py_import_django_core_files_base_contentfile`, Module, degree: 1)
-- **django.core.files.storage.default_storage** (`backend_test_file_permissions_py_import_django_core_files_storage_default_storage`, Module, degree: 1)
-- **os** (`backend_test_file_permissions_py_import_os`, Module, degree: 1)
-- **sys** (`backend_test_file_permissions_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_test_file_permissions_py_main`, Function, degree: 4)
-- **test_django_file_upload()** (`backend_test_file_permissions_py_test_django_file_upload`, Function, degree: 2)
-- **test_media_permissions()** (`backend_test_file_permissions_py_test_media_permissions`, Function, degree: 2)
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_cc`, File, degree: 10)
+- **audioplayers_windows/audioplayers_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h`, Module, degree: 1)
+- **file_selector_windows/file_selector_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h`, Module, degree: 1)
+- **firebase_core/firebase_core_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h`, Module, degree: 1)
+- **flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h`, Module, degree: 1)
+- **flutter_tts/flutter_tts_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h`, Module, degree: 1)
+- **generated_plugin_registrant.h** (`windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
+- **permission_handler_windows/permission_handler_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h`, Module, degree: 1)
+- **record_windows/record_windows_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h`, Module, degree: 1)
+- **url_launcher_windows/url_launcher_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h`, Module, degree: 1)
+- **RegisterPlugins()** (`windows_flutter_generated_plugin_registrant_cc_registerplugins`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_os (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_sys (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_conf_settings (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_base_contentfile (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_storage_default_storage (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_test_media_permissions (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_test_django_file_upload (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_check_wsgi_user (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_main (defines)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_django_file_upload (calls)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_check_wsgi_user (calls)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_media_permissions (calls)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_registerplugins (defines)
 

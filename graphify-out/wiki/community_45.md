@@ -1,36 +1,38 @@
-# Community 45: fix_audio_issues
+# Community 45: debug_audio_issues
 
-**Members:** 13
+**Members:** 12
 
 ## Nodes
 
-- **fix_audio_issues** (`backend_fix_audio_issues_py`, File, degree: 12)
-- **create_apache_media_config()** (`backend_fix_audio_issues_py_create_apache_media_config`, Function, degree: 1)
-- **create_audio_test_endpoint()** (`backend_fix_audio_issues_py_create_audio_test_endpoint`, Function, degree: 1)
-- **create_media_directories()** (`backend_fix_audio_issues_py_create_media_directories`, Function, degree: 1)
-- **create_real_audio_files()** (`backend_fix_audio_issues_py_create_real_audio_files`, Function, degree: 2)
-- **os** (`backend_fix_audio_issues_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_fix_audio_issues_py_import_pathlib_path`, Module, degree: 1)
-- **subprocess** (`backend_fix_audio_issues_py_import_subprocess`, Module, degree: 1)
-- **sys** (`backend_fix_audio_issues_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_fix_audio_issues_py_main`, Function, degree: 1)
-- **run_diagnostics()** (`backend_fix_audio_issues_py_run_diagnostics`, Function, degree: 1)
-- **setup_django()** (`backend_fix_audio_issues_py_setup_django`, Function, degree: 2)
-- **update_django_settings()** (`backend_fix_audio_issues_py_update_django_settings`, Function, degree: 1)
+- **debug_audio_issues** (`backend_debug_audio_issues_py`, File, degree: 11)
+- **check_database_audio_files()** (`backend_debug_audio_issues_py_check_database_audio_files`, Function, degree: 2)
+- **check_media_directory()** (`backend_debug_audio_issues_py_check_media_directory`, Function, degree: 2)
+- **create_test_audio_files()** (`backend_debug_audio_issues_py_create_test_audio_files`, Function, degree: 2)
+- **os** (`backend_debug_audio_issues_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_debug_audio_issues_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_debug_audio_issues_py_import_pymysql`, Module, degree: 1)
+- **requests** (`backend_debug_audio_issues_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_debug_audio_issues_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_debug_audio_issues_py_main`, Function, degree: 6)
+- **test_api_endpoints()** (`backend_debug_audio_issues_py_test_api_endpoints`, Function, degree: 2)
+- **test_specific_audio_file()** (`backend_debug_audio_issues_py_test_specific_audio_file`, Function, degree: 2)
 
 ## Relationships
 
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_os (imports)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_sys (imports)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_subprocess (imports)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_import_pathlib_path (imports)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_setup_django (defines)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_media_directories (defines)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_apache_media_config (defines)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_real_audio_files (defines)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_update_django_settings (defines)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_create_audio_test_endpoint (defines)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_run_diagnostics (defines)
-- backend_fix_audio_issues_py → backend_fix_audio_issues_py_main (defines)
-- backend_fix_audio_issues_py_create_real_audio_files → backend_fix_audio_issues_py_setup_django (calls)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_os (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_sys (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pymysql (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pathlib_path (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_requests (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_database_audio_files (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_media_directory (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_api_endpoints (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_create_test_audio_files (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_specific_audio_file (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_main (defines)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_api_endpoints (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_media_directory (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_create_test_audio_files (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_database_audio_files (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_specific_audio_file (calls)
 

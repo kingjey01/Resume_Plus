@@ -1,29 +1,36 @@
-# Community 74: validation_screen
+# Community 74: test_mobile_simulation
 
 **Members:** 10
 
 ## Nodes
 
-- **validation_screen** (`lib_features_validation_screens_validation_screen_dart`, File, degree: 9)
-- **dart:async** (`lib_features_validation_screens_validation_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
-- **_ValidationScreenState()** (`lib_features_validation_screens_validation_screen_dart_validationscreenstate`, Function, degree: 1)
+- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
+- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
+- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
+- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
+- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
+- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
+- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
+- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
+- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
 
 ## Relationships
 
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_dart_async (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
-- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_validationscreenstate (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
+- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
+- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
+- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
+- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
+- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
 

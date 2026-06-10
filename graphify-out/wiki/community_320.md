@@ -1,13 +1,15 @@
-# Community 320: simple_seed
+# Community 320: utils
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
-- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+- **utils** (`windows_runner_utils_h`, File, degree: 2)
+- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
+- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
 
 ## Relationships
 
-- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
+- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
+- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
 

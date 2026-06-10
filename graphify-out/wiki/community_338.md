@@ -1,8 +1,8 @@
-# Community 338: summary
+# Community 338: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
 

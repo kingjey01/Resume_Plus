@@ -147,6 +147,7 @@ class _NotificationDetailScreenState extends State<NotificationDetailScreen> {
                               ),
                               child: Text(
                                 _typeLabel(n.notificationType),
+                                textAlign: TextAlign.center,
                                 style: const TextStyle(
                                   color: Colors.white,
                                   fontSize: 11,

@@ -1,23 +1,23 @@
-# Community 151: setup_exercise_service
+# Community 151: NotificationTargetingLogicTest
 
 **Members:** 7
 
 ## Nodes
 
-- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
-- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
-- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
-- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
-- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
-- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
+- **NotificationTargetingLogicTest** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest`, Class, degree: 7)
+- **.setUp()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup`, Method, degree: 1)
+- **.test_case_1_no_filters_global()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global`, Method, degree: 1)
+- **.test_case_2_universite_only()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only`, Method, degree: 1)
+- **.test_case_3_universite_filiere()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere`, Method, degree: 1)
+- **.test_case_4_universite_filiere_promotion()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion`, Method, degree: 1)
+- **.test_cp_receives_own_notification()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification (defines)
 

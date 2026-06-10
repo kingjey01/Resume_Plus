@@ -1,17 +1,17 @@
-# Community 286: manage
+# Community 286: test_correct_courses_endpoint
 
 **Members:** 4
 
 ## Nodes
 
-- **manage** (`backend_manage_py`, File, degree: 3)
-- **os** (`backend_manage_py_import_os`, Module, degree: 1)
-- **sys** (`backend_manage_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_manage_py_main`, Function, degree: 1)
+- **test_correct_courses_endpoint** (`backend_test_correct_courses_endpoint_py`, File, degree: 3)
+- **json** (`backend_test_correct_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_correct_courses_endpoint_py_import_requests`, Module, degree: 1)
+- **test_correct_courses_endpoint()** (`backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint`, Function, degree: 1)
 
 ## Relationships
 
-- backend_manage_py → backend_manage_py_import_os (imports)
-- backend_manage_py → backend_manage_py_import_sys (imports)
-- backend_manage_py → backend_manage_py_main (defines)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_requests (imports)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_json (imports)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint (defines)
 

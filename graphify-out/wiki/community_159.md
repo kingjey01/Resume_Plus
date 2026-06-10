@@ -1,23 +1,23 @@
-# Community 159: error_handler_mixin
+# Community 159: urls
 
 **Members:** 7
 
 ## Nodes
 
-- **error_handler_mixin** (`lib_mixins_error_handler_mixin_dart`, File, degree: 6)
-- **ErrorHandlerMixin** (`lib_mixins_error_handler_mixin_dart_errorhandlermixin`, Class, degree: 1)
-- **package:dio/dio.dart** (`lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/utils/logger.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
+- **urls** (`backend_payments_urls_py`, File, degree: 6)
+- **django.urls.path** (`backend_payments_urls_py_import_django_urls_path`, Module, degree: 1)
+- **.flexpay_integration.create_subscription_after_payment** (`backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment`, Module, degree: 1)
+- **.flexpay_integration.flexpay_callback** (`backend_payments_urls_py_import_flexpay_integration_flexpay_callback`, Module, degree: 1)
+- **.flexpay_integration.initiate_subscription_payment** (`backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment`, Module, degree: 1)
+- **.flexpay_integration.initiate_summary_purchase** (`backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase`, Module, degree: 1)
+- **..views** (`backend_payments_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_errorhandlermixin (defines)
+- backend_payments_urls_py → backend_payments_urls_py_import_django_urls_path (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_views (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_flexpay_callback (imports)
+- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment (imports)
 

@@ -1,21 +1,19 @@
-# Community 239: ._clean_transcript()
+# Community 239: check_database_users()
 
 **Members:** 5
 
 ## Nodes
 
-- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
-- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
-- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
-- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
-- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
+- **check_database_users()** (`backend_quick_server_test_py_check_database_users`, Function, degree: 2)
+- **generate_curl_commands()** (`backend_quick_server_test_py_generate_curl_commands`, Function, degree: 2)
+- **main()** (`backend_quick_server_test_py_main`, Function, degree: 6)
+- **test_server_basic()** (`backend_quick_server_test_py_test_server_basic`, Function, degree: 2)
+- **test_tokens_quickly()** (`backend_quick_server_test_py_test_tokens_quickly`, Function, degree: 2)
 
 ## Relationships
 
-- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_check_database_users (calls)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_test_tokens_quickly (calls)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_generate_curl_commands (calls)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_test_server_basic (calls)
 

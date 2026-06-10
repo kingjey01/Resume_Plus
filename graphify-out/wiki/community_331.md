@@ -1,13 +1,13 @@
-# Community 331: generated_plugin_registrant
+# Community 331: course
 
 **Members:** 2
 
 ## Nodes
 
-- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
-- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
+- **course** (`lib_models_course_dart`, File, degree: 1)
+- **id()** (`lib_models_course_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
+- lib_models_course_dart → lib_models_course_dart_id (defines)
 

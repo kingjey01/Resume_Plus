@@ -1,23 +1,23 @@
-# Community 150: settings_development
+# Community 150: check_production_data()
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_development** (`backend_settings_development_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_development_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_development_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_development_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_development_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_development_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_development_py_import_pymysql`, Module, degree: 1)
+- **check_production_data()** (`backend_fix_production_encoding_py_check_production_data`, Function, degree: 2)
+- **check_production_database()** (`backend_fix_production_encoding_py_check_production_database`, Function, degree: 2)
+- **clean_production_invalid_data()** (`backend_fix_production_encoding_py_clean_production_invalid_data`, Function, degree: 2)
+- **fix_production_encoding()** (`backend_fix_production_encoding_py_fix_production_encoding`, Function, degree: 2)
+- **main()** (`backend_fix_production_encoding_py_main`, Function, degree: 7)
+- **set_production_connection_encoding()** (`backend_fix_production_encoding_py_set_production_connection_encoding`, Function, degree: 2)
+- **test_production_emoji_insertion()** (`backend_fix_production_encoding_py_test_production_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- backend_settings_development_py → backend_settings_development_py_import_pathlib_path (imports)
-- backend_settings_development_py → backend_settings_development_py_import_datetime_timedelta (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_config (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_csv (imports)
-- backend_settings_development_py → backend_settings_development_py_import_os (imports)
-- backend_settings_development_py → backend_settings_development_py_import_pymysql (imports)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_test_production_emoji_insertion (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_clean_production_invalid_data (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_database (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_set_production_connection_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_fix_production_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_data (calls)
 

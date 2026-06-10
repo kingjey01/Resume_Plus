@@ -1,25 +1,25 @@
-# Community 116: manual_entry_screen
+# Community 116: test_advanced_audio_functionality
 
 **Members:** 8
 
 ## Nodes
 
-- **manual_entry_screen** (`lib_features_upload_screens_manual_entry_screen_dart`, File, degree: 7)
-- **package:flutter/material.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/professeur.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_ManualEntryScreenState()** (`lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate`, Function, degree: 1)
+- **test_advanced_audio_functionality** (`backend_test_advanced_audio_functionality_py`, File, degree: 12)
+- **create_comprehensive_test_report()** (`backend_test_advanced_audio_functionality_py_create_comprehensive_test_report`, Function, degree: 1)
+- **json** (`backend_test_advanced_audio_functionality_py_import_json`, Module, degree: 1)
+- **os** (`backend_test_advanced_audio_functionality_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_test_advanced_audio_functionality_py_import_pathlib_path`, Module, degree: 1)
+- **requests** (`backend_test_advanced_audio_functionality_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_advanced_audio_functionality_py_import_sys`, Module, degree: 1)
+- **wave** (`backend_test_advanced_audio_functionality_py_import_wave`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate (defines)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_os (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_sys (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_requests (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_json (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_wave (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_pathlib_path (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_create_comprehensive_test_report (defines)
 

@@ -1,19 +1,19 @@
-# Community 227: check_existing_data()
+# Community 227: test_api
 
 **Members:** 5
 
 ## Nodes
 
-- **check_existing_data()** (`backend_fix_encoding_sqlite_py_check_existing_data`, Function, degree: 2)
-- **clean_invalid_utf8_data()** (`backend_fix_encoding_sqlite_py_clean_invalid_utf8_data`, Function, degree: 2)
-- **fix_sqlite_encoding()** (`backend_fix_encoding_sqlite_py_fix_sqlite_encoding`, Function, degree: 2)
-- **main()** (`backend_fix_encoding_sqlite_py_main`, Function, degree: 5)
-- **test_emoji_insertion()** (`backend_fix_encoding_sqlite_py_test_emoji_insertion`, Function, degree: 2)
+- **test_api** (`backend_test_api_py`, File, degree: 4)
+- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
+- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
+- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_check_existing_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_fix_sqlite_encoding (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_clean_invalid_utf8_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_test_emoji_insertion (calls)
+- backend_test_api_py → backend_test_api_py_import_requests (imports)
+- backend_test_api_py → backend_test_api_py_import_json (imports)
+- backend_test_api_py → backend_test_api_py_test_services_api (defines)
+- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
 

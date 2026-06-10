@@ -1,23 +1,23 @@
-# Community 164: filiere_promotion
+# Community 164: settings_development
 
 **Members:** 7
 
 ## Nodes
 
-- **filiere_promotion** (`lib_models_filiere_promotion_dart`, File, degree: 6)
-- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_dart_filierepromotionfromjson`, Function, degree: 1)
-- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_dart_filierepromotiontojson`, Function, degree: 1)
-- **filiere.dart** (`lib_models_filiere_promotion_dart_import_filiere_dart`, Module, degree: 1)
-- **filiere_promotion.g.dart** (`lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart`, Module, degree: 1)
-- **package:json_annotation/json_annotation.dart** (`lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
-- **promotion.dart** (`lib_models_filiere_promotion_dart_import_promotion_dart`, Module, degree: 1)
+- **settings_development** (`backend_settings_development_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_development_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_development_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_development_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_development_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_development_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_development_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_promotion_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotionfromjson (defines)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotiontojson (defines)
+- backend_settings_development_py → backend_settings_development_py_import_pathlib_path (imports)
+- backend_settings_development_py → backend_settings_development_py_import_datetime_timedelta (imports)
+- backend_settings_development_py → backend_settings_development_py_import_decouple_config (imports)
+- backend_settings_development_py → backend_settings_development_py_import_decouple_csv (imports)
+- backend_settings_development_py → backend_settings_development_py_import_os (imports)
+- backend_settings_development_py → backend_settings_development_py_import_pymysql (imports)
 

@@ -1,21 +1,21 @@
-# Community 190: RunnerTests
+# Community 190: purchased_summary_card
 
 **Members:** 6
 
 ## Nodes
 
-- **RunnerTests** (`ios_runnertests_runnertests_swift`, File, degree: 5)
-- **Flutter** (`ios_runnertests_runnertests_swift_import_flutter`, Module, degree: 1)
-- **UIKit** (`ios_runnertests_runnertests_swift_import_uikit`, Module, degree: 1)
-- **XCTest** (`ios_runnertests_runnertests_swift_import_xctest`, Module, degree: 1)
-- **RunnerTests** (`ios_runnertests_runnertests_swift_runnertests`, Class, degree: 1)
-- **testExample** (`ios_runnertests_runnertests_swift_testexample`, Function, degree: 1)
+- **purchased_summary_card** (`lib_features_summaries_widgets_purchased_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/purchase.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_runnertests (defines)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_testexample (defines)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_flutter (imports)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_uikit (imports)
-- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_xctest (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

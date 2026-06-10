@@ -1,17 +1,17 @@
-# Community 285: test_correct_courses_endpoint
+# Community 285: apps
 
 **Members:** 4
 
 ## Nodes
 
-- **test_correct_courses_endpoint** (`backend_test_correct_courses_endpoint_py`, File, degree: 3)
-- **json** (`backend_test_correct_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_correct_courses_endpoint_py_import_requests`, Module, degree: 1)
-- **test_correct_courses_endpoint()** (`backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint`, Function, degree: 1)
+- **apps** (`backend_payments_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
+- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
 
 ## Relationships
 
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_requests (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_json (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint (defines)
+- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
+- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
+- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
 

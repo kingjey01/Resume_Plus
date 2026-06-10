@@ -1,23 +1,23 @@
-# Community 162: GeneratedPluginRegistrant
+# Community 162: auto_login_service
 
 **Members:** 7
 
 ## Nodes
 
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
-- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
-- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
-- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
-- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
-- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
+- **auto_login_service** (`lib_services_auto_login_service_dart`, File, degree: 6)
+- **AppStartState** (`lib_services_auto_login_service_dart_appstartstate`, Enum, degree: 1)
+- **dart:math** (`lib_services_auto_login_service_dart_import_dart_math`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_auto_login_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_dart_math (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_appstartstate (defines)
 

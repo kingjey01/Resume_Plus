@@ -1,17 +1,17 @@
-# Community 281: test_endpoints_existence
+# Community 281: app_theme
 
 **Members:** 4
 
 ## Nodes
 
-- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
-- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
-- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
+- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
+- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
 

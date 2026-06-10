@@ -1,35 +1,38 @@
-# Community 44: tests
+# Community 44: test_simple_audio_upload
 
-**Members:** 13
+**Members:** 12
 
 ## Nodes
 
-- **tests** (`backend_users_tests_py`, File, degree: 12)
-- **courses.models.Filiere** (`backend_users_tests_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_users_tests_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_users_tests_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_users_tests_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.TestCase** (`backend_users_tests_py_import_django_test_testcase`, Module, degree: 1)
-- **django.urls.reverse** (`backend_users_tests_py_import_django_urls_reverse`, Module, degree: 1)
-- **.models.UserProfile** (`backend_users_tests_py_import_models_userprofile`, Module, degree: 1)
-- **rest_framework.status** (`backend_users_tests_py_import_rest_framework_status`, Module, degree: 1)
-- **rest_framework.test.APITestCase** (`backend_users_tests_py_import_rest_framework_test_apitestcase`, Module, degree: 1)
-- **UserProfileModelTest** (`backend_users_tests_py_userprofilemodeltest`, Class, degree: 3)
-- **.setUp()** (`backend_users_tests_py_userprofilemodeltest_setup`, Method, degree: 1)
-- **.test_user_profile_creation()** (`backend_users_tests_py_userprofilemodeltest_test_user_profile_creation`, Method, degree: 1)
+- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
+- **create_simple_audio_file()** (`backend_test_simple_audio_upload_py_create_simple_audio_file`, Function, degree: 3)
+- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
+- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
+- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
+- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
+- **main()** (`backend_test_simple_audio_upload_py_main`, Function, degree: 4)
+- **test_audio_upload_direct()** (`backend_test_simple_audio_upload_py_test_audio_upload_direct`, Function, degree: 3)
+- **test_simple_endpoints()** (`backend_test_simple_audio_upload_py_test_simple_endpoints`, Function, degree: 2)
+- **test_with_different_course_ids()** (`backend_test_simple_audio_upload_py_test_with_different_course_ids`, Function, degree: 3)
 
 ## Relationships
 
-- backend_users_tests_py → backend_users_tests_py_import_django_test_testcase (imports)
-- backend_users_tests_py → backend_users_tests_py_import_django_contrib_auth_models_user (imports)
-- backend_users_tests_py → backend_users_tests_py_import_django_urls_reverse (imports)
-- backend_users_tests_py → backend_users_tests_py_import_rest_framework_test_apitestcase (imports)
-- backend_users_tests_py → backend_users_tests_py_import_rest_framework_status (imports)
-- backend_users_tests_py → backend_users_tests_py_import_models_userprofile (imports)
-- backend_users_tests_py → backend_users_tests_py_import_courses_models_universite (imports)
-- backend_users_tests_py → backend_users_tests_py_import_courses_models_filiere (imports)
-- backend_users_tests_py → backend_users_tests_py_import_courses_models_promotion (imports)
-- backend_users_tests_py → backend_users_tests_py_userprofilemodeltest (defines)
-- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_setup (defines)
-- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_test_user_profile_creation (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_create_simple_audio_file (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_test_simple_endpoints (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_test_audio_upload_direct (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_test_with_different_course_ids (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_main (defines)
+- backend_test_simple_audio_upload_py_test_audio_upload_direct → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_test_with_different_course_ids → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_with_different_course_ids (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_audio_upload_direct (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_simple_endpoints (calls)
 

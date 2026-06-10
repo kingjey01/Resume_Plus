@@ -1,17 +1,17 @@
-# Community 277: purchase_badge_provider
+# Community 277: audio_player_widget
 
 **Members:** 4
 
 ## Nodes
 
-- **purchase_badge_provider** (`lib_providers_purchase_badge_provider_dart`, File, degree: 3)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **audio_player_widget** (`lib_widgets_audio_player_widget_dart`, File, degree: 3)
+- **_AudioPlayerWidgetState()** (`lib_widgets_audio_player_widget_dart_audioplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_service.dart** (`lib_widgets_audio_player_widget_dart_import_services_audio_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_services_audio_service_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_audioplayerwidgetstate (defines)
 

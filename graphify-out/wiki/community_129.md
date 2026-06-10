@@ -1,25 +1,31 @@
-# Community 129: account_screen
+# Community 129: ._build_summary_prompt()
 
 **Members:** 8
 
 ## Nodes
 
-- **account_screen** (`lib_features_account_screens_account_screen_dart`, File, degree: 7)
-- **_AccountScreenState()** (`lib_features_account_screens_account_screen_dart_accountscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/splash/screens/splash_screen.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **._build_summary_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt`, Method, degree: 2)
+- **._call_api()** (`backend_courses_deepseek_service_py_deepseekservice_call_api`, Method, degree: 6)
+- **._clean_text()** (`backend_courses_deepseek_service_py_deepseekservice_clean_text`, Method, degree: 5)
+- **.generate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_generate_summary`, Method, degree: 5)
+- **.is_configured()** (`backend_courses_deepseek_service_py_deepseekservice_is_configured`, Method, degree: 6)
+- **.reformulate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_reformulate_summary`, Method, degree: 4)
+- **.simplify_summary()** (`backend_courses_deepseek_service_py_deepseekservice_simplify_summary`, Method, degree: 4)
+- **.translate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_translate_summary`, Method, degree: 4)
 
 ## Relationships
 
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
+- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
 

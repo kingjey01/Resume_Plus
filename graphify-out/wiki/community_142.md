@@ -1,25 +1,30 @@
-# Community 142: permissions
+# Community 142: generate_report()
 
 **Members:** 8
 
 ## Nodes
 
-- **permissions** (`backend_users_permissions_py`, File, degree: 4)
-- **rest_framework.permissions** (`backend_users_permissions_py_import_rest_framework_permissions`, Module, degree: 1)
-- **IsAdminOrReadOnly** (`backend_users_permissions_py_isadminorreadonly`, Class, degree: 2)
-- **.has_permission()** (`backend_users_permissions_py_isadminorreadonly_has_permission`, Method, degree: 1)
-- **IsCPOrReadOnly** (`backend_users_permissions_py_iscporreadonly`, Class, degree: 2)
-- **.has_permission()** (`backend_users_permissions_py_iscporreadonly_has_permission`, Method, degree: 1)
-- **IsOwnerOrReadOnly** (`backend_users_permissions_py_isownerorreadonly`, Class, degree: 2)
-- **.has_object_permission()** (`backend_users_permissions_py_isownerorreadonly_has_object_permission`, Method, degree: 1)
+- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
+- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
+- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
+- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
+- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
+- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
+- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
+- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
 
 ## Relationships
 
-- backend_users_permissions_py → backend_users_permissions_py_import_rest_framework_permissions (imports)
-- backend_users_permissions_py → backend_users_permissions_py_isownerorreadonly (defines)
-- backend_users_permissions_py_isownerorreadonly → backend_users_permissions_py_isownerorreadonly_has_object_permission (defines)
-- backend_users_permissions_py → backend_users_permissions_py_iscporreadonly (defines)
-- backend_users_permissions_py_iscporreadonly → backend_users_permissions_py_iscporreadonly_has_permission (defines)
-- backend_users_permissions_py → backend_users_permissions_py_isadminorreadonly (defines)
-- backend_users_permissions_py_isadminorreadonly → backend_users_permissions_py_isadminorreadonly_has_permission (defines)
+- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
 

@@ -1,17 +1,17 @@
-# Community 272: apps
+# Community 272: 0003_alter_purchase_payment_method_alter_service_currency
 
 **Members:** 4
 
 ## Nodes
 
-- **apps** (`backend_payments_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
-- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
+- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
+- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
-- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
-- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
 

@@ -1,21 +1,21 @@
-# Community 202: create_admin_user()
+# Community 202: AppDelegate
 
 **Members:** 6
 
 ## Nodes
 
-- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
-- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
-- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
-- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
-- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
-- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
+- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
+- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
+- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
+- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
+- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
 
 ## Relationships
 
-- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
-- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
 

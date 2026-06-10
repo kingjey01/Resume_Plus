@@ -1,17 +1,17 @@
-# Community 256: audio_file_player_widget
+# Community 256: 0012_add_summary_title_price_to_session
 
 **Members:** 4
 
 ## Nodes
 
-- **audio_file_player_widget** (`lib_widgets_audio_file_player_widget_dart`, File, degree: 3)
-- **_AudioFilePlayerWidgetState()** (`lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/audio_file_player_service.dart** (`lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart`, Module, degree: 1)
+- **0012_add_summary_title_price_to_session** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart (imports)
-- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate (defines)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models (imports)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration (defines)
 

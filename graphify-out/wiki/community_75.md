@@ -1,36 +1,29 @@
-# Community 75: create_courses()
+# Community 75: debug_api_response
 
 **Members:** 10
 
 ## Nodes
 
-- **create_courses()** (`backend_seed_database_py_create_courses`, Function, degree: 3)
-- **create_filieres()** (`backend_seed_database_py_create_filieres`, Function, degree: 3)
-- **create_promotions()** (`backend_seed_database_py_create_promotions`, Function, degree: 3)
-- **create_relations()** (`backend_seed_database_py_create_relations`, Function, degree: 3)
-- **create_services()** (`backend_seed_database_py_create_services`, Function, degree: 3)
-- **create_sessions_and_summaries()** (`backend_seed_database_py_create_sessions_and_summaries`, Function, degree: 3)
-- **create_universites()** (`backend_seed_database_py_create_universites`, Function, degree: 3)
-- **create_users()** (`backend_seed_database_py_create_users`, Function, degree: 3)
-- **main()** (`backend_seed_database_py_main`, Function, degree: 12)
-- **print_section()** (`backend_seed_database_py_print_section`, Function, degree: 9)
+- **debug_api_response** (`backend_debug_api_response_py`, File, degree: 9)
+- **django** (`backend_debug_api_response_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_api_response_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_api_response_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_debug_api_response_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_debug_api_response_py_import_payments_models_service`, Module, degree: 1)
+- **payments.serializers.AbonnementSerializer** (`backend_debug_api_response_py_import_payments_serializers_abonnementserializer`, Module, degree: 1)
+- **payments.serializers.ServiceSerializer** (`backend_debug_api_response_py_import_payments_serializers_serviceserializer`, Module, degree: 1)
+- **sys** (`backend_debug_api_response_py_import_sys`, Module, degree: 1)
+- **test_api_responses()** (`backend_debug_api_response_py_test_api_responses`, Function, degree: 1)
 
 ## Relationships
 
-- backend_seed_database_py_create_universites → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_filieres → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_promotions → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_relations → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_courses → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_users → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_sessions_and_summaries → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_services → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_users (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_sessions_and_summaries (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_filieres (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_relations (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_universites (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_promotions (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_courses (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_services (calls)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_os (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_sys (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_service (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_abonnement (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_serviceserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_abonnementserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_test_api_responses (defines)
 

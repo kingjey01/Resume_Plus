@@ -1,15 +1,15 @@
-# Community 299: wsgi
+# Community 299: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
-- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
-- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
+- **urls** (`backend_notifications_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_notifications_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_notifications_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
+- backend_notifications_urls_py → backend_notifications_urls_py_import_django_urls_path (imports)
+- backend_notifications_urls_py → backend_notifications_urls_py_import_views (imports)
 

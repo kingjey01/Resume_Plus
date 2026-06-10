@@ -1,36 +1,27 @@
-# Community 87: test_mobile_simulation
+# Community 87: web_audio_recorder
 
-**Members:** 10
+**Members:** 9
 
 ## Nodes
 
-- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
-- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
-- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
-- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
-- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
-- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
-- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
-- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
-- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
+- **web_audio_recorder** (`lib_services_web_audio_recorder_dart`, File, degree: 8)
+- **dart:async** (`lib_services_web_audio_recorder_dart_import_dart_async`, Module, degree: 1)
+- **dart:typed_data** (`lib_services_web_audio_recorder_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_web_audio_recorder_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_web_audio_recorder_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_web_audio_recorder_dart_ispaused`, Function, degree: 1)
+- **_isRecording()** (`lib_services_web_audio_recorder_dart_isrecording`, Function, degree: 1)
+- **kIsWeb()** (`lib_services_web_audio_recorder_dart_kisweb`, Function, degree: 1)
+- **_recordingStartTime()** (`lib_services_web_audio_recorder_dart_recordingstarttime`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
-- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_dart_async (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_dart_typed_data (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_instance (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_kisweb (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_isrecording (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_ispaused (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_recordingstarttime (defines)
 

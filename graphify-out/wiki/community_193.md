@@ -1,21 +1,21 @@
-# Community 193: main()
+# Community 193: screen_security_service
 
 **Members:** 6
 
 ## Nodes
 
-- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
-- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
-- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
-- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
-- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
-- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
+- **screen_security_service** (`lib_services_screen_security_service_dart`, File, degree: 5)
+- **dart:io** (`lib_services_screen_security_service_dart_import_dart_io`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_screen_security_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_services_screen_security_service_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:screen_protector/screen_protector.dart** (`lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart`, Module, degree: 1)
+- **_isSecured()** (`lib_services_screen_security_service_dart_issecured`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_dart_io (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_services_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_issecured (defines)
 

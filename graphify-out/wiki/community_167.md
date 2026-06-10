@@ -1,23 +1,23 @@
-# Community 167: periodic_tasks
+# Community 167: main
 
 **Members:** 7
 
 ## Nodes
 
-- **periodic_tasks** (`backend_notifications_periodic_tasks_py`, File, degree: 6)
-- **check_subscriptions_expired()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expired`, Function, degree: 1)
-- **check_subscriptions_expiring_soon()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon`, Function, degree: 1)
-- **celery.shared_task** (`backend_notifications_periodic_tasks_py_import_celery_shared_task`, Module, degree: 1)
-- **datetime.timedelta** (`backend_notifications_periodic_tasks_py_import_datetime_timedelta`, Module, degree: 1)
-- **django.utils.timezone** (`backend_notifications_periodic_tasks_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_notifications_periodic_tasks_py_import_logging`, Module, degree: 1)
+- **main** (`windows_runner_main_cpp`, File, degree: 6)
+- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
+- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
+- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
 
 ## Relationships
 
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_logging (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_celery_shared_task (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_django_utils_timezone (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_datetime_timedelta (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon (defines)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expired (defines)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
 

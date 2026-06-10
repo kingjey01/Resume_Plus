@@ -1,8 +1,13 @@
-# Community 332: filiere
+# Community 332: generated_plugin_registrant
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
+
+## Relationships
+
+- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
 

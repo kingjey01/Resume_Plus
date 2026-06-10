@@ -1,15 +1,15 @@
-# Community 295: main
+# Community 295: api_exception
 
 **Members:** 3
 
 ## Nodes
 
-- **main** (`linux_runner_main_cc`, File, degree: 2)
-- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
-- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
+- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
+- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
+- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
-- linux_runner_main_cc → linux_runner_main_cc_main (defines)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
 

@@ -1,25 +1,25 @@
-# Community 124: check_services
+# Community 124: fix_production_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **check_services** (`backend_check_services_py`, File, degree: 7)
-- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
-- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
+- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
+- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_services_py → backend_check_services_py_import_os (imports)
-- backend_check_services_py → backend_check_services_py_import_sys (imports)
-- backend_check_services_py → backend_check_services_py_import_django (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
-- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_services_py → backend_check_services_py_check_services (defines)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
 

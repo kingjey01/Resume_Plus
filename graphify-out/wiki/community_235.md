@@ -1,19 +1,19 @@
-# Community 235: check_accessible_courses
+# Community 235: edit_summary_screen
 
 **Members:** 5
 
 ## Nodes
 
-- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
-- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
+- **edit_summary_screen** (`lib_features_validation_screens_edit_summary_screen_dart`, File, degree: 4)
+- **_EditSummaryScreenState()** (`lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate (defines)
 

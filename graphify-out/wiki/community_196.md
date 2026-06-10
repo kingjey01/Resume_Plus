@@ -1,21 +1,21 @@
-# Community 196: 0004_alter_abonnement_etudiant
+# Community 196: RunnerTests
 
 **Members:** 6
 
 ## Nodes
 
-- **0004_alter_abonnement_etudiant** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration`, Class, degree: 1)
+- **RunnerTests** (`macos_runnertests_runnertests_swift`, File, degree: 5)
+- **Cocoa** (`macos_runnertests_runnertests_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runnertests_runnertests_swift_import_fluttermacos`, Module, degree: 1)
+- **XCTest** (`macos_runnertests_runnertests_swift_import_xctest`, Module, degree: 1)
+- **RunnerTests** (`macos_runnertests_runnertests_swift_runnertests`, Class, degree: 1)
+- **testExample** (`macos_runnertests_runnertests_swift_testexample`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_runnertests (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_testexample (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_cocoa (imports)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_fluttermacos (imports)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_xctest (imports)
 

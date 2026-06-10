@@ -1,23 +1,21 @@
-# Community 181: test_encoding_fix
+# Community 181: main()
 
 **Members:** 6
 
 ## Nodes
 
-- **test_encoding_fix** (`backend_test_encoding_fix_py`, File, degree: 5)
-- **json** (`backend_test_encoding_fix_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_encoding_fix_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_encoding_fix_py_main`, Function, degree: 3)
-- **test_summary_retrieval()** (`backend_test_encoding_fix_py_test_summary_retrieval`, Function, degree: 2)
-- **test_summary_with_special_chars()** (`backend_test_encoding_fix_py_test_summary_with_special_chars`, Function, degree: 2)
+- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
+- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
+- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
+- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
+- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
+- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
 
 ## Relationships
 
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_requests (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_json (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_with_special_chars (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_retrieval (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_main (defines)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_with_special_chars (calls)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_retrieval (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
 

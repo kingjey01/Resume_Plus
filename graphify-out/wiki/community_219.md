@@ -1,19 +1,21 @@
-# Community 219: ProfesseurFilieresAdmin
+# Community 219: ._clean_transcript()
 
 **Members:** 5
 
 ## Nodes
 
-- **ProfesseurFilieresAdmin** (`backend_courses_admin_py_professeurfilieresadmin`, Class, degree: 5)
-- **.get_queryset()** (`backend_courses_admin_py_professeurfilieresadmin_get_queryset`, Method, degree: 2)
-- **.has_add_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_add_permission`, Method, degree: 1)
-- **.has_change_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_change_permission`, Method, degree: 1)
-- **.has_delete_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_delete_permission`, Method, degree: 1)
+- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
+- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
+- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
+- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
+- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
 
 ## Relationships
 
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_add_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_change_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_delete_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_get_queryset (defines)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
 

@@ -14,6 +14,15 @@ class SummaryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final isNarrow = constraints.maxWidth < 200;
+        return _buildCardContent(context, theme, isNarrow);
+      },
+    );
+  }
+
+  Widget _buildCardContent(BuildContext context, ThemeData theme, bool isNarrow) {
     return Container(
       decoration: BoxDecoration(
         color: theme.colorScheme.surface,
@@ -144,65 +153,129 @@ class SummaryCard extends StatelessWidget {
                       ),
                     ],
                     const SizedBox(height: 8),
-                    // Prix + date
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        // Badge prix
-                        Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                          decoration: BoxDecoration(
-                            color: summary.isFree
-                                ? AppTheme.success.withOpacity(0.1)
-                                : AppTheme.primaryBlue.withOpacity(0.1),
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                          child: Text(
-                            summary.isFree ? 'Gratuit' : '${summary.price.toStringAsFixed(0)} FC',
-                            style: TextStyle(
-                              color: summary.isFree ? AppTheme.success : AppTheme.primaryBlue,
-                              fontSize: 11,
-                              fontWeight: FontWeight.w600,
-                            ),
-                          ),
-                        ),
-                        // Date
-                        Row(
-                          children: [
-                            Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withOpacity(0.45)),
-                            const SizedBox(width: 3),
-                            Text(
-                              DateFormat('dd/MM/yyyy').format(summary.createdAt),
-                              style: TextStyle(
-                                color: theme.colorScheme.onSurface.withOpacity(0.5),
-                                fontSize: 10,
-                                fontWeight: FontWeight.w500,
+                    // Prix + date + auteur (responsive: colonne si étroit)
+                    isNarrow
+                        ? Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Prix
+                              Container(
+                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                decoration: BoxDecoration(
+                                  color: summary.isFree
+                                      ? AppTheme.success.withOpacity(0.1)
+                                      : AppTheme.primaryBlue.withOpacity(0.1),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                                child: Text(
+                                  summary.isFree ? 'Gratuit' : '${summary.price.toStringAsFixed(0)} FC',
+                                  style: TextStyle(
+                                    color: summary.isFree ? AppTheme.success : AppTheme.primaryBlue,
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w600,
+                                  ),
+                                ),
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 4),
-                    // Auteur
-                    Row(
-                      children: [
-                        Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withOpacity(0.45)),
-                        const SizedBox(width: 3),
-                        Flexible(
-                          child: Text(
-                            summary.authorName,
-                            style: TextStyle(
-                              color: theme.colorScheme.onSurface.withOpacity(0.5),
-                              fontSize: 10,
-                              fontWeight: FontWeight.w500,
-                            ),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
+                              const SizedBox(height: 4),
+                              // Date
+                              Row(
+                                children: [
+                                  Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                  const SizedBox(width: 3),
+                                  Text(
+                                    DateFormat('dd/MM/yyyy').format(summary.createdAt),
+                                    style: TextStyle(
+                                      color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                      fontSize: 10,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 2),
+                              // Auteur
+                              Row(
+                                children: [
+                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                  const SizedBox(width: 3),
+                                  Flexible(
+                                    child: Text(
+                                      summary.authorName,
+                                      style: TextStyle(
+                                        color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          )
+                        : Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  // Badge prix
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                                    decoration: BoxDecoration(
+                                      color: summary.isFree
+                                          ? AppTheme.success.withOpacity(0.1)
+                                          : AppTheme.primaryBlue.withOpacity(0.1),
+                                      borderRadius: BorderRadius.circular(20),
+                                    ),
+                                    child: Text(
+                                      summary.isFree ? 'Gratuit' : '${summary.price.toStringAsFixed(0)} FC',
+                                      style: TextStyle(
+                                        color: summary.isFree ? AppTheme.success : AppTheme.primaryBlue,
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w600,
+                                      ),
+                                    ),
+                                  ),
+                                  // Date
+                                  Row(
+                                    children: [
+                                      Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                      const SizedBox(width: 3),
+                                      Text(
+                                        DateFormat('dd/MM/yyyy').format(summary.createdAt),
+                                        style: TextStyle(
+                                          color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 4),
+                              // Auteur
+                              Row(
+                                children: [
+                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                  const SizedBox(width: 3),
+                                  Flexible(
+                                    child: Text(
+                                      summary.authorName,
+                                      style: TextStyle(
+                                        color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
-                        ),
-                      ],
-                    ),
                   ],
                 ),
               ),

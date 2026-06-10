@@ -1,19 +1,19 @@
-# Community 218: simple_login_service
+# Community 218: check_existing_data()
 
 **Members:** 5
 
 ## Nodes
 
-- **simple_login_service** (`lib_services_simple_login_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_simple_login_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_simple_login_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **check_existing_data()** (`backend_fix_encoding_sqlite_py_check_existing_data`, Function, degree: 2)
+- **clean_invalid_utf8_data()** (`backend_fix_encoding_sqlite_py_clean_invalid_utf8_data`, Function, degree: 2)
+- **fix_sqlite_encoding()** (`backend_fix_encoding_sqlite_py_fix_sqlite_encoding`, Function, degree: 2)
+- **main()** (`backend_fix_encoding_sqlite_py_main`, Function, degree: 5)
+- **test_emoji_insertion()** (`backend_fix_encoding_sqlite_py_test_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_apiservice (defines)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_check_existing_data (calls)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_fix_sqlite_encoding (calls)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_clean_invalid_utf8_data (calls)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_test_emoji_insertion (calls)
 

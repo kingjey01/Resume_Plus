@@ -1,15 +1,17 @@
-# Community 287: test_seed_creation
+# Community 287: find_courses_endpoint
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
-- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
-- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
+- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
+- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
+- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
-- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
 

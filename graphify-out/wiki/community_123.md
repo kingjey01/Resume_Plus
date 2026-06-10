@@ -1,26 +1,25 @@
-# Community 123: serializers
+# Community 123: exercise_quiz_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **serializers** (`backend_security_serializers_py`, File, degree: 5)
-- **CreateSecurityLogSerializer** (`backend_security_serializers_py_createsecuritylogserializer`, Class, degree: 3)
-- **.create()** (`backend_security_serializers_py_createsecuritylogserializer_create`, Method, degree: 2)
-- **.get_client_ip()** (`backend_security_serializers_py_createsecuritylogserializer_get_client_ip`, Method, degree: 2)
-- **.models.SecurityLog** (`backend_security_serializers_py_import_models_securitylog`, Module, degree: 1)
-- **rest_framework.serializers** (`backend_security_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
-- **Meta** (`backend_security_serializers_py_meta`, Class, degree: 1)
-- **SecurityLogSerializer** (`backend_security_serializers_py_securitylogserializer`, Class, degree: 1)
+- **exercise_quiz_screen** (`lib_features_exercises_screens_exercise_quiz_screen_dart`, File, degree: 7)
+- **_ExerciseQuizScreenState()** (`lib_features_exercises_screens_exercise_quiz_screen_dart_exercisequizscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/secure_screen_wrapper.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_serializers_py → backend_security_serializers_py_import_rest_framework_serializers (imports)
-- backend_security_serializers_py → backend_security_serializers_py_import_models_securitylog (imports)
-- backend_security_serializers_py → backend_security_serializers_py_securitylogserializer (defines)
-- backend_security_serializers_py → backend_security_serializers_py_meta (defines)
-- backend_security_serializers_py → backend_security_serializers_py_createsecuritylogserializer (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_create (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (defines)
-- backend_security_serializers_py_createsecuritylogserializer_create → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (calls)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_exercisequizscreenstate (defines)
 

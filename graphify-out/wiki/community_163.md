@@ -1,23 +1,23 @@
-# Community 163: storage_service
+# Community 163: AbonnementCreateSerializer
 
 **Members:** 7
 
 ## Nodes
 
-- **storage_service** (`lib_services_storage_service_dart`, File, degree: 6)
-- **accessToken()** (`lib_services_storage_service_dart_accesstoken`, Function, degree: 1)
-- **deleteTokens()** (`lib_services_storage_service_dart_deletetokens`, Function, degree: 1)
-- **dart:convert** (`lib_services_storage_service_dart_import_dart_convert`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_storage_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_secure_storage/flutter_secure_storage.dart** (`lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
+- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
+- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
+- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
+- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
+- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
 
 ## Relationships
 
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_dart_convert (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_accesstoken (defines)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_deletetokens (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
+- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
+- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
 

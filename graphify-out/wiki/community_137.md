@@ -1,31 +1,25 @@
-# Community 137: ._build_summary_prompt()
+# Community 137: check_db_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **._build_summary_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt`, Method, degree: 2)
-- **._call_api()** (`backend_courses_deepseek_service_py_deepseekservice_call_api`, Method, degree: 6)
-- **._clean_text()** (`backend_courses_deepseek_service_py_deepseekservice_clean_text`, Method, degree: 5)
-- **.generate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_generate_summary`, Method, degree: 5)
-- **.is_configured()** (`backend_courses_deepseek_service_py_deepseekservice_is_configured`, Method, degree: 6)
-- **.reformulate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_reformulate_summary`, Method, degree: 4)
-- **.simplify_summary()** (`backend_courses_deepseek_service_py_deepseekservice_simplify_summary`, Method, degree: 4)
-- **.translate_summary()** (`backend_courses_deepseek_service_py_deepseekservice_translate_summary`, Method, degree: 4)
+- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
+- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
+- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
+- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
+- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
+- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt (calls)
-- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
-- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
-- backend_courses_deepseek_service_py_deepseekservice_generate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
-- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
-- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
-- backend_courses_deepseek_service_py_deepseekservice_translate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
-- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
-- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
-- backend_courses_deepseek_service_py_deepseekservice_reformulate_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
-- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_call_api (calls)
-- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_is_configured (calls)
-- backend_courses_deepseek_service_py_deepseekservice_simplify_summary → backend_courses_deepseek_service_py_deepseekservice_clean_text (calls)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
 

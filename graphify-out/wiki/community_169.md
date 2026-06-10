@@ -1,23 +1,23 @@
-# Community 169: deepgram_service
+# Community 169: course_selection_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
-- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
-- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
-- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
+- **course_selection_screen** (`lib_features_upload_screens_course_selection_screen_dart`, File, degree: 6)
+- **_CourseSelectionScreenState()** (`lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate (defines)
 

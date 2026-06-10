@@ -1,17 +1,19 @@
-# Community 254: subscription_card
+# Community 254: filiere_promotion.g
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
+- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
 

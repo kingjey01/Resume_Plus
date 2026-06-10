@@ -1,30 +1,25 @@
-# Community 109: test_production_config
+# Community 109: exercise_generator
 
-**Members:** 9
+**Members:** 8
 
 ## Nodes
 
-- **test_production_config** (`backend_test_production_config_py`, File, degree: 8)
-- **datetime** (`backend_test_production_config_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_test_production_config_py_import_json`, Module, degree: 1)
-- **jwt** (`backend_test_production_config_py_import_jwt`, Module, degree: 1)
-- **requests** (`backend_test_production_config_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_production_config_py_main`, Function, degree: 4)
-- **test_cors_preflight()** (`backend_test_production_config_py_test_cors_preflight`, Function, degree: 2)
-- **test_jwt_validation()** (`backend_test_production_config_py_test_jwt_validation`, Function, degree: 2)
-- **test_server_logs_simulation()** (`backend_test_production_config_py_test_server_logs_simulation`, Function, degree: 2)
+- **exercise_generator** (`backend_courses_exercise_generator_py`, File, degree: 8)
+- **generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_generate_exercises_for_summary`, Function, degree: 1)
+- **.deepseek_service.deepseek_service** (`backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service`, Module, degree: 1)
+- **json** (`backend_courses_exercise_generator_py_import_json`, Module, degree: 1)
+- **logging** (`backend_courses_exercise_generator_py_import_logging`, Module, degree: 1)
+- **.models.Exercise** (`backend_courses_exercise_generator_py_import_models_exercise`, Module, degree: 1)
+- **.models.ExerciseQuestion** (`backend_courses_exercise_generator_py_import_models_exercisequestion`, Module, degree: 1)
+- **.models.Summary** (`backend_courses_exercise_generator_py_import_models_summary`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_production_config_py → backend_test_production_config_py_import_requests (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_json (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_jwt (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_datetime (imports)
-- backend_test_production_config_py → backend_test_production_config_py_test_cors_preflight (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_jwt_validation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_server_logs_simulation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_main (defines)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_jwt_validation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_server_logs_simulation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_cors_preflight (calls)
+- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_json (imports)
+- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercise (imports)
+- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercisequestion (imports)
+- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_summary (imports)
+- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service (imports)
+- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_logging (imports)
+- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_generate_exercises_for_summary (defines)
 

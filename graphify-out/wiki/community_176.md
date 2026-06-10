@@ -1,28 +1,23 @@
-# Community 176: Command
+# Community 176: settings_cors_fixed
 
 **Members:** 7
 
 ## Nodes
 
-- **Command** (`backend_courses_management_commands_seeddata_py_command`, Class, degree: 7)
-- **.create_courses()** (`backend_courses_management_commands_seeddata_py_command_create_courses`, Method, degree: 2)
-- **.create_purchases()** (`backend_courses_management_commands_seeddata_py_command_create_purchases`, Method, degree: 2)
-- **.create_sessions()** (`backend_courses_management_commands_seeddata_py_command_create_sessions`, Method, degree: 2)
-- **.create_summaries()** (`backend_courses_management_commands_seeddata_py_command_create_summaries`, Method, degree: 2)
-- **.create_users()** (`backend_courses_management_commands_seeddata_py_command_create_users`, Method, degree: 2)
-- **.handle()** (`backend_courses_management_commands_seeddata_py_command_handle`, Method, degree: 6)
+- **settings_cors_fixed** (`backend_settings_cors_fixed_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_cors_fixed_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_cors_fixed_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_cors_fixed_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_cors_fixed_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_cors_fixed_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_cors_fixed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_handle (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_users (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_courses (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_sessions (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_summaries (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_purchases (defines)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_summaries (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_users (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_courses (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_sessions (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_purchases (calls)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pathlib_path (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_datetime_timedelta (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_config (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_csv (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_os (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pymysql (imports)
 

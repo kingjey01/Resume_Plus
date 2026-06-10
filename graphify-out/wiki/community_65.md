@@ -1,31 +1,31 @@
-# Community 65: generated_plugin_registrant
+# Community 65: UserProfile
 
 **Members:** 11
 
 ## Nodes
 
-- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_cc`, File, degree: 10)
-- **audioplayers_windows/audioplayers_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h`, Module, degree: 1)
-- **file_selector_windows/file_selector_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h`, Module, degree: 1)
-- **firebase_core/firebase_core_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h`, Module, degree: 1)
-- **flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h`, Module, degree: 1)
-- **flutter_tts/flutter_tts_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h`, Module, degree: 1)
-- **generated_plugin_registrant.h** (`windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
-- **permission_handler_windows/permission_handler_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h`, Module, degree: 1)
-- **record_windows/record_windows_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h`, Module, degree: 1)
-- **url_launcher_windows/url_launcher_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h`, Module, degree: 1)
-- **RegisterPlugins()** (`windows_flutter_generated_plugin_registrant_cc_registerplugins`, Function, degree: 1)
+- **UserProfile** (`backend_users_models_py_userprofile`, Class, degree: 11)
+- **.can_create_summary()** (`backend_users_models_py_userprofile_can_create_summary`, Method, degree: 1)
+- **.generate_otp()** (`backend_users_models_py_userprofile_generate_otp`, Method, degree: 1)
+- **.has_active_subscription()** (`backend_users_models_py_userprofile_has_active_subscription`, Method, degree: 1)
+- **.has_free_access()** (`backend_users_models_py_userprofile_has_free_access`, Method, degree: 1)
+- **.is_admin()** (`backend_users_models_py_userprofile_is_admin`, Method, degree: 1)
+- **.is_cp()** (`backend_users_models_py_userprofile_is_cp`, Method, degree: 1)
+- **.is_etudiant()** (`backend_users_models_py_userprofile_is_etudiant`, Method, degree: 1)
+- **.reset_otp()** (`backend_users_models_py_userprofile_reset_otp`, Method, degree: 1)
+- **.__str__()** (`backend_users_models_py_userprofile_str`, Method, degree: 1)
+- **.verify_otp()** (`backend_users_models_py_userprofile_verify_otp`, Method, degree: 1)
 
 ## Relationships
 
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_registerplugins (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_str (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_cp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_admin (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_etudiant (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_can_create_summary (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_free_access (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_generate_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_verify_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_reset_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_active_subscription (defines)
 

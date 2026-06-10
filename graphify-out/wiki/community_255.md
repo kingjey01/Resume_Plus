@@ -1,17 +1,21 @@
-# Community 255: theme_selector
+# Community 255: DeepSeekService
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **theme_selector** (`lib_features_settings_widgets_theme_selector_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/settings/providers/theme_provider.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart`, Module, degree: 1)
+- **DeepSeekService** (`backend_courses_deepseek_service_py_deepseekservice`, Class, degree: 13)
+- **._build_exercises_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt`, Method, degree: 2)
+- **.generate_exercises()** (`backend_courses_deepseek_service_py_deepseekservice_generate_exercises`, Method, degree: 4)
+- **._get_api_key()** (`backend_courses_deepseek_service_py_deepseekservice_get_api_key`, Method, degree: 2)
+- **.__init__()** (`backend_courses_deepseek_service_py_deepseekservice_init`, Method, degree: 2)
 
 ## Relationships
 
-- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart (imports)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_init (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_get_api_key (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_generate_exercises (defines)
+- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (defines)
+- backend_courses_deepseek_service_py_deepseekservice_init → backend_courses_deepseek_service_py_deepseekservice_get_api_key (calls)
+- backend_courses_deepseek_service_py_deepseekservice_generate_exercises → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (calls)
 

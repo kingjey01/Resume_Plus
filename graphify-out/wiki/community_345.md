@@ -1,8 +1,8 @@
-# Community 345: exercise
+# Community 345: summary
 
 **Members:** 1
 
 ## Nodes
 
-- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
+- **summary** (`lib_models_summary_dart`, File, degree: 0)
 

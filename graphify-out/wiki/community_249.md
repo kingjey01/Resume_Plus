@@ -1,19 +1,19 @@
-# Community 249: UniversiteFiliereTest
+# Community 249: enhanced_auth_demo_page
 
 **Members:** 5
 
 ## Nodes
 
-- **UniversiteFiliereTest** (`backend_courses_tests_py_universitefilieretest`, Class, degree: 5)
-- **.setUp()** (`backend_courses_tests_py_universitefilieretest_setup`, Method, degree: 1)
-- **.setUpTestData()** (`backend_courses_tests_py_universitefilieretest_setuptestdata`, Method, degree: 1)
-- **.test_relation_universite_filiere()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere`, Method, degree: 1)
-- **.test_relation_universite_filiere_creation()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation`, Method, degree: 1)
+- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setup (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setuptestdata (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere (defines)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
 

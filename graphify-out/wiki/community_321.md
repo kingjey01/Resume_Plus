@@ -1,13 +1,15 @@
-# Community 321: my_application
+# Community 321: auth_providers
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
-- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+- **auth_providers** (`lib_features_auth_providers_auth_providers_dart`, File, degree: 2)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
+- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
 

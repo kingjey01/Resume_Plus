@@ -1,15 +1,15 @@
-# Community 306: 0015_merge_20260523_2104
+# Community 306: user
 
 **Members:** 3
 
 ## Nodes
 
-- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
-- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
+- **user** (`lib_models_user_dart`, File, degree: 2)
+- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
+- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
+- lib_models_user_dart → lib_models_user_dart_groupe (defines)
+- lib_models_user_dart → lib_models_user_dart_id (defines)
 

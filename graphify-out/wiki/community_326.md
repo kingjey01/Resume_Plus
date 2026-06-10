@@ -1,13 +1,13 @@
-# Community 326: abonnement
+# Community 326: gunicorn.conf
 
 **Members:** 2
 
 ## Nodes
 
-- **abonnement** (`lib_models_abonnement_dart`, File, degree: 1)
-- **id()** (`lib_models_abonnement_dart_id`, Function, degree: 1)
+- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
+- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_abonnement_dart → lib_models_abonnement_dart_id (defines)
+- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
 

@@ -1,23 +1,23 @@
-# Community 153: upload_choice_screen
+# Community 153: 0002_service_abonnement
 
 **Members:** 7
 
 ## Nodes
 
-- **upload_choice_screen** (`lib_features_upload_screens_upload_choice_screen_dart`, File, degree: 6)
-- **package:flutter/foundation.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/record_audio_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **0002_service_abonnement** (`backend_payments_migrations_0002_service_abonnement_py`, File, degree: 6)
+- **django.conf.settings** (`backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0002_service_abonnement_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_migration (defines)
 

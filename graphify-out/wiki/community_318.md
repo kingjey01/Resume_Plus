@@ -1,13 +1,15 @@
-# Community 318: flutter_usage_example
+# Community 318: snackbar_service
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
-- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
+- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
 
 ## Relationships
 
-- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
 

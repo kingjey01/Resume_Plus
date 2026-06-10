@@ -1,15 +1,15 @@
-# Community 292: demo_data_service
+# Community 292: MainActivity
 
 **Members:** 3
 
 ## Nodes
 
-- **demo_data_service** (`lib_services_demo_data_service_dart`, File, degree: 2)
-- **package:resume_plus_clean/models/summary.dart'** (`lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_demo_data_service_dart_instance`, Function, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
+- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_instance (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
 

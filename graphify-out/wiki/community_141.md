@@ -1,25 +1,25 @@
-# Community 141: fix_production_encoding
+# Community 141: account_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
-- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
+- **account_screen** (`lib_features_account_screens_account_screen_dart`, File, degree: 7)
+- **_AccountScreenState()** (`lib_features_account_screens_account_screen_dart_accountscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/splash/screens/splash_screen.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines)
 

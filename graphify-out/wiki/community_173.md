@@ -1,23 +1,23 @@
-# Community 173: ExerciseAttemptAdmin
+# Community 173: middleware
 
 **Members:** 7
 
 ## Nodes
 
-- **ExerciseAttemptAdmin** (`backend_courses_admin_py_exerciseattemptadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_exerciseattemptadmin_get_queryset`, Method, degree: 2)
-- **ProfesseurAdmin** (`backend_courses_admin_py_professeuradmin`, Class, degree: 3)
-- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
-- **.list_filieres()** (`backend_courses_admin_py_professeuradmin_list_filieres`, Method, degree: 1)
-- **SummaryAdmin** (`backend_courses_admin_py_summaryadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_summaryadmin_get_queryset`, Method, degree: 2)
+- **middleware** (`backend_users_middleware_py`, File, degree: 4)
+- **datetime** (`backend_users_middleware_py_import_datetime`, Module, degree: 1)
+- **django.utils.deprecation.MiddlewareMixin** (`backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin`, Module, degree: 1)
+- **logging** (`backend_users_middleware_py_import_logging`, Module, degree: 1)
+- **JWTAuthenticationMiddleware** (`backend_users_middleware_py_jwtauthenticationmiddleware`, Class, degree: 3)
+- **.process_request()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_request`, Method, degree: 1)
+- **.process_response()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_response`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_admin_py_summaryadmin → backend_courses_admin_py_summaryadmin_get_queryset (defines)
-- backend_courses_admin_py_exerciseattemptadmin → backend_courses_admin_py_exerciseattemptadmin_get_queryset (defines)
-- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_list_filieres (defines)
-- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_get_queryset (defines)
-- backend_courses_admin_py_summaryadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exerciseattemptadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_users_middleware_py → backend_users_middleware_py_import_logging (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_datetime (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin (imports)
+- backend_users_middleware_py → backend_users_middleware_py_jwtauthenticationmiddleware (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_request (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_response (defines)
 

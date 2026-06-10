@@ -1,29 +1,27 @@
-# Community 88: create_test_courses
+# Community 88: profile_completion_screen
 
-**Members:** 10
+**Members:** 9
 
 ## Nodes
 
-- **create_test_courses** (`backend_create_test_courses_py`, File, degree: 9)
-- **create_test_courses()** (`backend_create_test_courses_py_create_test_courses`, Function, degree: 1)
-- **courses.models.Course** (`backend_create_test_courses_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_create_test_courses_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_create_test_courses_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_create_test_courses_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_create_test_courses_py_import_django`, Module, degree: 1)
-- **django.utils.timezone** (`backend_create_test_courses_py_import_django_utils_timezone`, Module, degree: 1)
-- **os** (`backend_create_test_courses_py_import_os`, Module, degree: 1)
-- **sys** (`backend_create_test_courses_py_import_sys`, Module, degree: 1)
+- **profile_completion_screen** (`lib_features_auth_screens_profile_completion_screen_dart`, File, degree: 8)
+- **package:dio/dio.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_ProfileCompletionScreenState()** (`lib_features_auth_screens_profile_completion_screen_dart_profilecompletionscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_create_test_courses_py → backend_create_test_courses_py_import_os (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_sys (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_django (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_course (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_universite (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_filiere (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_promotion (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_import_django_utils_timezone (imports)
-- backend_create_test_courses_py → backend_create_test_courses_py_create_test_courses (defines)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_auth_screens_profile_completion_screen_dart → lib_features_auth_screens_profile_completion_screen_dart_profilecompletionscreenstate (defines)
 

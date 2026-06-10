@@ -1,20 +1,19 @@
-# Community 238: test_api_only
+# Community 238: fix_settings_mysql
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api_only** (`backend_test_api_only_py`, File, degree: 4)
-- **json** (`backend_test_api_only_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_api_only_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_api_only_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_api_only_py_test_endpoint`, Function, degree: 2)
+- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
+- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
+- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
+- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
+- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_api_only_py → backend_test_api_only_py_import_requests (imports)
-- backend_test_api_only_py → backend_test_api_only_py_import_json (imports)
-- backend_test_api_only_py → backend_test_api_only_py_test_endpoint (defines)
-- backend_test_api_only_py → backend_test_api_only_py_main (defines)
-- backend_test_api_only_py_main → backend_test_api_only_py_test_endpoint (calls)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
 

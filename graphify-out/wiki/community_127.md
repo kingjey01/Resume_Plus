@@ -1,30 +1,25 @@
-# Community 127: generate_report()
+# Community 127: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
-- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
-- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
-- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
-- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
-- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
-- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
-- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

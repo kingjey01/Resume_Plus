@@ -1,33 +1,29 @@
-# Community 82: test_registration
+# Community 82: create_test_services
 
 **Members:** 10
 
 ## Nodes
 
-- **test_registration** (`backend_test_registration_py`, File, degree: 9)
-- **generate_random_user()** (`backend_test_registration_py_generate_random_user`, Function, degree: 2)
-- **json** (`backend_test_registration_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_registration_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_registration_py_import_requests`, Module, degree: 1)
-- **string** (`backend_test_registration_py_import_string`, Module, degree: 1)
-- **main()** (`backend_test_registration_py_main`, Function, degree: 4)
-- **test_api_with_jwt_token()** (`backend_test_registration_py_test_api_with_jwt_token`, Function, degree: 2)
-- **test_login_with_new_user()** (`backend_test_registration_py_test_login_with_new_user`, Function, degree: 2)
-- **test_registration()** (`backend_test_registration_py_test_registration`, Function, degree: 3)
+- **create_test_services** (`backend_create_test_services_py`, File, degree: 9)
+- **create_test_services()** (`backend_create_test_services_py_create_test_services`, Function, degree: 1)
+- **datetime.timedelta** (`backend_create_test_services_py_import_datetime_timedelta`, Module, degree: 1)
+- **django** (`backend_create_test_services_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_create_test_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.utils.timezone** (`backend_create_test_services_py_import_django_utils_timezone`, Module, degree: 1)
+- **os** (`backend_create_test_services_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_create_test_services_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_create_test_services_py_import_payments_models_service`, Module, degree: 1)
+- **sys** (`backend_create_test_services_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_registration_py → backend_test_registration_py_import_requests (imports)
-- backend_test_registration_py → backend_test_registration_py_import_json (imports)
-- backend_test_registration_py → backend_test_registration_py_import_random (imports)
-- backend_test_registration_py → backend_test_registration_py_import_string (imports)
-- backend_test_registration_py → backend_test_registration_py_generate_random_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_registration (defines)
-- backend_test_registration_py → backend_test_registration_py_test_login_with_new_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_api_with_jwt_token (defines)
-- backend_test_registration_py → backend_test_registration_py_main (defines)
-- backend_test_registration_py_test_registration → backend_test_registration_py_generate_random_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_login_with_new_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_registration (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_api_with_jwt_token (calls)
+- backend_create_test_services_py → backend_create_test_services_py_import_os (imports)
+- backend_create_test_services_py → backend_create_test_services_py_import_sys (imports)
+- backend_create_test_services_py → backend_create_test_services_py_import_django (imports)
+- backend_create_test_services_py → backend_create_test_services_py_import_payments_models_service (imports)
+- backend_create_test_services_py → backend_create_test_services_py_import_payments_models_abonnement (imports)
+- backend_create_test_services_py → backend_create_test_services_py_import_django_contrib_auth_models_user (imports)
+- backend_create_test_services_py → backend_create_test_services_py_import_django_utils_timezone (imports)
+- backend_create_test_services_py → backend_create_test_services_py_import_datetime_timedelta (imports)
+- backend_create_test_services_py → backend_create_test_services_py_create_test_services (defines)
 

@@ -1,8 +1,8 @@
-# Community 347: filiere
+# Community 347: promotion
 
 **Members:** 1
 
 ## Nodes
 
-- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
+- **promotion** (`lib_models_promotion_dart`, File, degree: 0)
 

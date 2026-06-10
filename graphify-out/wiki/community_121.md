@@ -1,25 +1,37 @@
-# Community 121: admin
+# Community 121: flutter_window
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
+- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
+- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
+- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
+- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
+- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
+- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
 

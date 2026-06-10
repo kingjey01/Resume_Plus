@@ -1,35 +1,27 @@
-# Community 98: DeepgramService
+# Community 98: purchase_summary_screen
 
 **Members:** 9
 
 ## Nodes
 
-- **DeepgramService** (`backend_courses_deepgram_service_py_deepgramservice`, Class, degree: 9)
-- **._extract_confidence()** (`backend_courses_deepgram_service_py_deepgramservice_extract_confidence`, Method, degree: 3)
-- **._extract_transcript()** (`backend_courses_deepgram_service_py_deepgramservice_extract_transcript`, Method, degree: 3)
-- **._extract_words()** (`backend_courses_deepgram_service_py_deepgramservice_extract_words`, Method, degree: 2)
-- **._get_mime_type()** (`backend_courses_deepgram_service_py_deepgramservice_get_mime_type`, Method, degree: 2)
-- **.__init__()** (`backend_courses_deepgram_service_py_deepgramservice_init`, Method, degree: 1)
-- **.is_configured()** (`backend_courses_deepgram_service_py_deepgramservice_is_configured`, Method, degree: 3)
-- **.transcribe_bytes()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes`, Method, degree: 4)
-- **.transcribe_file()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_file`, Method, degree: 6)
+- **purchase_summary_screen** (`lib_features_purchases_screens_purchase_summary_screen_dart`, File, degree: 8)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PurchaseSummaryScreenState()** (`lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_init (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_is_configured (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_file (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_words (defines)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_words (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
+- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate (defines)
 

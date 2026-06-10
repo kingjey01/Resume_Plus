@@ -1,21 +1,21 @@
-# Community 195: AppDelegate
+# Community 195: exercise_subscription_screen
 
 **Members:** 6
 
 ## Nodes
 
-- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
-- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
-- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
-- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
-- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
+- **exercise_subscription_screen** (`lib_features_exercises_screens_exercise_subscription_screen_dart`, File, degree: 5)
+- **_ExerciseSubscriptionScreenState()** (`lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate (defines)
 

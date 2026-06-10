@@ -1,8 +1,13 @@
-# Community 334: sw
+# Community 334: flutter_usage_example
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **sw** (`web_sw_js`, File, degree: 0)
+- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
+- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
+
+## Relationships
+
+- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
 

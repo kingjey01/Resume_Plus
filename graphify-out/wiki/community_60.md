@@ -1,31 +1,31 @@
-# Community 60: subscriptions_screen
+# Community 60: fix_auth_issues
 
 **Members:** 11
 
 ## Nodes
 
-- **subscriptions_screen** (`lib_features_subscriptions_screens_subscriptions_screen_dart`, File, degree: 10)
-- **package:flutter/material.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/providers/service_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/widgets/service_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/widgets/subscription_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_SubscriptionsScreenState()** (`lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate`, Function, degree: 1)
+- **fix_auth_issues** (`backend_fix_auth_issues_py`, File, degree: 17)
+- **decouple.config** (`backend_fix_auth_issues_py_import_decouple_config`, Module, degree: 1)
+- **django** (`backend_fix_auth_issues_py_import_django`, Module, degree: 1)
+- **django.conf** (`backend_fix_auth_issues_py_import_django_conf`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_auth_issues_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_auth_issues_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_fix_auth_issues_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_fix_auth_issues_py_import_pymysql`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_fix_auth_issues_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_fix_auth_issues_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate (defines)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_os (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_sys (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pymysql (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pathlib_path (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_conf (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_decouple_config (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_users_models_userprofile (imports)
 

@@ -1,23 +1,23 @@
-# Community 154: models
+# Community 154: splash_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **models** (`backend_users_models_py`, File, degree: 7)
-- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
-- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
+- **splash_screen** (`lib_features_app_splash_screen_dart`, File, degree: 6)
+- **dart:async** (`lib_features_app_splash_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_app_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:lottie/lottie.dart** (`lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SplashScreenAltState()** (`lib_features_app_splash_screen_dart_splashscreenaltstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
-- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
-- backend_users_models_py → backend_users_models_py_meta (defines)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_dart_async (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_splashscreenaltstate (defines)
 

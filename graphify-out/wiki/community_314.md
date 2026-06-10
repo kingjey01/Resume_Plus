@@ -1,15 +1,15 @@
-# Community 314: file_helper_stub
+# Community 314: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
-- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
+- **apps** (`backend_security_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
+- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
+- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
 

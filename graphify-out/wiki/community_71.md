@@ -1,29 +1,36 @@
-# Community 71: create_test_user
+# Community 71: utils
 
 **Members:** 10
 
 ## Nodes
 
-- **create_test_user** (`backend_create_test_user_py`, File, degree: 9)
-- **create_admin_user()** (`backend_create_test_user_py_create_admin_user`, Function, degree: 1)
-- **create_test_user()** (`backend_create_test_user_py_create_test_user`, Function, degree: 1)
-- **django** (`backend_create_test_user_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_create_test_user_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_create_test_user_py_import_os`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_create_test_user_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_create_test_user_py_import_sys`, Module, degree: 1)
-- **traceback** (`backend_create_test_user_py_import_traceback`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_create_test_user_py_import_users_models_userprofile`, Module, degree: 1)
+- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
+- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
+- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
+- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
+- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
+- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
+- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
+- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
 
 ## Relationships
 
-- backend_create_test_user_py → backend_create_test_user_py_import_os (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_sys (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_django (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_django_contrib_auth_models_user (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_rest_framework_authtoken_models_token (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_users_models_userprofile (imports)
-- backend_create_test_user_py → backend_create_test_user_py_create_test_user (defines)
-- backend_create_test_user_py → backend_create_test_user_py_create_admin_user (defines)
-- backend_create_test_user_py → backend_create_test_user_py_import_traceback (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
 

@@ -1,15 +1,15 @@
-# Community 300: auth_providers
+# Community 300: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **auth_providers** (`lib_features_auth_providers_auth_providers_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
+- **urls** (`backend_users_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_users_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_users_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
+- backend_users_urls_py → backend_users_urls_py_import_django_urls_path (imports)
+- backend_users_urls_py → backend_users_urls_py_import_views (imports)
 

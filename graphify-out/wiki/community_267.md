@@ -1,17 +1,17 @@
-# Community 267: web_audio_service
+# Community 267: course_tile
 
 **Members:** 4
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **course_tile** (`lib_features_home_widgets_course_tile_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/course/screens/course_summaries_screen.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

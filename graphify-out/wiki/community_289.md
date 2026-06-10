@@ -1,15 +1,17 @@
-# Community 289: test_local_server
+# Community 289: 0005_userprofile_profile_picture
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
-- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
-- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
+- **0005_userprofile_profile_picture** (`backend_users_migrations_0005_userprofile_profile_picture_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0005_userprofile_profile_picture_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
-- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations (imports)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models (imports)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_migration (defines)
 
