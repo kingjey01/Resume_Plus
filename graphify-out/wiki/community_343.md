@@ -1,8 +1,8 @@
-# Community 343: universite
+# Community 343: sw
 
 **Members:** 1
 
 ## Nodes
 
-- **universite** (`lib_models_universite_dart`, File, degree: 0)
+- **sw** (`web_sw_js`, File, degree: 0)
 

@@ -1,15 +1,15 @@
-# Community 312: main
+# Community 312: utils
 
 **Members:** 3
 
 ## Nodes
 
-- **main** (`linux_runner_main_cc`, File, degree: 2)
-- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
-- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
+- **utils** (`windows_runner_utils_h`, File, degree: 2)
+- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
+- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
-- linux_runner_main_cc → linux_runner_main_cc_main (defines)
+- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
+- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
 

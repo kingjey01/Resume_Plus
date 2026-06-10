@@ -1,23 +1,21 @@
-# Community 177: filiere_promotion
+# Community 177: 0001_initial
 
-**Members:** 7
+**Members:** 6
 
 ## Nodes
 
-- **filiere_promotion** (`lib_models_filiere_promotion_dart`, File, degree: 6)
-- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_dart_filierepromotionfromjson`, Function, degree: 1)
-- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_dart_filierepromotiontojson`, Function, degree: 1)
-- **filiere.dart** (`lib_models_filiere_promotion_dart_import_filiere_dart`, Module, degree: 1)
-- **filiere_promotion.g.dart** (`lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart`, Module, degree: 1)
-- **package:json_annotation/json_annotation.dart** (`lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
-- **promotion.dart** (`lib_models_filiere_promotion_dart_import_promotion_dart`, Module, degree: 1)
+- **0001_initial** (`backend_users_migrations_0001_initial_py`, File, degree: 5)
+- **django.conf.settings** (`backend_users_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_users_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_users_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0001_initial_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_promotion_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart (imports)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotionfromjson (defines)
-- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotiontojson (defines)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_conf_settings (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_migrations (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models_deletion (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_migration (defines)
 

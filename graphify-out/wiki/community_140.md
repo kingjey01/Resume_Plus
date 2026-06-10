@@ -1,25 +1,25 @@
-# Community 140: manual_entry_screen
+# Community 140: settings_production_fixed
 
 **Members:** 8
 
 ## Nodes
 
-- **manual_entry_screen** (`lib_features_upload_screens_manual_entry_screen_dart`, File, degree: 7)
-- **package:flutter/material.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/professeur.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_ManualEntryScreenState()** (`lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate`, Function, degree: 1)
+- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
+- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
+- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
+- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate (defines)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
 

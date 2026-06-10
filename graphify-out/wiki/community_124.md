@@ -1,25 +1,27 @@
-# Community 124: fix_production_encoding
+# Community 124: create_courses()
 
 **Members:** 8
 
 ## Nodes
 
-- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
-- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
+- **create_courses()** (`backend_seed_database_py_create_courses`, Function, degree: 3)
+- **create_filieres()** (`backend_seed_database_py_create_filieres`, Function, degree: 3)
+- **create_promotions()** (`backend_seed_database_py_create_promotions`, Function, degree: 3)
+- **create_universites()** (`backend_seed_database_py_create_universites`, Function, degree: 3)
+- **display_accounts()** (`backend_seed_database_py_display_accounts`, Function, degree: 3)
+- **display_statistics()** (`backend_seed_database_py_display_statistics`, Function, degree: 3)
+- **main()** (`backend_seed_database_py_main`, Function, degree: 12)
+- **print_header()** (`backend_seed_database_py_print_header`, Function, degree: 4)
 
 ## Relationships
 
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
+- backend_seed_database_py_display_statistics → backend_seed_database_py_print_header (calls)
+- backend_seed_database_py_display_accounts → backend_seed_database_py_print_header (calls)
+- backend_seed_database_py_main → backend_seed_database_py_display_statistics (calls)
+- backend_seed_database_py_main → backend_seed_database_py_display_accounts (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_filieres (calls)
+- backend_seed_database_py_main → backend_seed_database_py_print_header (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_universites (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_promotions (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_courses (calls)
 

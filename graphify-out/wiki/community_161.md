@@ -1,23 +1,23 @@
-# Community 161: universite_filiere
+# Community 161: upload_choice_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **universite_filiere** (`lib_models_universite_filiere_dart`, File, degree: 6)
-- **filiere.dart** (`lib_models_universite_filiere_dart_import_filiere_dart`, Module, degree: 1)
-- **package:json_annotation/json_annotation.dart** (`lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
-- **universite.dart** (`lib_models_universite_filiere_dart_import_universite_dart`, Module, degree: 1)
-- **universite_filiere.g.dart** (`lib_models_universite_filiere_dart_import_universite_filiere_g_dart`, Module, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_dart_universitefilieretojson`, Function, degree: 1)
+- **upload_choice_screen** (`lib_features_upload_screens_upload_choice_screen_dart`, File, degree: 6)
+- **package:flutter/foundation.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/record_audio_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_filiere_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_filiere_g_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilieretojson (defines)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

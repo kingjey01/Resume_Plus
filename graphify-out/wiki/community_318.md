@@ -1,15 +1,13 @@
-# Community 318: snackbar_service
+# Community 318: generated_plugin_registrant
 
-**Members:** 3
+**Members:** 2
 
 ## Nodes
 
-- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
+- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
 

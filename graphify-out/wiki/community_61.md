@@ -1,31 +1,31 @@
-# Community 61: subscriptions_screen
+# Community 61: UserProfile
 
 **Members:** 11
 
 ## Nodes
 
-- **subscriptions_screen** (`lib_features_subscriptions_screens_subscriptions_screen_dart`, File, degree: 10)
-- **package:flutter/material.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/providers/service_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/widgets/service_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/widgets/subscription_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_SubscriptionsScreenState()** (`lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate`, Function, degree: 1)
+- **UserProfile** (`backend_users_models_py_userprofile`, Class, degree: 11)
+- **.can_create_summary()** (`backend_users_models_py_userprofile_can_create_summary`, Method, degree: 1)
+- **.generate_otp()** (`backend_users_models_py_userprofile_generate_otp`, Method, degree: 1)
+- **.has_active_subscription()** (`backend_users_models_py_userprofile_has_active_subscription`, Method, degree: 1)
+- **.has_free_access()** (`backend_users_models_py_userprofile_has_free_access`, Method, degree: 1)
+- **.is_admin()** (`backend_users_models_py_userprofile_is_admin`, Method, degree: 1)
+- **.is_cp()** (`backend_users_models_py_userprofile_is_cp`, Method, degree: 1)
+- **.is_etudiant()** (`backend_users_models_py_userprofile_is_etudiant`, Method, degree: 1)
+- **.reset_otp()** (`backend_users_models_py_userprofile_reset_otp`, Method, degree: 1)
+- **.__str__()** (`backend_users_models_py_userprofile_str`, Method, degree: 1)
+- **.verify_otp()** (`backend_users_models_py_userprofile_verify_otp`, Method, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_str (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_cp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_admin (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_etudiant (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_can_create_summary (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_free_access (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_generate_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_verify_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_reset_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_active_subscription (defines)
 

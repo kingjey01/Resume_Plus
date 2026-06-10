@@ -1,15 +1,15 @@
-# Community 303: apps
+# Community 303: file_helper_stub
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_users_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_users_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **UsersConfig** (`backend_users_apps_py_usersconfig`, Class, degree: 1)
+- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
+- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
+- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_apps_py → backend_users_apps_py_import_django_apps_appconfig (imports)
-- backend_users_apps_py → backend_users_apps_py_usersconfig (defines)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
 

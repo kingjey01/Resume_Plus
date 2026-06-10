@@ -1,25 +1,25 @@
-# Community 133: audio_test_page
+# Community 133: check_services
 
 **Members:** 8
 
 ## Nodes
 
-- **audio_test_page** (`lib_pages_audio_test_page_dart`, File, degree: 7)
-- **_AudioTestPageState()** (`lib_pages_audio_test_page_dart_audiotestpagestate`, Function, degree: 1)
-- **dart:html'** (`lib_pages_audio_test_page_dart_import_dart_html`, Module, degree: 1)
-- **dart:typed_data** (`lib_pages_audio_test_page_dart_import_dart_typed_data`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/api_service.dart** (`lib_pages_audio_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../services/web_audio_recorder.dart** (`lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart`, Module, degree: 1)
+- **check_services** (`backend_check_services_py`, File, degree: 7)
+- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
+- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
+- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_typed_data (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_html (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_api_service_dart (imports)
-- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_audiotestpagestate (defines)
+- backend_check_services_py → backend_check_services_py_import_os (imports)
+- backend_check_services_py → backend_check_services_py_import_sys (imports)
+- backend_check_services_py → backend_check_services_py_import_django (imports)
+- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
+- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
+- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
+- backend_check_services_py → backend_check_services_py_check_services (defines)
 

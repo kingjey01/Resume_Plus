@@ -1,17 +1,17 @@
-# Community 265: purchase_badge_provider
+# Community 265: app_theme
 
 **Members:** 4
 
 ## Nodes
 
-- **purchase_badge_provider** (`lib_providers_purchase_badge_provider_dart`, File, degree: 3)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
+- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
 

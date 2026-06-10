@@ -1,19 +1,19 @@
-# Community 232: 0002_remove_userprofile_role_and_more
+# Community 232: urls
 
 **Members:** 5
 
 ## Nodes
 
-- **0002_remove_userprofile_role_and_more** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py`, File, degree: 4)
-- **django.db.migrations** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration`, Class, degree: 1)
+- **urls** (`backend_courses_urls_py`, File, degree: 4)
+- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
+- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
+- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion (imports)
-- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration (defines)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
 

@@ -1,19 +1,19 @@
-# Community 244: fix_user_university
+# Community 244: subscription_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_user_university** (`backend_fix_user_university_py`, File, degree: 4)
-- **courses.models.Universite** (`backend_fix_user_university_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_user_university_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_user_university_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_user_university_py_import_os`, Module, degree: 1)
+- **subscription_provider** (`lib_features_subscriptions_providers_subscription_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_user_university_py → backend_fix_user_university_py_import_os (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_courses_models_universite (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

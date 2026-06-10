@@ -1,29 +1,34 @@
-# Community 76: fix_migration
+# Community 76: test_auth_quick
 
 **Members:** 10
 
 ## Nodes
 
-- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
-- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
-- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
-- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
-- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
+- **test_auth_quick** (`backend_test_auth_quick_py`, File, degree: 9)
+- **check_server_status()** (`backend_test_auth_quick_py_check_server_status`, Function, degree: 2)
+- **generate_curl_commands()** (`backend_test_auth_quick_py_generate_curl_commands`, Function, degree: 2)
+- **json** (`backend_test_auth_quick_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_auth_quick_py_import_requests`, Module, degree: 1)
+- **time** (`backend_test_auth_quick_py_import_time`, Module, degree: 1)
+- **main()** (`backend_test_auth_quick_py_main`, Function, degree: 6)
+- **test_auth_endpoints_quick()** (`backend_test_auth_quick_py_test_auth_endpoints_quick`, Function, degree: 2)
+- **test_cors_headers()** (`backend_test_auth_quick_py_test_cors_headers`, Function, degree: 2)
+- **test_with_hardcoded_tokens()** (`backend_test_auth_quick_py_test_with_hardcoded_tokens`, Function, degree: 2)
 
 ## Relationships
 
-- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
-- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
-- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_import_requests (imports)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_import_json (imports)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_import_time (imports)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_test_auth_endpoints_quick (defines)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_test_with_hardcoded_tokens (defines)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_test_cors_headers (defines)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_generate_curl_commands (defines)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_check_server_status (defines)
+- backend_test_auth_quick_py → backend_test_auth_quick_py_main (defines)
+- backend_test_auth_quick_py_main → backend_test_auth_quick_py_check_server_status (calls)
+- backend_test_auth_quick_py_main → backend_test_auth_quick_py_generate_curl_commands (calls)
+- backend_test_auth_quick_py_main → backend_test_auth_quick_py_test_with_hardcoded_tokens (calls)
+- backend_test_auth_quick_py_main → backend_test_auth_quick_py_test_auth_endpoints_quick (calls)
+- backend_test_auth_quick_py_main → backend_test_auth_quick_py_test_cors_headers (calls)
 

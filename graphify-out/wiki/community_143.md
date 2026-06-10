@@ -1,27 +1,37 @@
-# Community 143: tasks
+# Community 143: flutter_window
 
 **Members:** 8
 
 ## Nodes
 
-- **tasks** (`backend_courses_tasks_py`, File, degree: 7)
-- **generate_summary_task()** (`backend_courses_tasks_py_generate_summary_task`, Function, degree: 1)
-- **celery.shared_task** (`backend_courses_tasks_py_import_celery_shared_task`, Module, degree: 1)
-- **django.utils.timezone** (`backend_courses_tasks_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_courses_tasks_py_import_logging`, Module, degree: 1)
-- **process_audio_session_task()** (`backend_courses_tasks_py_process_audio_session_task`, Function, degree: 2)
-- **transcribe_audio_task()** (`backend_courses_tasks_py_transcribe_audio_task`, Function, degree: 2)
-- **_validate_and_fix_duration()** (`backend_courses_tasks_py_validate_and_fix_duration`, Function, degree: 3)
+- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
+- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
+- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
+- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
+- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
+- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
+- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
 
 ## Relationships
 
-- backend_courses_tasks_py → backend_courses_tasks_py_import_logging (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_celery_shared_task (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_django_utils_timezone (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_validate_and_fix_duration (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_transcribe_audio_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_generate_summary_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_process_audio_session_task (defines)
-- backend_courses_tasks_py_transcribe_audio_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
-- backend_courses_tasks_py_process_audio_session_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
 

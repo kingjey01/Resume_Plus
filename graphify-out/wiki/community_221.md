@@ -1,20 +1,21 @@
-# Community 221: test_api_only
+# Community 221: ._clean_transcript()
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api_only** (`backend_test_api_only_py`, File, degree: 4)
-- **json** (`backend_test_api_only_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_api_only_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_api_only_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_api_only_py_test_endpoint`, Function, degree: 2)
+- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
+- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
+- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
+- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
+- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
 
 ## Relationships
 
-- backend_test_api_only_py → backend_test_api_only_py_import_requests (imports)
-- backend_test_api_only_py → backend_test_api_only_py_import_json (imports)
-- backend_test_api_only_py → backend_test_api_only_py_test_endpoint (defines)
-- backend_test_api_only_py → backend_test_api_only_py_main (defines)
-- backend_test_api_only_py_main → backend_test_api_only_py_test_endpoint (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
 

@@ -1,15 +1,13 @@
-# Community 317: production_settings
+# Community 317: payment_method
 
-**Members:** 3
+**Members:** 2
 
 ## Nodes
 
-- **production_settings** (`backend_production_settings_py`, File, degree: 2)
-- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
-- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
+- **payment_method** (`lib_models_payment_method_dart`, File, degree: 1)
+- **PaymentMethodType** (`lib_models_payment_method_dart_paymentmethodtype`, Enum, degree: 1)
 
 ## Relationships
 
-- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
-- backend_production_settings_py → backend_production_settings_py_import_os (imports)
+- lib_models_payment_method_dart → lib_models_payment_method_dart_paymentmethodtype (defines)
 

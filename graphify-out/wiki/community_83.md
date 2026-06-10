@@ -1,29 +1,29 @@
-# Community 83: create_test_user
+# Community 83: validation_screen
 
 **Members:** 10
 
 ## Nodes
 
-- **create_test_user** (`backend_create_test_user_py`, File, degree: 9)
-- **create_admin_user()** (`backend_create_test_user_py_create_admin_user`, Function, degree: 1)
-- **create_test_user()** (`backend_create_test_user_py_create_test_user`, Function, degree: 1)
-- **django** (`backend_create_test_user_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_create_test_user_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_create_test_user_py_import_os`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_create_test_user_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_create_test_user_py_import_sys`, Module, degree: 1)
-- **traceback** (`backend_create_test_user_py_import_traceback`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_create_test_user_py_import_users_models_userprofile`, Module, degree: 1)
+- **validation_screen** (`lib_features_validation_screens_validation_screen_dart`, File, degree: 9)
+- **dart:async** (`lib_features_validation_screens_validation_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
+- **_ValidationScreenState()** (`lib_features_validation_screens_validation_screen_dart_validationscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_create_test_user_py → backend_create_test_user_py_import_os (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_sys (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_django (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_django_contrib_auth_models_user (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_rest_framework_authtoken_models_token (imports)
-- backend_create_test_user_py → backend_create_test_user_py_import_users_models_userprofile (imports)
-- backend_create_test_user_py → backend_create_test_user_py_create_test_user (defines)
-- backend_create_test_user_py → backend_create_test_user_py_create_admin_user (defines)
-- backend_create_test_user_py → backend_create_test_user_py_import_traceback (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_dart_async (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_validationscreenstate (defines)
 

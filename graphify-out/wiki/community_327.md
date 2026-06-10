@@ -1,13 +1,13 @@
-# Community 327: __init__
+# Community 327: generated_plugin_registrant
 
 **Members:** 2
 
 ## Nodes
 
-- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
-- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
+- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
 

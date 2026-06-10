@@ -1,17 +1,15 @@
-# Community 286: test_correct_courses_endpoint
+# Community 286: api_exception
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **test_correct_courses_endpoint** (`backend_test_correct_courses_endpoint_py`, File, degree: 3)
-- **json** (`backend_test_correct_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_correct_courses_endpoint_py_import_requests`, Module, degree: 1)
-- **test_correct_courses_endpoint()** (`backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint`, Function, degree: 1)
+- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
+- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
+- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_requests (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_json (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint (defines)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
 

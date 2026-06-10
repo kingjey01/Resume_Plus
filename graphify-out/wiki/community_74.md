@@ -1,36 +1,29 @@
-# Community 74: test_mobile_simulation
+# Community 74: urls
 
 **Members:** 10
 
 ## Nodes
 
-- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
-- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
-- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
-- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
-- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
-- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
-- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
-- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
-- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
+- **urls** (`backend_resume_backend_urls_py`, File, degree: 9)
+- **django.conf.settings** (`backend_resume_backend_urls_py_import_django_conf_settings`, Module, degree: 1)
+- **django.conf.urls.static.static** (`backend_resume_backend_urls_py_import_django_conf_urls_static_static`, Module, degree: 1)
+- **django.contrib.admin** (`backend_resume_backend_urls_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.urls.include** (`backend_resume_backend_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_resume_backend_urls_py_import_django_urls_path`, Module, degree: 1)
+- **drf_yasg.openapi** (`backend_resume_backend_urls_py_import_drf_yasg_openapi`, Module, degree: 1)
+- **drf_yasg.views.get_schema_view** (`backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view`, Module, degree: 1)
+- **health_check** (`backend_resume_backend_urls_py_import_health_check`, Module, degree: 1)
+- **rest_framework.permissions** (`backend_resume_backend_urls_py_import_rest_framework_permissions`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
-- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_contrib_admin (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_path (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_include (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_settings (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_urls_static_static (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_rest_framework_permissions (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_openapi (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_health_check (imports)
 

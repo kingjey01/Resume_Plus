@@ -1,23 +1,23 @@
-# Community 150: check_production_data()
+# Community 150: course_selection_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **check_production_data()** (`backend_fix_production_encoding_py_check_production_data`, Function, degree: 2)
-- **check_production_database()** (`backend_fix_production_encoding_py_check_production_database`, Function, degree: 2)
-- **clean_production_invalid_data()** (`backend_fix_production_encoding_py_clean_production_invalid_data`, Function, degree: 2)
-- **fix_production_encoding()** (`backend_fix_production_encoding_py_fix_production_encoding`, Function, degree: 2)
-- **main()** (`backend_fix_production_encoding_py_main`, Function, degree: 7)
-- **set_production_connection_encoding()** (`backend_fix_production_encoding_py_set_production_connection_encoding`, Function, degree: 2)
-- **test_production_emoji_insertion()** (`backend_fix_production_encoding_py_test_production_emoji_insertion`, Function, degree: 2)
+- **course_selection_screen** (`lib_features_upload_screens_course_selection_screen_dart`, File, degree: 6)
+- **_CourseSelectionScreenState()** (`lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_test_production_emoji_insertion (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_clean_production_invalid_data (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_database (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_set_production_connection_encoding (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_fix_production_encoding (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_data (calls)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate (defines)
 

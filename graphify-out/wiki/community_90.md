@@ -1,32 +1,29 @@
-# Community 90: simple_auth_test
+# Community 90: seeddata
 
-**Members:** 9
+**Members:** 10
 
 ## Nodes
 
-- **simple_auth_test** (`backend_simple_auth_test_py`, File, degree: 8)
-- **analyze_error_response()** (`backend_simple_auth_test_py_analyze_error_response`, Function, degree: 2)
-- **json** (`backend_simple_auth_test_py_import_json`, Module, degree: 1)
-- **requests** (`backend_simple_auth_test_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_simple_auth_test_py_main`, Function, degree: 6)
-- **suggest_solutions()** (`backend_simple_auth_test_py_suggest_solutions`, Function, degree: 2)
-- **test_auth_endpoint_without_token()** (`backend_simple_auth_test_py_test_auth_endpoint_without_token`, Function, degree: 2)
-- **test_server_basic()** (`backend_simple_auth_test_py_test_server_basic`, Function, degree: 2)
-- **test_token_with_different_methods()** (`backend_simple_auth_test_py_test_token_with_different_methods`, Function, degree: 2)
+- **seeddata** (`backend_courses_management_commands_seeddata_py`, File, degree: 10)
+- **courses.models.Course** (`backend_courses_management_commands_seeddata_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Session** (`backend_courses_management_commands_seeddata_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_courses_management_commands_seeddata_py_import_courses_models_summary`, Module, degree: 1)
+- **datetime.timedelta** (`backend_courses_management_commands_seeddata_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand`, Module, degree: 1)
+- **payments.models.Purchase** (`backend_courses_management_commands_seeddata_py_import_payments_models_purchase`, Module, degree: 1)
+- **random** (`backend_courses_management_commands_seeddata_py_import_random`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_courses_management_commands_seeddata_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_simple_auth_test_py → backend_simple_auth_test_py_import_requests (imports)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_import_json (imports)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_test_server_basic (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_test_auth_endpoint_without_token (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_test_token_with_different_methods (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_analyze_error_response (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_suggest_solutions (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_main (defines)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_server_basic (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_analyze_error_response (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_auth_endpoint_without_token (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_token_with_different_methods (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_suggest_solutions (calls)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_users_models_userprofile (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_course (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_session (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_summary (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_payments_models_purchase (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_datetime_timedelta (imports)
+- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_random (imports)
 

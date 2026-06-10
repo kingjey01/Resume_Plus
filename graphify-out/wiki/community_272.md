@@ -1,17 +1,17 @@
-# Community 272: 0003_alter_purchase_payment_method_alter_service_currency
+# Community 272: theme_selector
 
 **Members:** 4
 
 ## Nodes
 
-- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
-- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
+- **theme_selector** (`lib_features_settings_widgets_theme_selector_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/settings/providers/theme_provider.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart (imports)
 

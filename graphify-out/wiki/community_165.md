@@ -1,23 +1,23 @@
-# Community 165: setup_exercise_service
+# Community 165: GeneratedPluginRegistrant
 
 **Members:** 7
 
 ## Nodes
 
-- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
-- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
-- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
-- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
-- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
-- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
+- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
+- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
+- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
+- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
+- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
 
 ## Relationships
 
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
 

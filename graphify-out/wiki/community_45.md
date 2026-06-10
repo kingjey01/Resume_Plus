@@ -1,38 +1,35 @@
-# Community 45: debug_audio_issues
+# Community 45: mobile_audio_recorder
 
-**Members:** 12
+**Members:** 13
 
 ## Nodes
 
-- **debug_audio_issues** (`backend_debug_audio_issues_py`, File, degree: 11)
-- **check_database_audio_files()** (`backend_debug_audio_issues_py_check_database_audio_files`, Function, degree: 2)
-- **check_media_directory()** (`backend_debug_audio_issues_py_check_media_directory`, Function, degree: 2)
-- **create_test_audio_files()** (`backend_debug_audio_issues_py_create_test_audio_files`, Function, degree: 2)
-- **os** (`backend_debug_audio_issues_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_debug_audio_issues_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_debug_audio_issues_py_import_pymysql`, Module, degree: 1)
-- **requests** (`backend_debug_audio_issues_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_debug_audio_issues_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_debug_audio_issues_py_main`, Function, degree: 6)
-- **test_api_endpoints()** (`backend_debug_audio_issues_py_test_api_endpoints`, Function, degree: 2)
-- **test_specific_audio_file()** (`backend_debug_audio_issues_py_test_specific_audio_file`, Function, degree: 2)
+- **mobile_audio_recorder** (`lib_services_mobile_audio_recorder_dart`, File, degree: 12)
+- **_currentPath()** (`lib_services_mobile_audio_recorder_dart_currentpath`, Function, degree: 1)
+- **dart:async** (`lib_services_mobile_audio_recorder_dart_import_dart_async`, Module, degree: 1)
+- **dart:io** (`lib_services_mobile_audio_recorder_dart_import_dart_io`, Module, degree: 1)
+- **dart:typed_data** (`lib_services_mobile_audio_recorder_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_mobile_audio_recorder_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:path_provider/path_provider.dart** (`lib_services_mobile_audio_recorder_dart_import_package_path_provider_path_provider_dart`, Module, degree: 1)
+- **package:permission_handler/permission_handler.dart** (`lib_services_mobile_audio_recorder_dart_import_package_permission_handler_permission_handler_dart`, Module, degree: 1)
+- **package:record/record.dart** (`lib_services_mobile_audio_recorder_dart_import_package_record_record_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_mobile_audio_recorder_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_mobile_audio_recorder_dart_ispaused`, Function, degree: 1)
+- **_isRecording()** (`lib_services_mobile_audio_recorder_dart_isrecording`, Function, degree: 1)
+- **_recordingStartTime()** (`lib_services_mobile_audio_recorder_dart_recordingstarttime`, Function, degree: 1)
 
 ## Relationships
 
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_os (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_sys (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pymysql (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pathlib_path (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_requests (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_database_audio_files (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_media_directory (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_api_endpoints (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_create_test_audio_files (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_specific_audio_file (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_main (defines)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_api_endpoints (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_media_directory (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_create_test_audio_files (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_database_audio_files (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_specific_audio_file (calls)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_async (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_typed_data (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_record_record_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_permission_handler_permission_handler_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_package_path_provider_path_provider_dart (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_import_dart_io (imports)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_instance (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_currentpath (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_isrecording (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_ispaused (defines)
+- lib_services_mobile_audio_recorder_dart → lib_services_mobile_audio_recorder_dart_recordingstarttime (defines)
 

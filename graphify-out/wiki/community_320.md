@@ -1,15 +1,13 @@
-# Community 320: utils
+# Community 320: api_service_debug
 
-**Members:** 3
+**Members:** 2
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_h`, File, degree: 2)
-- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
-- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
+- **api_service_debug** (`lib_services_api_service_debug_dart`, File, degree: 1)
+- **package:dio/dio.dart** (`lib_services_api_service_debug_dart_import_package_dio_dio_dart`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
-- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
+- lib_services_api_service_debug_dart → lib_services_api_service_debug_dart_import_package_dio_dio_dart (imports)
 

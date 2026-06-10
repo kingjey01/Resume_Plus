@@ -1,15 +1,15 @@
-# Community 295: api_exception
+# Community 295: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
-- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
-- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **apps** (`backend_users_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_users_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **UsersConfig** (`backend_users_apps_py_usersconfig`, Class, degree: 1)
 
 ## Relationships
 
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
+- backend_users_apps_py → backend_users_apps_py_import_django_apps_appconfig (imports)
+- backend_users_apps_py → backend_users_apps_py_usersconfig (defines)
 

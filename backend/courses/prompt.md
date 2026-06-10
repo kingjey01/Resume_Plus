@@ -1325,6 +1325,7 @@ NB: les tables concernées sont les suivantes:
 - promotion
 - universite
 - notification
+- cours
 
 RÈGLES IMPORTANTES
 
@@ -1495,7 +1496,13 @@ Objectif :
 Permettre l'envoi de notifications groupées
 
 
-11. CONTRÔLES À EFFECTUER
+9. COURS - PROMOTION/FILIERE/UNIVERSITE
+* un cours peut appartenir à une ou plusieurs promotions
+* un cours peut appartenir à une ou plusieurs filières
+* un cours peut appartenir à une ou plusieurs universités
+
+objectif permetre le chiox multiple de promotion, filière et université pour un cours
+10. CONTRÔLES À EFFECTUER
 Vérifier :
 
 * Cohérence des données

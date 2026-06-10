@@ -1,23 +1,23 @@
-# Community 168: SubscriptionExpirationTest
+# Community 168: middleware
 
 **Members:** 7
 
 ## Nodes
 
-- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
-- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
-- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
-- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
-- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
-- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
-- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
+- **middleware** (`backend_users_middleware_py`, File, degree: 4)
+- **datetime** (`backend_users_middleware_py_import_datetime`, Module, degree: 1)
+- **django.utils.deprecation.MiddlewareMixin** (`backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin`, Module, degree: 1)
+- **logging** (`backend_users_middleware_py_import_logging`, Module, degree: 1)
+- **JWTAuthenticationMiddleware** (`backend_users_middleware_py_jwtauthenticationmiddleware`, Class, degree: 3)
+- **.process_request()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_request`, Method, degree: 1)
+- **.process_response()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_response`, Method, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
+- backend_users_middleware_py → backend_users_middleware_py_import_logging (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_datetime (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin (imports)
+- backend_users_middleware_py → backend_users_middleware_py_jwtauthenticationmiddleware (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_request (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_response (defines)
 

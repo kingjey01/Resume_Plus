@@ -1,19 +1,19 @@
-# Community 220: service_provider
+# Community 220: simple_login_service
 
 **Members:** 5
 
 ## Nodes
 
-- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **simple_login_service** (`lib_services_simple_login_service_dart`, File, degree: 4)
+- **ApiService()** (`lib_services_simple_login_service_dart_apiservice`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_services_simple_login_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_dio_dio_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_apiservice (defines)
 

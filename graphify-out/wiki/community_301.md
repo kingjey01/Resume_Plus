@@ -1,15 +1,15 @@
-# Community 301: file_helper_stub
+# Community 301: settings_postgresql
 
 **Members:** 3
 
 ## Nodes
 
-- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
-- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
+- **settings_postgresql** (`backend_settings_postgresql_py`, File, degree: 2)
+- **os** (`backend_settings_postgresql_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_postgresql_py_import_pathlib_path`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_os (imports)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_pathlib_path (imports)
 

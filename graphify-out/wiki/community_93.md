@@ -1,37 +1,27 @@
-# Community 93: FeatureTestSuite
+# Community 93: web_audio_recorder
 
 **Members:** 9
 
 ## Nodes
 
-- **FeatureTestSuite** (`backend_test_new_features_py_featuretestsuite`, Class, degree: 9)
-- **.__init__()** (`backend_test_new_features_py_featuretestsuite_init`, Method, degree: 1)
-- **.log_test()** (`backend_test_new_features_py_featuretestsuite_log_test`, Method, degree: 6)
-- **.run_all_tests()** (`backend_test_new_features_py_featuretestsuite_run_all_tests`, Method, degree: 6)
-- **.test_exercise_generation()** (`backend_test_new_features_py_featuretestsuite_test_exercise_generation`, Method, degree: 3)
-- **.test_exercise_service()** (`backend_test_new_features_py_featuretestsuite_test_exercise_service`, Method, degree: 3)
-- **.test_otp_system()** (`backend_test_new_features_py_featuretestsuite_test_otp_system`, Method, degree: 3)
-- **.test_summary_validation()** (`backend_test_new_features_py_featuretestsuite_test_summary_validation`, Method, degree: 3)
-- **.test_user_permissions()** (`backend_test_new_features_py_featuretestsuite_test_user_permissions`, Method, degree: 3)
+- **web_audio_recorder** (`lib_services_web_audio_recorder_dart`, File, degree: 8)
+- **dart:async** (`lib_services_web_audio_recorder_dart_import_dart_async`, Module, degree: 1)
+- **dart:typed_data** (`lib_services_web_audio_recorder_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_web_audio_recorder_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_web_audio_recorder_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_web_audio_recorder_dart_ispaused`, Function, degree: 1)
+- **_isRecording()** (`lib_services_web_audio_recorder_dart_isrecording`, Function, degree: 1)
+- **kIsWeb()** (`lib_services_web_audio_recorder_dart_kisweb`, Function, degree: 1)
+- **_recordingStartTime()** (`lib_services_web_audio_recorder_dart_recordingstarttime`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_init (defines)
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_log_test (defines)
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_otp_system (defines)
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_exercise_service (defines)
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_summary_validation (defines)
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_exercise_generation (defines)
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_user_permissions (defines)
-- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_run_all_tests (defines)
-- backend_test_new_features_py_featuretestsuite_test_otp_system → backend_test_new_features_py_featuretestsuite_log_test (calls)
-- backend_test_new_features_py_featuretestsuite_test_exercise_service → backend_test_new_features_py_featuretestsuite_log_test (calls)
-- backend_test_new_features_py_featuretestsuite_test_summary_validation → backend_test_new_features_py_featuretestsuite_log_test (calls)
-- backend_test_new_features_py_featuretestsuite_test_exercise_generation → backend_test_new_features_py_featuretestsuite_log_test (calls)
-- backend_test_new_features_py_featuretestsuite_test_user_permissions → backend_test_new_features_py_featuretestsuite_log_test (calls)
-- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_otp_system (calls)
-- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_exercise_service (calls)
-- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_summary_validation (calls)
-- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_user_permissions (calls)
-- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_exercise_generation (calls)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_dart_async (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_dart_typed_data (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_instance (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_kisweb (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_isrecording (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_ispaused (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_recordingstarttime (defines)
 

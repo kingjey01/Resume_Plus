@@ -1,8 +1,8 @@
-# Community 345: summary
+# Community 345: filiere
 
 **Members:** 1
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
 

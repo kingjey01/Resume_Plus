@@ -1,25 +1,25 @@
-# Community 114: check_services
+# Community 114: audio_service
 
 **Members:** 8
 
 ## Nodes
 
-- **check_services** (`backend_check_services_py`, File, degree: 7)
-- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
-- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
+- **audio_service** (`lib_services_audio_service_dart`, File, degree: 7)
+- **_currentText()** (`lib_services_audio_service_dart_currenttext`, Function, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter_tts/flutter_tts.dart** (`lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart`, Module, degree: 1)
+- **web_audio_service.dart** (`lib_services_audio_service_dart_import_web_audio_service_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_audio_service_dart_instance`, Function, degree: 1)
+- **_isInitialized()** (`lib_services_audio_service_dart_isinitialized`, Function, degree: 1)
+- **_isPaused()** (`lib_services_audio_service_dart_ispaused`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_services_py → backend_check_services_py_import_os (imports)
-- backend_check_services_py → backend_check_services_py_import_sys (imports)
-- backend_check_services_py → backend_check_services_py_import_django (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
-- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_services_py → backend_check_services_py_check_services (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_web_audio_service_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_instance (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_isinitialized (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_ispaused (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_currenttext (defines)
 

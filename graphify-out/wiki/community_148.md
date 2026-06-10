@@ -1,23 +1,23 @@
-# Community 148: test_exercise_generation
+# Community 148: notification_detail_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
-- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
-- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
-- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
-- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
+- **notification_detail_screen** (`lib_features_notifications_screens_notification_detail_screen_dart`, File, degree: 6)
+- **package:flutter/material.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_NotificationDetailScreenState()** (`lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate (defines)
 

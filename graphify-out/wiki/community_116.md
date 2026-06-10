@@ -1,25 +1,25 @@
-# Community 116: test_advanced_audio_functionality
+# Community 116: phone_login_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **test_advanced_audio_functionality** (`backend_test_advanced_audio_functionality_py`, File, degree: 12)
-- **create_comprehensive_test_report()** (`backend_test_advanced_audio_functionality_py_create_comprehensive_test_report`, Function, degree: 1)
-- **json** (`backend_test_advanced_audio_functionality_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_advanced_audio_functionality_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_test_advanced_audio_functionality_py_import_pathlib_path`, Module, degree: 1)
-- **requests** (`backend_test_advanced_audio_functionality_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_advanced_audio_functionality_py_import_sys`, Module, degree: 1)
-- **wave** (`backend_test_advanced_audio_functionality_py_import_wave`, Module, degree: 1)
+- **phone_login_screen** (`lib_features_auth_screens_phone_login_screen_dart`, File, degree: 7)
+- **package:dio/dio.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/otp_verification_screen.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PhoneLoginScreenState()** (`lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_os (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_sys (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_requests (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_json (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_wave (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_pathlib_path (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_create_comprehensive_test_report (defines)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines)
 

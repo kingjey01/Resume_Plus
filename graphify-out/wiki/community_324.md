@@ -1,13 +1,13 @@
-# Community 324: logger
+# Community 324: my_application
 
 **Members:** 2
 
 ## Nodes
 
-- **logger** (`lib_utils_logger_dart`, File, degree: 1)
-- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
+- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
 
 ## Relationships
 
-- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
+- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
 

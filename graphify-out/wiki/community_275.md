@@ -1,17 +1,17 @@
-# Community 275: create_exercise_service
+# Community 275: 0003_alter_purchase_payment_method_alter_service_currency
 
 **Members:** 4
 
 ## Nodes
 
-- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
-- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
-- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
-- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
+- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
+- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
 

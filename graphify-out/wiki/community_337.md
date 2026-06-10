@@ -1,8 +1,8 @@
-# Community 337: resource
+# Community 337: __init__
 
 **Members:** 1
 
 ## Nodes
 
-- **resource** (`windows_runner_resource_h`, File, degree: 0)
+- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
 

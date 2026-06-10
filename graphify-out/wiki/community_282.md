@@ -1,17 +1,17 @@
-# Community 282: 0006_migrate_existing_relations
+# Community 282: test_correct_courses_endpoint
 
 **Members:** 4
 
 ## Nodes
 
-- **0006_migrate_existing_relations** (`backend_courses_migrations_0006_migrate_existing_relations_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations`, Module, degree: 1)
-- **migrate_existing_relations()** (`backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations`, Function, degree: 1)
-- **Migration** (`backend_courses_migrations_0006_migrate_existing_relations_py_migration`, Class, degree: 1)
+- **test_correct_courses_endpoint** (`backend_test_correct_courses_endpoint_py`, File, degree: 3)
+- **json** (`backend_test_correct_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_correct_courses_endpoint_py_import_requests`, Module, degree: 1)
+- **test_correct_courses_endpoint()** (`backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations (defines)
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migration (defines)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_requests (imports)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_json (imports)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint (defines)
 

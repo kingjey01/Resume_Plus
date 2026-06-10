@@ -1,21 +1,21 @@
-# Community 182: 0004_alter_abonnement_etudiant
+# Community 182: exercise_subscription_screen
 
 **Members:** 6
 
 ## Nodes
 
-- **0004_alter_abonnement_etudiant** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration`, Class, degree: 1)
+- **exercise_subscription_screen** (`lib_features_exercises_screens_exercise_subscription_screen_dart`, File, degree: 5)
+- **_ExerciseSubscriptionScreenState()** (`lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration (defines)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate (defines)
 

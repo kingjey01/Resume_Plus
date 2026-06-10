@@ -1,28 +1,23 @@
-# Community 152: Command
+# Community 152: 0002_service_abonnement
 
 **Members:** 7
 
 ## Nodes
 
-- **Command** (`backend_courses_management_commands_seeddata_py_command`, Class, degree: 7)
-- **.create_courses()** (`backend_courses_management_commands_seeddata_py_command_create_courses`, Method, degree: 2)
-- **.create_purchases()** (`backend_courses_management_commands_seeddata_py_command_create_purchases`, Method, degree: 2)
-- **.create_sessions()** (`backend_courses_management_commands_seeddata_py_command_create_sessions`, Method, degree: 2)
-- **.create_summaries()** (`backend_courses_management_commands_seeddata_py_command_create_summaries`, Method, degree: 2)
-- **.create_users()** (`backend_courses_management_commands_seeddata_py_command_create_users`, Method, degree: 2)
-- **.handle()** (`backend_courses_management_commands_seeddata_py_command_handle`, Method, degree: 6)
+- **0002_service_abonnement** (`backend_payments_migrations_0002_service_abonnement_py`, File, degree: 6)
+- **django.conf.settings** (`backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0002_service_abonnement_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_handle (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_users (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_courses (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_sessions (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_summaries (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_purchases (defines)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_summaries (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_users (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_courses (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_sessions (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_purchases (calls)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_migration (defines)
 

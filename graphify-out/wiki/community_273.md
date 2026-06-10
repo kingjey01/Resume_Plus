@@ -1,17 +1,17 @@
-# Community 273: file_helper_io
+# Community 273: secure_screen_wrapper
 
 **Members:** 4
 
 ## Nodes
 
-- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
-- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
-- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
+- **secure_screen_wrapper** (`lib_widgets_secure_screen_wrapper_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/screen_security_service.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart`, Module, degree: 1)
+- **_SecureScreenWrapperState()** (`lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate (defines)
 

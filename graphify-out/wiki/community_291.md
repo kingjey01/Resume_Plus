@@ -1,17 +1,15 @@
-# Community 291: debug_page
+# Community 291: main
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
-- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

@@ -1,23 +1,23 @@
-# Community 163: AbonnementCreateSerializer
+# Community 163: settings_cors_fixed
 
 **Members:** 7
 
 ## Nodes
 
-- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
-- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
-- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
-- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
-- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
-- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
+- **settings_cors_fixed** (`backend_settings_cors_fixed_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_cors_fixed_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_cors_fixed_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_cors_fixed_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_cors_fixed_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_cors_fixed_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_cors_fixed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
-- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
-- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pathlib_path (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_datetime_timedelta (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_config (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_csv (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_os (imports)
+- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pymysql (imports)
 

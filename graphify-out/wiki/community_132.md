@@ -1,25 +1,25 @@
-# Community 132: permissions
+# Community 132: fix_production_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **permissions** (`backend_users_permissions_py`, File, degree: 4)
-- **rest_framework.permissions** (`backend_users_permissions_py_import_rest_framework_permissions`, Module, degree: 1)
-- **IsAdminOrReadOnly** (`backend_users_permissions_py_isadminorreadonly`, Class, degree: 2)
-- **.has_permission()** (`backend_users_permissions_py_isadminorreadonly_has_permission`, Method, degree: 1)
-- **IsCPOrReadOnly** (`backend_users_permissions_py_iscporreadonly`, Class, degree: 2)
-- **.has_permission()** (`backend_users_permissions_py_iscporreadonly_has_permission`, Method, degree: 1)
-- **IsOwnerOrReadOnly** (`backend_users_permissions_py_isownerorreadonly`, Class, degree: 2)
-- **.has_object_permission()** (`backend_users_permissions_py_isownerorreadonly_has_object_permission`, Method, degree: 1)
+- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
+- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_permissions_py → backend_users_permissions_py_import_rest_framework_permissions (imports)
-- backend_users_permissions_py → backend_users_permissions_py_isownerorreadonly (defines)
-- backend_users_permissions_py_isownerorreadonly → backend_users_permissions_py_isownerorreadonly_has_object_permission (defines)
-- backend_users_permissions_py → backend_users_permissions_py_iscporreadonly (defines)
-- backend_users_permissions_py_iscporreadonly → backend_users_permissions_py_iscporreadonly_has_permission (defines)
-- backend_users_permissions_py → backend_users_permissions_py_isadminorreadonly (defines)
-- backend_users_permissions_py_isadminorreadonly → backend_users_permissions_py_isadminorreadonly_has_permission (defines)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
 

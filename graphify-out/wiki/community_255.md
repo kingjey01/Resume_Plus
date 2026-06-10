@@ -1,21 +1,17 @@
-# Community 255: DeepSeekService
+# Community 255: create_exercise_service
 
-**Members:** 5
+**Members:** 4
 
 ## Nodes
 
-- **DeepSeekService** (`backend_courses_deepseek_service_py_deepseekservice`, Class, degree: 13)
-- **._build_exercises_prompt()** (`backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt`, Method, degree: 2)
-- **.generate_exercises()** (`backend_courses_deepseek_service_py_deepseekservice_generate_exercises`, Method, degree: 4)
-- **._get_api_key()** (`backend_courses_deepseek_service_py_deepseekservice_get_api_key`, Method, degree: 2)
-- **.__init__()** (`backend_courses_deepseek_service_py_deepseekservice_init`, Method, degree: 2)
+- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
+- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
+- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
+- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_init (defines)
-- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_get_api_key (defines)
-- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_generate_exercises (defines)
-- backend_courses_deepseek_service_py_deepseekservice → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (defines)
-- backend_courses_deepseek_service_py_deepseekservice_init → backend_courses_deepseek_service_py_deepseekservice_get_api_key (calls)
-- backend_courses_deepseek_service_py_deepseekservice_generate_exercises → backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt (calls)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
 

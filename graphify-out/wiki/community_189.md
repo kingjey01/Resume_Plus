@@ -1,21 +1,21 @@
-# Community 189: auth_repository
+# Community 189: SubscriptionNotificationTest
 
 **Members:** 6
 
 ## Nodes
 
-- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
-- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **SubscriptionNotificationTest** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest`, Class, degree: 6)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_subscriptions_notifications()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications`, Method, degree: 1)
+- **.test_subscription_expired_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification`, Method, degree: 1)
+- **.test_subscription_expiring_soon_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification`, Method, degree: 1)
+- **.test_subscription_paid_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification`, Method, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications (defines)
 

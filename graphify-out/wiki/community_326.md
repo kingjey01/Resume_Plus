@@ -1,13 +1,13 @@
-# Community 326: gunicorn.conf
+# Community 326: __init__
 
 **Members:** 2
 
 ## Nodes
 
-- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
-- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
+- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
+- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
 
 ## Relationships
 
-- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
+- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
 

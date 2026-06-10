@@ -1,15 +1,15 @@
-# Community 304: wsgi
+# Community 304: test_local_server
 
 **Members:** 3
 
 ## Nodes
 
-- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
-- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
-- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
+- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
+- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
+- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
+- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
+- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
 

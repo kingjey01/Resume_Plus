@@ -1,29 +1,29 @@
-# Community 85: edit_profile_screen
+# Community 85: test_notification_logic
 
 **Members:** 10
 
 ## Nodes
 
-- **edit_profile_screen** (`lib_features_settings_screens_edit_profile_screen_dart`, File, degree: 9)
-- **_EditProfileScreenState()** (`lib_features_settings_screens_edit_profile_screen_dart_editprofilescreenstate`, Function, degree: 1)
-- **dart:io** (`lib_features_settings_screens_edit_profile_screen_dart_import_dart_io`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart'** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:image_picker/image_picker.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_image_picker_image_picker_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
+- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
+- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
+- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
+- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_dart_io (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_image_picker_image_picker_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_editprofilescreenstate (defines)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
 

@@ -1,31 +1,35 @@
-# Community 101: test_audio_playback
+# Community 101: DeepgramService
 
 **Members:** 9
 
 ## Nodes
 
-- **test_audio_playback** (`backend_test_audio_playback_py`, File, degree: 8)
-- **json** (`backend_test_audio_playback_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_audio_playback_py_import_os`, Module, degree: 1)
-- **requests** (`backend_test_audio_playback_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_audio_playback_py_main`, Function, degree: 5)
-- **test_audio_file_access()** (`backend_test_audio_playback_py_test_audio_file_access`, Function, degree: 2)
-- **test_direct_audio_access()** (`backend_test_audio_playback_py_test_direct_audio_access`, Function, degree: 2)
-- **test_media_directory_listing()** (`backend_test_audio_playback_py_test_media_directory_listing`, Function, degree: 2)
-- **test_sessions_endpoint()** (`backend_test_audio_playback_py_test_sessions_endpoint`, Function, degree: 2)
+- **DeepgramService** (`backend_courses_deepgram_service_py_deepgramservice`, Class, degree: 9)
+- **._extract_confidence()** (`backend_courses_deepgram_service_py_deepgramservice_extract_confidence`, Method, degree: 3)
+- **._extract_transcript()** (`backend_courses_deepgram_service_py_deepgramservice_extract_transcript`, Method, degree: 3)
+- **._extract_words()** (`backend_courses_deepgram_service_py_deepgramservice_extract_words`, Method, degree: 2)
+- **._get_mime_type()** (`backend_courses_deepgram_service_py_deepgramservice_get_mime_type`, Method, degree: 2)
+- **.__init__()** (`backend_courses_deepgram_service_py_deepgramservice_init`, Method, degree: 1)
+- **.is_configured()** (`backend_courses_deepgram_service_py_deepgramservice_is_configured`, Method, degree: 3)
+- **.transcribe_bytes()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes`, Method, degree: 4)
+- **.transcribe_file()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_file`, Method, degree: 6)
 
 ## Relationships
 
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_requests (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_json (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_os (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_sessions_endpoint (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_audio_file_access (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_direct_audio_access (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_media_directory_listing (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_main (defines)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_sessions_endpoint (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_audio_file_access (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_direct_audio_access (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_media_directory_listing (calls)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_init (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_is_configured (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_file (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_words (defines)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_words (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
 

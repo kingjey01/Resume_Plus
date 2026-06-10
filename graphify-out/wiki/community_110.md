@@ -1,25 +1,31 @@
-# Community 110: phone_login_screen
+# Community 110: debug_wsgi_user
 
-**Members:** 8
+**Members:** 9
 
 ## Nodes
 
-- **phone_login_screen** (`lib_features_auth_screens_phone_login_screen_dart`, File, degree: 7)
-- **package:dio/dio.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter/services.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/otp_verification_screen.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PhoneLoginScreenState()** (`lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate`, Function, degree: 1)
+- **debug_wsgi_user** (`backend_debug_wsgi_user_py`, File, degree: 8)
+- **check_python_path()** (`backend_debug_wsgi_user_py_check_python_path`, Function, degree: 2)
+- **django** (`backend_debug_wsgi_user_py_import_django`, Module, degree: 1)
+- **os** (`backend_debug_wsgi_user_py_import_os`, Module, degree: 1)
+- **sys** (`backend_debug_wsgi_user_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_debug_wsgi_user_py_main`, Function, degree: 5)
+- **test_audio_processing_import()** (`backend_debug_wsgi_user_py_test_audio_processing_import`, Function, degree: 2)
+- **test_imports()** (`backend_debug_wsgi_user_py_test_imports`, Function, degree: 2)
+- **test_view_import()** (`backend_debug_wsgi_user_py_test_view_import`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_os (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_sys (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_django (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_imports (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_audio_processing_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_view_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_check_python_path (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_main (defines)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_view_import (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_imports (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_check_python_path (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_audio_processing_import (calls)
 

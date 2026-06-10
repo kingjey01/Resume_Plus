@@ -1,23 +1,23 @@
-# Community 167: main
+# Community 167: models
 
 **Members:** 7
 
 ## Nodes
 
-- **main** (`windows_runner_main_cpp`, File, degree: 6)
-- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
-- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
-- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
+- **models** (`backend_users_models_py`, File, degree: 7)
+- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
 
 ## Relationships
 
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
+- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
+- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
+- backend_users_models_py → backend_users_models_py_meta (defines)
 

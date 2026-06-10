@@ -1,19 +1,19 @@
-# Community 225: test_api_auth
+# Community 225: create_relations()
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api_auth** (`backend_test_api_auth_py`, File, degree: 11)
-- **json** (`backend_test_api_auth_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_api_auth_py_import_os`, Module, degree: 1)
-- **requests** (`backend_test_api_auth_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_api_auth_py_import_sys`, Module, degree: 1)
+- **create_relations()** (`backend_seed_database_py_create_relations`, Function, degree: 3)
+- **create_services()** (`backend_seed_database_py_create_services`, Function, degree: 3)
+- **create_sessions_and_summaries()** (`backend_seed_database_py_create_sessions_and_summaries`, Function, degree: 3)
+- **create_users()** (`backend_seed_database_py_create_users`, Function, degree: 3)
+- **print_section()** (`backend_seed_database_py_print_section`, Function, degree: 9)
 
 ## Relationships
 
-- backend_test_api_auth_py → backend_test_api_auth_py_import_requests (imports)
-- backend_test_api_auth_py → backend_test_api_auth_py_import_json (imports)
-- backend_test_api_auth_py → backend_test_api_auth_py_import_os (imports)
-- backend_test_api_auth_py → backend_test_api_auth_py_import_sys (imports)
+- backend_seed_database_py_create_relations → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_users → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_sessions_and_summaries → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_services → backend_seed_database_py_print_section (calls)
 

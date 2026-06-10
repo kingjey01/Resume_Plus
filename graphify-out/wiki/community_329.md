@@ -1,13 +1,13 @@
-# Community 329: badge_icon
+# Community 329: flutter_usage_example
 
 **Members:** 2
 
 ## Nodes
 
-- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
+- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
 
 ## Relationships
 
-- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
+- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
 

@@ -1,13 +1,8 @@
-# Community 332: generated_plugin_registrant
+# Community 332: GeneratedPluginRegistrant
 
-**Members:** 2
+**Members:** 1
 
 ## Nodes
 
-- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
-- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
-
-## Relationships
-
-- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
 

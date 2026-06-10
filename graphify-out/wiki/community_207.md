@@ -1,21 +1,19 @@
-# Community 207: create_admin_user()
+# Community 207: service_provider
 
-**Members:** 6
+**Members:** 5
 
 ## Nodes
 
-- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
-- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
-- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
-- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
-- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
-- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
+- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
-- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

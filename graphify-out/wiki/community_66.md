@@ -1,33 +1,31 @@
-# Community 66: test_registration
+# Community 66: all_summaries_screen
 
-**Members:** 10
+**Members:** 11
 
 ## Nodes
 
-- **test_registration** (`backend_test_registration_py`, File, degree: 9)
-- **generate_random_user()** (`backend_test_registration_py_generate_random_user`, Function, degree: 2)
-- **json** (`backend_test_registration_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_registration_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_registration_py_import_requests`, Module, degree: 1)
-- **string** (`backend_test_registration_py_import_string`, Module, degree: 1)
-- **main()** (`backend_test_registration_py_main`, Function, degree: 4)
-- **test_api_with_jwt_token()** (`backend_test_registration_py_test_api_with_jwt_token`, Function, degree: 2)
-- **test_login_with_new_user()** (`backend_test_registration_py_test_login_with_new_user`, Function, degree: 2)
-- **test_registration()** (`backend_test_registration_py_test_registration`, Function, degree: 3)
+- **all_summaries_screen** (`lib_features_summaries_screens_all_summaries_screen_dart`, File, degree: 10)
+- **_AllSummariesScreenState()** (`lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_registration_py → backend_test_registration_py_import_requests (imports)
-- backend_test_registration_py → backend_test_registration_py_import_json (imports)
-- backend_test_registration_py → backend_test_registration_py_import_random (imports)
-- backend_test_registration_py → backend_test_registration_py_import_string (imports)
-- backend_test_registration_py → backend_test_registration_py_generate_random_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_registration (defines)
-- backend_test_registration_py → backend_test_registration_py_test_login_with_new_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_api_with_jwt_token (defines)
-- backend_test_registration_py → backend_test_registration_py_main (defines)
-- backend_test_registration_py_test_registration → backend_test_registration_py_generate_random_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_login_with_new_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_registration (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_api_with_jwt_token (calls)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate (defines)
 

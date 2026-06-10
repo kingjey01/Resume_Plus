@@ -1,25 +1,27 @@
-# Community 112: quick_test
+# Community 112: payment_status_screen
 
-**Members:** 8
+**Members:** 9
 
 ## Nodes
 
-- **quick_test** (`backend_quick_test_py`, File, degree: 7)
-- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
-- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
-- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
-- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
-- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
-- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
-- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
+- **payment_status_screen** (`lib_features_purchases_screens_payment_status_screen_dart`, File, degree: 8)
+- **dart:async** (`lib_features_purchases_screens_payment_status_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/purchase_badge_provider.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PaymentState** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstate`, Enum, degree: 1)
+- **_PaymentStatusScreenState()** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
-- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
-- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
-- backend_quick_test_py → backend_quick_test_py_import_os (imports)
-- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
-- backend_quick_test_py → backend_quick_test_py_import_time (imports)
-- backend_quick_test_py → backend_quick_test_py_start_server (defines)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_dart_async (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate (defines)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstate (defines)
 

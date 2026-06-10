@@ -1,19 +1,19 @@
-# Community 226: exercise_result_screen
+# Community 226: 0009_add_course_fk_fields
 
 **Members:** 5
 
 ## Nodes
 
-- **exercise_result_screen** (`lib_features_exercises_screens_exercise_result_screen_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/secure_screen_wrapper.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart`, Module, degree: 1)
+- **0009_add_course_fk_fields** (`backend_courses_migrations_0009_add_course_fk_fields_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0009_add_course_fk_fields_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports)
+- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models (imports)
+- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0009_add_course_fk_fields_py → backend_courses_migrations_0009_add_course_fk_fields_py_migration (defines)
 

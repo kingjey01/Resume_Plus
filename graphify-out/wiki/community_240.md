@@ -1,20 +1,19 @@
-# Community 240: create_test_audio_upload()
+# Community 240: check_accessible_courses
 
 **Members:** 5
 
 ## Nodes
 
-- **create_test_audio_upload()** (`backend_test_advanced_audio_functionality_py_create_test_audio_upload`, Function, degree: 2)
-- **main()** (`backend_test_advanced_audio_functionality_py_main`, Function, degree: 5)
-- **test_audio_files_existence()** (`backend_test_advanced_audio_functionality_py_test_audio_files_existence`, Function, degree: 3)
-- **test_django_setup()** (`backend_test_advanced_audio_functionality_py_test_django_setup`, Function, degree: 3)
-- **test_local_server_endpoints()** (`backend_test_advanced_audio_functionality_py_test_local_server_endpoints`, Function, degree: 2)
+- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
+- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
+- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py_test_audio_files_existence → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_create_test_audio_upload (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_audio_files_existence (calls)
-- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_local_server_endpoints (calls)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
 

@@ -1,19 +1,20 @@
-# Community 211: ProfesseurFilieresAdmin
+# Community 211: test_api_only
 
 **Members:** 5
 
 ## Nodes
 
-- **ProfesseurFilieresAdmin** (`backend_courses_admin_py_professeurfilieresadmin`, Class, degree: 5)
-- **.get_queryset()** (`backend_courses_admin_py_professeurfilieresadmin_get_queryset`, Method, degree: 2)
-- **.has_add_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_add_permission`, Method, degree: 1)
-- **.has_change_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_change_permission`, Method, degree: 1)
-- **.has_delete_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_delete_permission`, Method, degree: 1)
+- **test_api_only** (`backend_test_api_only_py`, File, degree: 4)
+- **json** (`backend_test_api_only_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_only_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_api_only_py_main`, Function, degree: 2)
+- **test_endpoint()** (`backend_test_api_only_py_test_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_add_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_change_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_delete_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_get_queryset (defines)
+- backend_test_api_only_py → backend_test_api_only_py_import_requests (imports)
+- backend_test_api_only_py → backend_test_api_only_py_import_json (imports)
+- backend_test_api_only_py → backend_test_api_only_py_test_endpoint (defines)
+- backend_test_api_only_py → backend_test_api_only_py_main (defines)
+- backend_test_api_only_py_main → backend_test_api_only_py_test_endpoint (calls)
 

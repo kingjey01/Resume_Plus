@@ -1,17 +1,17 @@
-# Community 281: app_theme
+# Community 281: 0002_filiere_promotion_universite
 
 **Members:** 4
 
 ## Nodes
 
-- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
-- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
+- **0002_filiere_promotion_universite** (`backend_courses_migrations_0002_filiere_promotion_universite_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0002_filiere_promotion_universite_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_models (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_migration (defines)
 

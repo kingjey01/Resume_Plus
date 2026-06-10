@@ -1,17 +1,15 @@
-# Community 288: subscription_card
+# Community 288: test_seed_creation
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
+- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
+- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
 

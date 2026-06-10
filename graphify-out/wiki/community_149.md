@@ -1,23 +1,23 @@
-# Community 149: deepgram_service
+# Community 149: NotificationTargetingLogicTest
 
 **Members:** 7
 
 ## Nodes
 
-- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
-- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
-- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
-- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
+- **NotificationTargetingLogicTest** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest`, Class, degree: 7)
+- **.setUp()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup`, Method, degree: 1)
+- **.test_case_1_no_filters_global()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global`, Method, degree: 1)
+- **.test_case_2_universite_only()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only`, Method, degree: 1)
+- **.test_case_3_universite_filiere()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere`, Method, degree: 1)
+- **.test_case_4_universite_filiere_promotion()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion`, Method, degree: 1)
+- **.test_cp_receives_own_notification()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion (defines)
+- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification (defines)
 

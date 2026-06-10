@@ -1,19 +1,19 @@
-# Community 217: widget_test
+# Community 217: Summary
 
 **Members:** 5
 
 ## Nodes
 
-- **widget_test** (`test_widget_test_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
-- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
-- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
+- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
+- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
+- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
+- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
+- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
 
 ## Relationships
 
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_main (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
 

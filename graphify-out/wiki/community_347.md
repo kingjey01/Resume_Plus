@@ -1,8 +1,8 @@
-# Community 347: promotion
+# Community 347: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **promotion** (`lib_models_promotion_dart`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
 

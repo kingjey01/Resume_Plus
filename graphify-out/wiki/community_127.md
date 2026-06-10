@@ -1,25 +1,25 @@
-# Community 127: admin
+# Community 127: exercises_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_users_admin_py`, File, degree: 7)
-- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
-- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
-- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
+- **exercises_screen** (`lib_features_exercises_screens_exercises_screen_dart`, File, degree: 7)
+- **_ExercisesScreenState()** (`lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
-- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
-- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
-- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
-- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
-- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
-- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate (defines)
 

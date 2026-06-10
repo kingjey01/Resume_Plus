@@ -1,23 +1,23 @@
-# Community 156: GeneratedPluginRegistrant
+# Community 156: main
 
 **Members:** 7
 
 ## Nodes
 
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
-- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
-- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
-- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
-- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
-- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
+- **main** (`windows_runner_main_cpp`, File, degree: 6)
+- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
+- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
+- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
 
 ## Relationships
 
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
 

@@ -1,13 +1,8 @@
-# Community 336: professeur
+# Community 336: exercise
 
-**Members:** 2
+**Members:** 1
 
 ## Nodes
 
-- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
-- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
-
-## Relationships
-
-- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
+- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
 

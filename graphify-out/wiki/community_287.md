@@ -1,17 +1,15 @@
-# Community 287: find_courses_endpoint
+# Community 287: snackbar_service
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
-- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
-- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
+- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
 
 ## Relationships
 
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
 

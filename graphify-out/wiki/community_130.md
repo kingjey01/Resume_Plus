@@ -1,25 +1,25 @@
-# Community 130: migrate_courses_to_fk
+# Community 130: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
-- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
-- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
-- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

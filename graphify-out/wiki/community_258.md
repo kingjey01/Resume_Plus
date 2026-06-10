@@ -1,17 +1,17 @@
-# Community 258: theme_provider
+# Community 258: celery
 
 **Members:** 4
 
 ## Nodes
 
-- **theme_provider** (`lib_features_settings_providers_theme_provider_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **celery** (`backend_resume_backend_celery_py`, File, degree: 3)
+- **debug_task()** (`backend_resume_backend_celery_py_debug_task`, Function, degree: 1)
+- **celery.Celery** (`backend_resume_backend_celery_py_import_celery_celery`, Module, degree: 1)
+- **os** (`backend_resume_backend_celery_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_os (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_celery_celery (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_debug_task (defines)
 

@@ -1,19 +1,17 @@
-# Community 251: 0014_professeur_filieres_fix
+# Community 251: manage
 
-**Members:** 5
+**Members:** 4
 
 ## Nodes
 
-- **0014_professeur_filieres_fix** (`backend_courses_migrations_0014_professeur_filieres_fix_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0014_professeur_filieres_fix_py_migration`, Class, degree: 1)
+- **manage** (`backend_manage_py`, File, degree: 3)
+- **os** (`backend_manage_py_import_os`, Module, degree: 1)
+- **sys** (`backend_manage_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_manage_py_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models (imports)
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_migration (defines)
+- backend_manage_py → backend_manage_py_import_os (imports)
+- backend_manage_py → backend_manage_py_import_sys (imports)
+- backend_manage_py → backend_manage_py_main (defines)
 

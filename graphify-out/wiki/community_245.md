@@ -1,19 +1,19 @@
-# Community 245: PurchaseNotificationTest
+# Community 245: filiere_promotion.g
 
 **Members:** 5
 
 ## Nodes
 
-- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
-- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
-- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
-- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
-- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
+- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
+- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
 

@@ -1,8 +1,8 @@
-# Community 341: filiere
+# Community 341: resource
 
 **Members:** 1
 
 ## Nodes
 
-- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
+- **resource** (`windows_runner_resource_h`, File, degree: 0)
 

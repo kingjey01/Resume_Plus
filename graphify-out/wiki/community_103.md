@@ -1,27 +1,27 @@
-# Community 103: text_to_speech_service
+# Community 103: debug_auth_headers
 
 **Members:** 9
 
 ## Nodes
 
-- **text_to_speech_service** (`lib_services_text_to_speech_service_dart`, File, degree: 8)
-- **_audioService()** (`lib_services_text_to_speech_service_dart_audioservice`, Function, degree: 1)
-- **audio_service.dart** (`lib_services_text_to_speech_service_dart_import_audio_service_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_text_to_speech_service_dart_instance`, Function, degree: 1)
-- **_language()** (`lib_services_text_to_speech_service_dart_language`, Function, degree: 1)
-- **_pitch()** (`lib_services_text_to_speech_service_dart_pitch`, Function, degree: 1)
-- **_rate()** (`lib_services_text_to_speech_service_dart_rate`, Function, degree: 1)
-- **_volume()** (`lib_services_text_to_speech_service_dart_volume`, Function, degree: 1)
+- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
+- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
+- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
+- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
+- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
+- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
+- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_audio_service_dart (imports)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_instance (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_audioservice (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_rate (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_pitch (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_volume (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_language (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
 

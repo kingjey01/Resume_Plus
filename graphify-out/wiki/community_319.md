@@ -1,15 +1,13 @@
-# Community 319: apps
+# Community 319: abonnement
 
-**Members:** 3
+**Members:** 2
 
 ## Nodes
 
-- **apps** (`backend_notifications_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_notifications_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **NotificationsConfig** (`backend_notifications_apps_py_notificationsconfig`, Class, degree: 1)
+- **abonnement** (`lib_models_abonnement_dart`, File, degree: 1)
+- **id()** (`lib_models_abonnement_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- backend_notifications_apps_py → backend_notifications_apps_py_import_django_apps_appconfig (imports)
-- backend_notifications_apps_py → backend_notifications_apps_py_notificationsconfig (defines)
+- lib_models_abonnement_dart → lib_models_abonnement_dart_id (defines)
 

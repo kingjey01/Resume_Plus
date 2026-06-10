@@ -1,25 +1,28 @@
-# Community 135: admin
+# Community 135: AuthAPITest
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
+- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
+- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
+- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
+- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
+- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
+- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
+- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
+- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
 

@@ -1,25 +1,25 @@
-# Community 139: filiere_summaries_screen
+# Community 139: permissions
 
 **Members:** 8
 
 ## Nodes
 
-- **filiere_summaries_screen** (`lib_features_filiere_screens_filiere_summaries_screen_dart`, File, degree: 7)
-- **_FiliereSummariesScreenState()** (`lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **permissions** (`backend_users_permissions_py`, File, degree: 4)
+- **rest_framework.permissions** (`backend_users_permissions_py_import_rest_framework_permissions`, Module, degree: 1)
+- **IsAdminOrReadOnly** (`backend_users_permissions_py_isadminorreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_isadminorreadonly_has_permission`, Method, degree: 1)
+- **IsCPOrReadOnly** (`backend_users_permissions_py_iscporreadonly`, Class, degree: 2)
+- **.has_permission()** (`backend_users_permissions_py_iscporreadonly_has_permission`, Method, degree: 1)
+- **IsOwnerOrReadOnly** (`backend_users_permissions_py_isownerorreadonly`, Class, degree: 2)
+- **.has_object_permission()** (`backend_users_permissions_py_isownerorreadonly_has_object_permission`, Method, degree: 1)
 
 ## Relationships
 
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate (defines)
+- backend_users_permissions_py → backend_users_permissions_py_import_rest_framework_permissions (imports)
+- backend_users_permissions_py → backend_users_permissions_py_isownerorreadonly (defines)
+- backend_users_permissions_py_isownerorreadonly → backend_users_permissions_py_isownerorreadonly_has_object_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_iscporreadonly (defines)
+- backend_users_permissions_py_iscporreadonly → backend_users_permissions_py_iscporreadonly_has_permission (defines)
+- backend_users_permissions_py → backend_users_permissions_py_isadminorreadonly (defines)
+- backend_users_permissions_py_isadminorreadonly → backend_users_permissions_py_isadminorreadonly_has_permission (defines)
 

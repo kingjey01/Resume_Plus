@@ -1,17 +1,15 @@
-# Community 290: api_error_view
+# Community 290: api_provider
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **api_error_view** (`lib_widgets_api_error_view_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_widgets_api_error_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **api_provider** (`lib_providers_api_provider_dart`, File, degree: 2)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
 

@@ -1,23 +1,23 @@
-# Community 157: purchases_screen
+# Community 157: splash_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 6)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
+- **splash_screen** (`lib_features_app_splash_screen_dart`, File, degree: 6)
+- **dart:async** (`lib_features_app_splash_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_app_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:lottie/lottie.dart** (`lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SplashScreenAltState()** (`lib_features_app_splash_screen_dart_splashscreenaltstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_dart_async (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_splashscreenaltstate (defines)
 

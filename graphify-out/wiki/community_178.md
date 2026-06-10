@@ -1,23 +1,21 @@
-# Community 178: .calculate_score()
+# Community 178: AppDelegate
 
-**Members:** 7
+**Members:** 6
 
 ## Nodes
 
-- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
-- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
-- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
-- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
-- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
-- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 2)
-- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
+- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
+- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
+- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
+- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
+- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_save (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
-- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
 

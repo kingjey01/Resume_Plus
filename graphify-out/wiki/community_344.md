@@ -1,8 +1,8 @@
-# Community 344: __init__
+# Community 344: summary
 
 **Members:** 1
 
 ## Nodes
 
-- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
+- **summary** (`lib_models_summary_dart`, File, degree: 0)
 

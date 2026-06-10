@@ -1,8 +1,8 @@
-# Community 339: app_notification
+# Community 339: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_h`, File, degree: 0)
 

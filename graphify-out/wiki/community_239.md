@@ -1,19 +1,19 @@
-# Community 239: check_database_users()
+# Community 239: fix_settings_mysql
 
 **Members:** 5
 
 ## Nodes
 
-- **check_database_users()** (`backend_quick_server_test_py_check_database_users`, Function, degree: 2)
-- **generate_curl_commands()** (`backend_quick_server_test_py_generate_curl_commands`, Function, degree: 2)
-- **main()** (`backend_quick_server_test_py_main`, Function, degree: 6)
-- **test_server_basic()** (`backend_quick_server_test_py_test_server_basic`, Function, degree: 2)
-- **test_tokens_quickly()** (`backend_quick_server_test_py_test_tokens_quickly`, Function, degree: 2)
+- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
+- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
+- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
+- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
+- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py_main → backend_quick_server_test_py_check_database_users (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_tokens_quickly (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_generate_curl_commands (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_server_basic (calls)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
 

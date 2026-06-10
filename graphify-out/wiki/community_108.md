@@ -1,31 +1,27 @@
-# Community 108: debug_api_calls
+# Community 108: audio_file_player_service
 
 **Members:** 9
 
 ## Nodes
 
-- **debug_api_calls** (`backend_debug_api_calls_py`, File, degree: 8)
-- **check_django_urls()** (`backend_debug_api_calls_py_check_django_urls`, Function, degree: 2)
-- **generate_flutter_debug_code()** (`backend_debug_api_calls_py_generate_flutter_debug_code`, Function, degree: 2)
-- **datetime** (`backend_debug_api_calls_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_debug_api_calls_py_import_json`, Module, degree: 1)
-- **requests** (`backend_debug_api_calls_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_debug_api_calls_py_main`, Function, degree: 5)
-- **simulate_flutter_calls()** (`backend_debug_api_calls_py_simulate_flutter_calls`, Function, degree: 2)
-- **test_all_possible_urls()** (`backend_debug_api_calls_py_test_all_possible_urls`, Function, degree: 2)
+- **audio_file_player_service** (`lib_services_audio_file_player_service_dart`, File, degree: 8)
+- **_currentUrl()** (`lib_services_audio_file_player_service_dart_currenturl`, Function, degree: 1)
+- **_duration()** (`lib_services_audio_file_player_service_dart_duration`, Function, degree: 1)
+- **package:audioplayers/audioplayers.dart** (`lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_audio_file_player_service_dart_instance`, Function, degree: 1)
+- **_isInitialized()** (`lib_services_audio_file_player_service_dart_isinitialized`, Function, degree: 1)
+- **_isPaused()** (`lib_services_audio_file_player_service_dart_ispaused`, Function, degree: 1)
+- **_position()** (`lib_services_audio_file_player_service_dart_position`, Function, degree: 1)
 
 ## Relationships
 
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_requests (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_json (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_datetime (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_test_all_possible_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_simulate_flutter_calls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_check_django_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_generate_flutter_debug_code (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_main (defines)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_simulate_flutter_calls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_check_django_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_test_all_possible_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_generate_flutter_debug_code (calls)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart (imports)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_instance (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_isinitialized (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_ispaused (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_currenturl (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_duration (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_position (defines)
 

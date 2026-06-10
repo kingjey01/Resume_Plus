@@ -1,21 +1,19 @@
-# Community 219: ._clean_transcript()
+# Community 219: tts_reader_widget
 
 **Members:** 5
 
 ## Nodes
 
-- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
-- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
-- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
-- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
-- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
+- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
+- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
+- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
-- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
 

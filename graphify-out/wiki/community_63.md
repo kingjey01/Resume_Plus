@@ -1,31 +1,31 @@
-# Community 63: all_summaries_screen
+# Community 63: ExerciseAdmin
 
 **Members:** 11
 
 ## Nodes
 
-- **all_summaries_screen** (`lib_features_summaries_screens_all_summaries_screen_dart`, File, degree: 10)
-- **_AllSummariesScreenState()** (`lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
+- **ExerciseAdmin** (`backend_courses_admin_py_exerciseadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_exerciseadmin_get_queryset`, Method, degree: 2)
+- **ExerciseAttemptAdmin** (`backend_courses_admin_py_exerciseattemptadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_exerciseattemptadmin_get_queryset`, Method, degree: 2)
+- **ProfesseurAdmin** (`backend_courses_admin_py_professeuradmin`, Class, degree: 3)
+- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
+- **.list_filieres()** (`backend_courses_admin_py_professeuradmin_list_filieres`, Method, degree: 1)
+- **SummaryAdmin** (`backend_courses_admin_py_summaryadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_summaryadmin_get_queryset`, Method, degree: 2)
+- **TranscriptionAdmin** (`backend_courses_admin_py_transcriptionadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_transcriptionadmin_get_queryset`, Method, degree: 2)
 
 ## Relationships
 
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate (defines)
+- backend_courses_admin_py_summaryadmin → backend_courses_admin_py_summaryadmin_get_queryset (defines)
+- backend_courses_admin_py_transcriptionadmin → backend_courses_admin_py_transcriptionadmin_get_queryset (defines)
+- backend_courses_admin_py_exerciseadmin → backend_courses_admin_py_exerciseadmin_get_queryset (defines)
+- backend_courses_admin_py_exerciseattemptadmin → backend_courses_admin_py_exerciseattemptadmin_get_queryset (defines)
+- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_list_filieres (defines)
+- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_get_queryset (defines)
+- backend_courses_admin_py_summaryadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_courses_admin_py_transcriptionadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_courses_admin_py_exerciseadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_courses_admin_py_exerciseattemptadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
 

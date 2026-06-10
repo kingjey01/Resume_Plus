@@ -1,17 +1,17 @@
-# Community 263: test_flutter_api
+# Community 263: 0012_add_summary_title_price_to_session
 
 **Members:** 4
 
 ## Nodes
 
-- **test_flutter_api** (`test_flutter_api_dart`, File, degree: 3)
-- **lib/services/api_service.dart** (`test_flutter_api_dart_import_lib_services_api_service_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`test_flutter_api_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **main()** (`test_flutter_api_dart_main`, Function, degree: 1)
+- **0012_add_summary_title_price_to_session** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- test_flutter_api_dart → test_flutter_api_dart_import_package_flutter_material_dart (imports)
-- test_flutter_api_dart → test_flutter_api_dart_import_lib_services_api_service_dart (imports)
-- test_flutter_api_dart → test_flutter_api_dart_main (defines)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models (imports)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration (defines)
 

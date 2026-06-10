@@ -1,25 +1,25 @@
-# Community 141: account_screen
+# Community 141: check_db_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **account_screen** (`lib_features_account_screens_account_screen_dart`, File, degree: 7)
-- **_AccountScreenState()** (`lib_features_account_screens_account_screen_dart_accountscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/splash/screens/splash_screen.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
+- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
+- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
+- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
+- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
+- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
 

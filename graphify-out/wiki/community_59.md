@@ -1,31 +1,33 @@
-# Community 59: generated_plugin_registrant
+# Community 59: otp_verification_screen
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_cc`, File, degree: 10)
-- **audioplayers_windows/audioplayers_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h`, Module, degree: 1)
-- **file_selector_windows/file_selector_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h`, Module, degree: 1)
-- **firebase_core/firebase_core_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h`, Module, degree: 1)
-- **flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h`, Module, degree: 1)
-- **flutter_tts/flutter_tts_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h`, Module, degree: 1)
-- **generated_plugin_registrant.h** (`windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
-- **permission_handler_windows/permission_handler_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h`, Module, degree: 1)
-- **record_windows/record_windows_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h`, Module, degree: 1)
-- **url_launcher_windows/url_launcher_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h`, Module, degree: 1)
-- **RegisterPlugins()** (`windows_flutter_generated_plugin_registrant_cc_registerplugins`, Function, degree: 1)
+- **otp_verification_screen** (`lib_features_auth_screens_otp_verification_screen_dart`, File, degree: 11)
+- **dart:async** (`lib_features_auth_screens_otp_verification_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart'** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/fcm_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_fcm_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_OtpVerificationScreenState()** (`lib_features_auth_screens_otp_verification_screen_dart_otpverificationscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_registerplugins (defines)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_services_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_fcm_service_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_dart_async (imports)
+- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_otpverificationscreenstate (defines)
 

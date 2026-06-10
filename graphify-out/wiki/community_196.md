@@ -1,21 +1,21 @@
-# Community 196: RunnerTests
+# Community 196: screen_security_service
 
 **Members:** 6
 
 ## Nodes
 
-- **RunnerTests** (`macos_runnertests_runnertests_swift`, File, degree: 5)
-- **Cocoa** (`macos_runnertests_runnertests_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runnertests_runnertests_swift_import_fluttermacos`, Module, degree: 1)
-- **XCTest** (`macos_runnertests_runnertests_swift_import_xctest`, Module, degree: 1)
-- **RunnerTests** (`macos_runnertests_runnertests_swift_runnertests`, Class, degree: 1)
-- **testExample** (`macos_runnertests_runnertests_swift_testexample`, Function, degree: 1)
+- **screen_security_service** (`lib_services_screen_security_service_dart`, File, degree: 5)
+- **dart:io** (`lib_services_screen_security_service_dart_import_dart_io`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_screen_security_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_services_screen_security_service_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:screen_protector/screen_protector.dart** (`lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart`, Module, degree: 1)
+- **_isSecured()** (`lib_services_screen_security_service_dart_issecured`, Function, degree: 1)
 
 ## Relationships
 
-- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_runnertests (defines)
-- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_testexample (defines)
-- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_cocoa (imports)
-- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_fluttermacos (imports)
-- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_xctest (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_dart_io (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_services_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_issecured (defines)
 

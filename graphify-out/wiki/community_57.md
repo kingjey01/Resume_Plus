@@ -1,31 +1,33 @@
-# Community 57: login_screen
+# Community 57: clear_data()
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **login_screen** (`lib_features_auth_screens_login_screen_dart`, File, degree: 10)
-- **package:dio/dio.dart** (`lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/forgot_password_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/register_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_LoginScreenState()** (`lib_features_auth_screens_login_screen_dart_loginscreenstate`, Function, degree: 1)
+- **clear_data()** (`backend_seed_data_py_clear_data`, Function, degree: 2)
+- **create_courses()** (`backend_seed_data_py_create_courses`, Function, degree: 2)
+- **create_filieres()** (`backend_seed_data_py_create_filieres`, Function, degree: 2)
+- **create_promotions()** (`backend_seed_data_py_create_promotions`, Function, degree: 2)
+- **create_services()** (`backend_seed_data_py_create_services`, Function, degree: 2)
+- **create_sessions()** (`backend_seed_data_py_create_sessions`, Function, degree: 2)
+- **create_summaries()** (`backend_seed_data_py_create_summaries`, Function, degree: 2)
+- **create_universites()** (`backend_seed_data_py_create_universites`, Function, degree: 2)
+- **create_users()** (`backend_seed_data_py_create_users`, Function, degree: 2)
+- **link_filieres_promotions()** (`backend_seed_data_py_link_filieres_promotions`, Function, degree: 2)
+- **link_universites_filieres()** (`backend_seed_data_py_link_universites_filieres`, Function, degree: 2)
+- **run_seed()** (`backend_seed_data_py_run_seed`, Function, degree: 12)
 
 ## Relationships
 
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_loginscreenstate (defines)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_summaries (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_clear_data (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_filieres (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_link_universites_filieres (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_courses (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_sessions (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_universites (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_link_filieres_promotions (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_services (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_users (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_promotions (calls)
 

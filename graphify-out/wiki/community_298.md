@@ -1,15 +1,15 @@
-# Community 298: api_provider
+# Community 298: production_settings
 
 **Members:** 3
 
 ## Nodes
 
-- **api_provider** (`lib_providers_api_provider_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **production_settings** (`backend_production_settings_py`, File, degree: 2)
+- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
+- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
 
 ## Relationships
 
-- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
+- backend_production_settings_py → backend_production_settings_py_import_os (imports)
 

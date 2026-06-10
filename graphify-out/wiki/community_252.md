@@ -1,19 +1,17 @@
-# Community 252: test_simple_page
+# Community 252: course_tile
 
-**Members:** 5
+**Members:** 4
 
 ## Nodes
 
-- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
-- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
-- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
+- **course_tile** (`lib_features_home_widgets_course_tile_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/course/screens/course_summaries_screen.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

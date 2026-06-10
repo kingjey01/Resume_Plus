@@ -1,23 +1,28 @@
-# Community 151: NotificationTargetingLogicTest
+# Community 151: Command
 
 **Members:** 7
 
 ## Nodes
 
-- **NotificationTargetingLogicTest** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest`, Class, degree: 7)
-- **.setUp()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup`, Method, degree: 1)
-- **.test_case_1_no_filters_global()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global`, Method, degree: 1)
-- **.test_case_2_universite_only()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only`, Method, degree: 1)
-- **.test_case_3_universite_filiere()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere`, Method, degree: 1)
-- **.test_case_4_universite_filiere_promotion()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion`, Method, degree: 1)
-- **.test_cp_receives_own_notification()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification`, Method, degree: 1)
+- **Command** (`backend_courses_management_commands_seeddata_py_command`, Class, degree: 7)
+- **.create_courses()** (`backend_courses_management_commands_seeddata_py_command_create_courses`, Method, degree: 2)
+- **.create_purchases()** (`backend_courses_management_commands_seeddata_py_command_create_purchases`, Method, degree: 2)
+- **.create_sessions()** (`backend_courses_management_commands_seeddata_py_command_create_sessions`, Method, degree: 2)
+- **.create_summaries()** (`backend_courses_management_commands_seeddata_py_command_create_summaries`, Method, degree: 2)
+- **.create_users()** (`backend_courses_management_commands_seeddata_py_command_create_users`, Method, degree: 2)
+- **.handle()** (`backend_courses_management_commands_seeddata_py_command_handle`, Method, degree: 6)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification (defines)
+- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_handle (defines)
+- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_users (defines)
+- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_courses (defines)
+- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_sessions (defines)
+- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_summaries (defines)
+- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_purchases (defines)
+- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_summaries (calls)
+- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_users (calls)
+- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_courses (calls)
+- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_sessions (calls)
+- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_purchases (calls)
 
