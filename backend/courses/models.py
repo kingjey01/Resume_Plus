@@ -619,7 +619,7 @@ class UserPersonalizedAttempt(models.Model):
 
             results.append({
                 'question_index': idx,
-                'question_text': question.get('question_text', ''),
+                'question_text': question.get('question_text') or question.get('question', ''),
                 'user_answer': user_answer,
                 'correct_answer': correct_answer,
                 'is_correct': is_correct,

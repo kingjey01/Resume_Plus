@@ -31,7 +31,7 @@ INSTRUCTIONS SPÉCIFIQUES NIVEAU FACILE:
 FORMAT JSON STRICT REQUIS:
 [
   {
-    "question": "Question claire et factuelle ?",
+    "question_text": "Question claire et factuelle ?",
     "options": {
       "A": "Option A (distractor plausible mais incorrect)",
       "B": "Option B (correcte)",
@@ -68,7 +68,7 @@ INSTRUCTIONS SPÉCIFIQUES NIVEAU MOYEN:
 FORMAT JSON STRICT REQUIS:
 [
   {
-    "question": "Question nécessitant compréhension/application ?",
+    "question_text": "Question nécessitant compréhension/application ?",
     "options": {
       "A": "Option plausible",
       "B": "Option plausible",
@@ -106,7 +106,7 @@ INSTRUCTIONS SPÉCIFIQUES NIVEAU DIFFICILE:
 FORMAT JSON STRICT REQUIS:
 [
   {
-    "question": "Question complexe nécessitant analyse et raisonnement ?",
+    "question_text": "Question complexe nécessitant analyse et raisonnement ?",
     "options": {
       "A": "Option plausible avec piège logique",
       "B": "Option plausible mais incorrecte",
@@ -236,7 +236,8 @@ class PersonalizedExerciseGenerator:
             template = PROMPT_TEMPLATES.get(difficulty, PROMPT_TEMPLATES['medium'])
             # Tronquer le texte si trop long (DeepSeek a des limites)
             content = resume_text[:8000] if len(resume_text) > 8000 else resume_text
-            prompt = template.format(content=content)
+            # NB: .replace() et non .format() car le template contient des accolades JSON littérales
+            prompt = template.replace('{content}', content)
 
             # Appeler DeepSeek
             result = deepseek_service.generate_summary(prompt, max_tokens=2000)
@@ -288,7 +289,11 @@ class PersonalizedExerciseGenerator:
 
     def _validate_question(self, question: Dict) -> bool:
         """Valide la structure d'une question."""
-        required_fields = ['question', 'options', 'correct_answer', 'explanation']
+        # Normaliser la clé : certains modèles renvoient 'question' au lieu de 'question_text'
+        if 'question_text' not in question and 'question' in question:
+            question['question_text'] = question['question']
+
+        required_fields = ['question_text', 'options', 'correct_answer', 'explanation']
         if not all(field in question for field in required_fields):
             return False
 
@@ -356,7 +361,7 @@ class PersonalizedExerciseGenerator:
                 random.shuffle(opts)
                 correct = ['A', 'B', 'C', 'D'][opts.index(kw)]
                 questions.append({
-                    "question": f"Quel terme clé est central dans ce cours ?",
+                    "question_text": f"Quel terme clé est central dans ce cours ?",
                     "options": dict(zip('ABCD', opts)),
                     "correct_answer": correct,
                     "explanation": f"Le terme '{kw}' est essentiel dans ce cours."
@@ -366,7 +371,7 @@ class PersonalizedExerciseGenerator:
             if len(sentences) > 0:
                 sent = sentences[0][:100]
                 questions.append({
-                    "question": f"Complétez: '{sent}...'",
+                    "question_text": f"Complétez: '{sent}...'",
                     "options": {
                         "A": "C'est une définition correcte",
                         "B": "C'est un exemple concret",
@@ -386,7 +391,7 @@ class PersonalizedExerciseGenerator:
         # Q1: Compréhension concept
         if len(sentences) >= 2:
             questions.append({
-                "question": "Quel est l'objectif principal de ce cours ?",
+                "question_text": "Quel est l'objectif principal de ce cours ?",
                 "options": {
                     "A": "Mémoriser des dates et noms",
                     "B": "Comprendre et appliquer les concepts fondamentaux",
@@ -400,7 +405,7 @@ class PersonalizedExerciseGenerator:
         # Q2: Lien entre concepts
         if len(keywords) >= 2:
             questions.append({
-                "question": f"Comment '{keywords[0]}' et '{keywords[1]}' sont-ils liés ?",
+                "question_text": f"Comment '{keywords[0]}' et '{keywords[1]}' sont-ils liés ?",
                 "options": {
                     "A": "Ils sont complètement indépendants",
                     "B": "Ils sont interconnectés dans ce cours",
@@ -419,7 +424,7 @@ class PersonalizedExerciseGenerator:
 
         # Q1: Analyse critique
         questions.append({
-            "question": "Quelle conclusion peut-on tirer de l'analyse de ce cours ?",
+            "question_text": "Quelle conclusion peut-on tirer de l'analyse de ce cours ?",
             "options": {
                 "A": "La théorie est suffisante sans pratique",
                 "B": "L'application pratique est essentielle à la maîtrise",
@@ -433,7 +438,7 @@ class PersonalizedExerciseGenerator:
         # Q2: Synthèse
         if keywords:
             questions.append({
-                "question": f"Si on applique '{keywords[0]}' dans un cas complexe, qu'arrive-t-il ?",
+                "question_text": f"Si on applique '{keywords[0]}' dans un cas complexe, qu'arrive-t-il ?",
                 "options": {
                     "A": "Cela ne fonctionne pas du tout",
                     "B": "Cela nécessite une adaptation et une analyse",
@@ -472,7 +477,7 @@ class PersonalizedExerciseGenerator:
         correct_letter = ['A', 'B', 'C', 'D'][opts.index("Concept B")]
 
         return {
-            "question": q_text,
+            "question_text": q_text,
             "options": dict(zip('ABCD', opts)),
             "correct_answer": correct_letter,
             "explanation": expl

@@ -212,7 +212,7 @@ def get_personalized_exercise_view(request, exercise_id):
             for idx, q in enumerate(exercise.questions):
                 questions_data.append({
                     'index': idx,
-                    'question_text': q.get('question_text', ''),
+                    'question_text': q.get('question_text') or q.get('question', ''),
                     'options': q.get('options', {}),
                 })
 

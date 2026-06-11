@@ -20,6 +20,8 @@ class PersonalizedQuizScreen extends ConsumerStatefulWidget {
 }
 
 class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen> {
+  bool _resultNavigated = false;
+
   @override
   void initState() {
     super.initState();
@@ -484,21 +486,33 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
   }
 
   Widget _buildResultView(PersonalizedExerciseState state) {
+    // Éviter de relancer la navigation à chaque rebuild
+    if (_resultNavigated) {
+      return const Center(child: CircularProgressIndicator());
+    }
+    _resultNavigated = true;
+
     final result = state.attemptResult!;
+    final exercise = state.exercise!;
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Navigator.pushReplacement(
-        context,
+      if (!mounted) return;
+      // push (et non pushReplacement) pour conserver l'écran quiz qui écoute le provider
+      Navigator.of(context).push(
         MaterialPageRoute(
           builder: (_) => QuizResultScreen(
             result: result,
-            exercise: state.exercise!,
+            exercise: exercise,
             onRetry: () {
+              _resultNavigated = false;
+              Navigator.of(context).pop(); // ferme l'écran de résultat
               ref.read(personalizedExerciseProvider.notifier).prepareRegeneration();
             },
             onBack: () {
+              _resultNavigated = false;
+              Navigator.of(context).pop(); // ferme l'écran de résultat
               ref.read(personalizedExerciseProvider.notifier).reset();
-              Navigator.pop(context);
+              Navigator.of(context).pop(); // ferme l'écran quiz → retour au résumé
             },
           ),
         ),
