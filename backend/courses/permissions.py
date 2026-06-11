@@ -150,21 +150,21 @@ class HasUniversityAccess(permissions.BasePermission):
         
         profile = request.user.profile
         
-        # Pour les objets Course
-        if hasattr(obj, 'universite_fk') and hasattr(obj, 'promotion_fk') and hasattr(obj, 'filiere_fk'):
+        # Pour les objets Course (M2M)
+        if hasattr(obj, 'universites') and hasattr(obj, 'promotions') and hasattr(obj, 'filieres'):
             return (
-                obj.universite_fk_id == profile.universite_id and
-                obj.promotion_fk_id == profile.promotion_id and
-                obj.filiere_fk_id == profile.filiere_id
+                obj.universites.filter(id=profile.universite_id).exists() and
+                obj.promotions.filter(id=profile.promotion_id).exists() and
+                obj.filieres.filter(id=profile.filiere_id).exists()
             )
-        
-        # Pour les objets Summary ou Session (via course)
+
+        # Pour les objets Summary ou Session (via course M2M)
         if hasattr(obj, 'course'):
             course = obj.course
             return (
-                course.universite_fk_id == profile.universite_id and
-                course.promotion_fk_id == profile.promotion_id and
-                course.filiere_fk_id == profile.filiere_id
+                course.universites.filter(id=profile.universite_id).exists() and
+                course.promotions.filter(id=profile.promotion_id).exists() and
+                course.filieres.filter(id=profile.filiere_id).exists()
             )
             
         return False

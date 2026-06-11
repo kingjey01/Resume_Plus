@@ -4,11 +4,26 @@ from .models import *
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ['nom', 'universite_fk', 'filiere_fk', 'promotion_fk', 'created_at']
-    list_filter = ['universite_fk', 'filiere_fk', 'promotion_fk', 'created_at']
-    search_fields = ['nom', 'description', 'universite_fk__nom', 'filiere_fk__nom', 'promotion_fk__nom']
+    list_display = ['nom', 'list_universites', 'list_filieres', 'list_promotions', 'created_at']
+    list_filter = ['universites', 'filieres', 'promotions', 'created_at']
+    search_fields = ['nom', 'description', 'universites__nom', 'filieres__nom', 'promotions__nom']
     readonly_fields = ['created_at', 'updated_at']
-    autocomplete_fields = ['universite_fk', 'filiere_fk', 'promotion_fk']
+    filter_horizontal = ['universites', 'filieres', 'promotions']
+
+    def list_universites(self, obj):
+        return ", ".join(u.nom for u in obj.universites.all()) or "-"
+    list_universites.short_description = "Universités"
+
+    def list_filieres(self, obj):
+        return ", ".join(f.nom for f in obj.filieres.all()) or "-"
+    list_filieres.short_description = "Filières"
+
+    def list_promotions(self, obj):
+        return ", ".join(p.nom for p in obj.promotions.all()) or "-"
+    list_promotions.short_description = "Promotions"
+
+    def get_queryset(self, request):
+        return super().get_queryset(request).prefetch_related('universites', 'filieres', 'promotions')
 
 
 @admin.register(Session)

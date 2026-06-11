@@ -31,7 +31,7 @@ from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary,
 class CourseListCreateView(generics.ListCreateAPIView):
     serializer_class = CourseSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
-    filterset_fields = ['filiere_fk', 'universite_fk', 'promotion_fk']
+    filterset_fields = ['filieres', 'universites', 'promotions']
     search_fields = ['nom', 'description']
     ordering_fields = ['nom', 'created_at']
     ordering = ['-created_at']
@@ -56,21 +56,24 @@ class CourseListCreateView(generics.ListCreateAPIView):
             return Course.objects.none()
         
         return Course.objects.filter(
-            universite_fk=profile.universite,
-            promotion_fk=profile.promotion,
-            filiere_fk=profile.filiere
-        )
-    
+            universites=profile.universite,
+            promotions=profile.promotion,
+            filieres=profile.filiere
+        ).distinct()
+
     def perform_create(self, serializer):
         """Assigner automatiquement l'université, promotion et filière lors de la création"""
         profile = self.request.user.profile
-        serializer.save(
-            universite_fk=profile.universite,
-            promotion_fk=profile.promotion,
-            filiere_fk=profile.filiere,
+        course = serializer.save(
             university=profile.universite.nom if profile.universite else '',
             filiere=profile.filiere.nom if profile.filiere else ''
         )
+        if profile.universite:
+            course.universites.add(profile.universite)
+        if profile.filiere:
+            course.filieres.add(profile.filiere)
+        if profile.promotion:
+            course.promotions.add(profile.promotion)
 
 
 class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -96,10 +99,10 @@ class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Course.objects.none()
         
         return Course.objects.filter(
-            universite_fk=profile.universite,
-            promotion_fk=profile.promotion,
-            filiere_fk=profile.filiere
-        )
+            universites=profile.universite,
+            promotions=profile.promotion,
+            filieres=profile.filiere
+        ).distinct()
 
 
 class SessionListCreateView(generics.ListCreateAPIView):
@@ -128,10 +131,10 @@ class SessionListCreateView(generics.ListCreateAPIView):
             return Session.objects.none()
         
         return Session.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
-        )
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
+        ).distinct()
 
 
 class SessionDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -154,10 +157,10 @@ class SessionDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Session.objects.none()
         
         return Session.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
-        )
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
+        ).distinct()
 
 
 class SummaryListCreateView(generics.ListCreateAPIView):
@@ -194,22 +197,22 @@ class SummaryListCreateView(generics.ListCreateAPIView):
         #         return Summary.objects.none()
             
         #     return Summary.objects.filter(
-        #         course__universite_fk=profile.universite,
-        #         course__promotion_fk=profile.promotion,
-        #         course__filiere_fk=profile.filiere,
+        #         course__universites=profile.universite,
+        #         course__promotions=profile.promotion,
+        #         course__filieres=profile.filiere,
         #         is_validated=True
-        #     )
-        
+        #     ).distinct()
+
         # Étudiant voit uniquement les résumés validés de son université/promotion/filière
         if not profile.universite or not profile.promotion or not profile.filiere:
             return Summary.objects.none()
-        
+
         return Summary.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere,
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere,
             is_validated=True
-        )
+        ).distinct()
 
 
 class SummaryDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -233,10 +236,10 @@ class SummaryDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Summary.objects.none()
         
         return Summary.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
-        )
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
+        ).distinct()
 
 
 class SummaryAchetesView(generics.ListAPIView):
@@ -749,13 +752,13 @@ def process_audio_session(request, session_id):
         if profile.is_admin:
             session = Session.objects.get(id=session_id)
         else:
-            session = Session.objects.get(
+            session = Session.objects.filter(
                 id=session_id,
-                course__universite_fk=profile.universite,
-                course__promotion_fk=profile.promotion,
-                course__filiere_fk=profile.filiere
-            )
-        
+                course__universites=profile.universite,
+                course__promotions=profile.promotion,
+                course__filieres=profile.filiere
+            ).distinct().get()
+
         # Vérifier la durée de l'audio (max 3 heures = 10800 secondes)
         MAX_AUDIO_DURATION_SECONDS = 10800
         raw_duration = session.audio_duration or 0
@@ -856,13 +859,13 @@ def retry_failed_session(request, session_id):
         if profile.is_admin:
             session = Session.objects.get(id=session_id)
         else:
-            session = Session.objects.get(
+            session = Session.objects.filter(
                 id=session_id,
-                course__universite_fk=profile.universite,
-                course__promotion_fk=profile.promotion,
-                course__filiere_fk=profile.filiere
-            )
-        
+                course__universites=profile.universite,
+                course__promotions=profile.promotion,
+                course__filieres=profile.filiere
+            ).distinct().get()
+
         # Vérifier que la session est en échec ou en statut intermédiaire (transcrit mais résumé échoué)
         if session.processing_status not in ('failed', 'transcribed'):
             return Response({
@@ -970,10 +973,10 @@ def get_sessions_queue(request):
         # Filtrage strict par université/promotion/filière via le cours
         base_queryset = Session.objects.filter(
             audio_file__isnull=False,
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
-        ).exclude(audio_file='')
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
+        ).exclude(audio_file='').distinct()
         
         # Admin peut voir toutes les sessions
         if profile.is_admin:
@@ -1030,13 +1033,13 @@ def get_audio_file(request, session_id):
         if profile.is_admin:
             session = Session.objects.get(id=session_id)
         else:
-            session = Session.objects.get(
+            session = Session.objects.filter(
                 id=session_id,
-                course__universite_fk=profile.universite,
-                course__promotion_fk=profile.promotion,
-                course__filiere_fk=profile.filiere
-            )
-        
+                course__universites=profile.universite,
+                course__promotions=profile.promotion,
+                course__filieres=profile.filiere
+            ).distinct().get()
+
         if not session.audio_file:
             return Response(
                 {'error': 'Aucun fichier audio pour cette session'}, 
@@ -1322,9 +1325,9 @@ def validate_summary_view(request, summary_id):
                     'title': '📚 Nouveau résumé disponible',
                     'body': f'Le résumé « {summary.titre} » du cours {course.nom} est maintenant disponible.',
                     'notification_type': 'summary_validated',
-                    'universite_id': course.universite_fk_id,
-                    'filiere_id': course.filiere_fk_id,
-                    'promotion_id': course.promotion_fk_id,
+                    'universite_id': course.universites.values_list('id', flat=True).first(),
+                    'filiere_id': course.filieres.values_list('id', flat=True).first(),
+                    'promotion_id': course.promotions.values_list('id', flat=True).first(),
                     'summary_id': summary.id,
                     'course_id': course.id,
                 }, countdown=3)
@@ -1452,9 +1455,9 @@ def get_summaries_for_validation_view(request):
             summaries = summaries.filter(
                 Q(author_user=request.user) |
                 Q(
-                    course__universite_fk=profile.universite,
-                    course__promotion_fk=profile.promotion,
-                    course__filiere_fk=profile.filiere
+                    course__universites=profile.universite,
+                    course__promotions=profile.promotion,
+                    course__filieres=profile.filiere
                 )
             ).distinct()
             

@@ -77,36 +77,40 @@ class Course(models.Model):
     filiere = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     university = models.CharField(max_length=200)
-    # Relations strictes pour le contrôle d'accès (nouveaux champs)
-    universite_fk = models.ForeignKey(Universite, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
-    filiere_fk = models.ForeignKey(Filiere, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
-    promotion_fk = models.ForeignKey(Promotion, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
+    # Relations multiples pour l'appartenance à plusieurs structures
+    universites = models.ManyToManyField(Universite, related_name='courses', blank=True)
+    filieres = models.ManyToManyField(Filiere, related_name='courses', blank=True)
+    promotions = models.ManyToManyField(Promotion, related_name='courses', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
     def __str__(self):
-        if self.filiere_fk and self.universite_fk:
-            return f"{self.nom} - {self.filiere_fk.nom} ({self.universite_fk.nom})"
+        first_u = self.universites.first()
+        first_f = self.filieres.first()
+        if first_u and first_f:
+            return f"{self.nom} - {first_f.nom} ({first_u.nom})"
         return f"{self.nom} - {self.filiere}"
-    
+
     def is_accessible_by_user(self, user):
         """Vérifie si l'utilisateur peut accéder à ce cours"""
         if not hasattr(user, 'profile'):
             return False
         profile = user.profile
-        # Si les nouveaux champs FK sont remplis, les utiliser
-        if self.universite_fk and self.promotion_fk and self.filiere_fk:
+        if not profile.universite or not profile.promotion or not profile.filiere:
+            return False
+        # Vérification via les M2M : l'utilisateur doit appartenir à au moins une des structures assignées
+        if self.universites.exists():
             return (
-                profile.universite_id == self.universite_fk_id and
-                profile.promotion_id == self.promotion_fk_id and
-                profile.filiere_id == self.filiere_fk_id
+                self.universites.filter(id=profile.universite_id).exists() and
+                self.promotions.filter(id=profile.promotion_id).exists() and
+                self.filieres.filter(id=profile.filiere_id).exists()
             )
-        # Sinon, fallback sur les anciens champs texte
+        # Fallback sur les anciens champs texte
         return (
             profile.universite and profile.universite.nom == self.university and
             profile.filiere and profile.filiere.nom == self.filiere
         )
-    
+
     class Meta:
         verbose_name = "Cours"
         verbose_name_plural = "Cours"
