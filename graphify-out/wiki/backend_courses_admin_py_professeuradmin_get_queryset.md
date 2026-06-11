@@ -3,7 +3,7 @@
 - **ID:** `backend_courses_admin_py_professeuradmin_get_queryset`
 - **Type:** Method
 - **File:** `.\backend\courses\admin.py`
-- **Location:** L169
+- **Location:** L165
 
 ## Relationships
 

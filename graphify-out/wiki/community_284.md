@@ -1,17 +1,17 @@
-# Community 284: api_error_view
+# Community 284: test_summaries_response
 
 **Members:** 4
 
 ## Nodes
 
-- **api_error_view** (`lib_widgets_api_error_view_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_widgets_api_error_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_summaries_response** (`backend_test_summaries_response_py`, File, degree: 3)
+- **json** (`backend_test_summaries_response_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_summaries_response_py_import_requests`, Module, degree: 1)
+- **test_summaries_endpoint()** (`backend_test_summaries_response_py_test_summaries_endpoint`, Function, degree: 1)
 
 ## Relationships
 
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
-- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_import_requests (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_import_json (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_test_summaries_endpoint (defines)
 

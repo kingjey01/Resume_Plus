@@ -1,8 +1,13 @@
-# Community 341: summary
+# Community 341: simple_seed
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
+- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+
+## Relationships
+
+- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
 

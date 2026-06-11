@@ -1,13 +1,15 @@
-# Community 325: my_application
+# Community 325: urls
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
-- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+- **urls** (`backend_users_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_users_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_users_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
+- backend_users_urls_py → backend_users_urls_py_import_django_urls_path (imports)
+- backend_users_urls_py → backend_users_urls_py_import_views (imports)
 

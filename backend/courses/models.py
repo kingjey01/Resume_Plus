@@ -440,8 +440,198 @@ class ExerciseAttempt(models.Model):
         
         self.save()
         return self.score
-    
+
     class Meta:
         verbose_name = "Tentative d'exercice"
         verbose_name_plural = "Tentatives d'exercices"
         ordering = ['-completed_at']
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  USER PERSONALIZED EXERCISES (NOUVEAU - QCM personnalisés par utilisateur)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class UserPersonalizedExercise(models.Model):
+    """
+    Exercice QCM personnalisé généré pour UN utilisateur spécifique.
+    Chaque utilisateur a ses propres questions uniques pour chaque résumé.
+    Isolé du modèle Exercise existant (pas de FK) pour garantir l'anti-triche.
+    """
+    DIFFICULTY_CHOICES = [
+        ('easy', 'Facile'),
+        ('medium', 'Moyen'),
+        ('hard', 'Difficile'),
+    ]
+
+    STATUS_CHOICES = [
+        ('pending', 'En attente'),
+        ('generating', 'Génération en cours'),
+        ('completed', 'Terminé'),
+        ('failed', 'Échec'),
+    ]
+
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE,
+        related_name='personalized_exercises',
+        help_text="Utilisateur propriétaire de cet exercice personnalisé"
+    )
+    summary = models.ForeignKey(
+        Summary, on_delete=models.CASCADE,
+        related_name='personalized_exercises',
+        help_text="Résumé source sur lequel est basé l'exercice"
+    )
+
+    # Difficulté choisie par l'utilisateur
+    difficulty = models.CharField(
+        max_length=10, choices=DIFFICULTY_CHOICES, default='medium',
+        help_text="Niveau de difficulté sélectionné"
+    )
+
+    # Questions stockées en JSON (isolation totale)
+    questions = models.JSONField(
+        default=list,
+        help_text="Liste des 8 questions QCM au format JSON unique pour cet utilisateur"
+    )
+
+    # Gestion de la régénération
+    seed = models.IntegerField(
+        help_text="Seed aléatoire utilisée pour la génération (permet variation)"
+    )
+    regenerated_count = models.IntegerField(
+        default=0,
+        help_text="Nombre de fois que l'utilisateur a régénéré cet exercice"
+    )
+
+    # Statut de génération
+    status = models.CharField(
+        max_length=20, choices=STATUS_CHOICES, default='pending'
+    )
+    generated_by_ai = models.BooleanField(default=False)
+
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    last_accessed_at = models.DateTimeField(null=True, blank=True)
+
+    class Meta:
+        verbose_name = "Exercice Personnalisé Utilisateur"
+        verbose_name_plural = "Exercices Personnalisés Utilisateurs"
+        ordering = ['-created_at']
+        unique_together = ['user', 'summary']  # 1 exercice perso par user par résumé
+        indexes = [
+            models.Index(fields=['user', 'summary']),
+            models.Index(fields=['status']),
+            models.Index(fields=['difficulty']),
+        ]
+
+    def __str__(self):
+        return f"Exercice perso - {self.user.username} - {self.summary.titre} ({self.difficulty})"
+
+    @property
+    def questions_count(self):
+        return len(self.questions) if self.questions else 0
+
+    def mark_accessed(self):
+        """Met à jour la date du dernier accès"""
+        self.last_accessed_at = timezone.now()
+        self.save(update_fields=['last_accessed_at'])
+
+
+class UserPersonalizedAttempt(models.Model):
+    """
+    Tentative d'un utilisateur sur son exercice personnalisé.
+    Equivalent à ExerciseAttempt mais pour les QCM personnalisés.
+    """
+    personalized_exercise = models.ForeignKey(
+        UserPersonalizedExercise, on_delete=models.CASCADE,
+        related_name='attempts',
+        help_text="Exercice personnalisé concerné"
+    )
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE,
+        related_name='personalized_exercise_attempts',
+        help_text="Utilisateur qui a tenté (redondant mais pratique)"
+    )
+
+    # Réponses au format {question_index: "A/B/C/D"}
+    answers = models.JSONField(
+        default=dict,
+        help_text="Réponses de l'utilisateur {index_question: 'A/B/C/D'}"
+    )
+
+    # Résultats détaillés calculés
+    results_detail = models.JSONField(
+        default=list,
+        help_text="Détail de chaque question avec correction"
+    )
+    score = models.FloatField(
+        default=0.0,
+        help_text="Score en pourcentage (0-100)"
+    )
+    correct_answers_count = models.IntegerField(
+        default=0,
+        help_text="Nombre de bonnes réponses"
+    )
+
+    # Timings
+    started_at = models.DateTimeField(auto_now_add=True)
+    completed_at = models.DateTimeField(null=True, blank=True)
+    time_spent_seconds = models.IntegerField(
+        default=0,
+        help_text="Temps passé en secondes"
+    )
+
+    class Meta:
+        verbose_name = "Tentative d'exercice personnalisé"
+        verbose_name_plural = "Tentatives d'exercices personnalisés"
+        ordering = ['-started_at']
+
+    def __str__(self):
+        return f"{self.user.username} - {self.personalized_exercise.summary.titre} ({self.score}%)"
+
+    def calculate_results(self):
+        """
+        Calcule le score et génère les résultats détaillés.
+        Compare les réponses utilisateur avec les questions stockées.
+        """
+        if not self.answers or not self.personalized_exercise.questions:
+            self.score = 0.0
+            self.correct_answers_count = 0
+            self.save()
+            return
+
+        questions = self.personalized_exercise.questions
+        results = []
+        correct_count = 0
+
+        for idx, question in enumerate(questions):
+            user_answer = self.answers.get(str(idx), '')
+            correct_answer = question.get('correct_answer', '')
+            is_correct = user_answer.upper() == correct_answer.upper()
+
+            if is_correct:
+                correct_count += 1
+
+            results.append({
+                'question_index': idx,
+                'question_text': question.get('question_text', ''),
+                'user_answer': user_answer,
+                'correct_answer': correct_answer,
+                'is_correct': is_correct,
+                'explanation': question.get('explanation', ''),
+                'options': question.get('options', {}),
+            })
+
+        total = len(questions)
+        self.score = (correct_count / total * 100) if total > 0 else 0.0
+        self.correct_answers_count = correct_count
+        self.results_detail = results
+        self.completed_at = timezone.now()
+
+        # Calculer temps passé
+        if self.started_at and self.completed_at:
+            delta = self.completed_at - self.started_at
+            self.time_spent_seconds = int(delta.total_seconds())
+
+        self.save()
+        return self.score

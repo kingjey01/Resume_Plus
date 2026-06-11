@@ -1,34 +1,31 @@
-# Community 62: test_file_permissions
+# Community 62: fix_auth_issues
 
 **Members:** 11
 
 ## Nodes
 
-- **test_file_permissions** (`backend_test_file_permissions_py`, File, degree: 10)
-- **check_wsgi_user()** (`backend_test_file_permissions_py_check_wsgi_user`, Function, degree: 2)
-- **django** (`backend_test_file_permissions_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_file_permissions_py_import_django_conf_settings`, Module, degree: 1)
-- **django.core.files.base.ContentFile** (`backend_test_file_permissions_py_import_django_core_files_base_contentfile`, Module, degree: 1)
-- **django.core.files.storage.default_storage** (`backend_test_file_permissions_py_import_django_core_files_storage_default_storage`, Module, degree: 1)
-- **os** (`backend_test_file_permissions_py_import_os`, Module, degree: 1)
-- **sys** (`backend_test_file_permissions_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_test_file_permissions_py_main`, Function, degree: 4)
-- **test_django_file_upload()** (`backend_test_file_permissions_py_test_django_file_upload`, Function, degree: 2)
-- **test_media_permissions()** (`backend_test_file_permissions_py_test_media_permissions`, Function, degree: 2)
+- **fix_auth_issues** (`backend_fix_auth_issues_py`, File, degree: 17)
+- **decouple.config** (`backend_fix_auth_issues_py_import_decouple_config`, Module, degree: 1)
+- **django** (`backend_fix_auth_issues_py_import_django`, Module, degree: 1)
+- **django.conf** (`backend_fix_auth_issues_py_import_django_conf`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_auth_issues_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_auth_issues_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_fix_auth_issues_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_fix_auth_issues_py_import_pymysql`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_fix_auth_issues_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_fix_auth_issues_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_os (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_sys (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_conf_settings (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_base_contentfile (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_storage_default_storage (imports)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_test_media_permissions (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_test_django_file_upload (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_check_wsgi_user (defines)
-- backend_test_file_permissions_py → backend_test_file_permissions_py_main (defines)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_django_file_upload (calls)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_check_wsgi_user (calls)
-- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_media_permissions (calls)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_os (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_sys (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pymysql (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_pathlib_path (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_conf (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_decouple_config (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_rest_framework_authtoken_models_token (imports)
+- backend_fix_auth_issues_py → backend_fix_auth_issues_py_import_users_models_userprofile (imports)
 

@@ -1,25 +1,25 @@
-# Community 122: admin
+# Community 122: personalized_quiz_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **personalized_quiz_screen** (`lib_features_exercises_screens_personalized_quiz_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/providers/personalized_exercise_provider.dart** (`lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_providers_personalized_exercise_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/quiz_result_screen.dart** (`lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_quiz_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/personalized_exercise.dart** (`lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PersonalizedQuizScreenState()** (`lib_features_exercises_screens_personalized_quiz_screen_dart_personalizedquizscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- lib_features_exercises_screens_personalized_quiz_screen_dart → lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_personalized_quiz_screen_dart → lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_exercises_screens_personalized_quiz_screen_dart → lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_providers_personalized_exercise_provider_dart (imports)
+- lib_features_exercises_screens_personalized_quiz_screen_dart → lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_quiz_result_screen_dart (imports)
+- lib_features_exercises_screens_personalized_quiz_screen_dart → lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart (imports)
+- lib_features_exercises_screens_personalized_quiz_screen_dart → lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_personalized_quiz_screen_dart → lib_features_exercises_screens_personalized_quiz_screen_dart_personalizedquizscreenstate (defines)
 

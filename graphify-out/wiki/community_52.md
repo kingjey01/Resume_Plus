@@ -1,36 +1,33 @@
-# Community 52: check_permissions_detailed
+# Community 52: admin
 
 **Members:** 12
 
 ## Nodes
 
-- **check_permissions_detailed** (`backend_check_permissions_detailed_py`, File, degree: 11)
-- **check_file_permissions()** (`backend_check_permissions_detailed_py_check_file_permissions`, Function, degree: 2)
-- **check_write_permission()** (`backend_check_permissions_detailed_py_check_write_permission`, Function, degree: 2)
-- **get_current_user_info()** (`backend_check_permissions_detailed_py_get_current_user_info`, Function, degree: 2)
-- **django** (`backend_check_permissions_detailed_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_check_permissions_detailed_py_import_django_conf_settings`, Module, degree: 1)
-- **grp** (`backend_check_permissions_detailed_py_import_grp`, Module, degree: 1)
-- **os** (`backend_check_permissions_detailed_py_import_os`, Module, degree: 1)
-- **pwd** (`backend_check_permissions_detailed_py_import_pwd`, Module, degree: 1)
-- **stat** (`backend_check_permissions_detailed_py_import_stat`, Module, degree: 1)
-- **sys** (`backend_check_permissions_detailed_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_check_permissions_detailed_py_main`, Function, degree: 4)
+- **admin** (`backend_courses_admin_py`, File, degree: 14)
+- **CourseAdmin** (`backend_courses_admin_py_courseadmin`, Class, degree: 1)
+- **ExerciseAttemptAdmin** (`backend_courses_admin_py_exerciseattemptadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_exerciseattemptadmin_get_queryset`, Method, degree: 2)
+- **django.contrib.admin** (`backend_courses_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models** (`backend_courses_admin_py_import_models`, Module, degree: 1)
+- **PromotionAdmin** (`backend_courses_admin_py_promotionadmin`, Class, degree: 1)
+- **SessionAdmin** (`backend_courses_admin_py_sessionadmin`, Class, degree: 1)
+- **TranscriptionAdmin** (`backend_courses_admin_py_transcriptionadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_transcriptionadmin_get_queryset`, Method, degree: 2)
+- **UniversiteAdmin** (`backend_courses_admin_py_universiteadmin`, Class, degree: 2)
+- **.list_filieres()** (`backend_courses_admin_py_universiteadmin_list_filieres`, Method, degree: 1)
 
 ## Relationships
 
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_os (imports)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_sys (imports)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_django (imports)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_pwd (imports)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_grp (imports)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_stat (imports)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_django_conf_settings (imports)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_check_file_permissions (defines)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_check_write_permission (defines)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_get_current_user_info (defines)
-- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_main (defines)
-- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_check_write_permission (calls)
-- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_check_file_permissions (calls)
-- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_get_current_user_info (calls)
+- backend_courses_admin_py → backend_courses_admin_py_import_django_contrib_admin (imports)
+- backend_courses_admin_py → backend_courses_admin_py_import_models (imports)
+- backend_courses_admin_py → backend_courses_admin_py_courseadmin (defines)
+- backend_courses_admin_py → backend_courses_admin_py_sessionadmin (defines)
+- backend_courses_admin_py → backend_courses_admin_py_universiteadmin (defines)
+- backend_courses_admin_py_universiteadmin → backend_courses_admin_py_universiteadmin_list_filieres (defines)
+- backend_courses_admin_py → backend_courses_admin_py_promotionadmin (defines)
+- backend_courses_admin_py → backend_courses_admin_py_transcriptionadmin (defines)
+- backend_courses_admin_py_transcriptionadmin → backend_courses_admin_py_transcriptionadmin_get_queryset (defines)
+- backend_courses_admin_py → backend_courses_admin_py_exerciseattemptadmin (defines)
+- backend_courses_admin_py_exerciseattemptadmin → backend_courses_admin_py_exerciseattemptadmin_get_queryset (defines)
 

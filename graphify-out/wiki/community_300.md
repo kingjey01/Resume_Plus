@@ -1,15 +1,17 @@
-# Community 300: snackbar_service
+# Community 300: 0013_make_professeur_optional
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
+- **0013_make_professeur_optional** (`backend_courses_migrations_0013_make_professeur_optional_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0013_make_professeur_optional_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_migration (defines)
 

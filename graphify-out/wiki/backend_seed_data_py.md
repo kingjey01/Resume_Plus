@@ -16,7 +16,6 @@
 - backend_seed_data_py → backend_seed_data_py_import_courses_models_universite (imports, Extracted)
 - backend_seed_data_py → backend_seed_data_py_import_courses_models_filiere (imports, Extracted)
 - backend_seed_data_py → backend_seed_data_py_import_courses_models_promotion (imports, Extracted)
-- backend_seed_data_py → backend_seed_data_py_import_courses_models_universitefiliere (imports, Extracted)
 - backend_seed_data_py → backend_seed_data_py_import_courses_models_course (imports, Extracted)
 - backend_seed_data_py → backend_seed_data_py_import_courses_models_session (imports, Extracted)
 - backend_seed_data_py → backend_seed_data_py_import_courses_models_summary (imports, Extracted)

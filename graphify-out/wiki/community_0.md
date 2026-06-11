@@ -1,10 +1,10 @@
 # Community 0: views
 
-**Members:** 104
+**Members:** 101
 
 ## Nodes
 
-- **views** (`backend_courses_views_py`, File, degree: 83)
+- **views** (`backend_courses_views_py`, File, degree: 80)
 - **AbonnementDetailView** (`backend_courses_views_py_abonnementdetailview`, Class, degree: 2)
 - **.get_queryset()** (`backend_courses_views_py_abonnementdetailview_get_queryset`, Method, degree: 1)
 - **AbonnementListCreateView** (`backend_courses_views_py_abonnementlistcreateview`, Class, degree: 3)
@@ -46,7 +46,6 @@
 - **.models.Session** (`backend_courses_views_py_import_models_session`, Module, degree: 1)
 - **.models.Summary** (`backend_courses_views_py_import_models_summary`, Module, degree: 1)
 - **.models.Universite** (`backend_courses_views_py_import_models_universite`, Module, degree: 1)
-- **.models.UniversiteFiliere** (`backend_courses_views_py_import_models_universitefiliere`, Module, degree: 1)
 - **os** (`backend_courses_views_py_import_os`, Module, degree: 1)
 - **payments.models.Purchase** (`backend_courses_views_py_import_payments_models_purchase`, Module, degree: 1)
 - **.permissions.CanAccessSummary** (`backend_courses_views_py_import_permissions_canaccesssummary`, Module, degree: 1)
@@ -77,7 +76,6 @@
 - **.serializers.SessionSerializer** (`backend_courses_views_py_import_serializers_sessionserializer`, Module, degree: 1)
 - **.serializers.SummaryCreateSerializer** (`backend_courses_views_py_import_serializers_summarycreateserializer`, Module, degree: 1)
 - **.serializers.SummarySerializer** (`backend_courses_views_py_import_serializers_summaryserializer`, Module, degree: 1)
-- **.serializers.UniversiteFiliereSerializer** (`backend_courses_views_py_import_serializers_universitefiliereserializer`, Module, degree: 1)
 - **.serializers.UniversiteSerializer** (`backend_courses_views_py_import_serializers_universiteserializer`, Module, degree: 1)
 - **process_audio_session()** (`backend_courses_views_py_process_audio_session`, Function, degree: 1)
 - **ProfesseurListView** (`backend_courses_views_py_professeurlistview`, Class, degree: 2)
@@ -102,7 +100,6 @@
 - **SummaryListCreateView** (`backend_courses_views_py_summarylistcreateview`, Class, degree: 3)
 - **.get_queryset()** (`backend_courses_views_py_summarylistcreateview_get_queryset`, Method, degree: 1)
 - **.get_serializer_class()** (`backend_courses_views_py_summarylistcreateview_get_serializer_class`, Method, degree: 1)
-- **UniversiteFiliereViewSet** (`backend_courses_views_py_universitefiliereviewset`, Class, degree: 1)
 - **UniversiteViewSet** (`backend_courses_views_py_universiteviewset`, Class, degree: 3)
 - **.add_filiere()** (`backend_courses_views_py_universiteviewset_add_filiere`, Method, degree: 1)
 - **.filieres()** (`backend_courses_views_py_universiteviewset_filieres`, Method, degree: 1)
@@ -139,7 +136,6 @@
 - backend_courses_views_py → backend_courses_views_py_import_models_filiere (imports)
 - backend_courses_views_py → backend_courses_views_py_import_models_service (imports)
 - backend_courses_views_py → backend_courses_views_py_import_models_abonnement (imports)
-- backend_courses_views_py → backend_courses_views_py_import_models_universitefiliere (imports)
 - backend_courses_views_py → backend_courses_views_py_import_models_professeur (imports)
 - backend_courses_views_py → backend_courses_views_py_import_payments_models_purchase (imports)
 - backend_courses_views_py → backend_courses_views_py_import_serializers_courseserializer (imports)
@@ -153,7 +149,6 @@
 - backend_courses_views_py → backend_courses_views_py_import_serializers_serviceserializer (imports)
 - backend_courses_views_py → backend_courses_views_py_import_serializers_abonnementserializer (imports)
 - backend_courses_views_py → backend_courses_views_py_import_serializers_abonnementcreateserializer (imports)
-- backend_courses_views_py → backend_courses_views_py_import_serializers_universitefiliereserializer (imports)
 - backend_courses_views_py → backend_courses_views_py_import_serializers_filierewithuniversiteserializer (imports)
 - backend_courses_views_py → backend_courses_views_py_import_serializers_professeurserializer (imports)
 - backend_courses_views_py → backend_courses_views_py_import_permissions_isownerorreadonly (imports)
@@ -180,7 +175,6 @@
 - backend_courses_views_py_summaryachetesview → backend_courses_views_py_summaryachetesview_get_queryset (defines)
 - backend_courses_views_py → backend_courses_views_py_summarygratuitsview (defines)
 - backend_courses_views_py → backend_courses_views_py_generate_summary_from_audio (defines)
-- backend_courses_views_py → backend_courses_views_py_universitefiliereviewset (defines)
 - backend_courses_views_py → backend_courses_views_py_universiteviewset (defines)
 - backend_courses_views_py_universiteviewset → backend_courses_views_py_universiteviewset_filieres (defines)
 - backend_courses_views_py_universiteviewset → backend_courses_views_py_universiteviewset_add_filiere (defines)

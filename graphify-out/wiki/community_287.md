@@ -1,15 +1,17 @@
-# Community 287: file_helper_stub
+# Community 287: exercise_urls
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
-- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
+- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 3)
+- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
+- **..personalized_exercise_views** (`backend_courses_exercise_urls_py_import_personalized_exercise_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_personalized_exercise_views (imports)
 

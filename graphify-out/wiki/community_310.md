@@ -1,15 +1,15 @@
-# Community 310: api_exception
+# Community 310: demo_data_service
 
 **Members:** 3
 
 ## Nodes
 
-- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
-- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
-- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **demo_data_service** (`lib_services_demo_data_service_dart`, File, degree: 2)
+- **package:resume_plus_clean/models/summary.dart'** (`lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_demo_data_service_dart_instance`, Function, degree: 1)
 
 ## Relationships
 
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
+- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_instance (defines)
 

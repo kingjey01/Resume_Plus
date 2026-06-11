@@ -1,15 +1,15 @@
-# Community 303: upload_screen
+# Community 303: MainActivity
 
 **Members:** 3
 
 ## Nodes
 
-- **upload_screen** (`lib_features_upload_screens_upload_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart`, Module, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
+- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart (imports)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
 

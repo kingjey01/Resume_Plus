@@ -1,15 +1,15 @@
-# Community 305: settings_postgresql
+# Community 305: api_exception
 
 **Members:** 3
 
 ## Nodes
 
-- **settings_postgresql** (`backend_settings_postgresql_py`, File, degree: 2)
-- **os** (`backend_settings_postgresql_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_postgresql_py_import_pathlib_path`, Module, degree: 1)
+- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
+- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
+- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_postgresql_py → backend_settings_postgresql_py_import_os (imports)
-- backend_settings_postgresql_py → backend_settings_postgresql_py_import_pathlib_path (imports)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
 

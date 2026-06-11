@@ -1,29 +1,29 @@
-# Community 87: fix_migration
+# Community 87: debug_api_response
 
 **Members:** 10
 
 ## Nodes
 
-- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
-- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
-- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
-- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
-- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
+- **debug_api_response** (`backend_debug_api_response_py`, File, degree: 9)
+- **django** (`backend_debug_api_response_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_api_response_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_api_response_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_debug_api_response_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_debug_api_response_py_import_payments_models_service`, Module, degree: 1)
+- **payments.serializers.AbonnementSerializer** (`backend_debug_api_response_py_import_payments_serializers_abonnementserializer`, Module, degree: 1)
+- **payments.serializers.ServiceSerializer** (`backend_debug_api_response_py_import_payments_serializers_serviceserializer`, Module, degree: 1)
+- **sys** (`backend_debug_api_response_py_import_sys`, Module, degree: 1)
+- **test_api_responses()** (`backend_debug_api_response_py_test_api_responses`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
-- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
-- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_os (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_sys (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_service (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_abonnement (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_serviceserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_abonnementserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_test_api_responses (defines)
 

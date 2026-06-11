@@ -1,25 +1,26 @@
-# Community 124: audio_service
+# Community 124: serializers
 
 **Members:** 8
 
 ## Nodes
 
-- **audio_service** (`lib_services_audio_service_dart`, File, degree: 7)
-- **_currentText()** (`lib_services_audio_service_dart_currenttext`, Function, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_tts/flutter_tts.dart** (`lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart`, Module, degree: 1)
-- **web_audio_service.dart** (`lib_services_audio_service_dart_import_web_audio_service_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_audio_service_dart_instance`, Function, degree: 1)
-- **_isInitialized()** (`lib_services_audio_service_dart_isinitialized`, Function, degree: 1)
-- **_isPaused()** (`lib_services_audio_service_dart_ispaused`, Function, degree: 1)
+- **serializers** (`backend_security_serializers_py`, File, degree: 5)
+- **CreateSecurityLogSerializer** (`backend_security_serializers_py_createsecuritylogserializer`, Class, degree: 3)
+- **.create()** (`backend_security_serializers_py_createsecuritylogserializer_create`, Method, degree: 2)
+- **.get_client_ip()** (`backend_security_serializers_py_createsecuritylogserializer_get_client_ip`, Method, degree: 2)
+- **.models.SecurityLog** (`backend_security_serializers_py_import_models_securitylog`, Module, degree: 1)
+- **rest_framework.serializers** (`backend_security_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
+- **Meta** (`backend_security_serializers_py_meta`, Class, degree: 1)
+- **SecurityLogSerializer** (`backend_security_serializers_py_securitylogserializer`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart (imports)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_import_web_audio_service_dart (imports)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_instance (defines)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_isinitialized (defines)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_ispaused (defines)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_currenttext (defines)
+- backend_security_serializers_py → backend_security_serializers_py_import_rest_framework_serializers (imports)
+- backend_security_serializers_py → backend_security_serializers_py_import_models_securitylog (imports)
+- backend_security_serializers_py → backend_security_serializers_py_securitylogserializer (defines)
+- backend_security_serializers_py → backend_security_serializers_py_meta (defines)
+- backend_security_serializers_py → backend_security_serializers_py_createsecuritylogserializer (defines)
+- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_create (defines)
+- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (defines)
+- backend_security_serializers_py_createsecuritylogserializer_create → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (calls)
 

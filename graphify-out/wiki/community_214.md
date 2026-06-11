@@ -1,20 +1,21 @@
-# Community 214: test_correct_endpoints
+# Community 214: purchased_summary_card
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **test_correct_endpoints** (`backend_test_correct_endpoints_py`, File, degree: 4)
-- **json** (`backend_test_correct_endpoints_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_correct_endpoints_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_correct_endpoints_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_correct_endpoints_py_test_endpoint`, Function, degree: 2)
+- **purchased_summary_card** (`lib_features_summaries_widgets_purchased_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/purchase.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_requests (imports)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_json (imports)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_test_endpoint (defines)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_main (defines)
-- backend_test_correct_endpoints_py_main → backend_test_correct_endpoints_py_test_endpoint (calls)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

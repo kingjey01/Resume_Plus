@@ -1,8 +1,13 @@
-# Community 334: universite
+# Community 334: my_application
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **universite** (`lib_models_universite_dart`, File, degree: 0)
+- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
+- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+
+## Relationships
+
+- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
 

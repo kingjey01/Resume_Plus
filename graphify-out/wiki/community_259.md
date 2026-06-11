@@ -1,17 +1,19 @@
-# Community 259: manage
+# Community 259: diagnostic_complet
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **manage** (`backend_manage_py`, File, degree: 3)
-- **os** (`backend_manage_py_import_os`, Module, degree: 1)
-- **sys** (`backend_manage_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_manage_py_main`, Function, degree: 1)
+- **diagnostic_complet** (`backend_diagnostic_complet_py`, File, degree: 12)
+- **datetime** (`backend_diagnostic_complet_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_diagnostic_complet_py_import_json`, Module, degree: 1)
+- **jwt** (`backend_diagnostic_complet_py_import_jwt`, Module, degree: 1)
+- **requests** (`backend_diagnostic_complet_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_manage_py → backend_manage_py_import_os (imports)
-- backend_manage_py → backend_manage_py_import_sys (imports)
-- backend_manage_py → backend_manage_py_main (defines)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_requests (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_json (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_jwt (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_datetime (imports)
 

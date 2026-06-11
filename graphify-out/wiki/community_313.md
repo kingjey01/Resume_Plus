@@ -1,15 +1,15 @@
-# Community 313: apps
+# Community 313: personalized_exercise
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_notifications_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_notifications_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **NotificationsConfig** (`backend_notifications_apps_py_notificationsconfig`, Class, degree: 1)
+- **personalized_exercise** (`lib_models_personalized_exercise_dart`, File, degree: 2)
+- **package:flutter/foundation.dart** (`lib_models_personalized_exercise_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **options()** (`lib_models_personalized_exercise_dart_options`, Function, degree: 1)
 
 ## Relationships
 
-- backend_notifications_apps_py → backend_notifications_apps_py_import_django_apps_appconfig (imports)
-- backend_notifications_apps_py → backend_notifications_apps_py_notificationsconfig (defines)
+- lib_models_personalized_exercise_dart → lib_models_personalized_exercise_dart_import_package_flutter_foundation_dart (imports)
+- lib_models_personalized_exercise_dart → lib_models_personalized_exercise_dart_options (defines)
 

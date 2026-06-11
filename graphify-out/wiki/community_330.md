@@ -1,13 +1,15 @@
-# Community 330: __init__
+# Community 330: main
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
-- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

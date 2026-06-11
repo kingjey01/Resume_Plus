@@ -1,13 +1,15 @@
-# Community 329: professeur
+# Community 329: file_helper_stub
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
-- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
+- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
+- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
+- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
 

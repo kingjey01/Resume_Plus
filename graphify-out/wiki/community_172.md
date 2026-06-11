@@ -1,23 +1,23 @@
-# Community 172: storage_service
+# Community 172: settings_development
 
 **Members:** 7
 
 ## Nodes
 
-- **storage_service** (`lib_services_storage_service_dart`, File, degree: 6)
-- **accessToken()** (`lib_services_storage_service_dart_accesstoken`, Function, degree: 1)
-- **deleteTokens()** (`lib_services_storage_service_dart_deletetokens`, Function, degree: 1)
-- **dart:convert** (`lib_services_storage_service_dart_import_dart_convert`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_storage_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_secure_storage/flutter_secure_storage.dart** (`lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **settings_development** (`backend_settings_development_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_development_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_development_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_development_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_development_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_development_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_development_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_dart_convert (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_accesstoken (defines)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_deletetokens (defines)
+- backend_settings_development_py → backend_settings_development_py_import_pathlib_path (imports)
+- backend_settings_development_py → backend_settings_development_py_import_datetime_timedelta (imports)
+- backend_settings_development_py → backend_settings_development_py_import_decouple_config (imports)
+- backend_settings_development_py → backend_settings_development_py_import_decouple_csv (imports)
+- backend_settings_development_py → backend_settings_development_py_import_os (imports)
+- backend_settings_development_py → backend_settings_development_py_import_pymysql (imports)
 

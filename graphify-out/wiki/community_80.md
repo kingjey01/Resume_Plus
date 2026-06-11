@@ -1,29 +1,29 @@
-# Community 80: service_card
+# Community 80: create_test_courses
 
 **Members:** 10
 
 ## Nodes
 
-- **service_card** (`lib_features_subscriptions_widgets_service_card_dart`, File, degree: 9)
-- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **create_test_courses** (`backend_create_test_courses_py`, File, degree: 9)
+- **create_test_courses()** (`backend_create_test_courses_py_create_test_courses`, Function, degree: 1)
+- **courses.models.Course** (`backend_create_test_courses_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_create_test_courses_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_create_test_courses_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_create_test_courses_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_create_test_courses_py_import_django`, Module, degree: 1)
+- **django.utils.timezone** (`backend_create_test_courses_py_import_django_utils_timezone`, Module, degree: 1)
+- **os** (`backend_create_test_courses_py_import_os`, Module, degree: 1)
+- **sys** (`backend_create_test_courses_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_os (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_sys (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_django (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_course (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_universite (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_filiere (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_courses_models_promotion (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_import_django_utils_timezone (imports)
+- backend_create_test_courses_py → backend_create_test_courses_py_create_test_courses (defines)
 

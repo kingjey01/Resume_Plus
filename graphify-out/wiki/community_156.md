@@ -1,23 +1,23 @@
-# Community 156: auto_login_service
+# Community 156: filiere_promotion
 
 **Members:** 7
 
 ## Nodes
 
-- **auto_login_service** (`lib_services_auto_login_service_dart`, File, degree: 6)
-- **AppStartState** (`lib_services_auto_login_service_dart_appstartstate`, Enum, degree: 1)
-- **dart:math** (`lib_services_auto_login_service_dart_import_dart_math`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_auto_login_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **filiere_promotion** (`lib_models_filiere_promotion_dart`, File, degree: 6)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere.dart** (`lib_models_filiere_promotion_dart_import_filiere_dart`, Module, degree: 1)
+- **filiere_promotion.g.dart** (`lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart`, Module, degree: 1)
+- **package:json_annotation/json_annotation.dart** (`lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
+- **promotion.dart** (`lib_models_filiere_promotion_dart_import_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_dart_math (imports)
-- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_appstartstate (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_promotion_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotiontojson (defines)
 

@@ -1,8 +1,13 @@
-# Community 335: filiere
+# Community 335: payment_method
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
+- **payment_method** (`lib_models_payment_method_dart`, File, degree: 1)
+- **PaymentMethodType** (`lib_models_payment_method_dart_paymentmethodtype`, Enum, degree: 1)
+
+## Relationships
+
+- lib_models_payment_method_dart → lib_models_payment_method_dart_paymentmethodtype (defines)
 

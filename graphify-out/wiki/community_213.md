@@ -1,19 +1,21 @@
-# Community 213: 0005_purchase_service
+# Community 213: 0010_professeur_session_professeur_fk_summary_professeur
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **0005_purchase_service** (`backend_payments_migrations_0005_purchase_service_py`, File, degree: 4)
-- **django.db.migrations** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0005_purchase_service_py_migration`, Class, degree: 1)
+- **0010_professeur_session_professeur_fk_summary_professeur** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_migration (defines)
+- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_conf_settings (imports)
+- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models (imports)
+- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py → backend_courses_migrations_0010_professeur_session_professeur_fk_summary_professeur_py_migration (defines)
 

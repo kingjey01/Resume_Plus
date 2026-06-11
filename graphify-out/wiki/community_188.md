@@ -1,21 +1,21 @@
-# Community 188: 0001_initial
+# Community 188: personalized_exercise_provider
 
 **Members:** 6
 
 ## Nodes
 
-- **0001_initial** (`backend_users_migrations_0001_initial_py`, File, degree: 5)
-- **django.conf.settings** (`backend_users_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_users_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_users_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0001_initial_py_migration`, Class, degree: 1)
+- **personalized_exercise_provider** (`lib_features_exercises_providers_personalized_exercise_provider_dart`, File, degree: 5)
+- **ExerciseGenerationStatus** (`lib_features_exercises_providers_personalized_exercise_provider_dart_exercisegenerationstatus`, Enum, degree: 1)
+- **dart:async** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/personalized_exercise.dart** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_models_personalized_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_conf_settings (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_migrations (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models_deletion (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_migration (defines)
+- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_dart_async (imports)
+- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_models_personalized_exercise_dart (imports)
+- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_exercisegenerationstatus (defines)
 

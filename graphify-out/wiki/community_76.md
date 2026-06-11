@@ -1,29 +1,29 @@
-# Community 76: create_test_services
+# Community 76: all_summaries_screen
 
 **Members:** 10
 
 ## Nodes
 
-- **create_test_services** (`backend_create_test_services_py`, File, degree: 9)
-- **create_test_services()** (`backend_create_test_services_py_create_test_services`, Function, degree: 1)
-- **datetime.timedelta** (`backend_create_test_services_py_import_datetime_timedelta`, Module, degree: 1)
-- **django** (`backend_create_test_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_create_test_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.utils.timezone** (`backend_create_test_services_py_import_django_utils_timezone`, Module, degree: 1)
-- **os** (`backend_create_test_services_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_create_test_services_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_create_test_services_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_create_test_services_py_import_sys`, Module, degree: 1)
+- **all_summaries_screen** (`lib_features_summaries_screens_all_summaries_screen_dart`, File, degree: 9)
+- **_AllSummariesScreenState()** (`lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_create_test_services_py → backend_create_test_services_py_import_os (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_sys (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_django (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_payments_models_service (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_payments_models_abonnement (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_django_contrib_auth_models_user (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_django_utils_timezone (imports)
-- backend_create_test_services_py → backend_create_test_services_py_import_datetime_timedelta (imports)
-- backend_create_test_services_py → backend_create_test_services_py_create_test_services (defines)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate (defines)
 

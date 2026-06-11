@@ -1,29 +1,33 @@
-# Community 84: test_url_routing
+# Community 84: test_registration
 
 **Members:** 10
 
 ## Nodes
 
-- **test_url_routing** (`backend_test_url_routing_py`, File, degree: 9)
-- **django** (`backend_test_url_routing_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_test_url_routing_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.Client** (`backend_test_url_routing_py_import_django_test_client`, Module, degree: 1)
-- **django.urls.resolve** (`backend_test_url_routing_py_import_django_urls_resolve`, Module, degree: 1)
-- **django.urls.reverse** (`backend_test_url_routing_py_import_django_urls_reverse`, Module, degree: 1)
-- **os** (`backend_test_url_routing_py_import_os`, Module, degree: 1)
-- **rest_framework_simplejwt.tokens.RefreshToken** (`backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken`, Module, degree: 1)
-- **sys** (`backend_test_url_routing_py_import_sys`, Module, degree: 1)
-- **test_url_routing()** (`backend_test_url_routing_py_test_url_routing`, Function, degree: 1)
+- **test_registration** (`backend_test_registration_py`, File, degree: 9)
+- **generate_random_user()** (`backend_test_registration_py_generate_random_user`, Function, degree: 2)
+- **json** (`backend_test_registration_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_registration_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_registration_py_import_requests`, Module, degree: 1)
+- **string** (`backend_test_registration_py_import_string`, Module, degree: 1)
+- **main()** (`backend_test_registration_py_main`, Function, degree: 4)
+- **test_api_with_jwt_token()** (`backend_test_registration_py_test_api_with_jwt_token`, Function, degree: 2)
+- **test_login_with_new_user()** (`backend_test_registration_py_test_login_with_new_user`, Function, degree: 2)
+- **test_registration()** (`backend_test_registration_py_test_registration`, Function, degree: 3)
 
 ## Relationships
 
-- backend_test_url_routing_py → backend_test_url_routing_py_import_os (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_sys (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_reverse (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_resolve (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_test_client (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_contrib_auth_models_user (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_test_url_routing (defines)
+- backend_test_registration_py → backend_test_registration_py_import_requests (imports)
+- backend_test_registration_py → backend_test_registration_py_import_json (imports)
+- backend_test_registration_py → backend_test_registration_py_import_random (imports)
+- backend_test_registration_py → backend_test_registration_py_import_string (imports)
+- backend_test_registration_py → backend_test_registration_py_generate_random_user (defines)
+- backend_test_registration_py → backend_test_registration_py_test_registration (defines)
+- backend_test_registration_py → backend_test_registration_py_test_login_with_new_user (defines)
+- backend_test_registration_py → backend_test_registration_py_test_api_with_jwt_token (defines)
+- backend_test_registration_py → backend_test_registration_py_main (defines)
+- backend_test_registration_py_test_registration → backend_test_registration_py_generate_random_user (calls)
+- backend_test_registration_py_main → backend_test_registration_py_test_login_with_new_user (calls)
+- backend_test_registration_py_main → backend_test_registration_py_test_registration (calls)
+- backend_test_registration_py_main → backend_test_registration_py_test_api_with_jwt_token (calls)
 

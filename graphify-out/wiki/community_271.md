@@ -1,17 +1,17 @@
-# Community 271: simple_data_page
+# Community 271: theme_provider
 
 **Members:** 4
 
 ## Nodes
 
-- **simple_data_page** (`lib_pages_simple_data_page_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_pages_simple_data_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
-- **_SimpleDataPageState()** (`lib_pages_simple_data_page_dart_simpledatapagestate`, Function, degree: 1)
+- **theme_provider** (`lib_features_settings_providers_theme_provider_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_simpledatapagestate (defines)
+- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_providers_theme_provider_dart → lib_features_settings_providers_theme_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
 

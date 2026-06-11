@@ -1,17 +1,19 @@
-# Community 261: web_audio_service
+# Community 261: 0005_purchase_service
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **0005_purchase_service** (`backend_payments_migrations_0005_purchase_service_py`, File, degree: 4)
+- **django.db.migrations** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0005_purchase_service_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models (imports)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_migration (defines)
 

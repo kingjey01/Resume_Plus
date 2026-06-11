@@ -12,7 +12,7 @@ def copy_universite_filiere_to_m2m(apps, schema_editor):
         universite = uf.universite
         filiere = uf.filiere
         if filiere and universite:
-            universite.filieres.add(filiere)
+           universite.filieres.add(filiere)
 
 
 def restore_universite_filiere_from_m2m(apps, schema_editor):

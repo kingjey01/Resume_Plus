@@ -1,23 +1,26 @@
-# Community 146: check_cors_configuration()
+# Community 146: quick_server_test
 
-**Members:** 7
+**Members:** 8
 
 ## Nodes
 
-- **check_cors_configuration()** (`backend_fix_auth_issues_py_check_cors_configuration`, Function, degree: 2)
-- **config()** (`backend_fix_auth_issues_py_config`, Function, degree: 2)
-- **create_missing_tokens()** (`backend_fix_auth_issues_py_create_missing_tokens`, Function, degree: 2)
-- **fix_test_users()** (`backend_fix_auth_issues_py_fix_test_users`, Function, degree: 2)
-- **generate_flutter_auth_config()** (`backend_fix_auth_issues_py_generate_flutter_auth_config`, Function, degree: 2)
-- **main()** (`backend_fix_auth_issues_py_main`, Function, degree: 7)
-- **test_tokens_validity()** (`backend_fix_auth_issues_py_test_tokens_validity`, Function, degree: 2)
+- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
+- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
+- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
+- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
+- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
+- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
+- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
+- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_check_cors_configuration (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_generate_flutter_auth_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_create_missing_tokens (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_fix_test_users (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_test_tokens_validity (calls)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
+- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
+- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
 

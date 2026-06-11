@@ -1,19 +1,19 @@
-# Community 248: check_accessible_courses
+# Community 248: test_api
 
 **Members:** 5
 
 ## Nodes
 
-- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
-- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
+- **test_api** (`backend_test_api_py`, File, degree: 4)
+- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
+- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
+- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
+- backend_test_api_py → backend_test_api_py_import_requests (imports)
+- backend_test_api_py → backend_test_api_py_import_json (imports)
+- backend_test_api_py → backend_test_api_py_test_services_api (defines)
+- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
 

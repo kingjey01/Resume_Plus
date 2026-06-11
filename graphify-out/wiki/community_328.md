@@ -1,13 +1,15 @@
-# Community 328: badge_icon
+# Community 328: apps
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **apps** (`backend_users_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_users_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **UsersConfig** (`backend_users_apps_py_usersconfig`, Class, degree: 1)
 
 ## Relationships
 
-- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
+- backend_users_apps_py → backend_users_apps_py_import_django_apps_appconfig (imports)
+- backend_users_apps_py → backend_users_apps_py_usersconfig (defines)
 

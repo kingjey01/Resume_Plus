@@ -1,25 +1,25 @@
-# Community 139: migrate_courses_fk
+# Community 139: filiere_summaries_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **migrate_courses_fk** (`backend_courses_management_commands_migrate_courses_fk_py`, File, degree: 6)
-- **Command** (`backend_courses_management_commands_migrate_courses_fk_py_command`, Class, degree: 2)
-- **.handle()** (`backend_courses_management_commands_migrate_courses_fk_py_command_handle`, Method, degree: 1)
-- **courses.models.Course** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite`, Module, degree: 1)
-- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand`, Module, degree: 1)
+- **filiere_summaries_screen** (`lib_features_filiere_screens_filiere_summaries_screen_dart`, File, degree: 7)
+- **_FiliereSummariesScreenState()** (`lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion (imports)
-- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_command (defines)
-- backend_courses_management_commands_migrate_courses_fk_py_command → backend_courses_management_commands_migrate_courses_fk_py_command_handle (defines)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate (defines)
 

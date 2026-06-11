@@ -1296,4 +1296,114 @@ class ApiService {
       AppLogger.error('markAllNotificationsRead error', e);
     }
   }
+
+  // ═══════════════════════════════════════════════════════════════════════════════
+  //  EXERCICES PERSONNALISÉS (QCM uniques par utilisateur avec difficulté)
+  // ═══════════════════════════════════════════════════════════════════════════════
+
+  /// Vérifie si un exercice personnalisé existe déjà pour ce résumé
+  Future<Map<String, dynamic>> checkPersonalizedExercise(int summaryId) async {
+    try {
+      final response = await _dio.get(
+        '/courses/summaries/$summaryId/personalized-exercise/check/',
+      );
+      return response.data as Map<String, dynamic>;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  /// Génère un exercice personnalisé avec niveau de difficulté
+  Future<Map<String, dynamic>> generatePersonalizedExercise({
+    required int summaryId,
+    required String difficulty, // 'easy', 'medium', 'hard'
+    bool regenerate = false,
+  }) async {
+    try {
+      final response = await _dio.post(
+        '/courses/summaries/$summaryId/personalized-exercise/generate/',
+        data: {
+          'difficulty': difficulty,
+          'regenerate': regenerate,
+        },
+      );
+      return response.data as Map<String, dynamic>;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  /// Récupère un exercice personnalisé avec ses questions (polling possible)
+  Future<Map<String, dynamic>> getPersonalizedExercise(int exerciseId) async {
+    try {
+      final response = await _dio.get(
+        '/courses/personalized-exercises/$exerciseId/',
+      );
+      return response.data as Map<String, dynamic>;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  /// Soumet les réponses et récupère le score
+  Future<Map<String, dynamic>> submitPersonalizedExercise({
+    required int exerciseId,
+    required Map<String, String> answers, // {"0": "A", "1": "B", ...}
+  }) async {
+    try {
+      final response = await _dio.post(
+        '/courses/personalized-exercises/$exerciseId/submit/',
+        data: {'answers': answers},
+      );
+      return response.data as Map<String, dynamic>;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  /// Récupère l'historique des tentatives
+  Future<Map<String, dynamic>> getPersonalizedExerciseAttempts({
+    int? summaryId,
+  }) async {
+    try {
+      final params = summaryId != null ? {'summary_id': summaryId} : null;
+      final response = await _dio.get(
+        '/courses/personalized-exercises/attempts/',
+        queryParameters: params,
+      );
+      return response.data as Map<String, dynamic>;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  /// Récupère le détail d'une tentative avec corrections
+  Future<Map<String, dynamic>> getPersonalizedAttemptDetail(int attemptId) async {
+    try {
+      final response = await _dio.get(
+        '/courses/personalized-exercises/attempts/$attemptId/',
+      );
+      return response.data as Map<String, dynamic>;
+    } on DioException catch (e) {
+      throw _handleError(e);
+    }
+  }
+
+  Exception _handleError(DioException e) {
+    if (e.response?.statusCode == 403) {
+      final data = e.response?.data as Map<String, dynamic>?;
+      if (data?['code'] == 'subscription_required') {
+        return ApiException(
+          'Abonnement requis pour accéder aux exercices',
+          type: ApiExceptionType.forbidden,
+          statusCode: 403,
+        );
+      }
+    }
+    return ApiException(
+      e.message ?? 'Une erreur est survenue',
+      type: ApiExceptionType.unknown,
+      statusCode: e.response?.statusCode,
+    );
+  }
 }

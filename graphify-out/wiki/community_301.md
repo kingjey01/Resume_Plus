@@ -1,15 +1,17 @@
-# Community 301: api_service copy
+# Community 301: 0002_filiere_promotion_universite
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **api_service copy** (`lib_services_api_service_copy_dart`, File, degree: 2)
-- **package:dio/dio.dart** (`lib_services_api_service_copy_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **0002_filiere_promotion_universite** (`backend_courses_migrations_0002_filiere_promotion_universite_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0002_filiere_promotion_universite_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_dio_dio_dart (imports)
-- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_import_django_db_models (imports)
+- backend_courses_migrations_0002_filiere_promotion_universite_py → backend_courses_migrations_0002_filiere_promotion_universite_py_migration (defines)
 

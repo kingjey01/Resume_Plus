@@ -1,25 +1,25 @@
-# Community 135: health_check
+# Community 135: migrate_courses_to_fk
 
 **Members:** 8
 
 ## Nodes
 
-- **health_check** (`backend_health_check_py`, File, degree: 7)
-- **health_check()** (`backend_health_check_py_health_check`, Function, degree: 1)
-- **django.conf.settings** (`backend_health_check_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_health_check_py_import_django_db_connection`, Module, degree: 1)
-- **django.http.JsonResponse** (`backend_health_check_py_import_django_http_jsonresponse`, Module, degree: 1)
-- **django.views.decorators.csrf.csrf_exempt** (`backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt`, Module, degree: 1)
-- **django.views.decorators.http.require_http_methods** (`backend_health_check_py_import_django_views_decorators_http_require_http_methods`, Module, degree: 1)
-- **json** (`backend_health_check_py_import_json`, Module, degree: 1)
+- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
+- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
+- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
+- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
 
 ## Relationships
 
-- backend_health_check_py → backend_health_check_py_import_django_http_jsonresponse (imports)
-- backend_health_check_py → backend_health_check_py_import_django_views_decorators_http_require_http_methods (imports)
-- backend_health_check_py → backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt (imports)
-- backend_health_check_py → backend_health_check_py_import_django_db_connection (imports)
-- backend_health_check_py → backend_health_check_py_import_django_conf_settings (imports)
-- backend_health_check_py → backend_health_check_py_import_json (imports)
-- backend_health_check_py → backend_health_check_py_health_check (defines)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
 

@@ -1,15 +1,15 @@
-# Community 312: exercise_urls
+# Community 312: 0015_merge_20260523_2104
 
 **Members:** 3
 
 ## Nodes
 
-- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
+- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
+- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
-- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
 

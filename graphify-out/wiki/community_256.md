@@ -1,17 +1,19 @@
-# Community 256: 0003_userprofile_reset_code_and_more
+# Community 256: summary_provider
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **0003_userprofile_reset_code_and_more** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration`, Class, degree: 1)
+- **summary_provider** (`lib_features_home_providers_summary_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart'** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration (defines)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
 

@@ -1,23 +1,23 @@
-# Community 159: SubscriptionExpirationTest
+# Community 159: periodic_tasks
 
 **Members:** 7
 
 ## Nodes
 
-- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
-- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
-- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
-- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
-- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
-- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
-- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
+- **periodic_tasks** (`backend_notifications_periodic_tasks_py`, File, degree: 6)
+- **check_subscriptions_expired()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expired`, Function, degree: 1)
+- **check_subscriptions_expiring_soon()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon`, Function, degree: 1)
+- **celery.shared_task** (`backend_notifications_periodic_tasks_py_import_celery_shared_task`, Module, degree: 1)
+- **datetime.timedelta** (`backend_notifications_periodic_tasks_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.utils.timezone** (`backend_notifications_periodic_tasks_py_import_django_utils_timezone`, Module, degree: 1)
+- **logging** (`backend_notifications_periodic_tasks_py_import_logging`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_logging (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_celery_shared_task (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_django_utils_timezone (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_datetime_timedelta (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon (defines)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expired (defines)
 

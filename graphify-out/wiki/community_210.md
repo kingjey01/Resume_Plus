@@ -1,19 +1,21 @@
-# Community 210: UniversiteFiliereTest
+# Community 210: 0001_initial
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **UniversiteFiliereTest** (`backend_courses_tests_py_universitefilieretest`, Class, degree: 5)
-- **.setUp()** (`backend_courses_tests_py_universitefilieretest_setup`, Method, degree: 1)
-- **.setUpTestData()** (`backend_courses_tests_py_universitefilieretest_setuptestdata`, Method, degree: 1)
-- **.test_relation_universite_filiere()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere`, Method, degree: 1)
-- **.test_relation_universite_filiere_creation()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation`, Method, degree: 1)
+- **0001_initial** (`backend_security_migrations_0001_initial_py`, File, degree: 5)
+- **django.conf.settings** (`backend_security_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_security_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_security_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_security_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_security_migrations_0001_initial_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setup (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setuptestdata (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere (defines)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_conf_settings (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_db_migrations (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_db_models (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_import_django_db_models_deletion (imports)
+- backend_security_migrations_0001_initial_py → backend_security_migrations_0001_initial_py_migration (defines)
 

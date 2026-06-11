@@ -1,17 +1,17 @@
-# Community 266: check_user_profile
+# Community 266: create_exercise_service
 
 **Members:** 4
 
 ## Nodes
 
-- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
-- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
+- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
+- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
+- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
+- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
 

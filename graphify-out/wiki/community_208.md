@@ -1,19 +1,21 @@
-# Community 208: audio_playback_test_page
+# Community 208: 0001_initial
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **audio_playback_test_page** (`lib_pages_audio_playback_test_page_dart`, File, degree: 4)
-- **_AudioPlaybackTestPageState()** (`lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/api_service.dart** (`lib_pages_audio_playback_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../widgets/audio_file_player_widget.dart** (`lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
+- **0001_initial** (`backend_courses_migrations_0001_initial_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0001_initial_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_services_api_service_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate (defines)
+- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_conf_settings (imports)
+- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_db_models (imports)
+- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0001_initial_py → backend_courses_migrations_0001_initial_py_migration (defines)
 

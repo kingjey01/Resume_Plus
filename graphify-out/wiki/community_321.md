@@ -1,13 +1,15 @@
-# Community 321: flutter_usage_example
+# Community 321: terms_of_service_screen
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
-- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
+- **terms_of_service_screen** (`lib_features_settings_screens_terms_of_service_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
+- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

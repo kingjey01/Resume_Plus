@@ -1,17 +1,19 @@
-# Community 260: create_exercise_service
+# Community 260: deepseek_service
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
-- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
-- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
-- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
+- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
+- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
 

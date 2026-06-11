@@ -1,33 +1,33 @@
-# Community 57: admin
+# Community 57: create_test_data_postgresql
 
 **Members:** 12
 
 ## Nodes
 
-- **admin** (`backend_courses_admin_py`, File, degree: 15)
-- **CourseAdmin** (`backend_courses_admin_py_courseadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_courses_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models** (`backend_courses_admin_py_import_models`, Module, degree: 1)
-- **ProfesseurAdmin** (`backend_courses_admin_py_professeuradmin`, Class, degree: 3)
-- **.list_filieres()** (`backend_courses_admin_py_professeuradmin_list_filieres`, Method, degree: 1)
-- **PromotionAdmin** (`backend_courses_admin_py_promotionadmin`, Class, degree: 1)
-- **SessionAdmin** (`backend_courses_admin_py_sessionadmin`, Class, degree: 1)
-- **TranscriptionAdmin** (`backend_courses_admin_py_transcriptionadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_transcriptionadmin_get_queryset`, Method, degree: 2)
-- **UniversiteAdmin** (`backend_courses_admin_py_universiteadmin`, Class, degree: 1)
-- **UniversiteFiliereAdmin** (`backend_courses_admin_py_universitefiliereadmin`, Class, degree: 1)
+- **create_test_data_postgresql** (`backend_create_test_data_postgresql_py`, File, degree: 11)
+- **create_test_data()** (`backend_create_test_data_postgresql_py_create_test_data`, Function, degree: 1)
+- **courses.models.Course** (`backend_create_test_data_postgresql_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_create_test_data_postgresql_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_create_test_data_postgresql_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_create_test_data_postgresql_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_create_test_data_postgresql_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_create_test_data_postgresql_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.transaction** (`backend_create_test_data_postgresql_py_import_django_db_transaction`, Module, degree: 1)
+- **os** (`backend_create_test_data_postgresql_py_import_os`, Module, degree: 1)
+- **sys** (`backend_create_test_data_postgresql_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_create_test_data_postgresql_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_admin_py → backend_courses_admin_py_import_django_contrib_admin (imports)
-- backend_courses_admin_py → backend_courses_admin_py_import_models (imports)
-- backend_courses_admin_py → backend_courses_admin_py_courseadmin (defines)
-- backend_courses_admin_py → backend_courses_admin_py_sessionadmin (defines)
-- backend_courses_admin_py → backend_courses_admin_py_universiteadmin (defines)
-- backend_courses_admin_py → backend_courses_admin_py_promotionadmin (defines)
-- backend_courses_admin_py → backend_courses_admin_py_universitefiliereadmin (defines)
-- backend_courses_admin_py → backend_courses_admin_py_transcriptionadmin (defines)
-- backend_courses_admin_py_transcriptionadmin → backend_courses_admin_py_transcriptionadmin_get_queryset (defines)
-- backend_courses_admin_py → backend_courses_admin_py_professeuradmin (defines)
-- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_list_filieres (defines)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_os (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_sys (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_django (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_universite (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_filiere (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_promotion (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_courses_models_course (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_django_contrib_auth_models_user (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_users_models_userprofile (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_import_django_db_transaction (imports)
+- backend_create_test_data_postgresql_py → backend_create_test_data_postgresql_py_create_test_data (defines)
 

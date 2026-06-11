@@ -1,8 +1,8 @@
-# Community 347: summary
+# Community 347: app_notification
 
 **Members:** 1
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
 

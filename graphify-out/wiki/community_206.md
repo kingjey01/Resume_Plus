@@ -1,21 +1,21 @@
-# Community 206: 0016_filiere_promotions_m2m
+# Community 206: settings
 
 **Members:** 6
 
 ## Nodes
 
-- **0016_filiere_promotions_m2m** (`backend_courses_migrations_0016_filiere_promotions_m2m_py`, File, degree: 5)
-- **copy_auto_to_through()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through`, Function, degree: 1)
-- **copy_through_to_auto()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto`, Function, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_migration`, Class, degree: 1)
+- **settings** (`backend_resume_backend_settings_py`, File, degree: 5)
+- **celery.schedules.crontab** (`backend_resume_backend_settings_py_import_celery_schedules_crontab`, Module, degree: 1)
+- **datetime.timedelta** (`backend_resume_backend_settings_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_resume_backend_settings_py_import_decouple_config`, Module, degree: 1)
+- **os** (`backend_resume_backend_settings_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_resume_backend_settings_py_import_pathlib_path`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models (imports)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto (defines)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through (defines)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_migration (defines)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_pathlib_path (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_datetime_timedelta (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_decouple_config (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_os (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_celery_schedules_crontab (imports)
 

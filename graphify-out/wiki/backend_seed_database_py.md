@@ -21,7 +21,6 @@
 - backend_seed_database_py → backend_seed_database_py_import_courses_models_summary (imports, Extracted)
 - backend_seed_database_py → backend_seed_database_py_import_courses_models_service (imports, Extracted)
 - backend_seed_database_py → backend_seed_database_py_import_courses_models_abonnement (imports, Extracted)
-- backend_seed_database_py → backend_seed_database_py_import_courses_models_universitefiliere (imports, Extracted)
 - backend_seed_database_py → backend_seed_database_py_import_users_models_userprofile (imports, Extracted)
 - backend_seed_database_py → backend_seed_database_py_print_header (defines, Extracted)
 - backend_seed_database_py → backend_seed_database_py_print_section (defines, Extracted)

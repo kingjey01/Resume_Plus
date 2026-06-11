@@ -1,13 +1,15 @@
-# Community 324: service
+# Community 324: test_local_server
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **service** (`lib_models_service_dart`, File, degree: 1)
-- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
+- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
+- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
+- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_service_dart → lib_models_service_dart_id (defines)
+- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
+- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
 

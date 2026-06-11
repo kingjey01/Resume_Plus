@@ -1,21 +1,23 @@
-# Community 179: SubscriptionNotificationTest
+# Community 179: models
 
-**Members:** 6
+**Members:** 7
 
 ## Nodes
 
-- **SubscriptionNotificationTest** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest`, Class, degree: 6)
-- **.setUp()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup`, Method, degree: 1)
-- **.test_multiple_subscriptions_notifications()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications`, Method, degree: 1)
-- **.test_subscription_expired_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification`, Method, degree: 1)
-- **.test_subscription_expiring_soon_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification`, Method, degree: 1)
-- **.test_subscription_paid_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification`, Method, degree: 1)
+- **models** (`backend_users_models_py`, File, degree: 7)
+- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications (defines)
+- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
+- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
+- backend_users_models_py → backend_users_models_py_meta (defines)
 

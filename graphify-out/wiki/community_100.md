@@ -1,27 +1,27 @@
-# Community 100: debug_auth_headers
+# Community 100: payment_status_screen
 
 **Members:** 9
 
 ## Nodes
 
-- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
-- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
-- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
-- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
-- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
-- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
-- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
+- **payment_status_screen** (`lib_features_purchases_screens_payment_status_screen_dart`, File, degree: 8)
+- **dart:async** (`lib_features_purchases_screens_payment_status_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/purchase_badge_provider.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PaymentState** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstate`, Enum, degree: 1)
+- **_PaymentStatusScreenState()** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_dart_async (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate (defines)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstate (defines)
 

@@ -1,19 +1,21 @@
-# Community 211: filiere_promotion.g
+# Community 211: main()
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
-- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
-- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
-- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
-- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
+- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
+- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
+- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
+- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
+- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
+- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
 
 ## Relationships
 
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
 

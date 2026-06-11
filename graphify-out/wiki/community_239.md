@@ -1,20 +1,19 @@
-# Community 239: test_api_only
+# Community 239: otp_service
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api_only** (`backend_test_api_only_py`, File, degree: 4)
-- **json** (`backend_test_api_only_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_api_only_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_api_only_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_api_only_py_test_endpoint`, Function, degree: 2)
+- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
+- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_api_only_py → backend_test_api_only_py_import_requests (imports)
-- backend_test_api_only_py → backend_test_api_only_py_import_json (imports)
-- backend_test_api_only_py → backend_test_api_only_py_test_endpoint (defines)
-- backend_test_api_only_py → backend_test_api_only_py_main (defines)
-- backend_test_api_only_py_main → backend_test_api_only_py_test_endpoint (calls)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
 

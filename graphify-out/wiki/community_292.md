@@ -1,15 +1,17 @@
-# Community 292: urls
+# Community 292: check_user_profile
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **urls** (`backend_notifications_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_notifications_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_notifications_urls_py_import_views`, Module, degree: 1)
+- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
+- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_urls_py → backend_notifications_urls_py_import_django_urls_path (imports)
-- backend_notifications_urls_py → backend_notifications_urls_py_import_views (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
 

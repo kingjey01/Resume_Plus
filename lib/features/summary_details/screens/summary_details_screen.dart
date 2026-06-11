@@ -14,6 +14,9 @@ import 'package:resume_plus_clean/widgets/audio_player_widget.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_quiz_screen.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart';
+import 'package:resume_plus_clean/features/exercises/screens/personalized_quiz_screen.dart';
+import 'package:resume_plus_clean/features/exercises/widgets/difficulty_selector_modal.dart';
+import 'package:resume_plus_clean/features/exercises/widgets/exercise_generation_progress.dart';
 import 'package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart';
 import 'package:resume_plus_clean/widgets/ai_content_view.dart';
 import 'package:resume_plus_clean/widgets/api_error_view.dart';
@@ -143,7 +146,157 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
     }
   }
 
-  Future<void> _generateOrStartExercise() async {
+  // Champs pour la progression de la génération personnalisée
+  double _exerciseGenerationProgress = 0.0;
+  String _exerciseGenerationStatus = 'Préparation...';
+
+  /// Affiche le modal de sélection de difficulté
+  Future<void> _showDifficultySelector() async {
+    final difficulty = await context.showDifficultySelector();
+    if (difficulty != null && mounted) {
+      _generatePersonalizedExercise(difficulty);
+    }
+  }
+
+  /// Génère un exercice QCM personnalisé avec la difficulté choisie
+  Future<void> _generatePersonalizedExercise(String difficulty) async {
+    if (!mounted) return;
+    setState(() {
+      _isGeneratingExercise = true;
+      _exerciseGenerationProgress = 0.1;
+      _exerciseGenerationStatus = 'Préparation...';
+    });
+
+    try {
+      final checkData = await _apiService.checkPersonalizedExercise(widget.summary.id);
+      final exists = checkData['exists'] as bool? ?? false;
+      final existingStatus = checkData['status'] as String? ?? '';
+
+      if (exists && existingStatus == 'completed') {
+        if (mounted) _navigateToPersonalizedQuiz();
+        return;
+      }
+
+      if (mounted) setState(() {
+        _exerciseGenerationProgress = 0.3;
+        _exerciseGenerationStatus = 'Génération des questions...';
+      });
+
+      final data = await _apiService.generatePersonalizedExercise(
+        summaryId: widget.summary.id,
+        difficulty: difficulty,
+        regenerate: exists,
+      );
+
+      final exerciseId = data['exercise_id'] as int?;
+      final status = data['status'] as String? ?? 'generating';
+
+      if (exerciseId == null) {
+        throw Exception('Erreur lors du démarrage de la génération');
+      }
+
+      if (status == 'completed') {
+        if (mounted) _navigateToPersonalizedQuiz();
+      } else {
+        _pollPersonalizedExercise(exerciseId);
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _isGeneratingExercise = false;
+          _exerciseGenerationProgress = 0.0;
+        });
+        handleError(e);
+      }
+    }
+  }
+
+  /// Polling pour suivre la progression de la génération
+  void _pollPersonalizedExercise(int exerciseId) {
+    const maxAttempts = 30;
+    int attempt = 0;
+
+    Future.doWhile(() async {
+      await Future.delayed(const Duration(seconds: 3));
+      if (!mounted) return false;
+      attempt++;
+
+      try {
+        final data = await _apiService.getPersonalizedExercise(exerciseId);
+        final s = data['status'] as String? ?? '';
+
+        if (s == 'completed') {
+          if (mounted) _navigateToPersonalizedQuiz();
+          return false;
+        } else if (s == 'failed' || attempt >= maxAttempts) {
+          if (mounted) {
+            setState(() {
+              _isGeneratingExercise = false;
+              _exerciseGenerationProgress = 0.0;
+            });
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: const Text('La génération a échoué. Réessayez.'),
+                backgroundColor: AppTheme.error,
+                action: SnackBarAction(
+                  label: 'Réessayer',
+                  textColor: Colors.white,
+                  onPressed: _showDifficultySelector,
+                ),
+              ),
+            );
+          }
+          return false;
+        }
+
+        // Avancer la barre de progression
+        if (mounted) setState(() {
+          _exerciseGenerationProgress = (_exerciseGenerationProgress + 0.08).clamp(0.3, 0.92);
+          _exerciseGenerationStatus = attempt < 5
+              ? 'Analyse du contenu...'
+              : attempt < 15
+                  ? 'Génération des questions...'
+                  : 'Finalisation...';
+        });
+        return true;
+      } catch (e) {
+        if (mounted) {
+          setState(() {
+            _isGeneratingExercise = false;
+            _exerciseGenerationProgress = 0.0;
+          });
+          handleError(e);
+        }
+        return false;
+      }
+    });
+  }
+
+  /// Navigation vers l'écran du quiz personnalisé
+  void _navigateToPersonalizedQuiz() {
+    setState(() {
+      _isGeneratingExercise = false;
+      _exerciseGenerationProgress = 1.0;
+    });
+
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => PersonalizedQuizScreen(
+          summaryId: widget.summary.id,
+          summaryTitle: widget.summary.title,
+        ),
+      ),
+    ).then((_) {
+      if (mounted) setState(() {
+        _isGeneratingExercise = false;
+        _exerciseGenerationProgress = 0.0;
+      });
+    });
+  }
+
+  // ignore: unused_element
+  Future<void> _generateOrStartExerciseLegacy() async {
     if (!mounted) return;
     setState(() => _isGeneratingExercise = true);
 
@@ -968,28 +1121,31 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
               fontSize: 12,
             ),
           ),
+          if (_isGeneratingExercise) ...[  
+            const SizedBox(height: 12),
+            ExerciseGenerationProgress(
+              progress: _exerciseGenerationProgress,
+              status: _exerciseGenerationStatus,
+              onCancel: () {
+                setState(() {
+                  _isGeneratingExercise = false;
+                  _exerciseGenerationProgress = 0.0;
+                });
+              },
+            ),
+          ] else ...[  
           const SizedBox(height: 14),
           SizedBox(
             width: double.infinity,
             child: ElevatedButton.icon(
-              onPressed: hasAccess
-                  ? (_isGeneratingExercise ? null : _generateOrStartExercise)
-                  : null,
-              icon: _isGeneratingExercise
-                  ? const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(strokeWidth: 2, color: AppTheme.primaryBlue),
-                    )
-                  : Icon(
+              onPressed: hasAccess ? _showDifficultySelector : null,
+              icon: Icon(
                       hasAccess ? Icons.play_arrow_rounded : Icons.lock_rounded,
                       size: 20,
                       color: hasAccess ? AppTheme.primaryBlue : theme.colorScheme.onSurface,
                     ),
               label: Text(
-                _isGeneratingExercise
-                    ? 'Génération en cours...'
-                    : hasAccess
+                        hasAccess
                         ? 'Lancer le QCM'
                         : 'Abonnement requis',
                 style: TextStyle(
@@ -1011,6 +1167,7 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
               ),
             ),
           ),
+          ], // fermeture bloc else (bouton)
           if (!hasAccess) ...[          
             const SizedBox(height: 10),
             SizedBox(

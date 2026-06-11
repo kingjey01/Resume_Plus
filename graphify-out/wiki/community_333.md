@@ -1,8 +1,13 @@
-# Community 333: __init__
+# Community 333: service
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
+- **service** (`lib_models_service_dart`, File, degree: 1)
+- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
+
+## Relationships
+
+- lib_models_service_dart → lib_models_service_dart_id (defines)
 

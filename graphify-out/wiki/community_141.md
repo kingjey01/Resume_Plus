@@ -1,25 +1,25 @@
-# Community 141: course_summaries_screen
+# Community 141: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **course_summaries_screen** (`lib_features_course_screens_course_summaries_screen_dart`, File, degree: 7)
-- **_CourseSummariesScreenState()** (`lib_features_course_screens_course_summaries_screen_dart_coursesummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart'** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_coursesummariesscreenstate (defines)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

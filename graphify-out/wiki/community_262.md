@@ -1,17 +1,19 @@
-# Community 262: debug_page
+# Community 262: AbonnementCreateSerializer
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
-- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
+- **AbonnementSerializer** (`backend_courses_serializers_py_abonnementserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementserializer_create`, Method, degree: 2)
+- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
 
 ## Relationships
 
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
+- backend_courses_serializers_py_abonnementserializer → backend_courses_serializers_py_abonnementserializer_create (defines)
+- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
+- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- backend_courses_serializers_py_abonnementserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
 

@@ -1,15 +1,15 @@
-# Community 314: utils
+# Community 314: purchased_summaries_provider
 
 **Members:** 3
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_h`, File, degree: 2)
-- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
-- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
+- **purchased_summaries_provider** (`lib_features_summaries_providers_purchased_summaries_provider_dart`, File, degree: 2)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
-- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
+- lib_features_summaries_providers_purchased_summaries_provider_dart → lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_summaries_providers_purchased_summaries_provider_dart → lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
 

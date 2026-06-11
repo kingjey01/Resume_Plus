@@ -1,35 +1,27 @@
-# Community 113: DeepgramService
+# Community 113: test_subscription_creation
 
 **Members:** 9
 
 ## Nodes
 
-- **DeepgramService** (`backend_courses_deepgram_service_py_deepgramservice`, Class, degree: 9)
-- **._extract_confidence()** (`backend_courses_deepgram_service_py_deepgramservice_extract_confidence`, Method, degree: 3)
-- **._extract_transcript()** (`backend_courses_deepgram_service_py_deepgramservice_extract_transcript`, Method, degree: 3)
-- **._extract_words()** (`backend_courses_deepgram_service_py_deepgramservice_extract_words`, Method, degree: 2)
-- **._get_mime_type()** (`backend_courses_deepgram_service_py_deepgramservice_get_mime_type`, Method, degree: 2)
-- **.__init__()** (`backend_courses_deepgram_service_py_deepgramservice_init`, Method, degree: 1)
-- **.is_configured()** (`backend_courses_deepgram_service_py_deepgramservice_is_configured`, Method, degree: 3)
-- **.transcribe_bytes()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes`, Method, degree: 4)
-- **.transcribe_file()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_file`, Method, degree: 6)
+- **test_subscription_creation** (`backend_test_subscription_creation_py`, File, degree: 8)
+- **django** (`backend_test_subscription_creation_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_test_subscription_creation_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_test_subscription_creation_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_test_subscription_creation_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_test_subscription_creation_py_import_payments_models_service`, Module, degree: 1)
+- **requests** (`backend_test_subscription_creation_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_subscription_creation_py_import_sys`, Module, degree: 1)
+- **test_subscription_creation()** (`backend_test_subscription_creation_py_test_subscription_creation`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_init (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_is_configured (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_file (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_words (defines)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_words (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_os (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_sys (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_requests (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django_contrib_auth_models_user (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_service (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_abonnement (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_test_subscription_creation (defines)
 

@@ -1,28 +1,25 @@
-# Community 143: AuthAPITest
+# Community 143: splash_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
-- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
-- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
-- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
-- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
-- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
-- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
-- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
+- **splash_screen** (`lib_features_splash_screens_splash_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/auto_login_service.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SplashScreenState()** (`lib_features_splash_screens_splash_screen_dart_splashscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
-- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_splashscreenstate (defines)
 

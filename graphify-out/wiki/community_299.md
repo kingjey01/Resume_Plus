@@ -1,15 +1,17 @@
-# Community 299: 0015_merge_20260523_2104
+# Community 299: audio_player_widget
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
-- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
+- **audio_player_widget** (`lib_widgets_audio_player_widget_dart`, File, degree: 3)
+- **_AudioPlayerWidgetState()** (`lib_widgets_audio_player_widget_dart_audioplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_service.dart** (`lib_widgets_audio_player_widget_dart_import_services_audio_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_services_audio_service_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_audioplayerwidgetstate (defines)
 

@@ -1,29 +1,29 @@
-# Community 74: seeddata
+# Community 74: urls
 
 **Members:** 10
 
 ## Nodes
 
-- **seeddata** (`backend_courses_management_commands_seeddata_py`, File, degree: 10)
-- **courses.models.Course** (`backend_courses_management_commands_seeddata_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Session** (`backend_courses_management_commands_seeddata_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_courses_management_commands_seeddata_py_import_courses_models_summary`, Module, degree: 1)
-- **datetime.timedelta** (`backend_courses_management_commands_seeddata_py_import_datetime_timedelta`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand`, Module, degree: 1)
-- **payments.models.Purchase** (`backend_courses_management_commands_seeddata_py_import_payments_models_purchase`, Module, degree: 1)
-- **random** (`backend_courses_management_commands_seeddata_py_import_random`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_courses_management_commands_seeddata_py_import_users_models_userprofile`, Module, degree: 1)
+- **urls** (`backend_resume_backend_urls_py`, File, degree: 9)
+- **django.conf.settings** (`backend_resume_backend_urls_py_import_django_conf_settings`, Module, degree: 1)
+- **django.conf.urls.static.static** (`backend_resume_backend_urls_py_import_django_conf_urls_static_static`, Module, degree: 1)
+- **django.contrib.admin** (`backend_resume_backend_urls_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.urls.include** (`backend_resume_backend_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_resume_backend_urls_py_import_django_urls_path`, Module, degree: 1)
+- **drf_yasg.openapi** (`backend_resume_backend_urls_py_import_drf_yasg_openapi`, Module, degree: 1)
+- **drf_yasg.views.get_schema_view** (`backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view`, Module, degree: 1)
+- **health_check** (`backend_resume_backend_urls_py_import_health_check`, Module, degree: 1)
+- **rest_framework.permissions** (`backend_resume_backend_urls_py_import_rest_framework_permissions`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_core_management_base_basecommand (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_django_contrib_auth_models_user (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_users_models_userprofile (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_course (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_session (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_courses_models_summary (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_payments_models_purchase (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_datetime_timedelta (imports)
-- backend_courses_management_commands_seeddata_py → backend_courses_management_commands_seeddata_py_import_random (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_contrib_admin (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_path (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_include (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_settings (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_urls_static_static (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_rest_framework_permissions (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_openapi (imports)
+- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_health_check (imports)
 

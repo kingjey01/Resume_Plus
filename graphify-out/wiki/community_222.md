@@ -1,19 +1,20 @@
-# Community 222: debug_access
+# Community 222: test_correct_endpoints
 
 **Members:** 5
 
 ## Nodes
 
-- **debug_access** (`backend_debug_access_py`, File, degree: 4)
-- **courses.models.Course** (`backend_debug_access_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_debug_access_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_debug_access_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_debug_access_py_import_os`, Module, degree: 1)
+- **test_correct_endpoints** (`backend_test_correct_endpoints_py`, File, degree: 4)
+- **json** (`backend_test_correct_endpoints_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_correct_endpoints_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_correct_endpoints_py_main`, Function, degree: 2)
+- **test_endpoint()** (`backend_test_correct_endpoints_py_test_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- backend_debug_access_py → backend_debug_access_py_import_os (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django_contrib_auth_models_user (imports)
-- backend_debug_access_py → backend_debug_access_py_import_courses_models_course (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_requests (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_json (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_test_endpoint (defines)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_main (defines)
+- backend_test_correct_endpoints_py_main → backend_test_correct_endpoints_py_test_endpoint (calls)
 

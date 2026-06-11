@@ -1,19 +1,19 @@
-# Community 240: 0014_professeur_filieres_fix
+# Community 240: subscription_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **0014_professeur_filieres_fix** (`backend_courses_migrations_0014_professeur_filieres_fix_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0014_professeur_filieres_fix_py_migration`, Class, degree: 1)
+- **subscription_provider** (`lib_features_subscriptions_providers_subscription_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models (imports)
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_migration (defines)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

@@ -1,13 +1,15 @@
-# Community 319: generated_plugin_registrant
+# Community 319: user
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
-- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
+- **user** (`lib_models_user_dart`, File, degree: 2)
+- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
+- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
+- lib_models_user_dart → lib_models_user_dart_groupe (defines)
+- lib_models_user_dart → lib_models_user_dart_id (defines)
 

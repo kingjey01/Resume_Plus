@@ -1,19 +1,21 @@
-# Community 212: urls
+# Community 212: win32_window
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **urls** (`backend_courses_urls_py`, File, degree: 4)
-- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
-- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
-- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
-- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
+- **win32_window** (`windows_runner_win32_window_h`, File, degree: 5)
+- **functional** (`windows_runner_win32_window_h_import_functional`, Module, degree: 1)
+- **memory** (`windows_runner_win32_window_h_import_memory`, Module, degree: 1)
+- **string** (`windows_runner_win32_window_h_import_string`, Module, degree: 1)
+- **windows.h** (`windows_runner_win32_window_h_import_windows_h`, Module, degree: 1)
+- **Size** (`windows_runner_win32_window_h_size`, Struct, degree: 1)
 
 ## Relationships
 
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_windows_h (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_functional (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_memory (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_import_string (imports)
+- windows_runner_win32_window_h → windows_runner_win32_window_h_size (defines)
 

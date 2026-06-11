@@ -1,17 +1,17 @@
-# Community 264: audio_player_widget
+# Community 264: exercise_generation_progress
 
 **Members:** 4
 
 ## Nodes
 
-- **audio_player_widget** (`lib_widgets_audio_player_widget_dart`, File, degree: 3)
-- **_AudioPlayerWidgetState()** (`lib_widgets_audio_player_widget_dart_audioplayerwidgetstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/audio_service.dart** (`lib_widgets_audio_player_widget_dart_import_services_audio_service_dart`, Module, degree: 1)
+- **exercise_generation_progress** (`lib_features_exercises_widgets_exercise_generation_progress_dart`, File, degree: 3)
+- **_AnimatedGenerationIconState()** (`lib_features_exercises_widgets_exercise_generation_progress_dart_animatedgenerationiconstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_services_audio_service_dart (imports)
-- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_audioplayerwidgetstate (defines)
+- lib_features_exercises_widgets_exercise_generation_progress_dart → lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_widgets_exercise_generation_progress_dart → lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_widgets_exercise_generation_progress_dart → lib_features_exercises_widgets_exercise_generation_progress_dart_animatedgenerationiconstate (defines)
 

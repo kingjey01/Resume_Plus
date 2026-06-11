@@ -1,25 +1,25 @@
-# Community 134: exercise_generator
+# Community 134: exercises_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **exercise_generator** (`backend_courses_exercise_generator_py`, File, degree: 8)
-- **generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_generate_exercises_for_summary`, Function, degree: 1)
-- **.deepseek_service.deepseek_service** (`backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service`, Module, degree: 1)
-- **json** (`backend_courses_exercise_generator_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_exercise_generator_py_import_logging`, Module, degree: 1)
-- **.models.Exercise** (`backend_courses_exercise_generator_py_import_models_exercise`, Module, degree: 1)
-- **.models.ExerciseQuestion** (`backend_courses_exercise_generator_py_import_models_exercisequestion`, Module, degree: 1)
-- **.models.Summary** (`backend_courses_exercise_generator_py_import_models_summary`, Module, degree: 1)
+- **exercises_screen** (`lib_features_exercises_screens_exercises_screen_dart`, File, degree: 7)
+- **_ExercisesScreenState()** (`lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_json (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercise (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercisequestion (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_summary (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_logging (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_generate_exercises_for_summary (defines)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate (defines)
 

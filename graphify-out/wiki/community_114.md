@@ -1,25 +1,27 @@
-# Community 114: check_services
+# Community 114: profile_section
 
-**Members:** 8
+**Members:** 9
 
 ## Nodes
 
-- **check_services** (`backend_check_services_py`, File, degree: 7)
-- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
-- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
+- **profile_section** (`lib_features_settings_widgets_profile_section_dart`, File, degree: 8)
+- **package:flutter/material.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/settings/screens/edit_profile_screen.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_ProfileSectionState()** (`lib_features_settings_widgets_profile_section_dart_profilesectionstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_services_py → backend_check_services_py_import_os (imports)
-- backend_check_services_py → backend_check_services_py_import_sys (imports)
-- backend_check_services_py → backend_check_services_py_import_django (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
-- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_services_py → backend_check_services_py_check_services (defines)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_profilesectionstate (defines)
 

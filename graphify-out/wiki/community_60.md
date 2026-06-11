@@ -1,33 +1,33 @@
-# Community 60: test_consecutive_subscriptions
+# Community 60: clear_data()
 
 **Members:** 12
 
 ## Nodes
 
-- **test_consecutive_subscriptions** (`backend_test_consecutive_subscriptions_py`, File, degree: 11)
-- **datetime.timedelta** (`backend_test_consecutive_subscriptions_py_import_datetime_timedelta`, Module, degree: 1)
-- **django** (`backend_test_consecutive_subscriptions_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_test_consecutive_subscriptions_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.utils.timezone** (`backend_test_consecutive_subscriptions_py_import_django_utils_timezone`, Module, degree: 1)
-- **json** (`backend_test_consecutive_subscriptions_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_consecutive_subscriptions_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_test_consecutive_subscriptions_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_test_consecutive_subscriptions_py_import_payments_models_service`, Module, degree: 1)
-- **requests** (`backend_test_consecutive_subscriptions_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_consecutive_subscriptions_py_import_sys`, Module, degree: 1)
-- **test_consecutive_subscriptions()** (`backend_test_consecutive_subscriptions_py_test_consecutive_subscriptions`, Function, degree: 1)
+- **clear_data()** (`backend_seed_data_py_clear_data`, Function, degree: 2)
+- **create_courses()** (`backend_seed_data_py_create_courses`, Function, degree: 2)
+- **create_filieres()** (`backend_seed_data_py_create_filieres`, Function, degree: 2)
+- **create_promotions()** (`backend_seed_data_py_create_promotions`, Function, degree: 2)
+- **create_services()** (`backend_seed_data_py_create_services`, Function, degree: 2)
+- **create_sessions()** (`backend_seed_data_py_create_sessions`, Function, degree: 2)
+- **create_summaries()** (`backend_seed_data_py_create_summaries`, Function, degree: 2)
+- **create_universites()** (`backend_seed_data_py_create_universites`, Function, degree: 2)
+- **create_users()** (`backend_seed_data_py_create_users`, Function, degree: 2)
+- **link_filieres_promotions()** (`backend_seed_data_py_link_filieres_promotions`, Function, degree: 2)
+- **link_universites_filieres()** (`backend_seed_data_py_link_universites_filieres`, Function, degree: 2)
+- **run_seed()** (`backend_seed_data_py_run_seed`, Function, degree: 12)
 
 ## Relationships
 
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_os (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_sys (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_django (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_requests (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_json (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_datetime_timedelta (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_django_contrib_auth_models_user (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_payments_models_service (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_payments_models_abonnement (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_import_django_utils_timezone (imports)
-- backend_test_consecutive_subscriptions_py → backend_test_consecutive_subscriptions_py_test_consecutive_subscriptions (defines)
+- backend_seed_data_py_run_seed → backend_seed_data_py_clear_data (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_link_filieres_promotions (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_filieres (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_users (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_sessions (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_summaries (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_promotions (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_universites (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_link_universites_filieres (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_courses (calls)
+- backend_seed_data_py_run_seed → backend_seed_data_py_create_services (calls)
 

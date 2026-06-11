@@ -1,10 +1,10 @@
 # Community 30: seed_production
 
-**Members:** 16
+**Members:** 15
 
 ## Nodes
 
-- **seed_production** (`backend_courses_management_commands_seed_production_py`, File, degree: 16)
+- **seed_production** (`backend_courses_management_commands_seed_production_py`, File, degree: 15)
 - **courses.models.Course** (`backend_courses_management_commands_seed_production_py_import_courses_models_course`, Module, degree: 1)
 - **courses.models.Filiere** (`backend_courses_management_commands_seed_production_py_import_courses_models_filiere`, Module, degree: 1)
 - **courses.models.Professeur** (`backend_courses_management_commands_seed_production_py_import_courses_models_professeur`, Module, degree: 1)
@@ -12,7 +12,6 @@
 - **courses.models.Session** (`backend_courses_management_commands_seed_production_py_import_courses_models_session`, Module, degree: 1)
 - **courses.models.Summary** (`backend_courses_management_commands_seed_production_py_import_courses_models_summary`, Module, degree: 1)
 - **courses.models.Universite** (`backend_courses_management_commands_seed_production_py_import_courses_models_universite`, Module, degree: 1)
-- **courses.models.UniversiteFiliere** (`backend_courses_management_commands_seed_production_py_import_courses_models_universitefiliere`, Module, degree: 1)
 - **datetime.timedelta** (`backend_courses_management_commands_seed_production_py_import_datetime_timedelta`, Module, degree: 1)
 - **decimal.Decimal** (`backend_courses_management_commands_seed_production_py_import_decimal_decimal`, Module, degree: 1)
 - **django.contrib.auth.models.User** (`backend_courses_management_commands_seed_production_py_import_django_contrib_auth_models_user`, Module, degree: 1)
@@ -33,7 +32,6 @@
 - backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_import_courses_models_universite (imports)
 - backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_import_courses_models_filiere (imports)
 - backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_import_courses_models_promotion (imports)
-- backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_import_courses_models_universitefiliere (imports)
 - backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_import_courses_models_professeur (imports)
 - backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_import_payments_models_service (imports)
 - backend_courses_management_commands_seed_production_py → backend_courses_management_commands_seed_production_py_import_datetime_timedelta (imports)

@@ -1,19 +1,20 @@
-# Community 233: test_simple_page
+# Community 233: AppNotificationAdmin
 
 **Members:** 5
 
 ## Nodes
 
-- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
-- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
-- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
+- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 5)
+- **._create_system_notifications()** (`backend_notifications_admin_py_appnotificationadmin_create_system_notifications`, Method, degree: 2)
+- **.recipient_count()** (`backend_notifications_admin_py_appnotificationadmin_recipient_count`, Method, degree: 1)
+- **.response_add()** (`backend_notifications_admin_py_appnotificationadmin_response_add`, Method, degree: 1)
+- **.save_model()** (`backend_notifications_admin_py_appnotificationadmin_save_model`, Method, degree: 2)
 
 ## Relationships
 
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_recipient_count (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_save_model (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_create_system_notifications (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_response_add (defines)
+- backend_notifications_admin_py_appnotificationadmin_save_model → backend_notifications_admin_py_appnotificationadmin_create_system_notifications (calls)
 

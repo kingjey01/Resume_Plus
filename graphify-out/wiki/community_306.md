@@ -1,15 +1,15 @@
-# Community 306: privacy_policy_screen
+# Community 306: settings_postgresql
 
 **Members:** 3
 
 ## Nodes
 
-- **privacy_policy_screen** (`lib_features_settings_screens_privacy_policy_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **settings_postgresql** (`backend_settings_postgresql_py`, File, degree: 2)
+- **os** (`backend_settings_postgresql_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_postgresql_py_import_pathlib_path`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_os (imports)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_pathlib_path (imports)
 

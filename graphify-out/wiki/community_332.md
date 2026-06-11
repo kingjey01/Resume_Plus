@@ -1,8 +1,13 @@
-# Community 332: resource
+# Community 332: gunicorn.conf
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **resource** (`windows_runner_resource_h`, File, degree: 0)
+- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
+- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
+
+## Relationships
+
+- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
 

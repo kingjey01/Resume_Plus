@@ -1,25 +1,30 @@
-# Community 127: quick_test
+# Community 127: generate_report()
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_test** (`backend_quick_test_py`, File, degree: 7)
-- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
-- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
-- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
-- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
-- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
-- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
-- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
+- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
+- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
+- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
+- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
+- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
+- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
+- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
+- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
 
 ## Relationships
 
-- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
-- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
-- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
-- backend_quick_test_py → backend_quick_test_py_import_os (imports)
-- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
-- backend_quick_test_py → backend_quick_test_py_import_time (imports)
-- backend_quick_test_py → backend_quick_test_py_start_server (defines)
+- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
 

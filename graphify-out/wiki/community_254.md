@@ -1,17 +1,19 @@
-# Community 254: admin
+# Community 254: test_api_auth
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **admin** (`backend_security_admin_py`, File, degree: 3)
-- **django.contrib.admin** (`backend_security_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.SecurityLog** (`backend_security_admin_py_import_models_securitylog`, Module, degree: 1)
-- **SecurityLogAdmin** (`backend_security_admin_py_securitylogadmin`, Class, degree: 1)
+- **test_api_auth** (`backend_test_api_auth_py`, File, degree: 11)
+- **json** (`backend_test_api_auth_py_import_json`, Module, degree: 1)
+- **os** (`backend_test_api_auth_py_import_os`, Module, degree: 1)
+- **requests** (`backend_test_api_auth_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_api_auth_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_admin_py → backend_security_admin_py_import_django_contrib_admin (imports)
-- backend_security_admin_py → backend_security_admin_py_import_models_securitylog (imports)
-- backend_security_admin_py → backend_security_admin_py_securitylogadmin (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_requests (imports)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_json (imports)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_os (imports)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_sys (imports)
 

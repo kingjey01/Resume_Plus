@@ -1,15 +1,15 @@
-# Community 307: test_seed_creation
+# Community 307: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
-- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
-- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
+- **apps** (`backend_notifications_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_notifications_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **NotificationsConfig** (`backend_notifications_apps_py_notificationsconfig`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
-- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
+- backend_notifications_apps_py → backend_notifications_apps_py_import_django_apps_appconfig (imports)
+- backend_notifications_apps_py → backend_notifications_apps_py_notificationsconfig (defines)
 

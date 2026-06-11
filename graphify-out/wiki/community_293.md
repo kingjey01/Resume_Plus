@@ -1,15 +1,17 @@
-# Community 293: user
+# Community 293: api_error_view
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **user** (`lib_models_user_dart`, File, degree: 2)
-- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
-- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
+- **api_error_view** (`lib_widgets_api_error_view_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_api_error_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_user_dart → lib_models_user_dart_groupe (defines)
-- lib_models_user_dart → lib_models_user_dart_id (defines)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

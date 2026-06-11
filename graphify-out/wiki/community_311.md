@@ -1,15 +1,15 @@
-# Community 311: wsgi
+# Community 311: snackbar_service
 
 **Members:** 3
 
 ## Nodes
 
-- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
-- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
-- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
+- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
 

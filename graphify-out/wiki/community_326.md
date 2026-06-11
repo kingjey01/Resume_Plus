@@ -1,13 +1,15 @@
-# Community 326: course
+# Community 326: urls
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **course** (`lib_models_course_dart`, File, degree: 1)
-- **id()** (`lib_models_course_dart_id`, Function, degree: 1)
+- **urls** (`backend_security_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_course_dart → lib_models_course_dart_id (defines)
+- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
+- backend_security_urls_py → backend_security_urls_py_import_views (imports)
 

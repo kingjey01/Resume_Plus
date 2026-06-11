@@ -1,27 +1,25 @@
-# Community 140: tasks
+# Community 140: audio_test_page
 
 **Members:** 8
 
 ## Nodes
 
-- **tasks** (`backend_courses_tasks_py`, File, degree: 7)
-- **generate_summary_task()** (`backend_courses_tasks_py_generate_summary_task`, Function, degree: 1)
-- **celery.shared_task** (`backend_courses_tasks_py_import_celery_shared_task`, Module, degree: 1)
-- **django.utils.timezone** (`backend_courses_tasks_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_courses_tasks_py_import_logging`, Module, degree: 1)
-- **process_audio_session_task()** (`backend_courses_tasks_py_process_audio_session_task`, Function, degree: 2)
-- **transcribe_audio_task()** (`backend_courses_tasks_py_transcribe_audio_task`, Function, degree: 2)
-- **_validate_and_fix_duration()** (`backend_courses_tasks_py_validate_and_fix_duration`, Function, degree: 3)
+- **audio_test_page** (`lib_pages_audio_test_page_dart`, File, degree: 7)
+- **_AudioTestPageState()** (`lib_pages_audio_test_page_dart_audiotestpagestate`, Function, degree: 1)
+- **dart:html'** (`lib_pages_audio_test_page_dart_import_dart_html`, Module, degree: 1)
+- **dart:typed_data** (`lib_pages_audio_test_page_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/api_service.dart** (`lib_pages_audio_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../services/web_audio_recorder.dart** (`lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_tasks_py → backend_courses_tasks_py_import_logging (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_celery_shared_task (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_django_utils_timezone (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_validate_and_fix_duration (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_transcribe_audio_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_generate_summary_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_process_audio_session_task (defines)
-- backend_courses_tasks_py_transcribe_audio_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
-- backend_courses_tasks_py_process_audio_session_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_typed_data (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_html (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_api_service_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_audiotestpagestate (defines)
 
