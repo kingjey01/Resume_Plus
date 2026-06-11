@@ -207,25 +207,7 @@ def generate_summary_task(self, session_id, author_user_id=None):
             f"Summary #{summary.id}"
         )
 
-        # Notifier le CP créateur que son résumé est prêt
-        if author_user_id:
-            try:
-                from notifications.tasks import notify_summary_created
-                logger.info(f"🔔 [Celery T2] Planification notification CP — summary_id={summary.id}, author_user_id={author_user_id}")
-                print(f"🔔 [Celery T2] Planification notification CP — summary_id={summary.id}, author_user_id={author_user_id}")
-                notify_summary_created.apply_async(
-                    kwargs={'summary_id': summary.id, 'author_user_id': author_user_id},
-                    countdown=2
-                )
-                logger.info(f"🔔 [Celery T2] Notification CP planifiée avec succès")
-                print(f"🔔 [Celery T2] Notification CP planifiée avec succès")
-            except Exception as notif_err:
-                logger.warning(f"⚠️ [Celery T2] Notification CP non envoyée (non bloquant): {notif_err}")
-                print(f"⚠️ [Celery T2] Notification CP non envoyée (non bloquant): {notif_err}")
-        else:
-            logger.warning(f"⚠️ [Celery T2] Pas de author_user_id — notification CP non envoyée")
-            print(f"⚠️ [Celery T2] Pas de author_user_id — notification CP non envoyée")
-        
+        # La notification de l'auteur et des CP est gérée automatiquement par le signal post_save du modèle Summary.
         return {
             'success': True,
             'session_id': session_id,
@@ -344,17 +326,7 @@ def process_audio_session_task(self, session_id, author_user_id=None):
             f"Transcription #{transcription.id}, Résumé #{summary.id}"
         )
 
-        # Notifier le CP créateur que son résumé est prêt
-        if author_user_id:
-            try:
-                from notifications.tasks import notify_summary_created
-                notify_summary_created.apply_async(
-                    kwargs={'summary_id': summary.id, 'author_user_id': author_user_id},
-                    countdown=2
-                )
-            except Exception as notif_err:
-                logger.warning(f"⚠️ [Celery] Notification CP non envoyée (non bloquant): {notif_err}")
-
+        # La notification de l'auteur et des CP est gérée automatiquement par le signal post_save du modèle Summary.
         return {
             'success': True,
             'session_id': session_id,
