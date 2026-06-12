@@ -130,152 +130,11 @@ class SummaryCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    // Professeur (si disponible)
-                    if (summary.professorName.isNotEmpty) ...[  
-                      const SizedBox(height: 4),
-                      Row(
-                        children: [
-                          Icon(Icons.school_rounded, size: 12, color: const Color(0xFF9C27B0).withValues(alpha:0.8)),
-                          const SizedBox(width: 4),
-                          Flexible(
-                            child: Text(
-                              summary.professorName,
-                              style: TextStyle(
-                                color: const Color(0xFF9C27B0).withValues(alpha:0.8),
-                                fontSize: 10,
-                                fontWeight: FontWeight.w500,
-                              ),
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
                     const SizedBox(height: 8),
-                    // Prix + date + auteur (responsive: colonne si étroit)
+                    // Meta: professeur + prix + date + auteur (responsive)
                     isNarrow
-                        ? Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              // Prix
-                              Container(
-                                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                                decoration: BoxDecoration(
-                                  color: summary.isFree
-                                      ? AppTheme.success.withValues(alpha:0.1)
-                                      : AppTheme.primaryBlue.withValues(alpha:0.1),
-                                  borderRadius: BorderRadius.circular(20),
-                                ),
-                                child: Text(
-                                  summary.isFree ? 'Gratuit' : '${summary.price.toStringAsFixed(0)} FC',
-                                  style: TextStyle(
-                                    color: summary.isFree ? AppTheme.success : AppTheme.primaryBlue,
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w600,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 4),
-                              // Date
-                              Row(
-                                children: [
-                                  Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
-                                  const SizedBox(width: 3),
-                                  Text(
-                                    DateFormat('dd/MM/yyyy').format(summary.createdAt),
-                                    style: TextStyle(
-                                      color: theme.colorScheme.onSurface.withValues(alpha:0.5),
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 2),
-                              // Auteur
-                              Row(
-                                children: [
-                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
-                                  const SizedBox(width: 3),
-                                  Flexible(
-                                    child: Text(
-                                      summary.authorName,
-                                      style: TextStyle(
-                                        color: theme.colorScheme.onSurface.withValues(alpha:0.5),
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          )
-                        : Column(
-                            children: [
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  // Badge prix
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
-                                    decoration: BoxDecoration(
-                                      color: summary.isFree
-                                          ? AppTheme.success.withValues(alpha:0.1)
-                                          : AppTheme.primaryBlue.withValues(alpha:0.1),
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Text(
-                                      summary.isFree ? 'Gratuit' : '${summary.price.toStringAsFixed(0)} FC',
-                                      style: TextStyle(
-                                        color: summary.isFree ? AppTheme.success : AppTheme.primaryBlue,
-                                        fontSize: 11,
-                                        fontWeight: FontWeight.w600,
-                                      ),
-                                    ),
-                                  ),
-                                  // Date
-                                  Row(
-                                    children: [
-                                      Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
-                                      const SizedBox(width: 3),
-                                      Text(
-                                        DateFormat('dd/MM/yyyy').format(summary.createdAt),
-                                        style: TextStyle(
-                                          color: theme.colorScheme.onSurface.withValues(alpha:0.5),
-                                          fontSize: 10,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: 4),
-                              // Auteur
-                              Row(
-                                children: [
-                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
-                                  const SizedBox(width: 3),
-                                  Flexible(
-                                    child: Text(
-                                      summary.authorName,
-                                      style: TextStyle(
-                                        color: theme.colorScheme.onSurface.withValues(alpha:0.5),
-                                        fontSize: 10,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                        ? _buildCompactMetaRow(theme)
+                        : _buildWideMetaRow(theme),
                   ],
                 ),
               ),
@@ -283,6 +142,148 @@ class SummaryCard extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+
+  Widget _buildCompactMetaRow(ThemeData theme) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (summary.professorName.isNotEmpty)
+          Text(
+            summary.professorName,
+            style: TextStyle(
+              color: const Color(0xFF9C27B0).withValues(alpha: 0.8),
+              fontSize: 9,
+              fontWeight: FontWeight.w500,
+            ),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
+        const SizedBox(height: 4),
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+          decoration: BoxDecoration(
+            color: summary.isFree
+                ? AppTheme.success.withValues(alpha: 0.1)
+                : AppTheme.primaryBlue.withValues(alpha: 0.1),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Text(
+            summary.isFree ? 'Gratuit' : '${summary.price.toStringAsFixed(0)} FC',
+            style: TextStyle(
+              color: summary.isFree ? AppTheme.success : AppTheme.primaryBlue,
+              fontSize: 10,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          DateFormat('dd/MM/yyyy').format(summary.createdAt),
+          style: TextStyle(
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
+            fontSize: 9,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          summary.authorName,
+          style: TextStyle(
+            color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
+            fontSize: 9,
+            fontWeight: FontWeight.w500,
+          ),
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+        ),
+      ],
+    );
+  }
+
+  Widget _buildWideMetaRow(ThemeData theme) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (summary.professorName.isNotEmpty) ...[
+          Row(
+            children: [
+              Icon(Icons.school_rounded, size: 12, color: const Color(0xFF9C27B0).withValues(alpha: 0.8)),
+              const SizedBox(width: 4),
+              Flexible(
+                child: Text(
+                  summary.professorName,
+                  style: TextStyle(
+                    color: const Color(0xFF9C27B0).withValues(alpha: 0.8),
+                    fontSize: 10,
+                    fontWeight: FontWeight.w500,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 4),
+        ],
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+              decoration: BoxDecoration(
+                color: summary.isFree
+                    ? AppTheme.success.withValues(alpha: 0.1)
+                    : AppTheme.primaryBlue.withValues(alpha: 0.1),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Text(
+                summary.isFree ? 'Gratuit' : '${summary.price.toStringAsFixed(0)} FC',
+                style: TextStyle(
+                  color: summary.isFree ? AppTheme.success : AppTheme.primaryBlue,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+            Row(
+              children: [
+                Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withValues(alpha: 0.45)),
+                const SizedBox(width: 3),
+                Text(
+                  DateFormat('dd/MM/yyyy').format(summary.createdAt),
+                  style: TextStyle(
+                    color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
+                    fontSize: 10,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+        const SizedBox(height: 4),
+        Row(
+          children: [
+            Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withValues(alpha: 0.45)),
+            const SizedBox(width: 3),
+            Flexible(
+              child: Text(
+                summary.authorName,
+                style: TextStyle(
+                  color: theme.colorScheme.onSurface.withValues(alpha: 0.5),
+                  fontSize: 10,
+                  fontWeight: FontWeight.w500,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 
