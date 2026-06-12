@@ -1,23 +1,23 @@
-# Community 152: 0002_service_abonnement
+# Community 152: linked_dropdowns
 
 **Members:** 7
 
 ## Nodes
 
-- **0002_service_abonnement** (`backend_payments_migrations_0002_service_abonnement_py`, File, degree: 6)
-- **django.conf.settings** (`backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
-- **django.utils.timezone** (`backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0002_service_abonnement_py_migration`, Class, degree: 1)
+- **linked_dropdowns** (`lib_widgets_linked_dropdowns_dart`, File, degree: 6)
+- **package:flutter/material.dart** (`lib_widgets_linked_dropdowns_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/filiere.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_filiere_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/promotion.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_promotion_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/universite.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_universite_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **_LinkedDropdownsState()** (`lib_widgets_linked_dropdowns_dart_linkeddropdownsstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone (imports)
-- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_migration (defines)
+- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_universite_dart (imports)
+- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_filiere_dart (imports)
+- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_models_promotion_dart (imports)
+- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_widgets_linked_dropdowns_dart → lib_widgets_linked_dropdowns_dart_linkeddropdownsstate (defines)
 

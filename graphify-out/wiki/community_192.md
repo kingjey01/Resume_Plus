@@ -1,21 +1,23 @@
-# Community 192: auth_repository
+# Community 192: test_encoding_fix
 
 **Members:** 6
 
 ## Nodes
 
-- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
-- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **test_encoding_fix** (`backend_test_encoding_fix_py`, File, degree: 5)
+- **json** (`backend_test_encoding_fix_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_encoding_fix_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_encoding_fix_py_main`, Function, degree: 3)
+- **test_summary_retrieval()** (`backend_test_encoding_fix_py_test_summary_retrieval`, Function, degree: 2)
+- **test_summary_with_special_chars()** (`backend_test_encoding_fix_py_test_summary_with_special_chars`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_requests (imports)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_json (imports)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_with_special_chars (defines)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_retrieval (defines)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_main (defines)
+- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_with_special_chars (calls)
+- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_retrieval (calls)
 

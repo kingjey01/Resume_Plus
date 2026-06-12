@@ -1,19 +1,19 @@
-# Community 245: filiere_promotion.g
+# Community 245: 0014_professeur_filieres_fix
 
 **Members:** 5
 
 ## Nodes
 
-- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
-- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
-- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
-- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
-- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
+- **0014_professeur_filieres_fix** (`backend_courses_migrations_0014_professeur_filieres_fix_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0014_professeur_filieres_fix_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models (imports)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_migration (defines)
 

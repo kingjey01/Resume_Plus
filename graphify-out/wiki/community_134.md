@@ -1,25 +1,26 @@
-# Community 134: filiere_summaries_screen
+# Community 134: quick_server_test
 
 **Members:** 8
 
 ## Nodes
 
-- **filiere_summaries_screen** (`lib_features_filiere_screens_filiere_summaries_screen_dart`, File, degree: 7)
-- **_FiliereSummariesScreenState()** (`lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
+- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
+- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
+- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
+- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
+- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
+- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
+- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate (defines)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
+- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
+- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
 

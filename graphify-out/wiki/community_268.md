@@ -1,17 +1,17 @@
-# Community 268: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
+# Community 268: test_summaries_response
 
 **Members:** 4
 
 ## Nodes
 
-- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
+- **test_summaries_response** (`backend_test_summaries_response_py`, File, degree: 3)
+- **json** (`backend_test_summaries_response_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_summaries_response_py_import_requests`, Module, degree: 1)
+- **test_summaries_endpoint()** (`backend_test_summaries_response_py_test_summaries_endpoint`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_import_requests (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_import_json (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_test_summaries_endpoint (defines)
 

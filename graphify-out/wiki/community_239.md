@@ -1,19 +1,19 @@
-# Community 239: fix_settings_mysql
+# Community 239: enhanced_auth_demo_page
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
-- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
-- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
-- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
-- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
+- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
 

@@ -1,19 +1,19 @@
-# Community 222: widget_test
+# Community 222: AppDelegate
 
 **Members:** 5
 
 ## Nodes
 
-- **widget_test** (`test_widget_test_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
-- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
-- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
+- **AppDelegate** (`ios_runner_appdelegate_swift`, File, degree: 4)
+- **application** (`ios_runner_appdelegate_swift_application`, Function, degree: 1)
+- **FirebaseCore** (`ios_runner_appdelegate_swift_import_firebasecore`, Module, degree: 1)
+- **Flutter** (`ios_runner_appdelegate_swift_import_flutter`, Module, degree: 1)
+- **UIKit** (`ios_runner_appdelegate_swift_import_uikit`, Module, degree: 1)
 
 ## Relationships
 
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_main (defines)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_application (defines)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_flutter (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_uikit (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_firebasecore (imports)
 

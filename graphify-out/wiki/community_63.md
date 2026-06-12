@@ -1,31 +1,31 @@
-# Community 63: ExerciseAdmin
+# Community 63: UserProfile
 
 **Members:** 11
 
 ## Nodes
 
-- **ExerciseAdmin** (`backend_courses_admin_py_exerciseadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_exerciseadmin_get_queryset`, Method, degree: 2)
-- **ExerciseAttemptAdmin** (`backend_courses_admin_py_exerciseattemptadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_exerciseattemptadmin_get_queryset`, Method, degree: 2)
-- **ProfesseurAdmin** (`backend_courses_admin_py_professeuradmin`, Class, degree: 3)
-- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
-- **.list_filieres()** (`backend_courses_admin_py_professeuradmin_list_filieres`, Method, degree: 1)
-- **SummaryAdmin** (`backend_courses_admin_py_summaryadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_summaryadmin_get_queryset`, Method, degree: 2)
-- **TranscriptionAdmin** (`backend_courses_admin_py_transcriptionadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_transcriptionadmin_get_queryset`, Method, degree: 2)
+- **UserProfile** (`backend_users_models_py_userprofile`, Class, degree: 11)
+- **.can_create_summary()** (`backend_users_models_py_userprofile_can_create_summary`, Method, degree: 1)
+- **.generate_otp()** (`backend_users_models_py_userprofile_generate_otp`, Method, degree: 1)
+- **.has_active_subscription()** (`backend_users_models_py_userprofile_has_active_subscription`, Method, degree: 1)
+- **.has_free_access()** (`backend_users_models_py_userprofile_has_free_access`, Method, degree: 1)
+- **.is_admin()** (`backend_users_models_py_userprofile_is_admin`, Method, degree: 1)
+- **.is_cp()** (`backend_users_models_py_userprofile_is_cp`, Method, degree: 1)
+- **.is_etudiant()** (`backend_users_models_py_userprofile_is_etudiant`, Method, degree: 1)
+- **.reset_otp()** (`backend_users_models_py_userprofile_reset_otp`, Method, degree: 1)
+- **.__str__()** (`backend_users_models_py_userprofile_str`, Method, degree: 1)
+- **.verify_otp()** (`backend_users_models_py_userprofile_verify_otp`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_admin_py_summaryadmin → backend_courses_admin_py_summaryadmin_get_queryset (defines)
-- backend_courses_admin_py_transcriptionadmin → backend_courses_admin_py_transcriptionadmin_get_queryset (defines)
-- backend_courses_admin_py_exerciseadmin → backend_courses_admin_py_exerciseadmin_get_queryset (defines)
-- backend_courses_admin_py_exerciseattemptadmin → backend_courses_admin_py_exerciseattemptadmin_get_queryset (defines)
-- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_list_filieres (defines)
-- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_get_queryset (defines)
-- backend_courses_admin_py_summaryadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_transcriptionadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exerciseadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exerciseattemptadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_str (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_cp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_admin (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_etudiant (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_can_create_summary (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_free_access (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_generate_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_verify_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_reset_otp (defines)
+- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_active_subscription (defines)
 

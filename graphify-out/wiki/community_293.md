@@ -1,15 +1,15 @@
-# Community 293: apps
+# Community 293: api_provider
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_security_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
+- **api_provider** (`lib_providers_api_provider_dart`, File, degree: 2)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
-- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
 

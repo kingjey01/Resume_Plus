@@ -1,21 +1,21 @@
-# Community 178: AppDelegate
+# Community 178: 0001_initial
 
 **Members:** 6
 
 ## Nodes
 
-- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
-- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
-- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
-- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
-- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
+- **0001_initial** (`backend_users_migrations_0001_initial_py`, File, degree: 5)
+- **django.conf.settings** (`backend_users_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_users_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_users_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0001_initial_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_conf_settings (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_migrations (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models_deletion (imports)
+- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_migration (defines)
 

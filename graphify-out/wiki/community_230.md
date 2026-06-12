@@ -1,19 +1,20 @@
-# Community 230: enhanced_auth_demo_page
+# Community 230: test_correct_endpoints
 
 **Members:** 5
 
 ## Nodes
 
-- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
+- **test_correct_endpoints** (`backend_test_correct_endpoints_py`, File, degree: 4)
+- **json** (`backend_test_correct_endpoints_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_correct_endpoints_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_correct_endpoints_py_main`, Function, degree: 2)
+- **test_endpoint()** (`backend_test_correct_endpoints_py_test_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_requests (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_json (imports)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_test_endpoint (defines)
+- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_main (defines)
+- backend_test_correct_endpoints_py_main → backend_test_correct_endpoints_py_test_endpoint (calls)
 

@@ -1,37 +1,39 @@
-# Community 34: create_test_data_mysql
+# Community 34: models
 
-**Members:** 14
+**Members:** 15
 
 ## Nodes
 
-- **create_test_data_mysql** (`backend_create_test_data_mysql_py`, File, degree: 13)
-- **create_test_data()** (`backend_create_test_data_mysql_py_create_test_data`, Function, degree: 1)
-- **courses.models.Course** (`backend_create_test_data_mysql_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_create_test_data_mysql_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_create_test_data_mysql_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_create_test_data_mysql_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_create_test_data_mysql_py_import_django`, Module, degree: 1)
-- **django.conf** (`backend_create_test_data_mysql_py_import_django_conf`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_create_test_data_mysql_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.transaction** (`backend_create_test_data_mysql_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_create_test_data_mysql_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_create_test_data_mysql_py_import_pathlib_path`, Module, degree: 1)
-- **sys** (`backend_create_test_data_mysql_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_create_test_data_mysql_py_import_users_models_userprofile`, Module, degree: 1)
+- **models** (`backend_payments_models_py`, File, degree: 9)
+- **Abonnement** (`backend_payments_models_py_abonnement`, Class, degree: 4)
+- **.is_active()** (`backend_payments_models_py_abonnement_is_active`, Method, degree: 1)
+- **.save()** (`backend_payments_models_py_abonnement_save`, Method, degree: 1)
+- **.__str__()** (`backend_payments_models_py_abonnement_str`, Method, degree: 1)
+- **courses.models.Summary** (`backend_payments_models_py_import_courses_models_summary`, Module, degree: 1)
+- **datetime.timedelta** (`backend_payments_models_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_payments_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_payments_models_py_import_django_db_models`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_models_py_import_django_utils_timezone`, Module, degree: 1)
+- **Meta** (`backend_payments_models_py_meta`, Class, degree: 1)
+- **Purchase** (`backend_payments_models_py_purchase`, Class, degree: 2)
+- **.__str__()** (`backend_payments_models_py_purchase_str`, Method, degree: 1)
+- **Service** (`backend_payments_models_py_service`, Class, degree: 2)
+- **.__str__()** (`backend_payments_models_py_service_str`, Method, degree: 1)
 
 ## Relationships
 
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_os (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_sys (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_django (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_pathlib_path (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_django_conf (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_courses_models_universite (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_courses_models_filiere (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_courses_models_promotion (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_courses_models_course (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_django_contrib_auth_models_user (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_users_models_userprofile (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_import_django_db_transaction (imports)
-- backend_create_test_data_mysql_py → backend_create_test_data_mysql_py_create_test_data (defines)
+- backend_payments_models_py → backend_payments_models_py_import_django_db_models (imports)
+- backend_payments_models_py → backend_payments_models_py_import_django_contrib_auth_models_user (imports)
+- backend_payments_models_py → backend_payments_models_py_import_courses_models_summary (imports)
+- backend_payments_models_py → backend_payments_models_py_import_django_utils_timezone (imports)
+- backend_payments_models_py → backend_payments_models_py_import_datetime_timedelta (imports)
+- backend_payments_models_py → backend_payments_models_py_service (defines)
+- backend_payments_models_py_service → backend_payments_models_py_service_str (defines)
+- backend_payments_models_py → backend_payments_models_py_meta (defines)
+- backend_payments_models_py → backend_payments_models_py_abonnement (defines)
+- backend_payments_models_py_abonnement → backend_payments_models_py_abonnement_save (defines)
+- backend_payments_models_py_abonnement → backend_payments_models_py_abonnement_is_active (defines)
+- backend_payments_models_py_abonnement → backend_payments_models_py_abonnement_str (defines)
+- backend_payments_models_py → backend_payments_models_py_purchase (defines)
+- backend_payments_models_py_purchase → backend_payments_models_py_purchase_str (defines)
 

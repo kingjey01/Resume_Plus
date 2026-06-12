@@ -1,25 +1,28 @@
-# Community 132: fix_production_encoding
+# Community 132: AuthAPITest
 
 **Members:** 8
 
 ## Nodes
 
-- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
-- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
+- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
+- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
+- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
+- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
+- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
+- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
+- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
+- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
 
 ## Relationships
 
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
-- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
+- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
 

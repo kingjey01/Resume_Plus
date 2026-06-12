@@ -1,13 +1,13 @@
-# Community 322: gunicorn.conf
+# Community 322: generated_plugin_registrant
 
 **Members:** 2
 
 ## Nodes
 
-- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
-- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
 
 ## Relationships
 
-- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
+- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
 

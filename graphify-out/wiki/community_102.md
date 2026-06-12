@@ -1,27 +1,27 @@
-# Community 102: purchase_summary_screen
+# Community 102: test_subscription_creation
 
 **Members:** 9
 
 ## Nodes
 
-- **purchase_summary_screen** (`lib_features_purchases_screens_purchase_summary_screen_dart`, File, degree: 8)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchaseSummaryScreenState()** (`lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate`, Function, degree: 1)
+- **test_subscription_creation** (`backend_test_subscription_creation_py`, File, degree: 8)
+- **django** (`backend_test_subscription_creation_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_test_subscription_creation_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_test_subscription_creation_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_test_subscription_creation_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_test_subscription_creation_py_import_payments_models_service`, Module, degree: 1)
+- **requests** (`backend_test_subscription_creation_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_subscription_creation_py_import_sys`, Module, degree: 1)
+- **test_subscription_creation()** (`backend_test_subscription_creation_py_test_subscription_creation`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate (defines)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_os (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_sys (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_requests (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django_contrib_auth_models_user (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_service (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_abonnement (imports)
+- backend_test_subscription_creation_py → backend_test_subscription_creation_py_test_subscription_creation (defines)
 

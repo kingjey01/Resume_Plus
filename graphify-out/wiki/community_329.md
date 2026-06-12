@@ -1,13 +1,8 @@
-# Community 329: flutter_usage_example
+# Community 329: exercise
 
-**Members:** 2
+**Members:** 1
 
 ## Nodes
 
-- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
-- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
-
-## Relationships
-
-- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
+- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
 

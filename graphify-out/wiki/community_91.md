@@ -1,27 +1,29 @@
-# Community 91: serializers
+# Community 91: notifications_screen
 
-**Members:** 9
+**Members:** 10
 
 ## Nodes
 
-- **serializers** (`backend_notifications_serializers_py`, File, degree: 8)
-- **AppNotificationSerializer** (`backend_notifications_serializers_py_appnotificationserializer`, Class, degree: 1)
-- **.models.AppNotification** (`backend_notifications_serializers_py_import_models_appnotification`, Module, degree: 1)
-- **.models.UserDevice** (`backend_notifications_serializers_py_import_models_userdevice`, Module, degree: 1)
-- **.models.UserNotification** (`backend_notifications_serializers_py_import_models_usernotification`, Module, degree: 1)
-- **rest_framework.serializers** (`backend_notifications_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
-- **Meta** (`backend_notifications_serializers_py_meta`, Class, degree: 1)
-- **UserDeviceSerializer** (`backend_notifications_serializers_py_userdeviceserializer`, Class, degree: 1)
-- **UserNotificationSerializer** (`backend_notifications_serializers_py_usernotificationserializer`, Class, degree: 1)
+- **notifications_screen** (`lib_features_notifications_screens_notifications_screen_dart`, File, degree: 9)
+- **dart:async** (`lib_features_notifications_screens_notifications_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/notifications/providers/notification_provider.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/notifications/screens/notification_detail_screen.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_NotificationsScreenState()** (`lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_rest_framework_serializers (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_userdevice (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_appnotification (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_usernotification (imports)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_userdeviceserializer (defines)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_meta (defines)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_appnotificationserializer (defines)
-- backend_notifications_serializers_py → backend_notifications_serializers_py_usernotificationserializer (defines)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_dart_async (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate (defines)
 

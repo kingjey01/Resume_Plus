@@ -1,19 +1,19 @@
-# Community 225: create_relations()
+# Community 225: summary_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **create_relations()** (`backend_seed_database_py_create_relations`, Function, degree: 3)
-- **create_services()** (`backend_seed_database_py_create_services`, Function, degree: 3)
-- **create_sessions_and_summaries()** (`backend_seed_database_py_create_sessions_and_summaries`, Function, degree: 3)
-- **create_users()** (`backend_seed_database_py_create_users`, Function, degree: 3)
-- **print_section()** (`backend_seed_database_py_print_section`, Function, degree: 9)
+- **summary_provider** (`lib_features_home_providers_summary_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart'** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_seed_database_py_create_relations → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_users → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_sessions_and_summaries → backend_seed_database_py_print_section (calls)
-- backend_seed_database_py_create_services → backend_seed_database_py_print_section (calls)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
 

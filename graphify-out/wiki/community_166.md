@@ -1,23 +1,23 @@
-# Community 166: urls
+# Community 166: settings_production
 
 **Members:** 7
 
 ## Nodes
 
-- **urls** (`backend_payments_urls_py`, File, degree: 6)
-- **django.urls.path** (`backend_payments_urls_py_import_django_urls_path`, Module, degree: 1)
-- **.flexpay_integration.create_subscription_after_payment** (`backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment`, Module, degree: 1)
-- **.flexpay_integration.flexpay_callback** (`backend_payments_urls_py_import_flexpay_integration_flexpay_callback`, Module, degree: 1)
-- **.flexpay_integration.initiate_subscription_payment** (`backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment`, Module, degree: 1)
-- **.flexpay_integration.initiate_summary_purchase** (`backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase`, Module, degree: 1)
-- **..views** (`backend_payments_urls_py_import_views`, Module, degree: 1)
+- **settings_production** (`backend_settings_production_py`, File, degree: 6)
+- **datetime.timedelta** (`backend_settings_production_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_production_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_production_py_import_decouple_csv`, Module, degree: 1)
+- **os** (`backend_settings_production_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_production_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_production_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_urls_py → backend_payments_urls_py_import_django_urls_path (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_views (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_subscription_payment (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_initiate_summary_purchase (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_flexpay_callback (imports)
-- backend_payments_urls_py → backend_payments_urls_py_import_flexpay_integration_create_subscription_after_payment (imports)
+- backend_settings_production_py → backend_settings_production_py_import_pathlib_path (imports)
+- backend_settings_production_py → backend_settings_production_py_import_datetime_timedelta (imports)
+- backend_settings_production_py → backend_settings_production_py_import_decouple_config (imports)
+- backend_settings_production_py → backend_settings_production_py_import_decouple_csv (imports)
+- backend_settings_production_py → backend_settings_production_py_import_os (imports)
+- backend_settings_production_py → backend_settings_production_py_import_pymysql (imports)
 

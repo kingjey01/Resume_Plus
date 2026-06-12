@@ -1,17 +1,17 @@
-# Community 257: simple_data_page
+# Community 257: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
 
 **Members:** 4
 
 ## Nodes
 
-- **simple_data_page** (`lib_pages_simple_data_page_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_pages_simple_data_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
-- **_SimpleDataPageState()** (`lib_pages_simple_data_page_dart_simpledatapagestate`, Function, degree: 1)
+- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_simpledatapagestate (defines)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
 

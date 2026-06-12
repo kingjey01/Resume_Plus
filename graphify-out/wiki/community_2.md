@@ -1,6 +1,6 @@
 # Community 2: serializers
 
-**Members:** 44
+**Members:** 45
 
 ## Nodes
 
@@ -41,8 +41,9 @@
 - **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
 - **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
 - **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
-- **SummarySerializer** (`backend_courses_serializers_py_summaryserializer`, Class, degree: 3)
+- **SummarySerializer** (`backend_courses_serializers_py_summaryserializer`, Class, degree: 4)
 - **.get_filiere_name()** (`backend_courses_serializers_py_summaryserializer_get_filiere_name`, Method, degree: 1)
+- **.get_professor_display()** (`backend_courses_serializers_py_summaryserializer_get_professor_display`, Method, degree: 1)
 - **.to_representation()** (`backend_courses_serializers_py_summaryserializer_to_representation`, Method, degree: 1)
 - **TranscriptionSerializer** (`backend_courses_serializers_py_transcriptionserializer`, Class, degree: 2)
 - **.get_session_info()** (`backend_courses_serializers_py_transcriptionserializer_get_session_info`, Method, degree: 1)
@@ -75,6 +76,7 @@
 - backend_courses_serializers_py → backend_courses_serializers_py_transcriptionserializer (defines)
 - backend_courses_serializers_py_transcriptionserializer → backend_courses_serializers_py_transcriptionserializer_get_session_info (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_summaryserializer (defines)
+- backend_courses_serializers_py_summaryserializer → backend_courses_serializers_py_summaryserializer_get_professor_display (defines)
 - backend_courses_serializers_py_summaryserializer → backend_courses_serializers_py_summaryserializer_get_filiere_name (defines)
 - backend_courses_serializers_py_summaryserializer → backend_courses_serializers_py_summaryserializer_to_representation (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_summarycreateserializer (defines)

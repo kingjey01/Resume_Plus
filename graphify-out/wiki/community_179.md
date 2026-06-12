@@ -1,21 +1,21 @@
-# Community 179: win32_window
+# Community 179: onboarding_screen
 
 **Members:** 6
 
 ## Nodes
 
-- **win32_window** (`windows_runner_win32_window_h`, File, degree: 5)
-- **functional** (`windows_runner_win32_window_h_import_functional`, Module, degree: 1)
-- **memory** (`windows_runner_win32_window_h_import_memory`, Module, degree: 1)
-- **string** (`windows_runner_win32_window_h_import_string`, Module, degree: 1)
-- **windows.h** (`windows_runner_win32_window_h_import_windows_h`, Module, degree: 1)
-- **Size** (`windows_runner_win32_window_h_size`, Struct, degree: 1)
+- **onboarding_screen** (`lib_features_onboarding_onboarding_screen_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_OnboardingScreenState()** (`lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_windows_h (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_functional (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_memory (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_import_string (imports)
-- windows_runner_win32_window_h → windows_runner_win32_window_h_size (defines)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate (defines)
 

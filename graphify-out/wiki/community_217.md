@@ -1,19 +1,19 @@
-# Community 217: Summary
+# Community 217: check_accessible_courses
 
 **Members:** 5
 
 ## Nodes
 
-- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
-- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
-- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
-- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
-- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
+- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
+- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
+- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
 

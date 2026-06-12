@@ -1,29 +1,31 @@
-# Community 71: test_url_routing
+# Community 71: subscriptions_screen
 
-**Members:** 10
+**Members:** 11
 
 ## Nodes
 
-- **test_url_routing** (`backend_test_url_routing_py`, File, degree: 9)
-- **django** (`backend_test_url_routing_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_test_url_routing_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.Client** (`backend_test_url_routing_py_import_django_test_client`, Module, degree: 1)
-- **django.urls.resolve** (`backend_test_url_routing_py_import_django_urls_resolve`, Module, degree: 1)
-- **django.urls.reverse** (`backend_test_url_routing_py_import_django_urls_reverse`, Module, degree: 1)
-- **os** (`backend_test_url_routing_py_import_os`, Module, degree: 1)
-- **rest_framework_simplejwt.tokens.RefreshToken** (`backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken`, Module, degree: 1)
-- **sys** (`backend_test_url_routing_py_import_sys`, Module, degree: 1)
-- **test_url_routing()** (`backend_test_url_routing_py_test_url_routing`, Function, degree: 1)
+- **subscriptions_screen** (`lib_features_subscriptions_screens_subscriptions_screen_dart`, File, degree: 10)
+- **package:flutter/material.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/service_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/widgets/service_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/widgets/subscription_card.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SubscriptionsScreenState()** (`lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_url_routing_py → backend_test_url_routing_py_import_os (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_sys (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_reverse (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_resolve (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_test_client (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_django_contrib_auth_models_user (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken (imports)
-- backend_test_url_routing_py → backend_test_url_routing_py_test_url_routing (defines)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_providers_service_provider_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_subscription_card_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_features_subscriptions_widgets_service_card_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_subscriptions_screens_subscriptions_screen_dart → lib_features_subscriptions_screens_subscriptions_screen_dart_subscriptionsscreenstate (defines)
 

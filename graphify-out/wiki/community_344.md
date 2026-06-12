@@ -1,8 +1,8 @@
-# Community 344: summary
+# Community 344: universite
 
 **Members:** 1
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **universite** (`lib_models_universite_dart`, File, degree: 0)
 

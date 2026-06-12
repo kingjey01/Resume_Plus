@@ -1,8 +1,8 @@
-# Community 343: sw
+# Community 343: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **sw** (`web_sw_js`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
 

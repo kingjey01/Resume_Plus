@@ -1,8 +1,8 @@
-# Community 335: app_notification
+# Community 335: filiere
 
 **Members:** 1
 
 ## Nodes
 
-- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
+- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
 

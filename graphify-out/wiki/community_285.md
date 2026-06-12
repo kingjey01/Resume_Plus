@@ -1,17 +1,15 @@
-# Community 285: apps
+# Community 285: main
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_payments_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
-- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
-- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
-- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

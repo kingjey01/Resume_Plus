@@ -1,19 +1,19 @@
-# Community 223: summary_provider
+# Community 223: universite_filiere.g
 
 **Members:** 5
 
 ## Nodes
 
-- **summary_provider** (`lib_features_home_providers_summary_provider_dart`, File, degree: 4)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart'** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
+- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
+- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
+- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
+- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_home_providers_summary_provider_dart → lib_features_home_providers_summary_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
 

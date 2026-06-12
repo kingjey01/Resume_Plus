@@ -1,31 +1,27 @@
-# Community 106: debug_api_calls
+# Community 106: record_audio_screen_web_safe
 
 **Members:** 9
 
 ## Nodes
 
-- **debug_api_calls** (`backend_debug_api_calls_py`, File, degree: 8)
-- **check_django_urls()** (`backend_debug_api_calls_py_check_django_urls`, Function, degree: 2)
-- **generate_flutter_debug_code()** (`backend_debug_api_calls_py_generate_flutter_debug_code`, Function, degree: 2)
-- **datetime** (`backend_debug_api_calls_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_debug_api_calls_py_import_json`, Module, degree: 1)
-- **requests** (`backend_debug_api_calls_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_debug_api_calls_py_main`, Function, degree: 5)
-- **simulate_flutter_calls()** (`backend_debug_api_calls_py_simulate_flutter_calls`, Function, degree: 2)
-- **test_all_possible_urls()** (`backend_debug_api_calls_py_test_all_possible_urls`, Function, degree: 2)
+- **record_audio_screen_web_safe** (`lib_features_upload_screens_record_audio_screen_web_safe_dart`, File, degree: 8)
+- **package:flutter/foundation.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/course_selection_screen.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_RecordAudioScreenWebSafeState()** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_requests (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_json (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_datetime (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_test_all_possible_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_simulate_flutter_calls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_check_django_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_generate_flutter_debug_code (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_main (defines)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_simulate_flutter_calls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_check_django_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_test_all_possible_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_generate_flutter_debug_code (calls)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate (defines)
 

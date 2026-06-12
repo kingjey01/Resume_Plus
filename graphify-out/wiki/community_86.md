@@ -1,29 +1,29 @@
-# Community 86: signals
+# Community 86: service_card
 
 **Members:** 10
 
 ## Nodes
 
-- **signals** (`backend_payments_signals_py`, File, degree: 9)
-- **datetime.timedelta** (`backend_payments_signals_py_import_datetime_timedelta`, Module, degree: 1)
-- **django.db.models.signals.post_save** (`backend_payments_signals_py_import_django_db_models_signals_post_save`, Module, degree: 1)
-- **django.dispatch.receiver** (`backend_payments_signals_py_import_django_dispatch_receiver`, Module, degree: 1)
-- **django.utils.timezone** (`backend_payments_signals_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_payments_signals_py_import_logging`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_signals_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_signals_py_import_models_purchase`, Module, degree: 1)
-- **on_abonnement_created_or_updated()** (`backend_payments_signals_py_on_abonnement_created_or_updated`, Function, degree: 1)
-- **on_purchase_completed()** (`backend_payments_signals_py_on_purchase_completed`, Function, degree: 1)
+- **service_card** (`lib_features_subscriptions_widgets_service_card_dart`, File, degree: 9)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_signals_py → backend_payments_signals_py_import_logging (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_django_db_models_signals_post_save (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_django_dispatch_receiver (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_django_utils_timezone (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_datetime_timedelta (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_models_abonnement (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_models_purchase (imports)
-- backend_payments_signals_py → backend_payments_signals_py_on_abonnement_created_or_updated (defines)
-- backend_payments_signals_py → backend_payments_signals_py_on_purchase_completed (defines)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
 

@@ -1,17 +1,17 @@
-# Community 267: test_summaries_response
+# Community 267: 0013_make_professeur_optional
 
 **Members:** 4
 
 ## Nodes
 
-- **test_summaries_response** (`backend_test_summaries_response_py`, File, degree: 3)
-- **json** (`backend_test_summaries_response_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_summaries_response_py_import_requests`, Module, degree: 1)
-- **test_summaries_endpoint()** (`backend_test_summaries_response_py_test_summaries_endpoint`, Function, degree: 1)
+- **0013_make_professeur_optional** (`backend_courses_migrations_0013_make_professeur_optional_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0013_make_professeur_optional_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_requests (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_json (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_test_summaries_endpoint (defines)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_migration (defines)
 

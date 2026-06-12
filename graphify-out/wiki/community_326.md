@@ -1,13 +1,13 @@
-# Community 326: __init__
+# Community 326: service
 
 **Members:** 2
 
 ## Nodes
 
-- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
-- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
+- **service** (`lib_models_service_dart`, File, degree: 1)
+- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
+- lib_models_service_dart → lib_models_service_dart_id (defines)
 

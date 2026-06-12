@@ -1,27 +1,27 @@
-# Community 108: audio_file_player_service
+# Community 108: debug_auth_headers
 
 **Members:** 9
 
 ## Nodes
 
-- **audio_file_player_service** (`lib_services_audio_file_player_service_dart`, File, degree: 8)
-- **_currentUrl()** (`lib_services_audio_file_player_service_dart_currenturl`, Function, degree: 1)
-- **_duration()** (`lib_services_audio_file_player_service_dart_duration`, Function, degree: 1)
-- **package:audioplayers/audioplayers.dart** (`lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_audio_file_player_service_dart_instance`, Function, degree: 1)
-- **_isInitialized()** (`lib_services_audio_file_player_service_dart_isinitialized`, Function, degree: 1)
-- **_isPaused()** (`lib_services_audio_file_player_service_dart_ispaused`, Function, degree: 1)
-- **_position()** (`lib_services_audio_file_player_service_dart_position`, Function, degree: 1)
+- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
+- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
+- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
+- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
+- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
+- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
+- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
+- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
+- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart (imports)
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_instance (defines)
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_isinitialized (defines)
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_ispaused (defines)
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_currenturl (defines)
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_duration (defines)
-- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_position (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
+- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
 

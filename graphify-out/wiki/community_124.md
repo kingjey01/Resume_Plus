@@ -1,27 +1,25 @@
-# Community 124: create_courses()
+# Community 124: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **create_courses()** (`backend_seed_database_py_create_courses`, Function, degree: 3)
-- **create_filieres()** (`backend_seed_database_py_create_filieres`, Function, degree: 3)
-- **create_promotions()** (`backend_seed_database_py_create_promotions`, Function, degree: 3)
-- **create_universites()** (`backend_seed_database_py_create_universites`, Function, degree: 3)
-- **display_accounts()** (`backend_seed_database_py_display_accounts`, Function, degree: 3)
-- **display_statistics()** (`backend_seed_database_py_display_statistics`, Function, degree: 3)
-- **main()** (`backend_seed_database_py_main`, Function, degree: 12)
-- **print_header()** (`backend_seed_database_py_print_header`, Function, degree: 4)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- backend_seed_database_py_display_statistics → backend_seed_database_py_print_header (calls)
-- backend_seed_database_py_display_accounts → backend_seed_database_py_print_header (calls)
-- backend_seed_database_py_main → backend_seed_database_py_display_statistics (calls)
-- backend_seed_database_py_main → backend_seed_database_py_display_accounts (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_filieres (calls)
-- backend_seed_database_py_main → backend_seed_database_py_print_header (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_universites (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_promotions (calls)
-- backend_seed_database_py_main → backend_seed_database_py_create_courses (calls)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

@@ -1,21 +1,19 @@
-# Community 204: main()
+# Community 204: debug_access
 
-**Members:** 6
+**Members:** 5
 
 ## Nodes
 
-- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
-- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
-- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
-- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
-- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
-- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
+- **debug_access** (`backend_debug_access_py`, File, degree: 4)
+- **courses.models.Course** (`backend_debug_access_py_import_courses_models_course`, Module, degree: 1)
+- **django** (`backend_debug_access_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_access_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_access_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
+- backend_debug_access_py → backend_debug_access_py_import_os (imports)
+- backend_debug_access_py → backend_debug_access_py_import_django (imports)
+- backend_debug_access_py → backend_debug_access_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_access_py → backend_debug_access_py_import_courses_models_course (imports)
 

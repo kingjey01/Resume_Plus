@@ -1,21 +1,21 @@
-# Community 182: exercise_subscription_screen
+# Community 182: RunnerTests
 
 **Members:** 6
 
 ## Nodes
 
-- **exercise_subscription_screen** (`lib_features_exercises_screens_exercise_subscription_screen_dart`, File, degree: 5)
-- **_ExerciseSubscriptionScreenState()** (`lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **RunnerTests** (`macos_runnertests_runnertests_swift`, File, degree: 5)
+- **Cocoa** (`macos_runnertests_runnertests_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runnertests_runnertests_swift_import_fluttermacos`, Module, degree: 1)
+- **XCTest** (`macos_runnertests_runnertests_swift_import_xctest`, Module, degree: 1)
+- **RunnerTests** (`macos_runnertests_runnertests_swift_runnertests`, Class, degree: 1)
+- **testExample** (`macos_runnertests_runnertests_swift_testexample`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
-- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_runnertests (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_testexample (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_cocoa (imports)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_fluttermacos (imports)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_xctest (imports)
 

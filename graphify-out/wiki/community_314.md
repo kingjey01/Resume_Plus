@@ -1,15 +1,13 @@
-# Community 314: urls
+# Community 314: generated_plugin_registrant
 
-**Members:** 3
+**Members:** 2
 
 ## Nodes
 
-- **urls** (`backend_users_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_users_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_users_urls_py_import_views`, Module, degree: 1)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_urls_py → backend_users_urls_py_import_django_urls_path (imports)
-- backend_users_urls_py → backend_users_urls_py_import_views (imports)
+- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
 

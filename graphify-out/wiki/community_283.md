@@ -1,17 +1,15 @@
-# Community 283: test_endpoints_existence
+# Community 283: auth_providers
 
-**Members:** 4
+**Members:** 3
 
 ## Nodes
 
-- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
-- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
-- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
+- **auth_providers** (`lib_features_auth_providers_auth_providers_dart`, File, degree: 2)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
+- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
 

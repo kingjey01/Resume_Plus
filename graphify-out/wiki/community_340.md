@@ -1,8 +1,8 @@
-# Community 340: purchase
+# Community 340: promotion
 
 **Members:** 1
 
 ## Nodes
 
-- **purchase** (`lib_models_purchase_dart`, File, degree: 0)
+- **promotion** (`lib_models_promotion_dart`, File, degree: 0)
 

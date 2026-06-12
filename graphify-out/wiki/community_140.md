@@ -1,25 +1,25 @@
-# Community 140: settings_production_fixed
+# Community 140: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
-- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
-- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
-- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
+- **admin** (`backend_notifications_admin_py`, File, degree: 7)
+- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_notifications_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.AppNotification** (`backend_notifications_admin_py_import_models_appnotification`, Module, degree: 1)
+- **.models.UserDevice** (`backend_notifications_admin_py_import_models_userdevice`, Module, degree: 1)
+- **.models.UserNotification** (`backend_notifications_admin_py_import_models_usernotification`, Module, degree: 1)
+- **UserDeviceAdmin** (`backend_notifications_admin_py_userdeviceadmin`, Class, degree: 1)
+- **UserNotificationAdmin** (`backend_notifications_admin_py_usernotificationadmin`, Class, degree: 1)
 
 ## Relationships
 
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_django_contrib_admin (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_userdevice (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_appnotification (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_usernotification (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_userdeviceadmin (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_appnotificationadmin (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_usernotificationadmin (defines)
 

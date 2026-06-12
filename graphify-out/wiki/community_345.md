@@ -1,8 +1,8 @@
-# Community 345: filiere
+# Community 345: GeneratedPluginRegistrant
 
 **Members:** 1
 
 ## Nodes
 
-- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
+- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_h`, File, degree: 0)
 

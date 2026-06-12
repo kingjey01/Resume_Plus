@@ -1,17 +1,17 @@
-# Community 276: file_helper_io
+# Community 276: test_endpoints_existence
 
 **Members:** 4
 
 ## Nodes
 
-- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
-- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
-- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
+- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
+- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
+- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
 

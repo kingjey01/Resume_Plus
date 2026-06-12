@@ -1,31 +1,34 @@
-# Community 66: all_summaries_screen
+# Community 66: test_file_permissions
 
 **Members:** 11
 
 ## Nodes
 
-- **all_summaries_screen** (`lib_features_summaries_screens_all_summaries_screen_dart`, File, degree: 10)
-- **_AllSummariesScreenState()** (`lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
+- **test_file_permissions** (`backend_test_file_permissions_py`, File, degree: 10)
+- **check_wsgi_user()** (`backend_test_file_permissions_py_check_wsgi_user`, Function, degree: 2)
+- **django** (`backend_test_file_permissions_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_test_file_permissions_py_import_django_conf_settings`, Module, degree: 1)
+- **django.core.files.base.ContentFile** (`backend_test_file_permissions_py_import_django_core_files_base_contentfile`, Module, degree: 1)
+- **django.core.files.storage.default_storage** (`backend_test_file_permissions_py_import_django_core_files_storage_default_storage`, Module, degree: 1)
+- **os** (`backend_test_file_permissions_py_import_os`, Module, degree: 1)
+- **sys** (`backend_test_file_permissions_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_test_file_permissions_py_main`, Function, degree: 4)
+- **test_django_file_upload()** (`backend_test_file_permissions_py_test_django_file_upload`, Function, degree: 2)
+- **test_media_permissions()** (`backend_test_file_permissions_py_test_media_permissions`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate (defines)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_os (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_sys (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_conf_settings (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_base_contentfile (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_import_django_core_files_storage_default_storage (imports)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_test_media_permissions (defines)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_test_django_file_upload (defines)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_check_wsgi_user (defines)
+- backend_test_file_permissions_py → backend_test_file_permissions_py_main (defines)
+- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_django_file_upload (calls)
+- backend_test_file_permissions_py_main → backend_test_file_permissions_py_check_wsgi_user (calls)
+- backend_test_file_permissions_py_main → backend_test_file_permissions_py_test_media_permissions (calls)
 

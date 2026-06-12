@@ -1,19 +1,19 @@
-# Community 242: enhanced_auth_widget
+# Community 242: Summary
 
 **Members:** 5
 
 ## Nodes
 
-- **enhanced_auth_widget** (`lib_widgets_enhanced_auth_widget_dart`, File, degree: 4)
-- **_EnhancedAuthWidgetState()** (`lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/providers/api_provider.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
+- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
+- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
+- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
+- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
 
 ## Relationships
 
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
 

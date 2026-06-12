@@ -1,23 +1,23 @@
-# Community 172: settings_production
+# Community 172: periodic_tasks
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_production** (`backend_settings_production_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_production_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_production_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_production_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_production_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_production_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_production_py_import_pymysql`, Module, degree: 1)
+- **periodic_tasks** (`backend_notifications_periodic_tasks_py`, File, degree: 6)
+- **check_subscriptions_expired()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expired`, Function, degree: 1)
+- **check_subscriptions_expiring_soon()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon`, Function, degree: 1)
+- **celery.shared_task** (`backend_notifications_periodic_tasks_py_import_celery_shared_task`, Module, degree: 1)
+- **datetime.timedelta** (`backend_notifications_periodic_tasks_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.utils.timezone** (`backend_notifications_periodic_tasks_py_import_django_utils_timezone`, Module, degree: 1)
+- **logging** (`backend_notifications_periodic_tasks_py_import_logging`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_production_py → backend_settings_production_py_import_pathlib_path (imports)
-- backend_settings_production_py → backend_settings_production_py_import_datetime_timedelta (imports)
-- backend_settings_production_py → backend_settings_production_py_import_decouple_config (imports)
-- backend_settings_production_py → backend_settings_production_py_import_decouple_csv (imports)
-- backend_settings_production_py → backend_settings_production_py_import_os (imports)
-- backend_settings_production_py → backend_settings_production_py_import_pymysql (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_logging (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_celery_shared_task (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_django_utils_timezone (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_datetime_timedelta (imports)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon (defines)
+- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expired (defines)
 

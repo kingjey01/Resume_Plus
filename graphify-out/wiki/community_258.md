@@ -1,17 +1,17 @@
-# Community 258: celery
+# Community 258: file_helper_io
 
 **Members:** 4
 
 ## Nodes
 
-- **celery** (`backend_resume_backend_celery_py`, File, degree: 3)
-- **debug_task()** (`backend_resume_backend_celery_py_debug_task`, Function, degree: 1)
-- **celery.Celery** (`backend_resume_backend_celery_py_import_celery_celery`, Module, degree: 1)
-- **os** (`backend_resume_backend_celery_py_import_os`, Module, degree: 1)
+- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
+- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
+- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
+- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_os (imports)
-- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_celery_celery (imports)
-- backend_resume_backend_celery_py → backend_resume_backend_celery_py_debug_task (defines)
+- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
+- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
+- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
 

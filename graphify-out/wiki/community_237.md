@@ -1,19 +1,19 @@
-# Community 237: 0007_transcription_summary_transcription
+# Community 237: fix_user_promotion
 
 **Members:** 5
 
 ## Nodes
 
-- **0007_transcription_summary_transcription** (`backend_courses_migrations_0007_transcription_summary_transcription_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0007_transcription_summary_transcription_py_migration`, Class, degree: 1)
+- **fix_user_promotion** (`backend_fix_user_promotion_py`, File, degree: 4)
+- **courses.models.Promotion** (`backend_fix_user_promotion_py_import_courses_models_promotion`, Module, degree: 1)
+- **django** (`backend_fix_user_promotion_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_user_promotion_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_user_promotion_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models (imports)
-- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_migration (defines)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_os (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_courses_models_promotion (imports)
 
