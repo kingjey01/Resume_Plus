@@ -1,19 +1,19 @@
-# Community 258: filiere_promotion.g
+# Community 258: ExerciseAttempt
 
 **Members:** 5
 
 ## Nodes
 
-- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
-- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
-- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
-- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
-- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
+- **ExerciseAttempt** (`backend_courses_models_py_exerciseattempt`, Class, degree: 3)
+- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
+- **.__str__()** (`backend_courses_models_py_exerciseattempt_str`, Method, degree: 1)
+- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 4)
+- **.mark_accessed()** (`backend_courses_models_py_userpersonalizedexercise_mark_accessed`, Method, degree: 2)
 
 ## Relationships
 
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
-- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
+- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_str (defines)
+- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_calculate_score (defines)
+- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
+- backend_courses_models_py_userpersonalizedexercise_mark_accessed → backend_courses_models_py_summary_save (calls)
 

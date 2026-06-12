@@ -1,19 +1,19 @@
-# Community 226: summary_card
+# Community 226: service_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **summary_card** (`lib_features_home_widgets_summary_card_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

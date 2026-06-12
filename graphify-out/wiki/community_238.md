@@ -1,19 +1,19 @@
-# Community 238: PurchaseNotificationTest
+# Community 238: fix_settings_mysql
 
 **Members:** 5
 
 ## Nodes
 
-- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
-- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
-- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
-- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
-- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
+- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
+- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
+- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
+- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
+- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
 

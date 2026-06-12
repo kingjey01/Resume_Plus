@@ -1,13 +1,15 @@
-# Community 335: payment_method
+# Community 335: user
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **payment_method** (`lib_models_payment_method_dart`, File, degree: 1)
-- **PaymentMethodType** (`lib_models_payment_method_dart_paymentmethodtype`, Enum, degree: 1)
+- **user** (`lib_models_user_dart`, File, degree: 2)
+- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
+- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_payment_method_dart → lib_models_payment_method_dart_paymentmethodtype (defines)
+- lib_models_user_dart → lib_models_user_dart_groupe (defines)
+- lib_models_user_dart → lib_models_user_dart_id (defines)
 

@@ -1,21 +1,21 @@
-# Community 187: 0001_initial
+# Community 187: signals
 
 **Members:** 6
 
 ## Nodes
 
-- **0001_initial** (`backend_payments_migrations_0001_initial_py`, File, degree: 5)
-- **django.conf.settings** (`backend_payments_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_payments_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0001_initial_py_migration`, Class, degree: 1)
+- **signals** (`backend_courses_signals_py`, File, degree: 5)
+- **django.db.models.signals.post_save** (`backend_courses_signals_py_import_django_db_models_signals_post_save`, Module, degree: 1)
+- **django.dispatch.receiver** (`backend_courses_signals_py_import_django_dispatch_receiver`, Module, degree: 1)
+- **logging** (`backend_courses_signals_py_import_logging`, Module, degree: 1)
+- **.models.Summary** (`backend_courses_signals_py_import_models_summary`, Module, degree: 1)
+- **on_summary_created()** (`backend_courses_signals_py_on_summary_created`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_conf_settings (imports)
-- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_db_models (imports)
-- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_migration (defines)
+- backend_courses_signals_py → backend_courses_signals_py_import_django_db_models_signals_post_save (imports)
+- backend_courses_signals_py → backend_courses_signals_py_import_django_dispatch_receiver (imports)
+- backend_courses_signals_py → backend_courses_signals_py_import_models_summary (imports)
+- backend_courses_signals_py → backend_courses_signals_py_import_logging (imports)
+- backend_courses_signals_py → backend_courses_signals_py_on_summary_created (defines)
 

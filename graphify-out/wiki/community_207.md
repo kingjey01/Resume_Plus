@@ -1,21 +1,21 @@
-# Community 207: 0016_filiere_promotions_m2m
+# Community 207: 0004_alter_abonnement_etudiant
 
 **Members:** 6
 
 ## Nodes
 
-- **0016_filiere_promotions_m2m** (`backend_courses_migrations_0016_filiere_promotions_m2m_py`, File, degree: 5)
-- **copy_auto_to_through()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through`, Function, degree: 1)
-- **copy_through_to_auto()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto`, Function, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_migration`, Class, degree: 1)
+- **0004_alter_abonnement_etudiant** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models (imports)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto (defines)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through (defines)
-- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_migration (defines)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration (defines)
 

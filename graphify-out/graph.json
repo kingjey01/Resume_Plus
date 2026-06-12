@@ -450,185 +450,213 @@
       "node_type": "class"
     },
     {
+      "id": "backend_courses_admin_py_courseadmin_list_universites",
+      "label": ".list_universites()",
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L13",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_admin_py_courseadmin_list_filieres",
+      "label": ".list_filieres()",
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L17",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_admin_py_courseadmin_list_promotions",
+      "label": ".list_promotions()",
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L21",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_admin_py_courseadmin_get_queryset",
+      "label": ".get_queryset()",
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L25",
+      "node_type": "method"
+    },
+    {
       "id": "backend_courses_admin_py_sessionadmin",
       "label": "SessionAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L15",
+      "source_location": "L30",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_summaryadmin",
       "label": "SummaryAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L24",
+      "source_location": "L39",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_summaryadmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L31",
+      "source_location": "L46",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_universiteadmin",
       "label": "UniversiteAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L36",
+      "source_location": "L51",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_universiteadmin_list_filieres",
       "label": ".list_filieres()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L42",
+      "source_location": "L57",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_promotionadmin",
       "label": "PromotionAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L48",
+      "source_location": "L63",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_filiereadmin",
       "label": "FiliereAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L56",
+      "source_location": "L71",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_filiereadmin_list_promotions",
       "label": ".list_promotions()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L62",
+      "source_location": "L77",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_filiereadmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L66",
+      "source_location": "L81",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_transcriptionadmin",
       "label": "TranscriptionAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L71",
+      "source_location": "L86",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_transcriptionadmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L78",
+      "source_location": "L93",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_exerciseadmin",
       "label": "ExerciseAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L83",
+      "source_location": "L98",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_exerciseadmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L89",
+      "source_location": "L104",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_exercisequestionadmin",
       "label": "ExerciseQuestionAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L94",
+      "source_location": "L109",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_exercisequestionadmin_question_text_short",
       "label": ".question_text_short()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L101",
+      "source_location": "L116",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_exercisequestionadmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L105",
+      "source_location": "L120",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_exerciseattemptadmin",
       "label": "ExerciseAttemptAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L110",
+      "source_location": "L125",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_exerciseattemptadmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L116",
+      "source_location": "L131",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_professeurfilieresadmin",
       "label": "ProfesseurFilieresAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L121",
+      "source_location": "L136",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_professeurfilieresadmin_has_add_permission",
       "label": ".has_add_permission()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L128",
+      "source_location": "L143",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_professeurfilieresadmin_has_change_permission",
       "label": ".has_change_permission()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L131",
+      "source_location": "L146",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_professeurfilieresadmin_has_delete_permission",
       "label": ".has_delete_permission()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L134",
+      "source_location": "L149",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_professeurfilieresadmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L137",
+      "source_location": "L152",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_professeuradmin",
       "label": "ProfesseurAdmin",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L142",
+      "source_location": "L157",
       "node_type": "class"
     },
     {
       "id": "backend_courses_admin_py_professeuradmin_list_filieres",
       "label": ".list_filieres()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L161",
+      "source_location": "L176",
       "node_type": "method"
     },
     {
       "id": "backend_courses_admin_py_professeuradmin_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L165",
+      "source_location": "L180",
       "node_type": "method"
     },
     {
@@ -650,6 +678,13 @@
       "source_file": ".\\backend\\courses\\apps.py",
       "source_location": "L4",
       "node_type": "class"
+    },
+    {
+      "id": "backend_courses_apps_py_coursesconfig_ready",
+      "label": ".ready()",
+      "source_file": ".\\backend\\courses\\apps.py",
+      "source_location": "L8",
+      "node_type": "method"
     },
     {
       "id": "backend_courses_audio_processing_py",
@@ -2457,6 +2492,40 @@
       "node_type": "class"
     },
     {
+      "id": "backend_courses_migrations_0019_course_m2m_relations_py",
+      "label": "0019_course_m2m_relations",
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "node_type": "file"
+    },
+    {
+      "id": "backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations",
+      "label": "django.db.migrations",
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models",
+      "label": "django.db.models",
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m",
+      "label": "migrate_fk_to_m2m()",
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L4",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_migrations_0019_course_m2m_relations_py_migration",
+      "label": "Migration",
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L16",
+      "node_type": "class"
+    },
+    {
       "id": "backend_courses_models_py",
       "label": "models",
       "source_file": ".\\backend\\courses\\models.py",
@@ -2477,325 +2546,332 @@
       "node_type": "module"
     },
     {
+      "id": "backend_courses_models_py_import_django_utils_timezone",
+      "label": "django.utils.timezone",
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
       "id": "backend_courses_models_py_promotion",
       "label": "Promotion",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L5",
+      "source_location": "L6",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_promotion_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_meta",
       "label": "Meta",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_filiere",
       "label": "Filiere",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_filiere_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_universite",
       "label": "Universite",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L40",
+      "source_location": "L41",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_universite_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L50",
+      "source_location": "L51",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_professeurfilieres",
       "label": "ProfesseurFilieres",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L59",
+      "source_location": "L60",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_professeurfilieres_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L71",
+      "source_location": "L72",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_course",
       "label": "Course",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L75",
+      "source_location": "L76",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_course_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L87",
+      "source_location": "L88",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_course_is_accessible_by_user",
       "label": ".is_accessible_by_user()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L92",
+      "source_location": "L95",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_session",
       "label": "Session",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L115",
+      "source_location": "L120",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_session_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L139",
+      "source_location": "L144",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_session_audio_duration_formatted",
       "label": ".audio_duration_formatted()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L143",
+      "source_location": "L148",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_session_is_duration_valid",
       "label": ".is_duration_valid()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L155",
+      "source_location": "L160",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_transcription",
       "label": "Transcription",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L165",
+      "source_location": "L170",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_transcription_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L187",
+      "source_location": "L192",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_summary",
       "label": "Summary",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L196",
+      "source_location": "L201",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_summary_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L221",
+      "source_location": "L226",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_summary_save",
       "label": ".save()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L224",
+      "source_location": "L229",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_summary_can_generate_exercises",
       "label": ".can_generate_exercises()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L235",
+      "source_location": "L240",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_summary_author_badge",
       "label": ".author_badge()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L240",
+      "source_location": "L245",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_summary_get_author_display_for_user",
       "label": ".get_author_display_for_user()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L258",
+      "source_location": "L263",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_professeur",
       "label": "Professeur",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L283",
+      "source_location": "L288",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_professeur_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L296",
+      "source_location": "L301",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_service",
       "label": "Service",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L305",
+      "source_location": "L310",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_service_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L313",
+      "source_location": "L318",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_abonnement",
       "label": "Abonnement",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L322",
+      "source_location": "L327",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_abonnement_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L339",
+      "source_location": "L344",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_abonnement_is_active",
       "label": ".is_active()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L343",
+      "source_location": "L348",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exercise",
       "label": "Exercise",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L354",
+      "source_location": "L359",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_exercise_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L373",
+      "source_location": "L378",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exercise_questions_count",
       "label": ".questions_count()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L377",
+      "source_location": "L382",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exercisequestion",
       "label": "ExerciseQuestion",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L386",
+      "source_location": "L391",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_exercisequestion_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L401",
+      "source_location": "L406",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exerciseattempt",
       "label": "ExerciseAttempt",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L410",
+      "source_location": "L415",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_exerciseattempt_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L420",
+      "source_location": "L425",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exerciseattempt_calculate_score",
       "label": ".calculate_score()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L423",
+      "source_location": "L428",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_userpersonalizedexercise",
       "label": "UserPersonalizedExercise",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L454",
+      "source_location": "L459",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_userpersonalizedexercise_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L527",
+      "source_location": "L532",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_userpersonalizedexercise_questions_count",
       "label": ".questions_count()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L531",
+      "source_location": "L536",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_userpersonalizedexercise_mark_accessed",
       "label": ".mark_accessed()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L534",
+      "source_location": "L539",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_userpersonalizedattempt",
       "label": "UserPersonalizedAttempt",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L540",
+      "source_location": "L545",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_userpersonalizedattempt_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L589",
+      "source_location": "L594",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_userpersonalizedattempt_calculate_results",
       "label": ".calculate_results()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L592",
+      "source_location": "L597",
       "node_type": "method"
     },
     {
@@ -3052,56 +3128,56 @@
       "id": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_parse_response",
       "label": "._parse_response()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L259",
+      "source_location": "L260",
       "node_type": "method"
     },
     {
       "id": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_validate_question",
       "label": "._validate_question()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L289",
+      "source_location": "L290",
       "node_type": "method"
     },
     {
       "id": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_mock_questions",
       "label": "._generate_mock_questions()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L304",
+      "source_location": "L309",
       "node_type": "method"
     },
     {
       "id": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_easy_questions",
       "label": "._generate_easy_questions()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L346",
+      "source_location": "L351",
       "node_type": "method"
     },
     {
       "id": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_medium_questions",
       "label": "._generate_medium_questions()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L382",
+      "source_location": "L387",
       "node_type": "method"
     },
     {
       "id": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_hard_questions",
       "label": "._generate_hard_questions()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L416",
+      "source_location": "L421",
       "node_type": "method"
     },
     {
       "id": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_generic_question",
       "label": "._generate_generic_question()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L449",
+      "source_location": "L454",
       "node_type": "method"
     },
     {
       "id": "backend_courses_personalized_exercise_generator_py_generate_personalized_exercise",
       "label": "generate_personalized_exercise()",
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L486",
+      "source_location": "L491",
       "node_type": "function"
     },
     {
@@ -3404,179 +3480,262 @@
       "node_type": "class"
     },
     {
+      "id": "backend_courses_serializers_py_courseserializer_get_universites_noms",
+      "label": ".get_universites_noms()",
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L32",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_serializers_py_courseserializer_get_filieres_noms",
+      "label": ".get_filieres_noms()",
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L35",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_serializers_py_courseserializer_get_promotions_noms",
+      "label": ".get_promotions_noms()",
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L38",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_serializers_py_courseserializer_get_universite_nom",
+      "label": ".get_universite_nom()",
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L41",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_serializers_py_courseserializer_get_filiere_nom",
+      "label": ".get_filiere_nom()",
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L45",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_serializers_py_courseserializer_get_promotion_nom",
+      "label": ".get_promotion_nom()",
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L49",
+      "node_type": "method"
+    },
+    {
       "id": "backend_courses_serializers_py_sessionserializer",
       "label": "SessionSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L37",
+      "source_location": "L66",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_sessionserializer_get_has_ai_summary",
       "label": ".get_has_ai_summary()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L54",
+      "source_location": "L83",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_sessionserializer_get_ai_summary_id",
       "label": ".get_ai_summary_id()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L58",
+      "source_location": "L87",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_sessioncreateserializer",
       "label": "SessionCreateSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L64",
+      "source_location": "L93",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_sessioncreateserializer_validate_professeur_fk",
       "label": ".validate_professeur_fk()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L75",
+      "source_location": "L104",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_transcriptionserializer",
       "label": "TranscriptionSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L82",
+      "source_location": "L111",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_transcriptionserializer_get_session_info",
       "label": ".get_session_info()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L91",
+      "source_location": "L120",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_summaryserializer",
       "label": "SummarySerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L100",
+      "source_location": "L129",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_summaryserializer_get_filiere_name",
       "label": ".get_filiere_name()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L107",
+      "source_location": "L136",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_summaryserializer_to_representation",
       "label": ".to_representation()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L125",
+      "source_location": "L155",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_summarycreateserializer",
       "label": "SummaryCreateSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L178",
+      "source_location": "L208",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_summarycreateserializer_validate_professeur",
       "label": ".validate_professeur()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L190",
+      "source_location": "L220",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_summarycreateserializer_validate_texte_resume",
       "label": ".validate_texte_resume()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L196",
+      "source_location": "L226",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_summarycreateserializer_validate_titre",
       "label": ".validate_titre()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L216",
+      "source_location": "L246",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_summarycreateserializer_create",
       "label": ".create()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L223",
+      "source_location": "L253",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_promotionserializer",
       "label": "PromotionSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L275",
+      "source_location": "L305",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_filiereserializer",
       "label": "FiliereSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L281",
+      "source_location": "L311",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_universiteserializer",
       "label": "UniversiteSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L289",
+      "source_location": "L319",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_filierewithuniversiteserializer",
       "label": "FiliereWithUniversiteSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L297",
+      "source_location": "L327",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_filierewithuniversiteserializer_get_universites",
       "label": ".get_universites()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L304",
+      "source_location": "L334",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_serviceserializer",
       "label": "ServiceSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L312",
+      "source_location": "L342",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_abonnementserializer",
       "label": "AbonnementSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L319",
+      "source_location": "L349",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_abonnementserializer_create",
       "label": ".create()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L331",
+      "source_location": "L361",
       "node_type": "method"
     },
     {
       "id": "backend_courses_serializers_py_abonnementcreateserializer",
       "label": "AbonnementCreateSerializer",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L337",
+      "source_location": "L367",
       "node_type": "class"
     },
     {
       "id": "backend_courses_serializers_py_abonnementcreateserializer_create",
       "label": ".create()",
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L342",
+      "source_location": "L372",
       "node_type": "method"
+    },
+    {
+      "id": "backend_courses_signals_py",
+      "label": "signals",
+      "source_file": ".\\backend\\courses\\signals.py",
+      "node_type": "file"
+    },
+    {
+      "id": "backend_courses_signals_py_import_django_db_models_signals_post_save",
+      "label": "django.db.models.signals.post_save",
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_signals_py_import_django_dispatch_receiver",
+      "label": "django.dispatch.receiver",
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_signals_py_import_models_summary",
+      "label": ".models.Summary",
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_signals_py_import_logging",
+      "label": "logging",
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_signals_py_on_summary_created",
+      "label": "on_summary_created()",
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L10",
+      "node_type": "function"
     },
     {
       "id": "backend_courses_tasks_py",
@@ -3630,7 +3789,7 @@
       "id": "backend_courses_tasks_py_process_audio_session_task",
       "label": "process_audio_session_task()",
       "source_file": ".\\backend\\courses\\tasks.py",
-      "source_location": "L251",
+      "source_location": "L233",
       "node_type": "function"
     },
     {
@@ -4215,336 +4374,336 @@
       "id": "backend_courses_views_py_coursedetailview",
       "label": "CourseDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L76",
+      "source_location": "L79",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_coursedetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L80",
+      "source_location": "L83",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_sessionlistcreateview",
       "label": "SessionListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L105",
+      "source_location": "L108",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_sessionlistcreateview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L114",
+      "source_location": "L117",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_sessiondetailview",
       "label": "SessionDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L137",
+      "source_location": "L140",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_sessiondetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L141",
+      "source_location": "L144",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarylistcreateview",
       "label": "SummaryListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L163",
+      "source_location": "L166",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_summarylistcreateview_get_serializer_class",
       "label": ".get_serializer_class()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L172",
+      "source_location": "L175",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarylistcreateview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L177",
+      "source_location": "L180",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarydetailview",
       "label": "SummaryDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L215",
+      "source_location": "L218",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_summarydetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L219",
+      "source_location": "L222",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summaryachetesview",
       "label": "SummaryAchetesView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L242",
+      "source_location": "L245",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_summaryachetesview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L252",
+      "source_location": "L255",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarygratuitsview",
       "label": "SummaryGratuitsView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L267",
+      "source_location": "L270",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_generate_summary_from_audio",
       "label": "generate_summary_from_audio()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L281",
+      "source_location": "L284",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_universiteviewset",
       "label": "UniversiteViewSet",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L327",
+      "source_location": "L330",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_universiteviewset_filieres",
       "label": ".filieres()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L337",
+      "source_location": "L340",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_universiteviewset_add_filiere",
       "label": ".add_filiere()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L345",
+      "source_location": "L348",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_filiereviewset",
       "label": "FiliereViewSet",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L367",
+      "source_location": "L370",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_filiereviewset_promotions",
       "label": ".promotions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L377",
+      "source_location": "L380",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_filiereviewset_add_promotion",
       "label": ".add_promotion()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L385",
+      "source_location": "L388",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_promotionviewset",
       "label": "PromotionViewSet",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L407",
+      "source_location": "L410",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_promotionviewset_filieres",
       "label": ".filieres()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L418",
+      "source_location": "L421",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_servicelistcreateview",
       "label": "ServiceListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L427",
+      "source_location": "L430",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_servicelistcreateview_get_permissions",
       "label": ".get_permissions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L436",
+      "source_location": "L439",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_servicedetailview",
       "label": "ServiceDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L443",
+      "source_location": "L446",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_servicedetailview_get_permissions",
       "label": ".get_permissions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L448",
+      "source_location": "L451",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_abonnementlistcreateview",
       "label": "AbonnementListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L456",
+      "source_location": "L459",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_abonnementlistcreateview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L464",
+      "source_location": "L467",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_abonnementlistcreateview_get_serializer_class",
       "label": ".get_serializer_class()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L468",
+      "source_location": "L471",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_abonnementdetailview",
       "label": "AbonnementDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L474",
+      "source_location": "L477",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_abonnementdetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L478",
+      "source_location": "L481",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_upload_audio_session",
       "label": "upload_audio_session()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L486",
+      "source_location": "L489",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_audio_sessions",
       "label": "get_audio_sessions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L684",
+      "source_location": "L687",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_process_audio_session",
       "label": "process_audio_session()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L737",
+      "source_location": "L740",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_retry_failed_session",
       "label": "retry_failed_session()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L843",
+      "source_location": "L846",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_sessions_queue",
       "label": "get_sessions_queue()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L962",
+      "source_location": "L965",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_audio_file",
       "label": "get_audio_file()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1021",
+      "source_location": "L1024",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_serve_audio_file",
       "label": "serve_audio_file()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1098",
+      "source_location": "L1101",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_audio_processing_stats",
       "label": "get_audio_processing_stats()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1136",
+      "source_location": "L1139",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_batch_process_audio_sessions",
       "label": "batch_process_audio_sessions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1158",
+      "source_location": "L1161",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_auto_process_pending_sessions",
       "label": "auto_process_pending_sessions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1189",
+      "source_location": "L1192",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_cleanup_old_audio_files",
       "label": "cleanup_old_audio_files()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1219",
+      "source_location": "L1222",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_professeurlistview",
       "label": "ProfesseurListView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1248",
+      "source_location": "L1251",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_professeurlistview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1261",
+      "source_location": "L1264",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_validate_summary_view",
       "label": "validate_summary_view()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1294",
+      "source_location": "L1297",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_edit_summary_view",
       "label": "edit_summary_view()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1355",
+      "source_location": "L1358",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_summaries_for_validation_view",
       "label": "get_summaries_for_validation_view()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1429",
+      "source_location": "L1432",
       "node_type": "function"
     },
     {
@@ -6963,6 +7122,33 @@
       "node_type": "class"
     },
     {
+      "id": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py",
+      "label": "0002_alter_appnotification_notification_type",
+      "source_file": ".\\backend\\notifications\\migrations\\0002_alter_appnotification_notification_type.py",
+      "node_type": "file"
+    },
+    {
+      "id": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py_import_django_db_migrations",
+      "label": "django.db.migrations",
+      "source_file": ".\\backend\\notifications\\migrations\\0002_alter_appnotification_notification_type.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py_import_django_db_models",
+      "label": "django.db.models",
+      "source_file": ".\\backend\\notifications\\migrations\\0002_alter_appnotification_notification_type.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py_migration",
+      "label": "Migration",
+      "source_file": ".\\backend\\notifications\\migrations\\0002_alter_appnotification_notification_type.py",
+      "source_location": "L6",
+      "node_type": "class"
+    },
+    {
       "id": "backend_notifications_models_py",
       "label": "models",
       "source_file": ".\\backend\\notifications\\models.py",
@@ -7232,52 +7418,59 @@
       "node_type": "function"
     },
     {
+      "id": "backend_notifications_tasks_py_notify_summary_to_validate",
+      "label": "notify_summary_to_validate()",
+      "source_file": ".\\backend\\notifications\\tasks.py",
+      "source_location": "L326",
+      "node_type": "function"
+    },
+    {
       "id": "backend_notifications_tasks_py_notify_subscription_paid",
       "label": "notify_subscription_paid()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L330",
+      "source_location": "L391",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_subscription_expiring_soon",
       "label": "notify_subscription_expiring_soon()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L369",
+      "source_location": "L430",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_subscription_expired",
       "label": "notify_subscription_expired()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L410",
+      "source_location": "L471",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_summary_purchased",
       "label": "notify_summary_purchased()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L450",
+      "source_location": "L511",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_subscription_payment_failed",
       "label": "notify_subscription_payment_failed()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L488",
+      "source_location": "L549",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_summary_purchase_failed",
       "label": "notify_summary_purchase_failed()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L527",
+      "source_location": "L588",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_cleanup_inactive_tokens",
       "label": "cleanup_inactive_tokens()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L570",
+      "source_location": "L631",
       "node_type": "function"
     },
     {
@@ -12831,6 +13024,33 @@
       "node_type": "class"
     },
     {
+      "id": "backend_users_migrations_0006_alter_userprofile_groupe_py",
+      "label": "0006_alter_userprofile_groupe",
+      "source_file": ".\\backend\\users\\migrations\\0006_alter_userprofile_groupe.py",
+      "node_type": "file"
+    },
+    {
+      "id": "backend_users_migrations_0006_alter_userprofile_groupe_py_import_django_db_migrations",
+      "label": "django.db.migrations",
+      "source_file": ".\\backend\\users\\migrations\\0006_alter_userprofile_groupe.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_users_migrations_0006_alter_userprofile_groupe_py_import_django_db_models",
+      "label": "django.db.models",
+      "source_file": ".\\backend\\users\\migrations\\0006_alter_userprofile_groupe.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_users_migrations_0006_alter_userprofile_groupe_py_migration",
+      "label": "Migration",
+      "source_file": ".\\backend\\users\\migrations\\0006_alter_userprofile_groupe.py",
+      "source_location": "L6",
+      "node_type": "class"
+    },
+    {
       "id": "backend_users_models_py",
       "label": "models",
       "source_file": ".\\backend\\users\\models.py",
@@ -14590,38 +14810,59 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart",
+      "label": "package:resume_plus_clean/models/personalized_exercise.dart'",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "label": "package:resume_plus_clean/services/api_service.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L3",
+      "source_location": "L4",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L4",
+      "source_location": "L5",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart",
       "label": "package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L5",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart",
       "label": "package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L6",
+      "source_location": "L7",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_quiz_result_screen_dart",
+      "label": "package:resume_plus_clean/features/exercises/screens/quiz_result_screen.dart",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L8",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_personalized_quiz_screen_dart",
+      "label": "package:resume_plus_clean/features/exercises/screens/personalized_quiz_screen.dart",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L9",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate",
       "label": "_ExercisesScreenState()",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L12",
+      "source_location": "L40",
       "node_type": "function"
     },
     {
@@ -14789,24 +15030,17 @@
       "node_type": "module"
     },
     {
-      "id": "lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart",
-      "label": "package:resume_plus_clean/models/personalized_exercise.dart",
-      "source_file": ".\\lib\\features\\exercises\\screens\\personalized_quiz_screen.dart",
-      "source_location": "L5",
-      "node_type": "module"
-    },
-    {
       "id": "lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\personalized_quiz_screen.dart",
-      "source_location": "L6",
+      "source_location": "L5",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_personalized_quiz_screen_dart_personalizedquizscreenstate",
       "label": "_PersonalizedQuizScreenState()",
       "source_file": ".\\lib\\features\\exercises\\screens\\personalized_quiz_screen.dart",
-      "source_location": "L20",
+      "source_location": "L19",
       "node_type": "function"
     },
     {
@@ -20853,13 +21087,53 @@
       "weight": 1.0
     },
     {
+      "source": "backend_courses_admin_py_courseadmin",
+      "target": "backend_courses_admin_py_courseadmin_list_universites",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_admin_py_courseadmin",
+      "target": "backend_courses_admin_py_courseadmin_list_filieres",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_admin_py_courseadmin",
+      "target": "backend_courses_admin_py_courseadmin_list_promotions",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_admin_py_courseadmin",
+      "target": "backend_courses_admin_py_courseadmin_get_queryset",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\admin.py",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
       "source": "backend_courses_admin_py",
       "target": "backend_courses_admin_py_sessionadmin",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L15",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -20869,7 +21143,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L24",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -20879,7 +21153,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L31",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -20889,7 +21163,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L36",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -20899,7 +21173,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L42",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -20909,7 +21183,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L48",
+      "source_location": "L63",
       "weight": 1.0
     },
     {
@@ -20919,7 +21193,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L56",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -20929,7 +21203,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L62",
+      "source_location": "L77",
       "weight": 1.0
     },
     {
@@ -20939,7 +21213,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L66",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -20949,7 +21223,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L71",
+      "source_location": "L86",
       "weight": 1.0
     },
     {
@@ -20959,7 +21233,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L78",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -20969,7 +21243,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L83",
+      "source_location": "L98",
       "weight": 1.0
     },
     {
@@ -20979,7 +21253,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L89",
+      "source_location": "L104",
       "weight": 1.0
     },
     {
@@ -20989,7 +21263,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L94",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -20999,7 +21273,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L101",
+      "source_location": "L116",
       "weight": 1.0
     },
     {
@@ -21009,7 +21283,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L105",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -21019,7 +21293,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L110",
+      "source_location": "L125",
       "weight": 1.0
     },
     {
@@ -21029,7 +21303,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L116",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
@@ -21039,7 +21313,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L121",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -21049,7 +21323,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L128",
+      "source_location": "L143",
       "weight": 1.0
     },
     {
@@ -21059,7 +21333,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L131",
+      "source_location": "L146",
       "weight": 1.0
     },
     {
@@ -21069,7 +21343,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L134",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
@@ -21079,7 +21353,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L137",
+      "source_location": "L152",
       "weight": 1.0
     },
     {
@@ -21089,7 +21363,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L142",
+      "source_location": "L157",
       "weight": 1.0
     },
     {
@@ -21099,7 +21373,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L161",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -21109,7 +21383,16 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\admin.py",
-      "source_location": "L165",
+      "source_location": "L180",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_admin_py_courseadmin_get_queryset",
+      "target": "backend_courses_admin_py_professeuradmin_get_queryset",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".\\backend\\courses\\admin.py",
       "weight": 1.0
     },
     {
@@ -21193,6 +21476,16 @@
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\apps.py",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_apps_py_coursesconfig",
+      "target": "backend_courses_apps_py_coursesconfig_ready",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\apps.py",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -24066,6 +24359,46 @@
       "weight": 1.0
     },
     {
+      "source": "backend_courses_migrations_0019_course_m2m_relations_py",
+      "target": "backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0019_course_m2m_relations_py",
+      "target": "backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0019_course_m2m_relations_py",
+      "target": "backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0019_course_m2m_relations_py",
+      "target": "backend_courses_migrations_0019_course_m2m_relations_py_migration",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0019_course_m2m_relations.py",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
       "source": "backend_courses_models_py",
       "target": "backend_courses_models_py_import_django_db_models",
       "relation": "imports",
@@ -24087,12 +24420,22 @@
     },
     {
       "source": "backend_courses_models_py",
+      "target": "backend_courses_models_py_import_django_utils_timezone",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_models_py",
       "target": "backend_courses_models_py_promotion",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -24102,7 +24445,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -24112,7 +24455,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -24122,7 +24465,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L21",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -24132,7 +24475,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -24142,7 +24485,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -24152,7 +24495,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L50",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -24162,7 +24505,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -24172,7 +24515,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0
     },
     {
@@ -24182,7 +24525,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L75",
+      "source_location": "L76",
       "weight": 1.0
     },
     {
@@ -24192,7 +24535,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L87",
+      "source_location": "L88",
       "weight": 1.0
     },
     {
@@ -24202,7 +24545,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L92",
+      "source_location": "L95",
       "weight": 1.0
     },
     {
@@ -24212,7 +24555,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L115",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -24222,7 +24565,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L139",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -24232,7 +24575,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L143",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
@@ -24242,7 +24585,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L155",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -24252,7 +24595,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L165",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
@@ -24262,7 +24605,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L187",
+      "source_location": "L192",
       "weight": 1.0
     },
     {
@@ -24272,7 +24615,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L196",
+      "source_location": "L201",
       "weight": 1.0
     },
     {
@@ -24282,7 +24625,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L221",
+      "source_location": "L226",
       "weight": 1.0
     },
     {
@@ -24292,7 +24635,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L224",
+      "source_location": "L229",
       "weight": 1.0
     },
     {
@@ -24302,7 +24645,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L235",
+      "source_location": "L240",
       "weight": 1.0
     },
     {
@@ -24312,7 +24655,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L240",
+      "source_location": "L245",
       "weight": 1.0
     },
     {
@@ -24322,7 +24665,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L258",
+      "source_location": "L263",
       "weight": 1.0
     },
     {
@@ -24332,7 +24675,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L283",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -24342,7 +24685,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L296",
+      "source_location": "L301",
       "weight": 1.0
     },
     {
@@ -24352,7 +24695,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L305",
+      "source_location": "L310",
       "weight": 1.0
     },
     {
@@ -24362,7 +24705,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L313",
+      "source_location": "L318",
       "weight": 1.0
     },
     {
@@ -24372,7 +24715,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L322",
+      "source_location": "L327",
       "weight": 1.0
     },
     {
@@ -24382,7 +24725,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L339",
+      "source_location": "L344",
       "weight": 1.0
     },
     {
@@ -24392,7 +24735,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L343",
+      "source_location": "L348",
       "weight": 1.0
     },
     {
@@ -24402,7 +24745,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L354",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
@@ -24412,7 +24755,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L373",
+      "source_location": "L378",
       "weight": 1.0
     },
     {
@@ -24422,7 +24765,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L377",
+      "source_location": "L382",
       "weight": 1.0
     },
     {
@@ -24432,7 +24775,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L386",
+      "source_location": "L391",
       "weight": 1.0
     },
     {
@@ -24442,7 +24785,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L401",
+      "source_location": "L406",
       "weight": 1.0
     },
     {
@@ -24452,7 +24795,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L410",
+      "source_location": "L415",
       "weight": 1.0
     },
     {
@@ -24462,7 +24805,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L420",
+      "source_location": "L425",
       "weight": 1.0
     },
     {
@@ -24472,7 +24815,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L423",
+      "source_location": "L428",
       "weight": 1.0
     },
     {
@@ -24482,7 +24825,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L454",
+      "source_location": "L459",
       "weight": 1.0
     },
     {
@@ -24492,7 +24835,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L527",
+      "source_location": "L532",
       "weight": 1.0
     },
     {
@@ -24502,7 +24845,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L531",
+      "source_location": "L536",
       "weight": 1.0
     },
     {
@@ -24512,7 +24855,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L534",
+      "source_location": "L539",
       "weight": 1.0
     },
     {
@@ -24522,7 +24865,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L540",
+      "source_location": "L545",
       "weight": 1.0
     },
     {
@@ -24532,7 +24875,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L589",
+      "source_location": "L594",
       "weight": 1.0
     },
     {
@@ -24542,7 +24885,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L592",
+      "source_location": "L597",
       "weight": 1.0
     },
     {
@@ -24919,7 +25262,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L259",
+      "source_location": "L260",
       "weight": 1.0
     },
     {
@@ -24929,7 +25272,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L289",
+      "source_location": "L290",
       "weight": 1.0
     },
     {
@@ -24939,7 +25282,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L304",
+      "source_location": "L309",
       "weight": 1.0
     },
     {
@@ -24949,7 +25292,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L346",
+      "source_location": "L351",
       "weight": 1.0
     },
     {
@@ -24959,7 +25302,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L382",
+      "source_location": "L387",
       "weight": 1.0
     },
     {
@@ -24969,7 +25312,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L416",
+      "source_location": "L421",
       "weight": 1.0
     },
     {
@@ -24979,7 +25322,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L449",
+      "source_location": "L454",
       "weight": 1.0
     },
     {
@@ -24989,7 +25332,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\personalized_exercise_generator.py",
-      "source_location": "L486",
+      "source_location": "L491",
       "weight": 1.0
     },
     {
@@ -25048,7 +25391,7 @@
     },
     {
       "source": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_mock_questions",
-      "target": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_hard_questions",
+      "target": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_medium_questions",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -25057,7 +25400,7 @@
     },
     {
       "source": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_mock_questions",
-      "target": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_medium_questions",
+      "target": "backend_courses_personalized_exercise_generator_py_personalizedexercisegenerator_generate_hard_questions",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -25345,7 +25688,7 @@
     },
     {
       "source": "backend_courses_personalized_exercise_views_py_generate_personalized_exercise_view",
-      "target": "backend_courses_personalized_exercise_views_py_launch_generation",
+      "target": "backend_courses_personalized_exercise_views_py_has_exercise_subscription",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -25354,7 +25697,7 @@
     },
     {
       "source": "backend_courses_personalized_exercise_views_py_generate_personalized_exercise_view",
-      "target": "backend_courses_personalized_exercise_views_py_has_exercise_subscription",
+      "target": "backend_courses_personalized_exercise_views_py_launch_generation",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -25547,13 +25890,73 @@
       "weight": 1.0
     },
     {
+      "source": "backend_courses_serializers_py_courseserializer",
+      "target": "backend_courses_serializers_py_courseserializer_get_universites_noms",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_serializers_py_courseserializer",
+      "target": "backend_courses_serializers_py_courseserializer_get_filieres_noms",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_serializers_py_courseserializer",
+      "target": "backend_courses_serializers_py_courseserializer_get_promotions_noms",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_serializers_py_courseserializer",
+      "target": "backend_courses_serializers_py_courseserializer_get_universite_nom",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_serializers_py_courseserializer",
+      "target": "backend_courses_serializers_py_courseserializer_get_filiere_nom",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_serializers_py_courseserializer",
+      "target": "backend_courses_serializers_py_courseserializer_get_promotion_nom",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\serializers.py",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
       "source": "backend_courses_serializers_py",
       "target": "backend_courses_serializers_py_sessionserializer",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L37",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
@@ -25563,7 +25966,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L54",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -25573,7 +25976,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L58",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -25583,7 +25986,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L64",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -25593,7 +25996,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L75",
+      "source_location": "L104",
       "weight": 1.0
     },
     {
@@ -25603,7 +26006,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L82",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -25613,7 +26016,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L91",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -25623,7 +26026,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L100",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -25633,7 +26036,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L107",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -25643,7 +26046,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L125",
+      "source_location": "L155",
       "weight": 1.0
     },
     {
@@ -25653,7 +26056,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L178",
+      "source_location": "L208",
       "weight": 1.0
     },
     {
@@ -25663,7 +26066,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L190",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
@@ -25673,7 +26076,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L196",
+      "source_location": "L226",
       "weight": 1.0
     },
     {
@@ -25683,7 +26086,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L216",
+      "source_location": "L246",
       "weight": 1.0
     },
     {
@@ -25693,7 +26096,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L223",
+      "source_location": "L253",
       "weight": 1.0
     },
     {
@@ -25703,7 +26106,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L275",
+      "source_location": "L305",
       "weight": 1.0
     },
     {
@@ -25713,7 +26116,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L281",
+      "source_location": "L311",
       "weight": 1.0
     },
     {
@@ -25723,7 +26126,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L289",
+      "source_location": "L319",
       "weight": 1.0
     },
     {
@@ -25733,7 +26136,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L297",
+      "source_location": "L327",
       "weight": 1.0
     },
     {
@@ -25743,7 +26146,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L304",
+      "source_location": "L334",
       "weight": 1.0
     },
     {
@@ -25753,7 +26156,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L312",
+      "source_location": "L342",
       "weight": 1.0
     },
     {
@@ -25763,7 +26166,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L319",
+      "source_location": "L349",
       "weight": 1.0
     },
     {
@@ -25773,7 +26176,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L331",
+      "source_location": "L361",
       "weight": 1.0
     },
     {
@@ -25783,7 +26186,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L337",
+      "source_location": "L367",
       "weight": 1.0
     },
     {
@@ -25793,7 +26196,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\serializers.py",
-      "source_location": "L342",
+      "source_location": "L372",
       "weight": 1.0
     },
     {
@@ -25812,6 +26215,56 @@
       "confidence": "INFERRED",
       "confidence_score": 0.7,
       "source_file": ".\\backend\\courses\\serializers.py",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_signals_py",
+      "target": "backend_courses_signals_py_import_django_db_models_signals_post_save",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_signals_py",
+      "target": "backend_courses_signals_py_import_django_dispatch_receiver",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_signals_py",
+      "target": "backend_courses_signals_py_import_models_summary",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_signals_py",
+      "target": "backend_courses_signals_py_import_logging",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_signals_py",
+      "target": "backend_courses_signals_py_on_summary_created",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\signals.py",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -25881,7 +26334,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\tasks.py",
-      "source_location": "L251",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -26709,7 +27162,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L76",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -26719,7 +27172,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L80",
+      "source_location": "L83",
       "weight": 1.0
     },
     {
@@ -26729,7 +27182,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L105",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -26739,7 +27192,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L114",
+      "source_location": "L117",
       "weight": 1.0
     },
     {
@@ -26749,7 +27202,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L137",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -26759,7 +27212,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L141",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -26769,7 +27222,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L163",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -26779,7 +27232,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L172",
+      "source_location": "L175",
       "weight": 1.0
     },
     {
@@ -26789,7 +27242,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L177",
+      "source_location": "L180",
       "weight": 1.0
     },
     {
@@ -26799,7 +27252,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L215",
+      "source_location": "L218",
       "weight": 1.0
     },
     {
@@ -26809,7 +27262,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L219",
+      "source_location": "L222",
       "weight": 1.0
     },
     {
@@ -26819,7 +27272,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L242",
+      "source_location": "L245",
       "weight": 1.0
     },
     {
@@ -26829,7 +27282,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L252",
+      "source_location": "L255",
       "weight": 1.0
     },
     {
@@ -26839,7 +27292,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L267",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -26849,7 +27302,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L281",
+      "source_location": "L284",
       "weight": 1.0
     },
     {
@@ -26859,7 +27312,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L327",
+      "source_location": "L330",
       "weight": 1.0
     },
     {
@@ -26869,7 +27322,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L337",
+      "source_location": "L340",
       "weight": 1.0
     },
     {
@@ -26879,7 +27332,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L345",
+      "source_location": "L348",
       "weight": 1.0
     },
     {
@@ -26889,7 +27342,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L367",
+      "source_location": "L370",
       "weight": 1.0
     },
     {
@@ -26899,7 +27352,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L377",
+      "source_location": "L380",
       "weight": 1.0
     },
     {
@@ -26909,7 +27362,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L385",
+      "source_location": "L388",
       "weight": 1.0
     },
     {
@@ -26919,7 +27372,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L407",
+      "source_location": "L410",
       "weight": 1.0
     },
     {
@@ -26929,7 +27382,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L418",
+      "source_location": "L421",
       "weight": 1.0
     },
     {
@@ -26939,7 +27392,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L427",
+      "source_location": "L430",
       "weight": 1.0
     },
     {
@@ -26949,7 +27402,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L436",
+      "source_location": "L439",
       "weight": 1.0
     },
     {
@@ -26959,7 +27412,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L443",
+      "source_location": "L446",
       "weight": 1.0
     },
     {
@@ -26969,7 +27422,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L448",
+      "source_location": "L451",
       "weight": 1.0
     },
     {
@@ -26979,7 +27432,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L456",
+      "source_location": "L459",
       "weight": 1.0
     },
     {
@@ -26989,7 +27442,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L464",
+      "source_location": "L467",
       "weight": 1.0
     },
     {
@@ -26999,7 +27452,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L468",
+      "source_location": "L471",
       "weight": 1.0
     },
     {
@@ -27009,7 +27462,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L474",
+      "source_location": "L477",
       "weight": 1.0
     },
     {
@@ -27019,7 +27472,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L478",
+      "source_location": "L481",
       "weight": 1.0
     },
     {
@@ -27029,7 +27482,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L486",
+      "source_location": "L489",
       "weight": 1.0
     },
     {
@@ -27039,7 +27492,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L684",
+      "source_location": "L687",
       "weight": 1.0
     },
     {
@@ -27049,7 +27502,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L737",
+      "source_location": "L740",
       "weight": 1.0
     },
     {
@@ -27059,7 +27512,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L843",
+      "source_location": "L846",
       "weight": 1.0
     },
     {
@@ -27069,7 +27522,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L962",
+      "source_location": "L965",
       "weight": 1.0
     },
     {
@@ -27079,7 +27532,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1021",
+      "source_location": "L1024",
       "weight": 1.0
     },
     {
@@ -27089,7 +27542,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1098",
+      "source_location": "L1101",
       "weight": 1.0
     },
     {
@@ -27099,7 +27552,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1136",
+      "source_location": "L1139",
       "weight": 1.0
     },
     {
@@ -27109,7 +27562,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1158",
+      "source_location": "L1161",
       "weight": 1.0
     },
     {
@@ -27119,7 +27572,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1189",
+      "source_location": "L1192",
       "weight": 1.0
     },
     {
@@ -27129,7 +27582,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1219",
+      "source_location": "L1222",
       "weight": 1.0
     },
     {
@@ -27139,7 +27592,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1248",
+      "source_location": "L1251",
       "weight": 1.0
     },
     {
@@ -27149,7 +27602,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1261",
+      "source_location": "L1264",
       "weight": 1.0
     },
     {
@@ -27159,7 +27612,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1294",
+      "source_location": "L1297",
       "weight": 1.0
     },
     {
@@ -27169,7 +27622,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1355",
+      "source_location": "L1358",
       "weight": 1.0
     },
     {
@@ -27179,7 +27632,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1429",
+      "source_location": "L1432",
       "weight": 1.0
     },
     {
@@ -30837,6 +31290,36 @@
       "weight": 1.0
     },
     {
+      "source": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py",
+      "target": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py_import_django_db_migrations",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\notifications\\migrations\\0002_alter_appnotification_notification_type.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py",
+      "target": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py_import_django_db_models",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\notifications\\migrations\\0002_alter_appnotification_notification_type.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py",
+      "target": "backend_notifications_migrations_0002_alter_appnotification_notification_type_py_migration",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\notifications\\migrations\\0002_alter_appnotification_notification_type.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "backend_notifications_models_py",
       "target": "backend_notifications_models_py_import_logging",
       "relation": "imports",
@@ -31188,12 +31671,22 @@
     },
     {
       "source": "backend_notifications_tasks_py",
+      "target": "backend_notifications_tasks_py_notify_summary_to_validate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\notifications\\tasks.py",
+      "source_location": "L326",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_notifications_tasks_py",
       "target": "backend_notifications_tasks_py_notify_subscription_paid",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L330",
+      "source_location": "L391",
       "weight": 1.0
     },
     {
@@ -31203,7 +31696,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L369",
+      "source_location": "L430",
       "weight": 1.0
     },
     {
@@ -31213,7 +31706,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L410",
+      "source_location": "L471",
       "weight": 1.0
     },
     {
@@ -31223,7 +31716,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L450",
+      "source_location": "L511",
       "weight": 1.0
     },
     {
@@ -31233,7 +31726,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L488",
+      "source_location": "L549",
       "weight": 1.0
     },
     {
@@ -31243,7 +31736,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L527",
+      "source_location": "L588",
       "weight": 1.0
     },
     {
@@ -31253,12 +31746,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L570",
+      "source_location": "L631",
       "weight": 1.0
     },
     {
       "source": "backend_notifications_tasks_py_send_fcm_notification",
-      "target": "backend_notifications_tasks_py_is_invalid_token_error",
+      "target": "backend_notifications_tasks_py_get_fcm_app",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -31267,7 +31760,7 @@
     },
     {
       "source": "backend_notifications_tasks_py_send_fcm_notification",
-      "target": "backend_notifications_tasks_py_get_fcm_app",
+      "target": "backend_notifications_tasks_py_is_invalid_token_error",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -39654,6 +40147,36 @@
       "weight": 1.0
     },
     {
+      "source": "backend_users_migrations_0006_alter_userprofile_groupe_py",
+      "target": "backend_users_migrations_0006_alter_userprofile_groupe_py_import_django_db_migrations",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\users\\migrations\\0006_alter_userprofile_groupe.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_users_migrations_0006_alter_userprofile_groupe_py",
+      "target": "backend_users_migrations_0006_alter_userprofile_groupe_py_import_django_db_models",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\users\\migrations\\0006_alter_userprofile_groupe.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_users_migrations_0006_alter_userprofile_groupe_py",
+      "target": "backend_users_migrations_0006_alter_userprofile_groupe_py_migration",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\users\\migrations\\0006_alter_userprofile_groupe.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "backend_users_models_py",
       "target": "backend_users_models_py_import_django_contrib_auth_models_user",
       "relation": "imports",
@@ -41963,7 +42486,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41973,7 +42496,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41983,7 +42506,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41993,7 +42516,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42003,12 +42526,42 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercises_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_quiz_result_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercises_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_personalized_quiz_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercises_screen_dart",
       "target": "lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L12",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -42213,7 +42766,7 @@
     },
     {
       "source": "lib_features_exercises_screens_personalized_quiz_screen_dart",
-      "target": "lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart",
+      "target": "lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42223,22 +42776,12 @@
     },
     {
       "source": "lib_features_exercises_screens_personalized_quiz_screen_dart",
-      "target": "lib_features_exercises_screens_personalized_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
-      "relation": "imports",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".\\lib\\features\\exercises\\screens\\personalized_quiz_screen.dart",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "lib_features_exercises_screens_personalized_quiz_screen_dart",
       "target": "lib_features_exercises_screens_personalized_quiz_screen_dart_personalizedquizscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\exercises\\screens\\personalized_quiz_screen.dart",
-      "source_location": "L20",
+      "source_location": "L19",
       "weight": 1.0
     },
     {

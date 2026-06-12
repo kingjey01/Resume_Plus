@@ -1,23 +1,23 @@
-# Community 177: Summary
+# Community 177: middleware
 
 **Members:** 7
 
 ## Nodes
 
-- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
-- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
-- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
-- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
-- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 4)
-- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
-- **.mark_accessed()** (`backend_courses_models_py_userpersonalizedexercise_mark_accessed`, Method, degree: 2)
+- **middleware** (`backend_users_middleware_py`, File, degree: 4)
+- **datetime** (`backend_users_middleware_py_import_datetime`, Module, degree: 1)
+- **django.utils.deprecation.MiddlewareMixin** (`backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin`, Module, degree: 1)
+- **logging** (`backend_users_middleware_py_import_logging`, Module, degree: 1)
+- **JWTAuthenticationMiddleware** (`backend_users_middleware_py_jwtauthenticationmiddleware`, Class, degree: 3)
+- **.process_request()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_request`, Method, degree: 1)
+- **.process_response()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_response`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_save (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
-- backend_courses_models_py_userpersonalizedexercise_mark_accessed → backend_courses_models_py_summary_save (calls)
+- backend_users_middleware_py → backend_users_middleware_py_import_logging (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_datetime (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin (imports)
+- backend_users_middleware_py → backend_users_middleware_py_jwtauthenticationmiddleware (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_request (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_response (defines)
 

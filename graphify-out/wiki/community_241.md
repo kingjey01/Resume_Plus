@@ -1,19 +1,19 @@
-# Community 241: universite_filiere.g
+# Community 241: check_personalized_exercise_exists()
 
 **Members:** 5
 
 ## Nodes
 
-- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
-- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
-- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
+- **check_personalized_exercise_exists()** (`backend_courses_personalized_exercise_views_py_check_personalized_exercise_exists`, Function, degree: 2)
+- **_get_difficulty_label()** (`backend_courses_personalized_exercise_views_py_get_difficulty_label`, Function, degree: 5)
+- **get_personalized_attempt_detail_view()** (`backend_courses_personalized_exercise_views_py_get_personalized_attempt_detail_view`, Function, degree: 2)
+- **get_personalized_attempts_view()** (`backend_courses_personalized_exercise_views_py_get_personalized_attempts_view`, Function, degree: 2)
+- **get_personalized_exercise_view()** (`backend_courses_personalized_exercise_views_py_get_personalized_exercise_view`, Function, degree: 2)
 
 ## Relationships
 
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
+- backend_courses_personalized_exercise_views_py_get_personalized_exercise_view → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
+- backend_courses_personalized_exercise_views_py_get_personalized_attempts_view → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
+- backend_courses_personalized_exercise_views_py_get_personalized_attempt_detail_view → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
+- backend_courses_personalized_exercise_views_py_check_personalized_exercise_exists → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
 

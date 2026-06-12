@@ -1,29 +1,32 @@
-# Community 77: notifications_screen
+# Community 77: fix_encoding_utf8_complete
 
 **Members:** 10
 
 ## Nodes
 
-- **notifications_screen** (`lib_features_notifications_screens_notifications_screen_dart`, File, degree: 9)
-- **dart:async** (`lib_features_notifications_screens_notifications_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/notifications/providers/notification_provider.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/notifications/screens/notification_detail_screen.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_NotificationsScreenState()** (`lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate`, Function, degree: 1)
+- **fix_encoding_utf8_complete** (`backend_fix_encoding_utf8_complete_py`, File, degree: 9)
+- **clean_invalid_utf8_data()** (`backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data`, Function, degree: 2)
+- **fix_database_encoding()** (`backend_fix_encoding_utf8_complete_py_fix_database_encoding`, Function, degree: 2)
+- **django** (`backend_fix_encoding_utf8_complete_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_utf8_complete_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_utf8_complete_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_utf8_complete_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_utf8_complete_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_fix_encoding_utf8_complete_py_main`, Function, degree: 4)
+- **test_emoji_insertion()** (`backend_fix_encoding_utf8_complete_py_test_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_dart_async (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate (defines)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_os (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_sys (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_conf_settings (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_db_connection (imports)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_fix_database_encoding (defines)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (defines)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (defines)
+- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_main (defines)
+- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_fix_database_encoding (calls)
+- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (calls)
+- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (calls)
 

@@ -1,23 +1,23 @@
-# Community 173: SubscriptionExpirationTest
+# Community 173: notification_detail_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
-- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
-- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
-- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
-- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
-- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
-- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
+- **notification_detail_screen** (`lib_features_notifications_screens_notification_detail_screen_dart`, File, degree: 6)
+- **package:flutter/material.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_NotificationDetailScreenState()** (`lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate (defines)
 

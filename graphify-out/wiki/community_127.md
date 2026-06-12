@@ -1,30 +1,25 @@
-# Community 127: generate_report()
+# Community 127: test_advanced_audio_functionality
 
 **Members:** 8
 
 ## Nodes
 
-- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
-- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
-- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
-- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
-- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
-- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
-- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
-- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
+- **test_advanced_audio_functionality** (`backend_test_advanced_audio_functionality_py`, File, degree: 12)
+- **create_comprehensive_test_report()** (`backend_test_advanced_audio_functionality_py_create_comprehensive_test_report`, Function, degree: 1)
+- **json** (`backend_test_advanced_audio_functionality_py_import_json`, Module, degree: 1)
+- **os** (`backend_test_advanced_audio_functionality_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_test_advanced_audio_functionality_py_import_pathlib_path`, Module, degree: 1)
+- **requests** (`backend_test_advanced_audio_functionality_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_advanced_audio_functionality_py_import_sys`, Module, degree: 1)
+- **wave** (`backend_test_advanced_audio_functionality_py_import_wave`, Module, degree: 1)
 
 ## Relationships
 
-- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_os (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_sys (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_requests (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_json (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_wave (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_pathlib_path (imports)
+- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_create_comprehensive_test_report (defines)
 

@@ -1,15 +1,15 @@
-# Community 329: file_helper_stub
+# Community 329: production_settings
 
 **Members:** 3
 
 ## Nodes
 
-- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
-- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
+- **production_settings** (`backend_production_settings_py`, File, degree: 2)
+- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
+- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
+- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
+- backend_production_settings_py → backend_production_settings_py_import_os (imports)
 

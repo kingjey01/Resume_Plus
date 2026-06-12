@@ -1,25 +1,25 @@
-# Community 144: account_screen
+# Community 144: settings_production_fixed
 
 **Members:** 8
 
 ## Nodes
 
-- **account_screen** (`lib_features_account_screens_account_screen_dart`, File, degree: 7)
-- **_AccountScreenState()** (`lib_features_account_screens_account_screen_dart_accountscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/splash/screens/splash_screen.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
+- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
+- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
+- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
 

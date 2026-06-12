@@ -1,17 +1,17 @@
-# Community 290: debug_page
+# Community 290: 0003_userprofile_reset_code_and_more
 
 **Members:** 4
 
 ## Nodes
 
-- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
-- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **0003_userprofile_reset_code_and_more** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
-- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration (defines)
 

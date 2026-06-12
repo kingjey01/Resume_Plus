@@ -1,17 +1,17 @@
-# Community 286: audio_file_player_widget
+# Community 286: debug_page
 
 **Members:** 4
 
 ## Nodes
 
-- **audio_file_player_widget** (`lib_widgets_audio_file_player_widget_dart`, File, degree: 3)
-- **_AudioFilePlayerWidgetState()** (`lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/audio_file_player_service.dart** (`lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart`, Module, degree: 1)
+- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
+- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart (imports)
-- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate (defines)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
 

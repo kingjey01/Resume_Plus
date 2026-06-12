@@ -1,19 +1,20 @@
-# Community 246: enhanced_auth_widget
+# Community 246: create_test_audio_upload()
 
 **Members:** 5
 
 ## Nodes
 
-- **enhanced_auth_widget** (`lib_widgets_enhanced_auth_widget_dart`, File, degree: 4)
-- **_EnhancedAuthWidgetState()** (`lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/providers/api_provider.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **create_test_audio_upload()** (`backend_test_advanced_audio_functionality_py_create_test_audio_upload`, Function, degree: 2)
+- **main()** (`backend_test_advanced_audio_functionality_py_main`, Function, degree: 5)
+- **test_audio_files_existence()** (`backend_test_advanced_audio_functionality_py_test_audio_files_existence`, Function, degree: 3)
+- **test_django_setup()** (`backend_test_advanced_audio_functionality_py_test_django_setup`, Function, degree: 3)
+- **test_local_server_endpoints()** (`backend_test_advanced_audio_functionality_py_test_local_server_endpoints`, Function, degree: 2)
 
 ## Relationships
 
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
-- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate (defines)
+- backend_test_advanced_audio_functionality_py_test_audio_files_existence → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_django_setup (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_create_test_audio_upload (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_audio_files_existence (calls)
+- backend_test_advanced_audio_functionality_py_main → backend_test_advanced_audio_functionality_py_test_local_server_endpoints (calls)
 

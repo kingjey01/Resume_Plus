@@ -1,21 +1,21 @@
-# Community 209: screen_security_service
+# Community 209: check_database_tables()
 
 **Members:** 6
 
 ## Nodes
 
-- **screen_security_service** (`lib_services_screen_security_service_dart`, File, degree: 5)
-- **dart:io** (`lib_services_screen_security_service_dart_import_dart_io`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_screen_security_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/services.dart** (`lib_services_screen_security_service_dart_import_package_flutter_services_dart`, Module, degree: 1)
-- **package:screen_protector/screen_protector.dart** (`lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart`, Module, degree: 1)
-- **_isSecured()** (`lib_services_screen_security_service_dart_issecured`, Function, degree: 1)
+- **check_database_tables()** (`backend_check_db_services_py_check_database_tables`, Function, degree: 2)
+- **check_django_settings()** (`backend_check_db_services_py_check_django_settings`, Function, degree: 2)
+- **check_tokens()** (`backend_check_db_services_py_check_tokens`, Function, degree: 2)
+- **check_users()** (`backend_check_db_services_py_check_users`, Function, degree: 2)
+- **main()** (`backend_check_db_services_py_main`, Function, degree: 6)
+- **test_token_authentication()** (`backend_check_db_services_py_test_token_authentication`, Function, degree: 2)
 
 ## Relationships
 
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_dart_io (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_services_dart (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_issecured (defines)
+- backend_check_db_services_py_main → backend_check_db_services_py_test_token_authentication (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_database_tables (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_django_settings (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_tokens (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_users (calls)
 

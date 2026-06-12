@@ -1,13 +1,15 @@
-# Community 334: my_application
+# Community 334: demo_data_service
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
-- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+- **demo_data_service** (`lib_services_demo_data_service_dart`, File, degree: 2)
+- **package:resume_plus_clean/models/summary.dart'** (`lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_demo_data_service_dart_instance`, Function, degree: 1)
 
 ## Relationships
 
-- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
+- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_instance (defines)
 

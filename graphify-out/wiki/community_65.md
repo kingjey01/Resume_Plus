@@ -1,31 +1,31 @@
-# Community 65: fcm_service
+# Community 65: exercises_screen
 
 **Members:** 11
 
 ## Nodes
 
-- **fcm_service** (`lib_services_fcm_service_dart`, File, degree: 10)
-- **_currentToken()** (`lib_services_fcm_service_dart_currenttoken`, Function, degree: 1)
-- **_firebaseBackgroundHandler()** (`lib_services_fcm_service_dart_firebasebackgroundhandler`, Function, degree: 1)
-- **dart:io** (`lib_services_fcm_service_dart_import_dart_io`, Module, degree: 1)
-- **package:firebase_messaging/firebase_messaging.dart** (`lib_services_fcm_service_dart_import_package_firebase_messaging_firebase_messaging_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_fcm_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_local_notifications/flutter_local_notifications.dart** (`lib_services_fcm_service_dart_import_package_flutter_local_notifications_flutter_local_notifications_dart`, Module, degree: 1)
-- **package:flutter/material.dart'** (`lib_services_fcm_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_fcm_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/notification_service.dart** (`lib_services_fcm_service_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_fcm_service_dart_instance`, Function, degree: 1)
+- **exercises_screen** (`lib_features_exercises_screens_exercises_screen_dart`, File, degree: 10)
+- **_ExercisesScreenState()** (`lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/personalized_quiz_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_personalized_quiz_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/quiz_result_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_quiz_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/personalized_exercise.dart'** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_dart_io (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_firebase_messaging_firebase_messaging_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_flutter_local_notifications_flutter_local_notifications_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_firebasebackgroundhandler (defines)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_instance (defines)
-- lib_services_fcm_service_dart → lib_services_fcm_service_dart_currenttoken (defines)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_personalized_exercise_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_quiz_result_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_personalized_quiz_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate (defines)
 

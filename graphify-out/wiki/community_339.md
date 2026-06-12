@@ -1,13 +1,13 @@
-# Community 339: logger
+# Community 339: badge_icon
 
 **Members:** 2
 
 ## Nodes
 
-- **logger** (`lib_utils_logger_dart`, File, degree: 1)
-- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
+- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
 

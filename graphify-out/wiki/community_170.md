@@ -1,23 +1,23 @@
-# Community 170: setup_exercise_service
+# Community 170: check_cors_configuration()
 
 **Members:** 7
 
 ## Nodes
 
-- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
-- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
-- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
-- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
-- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
-- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
+- **check_cors_configuration()** (`backend_fix_auth_issues_py_check_cors_configuration`, Function, degree: 2)
+- **config()** (`backend_fix_auth_issues_py_config`, Function, degree: 2)
+- **create_missing_tokens()** (`backend_fix_auth_issues_py_create_missing_tokens`, Function, degree: 2)
+- **fix_test_users()** (`backend_fix_auth_issues_py_fix_test_users`, Function, degree: 2)
+- **generate_flutter_auth_config()** (`backend_fix_auth_issues_py_generate_flutter_auth_config`, Function, degree: 2)
+- **main()** (`backend_fix_auth_issues_py_main`, Function, degree: 7)
+- **test_tokens_validity()** (`backend_fix_auth_issues_py_test_tokens_validity`, Function, degree: 2)
 
 ## Relationships
 
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_check_cors_configuration (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_generate_flutter_auth_config (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_create_missing_tokens (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_fix_test_users (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_config (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_test_tokens_validity (calls)
 

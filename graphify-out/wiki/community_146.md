@@ -1,26 +1,25 @@
-# Community 146: quick_server_test
+# Community 146: quick_test
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
-- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
-- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
-- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
-- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
-- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
-- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
-- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
+- **quick_test** (`backend_quick_test_py`, File, degree: 7)
+- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
+- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
+- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
+- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
+- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
+- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
+- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
-- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
-- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
+- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
+- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
+- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
+- backend_quick_test_py → backend_quick_test_py_import_os (imports)
+- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
+- backend_quick_test_py → backend_quick_test_py_import_time (imports)
+- backend_quick_test_py → backend_quick_test_py_start_server (defines)
 

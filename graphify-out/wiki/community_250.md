@@ -1,19 +1,19 @@
-# Community 250: check_personalized_exercise_exists()
+# Community 250: audio_playback_test_page
 
 **Members:** 5
 
 ## Nodes
 
-- **check_personalized_exercise_exists()** (`backend_courses_personalized_exercise_views_py_check_personalized_exercise_exists`, Function, degree: 2)
-- **_get_difficulty_label()** (`backend_courses_personalized_exercise_views_py_get_difficulty_label`, Function, degree: 5)
-- **get_personalized_attempt_detail_view()** (`backend_courses_personalized_exercise_views_py_get_personalized_attempt_detail_view`, Function, degree: 2)
-- **get_personalized_attempts_view()** (`backend_courses_personalized_exercise_views_py_get_personalized_attempts_view`, Function, degree: 2)
-- **get_personalized_exercise_view()** (`backend_courses_personalized_exercise_views_py_get_personalized_exercise_view`, Function, degree: 2)
+- **audio_playback_test_page** (`lib_pages_audio_playback_test_page_dart`, File, degree: 4)
+- **_AudioPlaybackTestPageState()** (`lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/api_service.dart** (`lib_pages_audio_playback_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../widgets/audio_file_player_widget.dart** (`lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_personalized_exercise_views_py_get_personalized_exercise_view → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
-- backend_courses_personalized_exercise_views_py_get_personalized_attempts_view → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
-- backend_courses_personalized_exercise_views_py_get_personalized_attempt_detail_view → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
-- backend_courses_personalized_exercise_views_py_check_personalized_exercise_exists → backend_courses_personalized_exercise_views_py_get_difficulty_label (calls)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_services_api_service_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate (defines)
 

@@ -1,19 +1,19 @@
-# Community 231: ai_content_view
+# Community 231: enhanced_auth_demo_page
 
 **Members:** 5
 
 ## Nodes
 
-- **ai_content_view** (`lib_widgets_ai_content_view_dart`, File, degree: 4)
-- **_AiContentViewState()** (`lib_widgets_ai_content_view_dart_aicontentviewstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_ai_content_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_aicontentviewstate (defines)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
 

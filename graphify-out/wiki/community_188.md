@@ -1,21 +1,21 @@
-# Community 188: personalized_exercise_provider
+# Community 188: auth_repository
 
 **Members:** 6
 
 ## Nodes
 
-- **personalized_exercise_provider** (`lib_features_exercises_providers_personalized_exercise_provider_dart`, File, degree: 5)
-- **ExerciseGenerationStatus** (`lib_features_exercises_providers_personalized_exercise_provider_dart_exercisegenerationstatus`, Enum, degree: 1)
-- **dart:async** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/personalized_exercise.dart** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_models_personalized_exercise_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
+- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_dart_async (imports)
-- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_models_personalized_exercise_dart (imports)
-- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_exercises_providers_personalized_exercise_provider_dart → lib_features_exercises_providers_personalized_exercise_provider_dart_exercisegenerationstatus (defines)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
 

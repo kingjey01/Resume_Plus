@@ -1,17 +1,17 @@
-# Community 284: test_summaries_response
+# Community 284: secure_screen_wrapper
 
 **Members:** 4
 
 ## Nodes
 
-- **test_summaries_response** (`backend_test_summaries_response_py`, File, degree: 3)
-- **json** (`backend_test_summaries_response_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_summaries_response_py_import_requests`, Module, degree: 1)
-- **test_summaries_endpoint()** (`backend_test_summaries_response_py_test_summaries_endpoint`, Function, degree: 1)
+- **secure_screen_wrapper** (`lib_widgets_secure_screen_wrapper_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/screen_security_service.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart`, Module, degree: 1)
+- **_SecureScreenWrapperState()** (`lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_requests (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_json (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_test_summaries_endpoint (defines)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate (defines)
 

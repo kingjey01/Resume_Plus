@@ -1,23 +1,23 @@
-# Community 167: check_cors_configuration()
+# Community 167: check_production_data()
 
 **Members:** 7
 
 ## Nodes
 
-- **check_cors_configuration()** (`backend_fix_auth_issues_py_check_cors_configuration`, Function, degree: 2)
-- **config()** (`backend_fix_auth_issues_py_config`, Function, degree: 2)
-- **create_missing_tokens()** (`backend_fix_auth_issues_py_create_missing_tokens`, Function, degree: 2)
-- **fix_test_users()** (`backend_fix_auth_issues_py_fix_test_users`, Function, degree: 2)
-- **generate_flutter_auth_config()** (`backend_fix_auth_issues_py_generate_flutter_auth_config`, Function, degree: 2)
-- **main()** (`backend_fix_auth_issues_py_main`, Function, degree: 7)
-- **test_tokens_validity()** (`backend_fix_auth_issues_py_test_tokens_validity`, Function, degree: 2)
+- **check_production_data()** (`backend_fix_production_encoding_py_check_production_data`, Function, degree: 2)
+- **check_production_database()** (`backend_fix_production_encoding_py_check_production_database`, Function, degree: 2)
+- **clean_production_invalid_data()** (`backend_fix_production_encoding_py_clean_production_invalid_data`, Function, degree: 2)
+- **fix_production_encoding()** (`backend_fix_production_encoding_py_fix_production_encoding`, Function, degree: 2)
+- **main()** (`backend_fix_production_encoding_py_main`, Function, degree: 7)
+- **set_production_connection_encoding()** (`backend_fix_production_encoding_py_set_production_connection_encoding`, Function, degree: 2)
+- **test_production_emoji_insertion()** (`backend_fix_production_encoding_py_test_production_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_check_cors_configuration (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_generate_flutter_auth_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_create_missing_tokens (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_fix_test_users (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_test_tokens_validity (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_test_production_emoji_insertion (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_clean_production_invalid_data (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_database (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_set_production_connection_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_fix_production_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_data (calls)
 

@@ -1,36 +1,31 @@
-# Community 72: utils
+# Community 72: generated_plugin_registrant
 
-**Members:** 10
+**Members:** 11
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
-- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
-- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
-- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
-- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
-- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
-- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
-- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_cc`, File, degree: 10)
+- **audioplayers_windows/audioplayers_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h`, Module, degree: 1)
+- **file_selector_windows/file_selector_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h`, Module, degree: 1)
+- **firebase_core/firebase_core_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h`, Module, degree: 1)
+- **flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h`, Module, degree: 1)
+- **flutter_tts/flutter_tts_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h`, Module, degree: 1)
+- **generated_plugin_registrant.h** (`windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
+- **permission_handler_windows/permission_handler_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h`, Module, degree: 1)
+- **record_windows/record_windows_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h`, Module, degree: 1)
+- **url_launcher_windows/url_launcher_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h`, Module, degree: 1)
+- **RegisterPlugins()** (`windows_flutter_generated_plugin_registrant_cc_registerplugins`, Function, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
-- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
-- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
-- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h (imports)
+- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_registerplugins (defines)
 

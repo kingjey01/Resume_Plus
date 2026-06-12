@@ -1,19 +1,21 @@
-# Community 215: test_simple_page
+# Community 215: 0016_filiere_promotions_m2m
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
-- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
-- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
+- **0016_filiere_promotions_m2m** (`backend_courses_migrations_0016_filiere_promotions_m2m_py`, File, degree: 5)
+- **copy_auto_to_through()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through`, Function, degree: 1)
+- **copy_through_to_auto()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto`, Function, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models (imports)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_migration (defines)
 

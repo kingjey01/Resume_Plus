@@ -1,19 +1,19 @@
-# Community 254: test_api_auth
+# Community 254: PurchaseNotificationTest
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api_auth** (`backend_test_api_auth_py`, File, degree: 11)
-- **json** (`backend_test_api_auth_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_api_auth_py_import_os`, Module, degree: 1)
-- **requests** (`backend_test_api_auth_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_api_auth_py_import_sys`, Module, degree: 1)
+- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
+- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
+- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_test_api_auth_py → backend_test_api_auth_py_import_requests (imports)
-- backend_test_api_auth_py → backend_test_api_auth_py_import_json (imports)
-- backend_test_api_auth_py → backend_test_api_auth_py_import_os (imports)
-- backend_test_api_auth_py → backend_test_api_auth_py_import_sys (imports)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
 

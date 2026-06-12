@@ -1,27 +1,33 @@
-# Community 94: debug_auth_headers
+# Community 94: test_production_audio
 
-**Members:** 9
+**Members:** 10
 
 ## Nodes
 
-- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
-- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
-- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
-- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
-- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
-- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
-- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
+- **test_production_audio** (`backend_test_production_audio_py`, File, degree: 9)
+- **generate_production_test_report()** (`backend_test_production_audio_py_generate_production_test_report`, Function, degree: 5)
+- **datetime** (`backend_test_production_audio_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_test_production_audio_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_production_audio_py_import_requests`, Module, degree: 1)
+- **time** (`backend_test_production_audio_py_import_time`, Module, degree: 1)
+- **main()** (`backend_test_production_audio_py_main`, Function, degree: 2)
+- **test_media_directory_access()** (`backend_test_production_audio_py_test_media_directory_access`, Function, degree: 2)
+- **test_production_endpoints()** (`backend_test_production_audio_py_test_production_endpoints`, Function, degree: 2)
+- **test_specific_audio_sessions()** (`backend_test_production_audio_py_test_specific_audio_sessions`, Function, degree: 2)
 
 ## Relationships
 
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_requests (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_json (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_time (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_import_datetime (imports)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_production_endpoints (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_specific_audio_sessions (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_test_media_directory_access (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_generate_production_test_report (defines)
+- backend_test_production_audio_py → backend_test_production_audio_py_main (defines)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_production_endpoints (calls)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_media_directory_access (calls)
+- backend_test_production_audio_py_generate_production_test_report → backend_test_production_audio_py_test_specific_audio_sessions (calls)
+- backend_test_production_audio_py_main → backend_test_production_audio_py_generate_production_test_report (calls)
 

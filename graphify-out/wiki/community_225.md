@@ -1,19 +1,20 @@
-# Community 225: 0004_alter_purchase_summary
+# Community 225: AppNotificationAdmin
 
 **Members:** 5
 
 ## Nodes
 
-- **0004_alter_purchase_summary** (`backend_payments_migrations_0004_alter_purchase_summary_py`, File, degree: 4)
-- **django.db.migrations** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0004_alter_purchase_summary_py_migration`, Class, degree: 1)
+- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 5)
+- **._create_system_notifications()** (`backend_notifications_admin_py_appnotificationadmin_create_system_notifications`, Method, degree: 2)
+- **.recipient_count()** (`backend_notifications_admin_py_appnotificationadmin_recipient_count`, Method, degree: 1)
+- **.response_add()** (`backend_notifications_admin_py_appnotificationadmin_response_add`, Method, degree: 1)
+- **.save_model()** (`backend_notifications_admin_py_appnotificationadmin_save_model`, Method, degree: 2)
 
 ## Relationships
 
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_migration (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_recipient_count (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_save_model (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_create_system_notifications (defines)
+- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_response_add (defines)
+- backend_notifications_admin_py_appnotificationadmin_save_model → backend_notifications_admin_py_appnotificationadmin_create_system_notifications (calls)
 

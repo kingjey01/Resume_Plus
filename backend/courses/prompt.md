@@ -1533,6 +1533,7 @@ Vérifier :
 COURS - PROMOTION/FILIRER/UNIVERSITE
 permetre qu'un cours puis appartenir à une ou plusieur université,filiere,promotion 
 objectif : permetre la selection et l'appartenance multiple coté administrateur en fin de facilité la création de cours et évité les repétions inutilise pouvant surcharger la base de données
+sans casser la logique metier actuel
 
 ## RÉSULTAT ATTENDU
 

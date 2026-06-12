@@ -1,21 +1,21 @@
-# Community 211: main()
+# Community 211: create_admin_user()
 
 **Members:** 6
 
 ## Nodes
 
-- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
-- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
-- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
-- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
-- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
-- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
+- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
+- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
+- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
+- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
+- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
+- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
 
 ## Relationships
 
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
+- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
 

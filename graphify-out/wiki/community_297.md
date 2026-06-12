@@ -1,17 +1,17 @@
-# Community 297: subscription_card
+# Community 297: test_endpoints_existence
 
 **Members:** 4
 
 ## Nodes
 
-- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
+- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
+- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
 

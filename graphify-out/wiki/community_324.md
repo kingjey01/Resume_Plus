@@ -1,15 +1,15 @@
-# Community 324: test_local_server
+# Community 324: settings_postgresql
 
 **Members:** 3
 
 ## Nodes
 
-- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
-- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
-- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
+- **settings_postgresql** (`backend_settings_postgresql_py`, File, degree: 2)
+- **os** (`backend_settings_postgresql_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_postgresql_py_import_pathlib_path`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
-- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_os (imports)
+- backend_settings_postgresql_py → backend_settings_postgresql_py_import_pathlib_path (imports)
 

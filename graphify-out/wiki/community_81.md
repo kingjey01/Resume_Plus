@@ -1,29 +1,29 @@
-# Community 81: edit_profile_screen
+# Community 81: debug_api_response
 
 **Members:** 10
 
 ## Nodes
 
-- **edit_profile_screen** (`lib_features_settings_screens_edit_profile_screen_dart`, File, degree: 9)
-- **_EditProfileScreenState()** (`lib_features_settings_screens_edit_profile_screen_dart_editprofilescreenstate`, Function, degree: 1)
-- **dart:io** (`lib_features_settings_screens_edit_profile_screen_dart_import_dart_io`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart'** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:image_picker/image_picker.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_image_picker_image_picker_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **debug_api_response** (`backend_debug_api_response_py`, File, degree: 9)
+- **django** (`backend_debug_api_response_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_api_response_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_api_response_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_debug_api_response_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_debug_api_response_py_import_payments_models_service`, Module, degree: 1)
+- **payments.serializers.AbonnementSerializer** (`backend_debug_api_response_py_import_payments_serializers_abonnementserializer`, Module, degree: 1)
+- **payments.serializers.ServiceSerializer** (`backend_debug_api_response_py_import_payments_serializers_serviceserializer`, Module, degree: 1)
+- **sys** (`backend_debug_api_response_py_import_sys`, Module, degree: 1)
+- **test_api_responses()** (`backend_debug_api_response_py_test_api_responses`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_dart_io (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_image_picker_image_picker_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_editprofilescreenstate (defines)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_os (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_sys (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_service (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_abonnement (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_serviceserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_abonnementserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_test_api_responses (defines)
 

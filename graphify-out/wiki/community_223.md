@@ -1,19 +1,19 @@
-# Community 223: MainFlutterWindow
+# Community 223: CourseAdmin
 
 **Members:** 5
 
 ## Nodes
 
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
-- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
-- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
+- **CourseAdmin** (`backend_courses_admin_py_courseadmin`, Class, degree: 5)
+- **.get_queryset()** (`backend_courses_admin_py_courseadmin_get_queryset`, Method, degree: 2)
+- **.list_filieres()** (`backend_courses_admin_py_courseadmin_list_filieres`, Method, degree: 1)
+- **.list_promotions()** (`backend_courses_admin_py_courseadmin_list_promotions`, Method, degree: 1)
+- **.list_universites()** (`backend_courses_admin_py_courseadmin_list_universites`, Method, degree: 1)
 
 ## Relationships
 
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
+- backend_courses_admin_py_courseadmin → backend_courses_admin_py_courseadmin_list_universites (defines)
+- backend_courses_admin_py_courseadmin → backend_courses_admin_py_courseadmin_list_filieres (defines)
+- backend_courses_admin_py_courseadmin → backend_courses_admin_py_courseadmin_list_promotions (defines)
+- backend_courses_admin_py_courseadmin → backend_courses_admin_py_courseadmin_get_queryset (defines)
 

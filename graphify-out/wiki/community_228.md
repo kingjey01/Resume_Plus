@@ -1,19 +1,19 @@
-# Community 228: check_database_users()
+# Community 228: 0014_professeur_filieres_fix
 
 **Members:** 5
 
 ## Nodes
 
-- **check_database_users()** (`backend_quick_server_test_py_check_database_users`, Function, degree: 2)
-- **generate_curl_commands()** (`backend_quick_server_test_py_generate_curl_commands`, Function, degree: 2)
-- **main()** (`backend_quick_server_test_py_main`, Function, degree: 6)
-- **test_server_basic()** (`backend_quick_server_test_py_test_server_basic`, Function, degree: 2)
-- **test_tokens_quickly()** (`backend_quick_server_test_py_test_tokens_quickly`, Function, degree: 2)
+- **0014_professeur_filieres_fix** (`backend_courses_migrations_0014_professeur_filieres_fix_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0014_professeur_filieres_fix_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py_main → backend_quick_server_test_py_check_database_users (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_tokens_quickly (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_generate_curl_commands (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_server_basic (calls)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models (imports)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0014_professeur_filieres_fix_py → backend_courses_migrations_0014_professeur_filieres_fix_py_migration (defines)
 

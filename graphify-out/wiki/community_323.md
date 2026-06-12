@@ -1,15 +1,15 @@
-# Community 323: upload_screen
+# Community 323: snackbar_service
 
 **Members:** 3
 
 ## Nodes
 
-- **upload_screen** (`lib_features_upload_screens_upload_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart`, Module, degree: 1)
+- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
 

@@ -1,31 +1,42 @@
-# Community 61: seed_production
+# Community 61: Command
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **seed_production** (`backend_seed_production_py`, File, degree: 16)
-- **courses.models.Filiere** (`backend_seed_production_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_seed_production_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_seed_production_py_import_courses_models_universite`, Module, degree: 1)
-- **courses.models.UniversiteFiliere** (`backend_seed_production_py_import_courses_models_universitefiliere`, Module, degree: 1)
-- **decimal.Decimal** (`backend_seed_production_py_import_decimal_decimal`, Module, degree: 1)
-- **django** (`backend_seed_production_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_seed_production_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_seed_production_py_import_os`, Module, degree: 1)
-- **payments.models.Service** (`backend_seed_production_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_seed_production_py_import_sys`, Module, degree: 1)
+- **Command** (`backend_courses_management_commands_seed_production_py_command`, Class, degree: 12)
+- **.add_arguments()** (`backend_courses_management_commands_seed_production_py_command_add_arguments`, Method, degree: 1)
+- **.clear_data()** (`backend_courses_management_commands_seed_production_py_command_clear_data`, Method, degree: 2)
+- **.create_courses()** (`backend_courses_management_commands_seed_production_py_command_create_courses`, Method, degree: 2)
+- **.create_filieres()** (`backend_courses_management_commands_seed_production_py_command_create_filieres`, Method, degree: 2)
+- **.create_professeurs()** (`backend_courses_management_commands_seed_production_py_command_create_professeurs`, Method, degree: 2)
+- **.create_promotions()** (`backend_courses_management_commands_seed_production_py_command_create_promotions`, Method, degree: 2)
+- **.create_sample_summaries()** (`backend_courses_management_commands_seed_production_py_command_create_sample_summaries`, Method, degree: 2)
+- **.create_services()** (`backend_courses_management_commands_seed_production_py_command_create_services`, Method, degree: 2)
+- **.create_universites()** (`backend_courses_management_commands_seed_production_py_command_create_universites`, Method, degree: 2)
+- **.create_users()** (`backend_courses_management_commands_seed_production_py_command_create_users`, Method, degree: 2)
+- **.handle()** (`backend_courses_management_commands_seed_production_py_command_handle`, Method, degree: 10)
 
 ## Relationships
 
-- backend_seed_production_py → backend_seed_production_py_import_os (imports)
-- backend_seed_production_py → backend_seed_production_py_import_sys (imports)
-- backend_seed_production_py → backend_seed_production_py_import_django (imports)
-- backend_seed_production_py → backend_seed_production_py_import_decimal_decimal (imports)
-- backend_seed_production_py → backend_seed_production_py_import_django_contrib_auth_models_user (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_promotion (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_filiere (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_universite (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_universitefiliere (imports)
-- backend_seed_production_py → backend_seed_production_py_import_payments_models_service (imports)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_add_arguments (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_handle (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_clear_data (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_promotions (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_filieres (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_universites (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_courses (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_users (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_professeurs (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_services (defines)
+- backend_courses_management_commands_seed_production_py_command → backend_courses_management_commands_seed_production_py_command_create_sample_summaries (defines)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_users (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_promotions (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_universites (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_courses (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_sample_summaries (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_professeurs (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_filieres (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_create_services (calls)
+- backend_courses_management_commands_seed_production_py_command_handle → backend_courses_management_commands_seed_production_py_command_clear_data (calls)
 

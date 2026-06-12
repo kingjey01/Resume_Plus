@@ -1,19 +1,19 @@
-# Community 220: widget_test
+# Community 220: MainFlutterWindow
 
 **Members:** 5
 
 ## Nodes
 
-- **widget_test** (`test_widget_test_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
-- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
-- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
+- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
+- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
+- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
 
 ## Relationships
 
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
-- test_widget_test_dart → test_widget_test_dart_main (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
+- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
 

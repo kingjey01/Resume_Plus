@@ -1,20 +1,19 @@
-# Community 233: AppNotificationAdmin
+# Community 233: test_api
 
 **Members:** 5
 
 ## Nodes
 
-- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 5)
-- **._create_system_notifications()** (`backend_notifications_admin_py_appnotificationadmin_create_system_notifications`, Method, degree: 2)
-- **.recipient_count()** (`backend_notifications_admin_py_appnotificationadmin_recipient_count`, Method, degree: 1)
-- **.response_add()** (`backend_notifications_admin_py_appnotificationadmin_response_add`, Method, degree: 1)
-- **.save_model()** (`backend_notifications_admin_py_appnotificationadmin_save_model`, Method, degree: 2)
+- **test_api** (`backend_test_api_py`, File, degree: 4)
+- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
+- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
+- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
 
 ## Relationships
 
-- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_recipient_count (defines)
-- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_save_model (defines)
-- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_create_system_notifications (defines)
-- backend_notifications_admin_py_appnotificationadmin → backend_notifications_admin_py_appnotificationadmin_response_add (defines)
-- backend_notifications_admin_py_appnotificationadmin_save_model → backend_notifications_admin_py_appnotificationadmin_create_system_notifications (calls)
+- backend_test_api_py → backend_test_api_py_import_requests (imports)
+- backend_test_api_py → backend_test_api_py_import_json (imports)
+- backend_test_api_py → backend_test_api_py_test_services_api (defines)
+- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
 

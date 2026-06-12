@@ -14,6 +14,7 @@
 - backend_notifications_tasks_py → backend_notifications_tasks_py_send_fcm_notification (defines, Extracted)
 - backend_notifications_tasks_py → backend_notifications_tasks_py_create_and_send_notification (defines, Extracted)
 - backend_notifications_tasks_py → backend_notifications_tasks_py_notify_summary_created (defines, Extracted)
+- backend_notifications_tasks_py → backend_notifications_tasks_py_notify_summary_to_validate (defines, Extracted)
 - backend_notifications_tasks_py → backend_notifications_tasks_py_notify_subscription_paid (defines, Extracted)
 - backend_notifications_tasks_py → backend_notifications_tasks_py_notify_subscription_expiring_soon (defines, Extracted)
 - backend_notifications_tasks_py → backend_notifications_tasks_py_notify_subscription_expired (defines, Extracted)

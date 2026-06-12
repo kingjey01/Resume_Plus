@@ -1,15 +1,15 @@
-# Community 313: personalized_exercise
+# Community 313: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **personalized_exercise** (`lib_models_personalized_exercise_dart`, File, degree: 2)
-- **package:flutter/foundation.dart** (`lib_models_personalized_exercise_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **options()** (`lib_models_personalized_exercise_dart_options`, Function, degree: 1)
+- **urls** (`backend_notifications_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_notifications_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_notifications_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_personalized_exercise_dart → lib_models_personalized_exercise_dart_import_package_flutter_foundation_dart (imports)
-- lib_models_personalized_exercise_dart → lib_models_personalized_exercise_dart_options (defines)
+- backend_notifications_urls_py → backend_notifications_urls_py_import_django_urls_path (imports)
+- backend_notifications_urls_py → backend_notifications_urls_py_import_views (imports)
 

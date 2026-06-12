@@ -1,19 +1,19 @@
-# Community 262: AbonnementCreateSerializer
+# Community 262: 0002_remove_userprofile_role_and_more
 
 **Members:** 5
 
 ## Nodes
 
-- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
-- **AbonnementSerializer** (`backend_courses_serializers_py_abonnementserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementserializer_create`, Method, degree: 2)
-- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
+- **0002_remove_userprofile_role_and_more** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py`, File, degree: 4)
+- **django.db.migrations** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_serializers_py_abonnementserializer → backend_courses_serializers_py_abonnementserializer_create (defines)
-- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
-- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
-- backend_courses_serializers_py_abonnementserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion (imports)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration (defines)
 

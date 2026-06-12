@@ -1,17 +1,17 @@
-# Community 276: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
+# Community 276: difficulty_selector_modal
 
 **Members:** 4
 
 ## Nodes
 
-- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
+- **difficulty_selector_modal** (`lib_features_exercises_widgets_difficulty_selector_modal_dart`, File, degree: 3)
+- **DifficultySelectorModalExtension** (`lib_features_exercises_widgets_difficulty_selector_modal_dart_difficultyselectormodalextension`, Class, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_widgets_difficulty_selector_modal_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_widgets_difficulty_selector_modal_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
+- lib_features_exercises_widgets_difficulty_selector_modal_dart → lib_features_exercises_widgets_difficulty_selector_modal_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_widgets_difficulty_selector_modal_dart → lib_features_exercises_widgets_difficulty_selector_modal_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_widgets_difficulty_selector_modal_dart → lib_features_exercises_widgets_difficulty_selector_modal_dart_difficultyselectormodalextension (defines)
 

@@ -1,19 +1,19 @@
-# Community 253: service_provider
+# Community 253: fix_user_promotion
 
 **Members:** 5
 
 ## Nodes
 
-- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **fix_user_promotion** (`backend_fix_user_promotion_py`, File, degree: 4)
+- **courses.models.Promotion** (`backend_fix_user_promotion_py_import_courses_models_promotion`, Module, degree: 1)
+- **django** (`backend_fix_user_promotion_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_user_promotion_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_user_promotion_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_os (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_courses_models_promotion (imports)
 

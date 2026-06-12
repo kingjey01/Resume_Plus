@@ -1,19 +1,19 @@
-# Community 230: tts_reader_widget
+# Community 230: Summary
 
 **Members:** 5
 
 ## Nodes
 
-- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
-- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
-- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
+- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
+- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
+- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
+- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
+- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
 
 ## Relationships
 
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
 

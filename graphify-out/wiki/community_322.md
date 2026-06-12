@@ -1,15 +1,15 @@
-# Community 322: utils
+# Community 322: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_h`, File, degree: 2)
-- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
-- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
+- **apps** (`backend_users_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_users_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **UsersConfig** (`backend_users_apps_py_usersconfig`, Class, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
-- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
+- backend_users_apps_py → backend_users_apps_py_import_django_apps_appconfig (imports)
+- backend_users_apps_py → backend_users_apps_py_usersconfig (defines)
 

@@ -1,17 +1,19 @@
-# Community 264: exercise_generation_progress
+# Community 264: deepseek_service
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **exercise_generation_progress** (`lib_features_exercises_widgets_exercise_generation_progress_dart`, File, degree: 3)
-- **_AnimatedGenerationIconState()** (`lib_features_exercises_widgets_exercise_generation_progress_dart_animatedgenerationiconstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
+- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_exercises_widgets_exercise_generation_progress_dart → lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_flutter_material_dart (imports)
-- lib_features_exercises_widgets_exercise_generation_progress_dart → lib_features_exercises_widgets_exercise_generation_progress_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_exercises_widgets_exercise_generation_progress_dart → lib_features_exercises_widgets_exercise_generation_progress_dart_animatedgenerationiconstate (defines)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
 

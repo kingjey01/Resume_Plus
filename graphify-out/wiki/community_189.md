@@ -1,21 +1,21 @@
-# Community 189: auth_repository
+# Community 189: RunnerTests
 
 **Members:** 6
 
 ## Nodes
 
-- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
-- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **RunnerTests** (`ios_runnertests_runnertests_swift`, File, degree: 5)
+- **Flutter** (`ios_runnertests_runnertests_swift_import_flutter`, Module, degree: 1)
+- **UIKit** (`ios_runnertests_runnertests_swift_import_uikit`, Module, degree: 1)
+- **XCTest** (`ios_runnertests_runnertests_swift_import_xctest`, Module, degree: 1)
+- **RunnerTests** (`ios_runnertests_runnertests_swift_runnertests`, Class, degree: 1)
+- **testExample** (`ios_runnertests_runnertests_swift_testexample`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
+- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_runnertests (defines)
+- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_testexample (defines)
+- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_flutter (imports)
+- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_uikit (imports)
+- ios_runnertests_runnertests_swift → ios_runnertests_runnertests_swift_import_xctest (imports)
 

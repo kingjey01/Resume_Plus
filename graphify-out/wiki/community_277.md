@@ -1,17 +1,17 @@
-# Community 277: admin
+# Community 277: find_courses_endpoint
 
 **Members:** 4
 
 ## Nodes
 
-- **admin** (`backend_security_admin_py`, File, degree: 3)
-- **django.contrib.admin** (`backend_security_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.SecurityLog** (`backend_security_admin_py_import_models_securitylog`, Module, degree: 1)
-- **SecurityLogAdmin** (`backend_security_admin_py_securitylogadmin`, Class, degree: 1)
+- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
+- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
+- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_admin_py → backend_security_admin_py_import_django_contrib_admin (imports)
-- backend_security_admin_py → backend_security_admin_py_import_models_securitylog (imports)
-- backend_security_admin_py → backend_security_admin_py_securitylogadmin (defines)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
 

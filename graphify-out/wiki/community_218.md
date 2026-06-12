@@ -1,19 +1,19 @@
-# Community 218: 0005_universitefiliere_filierepromotion_and_more
+# Community 218: test_simple_page
 
 **Members:** 5
 
 ## Nodes
 
-- **0005_universitefiliere_filierepromotion_and_more** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_migration`, Class, degree: 1)
+- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
+- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
+- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models (imports)
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_migration (defines)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
 

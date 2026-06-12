@@ -1,13 +1,15 @@
-# Community 332: gunicorn.conf
+# Community 332: apps
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
-- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
+- **apps** (`backend_security_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
 
 ## Relationships
 
-- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
+- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
+- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
 

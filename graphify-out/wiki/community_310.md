@@ -1,15 +1,15 @@
-# Community 310: demo_data_service
+# Community 310: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **demo_data_service** (`lib_services_demo_data_service_dart`, File, degree: 2)
-- **package:resume_plus_clean/models/summary.dart'** (`lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_demo_data_service_dart_instance`, Function, degree: 1)
+- **urls** (`backend_security_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_instance (defines)
+- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
+- backend_security_urls_py → backend_security_urls_py_import_views (imports)
 

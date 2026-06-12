@@ -1,27 +1,29 @@
-# Community 93: delete_account_screen
+# Community 93: test_url_routing
 
-**Members:** 9
+**Members:** 10
 
 ## Nodes
 
-- **delete_account_screen** (`lib_features_settings_screens_delete_account_screen_dart`, File, degree: 8)
-- **_DeleteAccountScreenState()** (`lib_features_settings_screens_delete_account_screen_dart_deleteaccountscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/login_screen.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_screens_login_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_url_routing** (`backend_test_url_routing_py`, File, degree: 9)
+- **django** (`backend_test_url_routing_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_test_url_routing_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.Client** (`backend_test_url_routing_py_import_django_test_client`, Module, degree: 1)
+- **django.urls.resolve** (`backend_test_url_routing_py_import_django_urls_resolve`, Module, degree: 1)
+- **django.urls.reverse** (`backend_test_url_routing_py_import_django_urls_reverse`, Module, degree: 1)
+- **os** (`backend_test_url_routing_py_import_os`, Module, degree: 1)
+- **rest_framework_simplejwt.tokens.RefreshToken** (`backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken`, Module, degree: 1)
+- **sys** (`backend_test_url_routing_py_import_sys`, Module, degree: 1)
+- **test_url_routing()** (`backend_test_url_routing_py_test_url_routing`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_screens_login_screen_dart (imports)
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_deleteaccountscreenstate (defines)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_os (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_sys (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_reverse (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_urls_resolve (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_test_client (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_django_contrib_auth_models_user (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_import_rest_framework_simplejwt_tokens_refreshtoken (imports)
+- backend_test_url_routing_py → backend_test_url_routing_py_test_url_routing (defines)
 

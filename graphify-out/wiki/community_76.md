@@ -1,29 +1,36 @@
-# Community 76: all_summaries_screen
+# Community 76: utils
 
 **Members:** 10
 
 ## Nodes
 
-- **all_summaries_screen** (`lib_features_summaries_screens_all_summaries_screen_dart`, File, degree: 9)
-- **_AllSummariesScreenState()** (`lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
+- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
+- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
+- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
+- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
+- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
+- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
+- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
+- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
 
 ## Relationships
 
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
-- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
 

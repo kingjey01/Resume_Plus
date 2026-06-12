@@ -8,6 +8,7 @@
 
 - backend_courses_models_py → backend_courses_models_py_import_django_db_models (imports, Extracted)
 - backend_courses_models_py → backend_courses_models_py_import_django_contrib_auth_models_user (imports, Extracted)
+- backend_courses_models_py → backend_courses_models_py_import_django_utils_timezone (imports, Extracted)
 - backend_courses_models_py → backend_courses_models_py_promotion (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_meta (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_filiere (defines, Extracted)

@@ -1,27 +1,27 @@
-# Community 112: audio_sessions_screen
+# Community 112: audio_file_player_service
 
 **Members:** 9
 
 ## Nodes
 
-- **audio_sessions_screen** (`lib_features_upload_screens_audio_sessions_screen_dart`, File, degree: 8)
-- **_AudioSessionsScreenState()** (`lib_features_upload_screens_audio_sessions_screen_dart_audiosessionsscreenstate`, Function, degree: 1)
-- **dart:async** (`lib_features_upload_screens_audio_sessions_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:audioplayers/audioplayers.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_audioplayers_audioplayers_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **audio_file_player_service** (`lib_services_audio_file_player_service_dart`, File, degree: 8)
+- **_currentUrl()** (`lib_services_audio_file_player_service_dart_currenturl`, Function, degree: 1)
+- **_duration()** (`lib_services_audio_file_player_service_dart_duration`, Function, degree: 1)
+- **package:audioplayers/audioplayers.dart** (`lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_audio_file_player_service_dart_instance`, Function, degree: 1)
+- **_isInitialized()** (`lib_services_audio_file_player_service_dart_isinitialized`, Function, degree: 1)
+- **_isPaused()** (`lib_services_audio_file_player_service_dart_ispaused`, Function, degree: 1)
+- **_position()** (`lib_services_audio_file_player_service_dart_position`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_dart_async (imports)
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_audioplayers_audioplayers_dart (imports)
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_audiosessionsscreenstate (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_import_package_audioplayers_audioplayers_dart (imports)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_instance (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_isinitialized (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_ispaused (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_currenturl (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_duration (defines)
+- lib_services_audio_file_player_service_dart → lib_services_audio_file_player_service_dart_position (defines)
 

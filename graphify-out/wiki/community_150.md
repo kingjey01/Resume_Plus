@@ -1,27 +1,23 @@
-# Community 150: ExerciseGenerator
+# Community 150: SubscriptionExpirationTest
 
 **Members:** 7
 
 ## Nodes
 
-- **ExerciseGenerator** (`backend_courses_exercise_generator_py_exercisegenerator`, Class, degree: 7)
-- **.generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary`, Method, degree: 2)
-- **._generate_mock_questions()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions`, Method, degree: 2)
-- **._generate_questions_with_ai()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai`, Method, degree: 4)
-- **.__init__()** (`backend_courses_exercise_generator_py_exercisegenerator_init`, Method, degree: 1)
-- **._parse_ai_response()** (`backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response`, Method, degree: 3)
-- **._validate_question_structure()** (`backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure`, Method, degree: 2)
+- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
+- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
+- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
+- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
+- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
+- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
+- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_init (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (defines)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (calls)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
 

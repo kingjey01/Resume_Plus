@@ -1,11 +1,14 @@
 # Community 4: serializers
 
-**Members:** 35
+**Members:** 39
 
 ## Nodes
 
 - **serializers** (`backend_courses_serializers_py`, File, degree: 26)
-- **CourseSerializer** (`backend_courses_serializers_py_courseserializer`, Class, degree: 1)
+- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
+- **AbonnementSerializer** (`backend_courses_serializers_py_abonnementserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementserializer_create`, Method, degree: 2)
 - **FiliereSerializer** (`backend_courses_serializers_py_filiereserializer`, Class, degree: 1)
 - **FiliereWithUniversiteSerializer** (`backend_courses_serializers_py_filierewithuniversiteserializer`, Class, degree: 2)
 - **.get_universites()** (`backend_courses_serializers_py_filierewithuniversiteserializer_get_universites`, Method, degree: 1)
@@ -30,6 +33,7 @@
 - **.get_ai_summary_id()** (`backend_courses_serializers_py_sessionserializer_get_ai_summary_id`, Method, degree: 1)
 - **.get_has_ai_summary()** (`backend_courses_serializers_py_sessionserializer_get_has_ai_summary`, Method, degree: 1)
 - **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
+- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
 - **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
 - **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
 - **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
@@ -55,7 +59,6 @@
 - backend_courses_serializers_py → backend_courses_serializers_py_import_models_professeur (imports)
 - backend_courses_serializers_py → backend_courses_serializers_py_professeurserializer (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_meta (defines)
-- backend_courses_serializers_py → backend_courses_serializers_py_courseserializer (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_sessionserializer (defines)
 - backend_courses_serializers_py_sessionserializer → backend_courses_serializers_py_sessionserializer_get_has_ai_summary (defines)
 - backend_courses_serializers_py_sessionserializer → backend_courses_serializers_py_sessionserializer_get_ai_summary_id (defines)
@@ -70,10 +73,17 @@
 - backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
 - backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
 - backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_promotionserializer (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_filiereserializer (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_universiteserializer (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_filierewithuniversiteserializer (defines)
 - backend_courses_serializers_py_filierewithuniversiteserializer → backend_courses_serializers_py_filierewithuniversiteserializer_get_universites (defines)
 - backend_courses_serializers_py → backend_courses_serializers_py_serviceserializer (defines)
+- backend_courses_serializers_py → backend_courses_serializers_py_abonnementserializer (defines)
+- backend_courses_serializers_py_abonnementserializer → backend_courses_serializers_py_abonnementserializer_create (defines)
+- backend_courses_serializers_py → backend_courses_serializers_py_abonnementcreateserializer (defines)
+- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
+- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- backend_courses_serializers_py_abonnementserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
 

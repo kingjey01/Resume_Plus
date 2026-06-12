@@ -1,17 +1,17 @@
-# Community 285: file_helper_io
+# Community 285: web_audio_service
 
 **Members:** 4
 
 ## Nodes
 
-- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
-- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
-- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
+- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
+- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
 

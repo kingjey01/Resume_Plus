@@ -1,31 +1,27 @@
-# Community 98: debug_api_calls
+# Community 98: serializers
 
 **Members:** 9
 
 ## Nodes
 
-- **debug_api_calls** (`backend_debug_api_calls_py`, File, degree: 8)
-- **check_django_urls()** (`backend_debug_api_calls_py_check_django_urls`, Function, degree: 2)
-- **generate_flutter_debug_code()** (`backend_debug_api_calls_py_generate_flutter_debug_code`, Function, degree: 2)
-- **datetime** (`backend_debug_api_calls_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_debug_api_calls_py_import_json`, Module, degree: 1)
-- **requests** (`backend_debug_api_calls_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_debug_api_calls_py_main`, Function, degree: 5)
-- **simulate_flutter_calls()** (`backend_debug_api_calls_py_simulate_flutter_calls`, Function, degree: 2)
-- **test_all_possible_urls()** (`backend_debug_api_calls_py_test_all_possible_urls`, Function, degree: 2)
+- **serializers** (`backend_notifications_serializers_py`, File, degree: 8)
+- **AppNotificationSerializer** (`backend_notifications_serializers_py_appnotificationserializer`, Class, degree: 1)
+- **.models.AppNotification** (`backend_notifications_serializers_py_import_models_appnotification`, Module, degree: 1)
+- **.models.UserDevice** (`backend_notifications_serializers_py_import_models_userdevice`, Module, degree: 1)
+- **.models.UserNotification** (`backend_notifications_serializers_py_import_models_usernotification`, Module, degree: 1)
+- **rest_framework.serializers** (`backend_notifications_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
+- **Meta** (`backend_notifications_serializers_py_meta`, Class, degree: 1)
+- **UserDeviceSerializer** (`backend_notifications_serializers_py_userdeviceserializer`, Class, degree: 1)
+- **UserNotificationSerializer** (`backend_notifications_serializers_py_usernotificationserializer`, Class, degree: 1)
 
 ## Relationships
 
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_requests (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_json (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_datetime (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_test_all_possible_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_simulate_flutter_calls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_check_django_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_generate_flutter_debug_code (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_main (defines)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_simulate_flutter_calls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_check_django_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_test_all_possible_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_generate_flutter_debug_code (calls)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_import_rest_framework_serializers (imports)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_userdevice (imports)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_appnotification (imports)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_import_models_usernotification (imports)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_userdeviceserializer (defines)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_meta (defines)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_appnotificationserializer (defines)
+- backend_notifications_serializers_py → backend_notifications_serializers_py_usernotificationserializer (defines)
 
