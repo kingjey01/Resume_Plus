@@ -1,9 +1,37 @@
 import 'package:flutter/material.dart';
 import 'package:resume_plus_clean/models/exercise.dart';
+import 'package:resume_plus_clean/models/personalized_exercise.dart' as pe;
 import 'package:resume_plus_clean/services/api_service.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart';
+import 'package:resume_plus_clean/features/exercises/screens/quiz_result_screen.dart';
+import 'package:resume_plus_clean/features/exercises/screens/personalized_quiz_screen.dart';
+
+/// Tentative unifiée : agrège les tentatives de l'ancien système d'exercices
+/// et celles du quiz QCM personnalisé pour les afficher avec la même logique.
+class _UnifiedAttempt {
+  final int id;
+  final String title;
+  final String summaryTitle;
+  final double score;
+  final DateTime completedAt;
+  final bool isPersonalized;
+  final int summaryId;
+
+  const _UnifiedAttempt({
+    required this.id,
+    required this.title,
+    required this.summaryTitle,
+    required this.score,
+    required this.completedAt,
+    required this.isPersonalized,
+    this.summaryId = 0,
+  });
+
+  String get scoreFormatted => '${score.toStringAsFixed(0)}%';
+  bool get isPassed => score >= 50;
+}
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({super.key});
@@ -14,7 +42,7 @@ class ExercisesScreen extends StatefulWidget {
 
 class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProviderStateMixin {
   final ApiService _apiService = ApiService();
-  List<ExerciseAttempt> _attempts = [];
+  List<_UnifiedAttempt> _attempts = [];
   bool _isLoading = true;
   bool _hasSubscription = false;
   bool _isExpired = false;
@@ -52,18 +80,54 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
       _isExpired = false;
     }
 
+    final List<_UnifiedAttempt> merged = [];
+
+    // 1. Anciennes tentatives (système d'exercices classique)
     try {
       final attemptsData = await _apiService.getExerciseAttempts();
       if (!mounted) return;
-      _attempts = attemptsData
-          .map((a) => ExerciseAttempt.fromJson(a as Map<String, dynamic>))
-          .toList();
+      for (final a in attemptsData) {
+        final att = ExerciseAttempt.fromJson(a as Map<String, dynamic>);
+        merged.add(_UnifiedAttempt(
+          id: att.id,
+          title: att.exerciseTitle,
+          summaryTitle: att.summaryTitle,
+          score: att.score,
+          completedAt: att.completedAt,
+          isPersonalized: false,
+        ));
+      }
       attemptsLoaded = true;
-      debugPrint('✅ ${_attempts.length} tentatives chargées');
     } catch (e) {
-      debugPrint('⚠️ Erreur chargement tentatives: $e');
-      _attempts = [];
+      debugPrint('⚠️ Erreur chargement tentatives classiques: $e');
     }
+
+    // 2. Tentatives du quiz QCM personnalisé
+    try {
+      final data = await _apiService.getPersonalizedExerciseAttempts();
+      if (!mounted) return;
+      final list = data['attempts'] as List<dynamic>? ?? [];
+      for (final a in list) {
+        final att = pe.ExerciseAttempt.fromJson(a as Map<String, dynamic>);
+        merged.add(_UnifiedAttempt(
+          id: att.id,
+          title: 'Exercice QCM • ${att.difficultyLabel}',
+          summaryTitle: att.summaryTitle,
+          score: att.score,
+          completedAt: att.completedAt ?? att.startedAt,
+          isPersonalized: true,
+          summaryId: att.summaryId,
+        ));
+      }
+      attemptsLoaded = true;
+    } catch (e) {
+      debugPrint('⚠️ Erreur chargement tentatives personnalisées: $e');
+    }
+
+    // Trier par date décroissante (plus récentes en premier)
+    merged.sort((a, b) => b.completedAt.compareTo(a.completedAt));
+    _attempts = merged;
+    debugPrint('✅ ${_attempts.length} tentatives chargées (toutes sources)');
 
     if (!mounted) return;
     setState(() {
@@ -110,7 +174,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
                     Container(
                       width: 44, height: 44,
                       decoration: BoxDecoration(
-                        color: Colors.white.withOpacity(0.15),
+                        color: Colors.white.withValues(alpha: 0.15),
                         borderRadius: BorderRadius.circular(14),
                       ),
                       child: const Icon(Icons.quiz_rounded, color: Colors.white, size: 24),
@@ -133,7 +197,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
                                     ? 'Abonnement expiré'
                                     : 'Abonnement requis',
                             style: TextStyle(
-                              color: Colors.white.withOpacity(0.7), fontSize: 12,
+                              color: Colors.white.withValues(alpha: 0.7), fontSize: 12,
                             ),
                           ),
                         ],
@@ -146,10 +210,10 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
                         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                         decoration: BoxDecoration(
                           color: _hasSubscription
-                              ? AppTheme.success.withOpacity(0.2)
+                              ? AppTheme.success.withValues(alpha: 0.2)
                               : _isExpired
-                                  ? AppTheme.error.withOpacity(0.2)
-                                  : AppTheme.warning.withOpacity(0.2),
+                                  ? AppTheme.error.withValues(alpha: 0.2)
+                                  : AppTheme.warning.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Row(
@@ -195,7 +259,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
                 TabBar(
                   controller: _tabController,
                   labelColor: Colors.white,
-                  unselectedLabelColor: Colors.white.withOpacity(0.5),
+                  unselectedLabelColor: Colors.white.withValues(alpha: 0.5),
                   indicatorColor: Colors.white,
                   indicatorWeight: 3,
                   tabs: const [
@@ -236,7 +300,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
               Container(
                 width: 80, height: 80,
                 decoration: BoxDecoration(
-                  color: AppTheme.primaryBlue.withOpacity(0.1),
+                  color: AppTheme.primaryBlue.withValues(alpha: 0.1),
                   shape: BoxShape.circle,
                 ),
                 child: const Icon(Icons.quiz_outlined, size: 36, color: AppTheme.primaryBlue),
@@ -271,7 +335,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
     );
   }
 
-  Widget _buildAttemptCard(ExerciseAttempt attempt) {
+  Widget _buildAttemptCard(_UnifiedAttempt attempt) {
     final theme = Theme.of(context);
     return GestureDetector(
       onTap: () => _openAttemptResult(attempt),
@@ -291,8 +355,8 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: attempt.isPassed
-                    ? AppTheme.success.withOpacity(0.1)
-                    : AppTheme.error.withOpacity(0.1),
+                    ? AppTheme.success.withValues(alpha: 0.1)
+                    : AppTheme.error.withValues(alpha: 0.1),
               ),
               child: Center(
                 child: Text(
@@ -309,10 +373,33 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    attempt.exerciseTitle,
-                    style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w600),
-                    maxLines: 1, overflow: TextOverflow.ellipsis,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          attempt.title,
+                          style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w600),
+                          maxLines: 1, overflow: TextOverflow.ellipsis,
+                        ),
+                      ),
+                      if (attempt.isPersonalized)
+                        Container(
+                          margin: const EdgeInsets.only(left: 8),
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: AppTheme.primaryBlue.withValues(alpha: 0.1),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: const Text(
+                            'Perso',
+                            style: TextStyle(
+                              color: AppTheme.primaryBlue,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
                   const SizedBox(height: 4),
                   Text(
@@ -330,7 +417,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
             ),
             Icon(
               Icons.chevron_right_rounded,
-              color: theme.colorScheme.onSurface.withOpacity(0.4),
+              color: theme.colorScheme.onSurface.withValues(alpha: 0.4),
               size: 22,
             ),
           ],
@@ -339,20 +426,55 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
     );
   }
 
-  Future<void> _openAttemptResult(ExerciseAttempt attempt) async {
+  Future<void> _openAttemptResult(_UnifiedAttempt attempt) async {
     try {
       showDialog(
         context: context,
         barrierDismissible: false,
         builder: (_) => const Center(child: CircularProgressIndicator()),
       );
-      final data = await _apiService.getAttemptResult(attempt.id);
-      if (!mounted) return;
-      Navigator.of(context).pop(); // fermer le loader
-      final result = ExerciseResult.fromJson(data);
-      Navigator.of(context).push(
-        MaterialPageRoute(builder: (_) => ExerciseResultScreen(result: result)),
-      );
+
+      if (attempt.isPersonalized) {
+        // Détail d'une tentative du quiz QCM personnalisé
+        final data = await _apiService.getPersonalizedAttemptDetail(attempt.id);
+        if (!mounted) return;
+        Navigator.of(context).pop(); // fermer le loader
+
+        final result = pe.AttemptResult.fromJson(data);
+        final exercise = pe.PersonalizedExercise.fromJson(
+          data['exercise'] as Map<String, dynamic>? ?? {},
+        );
+
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => QuizResultScreen(
+              result: result,
+              exercise: exercise,
+              onRetry: () {
+                Navigator.of(context).pop(); // ferme le résultat
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => PersonalizedQuizScreen(
+                      summaryId: attempt.summaryId,
+                      summaryTitle: attempt.summaryTitle,
+                    ),
+                  ),
+                );
+              },
+              onBack: () => Navigator.of(context).pop(),
+            ),
+          ),
+        );
+      } else {
+        // Détail d'une tentative du système d'exercices classique
+        final data = await _apiService.getAttemptResult(attempt.id);
+        if (!mounted) return;
+        Navigator.of(context).pop(); // fermer le loader
+        final result = ExerciseResult.fromJson(data);
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => ExerciseResultScreen(result: result)),
+        );
+      }
     } catch (e) {
       if (mounted) {
         Navigator.of(context).pop(); // fermer le loader
@@ -394,9 +516,9 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
             Container(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                color: (_isExpired ? AppTheme.error : AppTheme.warning).withOpacity(0.1),
+                color: (_isExpired ? AppTheme.error : AppTheme.warning).withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: (_isExpired ? AppTheme.error : AppTheme.warning).withOpacity(0.3)),
+                border: Border.all(color: (_isExpired ? AppTheme.error : AppTheme.warning).withValues(alpha: 0.3)),
               ),
               child: Column(
                 children: [
@@ -459,7 +581,7 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
             Container(
               width: 44, height: 44,
               decoration: BoxDecoration(
-                color: color.withOpacity(0.1), shape: BoxShape.circle,
+                color: color.withValues(alpha: 0.1), shape: BoxShape.circle,
               ),
               child: Icon(icon, color: color, size: 22),
             ),

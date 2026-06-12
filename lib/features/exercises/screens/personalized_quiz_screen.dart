@@ -64,7 +64,7 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
               Text(
                 widget.summaryTitle,
                 style: theme.textTheme.bodySmall?.copyWith(
-                  color: Colors.white.withOpacity(0.8),
+                  color: Colors.white.withValues(alpha: 0.8),
                 ),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
@@ -133,7 +133,7 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
             Icon(
               Icons.quiz_outlined,
               size: 64,
-              color: AppTheme.primaryBlue.withOpacity(0.5),
+              color: AppTheme.primaryBlue.withValues(alpha: 0.5),
             ),
             const SizedBox(height: 24),
             Text(
@@ -243,7 +243,7 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                   decoration: BoxDecoration(
-                    color: AppTheme.primaryBlue.withOpacity(0.1),
+                    color: AppTheme.primaryBlue.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Text(
@@ -297,7 +297,7 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
@@ -319,7 +319,7 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF10B981).withOpacity(0.1),
+                    color: const Color(0xFF10B981).withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Text(
@@ -366,7 +366,7 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: isSelected
-                  ? AppTheme.primaryBlue.withOpacity(0.1)
+                  ? AppTheme.primaryBlue.withValues(alpha: 0.1)
                   : Colors.grey[50],
               borderRadius: BorderRadius.circular(16),
               border: Border.all(
@@ -427,7 +427,7 @@ class _PersonalizedQuizScreenState extends ConsumerState<PersonalizedQuizScreen>
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, -2),
           ),
@@ -637,10 +637,10 @@ class _DifficultyButton extends StatelessWidget {
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [color.withOpacity(0.1), color.withOpacity(0.05)],
+              colors: [color.withValues(alpha: 0.1), color.withValues(alpha: 0.05)],
             ),
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: color.withOpacity(0.3), width: 2),
+            border: Border.all(color: color.withValues(alpha: 0.3), width: 2),
           ),
           child: Row(
             children: [
@@ -648,7 +648,7 @@ class _DifficultyButton extends StatelessWidget {
                 width: 50,
                 height: 50,
                 decoration: BoxDecoration(
-                  gradient: LinearGradient(colors: [color, color.withOpacity(0.8)]),
+                  gradient: LinearGradient(colors: [color, color.withValues(alpha: 0.8)]),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(icon, color: Colors.white, size: 28),
