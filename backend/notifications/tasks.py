@@ -323,16 +323,15 @@ def notify_summary_created(self, summary_id: int, author_user_id: int):
 
 
 @shared_task(bind=True, max_retries=2, default_retry_delay=10)
-def notify_summary_to_validate(self, summary_id: int):
+def notify_summary_to_validate(self, summary_id: int, author_user_id: int = None):
     """
-    Notify all CPs of the targeted university/filiere/promotion that a new
-    summary has been created and is waiting for validation.
-    This triggers the validation badge in their app.
+    Notify the CP author that their summary has been created and is waiting
+    for validation. This triggers the validation badge in their app.
     """
-    logger.info(f'🔔 [Task] notify_summary_to_validate DÉMARRÉ — summary_id={summary_id}')
+    logger.info(f'🔔 [Task] notify_summary_to_validate DÉMARRÉ — summary_id={summary_id}, author={author_user_id}')
     try:
+        from django.contrib.auth.models import User
         from courses.models import Summary
-        from users.models import UserProfile
         from .models import AppNotification, UserNotification
 
         try:
@@ -342,56 +341,42 @@ def notify_summary_to_validate(self, summary_id: int):
             logger.warning(f'⚠️ [Task] notify_summary_to_validate: Résumé {summary_id} introuvable')
             return {'sent': 0, 'reason': 'summary_not_found'}
 
-        title = '📝 Résumé en attente de validation'
-        body = f'Le résumé intelligent de « {summary.titre} » (cours: {course.nom}) est prêt et attend votre validation.'
+        # Target: the CP author who created the summary
+        if not author_user_id:
+            if summary.author_user:
+                author_user_id = summary.author_user.id
+            else:
+                logger.warning(f'⚠️ [Task] notify_summary_to_validate: aucun auteur pour résumé {summary_id}')
+                return {'sent': 0, 'reason': 'no_author'}
 
-        # Create one AppNotification targeting the structure
+        try:
+            author = User.objects.get(id=author_user_id)
+        except User.DoesNotExist:
+            logger.warning(f'⚠️ [Task] notify_summary_to_validate: auteur {author_user_id} introuvable')
+            return {'sent': 0, 'reason': 'author_not_found'}
+
+        title = '📝 Résumé en attente de validation'
+        body = f'Votre résumé « {summary.titre} » (cours: {course.nom}) est prêt et attend votre validation.'
+
         notif = AppNotification.objects.create(
             title=title,
             body=body,
-            notification_type='promo',  # Triggers target validation on CP side
+            notification_type='promo',
             summary_id=summary_id,
             course_id=course.id,
         )
 
-        # Find all CPs of this promotion
-        cp_profiles = UserProfile.objects.filter(
-            groupe='CP',
-            universite__in=course.universites.all(),
-            filiere__in=course.filieres.all(),
-            promotion__in=course.promotions.all()
-        ).select_related('user').distinct()
+        un, _ = UserNotification.objects.get_or_create(
+            user=author,
+            notification=notif,
+        )
 
-        # Add Admins as fallback/extra validators
-        admin_profiles = UserProfile.objects.filter(groupe='ADMIN').select_related('user').distinct()
-        
-        target_profiles = list(cp_profiles) + list(admin_profiles)
-        target_users = {profile.user for profile in target_profiles if profile.user}
+        logger.info(f'🔔 [Task] Notification validation créée pour {author.username} — notif_id={notif.id}, un_id={un.id}')
 
-        user_notifications_to_create = []
-        for user in target_users:
-            user_notifications_to_create.append(
-                UserNotification(user=user, notification=notif)
-            )
+        # Send FCM push to the author only
+        send_fcm_notification.apply_async(args=[[un.id]], countdown=1)
 
-        if user_notifications_to_create:
-            # Create UserNotifications in bulk
-            UserNotification.objects.bulk_create(
-                user_notifications_to_create,
-                ignore_conflicts=True
-            )
-            # Retrieve the created instances to get their IDs
-            un_ids = list(UserNotification.objects.filter(notification=notif, user__in=target_users).values_list('id', flat=True))
-            
-            logger.info(f'🔔 [Task] Notification "à valider" créée pour {len(un_ids)} CP/Admins — notif_id={notif.id}')
-            
-            # Send FCM to all of them
-            if un_ids:
-                send_fcm_notification.apply_async(args=[un_ids], countdown=1)
-                
-            return {'notification_id': notif.id, 'cps_notified': len(un_ids)}
-        
-        return {'notification_id': notif.id, 'cps_notified': 0}
+        return {'notification_id': notif.id, 'user_id': author.id, 'summary_id': summary_id}
 
     except Exception as exc:
         logger.error(f'❌ [Task] notify_summary_to_validate échoué: {exc}')

@@ -30,10 +30,10 @@ def on_summary_created(sender, instance, created, **kwargs):
                 kwargs={'summary_id': instance.id, 'author_user_id': author.id},
                 countdown=1
             )
-            # Notifier tous les CPs (y compris l'auteur) qu'un résumé est en attente de validation
-            logger.info(f"🔔 [Signal] Notification validation planifiée pour les CPs — summary_id={instance.id}")
+            # Notifier l'auteur CP que son résumé est en attente de validation
+            logger.info(f"🔔 [Signal] Notification validation planifiée pour l'auteur CP — summary_id={instance.id}")
             notify_summary_to_validate.apply_async(
-                kwargs={'summary_id': instance.id},
+                kwargs={'summary_id': instance.id, 'author_user_id': author.id},
                 countdown=2
             )
         except Exception as err:
