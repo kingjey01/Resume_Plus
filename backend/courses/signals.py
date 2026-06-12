@@ -24,14 +24,20 @@ def on_summary_created(sender, instance, created, **kwargs):
 
     if author:
         try:
-            from notifications.tasks import notify_summary_created
+            from notifications.tasks import notify_summary_created, notify_summary_to_validate
             logger.info(f"🔔 [Signal] Notification push planifiée pour l'auteur {author.username}")
             notify_summary_created.apply_async(
                 kwargs={'summary_id': instance.id, 'author_user_id': author.id},
                 countdown=1
             )
+            # Notifier tous les CPs (y compris l'auteur) qu'un résumé est en attente de validation
+            logger.info(f"🔔 [Signal] Notification validation planifiée pour les CPs — summary_id={instance.id}")
+            notify_summary_to_validate.apply_async(
+                kwargs={'summary_id': instance.id},
+                countdown=2
+            )
         except Exception as err:
-            logger.warning(f"⚠️ [Signal] notify_summary_created non planifié : {err}")
+            logger.warning(f"⚠️ [Signal] Erreur planification notifications : {err}")
     else:
         logger.warning(
             f"⚠️ [Signal] Résumé {instance.id} sans auteur — notification push ignorée"
