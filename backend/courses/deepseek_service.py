@@ -383,16 +383,17 @@ RÈGLES STRICTES À SUIVRE:
 6. NE JAMAIS inventer d'informations qui ne sont pas dans le résumé
 7. Inclure une explication claire pour chaque bonne réponse
 8. Les distracteurs (mauvaises réponses) doivent être plausibles mais clairement incorrects
+9. INTERDICTION ABSOLUE : NE JAMAIS utiliser "Concept A", "Concept B", "Option A", "Option B" ou tout placeholder générique. Chaque option DOIT être un texte réel, précis et pertinent basé sur le contenu du résumé.
 
 FORMAT DE SORTIE (JSON strict, aucun texte autour):
 [
   {
     "question": "Texte de la question ?",
     "options": {
-      "A": "Option A",
-      "B": "Option B",
-      "C": "Option C",
-      "D": "Option D"
+      "A": "Texte réel de l'option A basé sur le résumé",
+      "B": "Texte réel de l'option B basé sur le résumé",
+      "C": "Texte réel de l'option C basé sur le résumé",
+      "D": "Texte réel de l'option D basé sur le résumé"
     },
     "correct_answer": "A",
     "explanation": "Explication de pourquoi A est correct"

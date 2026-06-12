@@ -88,20 +88,21 @@ class ExerciseGenerator:
         try:
             # Appeler DeepSeekService.generate_exercises (même pattern que generate_summary)
             result = deepseek_service.generate_exercises(resume_text, titre)
-            
+
             if result['success']:
                 # Parser la réponse JSON de DeepSeek
                 parsed = self._parse_ai_response(result['content'])
-                if parsed:
+                if parsed and len(parsed) >= 5:
                     logger.info(f"✅ {len(parsed)} questions générées par DeepSeek IA pour: {titre}")
                     return parsed, True
                 else:
-                    logger.warning(f"⚠️ Parsing échoué pour la réponse DeepSeek, fallback local")
+                    reason = 'Parsing échoué' if not parsed else f"Seulement {len(parsed)} questions valides (< 5)"
+                    logger.warning(f"⚠️ {reason} pour la réponse DeepSeek, fallback local")
                     return self._generate_mock_questions(titre, resume_text), False
             else:
                 logger.warning(f"⚠️ Échec DeepSeek exercices: {result['error']} — fallback local")
                 return self._generate_mock_questions(titre, resume_text), False
-                
+
         except Exception as e:
             logger.error(f"Erreur lors de l'appel DeepSeek pour exercices: {str(e)}")
             return self._generate_mock_questions(titre, resume_text), False
@@ -135,19 +136,32 @@ class ExerciseGenerator:
             return None
     
     def _validate_question_structure(self, question):
-        """Valide la structure d'une question"""
+        """Valide la structure d'une question et détecte les placeholders"""
         required_fields = ['question', 'options', 'correct_answer']
-        
+
         if not all(field in question for field in required_fields):
             return False
-        
+
         options = question['options']
         if not all(opt in options for opt in ['A', 'B', 'C', 'D']):
             return False
-        
+
         if question['correct_answer'] not in ['A', 'B', 'C', 'D']:
             return False
-        
+
+        # Détection de placeholders génériques
+        placeholder_patterns = ['concept a', 'concept b', 'concept c', 'concept d',
+                                   'option a', 'option b', 'option c', 'option d',
+                                   'réponse a', 'réponse b', 'réponse c', 'réponse d']
+        for opt in ['A', 'B', 'C', 'D']:
+            opt_text = str(options.get(opt, '')).lower()
+            if any(p in opt_text for p in placeholder_patterns):
+                logger.warning(f"Placeholder détecté dans option {opt}: '{options[opt]}' — question rejetée")
+                return False
+            if len(opt_text.strip()) < 3:
+                logger.warning(f"Option {opt} trop courte: '{options[opt]}' — question rejetée")
+                return False
+
         return True
     
     def _generate_mock_questions(self, titre, resume_text=None):
