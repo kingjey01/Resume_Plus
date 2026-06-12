@@ -103,6 +103,20 @@ class SummarySerializer(serializers.ModelSerializer):
     author_name = serializers.CharField(source='author_user.username', read_only=True)
     transcription_id = serializers.IntegerField(source='transcription.id', read_only=True, allow_null=True)
     professeur_info = ProfesseurSerializer(source='professeur', read_only=True)
+    professor_display = serializers.SerializerMethodField()
+
+    def get_professor_display(self, obj):
+        """Retourne le nom du professeur (FK, session.professeur_fk, ou session.professeur texte)"""
+        # 1. Professeur direct sur le résumé
+        if obj.professeur:
+            return obj.professeur.user.get_full_name() or obj.professeur.user.username
+        # 2. Professeur FK sur la session liée
+        if obj.session and obj.session.professeur_fk:
+            return obj.session.professeur_fk.user.get_full_name() or obj.session.professeur_fk.user.username
+        # 3. Nom texte du professeur sur la session
+        if obj.session and obj.session.professeur:
+            return obj.session.professeur
+        return ''
 
     def get_filiere_name(self, obj):
         """Retourne le nom de la filière via FK si disponible, sinon le champ texte"""
@@ -114,11 +128,11 @@ class SummarySerializer(serializers.ModelSerializer):
         except Exception:
             pass
         return ''
-    
+
     class Meta:
         model = Summary
-        fields = ['id', 'titre', 'texte_resume', 'professeur', 'professeur_info', 'course', 'course_name',
-                 'filiere_name', 'session',
+        fields = ['id', 'titre', 'texte_resume', 'professeur', 'professeur_info', 'professor_display',
+                 'course', 'course_name', 'filiere_name', 'session',
                  'transcription_id', 'author_type', 'author_user', 'author_name', 'pdf_file', 'prix',
                  'is_free', 'is_validated', 'created_at', 'updated_at']
     

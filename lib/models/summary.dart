@@ -72,6 +72,10 @@ class Summary {
   }
 
   static String _parseProfessorName(Map<String, dynamic> json) {
+    // 1. Champ texte direct du backend (fallback universel)
+    final display = json['professor_display'];
+    if (display is String && display.trim().isNotEmpty) return display.trim();
+    // 2. Objet professeur_info (FK)
     final info = json['professeur_info'];
     if (info is Map) {
       final fullName = info['user_full_name'];
@@ -79,6 +83,9 @@ class Summary {
       final username = info['user_username'];
       if (username is String && username.trim().isNotEmpty) return username.trim();
     }
+    // 3. Nom texte brut si présent
+    final rawName = json['professeur'];
+    if (rawName is String && rawName.trim().isNotEmpty) return rawName.trim();
     return '';
   }
 

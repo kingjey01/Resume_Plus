@@ -393,6 +393,7 @@ class AudioProcessor:
                 course=session.course,
                 session=session,
                 transcription=transcription,
+                professeur=session.professeur_fk,
                 author_type='ai',
                 author_user=author_user,
                 prix=final_price,

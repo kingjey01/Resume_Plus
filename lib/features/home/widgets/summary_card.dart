@@ -52,8 +52,8 @@ class SummaryCard extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                     colors: [
-                      AppTheme.primaryBlue.withOpacity(0.08),
-                      AppTheme.accentBlue.withOpacity(0.12),
+                      AppTheme.primaryBlue.withValues(alpha:0.08),
+                      AppTheme.accentBlue.withValues(alpha:0.12),
                     ],
                   ),
                 ),
@@ -76,8 +76,8 @@ class SummaryCard extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
                           decoration: BoxDecoration(
                             color: summary.isAiGenerated
-                                ? const Color(0xFF7C3AED).withOpacity(0.9)
-                                : AppTheme.primaryBlue.withOpacity(0.9),
+                                ? const Color(0xFF7C3AED).withValues(alpha:0.9)
+                                : AppTheme.primaryBlue.withValues(alpha:0.9),
                             borderRadius: BorderRadius.circular(6),
                           ),
                           child: Row(
@@ -124,7 +124,7 @@ class SummaryCard extends StatelessWidget {
                     Text(
                       summary.subject,
                       style: theme.textTheme.bodySmall?.copyWith(
-                        color: theme.colorScheme.onSurface.withOpacity(0.6),
+                        color: theme.colorScheme.onSurface.withValues(alpha:0.6),
                         fontSize: 11,
                       ),
                       maxLines: 1,
@@ -135,13 +135,13 @@ class SummaryCard extends StatelessWidget {
                       const SizedBox(height: 4),
                       Row(
                         children: [
-                          Icon(Icons.school_rounded, size: 12, color: const Color(0xFF9C27B0).withOpacity(0.8)),
+                          Icon(Icons.school_rounded, size: 12, color: const Color(0xFF9C27B0).withValues(alpha:0.8)),
                           const SizedBox(width: 4),
                           Flexible(
                             child: Text(
                               summary.professorName,
                               style: TextStyle(
-                                color: const Color(0xFF9C27B0).withOpacity(0.8),
+                                color: const Color(0xFF9C27B0).withValues(alpha:0.8),
                                 fontSize: 10,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -163,8 +163,8 @@ class SummaryCard extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                                 decoration: BoxDecoration(
                                   color: summary.isFree
-                                      ? AppTheme.success.withOpacity(0.1)
-                                      : AppTheme.primaryBlue.withOpacity(0.1),
+                                      ? AppTheme.success.withValues(alpha:0.1)
+                                      : AppTheme.primaryBlue.withValues(alpha:0.1),
                                   borderRadius: BorderRadius.circular(20),
                                 ),
                                 child: Text(
@@ -180,12 +180,12 @@ class SummaryCard extends StatelessWidget {
                               // Date
                               Row(
                                 children: [
-                                  Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                  Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
                                   const SizedBox(width: 3),
                                   Text(
                                     DateFormat('dd/MM/yyyy').format(summary.createdAt),
                                     style: TextStyle(
-                                      color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                      color: theme.colorScheme.onSurface.withValues(alpha:0.5),
                                       fontSize: 10,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -196,13 +196,13 @@ class SummaryCard extends StatelessWidget {
                               // Auteur
                               Row(
                                 children: [
-                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
                                   const SizedBox(width: 3),
                                   Flexible(
                                     child: Text(
                                       summary.authorName,
                                       style: TextStyle(
-                                        color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                        color: theme.colorScheme.onSurface.withValues(alpha:0.5),
                                         fontSize: 10,
                                         fontWeight: FontWeight.w500,
                                       ),
@@ -224,8 +224,8 @@ class SummaryCard extends StatelessWidget {
                                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                                     decoration: BoxDecoration(
                                       color: summary.isFree
-                                          ? AppTheme.success.withOpacity(0.1)
-                                          : AppTheme.primaryBlue.withOpacity(0.1),
+                                          ? AppTheme.success.withValues(alpha:0.1)
+                                          : AppTheme.primaryBlue.withValues(alpha:0.1),
                                       borderRadius: BorderRadius.circular(20),
                                     ),
                                     child: Text(
@@ -240,12 +240,12 @@ class SummaryCard extends StatelessWidget {
                                   // Date
                                   Row(
                                     children: [
-                                      Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                      Icon(Icons.calendar_today_rounded, size: 11, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
                                       const SizedBox(width: 3),
                                       Text(
                                         DateFormat('dd/MM/yyyy').format(summary.createdAt),
                                         style: TextStyle(
-                                          color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                          color: theme.colorScheme.onSurface.withValues(alpha:0.5),
                                           fontSize: 10,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -258,13 +258,13 @@ class SummaryCard extends StatelessWidget {
                               // Auteur
                               Row(
                                 children: [
-                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withOpacity(0.45)),
+                                  Icon(Icons.person_outline_rounded, size: 12, color: theme.colorScheme.onSurface.withValues(alpha:0.45)),
                                   const SizedBox(width: 3),
                                   Flexible(
                                     child: Text(
                                       summary.authorName,
                                       style: TextStyle(
-                                        color: theme.colorScheme.onSurface.withOpacity(0.5),
+                                        color: theme.colorScheme.onSurface.withValues(alpha:0.5),
                                         fontSize: 10,
                                         fontWeight: FontWeight.w500,
                                       ),
@@ -291,12 +291,12 @@ class SummaryCard extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.menu_book_rounded, size: 32, color: AppTheme.primaryBlue.withOpacity(0.4)),
+          Icon(Icons.menu_book_rounded, size: 32, color: AppTheme.primaryBlue.withValues(alpha:0.4)),
           const SizedBox(height: 4),
           Text(
             'Résumé',
             style: TextStyle(
-              color: AppTheme.primaryBlue.withOpacity(0.4),
+              color: AppTheme.primaryBlue.withValues(alpha:0.4),
               fontSize: 11,
               fontWeight: FontWeight.w500,
             ),
