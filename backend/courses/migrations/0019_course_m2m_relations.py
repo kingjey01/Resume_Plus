@@ -1,31 +1,26 @@
-# Generated manually to align model with DB after migration 0019 loss
-
 from django.db import migrations, models
 
 
 def migrate_fk_to_m2m(apps, schema_editor):
-    """Copie les données des anciens FK vers les nouvelles relations M2M."""
+    """Copie les FK existantes vers les nouvelles tables M2M."""
     Course = apps.get_model('courses', 'Course')
     for course in Course.objects.all():
-        if hasattr(course, 'universite_fk_id') and course.universite_fk_id:
+        if course.universite_fk_id:
             course.universites.add(course.universite_fk_id)
-        if hasattr(course, 'filiere_fk_id') and course.filiere_fk_id:
+        if course.filiere_fk_id:
             course.filieres.add(course.filiere_fk_id)
-        if hasattr(course, 'promotion_fk_id') and course.promotion_fk_id:
+        if course.promotion_fk_id:
             course.promotions.add(course.promotion_fk_id)
 
 
-def noop(apps, schema_editor):
-    pass
-
-
 class Migration(migrations.Migration):
+
     dependencies = [
-        ('courses', '0015_merge_20260523_2104'),
+        ('courses', '0018_user_personalized_exercises'),
     ]
 
     operations = [
-        # Ajouter les relations M2M
+        # 1. Ajouter les tables M2M
         migrations.AddField(
             model_name='course',
             name='universites',
@@ -41,9 +36,9 @@ class Migration(migrations.Migration):
             name='promotions',
             field=models.ManyToManyField(blank=True, related_name='courses', to='courses.promotion'),
         ),
-        # Copier les données
-        migrations.RunPython(migrate_fk_to_m2m, noop),
-        # Supprimer les anciens FK
+        # 2. Copier les données des FK vers les M2M
+        migrations.RunPython(migrate_fk_to_m2m, migrations.RunPython.noop),
+        # 3. Supprimer les anciens champs FK
         migrations.RemoveField(
             model_name='course',
             name='universite_fk',

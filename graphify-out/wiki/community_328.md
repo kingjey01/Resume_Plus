@@ -1,13 +1,13 @@
-# Community 328: service
+# Community 328: gunicorn.conf
 
 **Members:** 2
 
 ## Nodes
 
-- **service** (`lib_models_service_dart`, File, degree: 1)
-- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
+- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
+- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_service_dart → lib_models_service_dart_id (defines)
+- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
 

@@ -66,24 +66,6 @@ class FiliereAdmin(admin.ModelAdmin):
     readonly_fields = ['created_at']
 
 
-@admin.register(UniversiteFiliere)
-class UniversiteFiliereAdmin(admin.ModelAdmin):
-    list_display = ['universite', 'filiere', 'created_at']
-    list_filter = ['universite', 'filiere', 'created_at']
-    search_fields = ['universite__nom', 'filiere__nom']
-    readonly_fields = ['created_at']
-    #autocomplete_fields = ['universite', 'filiere']
-
-
-@admin.register(FilierePromotion)
-class FilierePromotionAdmin(admin.ModelAdmin):
-    list_display = ['filiere', 'promotion', 'created_at']
-    list_filter = ['filiere', 'promotion', 'created_at']
-    search_fields = ['filiere__nom', 'promotion__nom']
-    readonly_fields = ['created_at']
-    #autocomplete_fields = ['filiere', 'promotion']
-
-
 @admin.register(Transcription)
 class TranscriptionAdmin(admin.ModelAdmin):
     list_display = ['session', 'status', 'confidence', 'duree_audio', 'created_at']

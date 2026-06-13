@@ -1,23 +1,23 @@
-# Community 154: universite_filiere
+# Community 154: test_exercise_generation
 
 **Members:** 7
 
 ## Nodes
 
-- **universite_filiere** (`lib_models_universite_filiere_dart`, File, degree: 6)
-- **filiere.dart** (`lib_models_universite_filiere_dart_import_filiere_dart`, Module, degree: 1)
-- **package:json_annotation/json_annotation.dart** (`lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
-- **universite.dart** (`lib_models_universite_filiere_dart_import_universite_dart`, Module, degree: 1)
-- **universite_filiere.g.dart** (`lib_models_universite_filiere_dart_import_universite_filiere_g_dart`, Module, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_dart_universitefilieretojson`, Function, degree: 1)
+- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
+- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
+- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
+- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
+- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_filiere_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_filiere_g_dart (imports)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilieretojson (defines)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
 

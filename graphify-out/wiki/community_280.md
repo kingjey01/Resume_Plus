@@ -1,17 +1,17 @@
-# Community 280: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
+# Community 280: theme_selector
 
 **Members:** 4
 
 ## Nodes
 
-- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
+- **theme_selector** (`lib_features_settings_widgets_theme_selector_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/settings/providers/theme_provider.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart (imports)
 

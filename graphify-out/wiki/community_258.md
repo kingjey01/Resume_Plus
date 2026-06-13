@@ -1,17 +1,17 @@
-# Community 258: 0008_add_session_processing_fields
+# Community 258: web_audio_service
 
 **Members:** 4
 
 ## Nodes
 
-- **0008_add_session_processing_fields** (`backend_courses_migrations_0008_add_session_processing_fields_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0008_add_session_processing_fields_py_migration`, Class, degree: 1)
+- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
+- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models (imports)
-- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_migration (defines)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
+- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
 

@@ -1,19 +1,20 @@
-# Community 213: debug_access
+# Community 213: create_simple_audio_file()
 
 **Members:** 5
 
 ## Nodes
 
-- **debug_access** (`backend_debug_access_py`, File, degree: 4)
-- **courses.models.Course** (`backend_debug_access_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_debug_access_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_debug_access_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_debug_access_py_import_os`, Module, degree: 1)
+- **create_simple_audio_file()** (`backend_test_simple_audio_upload_py_create_simple_audio_file`, Function, degree: 3)
+- **main()** (`backend_test_simple_audio_upload_py_main`, Function, degree: 4)
+- **test_audio_upload_direct()** (`backend_test_simple_audio_upload_py_test_audio_upload_direct`, Function, degree: 3)
+- **test_simple_endpoints()** (`backend_test_simple_audio_upload_py_test_simple_endpoints`, Function, degree: 2)
+- **test_with_different_course_ids()** (`backend_test_simple_audio_upload_py_test_with_different_course_ids`, Function, degree: 3)
 
 ## Relationships
 
-- backend_debug_access_py → backend_debug_access_py_import_os (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django_contrib_auth_models_user (imports)
-- backend_debug_access_py → backend_debug_access_py_import_courses_models_course (imports)
+- backend_test_simple_audio_upload_py_test_audio_upload_direct → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_test_with_different_course_ids → backend_test_simple_audio_upload_py_create_simple_audio_file (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_with_different_course_ids (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_audio_upload_direct (calls)
+- backend_test_simple_audio_upload_py_main → backend_test_simple_audio_upload_py_test_simple_endpoints (calls)
 

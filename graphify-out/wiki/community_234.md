@@ -1,19 +1,19 @@
-# Community 234: audio_playback_test_page
+# Community 234: edit_summary_screen
 
 **Members:** 5
 
 ## Nodes
 
-- **audio_playback_test_page** (`lib_pages_audio_playback_test_page_dart`, File, degree: 4)
-- **_AudioPlaybackTestPageState()** (`lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/api_service.dart** (`lib_pages_audio_playback_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../widgets/audio_file_player_widget.dart** (`lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
+- **edit_summary_screen** (`lib_features_validation_screens_edit_summary_screen_dart`, File, degree: 4)
+- **_EditSummaryScreenState()** (`lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_services_api_service_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate (defines)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate (defines)
 

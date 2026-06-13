@@ -1,17 +1,17 @@
-# Community 279: test_summaries_response
+# Community 279: celery
 
 **Members:** 4
 
 ## Nodes
 
-- **test_summaries_response** (`backend_test_summaries_response_py`, File, degree: 3)
-- **json** (`backend_test_summaries_response_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_summaries_response_py_import_requests`, Module, degree: 1)
-- **test_summaries_endpoint()** (`backend_test_summaries_response_py_test_summaries_endpoint`, Function, degree: 1)
+- **celery** (`backend_resume_backend_celery_py`, File, degree: 3)
+- **debug_task()** (`backend_resume_backend_celery_py_debug_task`, Function, degree: 1)
+- **celery.Celery** (`backend_resume_backend_celery_py_import_celery_celery`, Module, degree: 1)
+- **os** (`backend_resume_backend_celery_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_requests (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_json (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_test_summaries_endpoint (defines)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_os (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_import_celery_celery (imports)
+- backend_resume_backend_celery_py → backend_resume_backend_celery_py_debug_task (defines)
 

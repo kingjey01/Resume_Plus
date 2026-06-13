@@ -1,13 +1,13 @@
-# Community 323: abonnement
+# Community 323: course
 
 **Members:** 2
 
 ## Nodes
 
-- **abonnement** (`lib_models_abonnement_dart`, File, degree: 1)
-- **id()** (`lib_models_abonnement_dart_id`, Function, degree: 1)
+- **course** (`lib_models_course_dart`, File, degree: 1)
+- **id()** (`lib_models_course_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_abonnement_dart → lib_models_abonnement_dart_id (defines)
+- lib_models_course_dart → lib_models_course_dart_id (defines)
 

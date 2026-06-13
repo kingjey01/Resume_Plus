@@ -1,15 +1,15 @@
-# Community 317: test_local_server
+# Community 317: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
-- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
-- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
+- **urls** (`backend_users_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_users_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_users_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
-- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
+- backend_users_urls_py → backend_users_urls_py_import_django_urls_path (imports)
+- backend_users_urls_py → backend_users_urls_py_import_views (imports)
 

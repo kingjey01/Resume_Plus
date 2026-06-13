@@ -1,25 +1,25 @@
-# Community 127: health_check
+# Community 127: phone_login_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **health_check** (`backend_health_check_py`, File, degree: 7)
-- **health_check()** (`backend_health_check_py_health_check`, Function, degree: 1)
-- **django.conf.settings** (`backend_health_check_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_health_check_py_import_django_db_connection`, Module, degree: 1)
-- **django.http.JsonResponse** (`backend_health_check_py_import_django_http_jsonresponse`, Module, degree: 1)
-- **django.views.decorators.csrf.csrf_exempt** (`backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt`, Module, degree: 1)
-- **django.views.decorators.http.require_http_methods** (`backend_health_check_py_import_django_views_decorators_http_require_http_methods`, Module, degree: 1)
-- **json** (`backend_health_check_py_import_json`, Module, degree: 1)
+- **phone_login_screen** (`lib_features_auth_screens_phone_login_screen_dart`, File, degree: 7)
+- **package:dio/dio.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/otp_verification_screen.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PhoneLoginScreenState()** (`lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_health_check_py → backend_health_check_py_import_django_http_jsonresponse (imports)
-- backend_health_check_py → backend_health_check_py_import_django_views_decorators_http_require_http_methods (imports)
-- backend_health_check_py → backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt (imports)
-- backend_health_check_py → backend_health_check_py_import_django_db_connection (imports)
-- backend_health_check_py → backend_health_check_py_import_django_conf_settings (imports)
-- backend_health_check_py → backend_health_check_py_import_json (imports)
-- backend_health_check_py → backend_health_check_py_health_check (defines)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines)
 

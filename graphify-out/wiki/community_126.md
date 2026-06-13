@@ -1,25 +1,25 @@
-# Community 126: admin
+# Community 126: account_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **account_screen** (`lib_features_account_screens_account_screen_dart`, File, degree: 7)
+- **_AccountScreenState()** (`lib_features_account_screens_account_screen_dart_accountscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/splash/screens/splash_screen.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_features_splash_screens_splash_screen_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_account_screens_account_screen_dart → lib_features_account_screens_account_screen_dart_accountscreenstate (defines)
 

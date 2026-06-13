@@ -1,17 +1,17 @@
-# Community 270: web_audio_service
+# Community 270: debug_page
 
 **Members:** 4
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
+- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
 

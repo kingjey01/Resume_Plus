@@ -1,33 +1,37 @@
-# Community 54: otp_verification_screen
+# Community 54: test_audio_upload
 
 **Members:** 12
 
 ## Nodes
 
-- **otp_verification_screen** (`lib_features_auth_screens_otp_verification_screen_dart`, File, degree: 11)
-- **dart:async** (`lib_features_auth_screens_otp_verification_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart'** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter/services.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/fcm_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_fcm_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_OtpVerificationScreenState()** (`lib_features_auth_screens_otp_verification_screen_dart_otpverificationscreenstate`, Function, degree: 1)
+- **test_audio_upload** (`backend_test_audio_upload_py`, File, degree: 11)
+- **create_fake_audio_file()** (`backend_test_audio_upload_py_create_fake_audio_file`, Function, degree: 2)
+- **io** (`backend_test_audio_upload_py_import_io`, Module, degree: 1)
+- **json** (`backend_test_audio_upload_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_audio_upload_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_audio_upload_py_import_requests`, Module, degree: 1)
+- **struct** (`backend_test_audio_upload_py_import_struct`, Module, degree: 1)
+- **wave** (`backend_test_audio_upload_py_import_wave`, Module, degree: 1)
+- **main()** (`backend_test_audio_upload_py_main`, Function, degree: 4)
+- **test_audio_upload()** (`backend_test_audio_upload_py_test_audio_upload`, Function, degree: 3)
+- **test_get_courses()** (`backend_test_audio_upload_py_test_get_courses`, Function, degree: 2)
+- **test_get_sessions()** (`backend_test_audio_upload_py_test_get_sessions`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_services_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_resume_plus_clean_services_fcm_service_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_import_dart_async (imports)
-- lib_features_auth_screens_otp_verification_screen_dart → lib_features_auth_screens_otp_verification_screen_dart_otpverificationscreenstate (defines)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_import_requests (imports)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_import_json (imports)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_import_io (imports)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_import_wave (imports)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_import_struct (imports)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_import_random (imports)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_create_fake_audio_file (defines)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_test_get_courses (defines)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_test_audio_upload (defines)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_test_get_sessions (defines)
+- backend_test_audio_upload_py → backend_test_audio_upload_py_main (defines)
+- backend_test_audio_upload_py_test_audio_upload → backend_test_audio_upload_py_create_fake_audio_file (calls)
+- backend_test_audio_upload_py_main → backend_test_audio_upload_py_test_audio_upload (calls)
+- backend_test_audio_upload_py_main → backend_test_audio_upload_py_test_get_courses (calls)
+- backend_test_audio_upload_py_main → backend_test_audio_upload_py_test_get_sessions (calls)
 

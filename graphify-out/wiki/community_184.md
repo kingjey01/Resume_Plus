@@ -1,21 +1,21 @@
-# Community 184: 0016_course_m2m_relations_cleanup
+# Community 184: exercise_subscription_screen
 
 **Members:** 6
 
 ## Nodes
 
-- **0016_course_m2m_relations_cleanup** (`backend_courses_migrations_0016_course_m2m_relations_cleanup_py`, File, degree: 5)
-- **django.db.migrations** (`backend_courses_migrations_0016_course_m2m_relations_cleanup_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0016_course_m2m_relations_cleanup_py_import_django_db_models`, Module, degree: 1)
-- **migrate_fk_to_m2m()** (`backend_courses_migrations_0016_course_m2m_relations_cleanup_py_migrate_fk_to_m2m`, Function, degree: 1)
-- **Migration** (`backend_courses_migrations_0016_course_m2m_relations_cleanup_py_migration`, Class, degree: 1)
-- **noop()** (`backend_courses_migrations_0016_course_m2m_relations_cleanup_py_noop`, Function, degree: 1)
+- **exercise_subscription_screen** (`lib_features_exercises_screens_exercise_subscription_screen_dart`, File, degree: 5)
+- **_ExerciseSubscriptionScreenState()** (`lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0016_course_m2m_relations_cleanup_py → backend_courses_migrations_0016_course_m2m_relations_cleanup_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0016_course_m2m_relations_cleanup_py → backend_courses_migrations_0016_course_m2m_relations_cleanup_py_import_django_db_models (imports)
-- backend_courses_migrations_0016_course_m2m_relations_cleanup_py → backend_courses_migrations_0016_course_m2m_relations_cleanup_py_migrate_fk_to_m2m (defines)
-- backend_courses_migrations_0016_course_m2m_relations_cleanup_py → backend_courses_migrations_0016_course_m2m_relations_cleanup_py_noop (defines)
-- backend_courses_migrations_0016_course_m2m_relations_cleanup_py → backend_courses_migrations_0016_course_m2m_relations_cleanup_py_migration (defines)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
+- lib_features_exercises_screens_exercise_subscription_screen_dart → lib_features_exercises_screens_exercise_subscription_screen_dart_exercisesubscriptionscreenstate (defines)
 

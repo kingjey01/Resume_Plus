@@ -1,13 +1,13 @@
-# Community 330: generated_plugin_registrant
+# Community 330: payment_method
 
 **Members:** 2
 
 ## Nodes
 
-- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
-- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
+- **payment_method** (`lib_models_payment_method_dart`, File, degree: 1)
+- **PaymentMethodType** (`lib_models_payment_method_dart_paymentmethodtype`, Enum, degree: 1)
 
 ## Relationships
 
-- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
+- lib_models_payment_method_dart → lib_models_payment_method_dart_paymentmethodtype (defines)
 

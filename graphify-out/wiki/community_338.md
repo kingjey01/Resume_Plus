@@ -1,8 +1,8 @@
-# Community 338: resource
+# Community 338: promotion
 
 **Members:** 1
 
 ## Nodes
 
-- **resource** (`windows_runner_resource_h`, File, degree: 0)
+- **promotion** (`lib_models_promotion_dart`, File, degree: 0)
 

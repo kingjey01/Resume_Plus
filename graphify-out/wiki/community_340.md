@@ -1,8 +1,8 @@
-# Community 340: Runner-Bridging-Header
+# Community 340: app_notification
 
 **Members:** 1
 
 ## Nodes
 
-- **Runner-Bridging-Header** (`ios_runner_runner_bridging_header_h`, File, degree: 0)
+- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
 

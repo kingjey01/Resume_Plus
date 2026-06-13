@@ -1,15 +1,15 @@
-# Community 297: purchased_summaries_provider
+# Community 297: main
 
 **Members:** 3
 
 ## Nodes
 
-- **purchased_summaries_provider** (`lib_features_summaries_providers_purchased_summaries_provider_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_summaries_providers_purchased_summaries_provider_dart → lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_summaries_providers_purchased_summaries_provider_dart → lib_features_summaries_providers_purchased_summaries_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

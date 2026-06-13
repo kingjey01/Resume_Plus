@@ -1,19 +1,19 @@
-# Community 219: otp_service
+# Community 219: fix_user_university
 
 **Members:** 5
 
 ## Nodes
 
-- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **fix_user_university** (`backend_fix_user_university_py`, File, degree: 4)
+- **courses.models.Universite** (`backend_fix_user_university_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_fix_user_university_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_user_university_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_user_university_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_os (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_django (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_courses_models_universite (imports)
 

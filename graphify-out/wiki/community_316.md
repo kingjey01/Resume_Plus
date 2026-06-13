@@ -1,15 +1,15 @@
-# Community 316: production_settings
+# Community 316: test_seed_creation
 
 **Members:** 3
 
 ## Nodes
 
-- **production_settings** (`backend_production_settings_py`, File, degree: 2)
-- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
-- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
+- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
+- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
+- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
-- backend_production_settings_py → backend_production_settings_py_import_os (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
 

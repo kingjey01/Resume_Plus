@@ -1,19 +1,19 @@
-# Community 237: 0004_alter_purchase_summary
+# Community 237: deepseek_service
 
 **Members:** 5
 
 ## Nodes
 
-- **0004_alter_purchase_summary** (`backend_payments_migrations_0004_alter_purchase_summary_py`, File, degree: 4)
-- **django.db.migrations** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0004_alter_purchase_summary_py_migration`, Class, degree: 1)
+- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
+- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion (imports)
-- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_migration (defines)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
+- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
 

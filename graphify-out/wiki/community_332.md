@@ -1,13 +1,13 @@
-# Community 332: __init__
+# Community 332: api_service_debug
 
 **Members:** 2
 
 ## Nodes
 
-- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
-- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
+- **api_service_debug** (`lib_services_api_service_debug_dart`, File, degree: 1)
+- **package:dio/dio.dart** (`lib_services_api_service_debug_dart_import_package_dio_dio_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
+- lib_services_api_service_debug_dart → lib_services_api_service_debug_dart_import_package_dio_dio_dart (imports)
 

@@ -23,8 +23,7 @@ class Filiere(models.Model):
     description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     promotions = models.ManyToManyField(
-        Promotion, 
-        through='FilierePromotion',
+        Promotion,
         related_name='filieres',
         blank=True
     )
@@ -42,8 +41,7 @@ class Universite(models.Model):
     nom = models.CharField(max_length=200, unique=True)
     adresse = models.TextField(blank=True, null=True)
     filieres = models.ManyToManyField(
-        Filiere, 
-        through='UniversiteFiliere',
+        Filiere,
         related_name='universites',
         blank=True
     )
@@ -56,34 +54,6 @@ class Universite(models.Model):
         verbose_name = "Université"
         verbose_name_plural = "Universités"
         ordering = ['nom']
-
-
-class UniversiteFiliere(models.Model):
-    universite = models.ForeignKey(Universite, on_delete=models.CASCADE)
-    filiere = models.ForeignKey(Filiere, on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ('universite', 'filiere')
-        verbose_name = "Relation Université-Filière"
-        verbose_name_plural = "Relations Université-Filières"
-
-    def __str__(self):
-        return f"{self.universite} - {self.filiere}"
-
-
-class FilierePromotion(models.Model):
-    filiere = models.ForeignKey(Filiere, on_delete=models.CASCADE)
-    promotion = models.ForeignKey(Promotion, on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ('filiere', 'promotion')
-        verbose_name = "Relation Filière-Promotion"
-        verbose_name_plural = "Relations Filières-Promotions"
-
-    def __str__(self):
-        return f"{self.filiere.nom} - {self.promotion.nom}"
 
 
 class ProfesseurFilieres(models.Model):

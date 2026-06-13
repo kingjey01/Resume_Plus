@@ -1,26 +1,25 @@
-# Community 131: quick_server_test
+# Community 131: audio_service
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
-- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
-- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
-- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
-- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
-- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
-- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
-- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
+- **audio_service** (`lib_services_audio_service_dart`, File, degree: 7)
+- **_currentText()** (`lib_services_audio_service_dart_currenttext`, Function, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter_tts/flutter_tts.dart** (`lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart`, Module, degree: 1)
+- **web_audio_service.dart** (`lib_services_audio_service_dart_import_web_audio_service_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_audio_service_dart_instance`, Function, degree: 1)
+- **_isInitialized()** (`lib_services_audio_service_dart_isinitialized`, Function, degree: 1)
+- **_isPaused()** (`lib_services_audio_service_dart_ispaused`, Function, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
-- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
-- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_web_audio_service_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_instance (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_isinitialized (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_ispaused (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_currenttext (defines)
 

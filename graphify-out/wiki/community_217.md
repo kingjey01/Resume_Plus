@@ -1,19 +1,19 @@
-# Community 217: check_database_users()
+# Community 217: tts_reader_widget
 
 **Members:** 5
 
 ## Nodes
 
-- **check_database_users()** (`backend_quick_server_test_py_check_database_users`, Function, degree: 2)
-- **generate_curl_commands()** (`backend_quick_server_test_py_generate_curl_commands`, Function, degree: 2)
-- **main()** (`backend_quick_server_test_py_main`, Function, degree: 6)
-- **test_server_basic()** (`backend_quick_server_test_py_test_server_basic`, Function, degree: 2)
-- **test_tokens_quickly()** (`backend_quick_server_test_py_test_tokens_quickly`, Function, degree: 2)
+- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
+- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
+- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py_main → backend_quick_server_test_py_check_database_users (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_tokens_quickly (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_generate_curl_commands (calls)
-- backend_quick_server_test_py_main → backend_quick_server_test_py_test_server_basic (calls)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
+- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
 

@@ -1,15 +1,15 @@
-# Community 292: urls
+# Community 292: wsgi
 
 **Members:** 3
 
 ## Nodes
 
-- **urls** (`backend_security_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
+- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
+- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
+- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
-- backend_security_urls_py → backend_security_urls_py_import_views (imports)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
 

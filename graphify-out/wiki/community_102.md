@@ -1,27 +1,27 @@
-# Community 102: profile_section
+# Community 102: audio_sessions_screen
 
 **Members:** 9
 
 ## Nodes
 
-- **profile_section** (`lib_features_settings_widgets_profile_section_dart`, File, degree: 8)
-- **package:flutter/material.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/settings/screens/edit_profile_screen.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_ProfileSectionState()** (`lib_features_settings_widgets_profile_section_dart_profilesectionstate`, Function, degree: 1)
+- **audio_sessions_screen** (`lib_features_upload_screens_audio_sessions_screen_dart`, File, degree: 8)
+- **_AudioSessionsScreenState()** (`lib_features_upload_screens_audio_sessions_screen_dart_audiosessionsscreenstate`, Function, degree: 1)
+- **dart:async** (`lib_features_upload_screens_audio_sessions_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:audioplayers/audioplayers.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_audioplayers_audioplayers_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_profilesectionstate (defines)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_dart_async (imports)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_audioplayers_audioplayers_dart (imports)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
+- lib_features_upload_screens_audio_sessions_screen_dart → lib_features_upload_screens_audio_sessions_screen_dart_audiosessionsscreenstate (defines)
 

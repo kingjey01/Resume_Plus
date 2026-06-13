@@ -1,23 +1,23 @@
-# Community 160: check_production_data()
+# Community 160: universite_filiere
 
 **Members:** 7
 
 ## Nodes
 
-- **check_production_data()** (`backend_fix_production_encoding_py_check_production_data`, Function, degree: 2)
-- **check_production_database()** (`backend_fix_production_encoding_py_check_production_database`, Function, degree: 2)
-- **clean_production_invalid_data()** (`backend_fix_production_encoding_py_clean_production_invalid_data`, Function, degree: 2)
-- **fix_production_encoding()** (`backend_fix_production_encoding_py_fix_production_encoding`, Function, degree: 2)
-- **main()** (`backend_fix_production_encoding_py_main`, Function, degree: 7)
-- **set_production_connection_encoding()** (`backend_fix_production_encoding_py_set_production_connection_encoding`, Function, degree: 2)
-- **test_production_emoji_insertion()** (`backend_fix_production_encoding_py_test_production_emoji_insertion`, Function, degree: 2)
+- **universite_filiere** (`lib_models_universite_filiere_dart`, File, degree: 6)
+- **filiere.dart** (`lib_models_universite_filiere_dart_import_filiere_dart`, Module, degree: 1)
+- **package:json_annotation/json_annotation.dart** (`lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
+- **universite.dart** (`lib_models_universite_filiere_dart_import_universite_dart`, Module, degree: 1)
+- **universite_filiere.g.dart** (`lib_models_universite_filiere_dart_import_universite_filiere_g_dart`, Module, degree: 1)
+- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_dart_universitefilierefromjson`, Function, degree: 1)
+- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_dart_universitefilieretojson`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_test_production_emoji_insertion (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_clean_production_invalid_data (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_database (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_set_production_connection_encoding (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_fix_production_encoding (calls)
-- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_data (calls)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_filiere_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_filiere_g_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilierefromjson (defines)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilieretojson (defines)
 

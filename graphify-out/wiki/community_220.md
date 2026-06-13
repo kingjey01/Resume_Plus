@@ -1,19 +1,19 @@
-# Community 220: check_existing_data()
+# Community 220: 0005_purchase_service
 
 **Members:** 5
 
 ## Nodes
 
-- **check_existing_data()** (`backend_fix_encoding_sqlite_py_check_existing_data`, Function, degree: 2)
-- **clean_invalid_utf8_data()** (`backend_fix_encoding_sqlite_py_clean_invalid_utf8_data`, Function, degree: 2)
-- **fix_sqlite_encoding()** (`backend_fix_encoding_sqlite_py_fix_sqlite_encoding`, Function, degree: 2)
-- **main()** (`backend_fix_encoding_sqlite_py_main`, Function, degree: 5)
-- **test_emoji_insertion()** (`backend_fix_encoding_sqlite_py_test_emoji_insertion`, Function, degree: 2)
+- **0005_purchase_service** (`backend_payments_migrations_0005_purchase_service_py`, File, degree: 4)
+- **django.db.migrations** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0005_purchase_service_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_check_existing_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_fix_sqlite_encoding (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_clean_invalid_utf8_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_test_emoji_insertion (calls)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models (imports)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0005_purchase_service_py → backend_payments_migrations_0005_purchase_service_py_migration (defines)
 

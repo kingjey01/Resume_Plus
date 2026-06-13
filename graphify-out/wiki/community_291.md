@@ -1,15 +1,17 @@
-# Community 291: api_exception
+# Community 291: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
-- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
-- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
-- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
 

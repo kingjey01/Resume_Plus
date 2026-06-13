@@ -1,31 +1,27 @@
-# Community 97: test_audio_playback
+# Community 97: profile_section
 
 **Members:** 9
 
 ## Nodes
 
-- **test_audio_playback** (`backend_test_audio_playback_py`, File, degree: 8)
-- **json** (`backend_test_audio_playback_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_audio_playback_py_import_os`, Module, degree: 1)
-- **requests** (`backend_test_audio_playback_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_audio_playback_py_main`, Function, degree: 5)
-- **test_audio_file_access()** (`backend_test_audio_playback_py_test_audio_file_access`, Function, degree: 2)
-- **test_direct_audio_access()** (`backend_test_audio_playback_py_test_direct_audio_access`, Function, degree: 2)
-- **test_media_directory_listing()** (`backend_test_audio_playback_py_test_media_directory_listing`, Function, degree: 2)
-- **test_sessions_endpoint()** (`backend_test_audio_playback_py_test_sessions_endpoint`, Function, degree: 2)
+- **profile_section** (`lib_features_settings_widgets_profile_section_dart`, File, degree: 8)
+- **package:flutter/material.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/settings/screens/edit_profile_screen.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_ProfileSectionState()** (`lib_features_settings_widgets_profile_section_dart_profilesectionstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_requests (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_json (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_os (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_sessions_endpoint (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_audio_file_access (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_direct_audio_access (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_media_directory_listing (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_main (defines)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_sessions_endpoint (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_audio_file_access (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_direct_audio_access (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_media_directory_listing (calls)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_profilesectionstate (defines)
 

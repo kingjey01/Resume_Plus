@@ -1,23 +1,23 @@
-# Community 148: splash_screen
+# Community 148: notification_provider
 
 **Members:** 7
 
 ## Nodes
 
-- **splash_screen** (`lib_features_app_splash_screen_dart`, File, degree: 6)
-- **dart:async** (`lib_features_app_splash_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_app_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:lottie/lottie.dart** (`lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_SplashScreenAltState()** (`lib_features_app_splash_screen_dart_splashscreenaltstate`, Function, degree: 1)
+- **notification_provider** (`lib_features_notifications_providers_notification_provider_dart`, File, degree: 6)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/notification_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
+- **load()** (`lib_features_notifications_providers_notification_provider_dart_load`, Function, degree: 1)
+- **_service()** (`lib_features_notifications_providers_notification_provider_dart_service`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_dart_async (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_splashscreenaltstate (defines)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_service (defines)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_load (defines)
 

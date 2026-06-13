@@ -1,19 +1,19 @@
-# Community 242: universite_filiere.g
+# Community 242: service_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
-- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
-- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
+- **service_provider** (`lib_features_subscriptions_providers_service_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_service_provider_dart → lib_features_subscriptions_providers_service_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

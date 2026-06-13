@@ -1,17 +1,17 @@
-# Community 272: test_correct_courses_endpoint
+# Community 272: 0003_alter_purchase_payment_method_alter_service_currency
 
 **Members:** 4
 
 ## Nodes
 
-- **test_correct_courses_endpoint** (`backend_test_correct_courses_endpoint_py`, File, degree: 3)
-- **json** (`backend_test_correct_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_correct_courses_endpoint_py_import_requests`, Module, degree: 1)
-- **test_correct_courses_endpoint()** (`backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint`, Function, degree: 1)
+- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
+- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_requests (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_json (imports)
-- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint (defines)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
 

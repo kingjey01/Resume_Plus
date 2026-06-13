@@ -1,29 +1,29 @@
-# Community 71: urls
+# Community 71: debug_api_response
 
 **Members:** 10
 
 ## Nodes
 
-- **urls** (`backend_resume_backend_urls_py`, File, degree: 9)
-- **django.conf.settings** (`backend_resume_backend_urls_py_import_django_conf_settings`, Module, degree: 1)
-- **django.conf.urls.static.static** (`backend_resume_backend_urls_py_import_django_conf_urls_static_static`, Module, degree: 1)
-- **django.contrib.admin** (`backend_resume_backend_urls_py_import_django_contrib_admin`, Module, degree: 1)
-- **django.urls.include** (`backend_resume_backend_urls_py_import_django_urls_include`, Module, degree: 1)
-- **django.urls.path** (`backend_resume_backend_urls_py_import_django_urls_path`, Module, degree: 1)
-- **drf_yasg.openapi** (`backend_resume_backend_urls_py_import_drf_yasg_openapi`, Module, degree: 1)
-- **drf_yasg.views.get_schema_view** (`backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view`, Module, degree: 1)
-- **health_check** (`backend_resume_backend_urls_py_import_health_check`, Module, degree: 1)
-- **rest_framework.permissions** (`backend_resume_backend_urls_py_import_rest_framework_permissions`, Module, degree: 1)
+- **debug_api_response** (`backend_debug_api_response_py`, File, degree: 9)
+- **django** (`backend_debug_api_response_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_api_response_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_api_response_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_debug_api_response_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_debug_api_response_py_import_payments_models_service`, Module, degree: 1)
+- **payments.serializers.AbonnementSerializer** (`backend_debug_api_response_py_import_payments_serializers_abonnementserializer`, Module, degree: 1)
+- **payments.serializers.ServiceSerializer** (`backend_debug_api_response_py_import_payments_serializers_serviceserializer`, Module, degree: 1)
+- **sys** (`backend_debug_api_response_py_import_sys`, Module, degree: 1)
+- **test_api_responses()** (`backend_debug_api_response_py_test_api_responses`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_contrib_admin (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_path (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_include (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_settings (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_urls_static_static (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_rest_framework_permissions (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_openapi (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_health_check (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_os (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_sys (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_service (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_abonnement (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_serviceserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_abonnementserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_test_api_responses (defines)
 

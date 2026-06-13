@@ -1,27 +1,27 @@
-# Community 105: test_subscription_creation
+# Community 105: text_to_speech_service
 
 **Members:** 9
 
 ## Nodes
 
-- **test_subscription_creation** (`backend_test_subscription_creation_py`, File, degree: 8)
-- **django** (`backend_test_subscription_creation_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_test_subscription_creation_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_test_subscription_creation_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_test_subscription_creation_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_test_subscription_creation_py_import_payments_models_service`, Module, degree: 1)
-- **requests** (`backend_test_subscription_creation_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_subscription_creation_py_import_sys`, Module, degree: 1)
-- **test_subscription_creation()** (`backend_test_subscription_creation_py_test_subscription_creation`, Function, degree: 1)
+- **text_to_speech_service** (`lib_services_text_to_speech_service_dart`, File, degree: 8)
+- **_audioService()** (`lib_services_text_to_speech_service_dart_audioservice`, Function, degree: 1)
+- **audio_service.dart** (`lib_services_text_to_speech_service_dart_import_audio_service_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_text_to_speech_service_dart_instance`, Function, degree: 1)
+- **_language()** (`lib_services_text_to_speech_service_dart_language`, Function, degree: 1)
+- **_pitch()** (`lib_services_text_to_speech_service_dart_pitch`, Function, degree: 1)
+- **_rate()** (`lib_services_text_to_speech_service_dart_rate`, Function, degree: 1)
+- **_volume()** (`lib_services_text_to_speech_service_dart_volume`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_os (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_sys (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_requests (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_django_contrib_auth_models_user (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_service (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_import_payments_models_abonnement (imports)
-- backend_test_subscription_creation_py → backend_test_subscription_creation_py_test_subscription_creation (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_audio_service_dart (imports)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_instance (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_audioservice (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_rate (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_pitch (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_volume (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_language (defines)
 

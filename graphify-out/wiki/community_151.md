@@ -1,27 +1,23 @@
-# Community 151: ExerciseGenerator
+# Community 151: audio_sessions_page
 
 **Members:** 7
 
 ## Nodes
 
-- **ExerciseGenerator** (`backend_courses_exercise_generator_py_exercisegenerator`, Class, degree: 7)
-- **.generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary`, Method, degree: 2)
-- **._generate_mock_questions()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions`, Method, degree: 2)
-- **._generate_questions_with_ai()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai`, Method, degree: 4)
-- **.__init__()** (`backend_courses_exercise_generator_py_exercisegenerator_init`, Method, degree: 1)
-- **._parse_ai_response()** (`backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response`, Method, degree: 3)
-- **._validate_question_structure()** (`backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure`, Method, degree: 2)
+- **audio_sessions_page** (`lib_pages_audio_sessions_page_dart`, File, degree: 6)
+- **_AudioSessionsPageState()** (`lib_pages_audio_sessions_page_dart_audiosessionspagestate`, Function, degree: 1)
+- **dart:html'** (`lib_pages_audio_sessions_page_dart_import_dart_html`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_sessions_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_pages_audio_sessions_page_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_init (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (defines)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (calls)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_intl_intl_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_dart_html (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_audiosessionspagestate (defines)
 

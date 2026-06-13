@@ -1,23 +1,23 @@
-# Community 177: upload_choice_screen
+# Community 177: error_handler_mixin
 
 **Members:** 7
 
 ## Nodes
 
-- **upload_choice_screen** (`lib_features_upload_screens_upload_choice_screen_dart`, File, degree: 6)
-- **package:flutter/foundation.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/record_audio_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **error_handler_mixin** (`lib_mixins_error_handler_mixin_dart`, File, degree: 6)
+- **ErrorHandlerMixin** (`lib_mixins_error_handler_mixin_dart_errorhandlermixin`, Class, degree: 1)
+- **package:dio/dio.dart** (`lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/utils/logger.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart (imports)
-- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
+- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_errorhandlermixin (defines)
 

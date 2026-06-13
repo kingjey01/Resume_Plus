@@ -1,25 +1,25 @@
-# Community 143: migrate_courses_to_fk
+# Community 143: exercise_quiz_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
-- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
-- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
-- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
+- **exercise_quiz_screen** (`lib_features_exercises_screens_exercise_quiz_screen_dart`, File, degree: 7)
+- **_ExerciseQuizScreenState()** (`lib_features_exercises_screens_exercise_quiz_screen_dart_exercisequizscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/secure_screen_wrapper.dart** (`lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports)
+- lib_features_exercises_screens_exercise_quiz_screen_dart → lib_features_exercises_screens_exercise_quiz_screen_dart_exercisequizscreenstate (defines)
 

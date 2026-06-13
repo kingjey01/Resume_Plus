@@ -1,23 +1,23 @@
-# Community 153: course_selection_screen
+# Community 153: notification_detail_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **course_selection_screen** (`lib_features_upload_screens_course_selection_screen_dart`, File, degree: 6)
-- **_CourseSelectionScreenState()** (`lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **notification_detail_screen** (`lib_features_notifications_screens_notification_detail_screen_dart`, File, degree: 6)
+- **package:flutter/material.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_NotificationDetailScreenState()** (`lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_upload_screens_course_selection_screen_dart → lib_features_upload_screens_course_selection_screen_dart_courseselectionscreenstate (defines)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_intl_intl_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_notifications_screens_notification_detail_screen_dart → lib_features_notifications_screens_notification_detail_screen_dart_notificationdetailscreenstate (defines)
 

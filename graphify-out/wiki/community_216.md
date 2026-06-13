@@ -1,19 +1,19 @@
-# Community 216: deepseek_service
+# Community 216: fix_settings_mysql
 
 **Members:** 5
 
 ## Nodes
 
-- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
-- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
+- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
+- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
+- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
+- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
+- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
+- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
 

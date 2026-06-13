@@ -1,15 +1,17 @@
-# Community 290: 0017_course_m2m_relations_cleanup
+# Community 290: 0012_add_summary_title_price_to_session
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **0017_course_m2m_relations_cleanup** (`backend_courses_migrations_0017_course_m2m_relations_cleanup_py`, File, degree: 2)
-- **django.db.migrations** (`backend_courses_migrations_0017_course_m2m_relations_cleanup_py_import_django_db_migrations`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0017_course_m2m_relations_cleanup_py_migration`, Class, degree: 1)
+- **0012_add_summary_title_price_to_session** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0017_course_m2m_relations_cleanup_py → backend_courses_migrations_0017_course_m2m_relations_cleanup_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0017_course_m2m_relations_cleanup_py → backend_courses_migrations_0017_course_m2m_relations_cleanup_py_migration (defines)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models (imports)
+- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration (defines)
 

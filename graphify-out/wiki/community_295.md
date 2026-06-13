@@ -1,15 +1,15 @@
-# Community 295: file_helper_stub
+# Community 295: utils
 
 **Members:** 3
 
 ## Nodes
 
-- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
-- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
+- **utils** (`windows_runner_utils_h`, File, degree: 2)
+- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
+- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
+- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
+- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
 

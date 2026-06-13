@@ -1,19 +1,19 @@
-# Community 232: tts_reader_widget
+# Community 232: universite_filiere.g
 
 **Members:** 5
 
 ## Nodes
 
-- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
-- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
-- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
+- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
+- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
+- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
+- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
+- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
 
 ## Relationships
 
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
 

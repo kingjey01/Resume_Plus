@@ -1,19 +1,19 @@
-# Community 224: subscription_provider
+# Community 224: check_accessible_courses
 
 **Members:** 5
 
 ## Nodes
 
-- **subscription_provider** (`lib_features_subscriptions_providers_subscription_provider_dart`, File, degree: 4)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
+- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
+- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
 

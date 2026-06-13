@@ -1,15 +1,15 @@
-# Community 299: 0015_merge_20260523_2104
+# Community 299: api_exception
 
 **Members:** 3
 
 ## Nodes
 
-- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
-- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
+- **api_exception** (`lib_exceptions_api_exception_dart`, File, degree: 2)
+- **ApiExceptionType** (`lib_exceptions_api_exception_dart_apiexceptiontype`, Enum, degree: 1)
+- **package:dio/dio.dart** (`lib_exceptions_api_exception_dart_import_package_dio_dio_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_import_package_dio_dio_dart (imports)
+- lib_exceptions_api_exception_dart → lib_exceptions_api_exception_dart_apiexceptiontype (defines)
 

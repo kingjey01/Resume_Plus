@@ -1,21 +1,21 @@
-# Community 202: AppDelegate
+# Community 202: models
 
 **Members:** 6
 
 ## Nodes
 
-- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
-- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
-- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
-- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
-- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
+- **models** (`backend_security_models_py`, File, degree: 4)
+- **django.contrib.auth.models.User** (`backend_security_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_security_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_security_models_py_meta`, Class, degree: 1)
+- **SecurityLog** (`backend_security_models_py_securitylog`, Class, degree: 2)
+- **.__str__()** (`backend_security_models_py_securitylog_str`, Method, degree: 1)
 
 ## Relationships
 
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
+- backend_security_models_py → backend_security_models_py_import_django_db_models (imports)
+- backend_security_models_py → backend_security_models_py_import_django_contrib_auth_models_user (imports)
+- backend_security_models_py → backend_security_models_py_securitylog (defines)
+- backend_security_models_py_securitylog → backend_security_models_py_securitylog_str (defines)
+- backend_security_models_py → backend_security_models_py_meta (defines)
 

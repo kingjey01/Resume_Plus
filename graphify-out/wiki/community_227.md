@@ -1,19 +1,19 @@
-# Community 227: fix_user_promotion
+# Community 227: ai_content_view
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_user_promotion** (`backend_fix_user_promotion_py`, File, degree: 4)
-- **courses.models.Promotion** (`backend_fix_user_promotion_py_import_courses_models_promotion`, Module, degree: 1)
-- **django** (`backend_fix_user_promotion_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_user_promotion_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_user_promotion_py_import_os`, Module, degree: 1)
+- **ai_content_view** (`lib_widgets_ai_content_view_dart`, File, degree: 4)
+- **_AiContentViewState()** (`lib_widgets_ai_content_view_dart_aicontentviewstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_ai_content_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:google_fonts/google_fonts.dart** (`lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_os (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_courses_models_promotion (imports)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart (imports)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_aicontentviewstate (defines)
 

@@ -1,17 +1,17 @@
-# Community 268: test_flutter_api
+# Community 268: find_courses_endpoint
 
 **Members:** 4
 
 ## Nodes
 
-- **test_flutter_api** (`test_flutter_api_dart`, File, degree: 3)
-- **lib/services/api_service.dart** (`test_flutter_api_dart_import_lib_services_api_service_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`test_flutter_api_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **main()** (`test_flutter_api_dart_main`, Function, degree: 1)
+- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
+- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
+- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- test_flutter_api_dart → test_flutter_api_dart_import_package_flutter_material_dart (imports)
-- test_flutter_api_dart → test_flutter_api_dart_import_lib_services_api_service_dart (imports)
-- test_flutter_api_dart → test_flutter_api_dart_main (defines)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
 

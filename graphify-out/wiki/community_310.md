@@ -1,15 +1,15 @@
-# Community 310: user
+# Community 310: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **user** (`lib_models_user_dart`, File, degree: 2)
-- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
-- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
+- **apps** (`backend_notifications_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_notifications_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **NotificationsConfig** (`backend_notifications_apps_py_notificationsconfig`, Class, degree: 1)
 
 ## Relationships
 
-- lib_models_user_dart → lib_models_user_dart_groupe (defines)
-- lib_models_user_dart → lib_models_user_dart_id (defines)
+- backend_notifications_apps_py → backend_notifications_apps_py_import_django_apps_appconfig (imports)
+- backend_notifications_apps_py → backend_notifications_apps_py_notificationsconfig (defines)
 

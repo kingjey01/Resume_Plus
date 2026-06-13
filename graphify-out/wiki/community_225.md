@@ -1,19 +1,19 @@
-# Community 225: MainFlutterWindow
+# Community 225: exercise_result_screen
 
 **Members:** 5
 
 ## Nodes
 
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
-- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
-- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
+- **exercise_result_screen** (`lib_features_exercises_screens_exercise_result_screen_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/secure_screen_wrapper.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart`, Module, degree: 1)
 
 ## Relationships
 
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports)
 

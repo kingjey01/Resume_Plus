@@ -1,15 +1,15 @@
-# Community 294: urls
+# Community 294: MainActivity
 
 **Members:** 3
 
 ## Nodes
 
-- **urls** (`backend_users_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_users_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_users_urls_py_import_views`, Module, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
+- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
 
 ## Relationships
 
-- backend_users_urls_py → backend_users_urls_py_import_django_urls_path (imports)
-- backend_users_urls_py → backend_users_urls_py_import_views (imports)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
 

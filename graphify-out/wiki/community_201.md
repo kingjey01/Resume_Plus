@@ -1,21 +1,21 @@
-# Community 201: screen_security_service
+# Community 201: 0016_filiere_promotions_m2m
 
 **Members:** 6
 
 ## Nodes
 
-- **screen_security_service** (`lib_services_screen_security_service_dart`, File, degree: 5)
-- **dart:io** (`lib_services_screen_security_service_dart_import_dart_io`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_screen_security_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/services.dart** (`lib_services_screen_security_service_dart_import_package_flutter_services_dart`, Module, degree: 1)
-- **package:screen_protector/screen_protector.dart** (`lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart`, Module, degree: 1)
-- **_isSecured()** (`lib_services_screen_security_service_dart_issecured`, Function, degree: 1)
+- **0016_filiere_promotions_m2m** (`backend_courses_migrations_0016_filiere_promotions_m2m_py`, File, degree: 5)
+- **copy_auto_to_through()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through`, Function, degree: 1)
+- **copy_through_to_auto()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto`, Function, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_dart_io (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_services_dart (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart (imports)
-- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_issecured (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models (imports)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_migration (defines)
 

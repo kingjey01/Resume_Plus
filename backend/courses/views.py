@@ -13,16 +13,15 @@ import mimetypes
 
 logger = logging.getLogger(__name__)
 from .models import (
-    Course, Session, Summary, Universite, Promotion, Filiere, 
-    Service, Abonnement, UniversiteFiliere, FilierePromotion, Professeur
+    Course, Session, Summary, Universite, Promotion, Filiere,
+    Service, Abonnement, Professeur
 )
 from payments.models import Purchase
 from .serializers import (
     CourseSerializer, SessionSerializer, SessionCreateSerializer, SummarySerializer, 
     SummaryCreateSerializer, UniversiteSerializer, PromotionSerializer, 
     FiliereSerializer, ServiceSerializer, AbonnementSerializer, 
-    AbonnementCreateSerializer, UniversiteFiliereSerializer,
-    FilierePromotionSerializer, FiliereWithUniversiteSerializer,
+    AbonnementCreateSerializer, FiliereWithUniversiteSerializer,
     ProfesseurSerializer
 )
 from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary, 
@@ -327,19 +326,6 @@ def generate_summary_from_audio(request):
     return Response(SummarySerializer(summary).data, status=status.HTTP_201_CREATED)
 
 
-# Vues pour les relations ManyToMany
-class UniversiteFiliereViewSet(viewsets.ModelViewSet):
-    queryset = UniversiteFiliere.objects.all()
-    serializer_class = UniversiteFiliereSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-
-class FilierePromotionViewSet(viewsets.ModelViewSet):
-    queryset = FilierePromotion.objects.all()
-    serializer_class = FilierePromotionSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-
 # CRUD Views pour Universites
 class UniversiteViewSet(viewsets.ModelViewSet):
     queryset = Universite.objects.all()
@@ -365,20 +351,17 @@ class UniversiteViewSet(viewsets.ModelViewSet):
         filiere_id = request.data.get('filiere_id')
         if not filiere_id:
             return Response(
-                {"error": "Le paramètre 'filiere_id' est requis"}, 
+                {"error": "Le paramètre 'filiere_id' est requis"},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             filiere = Filiere.objects.get(id=filiere_id)
-            UniversiteFiliere.objects.get_or_create(
-                universite=universite,
-                filiere=filiere
-            )
+            universite.filieres.add(filiere)
             return Response({"status": "Filière ajoutée avec succès"}, status=status.HTTP_201_CREATED)
         except Filiere.DoesNotExist:
             return Response(
-                {"error": "Filière non trouvée"}, 
+                {"error": "Filière non trouvée"},
                 status=status.HTTP_404_NOT_FOUND
             )
 
@@ -408,20 +391,17 @@ class FiliereViewSet(viewsets.ModelViewSet):
         promotion_id = request.data.get('promotion_id')
         if not promotion_id:
             return Response(
-                {"error": "Le paramètre 'promotion_id' est requis"}, 
+                {"error": "Le paramètre 'promotion_id' est requis"},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             promotion = Promotion.objects.get(id=promotion_id)
-            FilierePromotion.objects.get_or_create(
-                filiere=filiere,
-                promotion=promotion
-            )
+            filiere.promotions.add(promotion)
             return Response({"status": "Promotion ajoutée avec succès"}, status=status.HTTP_201_CREATED)
         except Promotion.DoesNotExist:
             return Response(
-                {"error": "Promotion non trouvée"}, 
+                {"error": "Promotion non trouvée"},
                 status=status.HTTP_404_NOT_FOUND
             )
 
@@ -441,7 +421,7 @@ class PromotionViewSet(viewsets.ModelViewSet):
     def filieres(self, request, pk=None):
         """Récupère toutes les filières associées à une promotion"""
         promotion = self.get_object()
-        filieres = Filiere.objects.filter(filierepromotion__promotion=promotion)
+        filieres = promotion.filieres.all()
         serializer = FiliereSerializer(filieres, many=True)
         return Response(serializer.data)
 

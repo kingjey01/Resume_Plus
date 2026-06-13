@@ -1,15 +1,15 @@
-# Community 298: auth_providers
+# Community 298: api_service copy
 
 **Members:** 3
 
 ## Nodes
 
-- **auth_providers** (`lib_features_auth_providers_auth_providers_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
+- **api_service copy** (`lib_services_api_service_copy_dart`, File, degree: 2)
+- **package:dio/dio.dart** (`lib_services_api_service_copy_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_dio_dio_dart (imports)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
 

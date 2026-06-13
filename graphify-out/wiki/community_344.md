@@ -1,8 +1,8 @@
-# Community 344: filiere
+# Community 344: universite
 
 **Members:** 1
 
 ## Nodes
 
-- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
+- **universite** (`lib_models_universite_dart`, File, degree: 0)
 

@@ -1,15 +1,15 @@
-# Community 315: test_seed_creation
+# Community 315: 0015_merge_20260523_2104
 
 **Members:** 3
 
 ## Nodes
 
-- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
-- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
-- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
+- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
+- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
-- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
 

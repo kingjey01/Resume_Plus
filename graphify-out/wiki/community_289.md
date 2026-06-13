@@ -1,15 +1,17 @@
-# Community 289: snackbar_service
+# Community 289: 0005_userprofile_profile_picture
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
+- **0005_userprofile_profile_picture** (`backend_users_migrations_0005_userprofile_profile_picture_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0005_userprofile_profile_picture_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations (imports)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models (imports)
+- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_migration (defines)
 

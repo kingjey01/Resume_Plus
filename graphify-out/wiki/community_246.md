@@ -1,19 +1,19 @@
-# Community 246: simple_login_service
+# Community 246: diagnostic_complet
 
 **Members:** 5
 
 ## Nodes
 
-- **simple_login_service** (`lib_services_simple_login_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_simple_login_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_simple_login_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **diagnostic_complet** (`backend_diagnostic_complet_py`, File, degree: 12)
+- **datetime** (`backend_diagnostic_complet_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_diagnostic_complet_py_import_json`, Module, degree: 1)
+- **jwt** (`backend_diagnostic_complet_py_import_jwt`, Module, degree: 1)
+- **requests** (`backend_diagnostic_complet_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_apiservice (defines)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_requests (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_json (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_jwt (imports)
+- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_datetime (imports)
 

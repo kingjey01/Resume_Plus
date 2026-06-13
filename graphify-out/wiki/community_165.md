@@ -1,23 +1,27 @@
-# Community 165: test_exercise_generation
+# Community 165: ExerciseGenerator
 
 **Members:** 7
 
 ## Nodes
 
-- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
-- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
-- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
-- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
-- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
+- **ExerciseGenerator** (`backend_courses_exercise_generator_py_exercisegenerator`, Class, degree: 7)
+- **.generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary`, Method, degree: 2)
+- **._generate_mock_questions()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions`, Method, degree: 2)
+- **._generate_questions_with_ai()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai`, Method, degree: 4)
+- **.__init__()** (`backend_courses_exercise_generator_py_exercisegenerator_init`, Method, degree: 1)
+- **._parse_ai_response()** (`backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response`, Method, degree: 3)
+- **._validate_question_structure()** (`backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure`, Method, degree: 2)
 
 ## Relationships
 
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_init (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (defines)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (calls)
 

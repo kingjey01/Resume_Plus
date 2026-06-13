@@ -1,17 +1,17 @@
-# Community 276: check_user_profile
+# Community 276: audio_file_player_widget
 
 **Members:** 4
 
 ## Nodes
 
-- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
-- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
+- **audio_file_player_widget** (`lib_widgets_audio_file_player_widget_dart`, File, degree: 3)
+- **_AudioFilePlayerWidgetState()** (`lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_file_player_service.dart** (`lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
-- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate (defines)
 

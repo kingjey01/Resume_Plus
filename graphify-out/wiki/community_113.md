@@ -1,25 +1,25 @@
-# Community 113: check_db_encoding
+# Community 113: fix_encoding_sqlite
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
-- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
-- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
-- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
-- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
+- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
+- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
 

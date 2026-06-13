@@ -1,17 +1,17 @@
-# Community 261: subscription_card
+# Community 261: audio_player_widget
 
 **Members:** 4
 
 ## Nodes
 
-- **subscription_card** (`lib_features_subscriptions_widgets_subscription_card_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **audio_player_widget** (`lib_widgets_audio_player_widget_dart`, File, degree: 3)
+- **_AudioPlayerWidgetState()** (`lib_widgets_audio_player_widget_dart_audioplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_service.dart** (`lib_widgets_audio_player_widget_dart_import_services_audio_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_widgets_subscription_card_dart → lib_features_subscriptions_widgets_subscription_card_dart_import_package_intl_intl_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_services_audio_service_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_audioplayerwidgetstate (defines)
 

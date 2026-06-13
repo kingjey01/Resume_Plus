@@ -1,30 +1,27 @@
-# Community 95: test_production_config
+# Community 95: ExerciseAttempt
 
 **Members:** 9
 
 ## Nodes
 
-- **test_production_config** (`backend_test_production_config_py`, File, degree: 8)
-- **datetime** (`backend_test_production_config_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_test_production_config_py_import_json`, Module, degree: 1)
-- **jwt** (`backend_test_production_config_py_import_jwt`, Module, degree: 1)
-- **requests** (`backend_test_production_config_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_production_config_py_main`, Function, degree: 4)
-- **test_cors_preflight()** (`backend_test_production_config_py_test_cors_preflight`, Function, degree: 2)
-- **test_jwt_validation()** (`backend_test_production_config_py_test_jwt_validation`, Function, degree: 2)
-- **test_server_logs_simulation()** (`backend_test_production_config_py_test_server_logs_simulation`, Function, degree: 2)
+- **ExerciseAttempt** (`backend_courses_models_py_exerciseattempt`, Class, degree: 3)
+- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
+- **.__str__()** (`backend_courses_models_py_exerciseattempt_str`, Method, degree: 1)
+- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
+- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
+- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
+- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
+- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 2)
+- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
 
 ## Relationships
 
-- backend_test_production_config_py → backend_test_production_config_py_import_requests (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_json (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_jwt (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_datetime (imports)
-- backend_test_production_config_py → backend_test_production_config_py_test_cors_preflight (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_jwt_validation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_server_logs_simulation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_main (defines)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_jwt_validation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_server_logs_simulation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_cors_preflight (calls)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_save (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
+- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_str (defines)
+- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_calculate_score (defines)
+- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
 

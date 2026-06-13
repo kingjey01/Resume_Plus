@@ -1,21 +1,21 @@
-# Community 197: settings
+# Community 197: create_admin_user()
 
 **Members:** 6
 
 ## Nodes
 
-- **settings** (`backend_resume_backend_settings_py`, File, degree: 5)
-- **celery.schedules.crontab** (`backend_resume_backend_settings_py_import_celery_schedules_crontab`, Module, degree: 1)
-- **datetime.timedelta** (`backend_resume_backend_settings_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_resume_backend_settings_py_import_decouple_config`, Module, degree: 1)
-- **os** (`backend_resume_backend_settings_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_resume_backend_settings_py_import_pathlib_path`, Module, degree: 1)
+- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
+- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
+- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
+- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
+- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
+- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
 
 ## Relationships
 
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_pathlib_path (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_datetime_timedelta (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_decouple_config (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_os (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_celery_schedules_crontab (imports)
+- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
+- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
 

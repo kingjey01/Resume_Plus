@@ -1,23 +1,23 @@
-# Community 146: test_simple_audio_upload
+# Community 146: auto_login_service
 
 **Members:** 7
 
 ## Nodes
 
-- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
-- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
-- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
-- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
-- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
+- **auto_login_service** (`lib_services_auto_login_service_dart`, File, degree: 6)
+- **AppStartState** (`lib_services_auto_login_service_dart_appstartstate`, Enum, degree: 1)
+- **dart:math** (`lib_services_auto_login_service_dart_import_dart_math`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_auto_login_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_dart_math (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_appstartstate (defines)
 

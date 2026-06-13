@@ -1,13 +1,15 @@
-# Community 320: api_service_debug
+# Community 320: urls
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **api_service_debug** (`lib_services_api_service_debug_dart`, File, degree: 1)
-- **package:dio/dio.dart** (`lib_services_api_service_debug_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **urls** (`backend_security_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_debug_dart → lib_services_api_service_debug_dart_import_package_dio_dio_dart (imports)
+- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
+- backend_security_urls_py → backend_security_urls_py_import_views (imports)
 

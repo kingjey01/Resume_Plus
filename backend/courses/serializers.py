@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import (
-    Course, Session, Summary, Transcription, Universite, Promotion, Filiere, 
-    Service, Abonnement, UniversiteFiliere, FilierePromotion, Professeur
+    Course, Session, Summary, Transcription, Universite, Promotion, Filiere,
+    Service, Abonnement, Professeur
 )
 
 
@@ -313,18 +313,6 @@ class FiliereSerializer(serializers.ModelSerializer):
         fields = ['id', 'nom', 'description', 'promotions', 'created_at']
 
 
-class UniversiteFiliereSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UniversiteFiliere
-        fields = ['id', 'universite', 'filiere', 'created_at']
-
-
-class FilierePromotionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = FilierePromotion
-        fields = ['id', 'filiere', 'promotion', 'created_at']
-
-
 class UniversiteSerializer(serializers.ModelSerializer):
     filieres = FiliereSerializer(many=True, read_only=True)
     
@@ -342,10 +330,10 @@ class FiliereWithUniversiteSerializer(serializers.ModelSerializer):
     
     def get_universites(self, obj):
         return [{
-            'id': uf.universite.id,
-            'nom': uf.universite.nom,
-            'adresse': uf.universite.adresse
-        } for uf in obj.universitefiliere_set.all()]
+            'id': u.id,
+            'nom': u.nom,
+            'adresse': u.adresse
+        } for u in obj.universites.all()]
 
 
 class ServiceSerializer(serializers.ModelSerializer):

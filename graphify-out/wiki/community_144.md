@@ -1,25 +1,30 @@
-# Community 144: exercise_generator
+# Community 144: generate_report()
 
 **Members:** 8
 
 ## Nodes
 
-- **exercise_generator** (`backend_courses_exercise_generator_py`, File, degree: 8)
-- **generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_generate_exercises_for_summary`, Function, degree: 1)
-- **.deepseek_service.deepseek_service** (`backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service`, Module, degree: 1)
-- **json** (`backend_courses_exercise_generator_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_exercise_generator_py_import_logging`, Module, degree: 1)
-- **.models.Exercise** (`backend_courses_exercise_generator_py_import_models_exercise`, Module, degree: 1)
-- **.models.ExerciseQuestion** (`backend_courses_exercise_generator_py_import_models_exercisequestion`, Module, degree: 1)
-- **.models.Summary** (`backend_courses_exercise_generator_py_import_models_summary`, Module, degree: 1)
+- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
+- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
+- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
+- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
+- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
+- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
+- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
+- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_json (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercise (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercisequestion (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_summary (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_logging (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_generate_exercises_for_summary (defines)
+- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
+- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
 

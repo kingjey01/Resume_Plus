@@ -1,19 +1,19 @@
-# Community 230: ai_content_view
+# Community 230: check_existing_data()
 
 **Members:** 5
 
 ## Nodes
 
-- **ai_content_view** (`lib_widgets_ai_content_view_dart`, File, degree: 4)
-- **_AiContentViewState()** (`lib_widgets_ai_content_view_dart_aicontentviewstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_ai_content_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **check_existing_data()** (`backend_fix_encoding_sqlite_py_check_existing_data`, Function, degree: 2)
+- **clean_invalid_utf8_data()** (`backend_fix_encoding_sqlite_py_clean_invalid_utf8_data`, Function, degree: 2)
+- **fix_sqlite_encoding()** (`backend_fix_encoding_sqlite_py_fix_sqlite_encoding`, Function, degree: 2)
+- **main()** (`backend_fix_encoding_sqlite_py_main`, Function, degree: 5)
+- **test_emoji_insertion()** (`backend_fix_encoding_sqlite_py_test_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_aicontentviewstate (defines)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_check_existing_data (calls)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_fix_sqlite_encoding (calls)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_clean_invalid_utf8_data (calls)
+- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_test_emoji_insertion (calls)
 

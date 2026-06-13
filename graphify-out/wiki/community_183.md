@@ -1,21 +1,21 @@
-# Community 183: purchased_summary_card
+# Community 183: check_database_tables()
 
 **Members:** 6
 
 ## Nodes
 
-- **purchased_summary_card** (`lib_features_summaries_widgets_purchased_summary_card_dart`, File, degree: 5)
-- **package:flutter/material.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/purchase.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **check_database_tables()** (`backend_check_db_services_py_check_database_tables`, Function, degree: 2)
+- **check_django_settings()** (`backend_check_db_services_py_check_django_settings`, Function, degree: 2)
+- **check_tokens()** (`backend_check_db_services_py_check_tokens`, Function, degree: 2)
+- **check_users()** (`backend_check_db_services_py_check_users`, Function, degree: 2)
+- **main()** (`backend_check_db_services_py_main`, Function, degree: 6)
+- **test_token_authentication()** (`backend_check_db_services_py_test_token_authentication`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart (imports)
-- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
-- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_check_db_services_py_main → backend_check_db_services_py_test_token_authentication (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_database_tables (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_django_settings (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_tokens (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_users (calls)
 

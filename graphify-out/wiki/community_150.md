@@ -1,23 +1,23 @@
-# Community 150: check_cors_configuration()
+# Community 150: splash_screen
 
 **Members:** 7
 
 ## Nodes
 
-- **check_cors_configuration()** (`backend_fix_auth_issues_py_check_cors_configuration`, Function, degree: 2)
-- **config()** (`backend_fix_auth_issues_py_config`, Function, degree: 2)
-- **create_missing_tokens()** (`backend_fix_auth_issues_py_create_missing_tokens`, Function, degree: 2)
-- **fix_test_users()** (`backend_fix_auth_issues_py_fix_test_users`, Function, degree: 2)
-- **generate_flutter_auth_config()** (`backend_fix_auth_issues_py_generate_flutter_auth_config`, Function, degree: 2)
-- **main()** (`backend_fix_auth_issues_py_main`, Function, degree: 7)
-- **test_tokens_validity()** (`backend_fix_auth_issues_py_test_tokens_validity`, Function, degree: 2)
+- **splash_screen** (`lib_features_app_splash_screen_dart`, File, degree: 6)
+- **dart:async** (`lib_features_app_splash_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_app_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:lottie/lottie.dart** (`lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SplashScreenAltState()** (`lib_features_app_splash_screen_dart_splashscreenaltstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_check_cors_configuration (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_generate_flutter_auth_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_create_missing_tokens (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_fix_test_users (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_test_tokens_validity (calls)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_dart_async (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_lottie_lottie_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_app_splash_screen_dart → lib_features_app_splash_screen_dart_splashscreenaltstate (defines)
 

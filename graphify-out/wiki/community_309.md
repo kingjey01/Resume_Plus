@@ -1,15 +1,15 @@
-# Community 309: main
+# Community 309: snackbar_service
 
 **Members:** 3
 
 ## Nodes
 
-- **main** (`linux_runner_main_cc`, File, degree: 2)
-- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
-- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
+- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
 
 ## Relationships
 
-- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
-- linux_runner_main_cc → linux_runner_main_cc_main (defines)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
 

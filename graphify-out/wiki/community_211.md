@@ -1,19 +1,19 @@
-# Community 211: test_simple_page
+# Community 211: 0004_alter_purchase_summary
 
 **Members:** 5
 
 ## Nodes
 
-- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
-- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
-- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
+- **0004_alter_purchase_summary** (`backend_payments_migrations_0004_alter_purchase_summary_py`, File, degree: 4)
+- **django.db.migrations** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0004_alter_purchase_summary_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models (imports)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0004_alter_purchase_summary_py → backend_payments_migrations_0004_alter_purchase_summary_py_migration (defines)
 

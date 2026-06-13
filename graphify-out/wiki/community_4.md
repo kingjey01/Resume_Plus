@@ -1,10 +1,10 @@
 # Community 4: models
 
-**Members:** 37
+**Members:** 33
 
 ## Nodes
 
-- **models** (`backend_courses_models_py`, File, degree: 19)
+- **models** (`backend_courses_models_py`, File, degree: 17)
 - **Abonnement** (`backend_courses_models_py_abonnement`, Class, degree: 3)
 - **.is_active()** (`backend_courses_models_py_abonnement_is_active`, Method, degree: 1)
 - **.__str__()** (`backend_courses_models_py_abonnement_str`, Method, degree: 1)
@@ -18,8 +18,6 @@
 - **.__str__()** (`backend_courses_models_py_exercisequestion_str`, Method, degree: 1)
 - **Filiere** (`backend_courses_models_py_filiere`, Class, degree: 2)
 - **.__str__()** (`backend_courses_models_py_filiere_str`, Method, degree: 1)
-- **FilierePromotion** (`backend_courses_models_py_filierepromotion`, Class, degree: 2)
-- **.__str__()** (`backend_courses_models_py_filierepromotion_str`, Method, degree: 1)
 - **django.contrib.auth.models.User** (`backend_courses_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
 - **django.db.models** (`backend_courses_models_py_import_django_db_models`, Module, degree: 1)
 - **Meta** (`backend_courses_models_py_meta`, Class, degree: 1)
@@ -39,8 +37,6 @@
 - **.__str__()** (`backend_courses_models_py_transcription_str`, Method, degree: 1)
 - **Universite** (`backend_courses_models_py_universite`, Class, degree: 2)
 - **.__str__()** (`backend_courses_models_py_universite_str`, Method, degree: 1)
-- **UniversiteFiliere** (`backend_courses_models_py_universitefiliere`, Class, degree: 2)
-- **.__str__()** (`backend_courses_models_py_universitefiliere_str`, Method, degree: 1)
 
 ## Relationships
 
@@ -53,10 +49,6 @@
 - backend_courses_models_py_filiere → backend_courses_models_py_filiere_str (defines)
 - backend_courses_models_py → backend_courses_models_py_universite (defines)
 - backend_courses_models_py_universite → backend_courses_models_py_universite_str (defines)
-- backend_courses_models_py → backend_courses_models_py_universitefiliere (defines)
-- backend_courses_models_py_universitefiliere → backend_courses_models_py_universitefiliere_str (defines)
-- backend_courses_models_py → backend_courses_models_py_filierepromotion (defines)
-- backend_courses_models_py_filierepromotion → backend_courses_models_py_filierepromotion_str (defines)
 - backend_courses_models_py → backend_courses_models_py_professeurfilieres (defines)
 - backend_courses_models_py_professeurfilieres → backend_courses_models_py_professeurfilieres_str (defines)
 - backend_courses_models_py → backend_courses_models_py_course (defines)

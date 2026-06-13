@@ -1,25 +1,25 @@
-# Community 135: settings_production_fixed
+# Community 135: migrate_courses_fk
 
 **Members:** 8
 
 ## Nodes
 
-- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
-- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
-- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
-- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
+- **migrate_courses_fk** (`backend_courses_management_commands_migrate_courses_fk_py`, File, degree: 6)
+- **Command** (`backend_courses_management_commands_migrate_courses_fk_py_command`, Class, degree: 2)
+- **.handle()** (`backend_courses_management_commands_migrate_courses_fk_py_command_handle`, Method, degree: 1)
+- **courses.models.Course** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite`, Module, degree: 1)
+- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_command (defines)
+- backend_courses_management_commands_migrate_courses_fk_py_command → backend_courses_management_commands_migrate_courses_fk_py_command_handle (defines)
 

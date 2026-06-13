@@ -1,13 +1,13 @@
-# Community 327: simple_seed
+# Community 327: generated_plugin_registrant
 
 **Members:** 2
 
 ## Nodes
 
-- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
-- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
 
 ## Relationships
 
-- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
+- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
 

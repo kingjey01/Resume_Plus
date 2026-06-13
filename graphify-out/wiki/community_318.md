@@ -1,15 +1,15 @@
-# Community 318: apps
+# Community 318: test_local_server
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_users_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_users_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **UsersConfig** (`backend_users_apps_py_usersconfig`, Class, degree: 1)
+- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
+- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
+- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_apps_py → backend_users_apps_py_import_django_apps_appconfig (imports)
-- backend_users_apps_py → backend_users_apps_py_usersconfig (defines)
+- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
+- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
 

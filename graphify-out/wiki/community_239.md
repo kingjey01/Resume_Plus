@@ -1,19 +1,21 @@
-# Community 239: AbonnementListCreateView
+# Community 239: ._clean_transcript()
 
 **Members:** 5
 
 ## Nodes
 
-- **AbonnementListCreateView** (`backend_payments_views_py_abonnementlistcreateview`, Class, degree: 4)
-- **.get_queryset()** (`backend_payments_views_py_abonnementlistcreateview_get_queryset`, Method, degree: 1)
-- **.list()** (`backend_payments_views_py_abonnementlistcreateview_list`, Method, degree: 2)
-- **.perform_create()** (`backend_payments_views_py_abonnementlistcreateview_perform_create`, Method, degree: 1)
-- **initiate_subscription_payment_view()** (`backend_payments_views_py_initiate_subscription_payment_view`, Function, degree: 2)
+- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
+- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
+- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
+- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
+- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
 
 ## Relationships
 
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_get_queryset (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_perform_create (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_list (defines)
-- backend_payments_views_py_initiate_subscription_payment_view → backend_payments_views_py_abonnementlistcreateview_list (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
 

@@ -1,23 +1,23 @@
-# Community 161: purchases_screen
+# Community 161: models
 
 **Members:** 7
 
 ## Nodes
 
-- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 6)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
+- **models** (`backend_users_models_py`, File, degree: 7)
+- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
+- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
+- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
+- backend_users_models_py → backend_users_models_py_meta (defines)
 

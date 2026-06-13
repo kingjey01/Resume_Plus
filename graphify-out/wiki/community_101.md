@@ -1,27 +1,35 @@
-# Community 101: ExerciseAttempt
+# Community 101: DeepgramService
 
 **Members:** 9
 
 ## Nodes
 
-- **ExerciseAttempt** (`backend_courses_models_py_exerciseattempt`, Class, degree: 3)
-- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
-- **.__str__()** (`backend_courses_models_py_exerciseattempt_str`, Method, degree: 1)
-- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
-- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
-- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
-- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
-- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 2)
-- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
+- **DeepgramService** (`backend_courses_deepgram_service_py_deepgramservice`, Class, degree: 9)
+- **._extract_confidence()** (`backend_courses_deepgram_service_py_deepgramservice_extract_confidence`, Method, degree: 3)
+- **._extract_transcript()** (`backend_courses_deepgram_service_py_deepgramservice_extract_transcript`, Method, degree: 3)
+- **._extract_words()** (`backend_courses_deepgram_service_py_deepgramservice_extract_words`, Method, degree: 2)
+- **._get_mime_type()** (`backend_courses_deepgram_service_py_deepgramservice_get_mime_type`, Method, degree: 2)
+- **.__init__()** (`backend_courses_deepgram_service_py_deepgramservice_init`, Method, degree: 1)
+- **.is_configured()** (`backend_courses_deepgram_service_py_deepgramservice_is_configured`, Method, degree: 3)
+- **.transcribe_bytes()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes`, Method, degree: 4)
+- **.transcribe_file()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_file`, Method, degree: 6)
 
 ## Relationships
 
-- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_save (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
-- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_str (defines)
-- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_calculate_score (defines)
-- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_init (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_is_configured (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_file (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_words (defines)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_words (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
 
