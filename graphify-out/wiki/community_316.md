@@ -1,13 +1,15 @@
-# Community 316: simple_seed
+# Community 316: production_settings
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
-- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+- **production_settings** (`backend_production_settings_py`, File, degree: 2)
+- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
+- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
 
 ## Relationships
 
-- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
+- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
+- backend_production_settings_py → backend_production_settings_py_import_os (imports)
 

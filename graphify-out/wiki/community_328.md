@@ -1,8 +1,13 @@
-# Community 328: summary
+# Community 328: service
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **summary** (`lib_models_summary_dart`, File, degree: 0)
+- **service** (`lib_models_service_dart`, File, degree: 1)
+- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
+
+## Relationships
+
+- lib_models_service_dart → lib_models_service_dart_id (defines)
 

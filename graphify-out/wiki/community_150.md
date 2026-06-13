@@ -1,23 +1,23 @@
-# Community 150: NotificationTargetingLogicTest
+# Community 150: check_cors_configuration()
 
 **Members:** 7
 
 ## Nodes
 
-- **NotificationTargetingLogicTest** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest`, Class, degree: 7)
-- **.setUp()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup`, Method, degree: 1)
-- **.test_case_1_no_filters_global()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global`, Method, degree: 1)
-- **.test_case_2_universite_only()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only`, Method, degree: 1)
-- **.test_case_3_universite_filiere()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere`, Method, degree: 1)
-- **.test_case_4_universite_filiere_promotion()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion`, Method, degree: 1)
-- **.test_cp_receives_own_notification()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification`, Method, degree: 1)
+- **check_cors_configuration()** (`backend_fix_auth_issues_py_check_cors_configuration`, Function, degree: 2)
+- **config()** (`backend_fix_auth_issues_py_config`, Function, degree: 2)
+- **create_missing_tokens()** (`backend_fix_auth_issues_py_create_missing_tokens`, Function, degree: 2)
+- **fix_test_users()** (`backend_fix_auth_issues_py_fix_test_users`, Function, degree: 2)
+- **generate_flutter_auth_config()** (`backend_fix_auth_issues_py_generate_flutter_auth_config`, Function, degree: 2)
+- **main()** (`backend_fix_auth_issues_py_main`, Function, degree: 7)
+- **test_tokens_validity()** (`backend_fix_auth_issues_py_test_tokens_validity`, Function, degree: 2)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification (defines)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_check_cors_configuration (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_generate_flutter_auth_config (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_create_missing_tokens (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_fix_test_users (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_config (calls)
+- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_test_tokens_validity (calls)
 

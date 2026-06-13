@@ -1,17 +1,17 @@
-# Community 281: 0006_migrate_existing_relations
+# Community 281: create_exercise_service
 
 **Members:** 4
 
 ## Nodes
 
-- **0006_migrate_existing_relations** (`backend_courses_migrations_0006_migrate_existing_relations_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations`, Module, degree: 1)
-- **migrate_existing_relations()** (`backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations`, Function, degree: 1)
-- **Migration** (`backend_courses_migrations_0006_migrate_existing_relations_py_migration`, Class, degree: 1)
+- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
+- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
+- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
+- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations (defines)
-- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migration (defines)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
 

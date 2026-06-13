@@ -1,29 +1,35 @@
-# Community 90: urls
+# Community 90: DeepgramService
 
-**Members:** 10
+**Members:** 9
 
 ## Nodes
 
-- **urls** (`backend_resume_backend_urls_py`, File, degree: 9)
-- **django.conf.settings** (`backend_resume_backend_urls_py_import_django_conf_settings`, Module, degree: 1)
-- **django.conf.urls.static.static** (`backend_resume_backend_urls_py_import_django_conf_urls_static_static`, Module, degree: 1)
-- **django.contrib.admin** (`backend_resume_backend_urls_py_import_django_contrib_admin`, Module, degree: 1)
-- **django.urls.include** (`backend_resume_backend_urls_py_import_django_urls_include`, Module, degree: 1)
-- **django.urls.path** (`backend_resume_backend_urls_py_import_django_urls_path`, Module, degree: 1)
-- **drf_yasg.openapi** (`backend_resume_backend_urls_py_import_drf_yasg_openapi`, Module, degree: 1)
-- **drf_yasg.views.get_schema_view** (`backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view`, Module, degree: 1)
-- **health_check** (`backend_resume_backend_urls_py_import_health_check`, Module, degree: 1)
-- **rest_framework.permissions** (`backend_resume_backend_urls_py_import_rest_framework_permissions`, Module, degree: 1)
+- **DeepgramService** (`backend_courses_deepgram_service_py_deepgramservice`, Class, degree: 9)
+- **._extract_confidence()** (`backend_courses_deepgram_service_py_deepgramservice_extract_confidence`, Method, degree: 3)
+- **._extract_transcript()** (`backend_courses_deepgram_service_py_deepgramservice_extract_transcript`, Method, degree: 3)
+- **._extract_words()** (`backend_courses_deepgram_service_py_deepgramservice_extract_words`, Method, degree: 2)
+- **._get_mime_type()** (`backend_courses_deepgram_service_py_deepgramservice_get_mime_type`, Method, degree: 2)
+- **.__init__()** (`backend_courses_deepgram_service_py_deepgramservice_init`, Method, degree: 1)
+- **.is_configured()** (`backend_courses_deepgram_service_py_deepgramservice_is_configured`, Method, degree: 3)
+- **.transcribe_bytes()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes`, Method, degree: 4)
+- **.transcribe_file()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_file`, Method, degree: 6)
 
 ## Relationships
 
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_contrib_admin (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_path (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_urls_include (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_settings (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_django_conf_urls_static_static (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_rest_framework_permissions (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_views_get_schema_view (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_drf_yasg_openapi (imports)
-- backend_resume_backend_urls_py → backend_resume_backend_urls_py_import_health_check (imports)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_init (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_is_configured (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_file (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (defines)
+- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_words (defines)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_words (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
+- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
 

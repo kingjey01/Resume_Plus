@@ -1,17 +1,17 @@
-# Community 271: 0005_userprofile_profile_picture
+# Community 271: audio_file_player_widget
 
 **Members:** 4
 
 ## Nodes
 
-- **0005_userprofile_profile_picture** (`backend_users_migrations_0005_userprofile_profile_picture_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0005_userprofile_profile_picture_py_migration`, Class, degree: 1)
+- **audio_file_player_widget** (`lib_widgets_audio_file_player_widget_dart`, File, degree: 3)
+- **_AudioFilePlayerWidgetState()** (`lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_file_player_service.dart** (`lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_migrations (imports)
-- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_import_django_db_models (imports)
-- backend_users_migrations_0005_userprofile_profile_picture_py → backend_users_migrations_0005_userprofile_profile_picture_py_migration (defines)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate (defines)
 

@@ -1,8 +1,13 @@
-# Community 332: app_notification
+# Community 332: __init__
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
+- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
+- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
+
+## Relationships
+
+- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
 

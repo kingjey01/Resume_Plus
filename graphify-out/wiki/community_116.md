@@ -1,25 +1,25 @@
-# Community 116: quick_test
+# Community 116: exercises_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_test** (`backend_quick_test_py`, File, degree: 7)
-- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
-- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
-- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
-- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
-- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
-- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
-- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
+- **exercises_screen** (`lib_features_exercises_screens_exercises_screen_dart`, File, degree: 7)
+- **_ExercisesScreenState()** (`lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
-- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
-- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
-- backend_quick_test_py → backend_quick_test_py_import_os (imports)
-- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
-- backend_quick_test_py → backend_quick_test_py_import_time (imports)
-- backend_quick_test_py → backend_quick_test_py_start_server (defines)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart (imports)
+- lib_features_exercises_screens_exercises_screen_dart → lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate (defines)
 

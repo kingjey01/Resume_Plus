@@ -1,21 +1,21 @@
-# Community 197: AppDelegate
+# Community 197: settings
 
 **Members:** 6
 
 ## Nodes
 
-- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
-- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
-- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
-- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
-- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
+- **settings** (`backend_resume_backend_settings_py`, File, degree: 5)
+- **celery.schedules.crontab** (`backend_resume_backend_settings_py_import_celery_schedules_crontab`, Module, degree: 1)
+- **datetime.timedelta** (`backend_resume_backend_settings_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_resume_backend_settings_py_import_decouple_config`, Module, degree: 1)
+- **os** (`backend_resume_backend_settings_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_resume_backend_settings_py_import_pathlib_path`, Module, degree: 1)
 
 ## Relationships
 
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
-- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_pathlib_path (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_datetime_timedelta (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_decouple_config (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_os (imports)
+- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_celery_schedules_crontab (imports)
 

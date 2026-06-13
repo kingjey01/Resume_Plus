@@ -4,11 +4,23 @@ from .models import *
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ['nom', 'universite_fk', 'filiere_fk', 'promotion_fk', 'created_at']
-    list_filter = ['universite_fk', 'filiere_fk', 'promotion_fk', 'created_at']
-    search_fields = ['nom', 'description', 'universite_fk__nom', 'filiere_fk__nom', 'promotion_fk__nom']
+    list_display = ['nom', 'get_universites', 'get_filieres', 'get_promotions', 'created_at']
+    list_filter = ['created_at']
+    search_fields = ['nom', 'description']
     readonly_fields = ['created_at', 'updated_at']
-    autocomplete_fields = ['universite_fk', 'filiere_fk', 'promotion_fk']
+    filter_horizontal = ['universites', 'filieres', 'promotions']
+
+    def get_universites(self, obj):
+        return ", ".join(u.nom for u in obj.universites.all())
+    get_universites.short_description = "Universités"
+
+    def get_filieres(self, obj):
+        return ", ".join(f.nom for f in obj.filieres.all())
+    get_filieres.short_description = "Filières"
+
+    def get_promotions(self, obj):
+        return ", ".join(p.nom for p in obj.promotions.all())
+    get_promotions.short_description = "Promotions"
 
 
 @admin.register(Session)

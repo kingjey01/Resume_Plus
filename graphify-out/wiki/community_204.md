@@ -1,19 +1,21 @@
-# Community 204: debug_access
+# Community 204: settings_corrected
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **debug_access** (`backend_debug_access_py`, File, degree: 4)
-- **courses.models.Course** (`backend_debug_access_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_debug_access_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_debug_access_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_debug_access_py_import_os`, Module, degree: 1)
+- **settings_corrected** (`backend_settings_corrected_py`, File, degree: 5)
+- **datetime.timedelta** (`backend_settings_corrected_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_corrected_py_import_decouple_config`, Module, degree: 1)
+- **os** (`backend_settings_corrected_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_corrected_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_corrected_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_debug_access_py → backend_debug_access_py_import_os (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django (imports)
-- backend_debug_access_py → backend_debug_access_py_import_django_contrib_auth_models_user (imports)
-- backend_debug_access_py → backend_debug_access_py_import_courses_models_course (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_pathlib_path (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_datetime_timedelta (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_decouple_config (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_os (imports)
+- backend_settings_corrected_py → backend_settings_corrected_py_import_pymysql (imports)
 

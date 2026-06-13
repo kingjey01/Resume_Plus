@@ -1,23 +1,21 @@
-# Community 192: test_encoding_fix
+# Community 192: 0003_service_abonnement
 
 **Members:** 6
 
 ## Nodes
 
-- **test_encoding_fix** (`backend_test_encoding_fix_py`, File, degree: 5)
-- **json** (`backend_test_encoding_fix_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_encoding_fix_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_encoding_fix_py_main`, Function, degree: 3)
-- **test_summary_retrieval()** (`backend_test_encoding_fix_py_test_summary_retrieval`, Function, degree: 2)
-- **test_summary_with_special_chars()** (`backend_test_encoding_fix_py_test_summary_with_special_chars`, Function, degree: 2)
+- **0003_service_abonnement** (`backend_courses_migrations_0003_service_abonnement_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_migrations_0003_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0003_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0003_service_abonnement_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0003_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0003_service_abonnement_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_requests (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_json (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_with_special_chars (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_retrieval (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_main (defines)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_with_special_chars (calls)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_retrieval (calls)
+- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_conf_settings (imports)
+- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_db_models (imports)
+- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0003_service_abonnement_py → backend_courses_migrations_0003_service_abonnement_py_migration (defines)
 

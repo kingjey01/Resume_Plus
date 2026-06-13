@@ -1,15 +1,15 @@
-# Community 290: apps
+# Community 290: 0017_course_m2m_relations_cleanup
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_courses_apps_py`, File, degree: 2)
-- **CoursesConfig** (`backend_courses_apps_py_coursesconfig`, Class, degree: 1)
-- **django.apps.AppConfig** (`backend_courses_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **0017_course_m2m_relations_cleanup** (`backend_courses_migrations_0017_course_m2m_relations_cleanup_py`, File, degree: 2)
+- **django.db.migrations** (`backend_courses_migrations_0017_course_m2m_relations_cleanup_py_import_django_db_migrations`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0017_course_m2m_relations_cleanup_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_apps_py → backend_courses_apps_py_import_django_apps_appconfig (imports)
-- backend_courses_apps_py → backend_courses_apps_py_coursesconfig (defines)
+- backend_courses_migrations_0017_course_m2m_relations_cleanup_py → backend_courses_migrations_0017_course_m2m_relations_cleanup_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0017_course_m2m_relations_cleanup_py → backend_courses_migrations_0017_course_m2m_relations_cleanup_py_migration (defines)
 

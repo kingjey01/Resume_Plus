@@ -1,27 +1,27 @@
-# Community 98: notification_service
+# Community 98: delete_account_screen
 
 **Members:** 9
 
 ## Nodes
 
-- **notification_service** (`lib_services_notification_service_dart`, File, degree: 8)
-- **dart:async** (`lib_services_notification_service_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_notification_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/utils/logger.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_notification_service_dart_instance`, Function, degree: 1)
-- **_poll()** (`lib_services_notification_service_dart_poll`, Function, degree: 1)
-- **_unreadCount()** (`lib_services_notification_service_dart_unreadcount`, Function, degree: 1)
-- **_updateCount()** (`lib_services_notification_service_dart_updatecount`, Function, degree: 1)
+- **delete_account_screen** (`lib_features_settings_screens_delete_account_screen_dart`, File, degree: 8)
+- **_DeleteAccountScreenState()** (`lib_features_settings_screens_delete_account_screen_dart_deleteaccountscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/login_screen.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_screens_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_dart_async (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_instance (defines)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_unreadcount (defines)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_poll (defines)
-- lib_services_notification_service_dart → lib_services_notification_service_dart_updatecount (defines)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_features_auth_screens_login_screen_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_settings_screens_delete_account_screen_dart → lib_features_settings_screens_delete_account_screen_dart_deleteaccountscreenstate (defines)
 

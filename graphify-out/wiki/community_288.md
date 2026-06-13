@@ -1,15 +1,17 @@
-# Community 288: demo_data_service
+# Community 288: find_courses_endpoint
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **demo_data_service** (`lib_services_demo_data_service_dart`, File, degree: 2)
-- **package:resume_plus_clean/models/summary.dart'** (`lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_demo_data_service_dart_instance`, Function, degree: 1)
+- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
+- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
+- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_services_demo_data_service_dart → lib_services_demo_data_service_dart_instance (defines)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
 

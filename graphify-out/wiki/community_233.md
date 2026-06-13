@@ -1,19 +1,19 @@
-# Community 233: tts_reader_widget
+# Community 233: urls
 
 **Members:** 5
 
 ## Nodes
 
-- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
-- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
-- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
+- **urls** (`backend_courses_urls_py`, File, degree: 4)
+- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
+- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
+- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
 

@@ -1,8 +1,13 @@
-# Community 334: purchase
+# Community 334: gunicorn.conf
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **purchase** (`lib_models_purchase_dart`, File, degree: 0)
+- **gunicorn.conf** (`backend_gunicorn_conf_py`, File, degree: 1)
+- **multiprocessing** (`backend_gunicorn_conf_py_import_multiprocessing`, Module, degree: 1)
+
+## Relationships
+
+- backend_gunicorn_conf_py → backend_gunicorn_conf_py_import_multiprocessing (imports)
 

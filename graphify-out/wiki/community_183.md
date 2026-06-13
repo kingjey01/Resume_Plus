@@ -1,21 +1,21 @@
-# Community 183: flutter_window
+# Community 183: purchased_summary_card
 
 **Members:** 6
 
 ## Nodes
 
-- **flutter_window** (`windows_runner_flutter_window_h`, File, degree: 5)
-- **FlutterWindow()** (`windows_runner_flutter_window_h_flutterwindow`, Function, degree: 1)
-- **flutter/dart_project.h** (`windows_runner_flutter_window_h_import_flutter_dart_project_h`, Module, degree: 1)
-- **flutter/flutter_view_controller.h** (`windows_runner_flutter_window_h_import_flutter_flutter_view_controller_h`, Module, degree: 1)
-- **memory** (`windows_runner_flutter_window_h_import_memory`, Module, degree: 1)
-- **win32_window.h** (`windows_runner_flutter_window_h_import_win32_window_h`, Module, degree: 1)
+- **purchased_summary_card** (`lib_features_summaries_widgets_purchased_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/purchase.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_flutter_dart_project_h (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_flutter_flutter_view_controller_h (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_memory (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_win32_window_h (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_flutterwindow (defines)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

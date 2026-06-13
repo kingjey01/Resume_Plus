@@ -1,8 +1,13 @@
-# Community 331: __init__
+# Community 331: my_application
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
+- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
+- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+
+## Relationships
+
+- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
 

@@ -1,17 +1,20 @@
-# Community 252: simple_data_page
+# Community 252: test_api_only
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **simple_data_page** (`lib_pages_simple_data_page_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_pages_simple_data_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
-- **_SimpleDataPageState()** (`lib_pages_simple_data_page_dart_simpledatapagestate`, Function, degree: 1)
+- **test_api_only** (`backend_test_api_only_py`, File, degree: 4)
+- **json** (`backend_test_api_only_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_only_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_api_only_py_main`, Function, degree: 2)
+- **test_endpoint()** (`backend_test_api_only_py_test_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_simpledatapagestate (defines)
+- backend_test_api_only_py → backend_test_api_only_py_import_requests (imports)
+- backend_test_api_only_py → backend_test_api_only_py_import_json (imports)
+- backend_test_api_only_py → backend_test_api_only_py_test_endpoint (defines)
+- backend_test_api_only_py → backend_test_api_only_py_main (defines)
+- backend_test_api_only_py_main → backend_test_api_only_py_test_endpoint (calls)
 

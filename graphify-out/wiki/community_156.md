@@ -1,23 +1,23 @@
-# Community 156: test_simple_audio_upload
+# Community 156: recording_page
 
 **Members:** 7
 
 ## Nodes
 
-- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
-- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
-- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
-- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
-- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
+- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
+- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
 

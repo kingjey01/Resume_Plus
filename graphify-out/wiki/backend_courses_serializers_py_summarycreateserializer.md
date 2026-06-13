@@ -3,7 +3,7 @@
 - **ID:** `backend_courses_serializers_py_summarycreateserializer`
 - **Type:** Class
 - **File:** `.\backend\courses\serializers.py`
-- **Location:** L192
+- **Location:** L205
 
 ## Relationships
 

@@ -1,13 +1,15 @@
-# Community 318: api_service_debug
+# Community 318: apps
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **api_service_debug** (`lib_services_api_service_debug_dart`, File, degree: 1)
-- **package:dio/dio.dart** (`lib_services_api_service_debug_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **apps** (`backend_users_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_users_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **UsersConfig** (`backend_users_apps_py_usersconfig`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_debug_dart → lib_services_api_service_debug_dart_import_package_dio_dio_dart (imports)
+- backend_users_apps_py → backend_users_apps_py_import_django_apps_appconfig (imports)
+- backend_users_apps_py → backend_users_apps_py_usersconfig (defines)
 

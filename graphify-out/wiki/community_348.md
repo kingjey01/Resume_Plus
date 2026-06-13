@@ -1,8 +1,8 @@
-# Community 348: resource
+# Community 348: purchase
 
 **Members:** 1
 
 ## Nodes
 
-- **resource** (`windows_runner_resource_h`, File, degree: 0)
+- **purchase** (`lib_models_purchase_dart`, File, degree: 0)
 

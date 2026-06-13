@@ -1,31 +1,31 @@
-# Community 64: ExerciseQuestionAdmin
+# Community 64: login_screen
 
 **Members:** 11
 
 ## Nodes
 
-- **ExerciseQuestionAdmin** (`backend_courses_admin_py_exercisequestionadmin`, Class, degree: 3)
-- **.get_queryset()** (`backend_courses_admin_py_exercisequestionadmin_get_queryset`, Method, degree: 2)
-- **.question_text_short()** (`backend_courses_admin_py_exercisequestionadmin_question_text_short`, Method, degree: 1)
-- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
-- **ProfesseurFilieresAdmin** (`backend_courses_admin_py_professeurfilieresadmin`, Class, degree: 5)
-- **.get_queryset()** (`backend_courses_admin_py_professeurfilieresadmin_get_queryset`, Method, degree: 2)
-- **.has_add_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_add_permission`, Method, degree: 1)
-- **.has_change_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_change_permission`, Method, degree: 1)
-- **.has_delete_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_delete_permission`, Method, degree: 1)
-- **SummaryAdmin** (`backend_courses_admin_py_summaryadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_summaryadmin_get_queryset`, Method, degree: 2)
+- **login_screen** (`lib_features_auth_screens_login_screen_dart`, File, degree: 10)
+- **package:dio/dio.dart** (`lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/forgot_password_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/register_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_LoginScreenState()** (`lib_features_auth_screens_login_screen_dart_loginscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_admin_py_summaryadmin → backend_courses_admin_py_summaryadmin_get_queryset (defines)
-- backend_courses_admin_py_exercisequestionadmin → backend_courses_admin_py_exercisequestionadmin_question_text_short (defines)
-- backend_courses_admin_py_exercisequestionadmin → backend_courses_admin_py_exercisequestionadmin_get_queryset (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_add_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_change_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_delete_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_get_queryset (defines)
-- backend_courses_admin_py_summaryadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exercisequestionadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_professeurfilieresadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
+- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_loginscreenstate (defines)
 

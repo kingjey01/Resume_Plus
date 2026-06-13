@@ -1,28 +1,25 @@
-# Community 132: AuthAPITest
+# Community 132: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
-- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
-- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
-- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
-- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
-- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
-- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
-- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
-- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

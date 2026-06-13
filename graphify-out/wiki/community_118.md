@@ -1,25 +1,25 @@
-# Community 118: exercise_generator
+# Community 118: fix_production_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **exercise_generator** (`backend_courses_exercise_generator_py`, File, degree: 8)
-- **generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_generate_exercises_for_summary`, Function, degree: 1)
-- **.deepseek_service.deepseek_service** (`backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service`, Module, degree: 1)
-- **json** (`backend_courses_exercise_generator_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_exercise_generator_py_import_logging`, Module, degree: 1)
-- **.models.Exercise** (`backend_courses_exercise_generator_py_import_models_exercise`, Module, degree: 1)
-- **.models.ExerciseQuestion** (`backend_courses_exercise_generator_py_import_models_exercisequestion`, Module, degree: 1)
-- **.models.Summary** (`backend_courses_exercise_generator_py_import_models_summary`, Module, degree: 1)
+- **fix_production_encoding** (`backend_fix_production_encoding_py`, File, degree: 14)
+- **courses.models.Session** (`backend_fix_production_encoding_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_production_encoding_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_production_encoding_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_production_encoding_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_production_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_production_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_production_encoding_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_json (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercise (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercisequestion (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_summary (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_logging (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_generate_exercises_for_summary (defines)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_os (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_sys (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_conf_settings (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_django_db_connection (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_summary (imports)
+- backend_fix_production_encoding_py → backend_fix_production_encoding_py_import_courses_models_session (imports)
 

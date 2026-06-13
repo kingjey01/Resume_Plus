@@ -1,15 +1,17 @@
-# Community 283: auth_providers
+# Community 283: apps
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **auth_providers** (`lib_features_auth_providers_auth_providers_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
+- **apps** (`backend_payments_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
+- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
+- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
+- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
+- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
 

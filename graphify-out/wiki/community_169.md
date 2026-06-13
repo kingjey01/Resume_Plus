@@ -1,23 +1,23 @@
-# Community 169: models
+# Community 169: 0002_service_abonnement
 
 **Members:** 7
 
 ## Nodes
 
-- **models** (`backend_users_models_py`, File, degree: 7)
-- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
-- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
+- **0002_service_abonnement** (`backend_payments_migrations_0002_service_abonnement_py`, File, degree: 6)
+- **django.conf.settings** (`backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0002_service_abonnement_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
-- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
-- backend_users_models_py → backend_users_models_py_meta (defines)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_migration (defines)
 

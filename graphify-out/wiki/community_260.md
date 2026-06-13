@@ -1,17 +1,17 @@
-# Community 260: purchase_badge_provider
+# Community 260: 0003_alter_purchase_payment_method_alter_service_currency
 
 **Members:** 4
 
 ## Nodes
 
-- **purchase_badge_provider** (`lib_providers_purchase_badge_provider_dart`, File, degree: 3)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
+- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
 

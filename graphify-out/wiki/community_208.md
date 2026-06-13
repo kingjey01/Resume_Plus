@@ -1,19 +1,21 @@
-# Community 208: deepseek_service
+# Community 208: RunnerTests
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
-- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
+- **RunnerTests** (`macos_runnertests_runnertests_swift`, File, degree: 5)
+- **Cocoa** (`macos_runnertests_runnertests_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runnertests_runnertests_swift_import_fluttermacos`, Module, degree: 1)
+- **XCTest** (`macos_runnertests_runnertests_swift_import_xctest`, Module, degree: 1)
+- **RunnerTests** (`macos_runnertests_runnertests_swift_runnertests`, Class, degree: 1)
+- **testExample** (`macos_runnertests_runnertests_swift_testexample`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_runnertests (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_testexample (defines)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_cocoa (imports)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_fluttermacos (imports)
+- macos_runnertests_runnertests_swift → macos_runnertests_runnertests_swift_import_xctest (imports)
 

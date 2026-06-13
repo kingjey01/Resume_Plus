@@ -1,29 +1,27 @@
-# Community 92: test_notification_logic
+# Community 92: auth_provider
 
-**Members:** 10
+**Members:** 9
 
 ## Nodes
 
-- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
-- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
-- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
-- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
-- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
+- **auth_provider** (`lib_features_auth_providers_auth_provider_dart`, File, degree: 8)
+- **dart:async** (`lib_features_auth_providers_auth_provider_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/fcm_service.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_fcm_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_dart_async (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_models_user_dart (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_auth_providers_auth_provider_dart → lib_features_auth_providers_auth_provider_dart_import_package_resume_plus_clean_services_fcm_service_dart (imports)
 

@@ -1,19 +1,21 @@
-# Community 218: ai_content_view
+# Community 218: ._clean_transcript()
 
 **Members:** 5
 
 ## Nodes
 
-- **ai_content_view** (`lib_widgets_ai_content_view_dart`, File, degree: 4)
-- **_AiContentViewState()** (`lib_widgets_ai_content_view_dart_aicontentviewstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_ai_content_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
+- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
+- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
+- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
+- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
 
 ## Relationships
 
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_aicontentviewstate (defines)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
 

@@ -1,15 +1,17 @@
-# Community 284: apps
+# Community 284: app_theme
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **apps** (`backend_security_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
+- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
+- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
-- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
+- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
 

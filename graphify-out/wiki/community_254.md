@@ -1,17 +1,17 @@
-# Community 254: theme_selector
+# Community 254: 0013_make_professeur_optional
 
 **Members:** 4
 
 ## Nodes
 
-- **theme_selector** (`lib_features_settings_widgets_theme_selector_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/settings/providers/theme_provider.dart** (`lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart`, Module, degree: 1)
+- **0013_make_professeur_optional** (`backend_courses_migrations_0013_make_professeur_optional_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0013_make_professeur_optional_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_settings_widgets_theme_selector_dart → lib_features_settings_widgets_theme_selector_dart_import_package_resume_plus_clean_features_settings_providers_theme_provider_dart (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models (imports)
+- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_migration (defines)
 

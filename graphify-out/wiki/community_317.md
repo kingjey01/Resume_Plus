@@ -1,13 +1,15 @@
-# Community 317: logger
+# Community 317: test_local_server
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **logger** (`lib_utils_logger_dart`, File, degree: 1)
-- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **test_local_server** (`backend_test_local_server_py`, File, degree: 2)
+- **requests** (`backend_test_local_server_py_import_requests`, Module, degree: 1)
+- **quick_test()** (`backend_test_local_server_py_quick_test`, Function, degree: 1)
 
 ## Relationships
 
-- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
+- backend_test_local_server_py → backend_test_local_server_py_import_requests (imports)
+- backend_test_local_server_py → backend_test_local_server_py_quick_test (defines)
 

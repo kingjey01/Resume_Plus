@@ -1,31 +1,27 @@
-# Community 101: debug_api_calls
+# Community 101: ExerciseAttempt
 
 **Members:** 9
 
 ## Nodes
 
-- **debug_api_calls** (`backend_debug_api_calls_py`, File, degree: 8)
-- **check_django_urls()** (`backend_debug_api_calls_py_check_django_urls`, Function, degree: 2)
-- **generate_flutter_debug_code()** (`backend_debug_api_calls_py_generate_flutter_debug_code`, Function, degree: 2)
-- **datetime** (`backend_debug_api_calls_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_debug_api_calls_py_import_json`, Module, degree: 1)
-- **requests** (`backend_debug_api_calls_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_debug_api_calls_py_main`, Function, degree: 5)
-- **simulate_flutter_calls()** (`backend_debug_api_calls_py_simulate_flutter_calls`, Function, degree: 2)
-- **test_all_possible_urls()** (`backend_debug_api_calls_py_test_all_possible_urls`, Function, degree: 2)
+- **ExerciseAttempt** (`backend_courses_models_py_exerciseattempt`, Class, degree: 3)
+- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
+- **.__str__()** (`backend_courses_models_py_exerciseattempt_str`, Method, degree: 1)
+- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
+- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
+- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
+- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
+- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 2)
+- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
 
 ## Relationships
 
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_requests (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_json (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_import_datetime (imports)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_test_all_possible_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_simulate_flutter_calls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_check_django_urls (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_generate_flutter_debug_code (defines)
-- backend_debug_api_calls_py → backend_debug_api_calls_py_main (defines)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_simulate_flutter_calls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_check_django_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_test_all_possible_urls (calls)
-- backend_debug_api_calls_py_main → backend_debug_api_calls_py_generate_flutter_debug_code (calls)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_save (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
+- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
+- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_str (defines)
+- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_calculate_score (defines)
+- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
 

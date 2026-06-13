@@ -1,15 +1,17 @@
-# Community 286: utils
+# Community 286: debug_page
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_h`, File, degree: 2)
-- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
-- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
+- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
+- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
-- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
 

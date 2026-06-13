@@ -1,15 +1,15 @@
-# Community 304: apps
+# Community 304: exercise_urls
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_notifications_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_notifications_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **NotificationsConfig** (`backend_notifications_apps_py_notificationsconfig`, Class, degree: 1)
+- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_apps_py → backend_notifications_apps_py_import_django_apps_appconfig (imports)
-- backend_notifications_apps_py → backend_notifications_apps_py_notificationsconfig (defines)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
+- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
 

@@ -1,23 +1,23 @@
-# Community 163: notification_provider
+# Community 163: setup_exercise_service
 
 **Members:** 7
 
 ## Nodes
 
-- **notification_provider** (`lib_features_notifications_providers_notification_provider_dart`, File, degree: 6)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/notification_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
-- **load()** (`lib_features_notifications_providers_notification_provider_dart_load`, Function, degree: 1)
-- **_service()** (`lib_features_notifications_providers_notification_provider_dart_service`, Function, degree: 1)
+- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
+- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
+- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
+- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
+- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
+- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
+- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_service (defines)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_load (defines)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
 

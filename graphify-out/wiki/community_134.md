@@ -1,26 +1,25 @@
-# Community 134: quick_server_test
+# Community 134: fix_encoding_sqlite
 
 **Members:** 8
 
 ## Nodes
 
-- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
-- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
-- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
-- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
-- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
-- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
-- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
-- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
+- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
+- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
-- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
-- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
-- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
 

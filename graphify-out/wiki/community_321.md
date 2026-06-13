@@ -1,13 +1,13 @@
-# Community 321: __init__
+# Community 321: professeur
 
 **Members:** 2
 
 ## Nodes
 
-- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
-- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
+- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
+- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
+- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
 

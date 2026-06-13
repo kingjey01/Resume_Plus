@@ -1,23 +1,23 @@
-# Community 175: settings_cors_fixed
+# Community 175: GeneratedPluginRegistrant
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_cors_fixed** (`backend_settings_cors_fixed_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_cors_fixed_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_cors_fixed_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_cors_fixed_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_cors_fixed_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_cors_fixed_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_cors_fixed_py_import_pymysql`, Module, degree: 1)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
+- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
+- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
+- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
+- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
+- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
+- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pathlib_path (imports)
-- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_datetime_timedelta (imports)
-- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_config (imports)
-- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_decouple_csv (imports)
-- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_os (imports)
-- backend_settings_cors_fixed_py → backend_settings_cors_fixed_py_import_pymysql (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
+- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
 

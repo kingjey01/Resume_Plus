@@ -1,17 +1,17 @@
-# Community 256: web_audio_service
+# Community 256: simple_login_page
 
 **Members:** 4
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **simple_login_page** (`lib_pages_simple_login_page_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_pages_simple_login_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
+- **_SimpleLoginPageState()** (`lib_pages_simple_login_page_dart_simpleloginpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_simpleloginpagestate (defines)
 

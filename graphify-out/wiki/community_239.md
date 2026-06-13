@@ -1,19 +1,19 @@
-# Community 239: enhanced_auth_demo_page
+# Community 239: AbonnementListCreateView
 
 **Members:** 5
 
 ## Nodes
 
-- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
+- **AbonnementListCreateView** (`backend_payments_views_py_abonnementlistcreateview`, Class, degree: 4)
+- **.get_queryset()** (`backend_payments_views_py_abonnementlistcreateview_get_queryset`, Method, degree: 1)
+- **.list()** (`backend_payments_views_py_abonnementlistcreateview_list`, Method, degree: 2)
+- **.perform_create()** (`backend_payments_views_py_abonnementlistcreateview_perform_create`, Method, degree: 1)
+- **initiate_subscription_payment_view()** (`backend_payments_views_py_initiate_subscription_payment_view`, Function, degree: 2)
 
 ## Relationships
 
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
-- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_get_queryset (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_perform_create (defines)
+- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_list (defines)
+- backend_payments_views_py_initiate_subscription_payment_view → backend_payments_views_py_abonnementlistcreateview_list (calls)
 

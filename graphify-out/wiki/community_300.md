@@ -1,15 +1,15 @@
-# Community 300: MainActivity
+# Community 300: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
-- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
-- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
+- **apps** (`backend_security_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
 
 ## Relationships
 
-- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
-- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
+- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
+- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
 

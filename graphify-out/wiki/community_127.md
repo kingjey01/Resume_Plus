@@ -1,25 +1,25 @@
-# Community 127: filiere_summaries_screen
+# Community 127: health_check
 
 **Members:** 8
 
 ## Nodes
 
-- **filiere_summaries_screen** (`lib_features_filiere_screens_filiere_summaries_screen_dart`, File, degree: 7)
-- **_FiliereSummariesScreenState()** (`lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **health_check** (`backend_health_check_py`, File, degree: 7)
+- **health_check()** (`backend_health_check_py_health_check`, Function, degree: 1)
+- **django.conf.settings** (`backend_health_check_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_health_check_py_import_django_db_connection`, Module, degree: 1)
+- **django.http.JsonResponse** (`backend_health_check_py_import_django_http_jsonresponse`, Module, degree: 1)
+- **django.views.decorators.csrf.csrf_exempt** (`backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt`, Module, degree: 1)
+- **django.views.decorators.http.require_http_methods** (`backend_health_check_py_import_django_views_decorators_http_require_http_methods`, Module, degree: 1)
+- **json** (`backend_health_check_py_import_json`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_filiere_screens_filiere_summaries_screen_dart → lib_features_filiere_screens_filiere_summaries_screen_dart_filieresummariesscreenstate (defines)
+- backend_health_check_py → backend_health_check_py_import_django_http_jsonresponse (imports)
+- backend_health_check_py → backend_health_check_py_import_django_views_decorators_http_require_http_methods (imports)
+- backend_health_check_py → backend_health_check_py_import_django_views_decorators_csrf_csrf_exempt (imports)
+- backend_health_check_py → backend_health_check_py_import_django_db_connection (imports)
+- backend_health_check_py → backend_health_check_py_import_django_conf_settings (imports)
+- backend_health_check_py → backend_health_check_py_import_json (imports)
+- backend_health_check_py → backend_health_check_py_health_check (defines)
 

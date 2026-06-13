@@ -1,29 +1,27 @@
-# Community 129: test_production_api
+# Community 129: tasks
 
 **Members:** 8
 
 ## Nodes
 
-- **test_production_api** (`backend_test_production_api_py`, File, degree: 7)
-- **json** (`backend_test_production_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_production_api_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_production_api_py_main`, Function, degree: 5)
-- **test_audio_files_access()** (`backend_test_production_api_py_test_audio_files_access`, Function, degree: 2)
-- **test_encoding_in_api_response()** (`backend_test_production_api_py_test_encoding_in_api_response`, Function, degree: 2)
-- **test_flutter_api_simulation()** (`backend_test_production_api_py_test_flutter_api_simulation`, Function, degree: 2)
-- **test_sessions_endpoint()** (`backend_test_production_api_py_test_sessions_endpoint`, Function, degree: 2)
+- **tasks** (`backend_courses_tasks_py`, File, degree: 7)
+- **generate_summary_task()** (`backend_courses_tasks_py_generate_summary_task`, Function, degree: 1)
+- **celery.shared_task** (`backend_courses_tasks_py_import_celery_shared_task`, Module, degree: 1)
+- **django.utils.timezone** (`backend_courses_tasks_py_import_django_utils_timezone`, Module, degree: 1)
+- **logging** (`backend_courses_tasks_py_import_logging`, Module, degree: 1)
+- **process_audio_session_task()** (`backend_courses_tasks_py_process_audio_session_task`, Function, degree: 2)
+- **transcribe_audio_task()** (`backend_courses_tasks_py_transcribe_audio_task`, Function, degree: 2)
+- **_validate_and_fix_duration()** (`backend_courses_tasks_py_validate_and_fix_duration`, Function, degree: 3)
 
 ## Relationships
 
-- backend_test_production_api_py → backend_test_production_api_py_import_requests (imports)
-- backend_test_production_api_py → backend_test_production_api_py_import_json (imports)
-- backend_test_production_api_py → backend_test_production_api_py_test_sessions_endpoint (defines)
-- backend_test_production_api_py → backend_test_production_api_py_test_audio_files_access (defines)
-- backend_test_production_api_py → backend_test_production_api_py_test_flutter_api_simulation (defines)
-- backend_test_production_api_py → backend_test_production_api_py_test_encoding_in_api_response (defines)
-- backend_test_production_api_py → backend_test_production_api_py_main (defines)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_audio_files_access (calls)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_encoding_in_api_response (calls)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_flutter_api_simulation (calls)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_sessions_endpoint (calls)
+- backend_courses_tasks_py → backend_courses_tasks_py_import_logging (imports)
+- backend_courses_tasks_py → backend_courses_tasks_py_import_celery_shared_task (imports)
+- backend_courses_tasks_py → backend_courses_tasks_py_import_django_utils_timezone (imports)
+- backend_courses_tasks_py → backend_courses_tasks_py_validate_and_fix_duration (defines)
+- backend_courses_tasks_py → backend_courses_tasks_py_transcribe_audio_task (defines)
+- backend_courses_tasks_py → backend_courses_tasks_py_generate_summary_task (defines)
+- backend_courses_tasks_py → backend_courses_tasks_py_process_audio_session_task (defines)
+- backend_courses_tasks_py_transcribe_audio_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
+- backend_courses_tasks_py_process_audio_session_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
 

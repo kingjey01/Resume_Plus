@@ -1,17 +1,17 @@
-# Community 274: apps
+# Community 274: course_tile
 
 **Members:** 4
 
 ## Nodes
 
-- **apps** (`backend_payments_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
-- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
+- **course_tile** (`lib_features_home_widgets_course_tile_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/course/screens/course_summaries_screen.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
-- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
-- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_features_course_screens_course_summaries_screen_dart (imports)
+- lib_features_home_widgets_course_tile_dart → lib_features_home_widgets_course_tile_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

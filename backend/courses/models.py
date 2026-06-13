@@ -107,29 +107,31 @@ class Course(models.Model):
     filiere = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     university = models.CharField(max_length=200)
-    # Relations strictes pour le contrôle d'accès (nouveaux champs)
-    universite_fk = models.ForeignKey(Universite, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
-    filiere_fk = models.ForeignKey(Filiere, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
-    promotion_fk = models.ForeignKey(Promotion, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
+    # Relations strictes pour le contrôle d'accès (ManyToMany)
+    universites = models.ManyToManyField(Universite, related_name='courses', blank=True)
+    filieres = models.ManyToManyField(Filiere, related_name='courses', blank=True)
+    promotions = models.ManyToManyField(Promotion, related_name='courses', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
     def __str__(self):
-        if self.filiere_fk and self.universite_fk:
-            return f"{self.nom} - {self.filiere_fk.nom} ({self.universite_fk.nom})"
+        uni = self.universites.first()
+        fil = self.filieres.first()
+        if uni and fil:
+            return f"{self.nom} - {fil.nom} ({uni.nom})"
         return f"{self.nom} - {self.filiere}"
-    
+
     def is_accessible_by_user(self, user):
         """Vérifie si l'utilisateur peut accéder à ce cours"""
         if not hasattr(user, 'profile'):
             return False
         profile = user.profile
-        # Si les nouveaux champs FK sont remplis, les utiliser
-        if self.universite_fk and self.promotion_fk and self.filiere_fk:
+        # Si les nouveaux champs M2M sont remplis, les utiliser
+        if self.universites.exists() and self.promotions.exists() and self.filieres.exists():
             return (
-                profile.universite_id == self.universite_fk_id and
-                profile.promotion_id == self.promotion_fk_id and
-                profile.filiere_id == self.filiere_fk_id
+                self.universites.filter(id=profile.universite_id).exists() and
+                self.promotions.filter(id=profile.promotion_id).exists() and
+                self.filieres.filter(id=profile.filiere_id).exists()
             )
         # Sinon, fallback sur les anciens champs texte
         return (

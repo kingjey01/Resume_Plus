@@ -1,17 +1,19 @@
-# Community 247: find_courses_endpoint
+# Community 247: PurchaseNotificationTest
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
-- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
-- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
+- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
+- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
+- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
 

@@ -1,25 +1,25 @@
-# Community 143: admin
+# Community 143: migrate_courses_to_fk
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
+- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
+- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
+- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
 

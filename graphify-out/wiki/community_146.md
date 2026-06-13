@@ -1,23 +1,23 @@
-# Community 146: setup_exercise_service
+# Community 146: test_simple_audio_upload
 
 **Members:** 7
 
 ## Nodes
 
-- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
-- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
-- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
-- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
-- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
-- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
+- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
+- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
+- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
+- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
+- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
 
 ## Relationships
 
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
 

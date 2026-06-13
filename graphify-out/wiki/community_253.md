@@ -1,17 +1,17 @@
-# Community 253: app_theme
+# Community 253: admin
 
 **Members:** 4
 
 ## Nodes
 
-- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
-- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
+- **admin** (`backend_security_admin_py`, File, degree: 3)
+- **django.contrib.admin** (`backend_security_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.SecurityLog** (`backend_security_admin_py_import_models_securitylog`, Module, degree: 1)
+- **SecurityLogAdmin** (`backend_security_admin_py_securitylogadmin`, Class, degree: 1)
 
 ## Relationships
 
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
+- backend_security_admin_py → backend_security_admin_py_import_django_contrib_admin (imports)
+- backend_security_admin_py → backend_security_admin_py_import_models_securitylog (imports)
+- backend_security_admin_py → backend_security_admin_py_securitylogadmin (defines)
 

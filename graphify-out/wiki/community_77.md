@@ -1,33 +1,29 @@
-# Community 77: test_registration
+# Community 77: fix_migration
 
 **Members:** 10
 
 ## Nodes
 
-- **test_registration** (`backend_test_registration_py`, File, degree: 9)
-- **generate_random_user()** (`backend_test_registration_py_generate_random_user`, Function, degree: 2)
-- **json** (`backend_test_registration_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_registration_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_registration_py_import_requests`, Module, degree: 1)
-- **string** (`backend_test_registration_py_import_string`, Module, degree: 1)
-- **main()** (`backend_test_registration_py_main`, Function, degree: 4)
-- **test_api_with_jwt_token()** (`backend_test_registration_py_test_api_with_jwt_token`, Function, degree: 2)
-- **test_login_with_new_user()** (`backend_test_registration_py_test_login_with_new_user`, Function, degree: 2)
-- **test_registration()** (`backend_test_registration_py_test_registration`, Function, degree: 3)
+- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
+- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
+- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
+- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
+- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_registration_py → backend_test_registration_py_import_requests (imports)
-- backend_test_registration_py → backend_test_registration_py_import_json (imports)
-- backend_test_registration_py → backend_test_registration_py_import_random (imports)
-- backend_test_registration_py → backend_test_registration_py_import_string (imports)
-- backend_test_registration_py → backend_test_registration_py_generate_random_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_registration (defines)
-- backend_test_registration_py → backend_test_registration_py_test_login_with_new_user (defines)
-- backend_test_registration_py → backend_test_registration_py_test_api_with_jwt_token (defines)
-- backend_test_registration_py → backend_test_registration_py_main (defines)
-- backend_test_registration_py_test_registration → backend_test_registration_py_generate_random_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_login_with_new_user (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_registration (calls)
-- backend_test_registration_py_main → backend_test_registration_py_test_api_with_jwt_token (calls)
+- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
+- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
+- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
+- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
 

@@ -1,23 +1,23 @@
-# Community 167: deepgram_service
+# Community 167: notification_provider
 
 **Members:** 7
 
 ## Nodes
 
-- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
-- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
-- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
-- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
+- **notification_provider** (`lib_features_notifications_providers_notification_provider_dart`, File, degree: 6)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/notification_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
+- **load()** (`lib_features_notifications_providers_notification_provider_dart_load`, Function, degree: 1)
+- **_service()** (`lib_features_notifications_providers_notification_provider_dart_service`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
-- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_service (defines)
+- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_load (defines)
 

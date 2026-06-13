@@ -1,17 +1,17 @@
-# Community 264: 0012_add_summary_title_price_to_session
+# Community 264: secure_screen_wrapper
 
 **Members:** 4
 
 ## Nodes
 
-- **0012_add_summary_title_price_to_session** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration`, Class, degree: 1)
+- **secure_screen_wrapper** (`lib_widgets_secure_screen_wrapper_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/screen_security_service.dart** (`lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart`, Module, degree: 1)
+- **_SecureScreenWrapperState()** (`lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_import_django_db_models (imports)
-- backend_courses_migrations_0012_add_summary_title_price_to_session_py → backend_courses_migrations_0012_add_summary_title_price_to_session_py_migration (defines)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_import_package_resume_plus_clean_services_screen_security_service_dart (imports)
+- lib_widgets_secure_screen_wrapper_dart → lib_widgets_secure_screen_wrapper_dart_securescreenwrapperstate (defines)
 

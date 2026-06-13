@@ -1,23 +1,23 @@
-# Community 157: check_cors_configuration()
+# Community 157: SubscriptionExpirationTest
 
 **Members:** 7
 
 ## Nodes
 
-- **check_cors_configuration()** (`backend_fix_auth_issues_py_check_cors_configuration`, Function, degree: 2)
-- **config()** (`backend_fix_auth_issues_py_config`, Function, degree: 2)
-- **create_missing_tokens()** (`backend_fix_auth_issues_py_create_missing_tokens`, Function, degree: 2)
-- **fix_test_users()** (`backend_fix_auth_issues_py_fix_test_users`, Function, degree: 2)
-- **generate_flutter_auth_config()** (`backend_fix_auth_issues_py_generate_flutter_auth_config`, Function, degree: 2)
-- **main()** (`backend_fix_auth_issues_py_main`, Function, degree: 7)
-- **test_tokens_validity()** (`backend_fix_auth_issues_py_test_tokens_validity`, Function, degree: 2)
+- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
+- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
+- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
+- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
+- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
+- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
+- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
 
 ## Relationships
 
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_check_cors_configuration (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_generate_flutter_auth_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_create_missing_tokens (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_fix_test_users (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_config (calls)
-- backend_fix_auth_issues_py_main → backend_fix_auth_issues_py_test_tokens_validity (calls)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
 

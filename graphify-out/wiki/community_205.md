@@ -1,19 +1,21 @@
-# Community 205: edit_summary_screen
+# Community 205: create_admin_user()
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **edit_summary_screen** (`lib_features_validation_screens_edit_summary_screen_dart`, File, degree: 4)
-- **_EditSummaryScreenState()** (`lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
+- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
+- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
+- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
+- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
+- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_validation_screens_edit_summary_screen_dart → lib_features_validation_screens_edit_summary_screen_dart_editsummaryscreenstate (defines)
+- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
+- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
 

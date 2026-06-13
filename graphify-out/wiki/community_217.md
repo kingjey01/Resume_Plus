@@ -1,19 +1,19 @@
-# Community 217: check_accessible_courses
+# Community 217: check_database_users()
 
 **Members:** 5
 
 ## Nodes
 
-- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
-- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
-- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
+- **check_database_users()** (`backend_quick_server_test_py_check_database_users`, Function, degree: 2)
+- **generate_curl_commands()** (`backend_quick_server_test_py_generate_curl_commands`, Function, degree: 2)
+- **main()** (`backend_quick_server_test_py_main`, Function, degree: 6)
+- **test_server_basic()** (`backend_quick_server_test_py_test_server_basic`, Function, degree: 2)
+- **test_tokens_quickly()** (`backend_quick_server_test_py_test_tokens_quickly`, Function, degree: 2)
 
 ## Relationships
 
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
-- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_check_database_users (calls)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_test_tokens_quickly (calls)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_generate_curl_commands (calls)
+- backend_quick_server_test_py_main → backend_quick_server_test_py_test_server_basic (calls)
 

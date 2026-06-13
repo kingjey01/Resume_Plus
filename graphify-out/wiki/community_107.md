@@ -1,31 +1,27 @@
-# Community 107: test_audio_playback
+# Community 107: notification_service
 
 **Members:** 9
 
 ## Nodes
 
-- **test_audio_playback** (`backend_test_audio_playback_py`, File, degree: 8)
-- **json** (`backend_test_audio_playback_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_audio_playback_py_import_os`, Module, degree: 1)
-- **requests** (`backend_test_audio_playback_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_audio_playback_py_main`, Function, degree: 5)
-- **test_audio_file_access()** (`backend_test_audio_playback_py_test_audio_file_access`, Function, degree: 2)
-- **test_direct_audio_access()** (`backend_test_audio_playback_py_test_direct_audio_access`, Function, degree: 2)
-- **test_media_directory_listing()** (`backend_test_audio_playback_py_test_media_directory_listing`, Function, degree: 2)
-- **test_sessions_endpoint()** (`backend_test_audio_playback_py_test_sessions_endpoint`, Function, degree: 2)
+- **notification_service** (`lib_services_notification_service_dart`, File, degree: 8)
+- **dart:async** (`lib_services_notification_service_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_notification_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/utils/logger.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_notification_service_dart_instance`, Function, degree: 1)
+- **_poll()** (`lib_services_notification_service_dart_poll`, Function, degree: 1)
+- **_unreadCount()** (`lib_services_notification_service_dart_unreadcount`, Function, degree: 1)
+- **_updateCount()** (`lib_services_notification_service_dart_updatecount`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_requests (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_json (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_import_os (imports)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_sessions_endpoint (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_audio_file_access (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_direct_audio_access (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_test_media_directory_listing (defines)
-- backend_test_audio_playback_py → backend_test_audio_playback_py_main (defines)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_sessions_endpoint (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_audio_file_access (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_direct_audio_access (calls)
-- backend_test_audio_playback_py_main → backend_test_audio_playback_py_test_media_directory_listing (calls)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_dart_async (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_instance (defines)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_unreadcount (defines)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_poll (defines)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_updatecount (defines)
 

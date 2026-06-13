@@ -1,37 +1,29 @@
-# Community 141: flutter_window
+# Community 141: test_production_api
 
 **Members:** 8
 
 ## Nodes
 
-- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
-- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
-- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
-- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
-- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
-- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
-- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
+- **test_production_api** (`backend_test_production_api_py`, File, degree: 7)
+- **json** (`backend_test_production_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_production_api_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_production_api_py_main`, Function, degree: 5)
+- **test_audio_files_access()** (`backend_test_production_api_py_test_audio_files_access`, Function, degree: 2)
+- **test_encoding_in_api_response()** (`backend_test_production_api_py_test_encoding_in_api_response`, Function, degree: 2)
+- **test_flutter_api_simulation()** (`backend_test_production_api_py_test_flutter_api_simulation`, Function, degree: 2)
+- **test_sessions_endpoint()** (`backend_test_production_api_py_test_sessions_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
+- backend_test_production_api_py → backend_test_production_api_py_import_requests (imports)
+- backend_test_production_api_py → backend_test_production_api_py_import_json (imports)
+- backend_test_production_api_py → backend_test_production_api_py_test_sessions_endpoint (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_audio_files_access (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_flutter_api_simulation (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_encoding_in_api_response (defines)
+- backend_test_production_api_py → backend_test_production_api_py_main (defines)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_audio_files_access (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_encoding_in_api_response (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_flutter_api_simulation (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_sessions_endpoint (calls)
 

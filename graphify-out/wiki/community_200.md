@@ -1,21 +1,21 @@
-# Community 200: settings_corrected
+# Community 200: summary_card
 
 **Members:** 6
 
 ## Nodes
 
-- **settings_corrected** (`backend_settings_corrected_py`, File, degree: 5)
-- **datetime.timedelta** (`backend_settings_corrected_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_corrected_py_import_decouple_config`, Module, degree: 1)
-- **os** (`backend_settings_corrected_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_corrected_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_corrected_py_import_pymysql`, Module, degree: 1)
+- **summary_card** (`lib_features_home_widgets_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pathlib_path (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_datetime_timedelta (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_decouple_config (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_os (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pymysql (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_intl_intl_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

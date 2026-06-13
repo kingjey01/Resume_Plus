@@ -1,23 +1,23 @@
-# Community 155: recording_page
+# Community 155: models
 
 **Members:** 7
 
 ## Nodes
 
-- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
-- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
-- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
+- **models** (`backend_users_models_py`, File, degree: 7)
+- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
 
 ## Relationships
 
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
-- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
+- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
+- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
+- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
+- backend_users_models_py → backend_users_models_py_meta (defines)
 

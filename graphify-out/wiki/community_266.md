@@ -1,17 +1,17 @@
-# Community 266: manage
+# Community 266: test_endpoints_existence
 
 **Members:** 4
 
 ## Nodes
 
-- **manage** (`backend_manage_py`, File, degree: 3)
-- **os** (`backend_manage_py_import_os`, Module, degree: 1)
-- **sys** (`backend_manage_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_manage_py_main`, Function, degree: 1)
+- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
+- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
+- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
 
 ## Relationships
 
-- backend_manage_py → backend_manage_py_import_os (imports)
-- backend_manage_py → backend_manage_py_import_sys (imports)
-- backend_manage_py → backend_manage_py_main (defines)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
 

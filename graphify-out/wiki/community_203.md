@@ -1,21 +1,21 @@
-# Community 203: create_admin_user()
+# Community 203: 0004_alter_abonnement_etudiant
 
 **Members:** 6
 
 ## Nodes
 
-- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
-- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
-- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
-- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
-- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
-- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
+- **0004_alter_abonnement_etudiant** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py`, File, degree: 5)
+- **django.conf.settings** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
-- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_conf_settings (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0004_alter_abonnement_etudiant_py → backend_courses_migrations_0004_alter_abonnement_etudiant_py_migration (defines)
 

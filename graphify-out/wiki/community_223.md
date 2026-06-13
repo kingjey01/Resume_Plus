@@ -1,19 +1,19 @@
-# Community 223: universite_filiere.g
+# Community 223: widget_test
 
 **Members:** 5
 
 ## Nodes
 
-- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
-- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
-- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
-- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
-- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
+- **widget_test** (`test_widget_test_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
+- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
+- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
-- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_main (defines)
 

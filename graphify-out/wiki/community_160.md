@@ -1,23 +1,23 @@
-# Community 160: main
+# Community 160: check_production_data()
 
 **Members:** 7
 
 ## Nodes
 
-- **main** (`windows_runner_main_cpp`, File, degree: 6)
-- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
-- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
-- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
-- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
-- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
+- **check_production_data()** (`backend_fix_production_encoding_py_check_production_data`, Function, degree: 2)
+- **check_production_database()** (`backend_fix_production_encoding_py_check_production_database`, Function, degree: 2)
+- **clean_production_invalid_data()** (`backend_fix_production_encoding_py_clean_production_invalid_data`, Function, degree: 2)
+- **fix_production_encoding()** (`backend_fix_production_encoding_py_fix_production_encoding`, Function, degree: 2)
+- **main()** (`backend_fix_production_encoding_py_main`, Function, degree: 7)
+- **set_production_connection_encoding()** (`backend_fix_production_encoding_py_set_production_connection_encoding`, Function, degree: 2)
+- **test_production_emoji_insertion()** (`backend_fix_production_encoding_py_test_production_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
-- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_test_production_emoji_insertion (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_clean_production_invalid_data (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_database (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_set_production_connection_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_fix_production_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_data (calls)
 

@@ -1,15 +1,17 @@
-# Community 285: main
+# Community 285: api_error_view
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **main** (`linux_runner_main_cc`, File, degree: 2)
-- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
-- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
+- **api_error_view** (`lib_widgets_api_error_view_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_widgets_api_error_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
-- linux_runner_main_cc → linux_runner_main_cc_main (defines)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
+- lib_widgets_api_error_view_dart → lib_widgets_api_error_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

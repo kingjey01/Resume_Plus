@@ -1,20 +1,19 @@
-# Community 230: test_correct_endpoints
+# Community 230: ai_content_view
 
 **Members:** 5
 
 ## Nodes
 
-- **test_correct_endpoints** (`backend_test_correct_endpoints_py`, File, degree: 4)
-- **json** (`backend_test_correct_endpoints_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_correct_endpoints_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_correct_endpoints_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_correct_endpoints_py_test_endpoint`, Function, degree: 2)
+- **ai_content_view** (`lib_widgets_ai_content_view_dart`, File, degree: 4)
+- **_AiContentViewState()** (`lib_widgets_ai_content_view_dart_aicontentviewstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_ai_content_view_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:google_fonts/google_fonts.dart** (`lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_requests (imports)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_json (imports)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_test_endpoint (defines)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_main (defines)
-- backend_test_correct_endpoints_py_main → backend_test_correct_endpoints_py_test_endpoint (calls)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_google_fonts_google_fonts_dart (imports)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_widgets_ai_content_view_dart → lib_widgets_ai_content_view_dart_aicontentviewstate (defines)
 

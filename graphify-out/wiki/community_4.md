@@ -1,6 +1,6 @@
 # Community 4: models
 
-**Members:** 41
+**Members:** 37
 
 ## Nodes
 
@@ -14,9 +14,6 @@
 - **Exercise** (`backend_courses_models_py_exercise`, Class, degree: 3)
 - **.questions_count()** (`backend_courses_models_py_exercise_questions_count`, Method, degree: 1)
 - **.__str__()** (`backend_courses_models_py_exercise_str`, Method, degree: 1)
-- **ExerciseAttempt** (`backend_courses_models_py_exerciseattempt`, Class, degree: 3)
-- **.calculate_score()** (`backend_courses_models_py_exerciseattempt_calculate_score`, Method, degree: 2)
-- **.__str__()** (`backend_courses_models_py_exerciseattempt_str`, Method, degree: 1)
 - **ExerciseQuestion** (`backend_courses_models_py_exercisequestion`, Class, degree: 2)
 - **.__str__()** (`backend_courses_models_py_exercisequestion_str`, Method, degree: 1)
 - **Filiere** (`backend_courses_models_py_filiere`, Class, degree: 2)
@@ -38,7 +35,6 @@
 - **.audio_duration_formatted()** (`backend_courses_models_py_session_audio_duration_formatted`, Method, degree: 1)
 - **.is_duration_valid()** (`backend_courses_models_py_session_is_duration_valid`, Method, degree: 1)
 - **.__str__()** (`backend_courses_models_py_session_str`, Method, degree: 1)
-- **.save()** (`backend_courses_models_py_summary_save`, Method, degree: 2)
 - **Transcription** (`backend_courses_models_py_transcription`, Class, degree: 2)
 - **.__str__()** (`backend_courses_models_py_transcription_str`, Method, degree: 1)
 - **Universite** (`backend_courses_models_py_universite`, Class, degree: 2)
@@ -84,8 +80,4 @@
 - backend_courses_models_py_exercise → backend_courses_models_py_exercise_questions_count (defines)
 - backend_courses_models_py → backend_courses_models_py_exercisequestion (defines)
 - backend_courses_models_py_exercisequestion → backend_courses_models_py_exercisequestion_str (defines)
-- backend_courses_models_py → backend_courses_models_py_exerciseattempt (defines)
-- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_str (defines)
-- backend_courses_models_py_exerciseattempt → backend_courses_models_py_exerciseattempt_calculate_score (defines)
-- backend_courses_models_py_exerciseattempt_calculate_score → backend_courses_models_py_summary_save (calls)
 

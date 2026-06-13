@@ -1,26 +1,26 @@
-# Community 131: serializers
+# Community 131: quick_server_test
 
 **Members:** 8
 
 ## Nodes
 
-- **serializers** (`backend_security_serializers_py`, File, degree: 5)
-- **CreateSecurityLogSerializer** (`backend_security_serializers_py_createsecuritylogserializer`, Class, degree: 3)
-- **.create()** (`backend_security_serializers_py_createsecuritylogserializer_create`, Method, degree: 2)
-- **.get_client_ip()** (`backend_security_serializers_py_createsecuritylogserializer_get_client_ip`, Method, degree: 2)
-- **.models.SecurityLog** (`backend_security_serializers_py_import_models_securitylog`, Module, degree: 1)
-- **rest_framework.serializers** (`backend_security_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
-- **Meta** (`backend_security_serializers_py_meta`, Class, degree: 1)
-- **SecurityLogSerializer** (`backend_security_serializers_py_securitylogserializer`, Class, degree: 1)
+- **quick_server_test** (`backend_quick_server_test_py`, File, degree: 12)
+- **create_tokens_direct_mysql()** (`backend_quick_server_test_py_create_tokens_direct_mysql`, Function, degree: 3)
+- **generate_token()** (`backend_quick_server_test_py_generate_token`, Function, degree: 2)
+- **datetime** (`backend_quick_server_test_py_import_datetime`, Module, degree: 1)
+- **pymysql** (`backend_quick_server_test_py_import_pymysql`, Module, degree: 1)
+- **requests** (`backend_quick_server_test_py_import_requests`, Module, degree: 1)
+- **secrets** (`backend_quick_server_test_py_import_secrets`, Module, degree: 1)
+- **string** (`backend_quick_server_test_py_import_string`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_serializers_py → backend_security_serializers_py_import_rest_framework_serializers (imports)
-- backend_security_serializers_py → backend_security_serializers_py_import_models_securitylog (imports)
-- backend_security_serializers_py → backend_security_serializers_py_securitylogserializer (defines)
-- backend_security_serializers_py → backend_security_serializers_py_meta (defines)
-- backend_security_serializers_py → backend_security_serializers_py_createsecuritylogserializer (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_create (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (defines)
-- backend_security_serializers_py_createsecuritylogserializer_create → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (calls)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_requests (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_pymysql (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_secrets (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_string (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_import_datetime (imports)
+- backend_quick_server_test_py → backend_quick_server_test_py_generate_token (defines)
+- backend_quick_server_test_py → backend_quick_server_test_py_create_tokens_direct_mysql (defines)
+- backend_quick_server_test_py_create_tokens_direct_mysql → backend_quick_server_test_py_generate_token (calls)
 

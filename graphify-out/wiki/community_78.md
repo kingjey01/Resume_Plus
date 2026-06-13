@@ -1,29 +1,29 @@
-# Community 78: debug_api_response
+# Community 78: test_notification_logic
 
 **Members:** 10
 
 ## Nodes
 
-- **debug_api_response** (`backend_debug_api_response_py`, File, degree: 9)
-- **django** (`backend_debug_api_response_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_debug_api_response_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_debug_api_response_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_debug_api_response_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_debug_api_response_py_import_payments_models_service`, Module, degree: 1)
-- **payments.serializers.AbonnementSerializer** (`backend_debug_api_response_py_import_payments_serializers_abonnementserializer`, Module, degree: 1)
-- **payments.serializers.ServiceSerializer** (`backend_debug_api_response_py_import_payments_serializers_serviceserializer`, Module, degree: 1)
-- **sys** (`backend_debug_api_response_py_import_sys`, Module, degree: 1)
-- **test_api_responses()** (`backend_debug_api_response_py_test_api_responses`, Function, degree: 1)
+- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
+- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
+- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
+- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
+- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- backend_debug_api_response_py → backend_debug_api_response_py_import_os (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_import_sys (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_import_django (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_service (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_abonnement (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_serviceserializer (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_abonnementserializer (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_import_django_contrib_auth_models_user (imports)
-- backend_debug_api_response_py → backend_debug_api_response_py_test_api_responses (defines)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
 

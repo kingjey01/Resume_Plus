@@ -1,20 +1,19 @@
-# Community 234: test_courses_api
+# Community 234: audio_playback_test_page
 
 **Members:** 5
 
 ## Nodes
 
-- **test_courses_api** (`backend_test_courses_api_py`, File, degree: 4)
-- **json** (`backend_test_courses_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_courses_api_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_courses_api_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_courses_api_py_test_endpoint`, Function, degree: 2)
+- **audio_playback_test_page** (`lib_pages_audio_playback_test_page_dart`, File, degree: 4)
+- **_AudioPlaybackTestPageState()** (`lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/api_service.dart** (`lib_pages_audio_playback_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../widgets/audio_file_player_widget.dart** (`lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_courses_api_py → backend_test_courses_api_py_import_requests (imports)
-- backend_test_courses_api_py → backend_test_courses_api_py_import_json (imports)
-- backend_test_courses_api_py → backend_test_courses_api_py_test_endpoint (defines)
-- backend_test_courses_api_py → backend_test_courses_api_py_main (defines)
-- backend_test_courses_api_py_main → backend_test_courses_api_py_test_endpoint (calls)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_services_api_service_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate (defines)
 

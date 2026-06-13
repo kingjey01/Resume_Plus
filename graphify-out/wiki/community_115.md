@@ -1,25 +1,26 @@
-# Community 115: migrate_courses_to_fk
+# Community 115: serializers
 
 **Members:** 8
 
 ## Nodes
 
-- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
-- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
-- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
-- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
+- **serializers** (`backend_security_serializers_py`, File, degree: 5)
+- **CreateSecurityLogSerializer** (`backend_security_serializers_py_createsecuritylogserializer`, Class, degree: 3)
+- **.create()** (`backend_security_serializers_py_createsecuritylogserializer_create`, Method, degree: 2)
+- **.get_client_ip()** (`backend_security_serializers_py_createsecuritylogserializer_get_client_ip`, Method, degree: 2)
+- **.models.SecurityLog** (`backend_security_serializers_py_import_models_securitylog`, Module, degree: 1)
+- **rest_framework.serializers** (`backend_security_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
+- **Meta** (`backend_security_serializers_py_meta`, Class, degree: 1)
+- **SecurityLogSerializer** (`backend_security_serializers_py_securitylogserializer`, Class, degree: 1)
 
 ## Relationships
 
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
+- backend_security_serializers_py → backend_security_serializers_py_import_rest_framework_serializers (imports)
+- backend_security_serializers_py → backend_security_serializers_py_import_models_securitylog (imports)
+- backend_security_serializers_py → backend_security_serializers_py_securitylogserializer (defines)
+- backend_security_serializers_py → backend_security_serializers_py_meta (defines)
+- backend_security_serializers_py → backend_security_serializers_py_createsecuritylogserializer (defines)
+- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_create (defines)
+- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (defines)
+- backend_security_serializers_py_createsecuritylogserializer_create → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (calls)
 

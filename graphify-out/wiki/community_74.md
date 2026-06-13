@@ -1,32 +1,36 @@
-# Community 74: fix_encoding_utf8_complete
+# Community 74: utils
 
 **Members:** 10
 
 ## Nodes
 
-- **fix_encoding_utf8_complete** (`backend_fix_encoding_utf8_complete_py`, File, degree: 9)
-- **clean_invalid_utf8_data()** (`backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data`, Function, degree: 2)
-- **fix_database_encoding()** (`backend_fix_encoding_utf8_complete_py_fix_database_encoding`, Function, degree: 2)
-- **django** (`backend_fix_encoding_utf8_complete_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_encoding_utf8_complete_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_encoding_utf8_complete_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_encoding_utf8_complete_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_encoding_utf8_complete_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_fix_encoding_utf8_complete_py_main`, Function, degree: 4)
-- **test_emoji_insertion()** (`backend_fix_encoding_utf8_complete_py_test_emoji_insertion`, Function, degree: 2)
+- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
+- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
+- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
+- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
+- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
+- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
+- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
+- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
 
 ## Relationships
 
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_os (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_sys (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_conf_settings (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_db_connection (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_fix_database_encoding (defines)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (defines)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (defines)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_main (defines)
-- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_fix_database_encoding (calls)
-- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (calls)
-- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (calls)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
 
