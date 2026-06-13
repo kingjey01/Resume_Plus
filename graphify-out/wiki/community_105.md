@@ -1,27 +1,27 @@
-# Community 105: text_to_speech_service
+# Community 105: ExerciseAdmin
 
 **Members:** 9
 
 ## Nodes
 
-- **text_to_speech_service** (`lib_services_text_to_speech_service_dart`, File, degree: 8)
-- **_audioService()** (`lib_services_text_to_speech_service_dart_audioservice`, Function, degree: 1)
-- **audio_service.dart** (`lib_services_text_to_speech_service_dart_import_audio_service_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_text_to_speech_service_dart_instance`, Function, degree: 1)
-- **_language()** (`lib_services_text_to_speech_service_dart_language`, Function, degree: 1)
-- **_pitch()** (`lib_services_text_to_speech_service_dart_pitch`, Function, degree: 1)
-- **_rate()** (`lib_services_text_to_speech_service_dart_rate`, Function, degree: 1)
-- **_volume()** (`lib_services_text_to_speech_service_dart_volume`, Function, degree: 1)
+- **ExerciseAdmin** (`backend_courses_admin_py_exerciseadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_exerciseadmin_get_queryset`, Method, degree: 2)
+- **ExerciseAttemptAdmin** (`backend_courses_admin_py_exerciseattemptadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_exerciseattemptadmin_get_queryset`, Method, degree: 2)
+- **ProfesseurAdmin** (`backend_courses_admin_py_professeuradmin`, Class, degree: 3)
+- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
+- **.list_filieres()** (`backend_courses_admin_py_professeuradmin_list_filieres`, Method, degree: 1)
+- **TranscriptionAdmin** (`backend_courses_admin_py_transcriptionadmin`, Class, degree: 2)
+- **.get_queryset()** (`backend_courses_admin_py_transcriptionadmin_get_queryset`, Method, degree: 2)
 
 ## Relationships
 
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_audio_service_dart (imports)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_instance (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_audioservice (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_rate (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_pitch (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_volume (defines)
-- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_language (defines)
+- backend_courses_admin_py_transcriptionadmin → backend_courses_admin_py_transcriptionadmin_get_queryset (defines)
+- backend_courses_admin_py_exerciseadmin → backend_courses_admin_py_exerciseadmin_get_queryset (defines)
+- backend_courses_admin_py_exerciseattemptadmin → backend_courses_admin_py_exerciseattemptadmin_get_queryset (defines)
+- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_list_filieres (defines)
+- backend_courses_admin_py_professeuradmin → backend_courses_admin_py_professeuradmin_get_queryset (defines)
+- backend_courses_admin_py_transcriptionadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_courses_admin_py_exerciseadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_courses_admin_py_exerciseattemptadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
 

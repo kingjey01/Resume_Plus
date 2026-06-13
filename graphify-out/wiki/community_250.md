@@ -1,19 +1,19 @@
-# Community 250: PurchaseNotificationTest
+# Community 250: check_accessible_courses
 
 **Members:** 5
 
 ## Nodes
 
-- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
-- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
-- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
-- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
-- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
+- **check_accessible_courses** (`backend_check_accessible_courses_py`, File, degree: 4)
+- **courses.models.Course** (`backend_check_accessible_courses_py_import_courses_models_course`, Module, degree: 1)
+- **django** (`backend_check_accessible_courses_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_accessible_courses_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_accessible_courses_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
-- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_os (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_django_contrib_auth_models_user (imports)
+- backend_check_accessible_courses_py → backend_check_accessible_courses_py_import_courses_models_course (imports)
 

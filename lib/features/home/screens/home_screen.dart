@@ -31,6 +31,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
   List<Map<String, dynamic>> _courses = [];
   bool _isLoadingCourses = true;
   bool _showAllCourses = false;
+  bool _isRefreshing = false;
 
   @override
   bool get wantKeepAlive => true;
@@ -107,6 +108,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
     }
   }
 
+  Future<void> _refreshAll() async {
+    print('🔄 Pull-to-refresh déclenché');
+    await ref.refresh(summariesProvider.future);
+    await _loadCourses();
+  }
+
   void _onSearchChanged(String query) {
     _debounceTimer?.cancel();
     final cursorPosition = _searchController.selection;
@@ -164,12 +171,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
             ],
           ),
         ),
-        data: (summaries) => SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Header bleu courbé
-              _buildCurvedHeader(context, topPadding),
+        data: (summaries) => RefreshIndicator(
+          onRefresh: _refreshAll,
+          color: AppTheme.primaryBlue,
+          displacement: 40,
+          child: SingleChildScrollView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Header bleu courbé
+                _buildCurvedHeader(context, topPadding),
               
               const SizedBox(height: 20),
 
@@ -180,7 +192,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
                 _buildSectionHeader(context, 'Résumés récents', Icons.access_time_rounded, showViewAll: summaries.length > 4),
                 const SizedBox(height: 12),
                 SizedBox(
-                  height: 200,
+                  height: 230,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -297,13 +309,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
                     children: [
                       _buildHeaderIconButton(
                         Icons.refresh_rounded,
-                        () {
-                          ref.invalidate(summariesProvider);
-                          setState(() {
-                            _isLoadingCourses = true;
-                          });
-                          _loadCourses();
+                        () async {
+                          if (_isRefreshing) return;
+                          setState(() => _isRefreshing = true);
+                          await ref.refresh(summariesProvider.future);
+                          await _loadCourses();
+                          if (mounted) setState(() => _isRefreshing = false);
                         },
+                        isLoading: _isRefreshing,
                       ),
                       const SizedBox(width: 8),
                       if (_userRole != 'ETUDIANT')
@@ -387,9 +400,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
     );
   }
 
-  Widget _buildHeaderIconButton(IconData icon, VoidCallback onTap) {
+  Widget _buildHeaderIconButton(IconData icon, VoidCallback onTap, {bool isLoading = false}) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: isLoading ? null : onTap,
       child: Container(
         width: 42,
         height: 42,
@@ -397,7 +410,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
           color: Colors.white.withOpacity(0.2),
           shape: BoxShape.circle,
         ),
-        child: Icon(icon, color: Colors.white, size: 22),
+        child: isLoading
+            ? const Padding(
+                padding: EdgeInsets.all(10),
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                ),
+              )
+            : Icon(icon, color: Colors.white, size: 22),
       ),
     );
   }

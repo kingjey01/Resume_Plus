@@ -1,21 +1,21 @@
-# Community 193: 0011_exercise_service_is_active_summary_is_validated_and_more
+# Community 193: test_audio_functionality
 
 **Members:** 6
 
 ## Nodes
 
-- **0011_exercise_service_is_active_summary_is_validated_and_more** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_migration`, Class, degree: 1)
+- **test_audio_functionality** (`backend_test_audio_functionality_py`, File, degree: 5)
+- **json** (`backend_test_audio_functionality_py_import_json`, Module, degree: 1)
+- **os** (`backend_test_audio_functionality_py_import_os`, Module, degree: 1)
+- **requests** (`backend_test_audio_functionality_py_import_requests`, Module, degree: 1)
+- **test_audio_endpoints()** (`backend_test_audio_functionality_py_test_audio_endpoints`, Function, degree: 1)
+- **test_database_content()** (`backend_test_audio_functionality_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_migration (defines)
+- backend_test_audio_functionality_py → backend_test_audio_functionality_py_import_requests (imports)
+- backend_test_audio_functionality_py → backend_test_audio_functionality_py_import_json (imports)
+- backend_test_audio_functionality_py → backend_test_audio_functionality_py_import_os (imports)
+- backend_test_audio_functionality_py → backend_test_audio_functionality_py_test_audio_endpoints (defines)
+- backend_test_audio_functionality_py → backend_test_audio_functionality_py_test_database_content (defines)
 

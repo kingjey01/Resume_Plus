@@ -1,19 +1,19 @@
-# Community 215: urls
+# Community 215: 0019_course_m2m_relations
 
 **Members:** 5
 
 ## Nodes
 
-- **urls** (`backend_courses_urls_py`, File, degree: 4)
-- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
-- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
-- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
-- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
+- **0019_course_m2m_relations** (`backend_courses_migrations_0019_course_m2m_relations_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models`, Module, degree: 1)
+- **migrate_fk_to_m2m()** (`backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m`, Function, degree: 1)
+- **Migration** (`backend_courses_migrations_0019_course_m2m_relations_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models (imports)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m (defines)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migration (defines)
 

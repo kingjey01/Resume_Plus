@@ -1,19 +1,19 @@
-# Community 245: 0019_course_m2m_relations
+# Community 245: subscription_provider
 
 **Members:** 5
 
 ## Nodes
 
-- **0019_course_m2m_relations** (`backend_courses_migrations_0019_course_m2m_relations_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models`, Module, degree: 1)
-- **migrate_fk_to_m2m()** (`backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m`, Function, degree: 1)
-- **Migration** (`backend_courses_migrations_0019_course_m2m_relations_py_migration`, Class, degree: 1)
+- **subscription_provider** (`lib_features_subscriptions_providers_subscription_provider_dart`, File, degree: 4)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models (imports)
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m (defines)
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migration (defines)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_providers_subscription_provider_dart → lib_features_subscriptions_providers_subscription_provider_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
 

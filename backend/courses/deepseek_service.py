@@ -312,7 +312,7 @@ Le résumé doit être en français et faire environ 30-50% de la longueur de la
             }
 
 
-    def generate_exercises(self, resume_text, course_name):
+    def generate_exercises(self, resume_text, course_name, difficulty='medium'):
         """
         Génère des exercices QCM à partir d'un résumé de cours
         
@@ -322,6 +322,7 @@ Le résumé doit être en français et faire environ 30-50% de la longueur de la
         Args:
             resume_text: Le texte du résumé
             course_name: Nom/titre du cours
+            difficulty: 'easy', 'medium', 'hard'
             
         Returns:
             dict: {
@@ -337,7 +338,7 @@ Le résumé doit être en français et faire environ 30-50% de la longueur de la
                 'error': 'DeepSeek API non configurée. Vérifiez DEEPSEEK_API_KEY.'
             }
         
-        prompt = self._build_exercises_prompt(resume_text, course_name)
+        prompt = self._build_exercises_prompt(resume_text, course_name, difficulty=difficulty)
         
         try:
             response = self._call_api(prompt, temperature=0.7, max_tokens=2000, timeout=60)
@@ -361,24 +362,34 @@ Le résumé doit être en français et faire environ 30-50% de la longueur de la
                 'error': str(e)
             }
     
-    def _build_exercises_prompt(self, resume_text, course_name):
+    def _build_exercises_prompt(self, resume_text, course_name, difficulty='medium'):
         """
         Construit le prompt pour générer des QCM de qualité
         
         Le prompt est conçu pour:
         - Générer exactement 5 à 10 questions à choix multiples
         - Couvrir différents aspects du résumé
-        - Difficulté progressive (facile → difficile)
+        - Adapter la difficulté selon le paramètre (easy/medium/hard)
         - Inclure des explications pédagogiques
         - Retourner un JSON strict parsable
         """
         
-        system_prompt = """Tu es un expert en création de questions à choix multiples (QCM) éducatives pour des cours universitaires.( )
+        # Mapper la difficulté au niveau pédagogique
+        difficulty_labels = {
+            'easy': 'FACILE — questions directes sur les définitions, faits basiques et concepts fondamentaux. Réponses évidentes pour un étudiant qui a lu le résumé.',
+            'medium': 'MOYEN — questions sur la compréhension, l\'application et l\'analyse. Nécessite de relier plusieurs concepts du résumé.',
+            'hard': 'DIFFICILE — questions complexes sur la synthèse, l\'évaluation et l\'analyse critique. Pièges subtils et distinctions fines entre concepts proches.',
+        }
+        difficulty_text = difficulty_labels.get(difficulty, difficulty_labels['medium'])
+        
+        system_prompt = f"""Tu es un expert en création de questions à choix multiples (QCM) éducatives pour des cours universitaires.
+NIVEAU DE DIFFICULTÉ DEMANDÉ: {difficulty_text}
+
 RÈGLES STRICTES À SUIVRE:
 1. Générer exactement 5 à 10 questions de qualité
 2. Chaque question doit avoir exactement 4 options (A, B, C, D)
 3. Une seule réponse correcte par question
-4. Les questions doivent être de difficulté progressive (facile à difficile)
+4. Adapter la difficulté au niveau demandé ci-dessus
 5. Couvrir différents aspects du résumé fourni
 6. NE JAMAIS inventer d'informations qui ne sont pas dans le résumé
 7. Inclure une explication claire pour chaque bonne réponse
@@ -387,29 +398,30 @@ RÈGLES STRICTES À SUIVRE:
 
 FORMAT DE SORTIE (JSON strict, aucun texte autour):
 [
-  {
+  {{
     "question": "Texte de la question ?",
-    "options": {
+    "options": {{
       "A": "Texte réel de l'option A basé sur le résumé",
       "B": "Texte réel de l'option B basé sur le résumé",
       "C": "Texte réel de l'option C basé sur le résumé",
       "D": "Texte réel de l'option D basé sur le résumé"
-    },
+    }},
     "correct_answer": "A",
     "explanation": "Explication de pourquoi A est correct"
-  }
+  }}
 ]"""
 
         user_prompt = f"""Voici un résumé de cours pour lequel tu dois générer des QCM:
 
 📚 COURS: {course_name}
+🎯 NIVEAU: {difficulty_text}
 
 📝 RÉSUMÉ:
 {resume_text}
 
 ---
 
-Génère exactement 5 à 10 questions QCM basées sur ce résumé.
+Génère exactement 5 à 10 questions QCM basées sur ce résumé au niveau demandé.
 Réponds UNIQUEMENT avec le JSON, sans texte supplémentaire."""
 
         return {

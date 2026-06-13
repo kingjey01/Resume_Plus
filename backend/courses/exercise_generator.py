@@ -15,10 +15,11 @@ class ExerciseGenerator:
     def __init__(self):
         pass
         
-    def generate_exercises_for_summary(self, summary_id, existing_exercise=None):
+    def generate_exercises_for_summary(self, summary_id, existing_exercise=None, difficulty='medium'):
         """
         Génère 5-10 exercices QCM pour un résumé donné.
         Si existing_exercise est fourni, l'utilise directement (évite la double création).
+        difficulty: 'easy', 'medium', 'hard'
         """
         try:
             summary = Summary.objects.get(id=summary_id)
@@ -35,7 +36,7 @@ class ExerciseGenerator:
                 )
             
             # Générer les questions via DeepSeekService (même service que les résumés)
-            questions_data, generated_by_ai = self._generate_questions_with_ai(summary.texte_resume, summary.titre)
+            questions_data, generated_by_ai = self._generate_questions_with_ai(summary.texte_resume, summary.titre, difficulty=difficulty)
             
             if questions_data:
                 # Créer les questions
@@ -75,7 +76,7 @@ class ExerciseGenerator:
                 exercise.save()
             return None
     
-    def _generate_questions_with_ai(self, resume_text, titre):
+    def _generate_questions_with_ai(self, resume_text, titre, difficulty='medium'):
         """
         Génère les questions via DeepSeekService (même service que les résumés).
         Retourne (questions_data, generated_by_ai).
@@ -87,7 +88,7 @@ class ExerciseGenerator:
         
         try:
             # Appeler DeepSeekService.generate_exercises (même pattern que generate_summary)
-            result = deepseek_service.generate_exercises(resume_text, titre)
+            result = deepseek_service.generate_exercises(resume_text, titre, difficulty=difficulty)
 
             if result['success']:
                 # Parser la réponse JSON de DeepSeek
@@ -311,7 +312,7 @@ class ExerciseGenerator:
         return questions[:7]
 
 
-def generate_exercises_for_summary(summary_id, existing_exercise=None):
+def generate_exercises_for_summary(summary_id, existing_exercise=None, difficulty='medium'):
     """Fonction utilitaire pour générer des exercices"""
     generator = ExerciseGenerator()
-    return generator.generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise)
+    return generator.generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise, difficulty=difficulty)

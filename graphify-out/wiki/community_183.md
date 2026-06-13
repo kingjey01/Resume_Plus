@@ -1,21 +1,21 @@
-# Community 183: check_database_tables()
+# Community 183: create_admin_user()
 
 **Members:** 6
 
 ## Nodes
 
-- **check_database_tables()** (`backend_check_db_services_py_check_database_tables`, Function, degree: 2)
-- **check_django_settings()** (`backend_check_db_services_py_check_django_settings`, Function, degree: 2)
-- **check_tokens()** (`backend_check_db_services_py_check_tokens`, Function, degree: 2)
-- **check_users()** (`backend_check_db_services_py_check_users`, Function, degree: 2)
-- **main()** (`backend_check_db_services_py_main`, Function, degree: 6)
-- **test_token_authentication()** (`backend_check_db_services_py_test_token_authentication`, Function, degree: 2)
+- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
+- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
+- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
+- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
+- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
+- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
 
 ## Relationships
 
-- backend_check_db_services_py_main → backend_check_db_services_py_test_token_authentication (calls)
-- backend_check_db_services_py_main → backend_check_db_services_py_check_database_tables (calls)
-- backend_check_db_services_py_main → backend_check_db_services_py_check_django_settings (calls)
-- backend_check_db_services_py_main → backend_check_db_services_py_check_tokens (calls)
-- backend_check_db_services_py_main → backend_check_db_services_py_check_users (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
+- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
 

@@ -1,29 +1,29 @@
-# Community 76: register_screen
+# Community 76: test_notification_logic
 
 **Members:** 10
 
 ## Nodes
 
-- **register_screen** (`lib_features_auth_screens_register_screen_dart`, File, degree: 9)
-- **../../../models/filiere.dart** (`lib_features_auth_screens_register_screen_dart_import_models_filiere_dart`, Module, degree: 1)
-- **../../../models/promotion.dart** (`lib_features_auth_screens_register_screen_dart_import_models_promotion_dart`, Module, degree: 1)
-- **../../../models/universite.dart** (`lib_features_auth_screens_register_screen_dart_import_models_universite_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_register_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_register_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_register_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **../../../services/api_service.dart** (`lib_features_auth_screens_register_screen_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../../../widgets/linked_dropdowns.dart** (`lib_features_auth_screens_register_screen_dart_import_widgets_linked_dropdowns_dart`, Module, degree: 1)
-- **_RegisterScreenState()** (`lib_features_auth_screens_register_screen_dart_registerscreenstate`, Function, degree: 1)
+- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
+- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
+- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
+- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
+- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
+- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_universite_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_promotion_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_filiere_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_services_api_service_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_widgets_linked_dropdowns_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_registerscreenstate (defines)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
+- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
 

@@ -1,17 +1,17 @@
-# Community 288: test_endpoints_existence
+# Community 288: 0003_userprofile_reset_code_and_more
 
 **Members:** 4
 
 ## Nodes
 
-- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
-- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
-- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
+- **0003_userprofile_reset_code_and_more** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration (defines)
 

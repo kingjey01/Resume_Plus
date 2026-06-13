@@ -1,17 +1,17 @@
-# Community 258: web_audio_service
+# Community 258: check_user_profile
 
 **Members:** 4
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
+- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
 

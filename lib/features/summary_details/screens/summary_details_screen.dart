@@ -143,12 +143,12 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
     }
   }
 
-  Future<void> _generateOrStartExercise() async {
+  Future<void> _generateOrStartExercise({String? difficulty}) async {
     if (!mounted) return;
     setState(() => _isGeneratingExercise = true);
 
     try {
-      final data = await _apiService.generateExercise(widget.summary.id);
+      final data = await _apiService.generateExercise(widget.summary.id, difficulty: difficulty);
 
       if (data.containsKey('subscription_required') || (data.containsKey('error') && data['error'].toString().contains('abonnement'))) {
         if (mounted) {
@@ -226,6 +226,145 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
         builder: (_) => ExerciseQuizScreen(
           exerciseId: exerciseId,
           exerciseTitle: 'QCM - ${widget.summary.title}',
+        ),
+      ),
+    );
+  }
+
+  Future<void> _showDifficultyBottomSheet() async {
+    final theme = Theme.of(context);
+    final result = await showModalBottomSheet<String>(
+      context: context,
+      backgroundColor: Colors.transparent,
+      isScrollControlled: true,
+      builder: (context) {
+        return Container(
+          decoration: BoxDecoration(
+            color: theme.colorScheme.surface,
+            borderRadius: const BorderRadius.vertical(top: Radius.circular(24)),
+          ),
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Center(
+                child: Container(
+                  width: 40,
+                  height: 4,
+                  decoration: BoxDecoration(
+                    color: theme.colorScheme.onSurface.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(2),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              Text(
+                'Niveau de difficulté',
+                style: theme.textTheme.titleLarge?.copyWith(
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Choisissez le niveau du QCM pour adapter les questions à votre niveau',
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurface.withOpacity(0.6),
+                ),
+              ),
+              const SizedBox(height: 20),
+              _buildDifficultyOption(
+                context,
+                'Facile',
+                'Questions simples pour réviser les bases',
+                Icons.sentiment_satisfied_rounded,
+                Colors.green,
+                'easy',
+              ),
+              const SizedBox(height: 10),
+              _buildDifficultyOption(
+                context,
+                'Moyen',
+                'Questions intermédiaires pour tester vos connaissances',
+                Icons.sentiment_neutral_rounded,
+                Colors.orange,
+                'medium',
+              ),
+              const SizedBox(height: 10),
+              _buildDifficultyOption(
+                context,
+                'Difficile',
+                'Questions avancées pour approfondir votre maîtrise',
+                Icons.sentiment_dissatisfied_rounded,
+                Colors.red,
+                'hard',
+              ),
+              const SizedBox(height: 24),
+            ],
+          ),
+        );
+      },
+    );
+
+    if (result != null) {
+      _generateOrStartExercise(difficulty: result);
+    }
+  }
+
+  Widget _buildDifficultyOption(
+    BuildContext context,
+    String title,
+    String subtitle,
+    IconData icon,
+    Color color,
+    String difficulty,
+  ) {
+    final theme = Theme.of(context);
+    return InkWell(
+      onTap: () => Navigator.of(context).pop(difficulty),
+      borderRadius: BorderRadius.circular(14),
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: color.withOpacity(0.08),
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: color.withOpacity(0.3)),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 44,
+              height: 44,
+              decoration: BoxDecoration(
+                color: color.withOpacity(0.15),
+                shape: BoxShape.circle,
+              ),
+              child: Icon(icon, color: color, size: 22),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: theme.textTheme.titleSmall?.copyWith(
+                      fontWeight: FontWeight.w700,
+                      color: color,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle,
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurface.withOpacity(0.6),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: color.withOpacity(0.6)),
+          ],
         ),
       ),
     );
@@ -973,7 +1112,7 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
             width: double.infinity,
             child: ElevatedButton.icon(
               onPressed: hasAccess
-                  ? (_isGeneratingExercise ? null : _generateOrStartExercise)
+                  ? (_isGeneratingExercise ? null : () => _showDifficultyBottomSheet())
                   : null,
               icon: _isGeneratingExercise
                   ? const SizedBox(

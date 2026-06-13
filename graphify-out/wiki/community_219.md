@@ -1,19 +1,19 @@
-# Community 219: fix_user_university
+# Community 219: ProfesseurFilieresAdmin
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_user_university** (`backend_fix_user_university_py`, File, degree: 4)
-- **courses.models.Universite** (`backend_fix_user_university_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_user_university_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_user_university_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_user_university_py_import_os`, Module, degree: 1)
+- **ProfesseurFilieresAdmin** (`backend_courses_admin_py_professeurfilieresadmin`, Class, degree: 5)
+- **.get_queryset()** (`backend_courses_admin_py_professeurfilieresadmin_get_queryset`, Method, degree: 2)
+- **.has_add_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_add_permission`, Method, degree: 1)
+- **.has_change_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_change_permission`, Method, degree: 1)
+- **.has_delete_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_delete_permission`, Method, degree: 1)
 
 ## Relationships
 
-- backend_fix_user_university_py → backend_fix_user_university_py_import_os (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_courses_models_universite (imports)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_add_permission (defines)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_change_permission (defines)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_delete_permission (defines)
+- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_get_queryset (defines)
 

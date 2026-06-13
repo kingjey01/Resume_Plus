@@ -1,15 +1,15 @@
-# Community 313: apps
+# Community 313: test_seed_creation
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_security_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_security_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **SecurityConfig** (`backend_security_apps_py_securityconfig`, Class, degree: 1)
+- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
+- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
+- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- backend_security_apps_py → backend_security_apps_py_import_django_apps_appconfig (imports)
-- backend_security_apps_py → backend_security_apps_py_securityconfig (defines)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
 

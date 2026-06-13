@@ -1,29 +1,29 @@
-# Community 70: test_notification_logic
+# Community 70: service_card
 
 **Members:** 10
 
 ## Nodes
 
-- **test_notification_logic** (`backend_notifications_test_notification_logic_py`, File, degree: 10)
-- **courses.models.Filiere** (`backend_notifications_test_notification_logic_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_notifications_test_notification_logic_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_notifications_test_notification_logic_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.test.TestCase** (`backend_notifications_test_notification_logic_py_import_django_test_testcase`, Module, degree: 1)
-- **notifications.models.AppNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_appnotification`, Module, degree: 1)
-- **notifications.models.UserNotification** (`backend_notifications_test_notification_logic_py_import_notifications_models_usernotification`, Module, degree: 1)
-- **notifications.tasks.create_and_send_notification** (`backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_notifications_test_notification_logic_py_import_users_models_userprofile`, Module, degree: 1)
+- **service_card** (`lib_features_subscriptions_widgets_service_card_dart`, File, degree: 9)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_test_testcase (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_django_contrib_auth_models_user (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_universite (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_filiere (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_courses_models_promotion (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_users_models_userprofile (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_appnotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_models_usernotification (imports)
-- backend_notifications_test_notification_logic_py → backend_notifications_test_notification_logic_py_import_notifications_tasks_create_and_send_notification (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
 

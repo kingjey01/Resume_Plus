@@ -1,8 +1,8 @@
-# Community 338: promotion
+# Community 338: summary
 
 **Members:** 1
 
 ## Nodes
 
-- **promotion** (`lib_models_promotion_dart`, File, degree: 0)
+- **summary** (`lib_models_summary_dart`, File, degree: 0)
 

@@ -1,17 +1,17 @@
-# Community 262: test_services_endpoint
+# Community 262: 0003_alter_purchase_payment_method_alter_service_currency
 
 **Members:** 4
 
 ## Nodes
 
-- **test_services_endpoint** (`backend_test_services_endpoint_py`, File, degree: 3)
-- **json** (`backend_test_services_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_services_endpoint_py_import_requests`, Module, degree: 1)
-- **test_services_with_auth()** (`backend_test_services_endpoint_py_test_services_with_auth`, Function, degree: 1)
+- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
+- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_requests (imports)
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_json (imports)
-- backend_test_services_endpoint_py → backend_test_services_endpoint_py_test_services_with_auth (defines)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
+- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
 

@@ -1,15 +1,13 @@
-# Community 319: urls
+# Community 319: badge_icon
 
-**Members:** 3
+**Members:** 2
 
 ## Nodes
 
-- **urls** (`backend_notifications_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_notifications_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_notifications_urls_py_import_views`, Module, degree: 1)
+- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_urls_py → backend_notifications_urls_py_import_django_urls_path (imports)
-- backend_notifications_urls_py → backend_notifications_urls_py_import_views (imports)
+- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
 

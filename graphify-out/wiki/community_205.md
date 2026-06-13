@@ -1,21 +1,21 @@
-# Community 205: 0001_initial
+# Community 205: purchased_summary_card
 
 **Members:** 6
 
 ## Nodes
 
-- **0001_initial** (`backend_users_migrations_0001_initial_py`, File, degree: 5)
-- **django.conf.settings** (`backend_users_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_users_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_users_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0001_initial_py_migration`, Class, degree: 1)
+- **purchased_summary_card** (`lib_features_summaries_widgets_purchased_summary_card_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/purchase.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/summary.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_conf_settings (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_migrations (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_import_django_db_models_deletion (imports)
-- backend_users_migrations_0001_initial_py → backend_users_migrations_0001_initial_py_migration (defines)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_purchase_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
+- lib_features_summaries_widgets_purchased_summary_card_dart → lib_features_summaries_widgets_purchased_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

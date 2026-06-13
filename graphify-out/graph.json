@@ -1100,28 +1100,28 @@
       "id": "backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt",
       "label": "._build_exercises_prompt()",
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L364",
+      "source_location": "L365",
       "node_type": "method"
     },
     {
       "id": "backend_courses_deepseek_service_py_deepseekservice_translate_summary",
       "label": ".translate_summary()",
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L421",
+      "source_location": "L433",
       "node_type": "method"
     },
     {
       "id": "backend_courses_deepseek_service_py_deepseekservice_reformulate_summary",
       "label": ".reformulate_summary()",
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L448",
+      "source_location": "L460",
       "node_type": "method"
     },
     {
       "id": "backend_courses_deepseek_service_py_deepseekservice_simplify_summary",
       "label": ".simplify_summary()",
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L475",
+      "source_location": "L487",
       "node_type": "method"
     },
     {
@@ -1197,35 +1197,35 @@
       "id": "backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai",
       "label": "._generate_questions_with_ai()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L78",
+      "source_location": "L79",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response",
       "label": "._parse_ai_response()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L110",
+      "source_location": "L111",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure",
       "label": "._validate_question_structure()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L138",
+      "source_location": "L139",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions",
       "label": "._generate_mock_questions()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L167",
+      "source_location": "L168",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_generate_exercises_for_summary",
       "label": "generate_exercises_for_summary()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L314",
+      "source_location": "L315",
       "node_type": "function"
     },
     {
@@ -1391,42 +1391,42 @@
       "id": "backend_courses_exercise_views_py_get_exercise_view",
       "label": "get_exercise_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L104",
+      "source_location": "L108",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_submit_exercise_view",
       "label": "submit_exercise_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L163",
+      "source_location": "L167",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_get_attempt_result_view",
       "label": "get_attempt_result_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L224",
+      "source_location": "L228",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_get_exercise_attempts_view",
       "label": "get_exercise_attempts_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L271",
+      "source_location": "L275",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_check_exercise_subscription_view",
       "label": "check_exercise_subscription_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L305",
+      "source_location": "L309",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_has_exercise_subscription",
       "label": "has_exercise_subscription()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L360",
+      "source_location": "L364",
       "node_type": "function"
     },
     {
@@ -6865,42 +6865,42 @@
       "id": "backend_notifications_tasks_py_notify_subscription_expiring_soon",
       "label": "notify_subscription_expiring_soon()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L369",
+      "source_location": "L370",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_subscription_expired",
       "label": "notify_subscription_expired()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L410",
+      "source_location": "L411",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_summary_purchased",
       "label": "notify_summary_purchased()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L450",
+      "source_location": "L451",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_subscription_payment_failed",
       "label": "notify_subscription_payment_failed()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L488",
+      "source_location": "L489",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_notify_summary_purchase_failed",
       "label": "notify_summary_purchase_failed()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L527",
+      "source_location": "L528",
       "node_type": "function"
     },
     {
       "id": "backend_notifications_tasks_py_cleanup_inactive_tokens",
       "label": "cleanup_inactive_tokens()",
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L570",
+      "source_location": "L571",
       "node_type": "function"
     },
     {
@@ -21498,7 +21498,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L364",
+      "source_location": "L365",
       "weight": 1.0
     },
     {
@@ -21508,7 +21508,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L421",
+      "source_location": "L433",
       "weight": 1.0
     },
     {
@@ -21518,7 +21518,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L448",
+      "source_location": "L460",
       "weight": 1.0
     },
     {
@@ -21528,12 +21528,30 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L475",
+      "source_location": "L487",
       "weight": 1.0
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_init",
       "target": "backend_courses_deepseek_service_py_deepseekservice_get_api_key",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".\\backend\\courses\\deepseek_service.py",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_call_api",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".\\backend\\courses\\deepseek_service.py",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21551,15 +21569,6 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_call_api",
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
       "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
       "relation": "calls",
       "confidence": "INFERRED",
@@ -21568,8 +21577,8 @@
       "weight": 1.0
     },
     {
-      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
+      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_exercises",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_call_api",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21587,15 +21596,6 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_generate_exercises",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_call_api",
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_exercises",
       "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
       "relation": "calls",
       "confidence": "INFERRED",
@@ -21614,7 +21614,7 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_translate_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21623,7 +21623,7 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_translate_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21641,7 +21641,7 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_reformulate_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21650,7 +21650,7 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_reformulate_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21668,7 +21668,7 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_simplify_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21677,7 +21677,7 @@
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_simplify_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_is_configured",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21781,7 +21781,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L78",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -21791,7 +21791,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L110",
+      "source_location": "L111",
       "weight": 1.0
     },
     {
@@ -21801,7 +21801,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L138",
+      "source_location": "L139",
       "weight": 1.0
     },
     {
@@ -21811,7 +21811,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L167",
+      "source_location": "L168",
       "weight": 1.0
     },
     {
@@ -21821,7 +21821,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L314",
+      "source_location": "L315",
       "weight": 1.0
     },
     {
@@ -21835,7 +21835,7 @@
     },
     {
       "source": "backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai",
-      "target": "backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions",
+      "target": "backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21844,7 +21844,7 @@
     },
     {
       "source": "backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai",
-      "target": "backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response",
+      "target": "backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -22077,7 +22077,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L104",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -22087,7 +22087,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L163",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -22097,7 +22097,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L224",
+      "source_location": "L228",
       "weight": 1.0
     },
     {
@@ -22107,7 +22107,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L271",
+      "source_location": "L275",
       "weight": 1.0
     },
     {
@@ -22117,7 +22117,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L305",
+      "source_location": "L309",
       "weight": 1.0
     },
     {
@@ -22127,7 +22127,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L360",
+      "source_location": "L364",
       "weight": 1.0
     },
     {
@@ -29981,7 +29981,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L369",
+      "source_location": "L370",
       "weight": 1.0
     },
     {
@@ -29991,7 +29991,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L410",
+      "source_location": "L411",
       "weight": 1.0
     },
     {
@@ -30001,7 +30001,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L450",
+      "source_location": "L451",
       "weight": 1.0
     },
     {
@@ -30011,7 +30011,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L488",
+      "source_location": "L489",
       "weight": 1.0
     },
     {
@@ -30021,7 +30021,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L527",
+      "source_location": "L528",
       "weight": 1.0
     },
     {
@@ -30031,12 +30031,12 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\notifications\\tasks.py",
-      "source_location": "L570",
+      "source_location": "L571",
       "weight": 1.0
     },
     {
       "source": "backend_notifications_tasks_py_send_fcm_notification",
-      "target": "backend_notifications_tasks_py_is_invalid_token_error",
+      "target": "backend_notifications_tasks_py_get_fcm_app",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -30045,7 +30045,7 @@
     },
     {
       "source": "backend_notifications_tasks_py_send_fcm_notification",
-      "target": "backend_notifications_tasks_py_get_fcm_app",
+      "target": "backend_notifications_tasks_py_is_invalid_token_error",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,

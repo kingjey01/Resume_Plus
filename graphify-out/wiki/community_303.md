@@ -1,15 +1,15 @@
-# Community 303: apps
+# Community 303: 0015_merge_20260523_2104
 
 **Members:** 3
 
 ## Nodes
 
-- **apps** (`backend_courses_apps_py`, File, degree: 2)
-- **CoursesConfig** (`backend_courses_apps_py_coursesconfig`, Class, degree: 1)
-- **django.apps.AppConfig** (`backend_courses_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
+- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_apps_py → backend_courses_apps_py_import_django_apps_appconfig (imports)
-- backend_courses_apps_py → backend_courses_apps_py_coursesconfig (defines)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
 

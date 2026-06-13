@@ -1,27 +1,23 @@
-# Community 165: ExerciseGenerator
+# Community 165: recording_page
 
 **Members:** 7
 
 ## Nodes
 
-- **ExerciseGenerator** (`backend_courses_exercise_generator_py_exercisegenerator`, Class, degree: 7)
-- **.generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary`, Method, degree: 2)
-- **._generate_mock_questions()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions`, Method, degree: 2)
-- **._generate_questions_with_ai()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai`, Method, degree: 4)
-- **.__init__()** (`backend_courses_exercise_generator_py_exercisegenerator_init`, Method, degree: 1)
-- **._parse_ai_response()** (`backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response`, Method, degree: 3)
-- **._validate_question_structure()** (`backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure`, Method, degree: 2)
+- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
+- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_init (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (defines)
-- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (defines)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (calls)
-- backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (calls)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
 

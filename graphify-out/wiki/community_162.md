@@ -1,23 +1,23 @@
-# Community 162: test_simple_audio_upload
+# Community 162: universite_filiere
 
 **Members:** 7
 
 ## Nodes
 
-- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
-- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
-- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
-- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
-- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
-- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
-- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
+- **universite_filiere** (`lib_models_universite_filiere_dart`, File, degree: 6)
+- **filiere.dart** (`lib_models_universite_filiere_dart_import_filiere_dart`, Module, degree: 1)
+- **package:json_annotation/json_annotation.dart** (`lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
+- **universite.dart** (`lib_models_universite_filiere_dart_import_universite_dart`, Module, degree: 1)
+- **universite_filiere.g.dart** (`lib_models_universite_filiere_dart_import_universite_filiere_g_dart`, Module, degree: 1)
+- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_dart_universitefilierefromjson`, Function, degree: 1)
+- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_dart_universitefilieretojson`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
-- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_package_json_annotation_json_annotation_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_filiere_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_import_universite_filiere_g_dart (imports)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilierefromjson (defines)
+- lib_models_universite_filiere_dart → lib_models_universite_filiere_dart_universitefilieretojson (defines)
 

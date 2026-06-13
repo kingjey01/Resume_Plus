@@ -1,25 +1,25 @@
-# Community 118: migrate_courses_to_fk
+# Community 118: settings_production_fixed
 
 **Members:** 8
 
 ## Nodes
 
-- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
-- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
-- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
-- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
-- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
+- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
+- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
+- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
+- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
-- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
 

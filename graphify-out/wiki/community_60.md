@@ -1,31 +1,42 @@
-# Community 60: UserProfile
+# Community 60: test_api_auth
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **UserProfile** (`backend_users_models_py_userprofile`, Class, degree: 11)
-- **.can_create_summary()** (`backend_users_models_py_userprofile_can_create_summary`, Method, degree: 1)
-- **.generate_otp()** (`backend_users_models_py_userprofile_generate_otp`, Method, degree: 1)
-- **.has_active_subscription()** (`backend_users_models_py_userprofile_has_active_subscription`, Method, degree: 1)
-- **.has_free_access()** (`backend_users_models_py_userprofile_has_free_access`, Method, degree: 1)
-- **.is_admin()** (`backend_users_models_py_userprofile_is_admin`, Method, degree: 1)
-- **.is_cp()** (`backend_users_models_py_userprofile_is_cp`, Method, degree: 1)
-- **.is_etudiant()** (`backend_users_models_py_userprofile_is_etudiant`, Method, degree: 1)
-- **.reset_otp()** (`backend_users_models_py_userprofile_reset_otp`, Method, degree: 1)
-- **.__str__()** (`backend_users_models_py_userprofile_str`, Method, degree: 1)
-- **.verify_otp()** (`backend_users_models_py_userprofile_verify_otp`, Method, degree: 1)
+- **test_api_auth** (`backend_test_api_auth_py`, File, degree: 11)
+- **json** (`backend_test_api_auth_py_import_json`, Module, degree: 1)
+- **os** (`backend_test_api_auth_py_import_os`, Module, degree: 1)
+- **requests** (`backend_test_api_auth_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_test_api_auth_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_test_api_auth_py_main`, Function, degree: 6)
+- **print_header()** (`backend_test_api_auth_py_print_header`, Function, degree: 2)
+- **print_section()** (`backend_test_api_auth_py_print_section`, Function, degree: 5)
+- **test_authenticated_endpoints()** (`backend_test_api_auth_py_test_authenticated_endpoints`, Function, degree: 3)
+- **test_cors()** (`backend_test_api_auth_py_test_cors`, Function, degree: 3)
+- **test_login()** (`backend_test_api_auth_py_test_login`, Function, degree: 3)
+- **test_server_status()** (`backend_test_api_auth_py_test_server_status`, Function, degree: 3)
 
 ## Relationships
 
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_str (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_cp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_admin (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_etudiant (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_can_create_summary (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_free_access (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_generate_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_verify_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_reset_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_active_subscription (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_requests (imports)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_json (imports)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_os (imports)
+- backend_test_api_auth_py → backend_test_api_auth_py_import_sys (imports)
+- backend_test_api_auth_py → backend_test_api_auth_py_print_header (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_print_section (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_test_server_status (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_test_login (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_test_authenticated_endpoints (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_test_cors (defines)
+- backend_test_api_auth_py → backend_test_api_auth_py_main (defines)
+- backend_test_api_auth_py_test_server_status → backend_test_api_auth_py_print_section (calls)
+- backend_test_api_auth_py_test_login → backend_test_api_auth_py_print_section (calls)
+- backend_test_api_auth_py_test_authenticated_endpoints → backend_test_api_auth_py_print_section (calls)
+- backend_test_api_auth_py_test_cors → backend_test_api_auth_py_print_section (calls)
+- backend_test_api_auth_py_main → backend_test_api_auth_py_test_cors (calls)
+- backend_test_api_auth_py_main → backend_test_api_auth_py_print_header (calls)
+- backend_test_api_auth_py_main → backend_test_api_auth_py_test_login (calls)
+- backend_test_api_auth_py_main → backend_test_api_auth_py_test_authenticated_endpoints (calls)
+- backend_test_api_auth_py_main → backend_test_api_auth_py_test_server_status (calls)
 

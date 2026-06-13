@@ -1,21 +1,21 @@
-# Community 197: create_admin_user()
+# Community 197: auth_repository
 
 **Members:** 6
 
 ## Nodes
 
-- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
-- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
-- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
-- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
-- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
-- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
+- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
+- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
-- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
-- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
 

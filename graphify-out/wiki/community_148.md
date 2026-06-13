@@ -1,23 +1,23 @@
-# Community 148: notification_provider
+# Community 148: auto_login_service
 
 **Members:** 7
 
 ## Nodes
 
-- **notification_provider** (`lib_features_notifications_providers_notification_provider_dart`, File, degree: 6)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/notification_service.dart** (`lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart`, Module, degree: 1)
-- **load()** (`lib_features_notifications_providers_notification_provider_dart_load`, Function, degree: 1)
-- **_service()** (`lib_features_notifications_providers_notification_provider_dart_service`, Function, degree: 1)
+- **auto_login_service** (`lib_services_auto_login_service_dart`, File, degree: 6)
+- **AppStartState** (`lib_services_auto_login_service_dart_appstartstate`, Enum, degree: 1)
+- **dart:math** (`lib_services_auto_login_service_dart_import_dart_math`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_auto_login_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_import_package_resume_plus_clean_services_notification_service_dart (imports)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_service (defines)
-- lib_features_notifications_providers_notification_provider_dart → lib_features_notifications_providers_notification_provider_dart_load (defines)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_import_dart_math (imports)
+- lib_services_auto_login_service_dart → lib_services_auto_login_service_dart_appstartstate (defines)
 

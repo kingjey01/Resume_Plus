@@ -334,6 +334,7 @@ def notify_subscription_paid(self, abonnement_id: int):
     """
     try:
         from payments.models import Abonnement
+        from .models import AppNotification, UserNotification
         
         abonnement = Abonnement.objects.select_related('user', 'service').get(id=abonnement_id)
         user = abonnement.user

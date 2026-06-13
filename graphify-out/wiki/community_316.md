@@ -1,15 +1,15 @@
-# Community 316: test_seed_creation
+# Community 316: snackbar_service
 
 **Members:** 3
 
 ## Nodes
 
-- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
-- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
-- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
+- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
-- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
+- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
 

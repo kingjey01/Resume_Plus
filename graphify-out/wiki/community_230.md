@@ -1,19 +1,19 @@
-# Community 230: check_existing_data()
+# Community 230: enhanced_auth_widget
 
 **Members:** 5
 
 ## Nodes
 
-- **check_existing_data()** (`backend_fix_encoding_sqlite_py_check_existing_data`, Function, degree: 2)
-- **clean_invalid_utf8_data()** (`backend_fix_encoding_sqlite_py_clean_invalid_utf8_data`, Function, degree: 2)
-- **fix_sqlite_encoding()** (`backend_fix_encoding_sqlite_py_fix_sqlite_encoding`, Function, degree: 2)
-- **main()** (`backend_fix_encoding_sqlite_py_main`, Function, degree: 5)
-- **test_emoji_insertion()** (`backend_fix_encoding_sqlite_py_test_emoji_insertion`, Function, degree: 2)
+- **enhanced_auth_widget** (`lib_widgets_enhanced_auth_widget_dart`, File, degree: 4)
+- **_EnhancedAuthWidgetState()** (`lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/api_provider.dart** (`lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_check_existing_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_fix_sqlite_encoding (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_clean_invalid_utf8_data (calls)
-- backend_fix_encoding_sqlite_py_main → backend_fix_encoding_sqlite_py_test_emoji_insertion (calls)
+- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
+- lib_widgets_enhanced_auth_widget_dart → lib_widgets_enhanced_auth_widget_dart_enhancedauthwidgetstate (defines)
 

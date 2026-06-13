@@ -1,13 +1,13 @@
-# Community 331: service
+# Community 331: generated_plugin_registrant
 
 **Members:** 2
 
 ## Nodes
 
-- **service** (`lib_models_service_dart`, File, degree: 1)
-- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
+- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_service_dart → lib_models_service_dart_id (defines)
+- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
 

@@ -1,17 +1,17 @@
-# Community 259: create_exercise_service
+# Community 259: simple_login_page
 
 **Members:** 4
 
 ## Nodes
 
-- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
-- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
-- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
-- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
+- **simple_login_page** (`lib_pages_simple_login_page_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_pages_simple_login_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
+- **_SimpleLoginPageState()** (`lib_pages_simple_login_page_dart_simpleloginpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_simpleloginpagestate (defines)
 

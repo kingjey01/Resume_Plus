@@ -1,23 +1,21 @@
-# Community 176: GeneratedPluginRegistrant
+# Community 176: check_database_tables()
 
-**Members:** 7
+**Members:** 6
 
 ## Nodes
 
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java`, File, degree: 5)
-- **GeneratedPluginRegistrant** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant`, Class, degree: 2)
-- **.registerWith()** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith`, Method, degree: 1)
-- **androidx.annotation.Keep** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep`, Module, degree: 1)
-- **androidx.annotation.NonNull** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull`, Module, degree: 1)
-- **io.flutter.embedding.engine.FlutterEngine** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine`, Module, degree: 1)
-- **io.flutter.Log** (`android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log`, Module, degree: 1)
+- **check_database_tables()** (`backend_check_db_services_py_check_database_tables`, Function, degree: 2)
+- **check_django_settings()** (`backend_check_db_services_py_check_django_settings`, Function, degree: 2)
+- **check_tokens()** (`backend_check_db_services_py_check_tokens`, Function, degree: 2)
+- **check_users()** (`backend_check_db_services_py_check_users`, Function, degree: 2)
+- **main()** (`backend_check_db_services_py_main`, Function, degree: 6)
+- **test_token_authentication()** (`backend_check_db_services_py_test_token_authentication`, Function, degree: 2)
 
 ## Relationships
 
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_keep (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_androidx_annotation_nonnull (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_log (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_import_io_flutter_embedding_engine_flutterengine (imports)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant (defines)
-- android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant → android_app_src_main_java_io_flutter_plugins_generatedpluginregistrant_java_generatedpluginregistrant_registerwith (defines)
+- backend_check_db_services_py_main → backend_check_db_services_py_test_token_authentication (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_database_tables (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_django_settings (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_tokens (calls)
+- backend_check_db_services_py_main → backend_check_db_services_py_check_users (calls)
 

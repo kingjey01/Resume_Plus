@@ -1,36 +1,29 @@
-# Community 84: test_mobile_simulation
+# Community 84: signals
 
 **Members:** 10
 
 ## Nodes
 
-- **test_mobile_simulation** (`backend_test_mobile_simulation_py`, File, degree: 9)
-- **json** (`backend_test_mobile_simulation_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_mobile_simulation_py_import_requests`, Module, degree: 1)
-- **time** (`backend_test_mobile_simulation_py_import_time`, Module, degree: 1)
-- **login_user()** (`backend_test_mobile_simulation_py_login_user`, Function, degree: 3)
-- **main()** (`backend_test_mobile_simulation_py_main`, Function, degree: 5)
-- **print_header()** (`backend_test_mobile_simulation_py_print_header`, Function, degree: 2)
-- **print_step()** (`backend_test_mobile_simulation_py_print_step`, Function, degree: 4)
-- **test_summaries()** (`backend_test_mobile_simulation_py_test_summaries`, Function, degree: 3)
-- **test_user_info()** (`backend_test_mobile_simulation_py_test_user_info`, Function, degree: 3)
+- **signals** (`backend_payments_signals_py`, File, degree: 9)
+- **datetime.timedelta** (`backend_payments_signals_py_import_datetime_timedelta`, Module, degree: 1)
+- **django.db.models.signals.post_save** (`backend_payments_signals_py_import_django_db_models_signals_post_save`, Module, degree: 1)
+- **django.dispatch.receiver** (`backend_payments_signals_py_import_django_dispatch_receiver`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_signals_py_import_django_utils_timezone`, Module, degree: 1)
+- **logging** (`backend_payments_signals_py_import_logging`, Module, degree: 1)
+- **.models.Abonnement** (`backend_payments_signals_py_import_models_abonnement`, Module, degree: 1)
+- **.models.Purchase** (`backend_payments_signals_py_import_models_purchase`, Module, degree: 1)
+- **on_abonnement_created_or_updated()** (`backend_payments_signals_py_on_abonnement_created_or_updated`, Function, degree: 1)
+- **on_purchase_completed()** (`backend_payments_signals_py_on_purchase_completed`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_requests (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_json (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_import_time (imports)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_header (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_print_step (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_login_user (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_user_info (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_test_summaries (defines)
-- backend_test_mobile_simulation_py → backend_test_mobile_simulation_py_main (defines)
-- backend_test_mobile_simulation_py_login_user → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_user_info → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_test_summaries → backend_test_mobile_simulation_py_print_step (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_summaries (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_login_user (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_print_header (calls)
-- backend_test_mobile_simulation_py_main → backend_test_mobile_simulation_py_test_user_info (calls)
+- backend_payments_signals_py → backend_payments_signals_py_import_logging (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_django_db_models_signals_post_save (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_django_dispatch_receiver (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_django_utils_timezone (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_datetime_timedelta (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_models_abonnement (imports)
+- backend_payments_signals_py → backend_payments_signals_py_import_models_purchase (imports)
+- backend_payments_signals_py → backend_payments_signals_py_on_abonnement_created_or_updated (defines)
+- backend_payments_signals_py → backend_payments_signals_py_on_purchase_completed (defines)
 

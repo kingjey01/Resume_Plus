@@ -1,13 +1,8 @@
-# Community 334: simple_seed
+# Community 334: resource
 
-**Members:** 2
+**Members:** 1
 
 ## Nodes
 
-- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
-- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
-
-## Relationships
-
-- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
+- **resource** (`windows_runner_resource_h`, File, degree: 0)
 

@@ -1,23 +1,23 @@
-# Community 171: settings_development
+# Community 171: audio_sessions_page
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_development** (`backend_settings_development_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_development_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_development_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_development_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_development_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_development_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_development_py_import_pymysql`, Module, degree: 1)
+- **audio_sessions_page** (`lib_pages_audio_sessions_page_dart`, File, degree: 6)
+- **_AudioSessionsPageState()** (`lib_pages_audio_sessions_page_dart_audiosessionspagestate`, Function, degree: 1)
+- **dart:html'** (`lib_pages_audio_sessions_page_dart_import_dart_html`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_sessions_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_pages_audio_sessions_page_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_development_py → backend_settings_development_py_import_pathlib_path (imports)
-- backend_settings_development_py → backend_settings_development_py_import_datetime_timedelta (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_config (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_csv (imports)
-- backend_settings_development_py → backend_settings_development_py_import_os (imports)
-- backend_settings_development_py → backend_settings_development_py_import_pymysql (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_intl_intl_dart (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_dart_html (imports)
+- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_audiosessionspagestate (defines)
 

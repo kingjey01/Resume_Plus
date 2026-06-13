@@ -1,17 +1,17 @@
-# Community 286: simple_login_page
+# Community 286: audio_player_widget
 
 **Members:** 4
 
 ## Nodes
 
-- **simple_login_page** (`lib_pages_simple_login_page_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_pages_simple_login_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
-- **_SimpleLoginPageState()** (`lib_pages_simple_login_page_dart_simpleloginpagestate`, Function, degree: 1)
+- **audio_player_widget** (`lib_widgets_audio_player_widget_dart`, File, degree: 3)
+- **_AudioPlayerWidgetState()** (`lib_widgets_audio_player_widget_dart_audioplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_service.dart** (`lib_widgets_audio_player_widget_dart_import_services_audio_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
-- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_simpleloginpagestate (defines)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_services_audio_service_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_audioplayerwidgetstate (defines)
 

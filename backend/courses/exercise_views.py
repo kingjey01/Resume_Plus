@@ -25,6 +25,9 @@ def generate_exercise_view(request, summary_id):
     Accessible uniquement aux utilisateurs abonnés
     """
     try:
+        # Lire le niveau de difficulté demandé
+        difficulty = request.data.get('difficulty', 'medium') if request.data else 'medium'
+        
         # Vérifier que le résumé existe et est validé
         summary = get_object_or_404(Summary, id=summary_id, is_validated=True)
         
@@ -57,7 +60,7 @@ def generate_exercise_view(request, summary_id):
                 existing_exercise.status = 'generating'
                 existing_exercise.save()
                 def rerun_generation():
-                    generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise)
+                    generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise, difficulty=difficulty)
                 threading.Thread(target=rerun_generation, daemon=True).start()
                 return Response({
                     'message': 'Nouvelle génération lancée',
@@ -76,7 +79,7 @@ def generate_exercise_view(request, summary_id):
 
         # Lancer la génération en background (ne pas bloquer la requête)
         def run_generation():
-            generate_exercises_for_summary(summary_id, existing_exercise=exercise)
+            generate_exercises_for_summary(summary_id, existing_exercise=exercise, difficulty=difficulty)
 
         thread = threading.Thread(target=run_generation, daemon=True)
         thread.start()
@@ -86,6 +89,7 @@ def generate_exercise_view(request, summary_id):
             'exercise_id': exercise.id,
             'status': 'generating',
             'generated_by_ai': exercise.generated_by_ai,
+            'difficulty': difficulty,
         }, status=status.HTTP_201_CREATED)
             
     except Summary.DoesNotExist:
@@ -314,7 +318,7 @@ def check_exercise_subscription_view(request):
         # Vérifier s'il y a un abonnement expiré
         is_expired = False
         if not has_active:
-            exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+            exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
             if exercise_service:
                 is_expired = Abonnement.objects.filter(
                     user=user,
@@ -325,7 +329,7 @@ def check_exercise_subscription_view(request):
         subscription_info = None
         if has_active:
             # Récupérer les détails de l'abonnement (payments app)
-            exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+            exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
             if exercise_service:
                 active_subscription = Abonnement.objects.filter(
                     user=user,
@@ -364,7 +368,7 @@ def has_exercise_subscription(user):
     """
     try:
         # Vérifier l'abonnement au service d'exercices (payments app)
-        exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+        exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
         if not exercise_service:
             return False
         

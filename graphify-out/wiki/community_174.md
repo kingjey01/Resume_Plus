@@ -1,28 +1,23 @@
-# Community 174: Command
+# Community 174: deepgram_service
 
 **Members:** 7
 
 ## Nodes
 
-- **Command** (`backend_courses_management_commands_seeddata_py_command`, Class, degree: 7)
-- **.create_courses()** (`backend_courses_management_commands_seeddata_py_command_create_courses`, Method, degree: 2)
-- **.create_purchases()** (`backend_courses_management_commands_seeddata_py_command_create_purchases`, Method, degree: 2)
-- **.create_sessions()** (`backend_courses_management_commands_seeddata_py_command_create_sessions`, Method, degree: 2)
-- **.create_summaries()** (`backend_courses_management_commands_seeddata_py_command_create_summaries`, Method, degree: 2)
-- **.create_users()** (`backend_courses_management_commands_seeddata_py_command_create_users`, Method, degree: 2)
-- **.handle()** (`backend_courses_management_commands_seeddata_py_command_handle`, Method, degree: 6)
+- **deepgram_service** (`backend_courses_deepgram_service_py`, File, degree: 7)
+- **decouple.config** (`backend_courses_deepgram_service_py_import_decouple_config`, Module, degree: 1)
+- **django.conf.settings** (`backend_courses_deepgram_service_py_import_django_conf_settings`, Module, degree: 1)
+- **json** (`backend_courses_deepgram_service_py_import_json`, Module, degree: 1)
+- **logging** (`backend_courses_deepgram_service_py_import_logging`, Module, degree: 1)
+- **os** (`backend_courses_deepgram_service_py_import_os`, Module, degree: 1)
+- **requests** (`backend_courses_deepgram_service_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_handle (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_users (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_courses (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_sessions (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_summaries (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_purchases (defines)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_summaries (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_users (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_courses (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_sessions (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_purchases (calls)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_os (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_json (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_logging (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_requests (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_django_conf_settings (imports)
+- backend_courses_deepgram_service_py → backend_courses_deepgram_service_py_import_decouple_config (imports)
 

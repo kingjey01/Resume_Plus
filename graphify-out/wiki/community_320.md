@@ -1,15 +1,13 @@
-# Community 320: urls
+# Community 320: __init__
 
-**Members:** 3
+**Members:** 2
 
 ## Nodes
 
-- **urls** (`backend_security_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
+- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
+- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
-- backend_security_urls_py → backend_security_urls_py_import_views (imports)
+- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
 

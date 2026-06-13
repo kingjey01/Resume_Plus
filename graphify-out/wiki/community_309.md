@@ -1,15 +1,15 @@
-# Community 309: snackbar_service
+# Community 309: about_screen
 
 **Members:** 3
 
 ## Nodes
 
-- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
+- **about_screen** (`lib_features_settings_screens_about_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
+- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

@@ -1,17 +1,17 @@
-# Community 271: test_summaries_response
+# Community 271: purchase_badge_provider
 
 **Members:** 4
 
 ## Nodes
 
-- **test_summaries_response** (`backend_test_summaries_response_py`, File, degree: 3)
-- **json** (`backend_test_summaries_response_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_summaries_response_py_import_requests`, Module, degree: 1)
-- **test_summaries_endpoint()** (`backend_test_summaries_response_py_test_summaries_endpoint`, Function, degree: 1)
+- **purchase_badge_provider** (`lib_providers_purchase_badge_provider_dart`, File, degree: 3)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:shared_preferences/shared_preferences.dart** (`lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_requests (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_import_json (imports)
-- backend_test_summaries_response_py → backend_test_summaries_response_py_test_summaries_endpoint (defines)
+- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_providers_purchase_badge_provider_dart → lib_providers_purchase_badge_provider_dart_import_package_shared_preferences_shared_preferences_dart (imports)
 

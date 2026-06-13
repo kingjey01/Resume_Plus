@@ -1,25 +1,25 @@
-# Community 121: check_db_services
+# Community 121: phone_login_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_services** (`backend_check_db_services_py`, File, degree: 13)
-- **django** (`backend_check_db_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_db_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_services_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_services_py_import_os`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_check_db_services_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_check_db_services_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_check_db_services_py_import_users_models_userprofile`, Module, degree: 1)
+- **phone_login_screen** (`lib_features_auth_screens_phone_login_screen_dart`, File, degree: 7)
+- **package:dio/dio.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/otp_verification_screen.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/otp_service.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PhoneLoginScreenState()** (`lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_db_services_py → backend_check_db_services_py_import_os (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_sys (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_rest_framework_authtoken_models_token (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_users_models_userprofile (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_db_connection (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_flutter_services_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_services_otp_service_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_otp_verification_screen_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_auth_screens_phone_login_screen_dart → lib_features_auth_screens_phone_login_screen_dart_phoneloginscreenstate (defines)
 

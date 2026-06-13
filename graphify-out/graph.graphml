@@ -15438,37 +15438,37 @@
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e187" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt">
+    <edge id="e187" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_call_api">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e188" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_call_api">
+    <edge id="e188" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e189" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
+    <edge id="e189" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e190" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
+    <edge id="e190" source="backend_courses_deepseek_service_py_deepseekservice_generate_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e191" source="backend_courses_deepseek_service_py_deepseekservice_generate_exercises" target="backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt">
+    <edge id="e191" source="backend_courses_deepseek_service_py_deepseekservice_generate_exercises" target="backend_courses_deepseek_service_py_deepseekservice_call_api">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e192" source="backend_courses_deepseek_service_py_deepseekservice_generate_exercises" target="backend_courses_deepseek_service_py_deepseekservice_call_api">
+    <edge id="e192" source="backend_courses_deepseek_service_py_deepseekservice_generate_exercises" target="backend_courses_deepseek_service_py_deepseekservice_build_exercises_prompt">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
@@ -15486,13 +15486,13 @@
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e195" source="backend_courses_deepseek_service_py_deepseekservice_translate_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
+    <edge id="e195" source="backend_courses_deepseek_service_py_deepseekservice_translate_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e196" source="backend_courses_deepseek_service_py_deepseekservice_translate_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
+    <edge id="e196" source="backend_courses_deepseek_service_py_deepseekservice_translate_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
@@ -15504,13 +15504,13 @@
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e198" source="backend_courses_deepseek_service_py_deepseekservice_reformulate_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
+    <edge id="e198" source="backend_courses_deepseek_service_py_deepseekservice_reformulate_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e199" source="backend_courses_deepseek_service_py_deepseekservice_reformulate_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
+    <edge id="e199" source="backend_courses_deepseek_service_py_deepseekservice_reformulate_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
@@ -15522,13 +15522,13 @@
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e201" source="backend_courses_deepseek_service_py_deepseekservice_simplify_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
+    <edge id="e201" source="backend_courses_deepseek_service_py_deepseekservice_simplify_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e202" source="backend_courses_deepseek_service_py_deepseekservice_simplify_summary" target="backend_courses_deepseek_service_py_deepseekservice_clean_text">
+    <edge id="e202" source="backend_courses_deepseek_service_py_deepseekservice_simplify_summary" target="backend_courses_deepseek_service_py_deepseekservice_is_configured">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
@@ -15624,13 +15624,13 @@
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e218" source="backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai" target="backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions">
+    <edge id="e218" source="backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai" target="backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e219" source="backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai" target="backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response">
+    <edge id="e219" source="backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai" target="backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
@@ -20592,13 +20592,13 @@
       <data key="confidence_score">1</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e1046" source="backend_notifications_tasks_py_send_fcm_notification" target="backend_notifications_tasks_py_is_invalid_token_error">
+    <edge id="e1046" source="backend_notifications_tasks_py_send_fcm_notification" target="backend_notifications_tasks_py_get_fcm_app">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>
       <data key="weight">1</data>
     </edge>
-    <edge id="e1047" source="backend_notifications_tasks_py_send_fcm_notification" target="backend_notifications_tasks_py_get_fcm_app">
+    <edge id="e1047" source="backend_notifications_tasks_py_send_fcm_notification" target="backend_notifications_tasks_py_is_invalid_token_error">
       <data key="relation">calls</data>
       <data key="confidence">Inferred</data>
       <data key="confidence_score">0.7</data>

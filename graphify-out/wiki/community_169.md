@@ -1,23 +1,27 @@
-# Community 169: periodic_tasks
+# Community 169: ExerciseGenerator
 
 **Members:** 7
 
 ## Nodes
 
-- **periodic_tasks** (`backend_notifications_periodic_tasks_py`, File, degree: 6)
-- **check_subscriptions_expired()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expired`, Function, degree: 1)
-- **check_subscriptions_expiring_soon()** (`backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon`, Function, degree: 1)
-- **celery.shared_task** (`backend_notifications_periodic_tasks_py_import_celery_shared_task`, Module, degree: 1)
-- **datetime.timedelta** (`backend_notifications_periodic_tasks_py_import_datetime_timedelta`, Module, degree: 1)
-- **django.utils.timezone** (`backend_notifications_periodic_tasks_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_notifications_periodic_tasks_py_import_logging`, Module, degree: 1)
+- **ExerciseGenerator** (`backend_courses_exercise_generator_py_exercisegenerator`, Class, degree: 7)
+- **.generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary`, Method, degree: 2)
+- **._generate_mock_questions()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions`, Method, degree: 2)
+- **._generate_questions_with_ai()** (`backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai`, Method, degree: 4)
+- **.__init__()** (`backend_courses_exercise_generator_py_exercisegenerator_init`, Method, degree: 1)
+- **._parse_ai_response()** (`backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response`, Method, degree: 3)
+- **._validate_question_structure()** (`backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure`, Method, degree: 2)
 
 ## Relationships
 
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_logging (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_celery_shared_task (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_django_utils_timezone (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_import_datetime_timedelta (imports)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expiring_soon (defines)
-- backend_notifications_periodic_tasks_py → backend_notifications_periodic_tasks_py_check_subscriptions_expired (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_init (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (defines)
+- backend_courses_exercise_generator_py_exercisegenerator → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (defines)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_exercises_for_summary → backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai → backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions (calls)
+- backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response → backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure (calls)
 

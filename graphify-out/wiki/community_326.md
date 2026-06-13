@@ -1,13 +1,13 @@
-# Community 326: my_application
+# Community 326: professeur
 
 **Members:** 2
 
 ## Nodes
 
-- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
-- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
+- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
+- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
 

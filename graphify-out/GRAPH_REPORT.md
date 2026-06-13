@@ -8,7 +8,7 @@
 |--------|-------|
 | Nodes | 2861 |
 | Edges | 3259 |
-| Communities | 350 |
+| Communities | 347 |
 | Hyperedges | 0 |
 
 ### Confidence Breakdown
@@ -30,9 +30,9 @@
 | MessageHandler() | 0 | – |
 | WndProc() | 0 | – |
 | WindowClassRegistrar | 0 | – |
-| GetClientArea() | 0 | – |
 | UpdateTheme() | 0 | – |
-| GetThisFromHandle() | 0 | – |
+| GetClientArea() | 0 | – |
+| GetWindowClass() | 0 | – |
 
 ## 🔮 Surprising Connections
 
@@ -92,33 +92,11 @@
 - rest_framework.decorators.permission_classes
 - _…and 25 more_
 
-### Community 2 — views (44 nodes, cohesion: 0.05)
-
-- views
-- AbonnementDetailView
-- .get_queryset()
-- AbonnementListCreateView
-- .get_queryset()
-- .list()
-- .perform_create()
-- check_purchase_status()
-- check_subscription_status()
-- complete_purchase()
-- courses.models.Summary
-- datetime.timedelta
-- django_filters.rest_framework.DjangoFilterBackend
-- django.utils.timezone
-- .models.Abonnement
-- .models.Purchase
-- .models.Service
-- rest_framework.decorators.api_view
-- rest_framework.decorators.permission_classes
-- rest_framework.filters.OrderingFilter
-- _…and 24 more_
-
-### Community 3 — serializers (37 nodes, cohesion: 0.05)
+### Community 2 — serializers (44 nodes, cohesion: 0.05)
 
 - serializers
+- AbonnementCreateSerializer
+- .create()
 - AbonnementSerializer
 - .create()
 - CourseSerializer
@@ -136,11 +114,33 @@
 - .models.Service
 - .models.Session
 - .models.Summary
-- .models.Transcription
-- .models.Universite
-- _…and 17 more_
+- _…and 24 more_
 
-### Community 4 — models (33 nodes, cohesion: 0.06)
+### Community 3 — views (39 nodes, cohesion: 0.05)
+
+- views
+- AbonnementDetailView
+- .get_queryset()
+- check_purchase_status()
+- check_subscription_status()
+- complete_purchase()
+- courses.models.Summary
+- datetime.timedelta
+- django_filters.rest_framework.DjangoFilterBackend
+- django.utils.timezone
+- .models.Abonnement
+- .models.Purchase
+- .models.Service
+- rest_framework.decorators.api_view
+- rest_framework.decorators.permission_classes
+- rest_framework.filters.OrderingFilter
+- rest_framework.generics
+- rest_framework.permissions
+- rest_framework.response.Response
+- rest_framework.status
+- _…and 19 more_
+
+### Community 4 — models (37 nodes, cohesion: 0.05)
 
 - models
 - Abonnement
@@ -152,6 +152,9 @@
 - Exercise
 - .questions_count()
 - .__str__()
+- ExerciseAttempt
+- .calculate_score()
+- .__str__()
 - ExerciseQuestion
 - .__str__()
 - Filiere
@@ -159,10 +162,7 @@
 - django.contrib.auth.models.User
 - django.db.models
 - Meta
-- Professeur
-- .__str__()
-- ProfesseurFilieres
-- _…and 13 more_
+- _…and 17 more_
 
 ### Community 5 — flexpay_integration (29 nodes, cohesion: 0.08)
 
@@ -236,31 +236,7 @@
 - package:resume_plus_clean/services/screen_security_service.dart
 - _…and 5 more_
 
-### Community 8 — win32_window (24 nodes, cohesion: 1.38)
-
-- win32_window
-- Create()
-- Destroy()
-- GetClientArea()
-- GetHandle()
-- GetThisFromHandle()
-- GetWindowClass()
-- dwmapi.h
-- flutter_windows.h
-- resource.h
-- win32_window.h
-- MessageHandler()
-- OnCreate()
-- OnDestroy()
-- SetChildContent()
-- SetQuitOnClose()
-- Show()
-- UnregisterWindowClass()
-- UpdateTheme()
-- Win32Window()
-- _…and 4 more_
-
-### Community 9 — tests (24 nodes, cohesion: 0.08)
+### Community 8 — tests (24 nodes, cohesion: 0.08)
 
 - tests
 - CourseModelTest
@@ -282,6 +258,30 @@
 - .models.UniversiteFiliere
 - rest_framework.authtoken.models.Token
 - rest_framework.status
+- _…and 4 more_
+
+### Community 9 — win32_window (24 nodes, cohesion: 1.38)
+
+- win32_window
+- Create()
+- Destroy()
+- GetClientArea()
+- GetHandle()
+- GetThisFromHandle()
+- GetWindowClass()
+- dwmapi.h
+- flutter_windows.h
+- resource.h
+- win32_window.h
+- MessageHandler()
+- OnCreate()
+- OnDestroy()
+- SetChildContent()
+- SetQuitOnClose()
+- Show()
+- UnregisterWindowClass()
+- UpdateTheme()
+- Win32Window()
 - _…and 4 more_
 
 ### Community 10 — views (22 nodes, cohesion: 0.09)
@@ -332,31 +332,7 @@
 - package:resume_plus_clean/widgets/secure_screen_wrapper.dart
 - _…and 1 more_
 
-### Community 12 — serializers (21 nodes, cohesion: 0.10)
-
-- serializers
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
-- django.contrib.auth.authenticate
-- django.contrib.auth.models.User
-- .models.UserProfile
-- rest_framework.serializers
-- rest_framework_simplejwt.exceptions.TokenError
-- rest_framework_simplejwt.serializers.TokenRefreshSerializer
-- rest_framework_simplejwt.tokens.RefreshToken
-- LoginSerializer
-- .validate()
-- Meta
-- RefreshTokenSerializer
-- .validate()
-- RegisterSerializer
-- .create()
-- .validate()
-- UserProfileSerializer
-- _…and 1 more_
-
-### Community 13 — create_test_data (21 nodes, cohesion: 0.10)
+### Community 12 — create_test_data (21 nodes, cohesion: 0.10)
 
 - create_test_data
 - config()
@@ -380,28 +356,52 @@
 - sys
 - _…and 1 more_
 
-### Community 14 — create_production_test_data (20 nodes, cohesion: 0.13)
+### Community 13 — serializers (21 nodes, cohesion: 0.10)
 
-- create_production_test_data
-- create_ai_summary_for_session()
-- create_melodic_wav_file()
-- create_production_audio_files()
-- create_production_test_page()
-- courses.models.Course
-- courses.models.Session
-- courses.models.Summary
-- django
+- serializers
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django.contrib.auth.authenticate
 - django.contrib.auth.models.User
-- django.core.files.base.ContentFile
+- .models.UserProfile
+- rest_framework.serializers
+- rest_framework_simplejwt.exceptions.TokenError
+- rest_framework_simplejwt.serializers.TokenRefreshSerializer
+- rest_framework_simplejwt.tokens.RefreshToken
+- LoginSerializer
+- .validate()
+- Meta
+- RefreshTokenSerializer
+- .validate()
+- RegisterSerializer
+- .create()
+- .validate()
+- UserProfileSerializer
+- _…and 1 more_
+
+### Community 14 — test_payment_notifications (20 nodes, cohesion: 0.10)
+
+- test_payment_notifications
+- courses.models.Course
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Summary
+- courses.models.Universite
+- datetime.timedelta
+- decimal.Decimal
+- django.contrib.auth.models.User
+- django.test.TestCase
 - django.utils.timezone
-- math
-- os
-- pathlib.Path
-- struct
-- sys
-- wave
-- main()
-- verify_production_setup()
+- notifications.models.AppNotification
+- notifications.models.UserNotification
+- notifications.tasks.notify_subscription_expired
+- notifications.tasks.notify_subscription_expiring_soon
+- notifications.tasks.notify_subscription_paid
+- notifications.tasks.notify_summary_purchased
+- payments.models.Abonnement
+- payments.models.Purchase
+- payments.models.Service
 
 ### Community 15 — permissions (20 nodes, cohesion: 0.10)
 
@@ -426,74 +426,30 @@
 - IsOwnerOrReadOnly
 - .has_object_permission()
 
-### Community 16 — test_payment_notifications (20 nodes, cohesion: 0.10)
+### Community 16 — create_production_test_data (20 nodes, cohesion: 0.13)
 
-- test_payment_notifications
+- create_production_test_data
+- create_ai_summary_for_session()
+- create_melodic_wav_file()
+- create_production_audio_files()
+- create_production_test_page()
 - courses.models.Course
-- courses.models.Filiere
-- courses.models.Promotion
+- courses.models.Session
 - courses.models.Summary
-- courses.models.Universite
-- datetime.timedelta
-- decimal.Decimal
-- django.contrib.auth.models.User
-- django.test.TestCase
-- django.utils.timezone
-- notifications.models.AppNotification
-- notifications.models.UserNotification
-- notifications.tasks.notify_subscription_expired
-- notifications.tasks.notify_subscription_expiring_soon
-- notifications.tasks.notify_subscription_paid
-- notifications.tasks.notify_summary_purchased
-- payments.models.Abonnement
-- payments.models.Purchase
-- payments.models.Service
-
-### Community 17 — admin (19 nodes, cohesion: 0.11)
-
-- admin
-- CourseAdmin
-- .get_filieres()
-- .get_promotions()
-- .get_universites()
-- ExerciseAttemptAdmin
-- .get_queryset()
-- FiliereAdmin
-- django.contrib.admin
-- .models
-- ProfesseurAdmin
-- .list_filieres()
-- ProfesseurFilieresAdmin
-- .has_add_permission()
-- .has_change_permission()
-- .has_delete_permission()
-- PromotionAdmin
-- SessionAdmin
-- UniversiteAdmin
-
-### Community 18 — test_notifications_simple (19 nodes, cohesion: 0.11)
-
-- test_notifications_simple
-- courses.models.Course
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Summary
-- courses.models.Universite
-- datetime.timedelta
-- decimal.Decimal
 - django
 - django.contrib.auth.models.User
+- django.core.files.base.ContentFile
 - django.utils.timezone
-- notifications.models.AppNotification
-- notifications.models.UserNotification
+- math
 - os
-- payments.models.Abonnement
-- payments.models.Purchase
-- payments.models.Service
+- pathlib.Path
+- struct
 - sys
-- time
+- wave
+- main()
+- verify_production_setup()
 
-### Community 19 — seed_database (19 nodes, cohesion: 0.11)
+### Community 17 — seed_database (19 nodes, cohesion: 0.11)
 
 - seed_database
 - courses.models.Abonnement
@@ -515,7 +471,7 @@
 - sys
 - users.models.UserProfile
 
-### Community 20 — demo_audio_complete (19 nodes, cohesion: 0.13)
+### Community 18 — demo_audio_complete (19 nodes, cohesion: 0.13)
 
 - demo_audio_complete
 - create_demo_sessions_with_audio()
@@ -537,28 +493,51 @@
 - main()
 - test_audio_files_locally()
 
-### Community 21 — seed_data (18 nodes, cohesion: 0.11)
+### Community 19 — test_notifications_simple (19 nodes, cohesion: 0.11)
 
-- seed_data
+- test_notifications_simple
 - courses.models.Course
 - courses.models.Filiere
-- courses.models.FilierePromotion
 - courses.models.Promotion
-- courses.models.Service
-- courses.models.Session
 - courses.models.Summary
 - courses.models.Universite
-- courses.models.UniversiteFiliere
 - datetime.timedelta
 - decimal.Decimal
 - django
 - django.contrib.auth.models.User
 - django.utils.timezone
+- notifications.models.AppNotification
+- notifications.models.UserNotification
 - os
+- payments.models.Abonnement
+- payments.models.Purchase
+- payments.models.Service
 - sys
-- users.models.UserProfile
+- time
 
-### Community 22 — record_audio_screen (18 nodes, cohesion: 0.11)
+### Community 20 — AudioProcessor (19 nodes, cohesion: 0.19)
+
+- AudioProcessor
+- .auto_process_pending_sessions()
+- .batch_process_sessions()
+- ._clean_transcript()
+- .cleanup_old_audio_files()
+- ._extract_main_ideas()
+- ._format_duration()
+- ._generate_intelligent_summary()
+- ._generate_local_summary()
+- ._get_audio_duration()
+- .get_audio_info()
+- .get_processing_stats()
+- .__init__()
+- ._is_supported_format()
+- .process_audio_session()
+- ._simulate_transcription()
+- ._step1_transcribe_audio()
+- ._step2_generate_summary()
+- ._structure_summary()
+
+### Community 21 — record_audio_screen (18 nodes, cohesion: 0.11)
 
 - record_audio_screen
 - dart:async
@@ -579,67 +558,49 @@
 - _RecordAudioScreenState()
 - RecordingState
 
-### Community 23 — seed_production (17 nodes, cohesion: 0.12)
+### Community 22 — seed_data (18 nodes, cohesion: 0.11)
 
-- seed_production
+- seed_data
 - courses.models.Course
 - courses.models.Filiere
 - courses.models.FilierePromotion
-- courses.models.Professeur
 - courses.models.Promotion
+- courses.models.Service
 - courses.models.Session
 - courses.models.Summary
 - courses.models.Universite
 - courses.models.UniversiteFiliere
 - datetime.timedelta
 - decimal.Decimal
+- django
 - django.contrib.auth.models.User
-- django.core.management.base.BaseCommand
-- payments.models.Service
-- random
+- django.utils.timezone
+- os
+- sys
 - users.models.UserProfile
 
-### Community 24 — home_screen (17 nodes, cohesion: 0.12)
+### Community 23 — fix_auth_issues (18 nodes, cohesion: 0.15)
 
-- home_screen
-- _HomeScreenState()
-- dart:async
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/auth/screens/profile_completion_screen.dart
-- package:resume_plus_clean/features/home/providers/summary_provider.dart
-- package:resume_plus_clean/features/home/widgets/course_tile.dart
-- package:resume_plus_clean/features/home/widgets/summary_card.dart
-- package:resume_plus_clean/features/notifications/providers/notification_provider.dart
-- package:resume_plus_clean/features/notifications/screens/notifications_screen.dart
-- package:resume_plus_clean/features/settings/screens/settings_screen.dart
-- package:resume_plus_clean/features/upload/screens/audio_sessions_screen.dart
-- package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/notification_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 25 — run_seed (17 nodes, cohesion: 0.12)
-
-- run_seed
+- fix_auth_issues
+- check_cors_configuration()
 - config()
-- create_test_data()
-- courses.models.Course
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
+- create_missing_tokens()
+- fix_test_users()
+- generate_flutter_auth_config()
 - decouple.config
 - django
 - django.conf
 - django.contrib.auth.models.User
-- django.db.transaction
 - os
 - pathlib.Path
 - pymysql
+- rest_framework.authtoken.models.Token
 - sys
 - users.models.UserProfile
+- main()
+- test_tokens_validity()
 
-### Community 26 — test_new_features (17 nodes, cohesion: 0.12)
+### Community 24 — test_new_features (17 nodes, cohesion: 0.12)
 
 - test_new_features
 - courses.exercise_generator.generate_exercises_for_summary
@@ -659,27 +620,7 @@
 - sys
 - users.models.UserProfile
 
-### Community 27 — settings_screen (17 nodes, cohesion: 0.12)
-
-- settings_screen
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/auth/providers/auth_provider.dart
-- package:resume_plus_clean/features/settings/providers/theme_provider.dart
-- package:resume_plus_clean/features/settings/screens/about_screen.dart
-- package:resume_plus_clean/features/settings/screens/delete_account_screen.dart
-- package:resume_plus_clean/features/settings/screens/privacy_policy_screen.dart
-- package:resume_plus_clean/features/settings/screens/terms_of_service_screen.dart
-- package:resume_plus_clean/features/settings/widgets/profile_section.dart
-- package:resume_plus_clean/features/settings/widgets/theme_selector.dart
-- package:resume_plus_clean/features/splash/screens/splash_screen.dart
-- package:resume_plus_clean/features/subscriptions/screens/subscriptions_screen.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- package:url_launcher/url_launcher.dart
-
-### Community 28 — GeneratedPluginRegistrant (17 nodes, cohesion: 0.12)
+### Community 25 — GeneratedPluginRegistrant (17 nodes, cohesion: 0.12)
 
 - GeneratedPluginRegistrant
 - audioplayers_darwin
@@ -699,24 +640,85 @@
 - url_launcher_macos
 - RegisterGeneratedPlugins
 
-### Community 29 — tasks (16 nodes, cohesion: 0.14)
+### Community 26 — home_screen (17 nodes, cohesion: 0.12)
 
-- tasks
-- cleanup_inactive_tokens()
-- create_and_send_notification()
-- _get_fcm_app()
-- celery.shared_task
-- django.conf.settings
-- logging
-- _is_invalid_token_error()
-- notify_subscription_expired()
-- notify_subscription_expiring_soon()
-- notify_subscription_paid()
-- notify_subscription_payment_failed()
-- notify_summary_created()
-- notify_summary_purchase_failed()
-- notify_summary_purchased()
-- send_fcm_notification()
+- home_screen
+- _HomeScreenState()
+- dart:async
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/auth/screens/profile_completion_screen.dart
+- package:resume_plus_clean/features/home/providers/summary_provider.dart
+- package:resume_plus_clean/features/home/widgets/course_tile.dart
+- package:resume_plus_clean/features/home/widgets/summary_card.dart
+- package:resume_plus_clean/features/notifications/providers/notification_provider.dart
+- package:resume_plus_clean/features/notifications/screens/notifications_screen.dart
+- package:resume_plus_clean/features/settings/screens/settings_screen.dart
+- package:resume_plus_clean/features/upload/screens/audio_sessions_screen.dart
+- package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/notification_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 27 — seed_production (17 nodes, cohesion: 0.12)
+
+- seed_production
+- courses.models.Course
+- courses.models.Filiere
+- courses.models.FilierePromotion
+- courses.models.Professeur
+- courses.models.Promotion
+- courses.models.Session
+- courses.models.Summary
+- courses.models.Universite
+- courses.models.UniversiteFiliere
+- datetime.timedelta
+- decimal.Decimal
+- django.contrib.auth.models.User
+- django.core.management.base.BaseCommand
+- payments.models.Service
+- random
+- users.models.UserProfile
+
+### Community 28 — settings_screen (17 nodes, cohesion: 0.12)
+
+- settings_screen
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/auth/providers/auth_provider.dart
+- package:resume_plus_clean/features/settings/providers/theme_provider.dart
+- package:resume_plus_clean/features/settings/screens/about_screen.dart
+- package:resume_plus_clean/features/settings/screens/delete_account_screen.dart
+- package:resume_plus_clean/features/settings/screens/privacy_policy_screen.dart
+- package:resume_plus_clean/features/settings/screens/terms_of_service_screen.dart
+- package:resume_plus_clean/features/settings/widgets/profile_section.dart
+- package:resume_plus_clean/features/settings/widgets/theme_selector.dart
+- package:resume_plus_clean/features/splash/screens/splash_screen.dart
+- package:resume_plus_clean/features/subscriptions/screens/subscriptions_screen.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- package:url_launcher/url_launcher.dart
+
+### Community 29 — run_seed (17 nodes, cohesion: 0.12)
+
+- run_seed
+- config()
+- create_test_data()
+- courses.models.Course
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- decouple.config
+- django
+- django.conf
+- django.contrib.auth.models.User
+- django.db.transaction
+- os
+- pathlib.Path
+- pymysql
+- sys
+- users.models.UserProfile
 
 ### Community 30 — views (16 nodes, cohesion: 0.13)
 
@@ -737,61 +739,45 @@
 - .get_queryset()
 - .get_serializer_class()
 
-### Community 31 — main_navigation_screen (15 nodes, cohesion: 0.13)
+### Community 31 — tasks (16 nodes, cohesion: 0.14)
 
-- main_navigation_screen
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/exercises/screens/exercises_screen.dart
-- package:resume_plus_clean/features/home/providers/summary_provider.dart
-- package:resume_plus_clean/features/home/screens/home_screen.dart
-- package:resume_plus_clean/features/purchases/screens/purchases_screen.dart
-- package:resume_plus_clean/features/summaries/screens/all_summaries_screen.dart
-- package:resume_plus_clean/features/validation/screens/validation_screen.dart
-- package:resume_plus_clean/providers/purchase_badge_provider.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/notification_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- package:resume_plus_clean/widgets/badge_icon.dart
-- _MainNavigationScreenState()
-
-### Community 32 — fix_production_encoding (15 nodes, cohesion: 0.19)
-
-- fix_production_encoding
-- check_production_data()
-- check_production_database()
-- clean_production_invalid_data()
-- fix_production_encoding()
-- courses.models.Session
-- courses.models.Summary
-- django
+- tasks
+- cleanup_inactive_tokens()
+- create_and_send_notification()
+- _get_fcm_app()
+- celery.shared_task
 - django.conf.settings
-- django.db.connection
-- os
-- sys
-- main()
-- set_production_connection_encoding()
-- test_production_emoji_insertion()
-
-### Community 33 — audio_processing (15 nodes, cohesion: 0.13)
-
-- audio_processing
-- datetime.timedelta
-- .deepgram_service.deepgram_service
-- .deepseek_service.deepseek_service
-- django.conf.settings
-- django.utils.timezone
-- json
 - logging
-- mimetypes
-- .models.Course
-- .models.Session
-- .models.Summary
-- .models.Transcription
-- os
-- re
+- _is_invalid_token_error()
+- notify_subscription_expired()
+- notify_subscription_expiring_soon()
+- notify_subscription_paid()
+- notify_subscription_payment_failed()
+- notify_summary_created()
+- notify_summary_purchase_failed()
+- notify_summary_purchased()
+- send_fcm_notification()
 
-### Community 34 — models (15 nodes, cohesion: 0.13)
+### Community 32 — admin (16 nodes, cohesion: 0.13)
+
+- admin
+- CourseAdmin
+- .get_filieres()
+- .get_promotions()
+- .get_universites()
+- ExerciseQuestionAdmin
+- .get_queryset()
+- .question_text_short()
+- FiliereAdmin
+- django.contrib.admin
+- .models
+- PromotionAdmin
+- SessionAdmin
+- SummaryAdmin
+- .get_queryset()
+- UniversiteAdmin
+
+### Community 33 — models (15 nodes, cohesion: 0.13)
 
 - models
 - Abonnement
@@ -809,92 +795,61 @@
 - Service
 - .__str__()
 
-### Community 35 — my_application (14 nodes, cohesion: 0.93)
+### Community 34 — main_navigation_screen (15 nodes, cohesion: 0.13)
 
-- my_application
-- flutter/generated_plugin_registrant.h
-- flutter_linux/flutter_linux.h
-- gdk/gdkx.h
-- my_application.h
-- my_application_activate()
-- my_application_class_init()
-- my_application_dispose()
-- my_application_init()
-- my_application_local_command_line()
-- my_application_new()
-- my_application_shutdown()
-- my_application_startup()
-- _MyApplication
+- main_navigation_screen
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/exercises/screens/exercises_screen.dart
+- package:resume_plus_clean/features/home/providers/summary_provider.dart
+- package:resume_plus_clean/features/home/screens/home_screen.dart
+- package:resume_plus_clean/features/purchases/screens/purchases_screen.dart
+- package:resume_plus_clean/features/summaries/screens/all_summaries_screen.dart
+- package:resume_plus_clean/features/validation/screens/validation_screen.dart
+- package:resume_plus_clean/providers/purchase_badge_provider.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/notification_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- package:resume_plus_clean/widgets/badge_icon.dart
+- _MainNavigationScreenState()
 
-### Community 36 — models (14 nodes, cohesion: 0.14)
+### Community 35 — fix_production_encoding (15 nodes, cohesion: 0.19)
 
-- models
-- AppNotification
-- .__str__()
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
-- django.contrib.auth.models.User
-- django.db.models
-- logging
-- Meta
-- UserDevice
-- .__str__()
-- UserNotification
-- .__str__()
-
-### Community 37 — create_test_data_mysql (14 nodes, cohesion: 0.14)
-
-- create_test_data_mysql
-- create_test_data()
-- courses.models.Course
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
+- fix_production_encoding
+- check_production_data()
+- check_production_database()
+- clean_production_invalid_data()
+- fix_production_encoding()
+- courses.models.Session
+- courses.models.Summary
 - django
-- django.conf
-- django.contrib.auth.models.User
-- django.db.transaction
+- django.conf.settings
+- django.db.connection
 - os
-- pathlib.Path
 - sys
-- users.models.UserProfile
+- main()
+- set_production_connection_encoding()
+- test_production_emoji_insertion()
 
-### Community 38 — api_service (14 nodes, cohesion: 0.14)
+### Community 36 — audio_processing (15 nodes, cohesion: 0.13)
 
-- api_service
-- dart:async
-- dart:typed_data
-- package:dio/dio.dart
-- package:flutter/foundation.dart
-- package:resume_plus_clean/exceptions/api_exception.dart
-- package:resume_plus_clean/models/filiere.dart
-- package:resume_plus_clean/models/promotion.dart
-- package:resume_plus_clean/models/summary.dart'
-- package:resume_plus_clean/models/universite.dart
-- package:resume_plus_clean/services/demo_data_service.dart
-- package:resume_plus_clean/services/storage_service.dart
-- package:resume_plus_clean/utils/logger.dart
-- productionUrl()
+- audio_processing
+- datetime.timedelta
+- .deepgram_service.deepgram_service
+- .deepseek_service.deepseek_service
+- django.conf.settings
+- django.utils.timezone
+- json
+- logging
+- mimetypes
+- .models.Course
+- .models.Session
+- .models.Summary
+- .models.Transcription
+- os
+- re
 
-### Community 39 — AudioProcessor (14 nodes, cohesion: 0.23)
-
-- AudioProcessor
-- .auto_process_pending_sessions()
-- .batch_process_sessions()
-- .cleanup_old_audio_files()
-- ._format_duration()
-- ._get_audio_duration()
-- .get_audio_info()
-- .get_processing_stats()
-- .__init__()
-- ._is_supported_format()
-- .process_audio_session()
-- ._simulate_transcription()
-- ._step1_transcribe_audio()
-- ._step2_generate_summary()
-
-### Community 40 — serializers (14 nodes, cohesion: 0.14)
+### Community 37 — serializers (14 nodes, cohesion: 0.14)
 
 - serializers
 - AbonnementSerializer
@@ -911,21 +866,73 @@
 - .get_purchase_type()
 - ServiceSerializer
 
-### Community 41 — fix_audio_issues (13 nodes, cohesion: 0.17)
+### Community 38 — my_application (14 nodes, cohesion: 0.93)
 
-- fix_audio_issues
-- create_apache_media_config()
-- create_audio_test_endpoint()
-- create_media_directories()
-- create_real_audio_files()
+- my_application
+- flutter/generated_plugin_registrant.h
+- flutter_linux/flutter_linux.h
+- gdk/gdkx.h
+- my_application.h
+- my_application_activate()
+- my_application_class_init()
+- my_application_dispose()
+- my_application_init()
+- my_application_local_command_line()
+- my_application_new()
+- my_application_shutdown()
+- my_application_startup()
+- _MyApplication
+
+### Community 39 — models (14 nodes, cohesion: 0.14)
+
+- models
+- AppNotification
+- .__str__()
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django.contrib.auth.models.User
+- django.db.models
+- logging
+- Meta
+- UserDevice
+- .__str__()
+- UserNotification
+- .__str__()
+
+### Community 40 — create_test_data_mysql (14 nodes, cohesion: 0.14)
+
+- create_test_data_mysql
+- create_test_data()
+- courses.models.Course
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django
+- django.conf
+- django.contrib.auth.models.User
+- django.db.transaction
 - os
 - pathlib.Path
-- subprocess
 - sys
-- main()
-- run_diagnostics()
-- setup_django()
-- update_django_settings()
+- users.models.UserProfile
+
+### Community 41 — api_service (14 nodes, cohesion: 0.14)
+
+- api_service
+- dart:async
+- dart:typed_data
+- package:dio/dio.dart
+- package:flutter/foundation.dart
+- package:resume_plus_clean/exceptions/api_exception.dart
+- package:resume_plus_clean/models/filiere.dart
+- package:resume_plus_clean/models/promotion.dart
+- package:resume_plus_clean/models/summary.dart'
+- package:resume_plus_clean/models/universite.dart
+- package:resume_plus_clean/services/demo_data_service.dart
+- package:resume_plus_clean/services/storage_service.dart
+- package:resume_plus_clean/utils/logger.dart
+- productionUrl()
 
 ### Community 42 — tests (13 nodes, cohesion: 0.15)
 
@@ -943,55 +950,7 @@
 - .setUp()
 - .test_user_profile_creation()
 
-### Community 43 — DeepSeekService (13 nodes, cohesion: 0.37)
-
-- DeepSeekService
-- ._build_exercises_prompt()
-- ._build_summary_prompt()
-- ._call_api()
-- ._clean_text()
-- .generate_exercises()
-- .generate_summary()
-- ._get_api_key()
-- .__init__()
-- .is_configured()
-- .reformulate_summary()
-- .simplify_summary()
-- .translate_summary()
-
-### Community 44 — mobile_audio_recorder (13 nodes, cohesion: 0.15)
-
-- mobile_audio_recorder
-- _currentPath()
-- dart:async
-- dart:io
-- dart:typed_data
-- package:flutter/foundation.dart
-- package:path_provider/path_provider.dart
-- package:permission_handler/permission_handler.dart
-- package:record/record.dart
-- _instance()
-- _isPaused()
-- _isRecording()
-- _recordingStartTime()
-
-### Community 45 — test_advanced_audio_functionality (13 nodes, cohesion: 0.22)
-
-- test_advanced_audio_functionality
-- create_comprehensive_test_report()
-- create_test_audio_upload()
-- json
-- os
-- pathlib.Path
-- requests
-- sys
-- wave
-- main()
-- test_audio_files_existence()
-- test_django_setup()
-- test_local_server_endpoints()
-
-### Community 46 — test_direct_api (13 nodes, cohesion: 0.15)
+### Community 43 — test_direct_api (13 nodes, cohesion: 0.15)
 
 - test_direct_api
 - django
@@ -1007,7 +966,7 @@
 - sys
 - test_direct_api()
 
-### Community 47 — create_courses() (13 nodes, cohesion: 0.27)
+### Community 44 — create_courses() (13 nodes, cohesion: 0.27)
 
 - create_courses()
 - create_filieres()
@@ -1023,65 +982,115 @@
 - print_header()
 - print_section()
 
-### Community 48 — debug_audio_issues (12 nodes, cohesion: 0.24)
+### Community 45 — diagnostic_complet (13 nodes, cohesion: 0.31)
 
-- debug_audio_issues
-- check_database_audio_files()
-- check_media_directory()
-- create_test_audio_files()
+- diagnostic_complet
+- generate_report()
+- datetime
+- json
+- jwt
+- requests
+- main()
+- print_section()
+- test_1_server_status()
+- test_2_login()
+- test_3_endpoints_without_auth()
+- test_4_auth_endpoints()
+- test_5_cors_headers()
+
+### Community 46 — mobile_audio_recorder (13 nodes, cohesion: 0.15)
+
+- mobile_audio_recorder
+- _currentPath()
+- dart:async
+- dart:io
+- dart:typed_data
+- package:flutter/foundation.dart
+- package:path_provider/path_provider.dart
+- package:permission_handler/permission_handler.dart
+- package:record/record.dart
+- _instance()
+- _isPaused()
+- _isRecording()
+- _recordingStartTime()
+
+### Community 47 — test_advanced_audio_functionality (13 nodes, cohesion: 0.22)
+
+- test_advanced_audio_functionality
+- create_comprehensive_test_report()
+- create_test_audio_upload()
+- json
 - os
 - pathlib.Path
-- pymysql
 - requests
 - sys
+- wave
 - main()
-- test_api_endpoints()
-- test_specific_audio_file()
+- test_audio_files_existence()
+- test_django_setup()
+- test_local_server_endpoints()
 
-### Community 49 — otp_verification_screen (12 nodes, cohesion: 0.17)
+### Community 48 — fix_audio_issues (13 nodes, cohesion: 0.17)
 
-- otp_verification_screen
-- dart:async
-- package:dio/dio.dart
-- package:flutter/foundation.dart'
-- package:flutter/material.dart
-- package:flutter/services.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/fcm_service.dart
-- package:resume_plus_clean/services/otp_service.dart
-- package:resume_plus_clean/services/storage_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _OtpVerificationScreenState()
-
-### Community 50 — debug_services_issue (12 nodes, cohesion: 0.17)
-
-- debug_services_issue
-- debug_services_issue()
-- django
-- django.contrib.auth.models.User
+- fix_audio_issues
+- create_apache_media_config()
+- create_audio_test_endpoint()
+- create_media_directories()
+- create_real_audio_files()
 - os
-- payments.models.Abonnement
-- payments.models.Service
-- payments.views.AbonnementListCreateView
-- payments.views.ServiceListCreateView
-- rest_framework_simplejwt.tokens.RefreshToken
-- rest_framework.test.APIRequestFactory
+- pathlib.Path
+- subprocess
 - sys
+- main()
+- run_diagnostics()
+- setup_django()
+- update_django_settings()
 
-### Community 51 — clear_data() (12 nodes, cohesion: 0.17)
+### Community 49 — DeepSeekService (13 nodes, cohesion: 0.37)
 
-- clear_data()
-- create_courses()
-- create_filieres()
-- create_promotions()
-- create_services()
-- create_sessions()
-- create_summaries()
-- create_universites()
-- create_users()
-- link_filieres_promotions()
-- link_universites_filieres()
-- run_seed()
+- DeepSeekService
+- ._build_exercises_prompt()
+- ._build_summary_prompt()
+- ._call_api()
+- ._clean_text()
+- .generate_exercises()
+- .generate_summary()
+- ._get_api_key()
+- .__init__()
+- .is_configured()
+- .reformulate_summary()
+- .simplify_summary()
+- .translate_summary()
+
+### Community 50 — test_simple_audio_upload (12 nodes, cohesion: 0.24)
+
+- test_simple_audio_upload
+- create_simple_audio_file()
+- io
+- json
+- random
+- requests
+- struct
+- wave
+- main()
+- test_audio_upload_direct()
+- test_simple_endpoints()
+- test_with_different_course_ids()
+
+### Community 51 — Command (12 nodes, cohesion: 0.30)
+
+- Command
+- .add_arguments()
+- .clear_data()
+- .create_courses()
+- .create_filieres()
+- .create_professeurs()
+- .create_promotions()
+- .create_sample_summaries()
+- .create_services()
+- .create_universites()
+- .create_users()
+- .handle()
 
 ### Community 52 — test_consecutive_subscriptions (12 nodes, cohesion: 0.17)
 
@@ -1098,37 +1107,22 @@
 - sys
 - test_consecutive_subscriptions()
 
-### Community 53 — check_permissions_detailed (12 nodes, cohesion: 0.21)
+### Community 53 — debug_audio_issues (12 nodes, cohesion: 0.24)
 
-- check_permissions_detailed
-- check_file_permissions()
-- check_write_permission()
-- get_current_user_info()
-- django
-- django.conf.settings
-- grp
+- debug_audio_issues
+- check_database_audio_files()
+- check_media_directory()
+- create_test_audio_files()
 - os
-- pwd
-- stat
+- pathlib.Path
+- pymysql
+- requests
 - sys
 - main()
+- test_api_endpoints()
+- test_specific_audio_file()
 
-### Community 54 — test_audio_upload (12 nodes, cohesion: 0.23)
-
-- test_audio_upload
-- create_fake_audio_file()
-- io
-- json
-- random
-- requests
-- struct
-- wave
-- main()
-- test_audio_upload()
-- test_get_courses()
-- test_get_sessions()
-
-### Community 55 — create_test_data_postgresql (12 nodes, cohesion: 0.17)
+### Community 54 — create_test_data_postgresql (12 nodes, cohesion: 0.17)
 
 - create_test_data_postgresql
 - create_test_data()
@@ -1143,37 +1137,22 @@
 - sys
 - users.models.UserProfile
 
-### Community 56 — Command (12 nodes, cohesion: 0.30)
+### Community 55 — clear_data() (12 nodes, cohesion: 0.17)
 
-- Command
-- .add_arguments()
-- .clear_data()
-- .create_courses()
-- .create_filieres()
-- .create_professeurs()
-- .create_promotions()
-- .create_sample_summaries()
-- .create_services()
-- .create_universites()
-- .create_users()
-- .handle()
+- clear_data()
+- create_courses()
+- create_filieres()
+- create_promotions()
+- create_services()
+- create_sessions()
+- create_summaries()
+- create_universites()
+- create_users()
+- link_filieres_promotions()
+- link_universites_filieres()
+- run_seed()
 
-### Community 57 — test_api_auth (12 nodes, cohesion: 0.30)
-
-- test_api_auth
-- json
-- os
-- requests
-- sys
-- main()
-- print_header()
-- print_section()
-- test_authenticated_endpoints()
-- test_cors()
-- test_login()
-- test_server_status()
-
-### Community 58 — seed_production (12 nodes, cohesion: 0.17)
+### Community 56 — seed_production (12 nodes, cohesion: 0.17)
 
 - seed_production
 - courses.models.Filiere
@@ -1188,35 +1167,82 @@
 - payments.models.Service
 - sys
 
-### Community 59 — generated_plugin_registrant (11 nodes, cohesion: 0.18)
+### Community 57 — test_audio_upload (12 nodes, cohesion: 0.23)
 
-- generated_plugin_registrant
-- audioplayers_windows/audioplayers_windows_plugin.h
-- file_selector_windows/file_selector_windows.h
-- firebase_core/firebase_core_plugin_c_api.h
-- flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h
-- flutter_tts/flutter_tts_plugin.h
-- generated_plugin_registrant.h
-- permission_handler_windows/permission_handler_windows_plugin.h
-- record_windows/record_windows_plugin_c_api.h
-- url_launcher_windows/url_launcher_windows.h
-- RegisterPlugins()
+- test_audio_upload
+- create_fake_audio_file()
+- io
+- json
+- random
+- requests
+- struct
+- wave
+- main()
+- test_audio_upload()
+- test_get_courses()
+- test_get_sessions()
 
-### Community 60 — UserProfile (11 nodes, cohesion: 0.18)
+### Community 58 — debug_services_issue (12 nodes, cohesion: 0.17)
 
-- UserProfile
-- .can_create_summary()
-- .generate_otp()
-- .has_active_subscription()
-- .has_free_access()
-- .is_admin()
-- .is_cp()
-- .is_etudiant()
-- .reset_otp()
-- .__str__()
-- .verify_otp()
+- debug_services_issue
+- debug_services_issue()
+- django
+- django.contrib.auth.models.User
+- os
+- payments.models.Abonnement
+- payments.models.Service
+- payments.views.AbonnementListCreateView
+- payments.views.ServiceListCreateView
+- rest_framework_simplejwt.tokens.RefreshToken
+- rest_framework.test.APIRequestFactory
+- sys
 
-### Community 61 — subscriptions_screen (11 nodes, cohesion: 0.18)
+### Community 59 — check_permissions_detailed (12 nodes, cohesion: 0.21)
+
+- check_permissions_detailed
+- check_file_permissions()
+- check_write_permission()
+- get_current_user_info()
+- django
+- django.conf.settings
+- grp
+- os
+- pwd
+- stat
+- sys
+- main()
+
+### Community 60 — test_api_auth (12 nodes, cohesion: 0.30)
+
+- test_api_auth
+- json
+- os
+- requests
+- sys
+- main()
+- print_header()
+- print_section()
+- test_authenticated_endpoints()
+- test_cors()
+- test_login()
+- test_server_status()
+
+### Community 61 — otp_verification_screen (12 nodes, cohesion: 0.17)
+
+- otp_verification_screen
+- dart:async
+- package:dio/dio.dart
+- package:flutter/foundation.dart'
+- package:flutter/material.dart
+- package:flutter/services.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/fcm_service.dart
+- package:resume_plus_clean/services/otp_service.dart
+- package:resume_plus_clean/services/storage_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _OtpVerificationScreenState()
+
+### Community 62 — subscriptions_screen (11 nodes, cohesion: 0.18)
 
 - subscriptions_screen
 - package:flutter/material.dart
@@ -1230,21 +1256,21 @@
 - package:resume_plus_clean/theme/app_theme.dart
 - _SubscriptionsScreenState()
 
-### Community 62 — test_file_permissions (11 nodes, cohesion: 0.24)
+### Community 63 — all_summaries_screen (11 nodes, cohesion: 0.18)
 
-- test_file_permissions
-- check_wsgi_user()
-- django
-- django.conf.settings
-- django.core.files.base.ContentFile
-- django.core.files.storage.default_storage
-- os
-- sys
-- main()
-- test_django_file_upload()
-- test_media_permissions()
+- all_summaries_screen
+- _AllSummariesScreenState()
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:intl/intl.dart
+- package:resume_plus_clean/features/home/providers/summary_provider.dart
+- package:resume_plus_clean/features/home/widgets/summary_card.dart
+- package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart
+- package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- package:resume_plus_clean/widgets/api_error_view.dart
 
-### Community 63 — login_screen (11 nodes, cohesion: 0.18)
+### Community 64 — login_screen (11 nodes, cohesion: 0.18)
 
 - login_screen
 - package:dio/dio.dart
@@ -1258,7 +1284,7 @@
 - package:resume_plus_clean/theme/app_theme.dart
 - _LoginScreenState()
 
-### Community 64 — create_test_user_fixed (11 nodes, cohesion: 0.18)
+### Community 65 — create_test_user_fixed (11 nodes, cohesion: 0.18)
 
 - create_test_user_fixed
 - create_admin_user()
@@ -1272,47 +1298,33 @@
 - traceback
 - users.models.UserProfile
 
-### Community 65 — fix_auth_issues (11 nodes, cohesion: 0.18)
+### Community 66 — UserProfile (11 nodes, cohesion: 0.18)
 
-- fix_auth_issues
-- decouple.config
-- django
-- django.conf
-- django.contrib.auth.models.User
-- os
-- pathlib.Path
-- pymysql
-- rest_framework.authtoken.models.Token
-- sys
-- users.models.UserProfile
+- UserProfile
+- .can_create_summary()
+- .generate_otp()
+- .has_active_subscription()
+- .has_free_access()
+- .is_admin()
+- .is_cp()
+- .is_etudiant()
+- .reset_otp()
+- .__str__()
+- .verify_otp()
 
-### Community 66 — ExerciseAdmin (11 nodes, cohesion: 0.18)
+### Community 67 — generated_plugin_registrant (11 nodes, cohesion: 0.18)
 
-- ExerciseAdmin
-- .get_queryset()
-- ExerciseQuestionAdmin
-- .get_queryset()
-- .question_text_short()
-- .get_queryset()
-- .get_queryset()
-- SummaryAdmin
-- .get_queryset()
-- TranscriptionAdmin
-- .get_queryset()
-
-### Community 67 — all_summaries_screen (11 nodes, cohesion: 0.18)
-
-- all_summaries_screen
-- _AllSummariesScreenState()
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:intl/intl.dart
-- package:resume_plus_clean/features/home/providers/summary_provider.dart
-- package:resume_plus_clean/features/home/widgets/summary_card.dart
-- package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart
-- package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- package:resume_plus_clean/widgets/api_error_view.dart
+- generated_plugin_registrant
+- audioplayers_windows/audioplayers_windows_plugin.h
+- file_selector_windows/file_selector_windows.h
+- firebase_core/firebase_core_plugin_c_api.h
+- flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h
+- flutter_tts/flutter_tts_plugin.h
+- generated_plugin_registrant.h
+- permission_handler_windows/permission_handler_windows_plugin.h
+- record_windows/record_windows_plugin_c_api.h
+- url_launcher_windows/url_launcher_windows.h
+- RegisterPlugins()
 
 ### Community 68 — fcm_service (11 nodes, cohesion: 0.18)
 
@@ -1328,85 +1340,21 @@
 - package:resume_plus_clean/services/notification_service.dart
 - _instance()
 
-### Community 69 — notifications_screen (10 nodes, cohesion: 0.20)
+### Community 69 — test_file_permissions (11 nodes, cohesion: 0.24)
 
-- notifications_screen
-- dart:async
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:intl/intl.dart
-- package:resume_plus_clean/features/notifications/providers/notification_provider.dart
-- package:resume_plus_clean/features/notifications/screens/notification_detail_screen.dart
-- package:resume_plus_clean/models/app_notification.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _NotificationsScreenState()
-
-### Community 70 — test_notification_logic (10 nodes, cohesion: 0.20)
-
-- test_notification_logic
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
-- django.contrib.auth.models.User
-- django.test.TestCase
-- notifications.models.AppNotification
-- notifications.models.UserNotification
-- notifications.tasks.create_and_send_notification
-- users.models.UserProfile
-
-### Community 71 — debug_api_response (10 nodes, cohesion: 0.20)
-
-- debug_api_response
+- test_file_permissions
+- check_wsgi_user()
 - django
-- django.contrib.auth.models.User
-- os
-- payments.models.Abonnement
-- payments.models.Service
-- payments.serializers.AbonnementSerializer
-- payments.serializers.ServiceSerializer
-- sys
-- test_api_responses()
-
-### Community 72 — test_url_routing (10 nodes, cohesion: 0.20)
-
-- test_url_routing
-- django
-- django.contrib.auth.models.User
-- django.test.Client
-- django.urls.resolve
-- django.urls.reverse
-- os
-- rest_framework_simplejwt.tokens.RefreshToken
-- sys
-- test_url_routing()
-
-### Community 73 — fix_migration (10 nodes, cohesion: 0.20)
-
-- fix_migration
-- clear_user_profiles()
-- create_initial_data()
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
-- django
+- django.conf.settings
+- django.core.files.base.ContentFile
+- django.core.files.storage.default_storage
 - os
 - sys
-- users.models.UserProfile
-
-### Community 74 — test_registration (10 nodes, cohesion: 0.29)
-
-- test_registration
-- generate_random_user()
-- json
-- random
-- requests
-- string
 - main()
-- test_api_with_jwt_token()
-- test_login_with_new_user()
-- test_registration()
+- test_django_file_upload()
+- test_media_permissions()
 
-### Community 75 — service_card (10 nodes, cohesion: 0.20)
+### Community 70 — service_card (10 nodes, cohesion: 0.20)
 
 - service_card
 - package:flutter/material.dart
@@ -1419,59 +1367,20 @@
 - package:resume_plus_clean/services/api_service.dart
 - package:resume_plus_clean/services/snackbar_service.dart
 
-### Community 76 — register_screen (10 nodes, cohesion: 0.20)
+### Community 71 — fix_migration (10 nodes, cohesion: 0.20)
 
-- register_screen
-- ../../../models/filiere.dart
-- ../../../models/promotion.dart
-- ../../../models/universite.dart
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- ../../../services/api_service.dart
-- ../../../widgets/linked_dropdowns.dart
-- _RegisterScreenState()
-
-### Community 77 — create_test_courses (10 nodes, cohesion: 0.20)
-
-- create_test_courses
-- create_test_courses()
-- courses.models.Course
+- fix_migration
+- clear_user_profiles()
+- create_initial_data()
 - courses.models.Filiere
 - courses.models.Promotion
 - courses.models.Universite
 - django
-- django.utils.timezone
 - os
 - sys
-
-### Community 78 — create_test_user (10 nodes, cohesion: 0.20)
-
-- create_test_user
-- create_admin_user()
-- create_test_user()
-- django
-- django.contrib.auth.models.User
-- os
-- rest_framework.authtoken.models.Token
-- sys
-- traceback
 - users.models.UserProfile
 
-### Community 79 — signals (10 nodes, cohesion: 0.20)
-
-- signals
-- datetime.timedelta
-- django.db.models.signals.post_save
-- django.dispatch.receiver
-- django.utils.timezone
-- logging
-- .models.Abonnement
-- .models.Purchase
-- on_abonnement_created_or_updated()
-- on_purchase_completed()
-
-### Community 80 — edit_profile_screen (10 nodes, cohesion: 0.20)
+### Community 72 — edit_profile_screen (10 nodes, cohesion: 0.20)
 
 - edit_profile_screen
 - _EditProfileScreenState()
@@ -1484,98 +1393,7 @@
 - package:resume_plus_clean/services/snackbar_service.dart
 - package:resume_plus_clean/theme/app_theme.dart
 
-### Community 81 — test_production_audio (10 nodes, cohesion: 0.29)
-
-- test_production_audio
-- generate_production_test_report()
-- datetime
-- json
-- requests
-- time
-- main()
-- test_media_directory_access()
-- test_production_endpoints()
-- test_specific_audio_sessions()
-
-### Community 82 — fix_encoding_utf8_complete (10 nodes, cohesion: 0.27)
-
-- fix_encoding_utf8_complete
-- clean_invalid_utf8_data()
-- fix_database_encoding()
-- django
-- django.conf.settings
-- django.db.connection
-- os
-- sys
-- main()
-- test_emoji_insertion()
-
-### Community 83 — utils (10 nodes, cohesion: 0.36)
-
-- utils
-- CreateAndAttachConsole()
-- GetCommandLineArguments()
-- flutter_windows.h
-- io.h
-- iostream
-- stdio.h
-- utils.h
-- windows.h
-- Utf8FromUtf16()
-
-### Community 84 — test_mobile_simulation (10 nodes, cohesion: 0.36)
-
-- test_mobile_simulation
-- json
-- requests
-- time
-- login_user()
-- main()
-- print_header()
-- print_step()
-- test_summaries()
-- test_user_info()
-
-### Community 85 — create_test_services (10 nodes, cohesion: 0.20)
-
-- create_test_services
-- create_test_services()
-- datetime.timedelta
-- django
-- django.contrib.auth.models.User
-- django.utils.timezone
-- os
-- payments.models.Abonnement
-- payments.models.Service
-- sys
-
-### Community 86 — validation_screen (10 nodes, cohesion: 0.20)
-
-- validation_screen
-- dart:async
-- package:dio/dio.dart
-- package:flutter/material.dart
-- package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart
-- package:resume_plus_clean/mixins/error_handler_mixin.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- package:resume_plus_clean/widgets/api_error_view.dart
-- _ValidationScreenState()
-
-### Community 87 — urls (10 nodes, cohesion: 0.20)
-
-- urls
-- django.conf.settings
-- django.conf.urls.static.static
-- django.contrib.admin
-- django.urls.include
-- django.urls.path
-- drf_yasg.openapi
-- drf_yasg.views.get_schema_view
-- health_check
-- rest_framework.permissions
-
-### Community 88 — test_auth_quick (10 nodes, cohesion: 0.31)
+### Community 73 — test_auth_quick (10 nodes, cohesion: 0.31)
 
 - test_auth_quick
 - check_server_status()
@@ -1588,7 +1406,150 @@
 - test_cors_headers()
 - test_with_hardcoded_tokens()
 
-### Community 89 — seeddata (10 nodes, cohesion: 0.20)
+### Community 74 — debug_api_response (10 nodes, cohesion: 0.20)
+
+- debug_api_response
+- django
+- django.contrib.auth.models.User
+- os
+- payments.models.Abonnement
+- payments.models.Service
+- payments.serializers.AbonnementSerializer
+- payments.serializers.ServiceSerializer
+- sys
+- test_api_responses()
+
+### Community 75 — test_registration (10 nodes, cohesion: 0.29)
+
+- test_registration
+- generate_random_user()
+- json
+- random
+- requests
+- string
+- main()
+- test_api_with_jwt_token()
+- test_login_with_new_user()
+- test_registration()
+
+### Community 76 — test_notification_logic (10 nodes, cohesion: 0.20)
+
+- test_notification_logic
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django.contrib.auth.models.User
+- django.test.TestCase
+- notifications.models.AppNotification
+- notifications.models.UserNotification
+- notifications.tasks.create_and_send_notification
+- users.models.UserProfile
+
+### Community 77 — register_screen (10 nodes, cohesion: 0.20)
+
+- register_screen
+- ../../../models/filiere.dart
+- ../../../models/promotion.dart
+- ../../../models/universite.dart
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- ../../../services/api_service.dart
+- ../../../widgets/linked_dropdowns.dart
+- _RegisterScreenState()
+
+### Community 78 — create_test_courses (10 nodes, cohesion: 0.20)
+
+- create_test_courses
+- create_test_courses()
+- courses.models.Course
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django
+- django.utils.timezone
+- os
+- sys
+
+### Community 79 — urls (10 nodes, cohesion: 0.20)
+
+- urls
+- django.conf.settings
+- django.conf.urls.static.static
+- django.contrib.admin
+- django.urls.include
+- django.urls.path
+- drf_yasg.openapi
+- drf_yasg.views.get_schema_view
+- health_check
+- rest_framework.permissions
+
+### Community 80 — notifications_screen (10 nodes, cohesion: 0.20)
+
+- notifications_screen
+- dart:async
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:intl/intl.dart
+- package:resume_plus_clean/features/notifications/providers/notification_provider.dart
+- package:resume_plus_clean/features/notifications/screens/notification_detail_screen.dart
+- package:resume_plus_clean/models/app_notification.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _NotificationsScreenState()
+
+### Community 81 — fix_encoding_utf8_complete (10 nodes, cohesion: 0.27)
+
+- fix_encoding_utf8_complete
+- clean_invalid_utf8_data()
+- fix_database_encoding()
+- django
+- django.conf.settings
+- django.db.connection
+- os
+- sys
+- main()
+- test_emoji_insertion()
+
+### Community 82 — test_production_audio (10 nodes, cohesion: 0.29)
+
+- test_production_audio
+- generate_production_test_report()
+- datetime
+- json
+- requests
+- time
+- main()
+- test_media_directory_access()
+- test_production_endpoints()
+- test_specific_audio_sessions()
+
+### Community 83 — create_test_user (10 nodes, cohesion: 0.20)
+
+- create_test_user
+- create_admin_user()
+- create_test_user()
+- django
+- django.contrib.auth.models.User
+- os
+- rest_framework.authtoken.models.Token
+- sys
+- traceback
+- users.models.UserProfile
+
+### Community 84 — signals (10 nodes, cohesion: 0.20)
+
+- signals
+- datetime.timedelta
+- django.db.models.signals.post_save
+- django.dispatch.receiver
+- django.utils.timezone
+- logging
+- .models.Abonnement
+- .models.Purchase
+- on_abonnement_created_or_updated()
+- on_purchase_completed()
+
+### Community 85 — seeddata (10 nodes, cohesion: 0.20)
 
 - seeddata
 - courses.models.Course
@@ -1601,79 +1562,72 @@
 - random
 - users.models.UserProfile
 
-### Community 90 — test_audio_playback (9 nodes, cohesion: 0.33)
+### Community 86 — test_url_routing (10 nodes, cohesion: 0.20)
 
-- test_audio_playback
-- json
-- os
-- requests
-- main()
-- test_audio_file_access()
-- test_direct_audio_access()
-- test_media_directory_listing()
-- test_sessions_endpoint()
-
-### Community 91 — audio_file_player_service (9 nodes, cohesion: 0.22)
-
-- audio_file_player_service
-- _currentUrl()
-- _duration()
-- package:audioplayers/audioplayers.dart
-- package:flutter/foundation.dart
-- _instance()
-- _isInitialized()
-- _isPaused()
-- _position()
-
-### Community 92 — debug_wsgi_user (9 nodes, cohesion: 0.33)
-
-- debug_wsgi_user
-- check_python_path()
+- test_url_routing
 - django
+- django.contrib.auth.models.User
+- django.test.Client
+- django.urls.resolve
+- django.urls.reverse
 - os
+- rest_framework_simplejwt.tokens.RefreshToken
 - sys
-- main()
-- test_audio_processing_import()
-- test_imports()
-- test_view_import()
+- test_url_routing()
 
-### Community 93 — simple_auth_test (9 nodes, cohesion: 0.36)
+### Community 87 — utils (10 nodes, cohesion: 0.36)
 
-- simple_auth_test
-- analyze_error_response()
+- utils
+- CreateAndAttachConsole()
+- GetCommandLineArguments()
+- flutter_windows.h
+- io.h
+- iostream
+- stdio.h
+- utils.h
+- windows.h
+- Utf8FromUtf16()
+
+### Community 88 — create_test_services (10 nodes, cohesion: 0.20)
+
+- create_test_services
+- create_test_services()
+- datetime.timedelta
+- django
+- django.contrib.auth.models.User
+- django.utils.timezone
+- os
+- payments.models.Abonnement
+- payments.models.Service
+- sys
+
+### Community 89 — validation_screen (10 nodes, cohesion: 0.20)
+
+- validation_screen
+- dart:async
+- package:dio/dio.dart
+- package:flutter/material.dart
+- package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart
+- package:resume_plus_clean/mixins/error_handler_mixin.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- package:resume_plus_clean/widgets/api_error_view.dart
+- _ValidationScreenState()
+
+### Community 90 — test_mobile_simulation (10 nodes, cohesion: 0.36)
+
+- test_mobile_simulation
 - json
 - requests
+- time
+- login_user()
 - main()
-- suggest_solutions()
-- test_auth_endpoint_without_token()
-- test_server_basic()
-- test_token_with_different_methods()
+- print_header()
+- print_step()
+- test_summaries()
+- test_user_info()
 
-### Community 94 — purchase_summary_screen (9 nodes, cohesion: 0.22)
-
-- purchase_summary_screen
-- package:flutter/material.dart
-- package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart
-- package:resume_plus_clean/models/payment_method.dart
-- package:resume_plus_clean/models/summary.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _PurchaseSummaryScreenState()
-
-### Community 95 — ExerciseAttempt (9 nodes, cohesion: 0.22)
-
-- ExerciseAttempt
-- .calculate_score()
-- .__str__()
-- Summary
-- .author_badge()
-- .can_generate_exercises()
-- .get_author_display_for_user()
-- .save()
-- .__str__()
-
-### Community 96 — FeatureTestSuite (9 nodes, cohesion: 0.50)
+### Community 91 — FeatureTestSuite (9 nodes, cohesion: 0.50)
 
 - FeatureTestSuite
 - .__init__()
@@ -1685,127 +1639,7 @@
 - .test_summary_validation()
 - .test_user_permissions()
 
-### Community 97 — profile_section (9 nodes, cohesion: 0.22)
-
-- profile_section
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/auth/providers/auth_provider.dart
-- package:resume_plus_clean/features/settings/screens/edit_profile_screen.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _ProfileSectionState()
-
-### Community 98 — delete_account_screen (9 nodes, cohesion: 0.22)
-
-- delete_account_screen
-- _DeleteAccountScreenState()
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/auth/providers/auth_provider.dart
-- package:resume_plus_clean/features/auth/screens/login_screen.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 99 — test_subscription_creation (9 nodes, cohesion: 0.22)
-
-- test_subscription_creation
-- django
-- django.contrib.auth.models.User
-- os
-- payments.models.Abonnement
-- payments.models.Service
-- requests
-- sys
-- test_subscription_creation()
-
-### Community 100 — record_audio_screen_web_safe (9 nodes, cohesion: 0.22)
-
-- record_audio_screen_web_safe
-- package:flutter/foundation.dart
-- package:flutter/material.dart
-- package:resume_plus_clean/features/upload/screens/course_selection_screen.dart
-- package:resume_plus_clean/models/course.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _RecordAudioScreenWebSafeState()
-
-### Community 101 — DeepgramService (9 nodes, cohesion: 0.44)
-
-- DeepgramService
-- ._extract_confidence()
-- ._extract_transcript()
-- ._extract_words()
-- ._get_mime_type()
-- .__init__()
-- .is_configured()
-- .transcribe_bytes()
-- .transcribe_file()
-
-### Community 102 — audio_sessions_screen (9 nodes, cohesion: 0.22)
-
-- audio_sessions_screen
-- _AudioSessionsScreenState()
-- dart:async
-- package:audioplayers/audioplayers.dart
-- package:flutter/material.dart
-- package:resume_plus_clean/features/app/screens/main_navigation_screen.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 103 — web_audio_recorder (9 nodes, cohesion: 0.22)
-
-- web_audio_recorder
-- dart:async
-- dart:typed_data
-- package:flutter/foundation.dart
-- _instance()
-- _isPaused()
-- _isRecording()
-- kIsWeb()
-- _recordingStartTime()
-
-### Community 104 — profile_completion_screen (9 nodes, cohesion: 0.22)
-
-- profile_completion_screen
-- package:dio/dio.dart
-- package:flutter/foundation.dart
-- package:flutter/material.dart
-- package:resume_plus_clean/features/app/screens/main_navigation_screen.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/storage_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _ProfileCompletionScreenState()
-
-### Community 105 — text_to_speech_service (9 nodes, cohesion: 0.22)
-
-- text_to_speech_service
-- _audioService()
-- audio_service.dart
-- package:flutter/foundation.dart
-- _instance()
-- _language()
-- _pitch()
-- _rate()
-- _volume()
-
-### Community 106 — notification_service (9 nodes, cohesion: 0.22)
-
-- notification_service
-- dart:async
-- package:flutter/foundation.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/utils/logger.dart
-- _instance()
-- _poll()
-- _unreadCount()
-- _updateCount()
-
-### Community 107 — debug_auth_headers (9 nodes, cohesion: 0.22)
+### Community 92 — debug_auth_headers (9 nodes, cohesion: 0.22)
 
 - debug_auth_headers
 - django
@@ -1817,19 +1651,19 @@
 - test_different_auth_headers()
 - test_wsgi_headers()
 
-### Community 108 — serializers (9 nodes, cohesion: 0.22)
+### Community 93 — audio_sessions_screen (9 nodes, cohesion: 0.22)
 
-- serializers
-- AppNotificationSerializer
-- .models.AppNotification
-- .models.UserDevice
-- .models.UserNotification
-- rest_framework.serializers
-- Meta
-- UserDeviceSerializer
-- UserNotificationSerializer
+- audio_sessions_screen
+- _AudioSessionsScreenState()
+- dart:async
+- package:audioplayers/audioplayers.dart
+- package:flutter/material.dart
+- package:resume_plus_clean/features/app/screens/main_navigation_screen.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
 
-### Community 109 — debug_api_calls (9 nodes, cohesion: 0.33)
+### Community 94 — debug_api_calls (9 nodes, cohesion: 0.33)
 
 - debug_api_calls
 - check_django_urls()
@@ -1841,7 +1675,43 @@
 - simulate_flutter_calls()
 - test_all_possible_urls()
 
-### Community 110 — auth_provider (9 nodes, cohesion: 0.22)
+### Community 95 — text_to_speech_service (9 nodes, cohesion: 0.22)
+
+- text_to_speech_service
+- _audioService()
+- audio_service.dart
+- package:flutter/foundation.dart
+- _instance()
+- _language()
+- _pitch()
+- _rate()
+- _volume()
+
+### Community 96 — audio_file_player_service (9 nodes, cohesion: 0.22)
+
+- audio_file_player_service
+- _currentUrl()
+- _duration()
+- package:audioplayers/audioplayers.dart
+- package:flutter/foundation.dart
+- _instance()
+- _isInitialized()
+- _isPaused()
+- _position()
+
+### Community 97 — delete_account_screen (9 nodes, cohesion: 0.22)
+
+- delete_account_screen
+- _DeleteAccountScreenState()
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/auth/providers/auth_provider.dart
+- package:resume_plus_clean/features/auth/screens/login_screen.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 98 — auth_provider (9 nodes, cohesion: 0.22)
 
 - auth_provider
 - dart:async
@@ -1853,19 +1723,91 @@
 - package:resume_plus_clean/services/fcm_service.dart
 - package:resume_plus_clean/services/storage_service.dart
 
-### Community 111 — payment_status_screen (9 nodes, cohesion: 0.22)
+### Community 99 — serializers (9 nodes, cohesion: 0.22)
 
-- payment_status_screen
+- serializers
+- AppNotificationSerializer
+- .models.AppNotification
+- .models.UserDevice
+- .models.UserNotification
+- rest_framework.serializers
+- Meta
+- UserDeviceSerializer
+- UserNotificationSerializer
+
+### Community 100 — web_audio_recorder (9 nodes, cohesion: 0.22)
+
+- web_audio_recorder
 - dart:async
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/providers/purchase_badge_provider.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _PaymentState
-- _PaymentStatusScreenState()
+- dart:typed_data
+- package:flutter/foundation.dart
+- _instance()
+- _isPaused()
+- _isRecording()
+- kIsWeb()
+- _recordingStartTime()
 
-### Community 112 — test_production_config (9 nodes, cohesion: 0.31)
+### Community 101 — notification_service (9 nodes, cohesion: 0.22)
+
+- notification_service
+- dart:async
+- package:flutter/foundation.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/utils/logger.dart
+- _instance()
+- _poll()
+- _unreadCount()
+- _updateCount()
+
+### Community 102 — simple_auth_test (9 nodes, cohesion: 0.36)
+
+- simple_auth_test
+- analyze_error_response()
+- json
+- requests
+- main()
+- suggest_solutions()
+- test_auth_endpoint_without_token()
+- test_server_basic()
+- test_token_with_different_methods()
+
+### Community 103 — test_subscription_creation (9 nodes, cohesion: 0.22)
+
+- test_subscription_creation
+- django
+- django.contrib.auth.models.User
+- os
+- payments.models.Abonnement
+- payments.models.Service
+- requests
+- sys
+- test_subscription_creation()
+
+### Community 104 — DeepgramService (9 nodes, cohesion: 0.44)
+
+- DeepgramService
+- ._extract_confidence()
+- ._extract_transcript()
+- ._extract_words()
+- ._get_mime_type()
+- .__init__()
+- .is_configured()
+- .transcribe_bytes()
+- .transcribe_file()
+
+### Community 105 — ExerciseAdmin (9 nodes, cohesion: 0.22)
+
+- ExerciseAdmin
+- .get_queryset()
+- ExerciseAttemptAdmin
+- .get_queryset()
+- ProfesseurAdmin
+- .get_queryset()
+- .list_filieres()
+- TranscriptionAdmin
+- .get_queryset()
+
+### Community 106 — test_production_config (9 nodes, cohesion: 0.31)
 
 - test_production_config
 - datetime
@@ -1877,128 +1819,113 @@
 - test_jwt_validation()
 - test_server_logs_simulation()
 
-### Community 113 — fix_encoding_sqlite (8 nodes, cohesion: 0.25)
+### Community 107 — profile_section (9 nodes, cohesion: 0.22)
 
-- fix_encoding_sqlite
-- courses.models.Session
-- courses.models.Summary
-- django
-- django.conf.settings
-- django.db.connection
-- os
-- sys
-
-### Community 114 — serializers (8 nodes, cohesion: 0.29)
-
-- serializers
-- CreateSecurityLogSerializer
-- .create()
-- .get_client_ip()
-- .models.SecurityLog
-- rest_framework.serializers
-- Meta
-- SecurityLogSerializer
-
-### Community 115 — manual_entry_screen (8 nodes, cohesion: 0.25)
-
-- manual_entry_screen
+- profile_section
 - package:flutter/material.dart
-- package:resume_plus_clean/models/course.dart
-- package:resume_plus_clean/models/professeur.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/auth/providers/auth_provider.dart
+- package:resume_plus_clean/features/settings/screens/edit_profile_screen.dart
 - package:resume_plus_clean/services/api_service.dart
 - package:resume_plus_clean/services/snackbar_service.dart
 - package:resume_plus_clean/theme/app_theme.dart
-- _ManualEntryScreenState()
+- _ProfileSectionState()
 
-### Community 116 — quick_server_test (8 nodes, cohesion: 0.29)
+### Community 108 — test_audio_playback (9 nodes, cohesion: 0.33)
 
-- quick_server_test
-- create_tokens_direct_mysql()
-- generate_token()
-- datetime
-- pymysql
-- requests
-- secrets
-- string
-
-### Community 117 — course_summaries_screen (8 nodes, cohesion: 0.25)
-
-- course_summaries_screen
-- _CourseSummariesScreenState()
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/home/widgets/summary_card.dart
-- package:resume_plus_clean/models/summary.dart'
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 118 — migrate_courses_to_fk (8 nodes, cohesion: 0.25)
-
-- migrate_courses_to_fk
-- courses.models.Course
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
-- django
-- os
-- migrate_courses()
-
-### Community 119 — admin (8 nodes, cohesion: 0.25)
-
-- admin
-- AppNotificationAdmin
-- django.contrib.admin
-- .models.AppNotification
-- .models.UserDevice
-- .models.UserNotification
-- UserDeviceAdmin
-- UserNotificationAdmin
-
-### Community 120 — generated_plugin_registrant (8 nodes, cohesion: 0.25)
-
-- generated_plugin_registrant
-- fl_register_plugins()
-- audioplayers_linux/audioplayers_linux_plugin.h
-- file_selector_linux/file_selector_plugin.h
-- flutter_secure_storage_linux/flutter_secure_storage_linux_plugin.h
-- generated_plugin_registrant.h
-- record_linux/record_linux_plugin.h
-- url_launcher_linux/url_launcher_plugin.h
-
-### Community 121 — check_db_services (8 nodes, cohesion: 0.25)
-
-- check_db_services
-- django
-- django.contrib.auth.models.User
-- django.db.connection
-- os
-- rest_framework.authtoken.models.Token
-- sys
-- users.models.UserProfile
-
-### Community 122 — audio_test_page (8 nodes, cohesion: 0.25)
-
-- audio_test_page
-- _AudioTestPageState()
-- dart:html'
-- dart:typed_data
-- package:flutter/foundation.dart
-- package:flutter/material.dart
-- ../services/api_service.dart
-- ../services/web_audio_recorder.dart
-
-### Community 123 — test_production_api (8 nodes, cohesion: 0.39)
-
-- test_production_api
+- test_audio_playback
 - json
+- os
 - requests
 - main()
-- test_audio_files_access()
-- test_encoding_in_api_response()
-- test_flutter_api_simulation()
+- test_audio_file_access()
+- test_direct_audio_access()
+- test_media_directory_listing()
 - test_sessions_endpoint()
 
-### Community 124 — exercise_generator (8 nodes, cohesion: 0.25)
+### Community 109 — record_audio_screen_web_safe (9 nodes, cohesion: 0.22)
+
+- record_audio_screen_web_safe
+- package:flutter/foundation.dart
+- package:flutter/material.dart
+- package:resume_plus_clean/features/upload/screens/course_selection_screen.dart
+- package:resume_plus_clean/models/course.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _RecordAudioScreenWebSafeState()
+
+### Community 110 — purchase_summary_screen (9 nodes, cohesion: 0.22)
+
+- purchase_summary_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart
+- package:resume_plus_clean/models/payment_method.dart
+- package:resume_plus_clean/models/summary.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _PurchaseSummaryScreenState()
+
+### Community 111 — profile_completion_screen (9 nodes, cohesion: 0.22)
+
+- profile_completion_screen
+- package:dio/dio.dart
+- package:flutter/foundation.dart
+- package:flutter/material.dart
+- package:resume_plus_clean/features/app/screens/main_navigation_screen.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/storage_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _ProfileCompletionScreenState()
+
+### Community 112 — debug_wsgi_user (9 nodes, cohesion: 0.33)
+
+- debug_wsgi_user
+- check_python_path()
+- django
+- os
+- sys
+- main()
+- test_audio_processing_import()
+- test_imports()
+- test_view_import()
+
+### Community 113 — payment_status_screen (9 nodes, cohesion: 0.22)
+
+- payment_status_screen
+- dart:async
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/providers/purchase_badge_provider.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _PaymentState
+- _PaymentStatusScreenState()
+
+### Community 114 — exercise_quiz_screen (8 nodes, cohesion: 0.25)
+
+- exercise_quiz_screen
+- _ExerciseQuizScreenState()
+- package:flutter/material.dart
+- package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart
+- package:resume_plus_clean/models/exercise.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- package:resume_plus_clean/widgets/secure_screen_wrapper.dart
+
+### Community 115 — tasks (8 nodes, cohesion: 0.32)
+
+- tasks
+- generate_summary_task()
+- celery.shared_task
+- django.utils.timezone
+- logging
+- process_audio_session_task()
+- transcribe_audio_task()
+- _validate_and_fix_duration()
+
+### Community 116 — exercise_generator (8 nodes, cohesion: 0.25)
 
 - exercise_generator
 - generate_exercises_for_summary()
@@ -2009,7 +1936,18 @@
 - .models.ExerciseQuestion
 - .models.Summary
 
-### Community 125 — settings_production_fixed (8 nodes, cohesion: 0.25)
+### Community 117 — AuthAPITest (8 nodes, cohesion: 0.36)
+
+- AuthAPITest
+- .setUp()
+- .test_login_user()
+- .test_logout()
+- .test_logout_without_token()
+- .test_refresh_token()
+- .test_refresh_token_invalid()
+- .test_register_user()
+
+### Community 118 — settings_production_fixed (8 nodes, cohesion: 0.25)
 
 - settings_production_fixed
 - datetime.timedelta
@@ -2020,18 +1958,29 @@
 - pathlib.Path
 - pymysql
 
-### Community 126 — account_screen (8 nodes, cohesion: 0.25)
+### Community 119 — check_db_encoding (8 nodes, cohesion: 0.25)
 
-- account_screen
-- _AccountScreenState()
-- package:flutter/material.dart
-- package:resume_plus_clean/features/splash/screens/splash_screen.dart
-- package:resume_plus_clean/models/summary.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/storage_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
+- check_db_encoding
+- check_database_encoding()
+- generate_fix_sql()
+- django
+- django.db.connection
+- os
+- sys
+- traceback
 
-### Community 127 — phone_login_screen (8 nodes, cohesion: 0.25)
+### Community 120 — migrate_courses_fk (8 nodes, cohesion: 0.25)
+
+- migrate_courses_fk
+- Command
+- .handle()
+- courses.models.Course
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django.core.management.base.BaseCommand
+
+### Community 121 — phone_login_screen (8 nodes, cohesion: 0.25)
 
 - phone_login_screen
 - package:dio/dio.dart
@@ -2042,27 +1991,93 @@
 - package:resume_plus_clean/theme/app_theme.dart
 - _PhoneLoginScreenState()
 
-### Community 128 — flutter_window (8 nodes, cohesion: 0.68)
+### Community 122 — check_services (8 nodes, cohesion: 0.25)
 
-- flutter_window
-- FlutterWindow()
-- flutter/generated_plugin_registrant.h
-- flutter_window.h
-- optional
-- MessageHandler()
-- OnCreate()
-- OnDestroy()
-
-### Community 129 — admin (8 nodes, cohesion: 0.25)
-
-- admin
-- CustomUserAdmin
-- django.contrib.admin
-- django.contrib.auth.admin.UserAdmin
+- check_services
+- check_services()
+- django
 - django.contrib.auth.models.User
-- .models.UserProfile
-- UserProfileAdmin
-- UserProfileInline
+- os
+- payments.models.Abonnement
+- payments.models.Service
+- sys
+
+### Community 123 — audio_service (8 nodes, cohesion: 0.25)
+
+- audio_service
+- _currentText()
+- package:flutter/foundation.dart
+- package:flutter_tts/flutter_tts.dart
+- web_audio_service.dart
+- _instance()
+- _isInitialized()
+- _isPaused()
+
+### Community 124 — permissions (8 nodes, cohesion: 0.25)
+
+- permissions
+- rest_framework.permissions
+- IsAdminOrReadOnly
+- .has_permission()
+- IsCPOrReadOnly
+- .has_permission()
+- IsOwnerOrReadOnly
+- .has_object_permission()
+
+### Community 125 — exercises_screen (8 nodes, cohesion: 0.25)
+
+- exercises_screen
+- _ExercisesScreenState()
+- package:flutter/material.dart
+- package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart
+- package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart
+- package:resume_plus_clean/models/exercise.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 126 — quick_server_test (8 nodes, cohesion: 0.29)
+
+- quick_server_test
+- create_tokens_direct_mysql()
+- generate_token()
+- datetime
+- pymysql
+- requests
+- secrets
+- string
+
+### Community 127 — serializers (8 nodes, cohesion: 0.29)
+
+- serializers
+- CreateSecurityLogSerializer
+- .create()
+- .get_client_ip()
+- .models.SecurityLog
+- rest_framework.serializers
+- Meta
+- SecurityLogSerializer
+
+### Community 128 — test_production_api (8 nodes, cohesion: 0.39)
+
+- test_production_api
+- json
+- requests
+- main()
+- test_audio_files_access()
+- test_encoding_in_api_response()
+- test_flutter_api_simulation()
+- test_sessions_endpoint()
+
+### Community 129 — audio_test_page (8 nodes, cohesion: 0.25)
+
+- audio_test_page
+- _AudioTestPageState()
+- dart:html'
+- dart:typed_data
+- package:flutter/foundation.dart
+- package:flutter/material.dart
+- ../services/api_service.dart
+- ../services/web_audio_recorder.dart
 
 ### Community 130 — splash_screen (8 nodes, cohesion: 0.25)
 
@@ -2075,117 +2090,7 @@
 - package:resume_plus_clean/theme/app_theme.dart
 - _SplashScreenState()
 
-### Community 131 — audio_service (8 nodes, cohesion: 0.25)
-
-- audio_service
-- _currentText()
-- package:flutter/foundation.dart
-- package:flutter_tts/flutter_tts.dart
-- web_audio_service.dart
-- _instance()
-- _isInitialized()
-- _isPaused()
-
-### Community 132 — AuthAPITest (8 nodes, cohesion: 0.36)
-
-- AuthAPITest
-- .setUp()
-- .test_login_user()
-- .test_logout()
-- .test_logout_without_token()
-- .test_refresh_token()
-- .test_refresh_token_invalid()
-- .test_register_user()
-
-### Community 133 — check_db_encoding (8 nodes, cohesion: 0.25)
-
-- check_db_encoding
-- check_database_encoding()
-- generate_fix_sql()
-- django
-- django.db.connection
-- os
-- sys
-- traceback
-
-### Community 134 — tasks (8 nodes, cohesion: 0.32)
-
-- tasks
-- generate_summary_task()
-- celery.shared_task
-- django.utils.timezone
-- logging
-- process_audio_session_task()
-- transcribe_audio_task()
-- _validate_and_fix_duration()
-
-### Community 135 — migrate_courses_fk (8 nodes, cohesion: 0.25)
-
-- migrate_courses_fk
-- Command
-- .handle()
-- courses.models.Course
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
-- django.core.management.base.BaseCommand
-
-### Community 136 — exercises_screen (8 nodes, cohesion: 0.25)
-
-- exercises_screen
-- _ExercisesScreenState()
-- package:flutter/material.dart
-- package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart
-- package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart
-- package:resume_plus_clean/models/exercise.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 137 — filiere_summaries_screen (8 nodes, cohesion: 0.25)
-
-- filiere_summaries_screen
-- _FiliereSummariesScreenState()
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/home/widgets/summary_card.dart
-- package:resume_plus_clean/models/summary.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 138 — health_check (8 nodes, cohesion: 0.25)
-
-- health_check
-- health_check()
-- django.conf.settings
-- django.db.connection
-- django.http.JsonResponse
-- django.views.decorators.csrf.csrf_exempt
-- django.views.decorators.http.require_http_methods
-- json
-
-### Community 139 — check_services (8 nodes, cohesion: 0.25)
-
-- check_services
-- check_services()
-- django
-- django.contrib.auth.models.User
-- os
-- payments.models.Abonnement
-- payments.models.Service
-- sys
-
-### Community 140 — permissions (8 nodes, cohesion: 0.25)
-
-- permissions
-- rest_framework.permissions
-- IsAdminOrReadOnly
-- .has_permission()
-- IsCPOrReadOnly
-- .has_permission()
-- IsOwnerOrReadOnly
-- .has_object_permission()
-
-### Community 141 — admin (8 nodes, cohesion: 0.25)
+### Community 131 — admin (8 nodes, cohesion: 0.25)
 
 - admin
 - AbonnementAdmin
@@ -2196,7 +2101,128 @@
 - PurchaseAdmin
 - ServiceAdmin
 
-### Community 142 — quick_test (8 nodes, cohesion: 0.25)
+### Community 132 — migrate_courses_to_fk (8 nodes, cohesion: 0.25)
+
+- migrate_courses_to_fk
+- courses.models.Course
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django
+- os
+- migrate_courses()
+
+### Community 133 — manual_entry_screen (8 nodes, cohesion: 0.25)
+
+- manual_entry_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/models/course.dart
+- package:resume_plus_clean/models/professeur.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _ManualEntryScreenState()
+
+### Community 134 — health_check (8 nodes, cohesion: 0.25)
+
+- health_check
+- health_check()
+- django.conf.settings
+- django.db.connection
+- django.http.JsonResponse
+- django.views.decorators.csrf.csrf_exempt
+- django.views.decorators.http.require_http_methods
+- json
+
+### Community 135 — generated_plugin_registrant (8 nodes, cohesion: 0.25)
+
+- generated_plugin_registrant
+- fl_register_plugins()
+- audioplayers_linux/audioplayers_linux_plugin.h
+- file_selector_linux/file_selector_plugin.h
+- flutter_secure_storage_linux/flutter_secure_storage_linux_plugin.h
+- generated_plugin_registrant.h
+- record_linux/record_linux_plugin.h
+- url_launcher_linux/url_launcher_plugin.h
+
+### Community 136 — admin (8 nodes, cohesion: 0.25)
+
+- admin
+- CustomUserAdmin
+- django.contrib.admin
+- django.contrib.auth.admin.UserAdmin
+- django.contrib.auth.models.User
+- .models.UserProfile
+- UserProfileAdmin
+- UserProfileInline
+
+### Community 137 — account_screen (8 nodes, cohesion: 0.25)
+
+- account_screen
+- _AccountScreenState()
+- package:flutter/material.dart
+- package:resume_plus_clean/features/splash/screens/splash_screen.dart
+- package:resume_plus_clean/models/summary.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/storage_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 138 — fix_encoding_sqlite (8 nodes, cohesion: 0.25)
+
+- fix_encoding_sqlite
+- courses.models.Session
+- courses.models.Summary
+- django
+- django.conf.settings
+- django.db.connection
+- os
+- sys
+
+### Community 139 — course_summaries_screen (8 nodes, cohesion: 0.25)
+
+- course_summaries_screen
+- _CourseSummariesScreenState()
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/home/widgets/summary_card.dart
+- package:resume_plus_clean/models/summary.dart'
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 140 — filiere_summaries_screen (8 nodes, cohesion: 0.25)
+
+- filiere_summaries_screen
+- _FiliereSummariesScreenState()
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/home/widgets/summary_card.dart
+- package:resume_plus_clean/models/summary.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 141 — admin (8 nodes, cohesion: 0.25)
+
+- admin
+- AppNotificationAdmin
+- django.contrib.admin
+- .models.AppNotification
+- .models.UserDevice
+- .models.UserNotification
+- UserDeviceAdmin
+- UserNotificationAdmin
+
+### Community 142 — flutter_window (8 nodes, cohesion: 0.68)
+
+- flutter_window
+- FlutterWindow()
+- flutter/generated_plugin_registrant.h
+- flutter_window.h
+- optional
+- MessageHandler()
+- OnCreate()
+- OnDestroy()
+
+### Community 143 — quick_test (8 nodes, cohesion: 0.25)
 
 - quick_test
 - http.server
@@ -2207,39 +2233,48 @@
 - webbrowser
 - start_server()
 
-### Community 143 — exercise_quiz_screen (8 nodes, cohesion: 0.25)
+### Community 144 — check_db_services (8 nodes, cohesion: 0.25)
 
-- exercise_quiz_screen
-- _ExerciseQuizScreenState()
-- package:flutter/material.dart
-- package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart
-- package:resume_plus_clean/models/exercise.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- package:resume_plus_clean/widgets/secure_screen_wrapper.dart
-
-### Community 144 — generate_report() (8 nodes, cohesion: 0.43)
-
-- generate_report()
-- main()
-- print_section()
-- test_1_server_status()
-- test_2_login()
-- test_3_endpoints_without_auth()
-- test_4_auth_endpoints()
-- test_5_cors_headers()
-
-### Community 145 — deepgram_service (7 nodes, cohesion: 0.29)
-
-- deepgram_service
-- decouple.config
-- django.conf.settings
-- json
-- logging
+- check_db_services
+- django
+- django.contrib.auth.models.User
+- django.db.connection
 - os
-- requests
+- rest_framework.authtoken.models.Token
+- sys
+- users.models.UserProfile
 
-### Community 146 — auto_login_service (7 nodes, cohesion: 0.29)
+### Community 145 — settings_development (7 nodes, cohesion: 0.29)
+
+- settings_development
+- datetime.timedelta
+- decouple.config
+- decouple.Csv
+- os
+- pathlib.Path
+- pymysql
+
+### Community 146 — SubscriptionExpirationTest (7 nodes, cohesion: 0.29)
+
+- SubscriptionExpirationTest
+- .setUp()
+- .test_active_subscription()
+- .test_cp_admin_require_subscription()
+- .test_expired_subscription()
+- .test_inactive_status_subscription()
+- .test_no_subscription()
+
+### Community 147 — test_exercise_generation (7 nodes, cohesion: 0.29)
+
+- test_exercise_generation
+- courses.exercise_generator.ExerciseGenerator
+- courses.models.Summary
+- django
+- django.conf.settings
+- os
+- run_test()
+
+### Community 148 — auto_login_service (7 nodes, cohesion: 0.29)
 
 - auto_login_service
 - AppStartState
@@ -2249,17 +2284,27 @@
 - package:resume_plus_clean/services/storage_service.dart
 - package:shared_preferences/shared_preferences.dart
 
-### Community 147 — NotificationTargetingLogicTest (7 nodes, cohesion: 0.29)
+### Community 149 — linked_dropdowns (7 nodes, cohesion: 0.29)
 
-- NotificationTargetingLogicTest
-- .setUp()
-- .test_case_1_no_filters_global()
-- .test_case_2_universite_only()
-- .test_case_3_universite_filiere()
-- .test_case_4_universite_filiere_promotion()
-- .test_cp_receives_own_notification()
+- linked_dropdowns
+- package:flutter/material.dart
+- package:resume_plus_clean/models/filiere.dart
+- package:resume_plus_clean/models/promotion.dart
+- package:resume_plus_clean/models/universite.dart
+- package:resume_plus_clean/services/api_service.dart
+- _LinkedDropdownsState()
 
-### Community 148 — notification_provider (7 nodes, cohesion: 0.29)
+### Community 150 — purchases_screen (7 nodes, cohesion: 0.29)
+
+- purchases_screen
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart
+- package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _PurchasesScreenState()
+
+### Community 151 — notification_provider (7 nodes, cohesion: 0.29)
 
 - notification_provider
 - package:flutter_riverpod/flutter_riverpod.dart
@@ -2269,45 +2314,15 @@
 - load()
 - _service()
 
-### Community 149 — check_cors_configuration() (7 nodes, cohesion: 0.29)
+### Community 152 — settings_cors_fixed (7 nodes, cohesion: 0.29)
 
-- check_cors_configuration()
-- config()
-- create_missing_tokens()
-- fix_test_users()
-- generate_flutter_auth_config()
-- main()
-- test_tokens_validity()
-
-### Community 150 — splash_screen (7 nodes, cohesion: 0.29)
-
-- splash_screen
-- dart:async
-- package:flutter/material.dart
-- package:lottie/lottie.dart
-- package:resume_plus_clean/features/onboarding/onboarding_screen.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _SplashScreenAltState()
-
-### Community 151 — audio_sessions_page (7 nodes, cohesion: 0.29)
-
-- audio_sessions_page
-- _AudioSessionsPageState()
-- dart:html'
-- package:flutter/material.dart
-- package:intl/intl.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 152 — course_selection_screen (7 nodes, cohesion: 0.29)
-
-- course_selection_screen
-- _CourseSelectionScreenState()
-- package:flutter/material.dart
-- package:resume_plus_clean/models/course.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
+- settings_cors_fixed
+- datetime.timedelta
+- decouple.config
+- decouple.Csv
+- os
+- pathlib.Path
+- pymysql
 
 ### Community 153 — notification_detail_screen (7 nodes, cohesion: 0.29)
 
@@ -2319,227 +2334,7 @@
 - package:resume_plus_clean/theme/app_theme.dart
 - _NotificationDetailScreenState()
 
-### Community 154 — test_exercise_generation (7 nodes, cohesion: 0.29)
-
-- test_exercise_generation
-- courses.exercise_generator.ExerciseGenerator
-- courses.models.Summary
-- django
-- django.conf.settings
-- os
-- run_test()
-
-### Community 155 — setup_exercise_service (7 nodes, cohesion: 0.29)
-
-- setup_exercise_service
-- courses.models.Service
-- django
-- django.db.transaction
-- os
-- sys
-- setup_exercise_service()
-
-### Community 156 — settings_cors_fixed (7 nodes, cohesion: 0.29)
-
-- settings_cors_fixed
-- datetime.timedelta
-- decouple.config
-- decouple.Csv
-- os
-- pathlib.Path
-- pymysql
-
-### Community 157 — SubscriptionExpirationTest (7 nodes, cohesion: 0.29)
-
-- SubscriptionExpirationTest
-- .setUp()
-- .test_active_subscription()
-- .test_cp_admin_require_subscription()
-- .test_expired_subscription()
-- .test_inactive_status_subscription()
-- .test_no_subscription()
-
-### Community 158 — AbonnementCreateSerializer (7 nodes, cohesion: 0.29)
-
-- AbonnementCreateSerializer
-- .create()
-- SummaryCreateSerializer
-- .create()
-- .validate_professeur()
-- .validate_texte_resume()
-- .validate_titre()
-
-### Community 159 — recording_page (7 nodes, cohesion: 0.29)
-
-- recording_page
-- ../features/upload/screens/record_audio_screen.dart
-- ../features/upload/screens/record_audio_screen_web_safe.dart
-- package:flutter/foundation.dart
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- _RecordingPageState()
-
-### Community 160 — universite_filiere (7 nodes, cohesion: 0.29)
-
-- universite_filiere
-- filiere.dart
-- package:json_annotation/json_annotation.dart
-- universite.dart
-- universite_filiere.g.dart
-- _$UniversiteFiliereFromJson()
-- _$UniversiteFiliereToJson()
-
-### Community 161 — models (7 nodes, cohesion: 0.29)
-
-- models
-- courses.models.Filiere
-- courses.models.Promotion
-- courses.models.Universite
-- django.contrib.auth.models.User
-- django.db.models
-- Meta
-
-### Community 162 — test_simple_audio_upload (7 nodes, cohesion: 0.29)
-
-- test_simple_audio_upload
-- io
-- json
-- random
-- requests
-- struct
-- wave
-
-### Community 163 — storage_service (7 nodes, cohesion: 0.29)
-
-- storage_service
-- accessToken()
-- deleteTokens()
-- dart:convert
-- package:flutter/foundation.dart
-- package:flutter_secure_storage/flutter_secure_storage.dart
-- package:shared_preferences/shared_preferences.dart
-
-### Community 164 — upload_choice_screen (7 nodes, cohesion: 0.29)
-
-- upload_choice_screen
-- package:flutter/foundation.dart
-- package:flutter/material.dart
-- package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart
-- package:resume_plus_clean/features/upload/screens/record_audio_screen.dart
-- package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 165 — ExerciseGenerator (7 nodes, cohesion: 0.48)
-
-- ExerciseGenerator
-- .generate_exercises_for_summary()
-- ._generate_mock_questions()
-- ._generate_questions_with_ai()
-- .__init__()
-- ._parse_ai_response()
-- ._validate_question_structure()
-
-### Community 166 — linked_dropdowns (7 nodes, cohesion: 0.29)
-
-- linked_dropdowns
-- package:flutter/material.dart
-- package:resume_plus_clean/models/filiere.dart
-- package:resume_plus_clean/models/promotion.dart
-- package:resume_plus_clean/models/universite.dart
-- package:resume_plus_clean/services/api_service.dart
-- _LinkedDropdownsState()
-
-### Community 167 — settings_production (7 nodes, cohesion: 0.29)
-
-- settings_production
-- datetime.timedelta
-- decouple.config
-- decouple.Csv
-- os
-- pathlib.Path
-- pymysql
-
-### Community 168 — filiere_promotion (7 nodes, cohesion: 0.29)
-
-- filiere_promotion
-- _$FilierePromotionFromJson()
-- _$FilierePromotionToJson()
-- filiere.dart
-- filiere_promotion.g.dart
-- package:json_annotation/json_annotation.dart
-- promotion.dart
-
-### Community 169 — periodic_tasks (7 nodes, cohesion: 0.29)
-
-- periodic_tasks
-- check_subscriptions_expired()
-- check_subscriptions_expiring_soon()
-- celery.shared_task
-- datetime.timedelta
-- django.utils.timezone
-- logging
-
-### Community 170 — 0002_service_abonnement (7 nodes, cohesion: 0.29)
-
-- 0002_service_abonnement
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- django.utils.timezone
-- Migration
-
-### Community 171 — settings_development (7 nodes, cohesion: 0.29)
-
-- settings_development
-- datetime.timedelta
-- decouple.config
-- decouple.Csv
-- os
-- pathlib.Path
-- pymysql
-
-### Community 172 — urls (7 nodes, cohesion: 0.29)
-
-- urls
-- django.urls.path
-- .flexpay_integration.create_subscription_after_payment
-- .flexpay_integration.flexpay_callback
-- .flexpay_integration.initiate_subscription_payment
-- .flexpay_integration.initiate_summary_purchase
-- ..views
-
-### Community 173 — purchases_screen (7 nodes, cohesion: 0.29)
-
-- purchases_screen
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart
-- package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _PurchasesScreenState()
-
-### Community 174 — Command (7 nodes, cohesion: 0.52)
-
-- Command
-- .create_courses()
-- .create_purchases()
-- .create_sessions()
-- .create_summaries()
-- .create_users()
-- .handle()
-
-### Community 175 — main (7 nodes, cohesion: 0.29)
-
-- main
-- flutter/dart_project.h
-- flutter/flutter_view_controller.h
-- flutter_window.h
-- utils.h
-- windows.h
-- wWinMain()
-
-### Community 176 — GeneratedPluginRegistrant (7 nodes, cohesion: 0.29)
+### Community 154 — GeneratedPluginRegistrant (7 nodes, cohesion: 0.29)
 
 - GeneratedPluginRegistrant
 - GeneratedPluginRegistrant
@@ -2549,17 +2344,187 @@
 - io.flutter.embedding.engine.FlutterEngine
 - io.flutter.Log
 
-### Community 177 — error_handler_mixin (7 nodes, cohesion: 0.29)
+### Community 155 — periodic_tasks (7 nodes, cohesion: 0.29)
 
-- error_handler_mixin
-- ErrorHandlerMixin
-- package:dio/dio.dart
+- periodic_tasks
+- check_subscriptions_expired()
+- check_subscriptions_expiring_soon()
+- celery.shared_task
+- datetime.timedelta
+- django.utils.timezone
+- logging
+
+### Community 156 — upload_choice_screen (7 nodes, cohesion: 0.29)
+
+- upload_choice_screen
+- package:flutter/foundation.dart
 - package:flutter/material.dart
-- package:resume_plus_clean/exceptions/api_exception.dart
-- package:resume_plus_clean/services/snackbar_service.dart
-- package:resume_plus_clean/utils/logger.dart
+- package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart
+- package:resume_plus_clean/features/upload/screens/record_audio_screen.dart
+- package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart
+- package:resume_plus_clean/theme/app_theme.dart
 
-### Community 178 — middleware (7 nodes, cohesion: 0.29)
+### Community 157 — Command (7 nodes, cohesion: 0.52)
+
+- Command
+- .create_courses()
+- .create_purchases()
+- .create_sessions()
+- .create_summaries()
+- .create_users()
+- .handle()
+
+### Community 158 — filiere_promotion (7 nodes, cohesion: 0.29)
+
+- filiere_promotion
+- _$FilierePromotionFromJson()
+- _$FilierePromotionToJson()
+- filiere.dart
+- filiere_promotion.g.dart
+- package:json_annotation/json_annotation.dart
+- promotion.dart
+
+### Community 159 — NotificationTargetingLogicTest (7 nodes, cohesion: 0.29)
+
+- NotificationTargetingLogicTest
+- .setUp()
+- .test_case_1_no_filters_global()
+- .test_case_2_universite_only()
+- .test_case_3_universite_filiere()
+- .test_case_4_universite_filiere_promotion()
+- .test_cp_receives_own_notification()
+
+### Community 160 — 0002_service_abonnement (7 nodes, cohesion: 0.29)
+
+- 0002_service_abonnement
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- django.utils.timezone
+- Migration
+
+### Community 161 — storage_service (7 nodes, cohesion: 0.29)
+
+- storage_service
+- accessToken()
+- deleteTokens()
+- dart:convert
+- package:flutter/foundation.dart
+- package:flutter_secure_storage/flutter_secure_storage.dart
+- package:shared_preferences/shared_preferences.dart
+
+### Community 162 — universite_filiere (7 nodes, cohesion: 0.29)
+
+- universite_filiere
+- filiere.dart
+- package:json_annotation/json_annotation.dart
+- universite.dart
+- universite_filiere.g.dart
+- _$UniversiteFiliereFromJson()
+- _$UniversiteFiliereToJson()
+
+### Community 163 — settings_production (7 nodes, cohesion: 0.29)
+
+- settings_production
+- datetime.timedelta
+- decouple.config
+- decouple.Csv
+- os
+- pathlib.Path
+- pymysql
+
+### Community 164 — course_selection_screen (7 nodes, cohesion: 0.29)
+
+- course_selection_screen
+- _CourseSelectionScreenState()
+- package:flutter/material.dart
+- package:resume_plus_clean/models/course.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 165 — recording_page (7 nodes, cohesion: 0.29)
+
+- recording_page
+- ../features/upload/screens/record_audio_screen.dart
+- ../features/upload/screens/record_audio_screen_web_safe.dart
+- package:flutter/foundation.dart
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- _RecordingPageState()
+
+### Community 166 — urls (7 nodes, cohesion: 0.29)
+
+- urls
+- django.urls.path
+- .flexpay_integration.create_subscription_after_payment
+- .flexpay_integration.flexpay_callback
+- .flexpay_integration.initiate_subscription_payment
+- .flexpay_integration.initiate_summary_purchase
+- ..views
+
+### Community 167 — main (7 nodes, cohesion: 0.29)
+
+- main
+- flutter/dart_project.h
+- flutter/flutter_view_controller.h
+- flutter_window.h
+- utils.h
+- windows.h
+- wWinMain()
+
+### Community 168 — models (7 nodes, cohesion: 0.29)
+
+- models
+- courses.models.Filiere
+- courses.models.Promotion
+- courses.models.Universite
+- django.contrib.auth.models.User
+- django.db.models
+- Meta
+
+### Community 169 — ExerciseGenerator (7 nodes, cohesion: 0.48)
+
+- ExerciseGenerator
+- .generate_exercises_for_summary()
+- ._generate_mock_questions()
+- ._generate_questions_with_ai()
+- .__init__()
+- ._parse_ai_response()
+- ._validate_question_structure()
+
+### Community 170 — setup_exercise_service (7 nodes, cohesion: 0.29)
+
+- setup_exercise_service
+- courses.models.Service
+- django
+- django.db.transaction
+- os
+- sys
+- setup_exercise_service()
+
+### Community 171 — audio_sessions_page (7 nodes, cohesion: 0.29)
+
+- audio_sessions_page
+- _AudioSessionsPageState()
+- dart:html'
+- package:flutter/material.dart
+- package:intl/intl.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 172 — splash_screen (7 nodes, cohesion: 0.29)
+
+- splash_screen
+- dart:async
+- package:flutter/material.dart
+- package:lottie/lottie.dart
+- package:resume_plus_clean/features/onboarding/onboarding_screen.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _SplashScreenAltState()
+
+### Community 173 — middleware (7 nodes, cohesion: 0.29)
 
 - middleware
 - datetime
@@ -2569,43 +2534,27 @@
 - .process_request()
 - .process_response()
 
-### Community 179 — SubscriptionNotificationTest (6 nodes, cohesion: 0.33)
+### Community 174 — deepgram_service (7 nodes, cohesion: 0.29)
 
-- SubscriptionNotificationTest
-- .setUp()
-- .test_multiple_subscriptions_notifications()
-- .test_subscription_expired_notification()
-- .test_subscription_expiring_soon_notification()
-- .test_subscription_paid_notification()
-
-### Community 180 — 0017_universite_filieres_m2m (6 nodes, cohesion: 0.33)
-
-- 0017_universite_filieres_m2m
-- copy_universite_filiere_to_m2m()
-- django.db.migrations
-- django.db.models
-- Migration
-- restore_universite_filiere_from_m2m()
-
-### Community 181 — settings_corrected (6 nodes, cohesion: 0.33)
-
-- settings_corrected
-- datetime.timedelta
+- deepgram_service
 - decouple.config
-- os
-- pathlib.Path
-- pymysql
-
-### Community 182 — test_encoding_fix (6 nodes, cohesion: 0.47)
-
-- test_encoding_fix
+- django.conf.settings
 - json
+- logging
+- os
 - requests
-- main()
-- test_summary_retrieval()
-- test_summary_with_special_chars()
 
-### Community 183 — check_database_tables() (6 nodes, cohesion: 0.33)
+### Community 175 — error_handler_mixin (7 nodes, cohesion: 0.29)
+
+- error_handler_mixin
+- ErrorHandlerMixin
+- package:dio/dio.dart
+- package:flutter/material.dart
+- package:resume_plus_clean/exceptions/api_exception.dart
+- package:resume_plus_clean/services/snackbar_service.dart
+- package:resume_plus_clean/utils/logger.dart
+
+### Community 176 — check_database_tables() (6 nodes, cohesion: 0.33)
 
 - check_database_tables()
 - check_django_settings()
@@ -2614,16 +2563,7 @@
 - main()
 - test_token_authentication()
 
-### Community 184 — exercise_subscription_screen (6 nodes, cohesion: 0.33)
-
-- exercise_subscription_screen
-- _ExerciseSubscriptionScreenState()
-- package:flutter/material.dart
-- package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 185 — flutter_window (6 nodes, cohesion: 0.33)
+### Community 177 — flutter_window (6 nodes, cohesion: 0.33)
 
 - flutter_window
 - FlutterWindow()
@@ -2632,7 +2572,25 @@
 - memory
 - win32_window.h
 
-### Community 186 — 0001_initial (6 nodes, cohesion: 0.33)
+### Community 178 — settings_corrected (6 nodes, cohesion: 0.33)
+
+- settings_corrected
+- datetime.timedelta
+- decouple.config
+- os
+- pathlib.Path
+- pymysql
+
+### Community 179 — win32_window (6 nodes, cohesion: 0.33)
+
+- win32_window
+- functional
+- memory
+- string
+- windows.h
+- Size
+
+### Community 180 — 0001_initial (6 nodes, cohesion: 0.33)
 
 - 0001_initial
 - django.conf.settings
@@ -2641,34 +2599,7 @@
 - django.db.models.deletion
 - Migration
 
-### Community 187 — 0003_service_abonnement (6 nodes, cohesion: 0.33)
-
-- 0003_service_abonnement
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 188 — 0018_user_personalized_exercises (6 nodes, cohesion: 0.33)
-
-- 0018_user_personalized_exercises
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 189 — test_audio_functionality (6 nodes, cohesion: 0.33)
-
-- test_audio_functionality
-- json
-- os
-- requests
-- test_audio_endpoints()
-- test_database_content()
-
-### Community 190 — RunnerTests (6 nodes, cohesion: 0.33)
+### Community 181 — RunnerTests (6 nodes, cohesion: 0.33)
 
 - RunnerTests
 - Cocoa
@@ -2676,6 +2607,87 @@
 - XCTest
 - RunnerTests
 - testExample
+
+### Community 182 — 0016_filiere_promotions_m2m (6 nodes, cohesion: 0.33)
+
+- 0016_filiere_promotions_m2m
+- copy_auto_to_through()
+- copy_through_to_auto()
+- django.db.migrations
+- django.db.models
+- Migration
+
+### Community 183 — create_admin_user() (6 nodes, cohesion: 0.33)
+
+- create_admin_user()
+- main()
+- seed_filieres()
+- seed_promotions()
+- seed_services_abonnement()
+- seed_universites()
+
+### Community 184 — onboarding_screen (6 nodes, cohesion: 0.33)
+
+- onboarding_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/features/auth/screens/phone_login_screen.dart
+- package:resume_plus_clean/services/storage_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- _OnboardingScreenState()
+
+### Community 185 — 0017_universite_filieres_m2m (6 nodes, cohesion: 0.33)
+
+- 0017_universite_filieres_m2m
+- copy_universite_filiere_to_m2m()
+- django.db.migrations
+- django.db.models
+- Migration
+- restore_universite_filiere_from_m2m()
+
+### Community 186 — 0011_exercise_service_is_active_summary_is_validated_and_more (6 nodes, cohesion: 0.33)
+
+- 0011_exercise_service_is_active_summary_is_validated_and_more
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 187 — test_encoding_fix (6 nodes, cohesion: 0.47)
+
+- test_encoding_fix
+- json
+- requests
+- main()
+- test_summary_retrieval()
+- test_summary_with_special_chars()
+
+### Community 188 — 0001_initial (6 nodes, cohesion: 0.33)
+
+- 0001_initial
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 189 — 0004_alter_abonnement_etudiant (6 nodes, cohesion: 0.33)
+
+- 0004_alter_abonnement_etudiant
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 190 — 0001_initial (6 nodes, cohesion: 0.33)
+
+- 0001_initial
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
 
 ### Community 191 — AppDelegate (6 nodes, cohesion: 0.33)
 
@@ -2686,151 +2698,34 @@
 - Cocoa
 - FlutterMacOS
 
-### Community 192 — settings (6 nodes, cohesion: 0.33)
+### Community 192 — 0003_service_abonnement (6 nodes, cohesion: 0.33)
 
-- settings
-- celery.schedules.crontab
-- datetime.timedelta
-- decouple.config
+- 0003_service_abonnement
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 193 — test_audio_functionality (6 nodes, cohesion: 0.33)
+
+- test_audio_functionality
+- json
 - os
-- pathlib.Path
+- requests
+- test_audio_endpoints()
+- test_database_content()
 
-### Community 193 — 0011_exercise_service_is_active_summary_is_validated_and_more (6 nodes, cohesion: 0.33)
+### Community 194 — SubscriptionNotificationTest (6 nodes, cohesion: 0.33)
 
-- 0011_exercise_service_is_active_summary_is_validated_and_more
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
+- SubscriptionNotificationTest
+- .setUp()
+- .test_multiple_subscriptions_notifications()
+- .test_subscription_expired_notification()
+- .test_subscription_expiring_soon_notification()
+- .test_subscription_paid_notification()
 
-### Community 194 — 0001_initial (6 nodes, cohesion: 0.33)
-
-- 0001_initial
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 195 — 0001_initial (6 nodes, cohesion: 0.33)
-
-- 0001_initial
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 196 — screen_security_service (6 nodes, cohesion: 0.33)
-
-- screen_security_service
-- dart:io
-- package:flutter/foundation.dart
-- package:flutter/services.dart
-- package:screen_protector/screen_protector.dart
-- _isSecured()
-
-### Community 197 — create_admin_user() (6 nodes, cohesion: 0.33)
-
-- create_admin_user()
-- main()
-- seed_filieres()
-- seed_promotions()
-- seed_services_abonnement()
-- seed_universites()
-
-### Community 198 — purchased_summary_card (6 nodes, cohesion: 0.33)
-
-- purchased_summary_card
-- package:flutter/material.dart
-- package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart
-- package:resume_plus_clean/models/purchase.dart
-- package:resume_plus_clean/models/summary.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 199 — auth_repository (6 nodes, cohesion: 0.33)
-
-- auth_repository
-- dart:async
-- package:dio/dio.dart
-- package:resume_plus_clean/models/user.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/services/storage_service.dart
-
-### Community 200 — RunnerTests (6 nodes, cohesion: 0.33)
-
-- RunnerTests
-- Flutter
-- UIKit
-- XCTest
-- RunnerTests
-- testExample
-
-### Community 201 — 0016_filiere_promotions_m2m (6 nodes, cohesion: 0.33)
-
-- 0016_filiere_promotions_m2m
-- copy_auto_to_through()
-- copy_through_to_auto()
-- django.db.migrations
-- django.db.models
-- Migration
-
-### Community 202 — models (6 nodes, cohesion: 0.33)
-
-- models
-- django.contrib.auth.models.User
-- django.db.models
-- Meta
-- SecurityLog
-- .__str__()
-
-### Community 203 — win32_window (6 nodes, cohesion: 0.33)
-
-- win32_window
-- functional
-- memory
-- string
-- windows.h
-- Size
-
-### Community 204 — 0001_initial (6 nodes, cohesion: 0.33)
-
-- 0001_initial
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 205 — 0001_initial (6 nodes, cohesion: 0.33)
-
-- 0001_initial
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 206 — 0004_alter_abonnement_etudiant (6 nodes, cohesion: 0.33)
-
-- 0004_alter_abonnement_etudiant
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 207 — 0010_professeur_session_professeur_fk_summary_professeur (6 nodes, cohesion: 0.33)
-
-- 0010_professeur_session_professeur_fk_summary_professeur
-- django.conf.settings
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 208 — main() (6 nodes, cohesion: 0.33)
+### Community 195 — main() (6 nodes, cohesion: 0.33)
 
 - main()
 - test_expired_notification()
@@ -2839,16 +2734,70 @@
 - test_purchase_notification()
 - test_subscription_notification_creation()
 
-### Community 209 — onboarding_screen (6 nodes, cohesion: 0.33)
+### Community 196 — 0018_user_personalized_exercises (6 nodes, cohesion: 0.33)
 
-- onboarding_screen
-- package:flutter/material.dart
-- package:resume_plus_clean/features/auth/screens/phone_login_screen.dart
+- 0018_user_personalized_exercises
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 197 — auth_repository (6 nodes, cohesion: 0.33)
+
+- auth_repository
+- dart:async
+- package:dio/dio.dart
+- package:resume_plus_clean/models/user.dart
+- package:resume_plus_clean/services/api_service.dart
 - package:resume_plus_clean/services/storage_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- _OnboardingScreenState()
 
-### Community 210 — summary_card (6 nodes, cohesion: 0.33)
+### Community 198 — settings (6 nodes, cohesion: 0.33)
+
+- settings
+- celery.schedules.crontab
+- datetime.timedelta
+- decouple.config
+- os
+- pathlib.Path
+
+### Community 199 — screen_security_service (6 nodes, cohesion: 0.33)
+
+- screen_security_service
+- dart:io
+- package:flutter/foundation.dart
+- package:flutter/services.dart
+- package:screen_protector/screen_protector.dart
+- _isSecured()
+
+### Community 200 — exercise_subscription_screen (6 nodes, cohesion: 0.33)
+
+- exercise_subscription_screen
+- _ExerciseSubscriptionScreenState()
+- package:flutter/material.dart
+- package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 201 — 0001_initial (6 nodes, cohesion: 0.33)
+
+- 0001_initial
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 202 — 0010_professeur_session_professeur_fk_summary_professeur (6 nodes, cohesion: 0.33)
+
+- 0010_professeur_session_professeur_fk_summary_professeur
+- django.conf.settings
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 203 — summary_card (6 nodes, cohesion: 0.33)
 
 - summary_card
 - package:flutter/material.dart
@@ -2857,47 +2806,43 @@
 - package:resume_plus_clean/models/summary.dart
 - package:resume_plus_clean/theme/app_theme.dart
 
-### Community 211 — 0004_alter_purchase_summary (5 nodes, cohesion: 0.40)
+### Community 204 — RunnerTests (6 nodes, cohesion: 0.33)
 
-- 0004_alter_purchase_summary
+- RunnerTests
+- Flutter
+- UIKit
+- XCTest
+- RunnerTests
+- testExample
+
+### Community 205 — purchased_summary_card (6 nodes, cohesion: 0.33)
+
+- purchased_summary_card
+- package:flutter/material.dart
+- package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart
+- package:resume_plus_clean/models/purchase.dart
+- package:resume_plus_clean/models/summary.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 206 — models (6 nodes, cohesion: 0.33)
+
+- models
+- django.contrib.auth.models.User
+- django.db.models
+- Meta
+- SecurityLog
+- .__str__()
+
+### Community 207 — 0001_initial (6 nodes, cohesion: 0.33)
+
+- 0001_initial
+- django.conf.settings
 - django.db.migrations
 - django.db.models
 - django.db.models.deletion
 - Migration
 
-### Community 212 — 0010_professeurfilieres_alter_professeur_filieres (5 nodes, cohesion: 0.40)
-
-- 0010_professeurfilieres_alter_professeur_filieres
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 213 — create_simple_audio_file() (5 nodes, cohesion: 0.50)
-
-- create_simple_audio_file()
-- main()
-- test_audio_upload_direct()
-- test_simple_endpoints()
-- test_with_different_course_ids()
-
-### Community 214 — 0007_transcription_summary_transcription (5 nodes, cohesion: 0.40)
-
-- 0007_transcription_summary_transcription
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 215 — urls (5 nodes, cohesion: 0.40)
-
-- urls
-- django.urls.include
-- django.urls.path
-- rest_framework.routers.DefaultRouter
-- ..views
-
-### Community 216 — fix_settings_mysql (5 nodes, cohesion: 0.40)
+### Community 208 — fix_settings_mysql (5 nodes, cohesion: 0.40)
 
 - fix_settings_mysql
 - create_env_file()
@@ -2905,135 +2850,7 @@
 - os
 - re
 
-### Community 217 — tts_reader_widget (5 nodes, cohesion: 0.40)
-
-- tts_reader_widget
-- package:flutter/material.dart
-- package:resume_plus_clean/services/text_to_speech_service.dart
-- _TtsButtonState()
-- _TtsReaderWidgetState()
-
-### Community 218 — fix_user_promotion (5 nodes, cohesion: 0.40)
-
-- fix_user_promotion
-- courses.models.Promotion
-- django
-- django.contrib.auth.models.User
-- os
-
-### Community 219 — fix_user_university (5 nodes, cohesion: 0.40)
-
-- fix_user_university
-- courses.models.Universite
-- django
-- django.contrib.auth.models.User
-- os
-
-### Community 220 — 0005_purchase_service (5 nodes, cohesion: 0.40)
-
-- 0005_purchase_service
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 221 — filiere_promotion.g (5 nodes, cohesion: 0.40)
-
-- filiere_promotion.g
-- FilierePromotion()
-- _$FilierePromotionFromJson()
-- _$FilierePromotionToJson()
-- filiere_promotion.dart
-
-### Community 222 — enhanced_auth_demo_page (5 nodes, cohesion: 0.40)
-
-- enhanced_auth_demo_page
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/providers/api_provider.dart
-- package:resume_plus_clean/widgets/enhanced_auth_widget.dart
-
-### Community 223 — 0005_universitefiliere_filierepromotion_and_more (5 nodes, cohesion: 0.40)
-
-- 0005_universitefiliere_filierepromotion_and_more
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 224 — check_accessible_courses (5 nodes, cohesion: 0.40)
-
-- check_accessible_courses
-- courses.models.Course
-- django
-- django.contrib.auth.models.User
-- os
-
-### Community 225 — exercise_result_screen (5 nodes, cohesion: 0.40)
-
-- exercise_result_screen
-- package:flutter/material.dart
-- package:resume_plus_clean/models/exercise.dart
-- package:resume_plus_clean/theme/app_theme.dart
-- package:resume_plus_clean/widgets/secure_screen_wrapper.dart
-
-### Community 226 — AppDelegate (5 nodes, cohesion: 0.40)
-
-- AppDelegate
-- application
-- FirebaseCore
-- Flutter
-- UIKit
-
-### Community 227 — ai_content_view (5 nodes, cohesion: 0.40)
-
-- ai_content_view
-- _AiContentViewState()
-- package:flutter/material.dart
-- package:google_fonts/google_fonts.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 228 — audio_playback_test_page (5 nodes, cohesion: 0.40)
-
-- audio_playback_test_page
-- _AudioPlaybackTestPageState()
-- package:flutter/material.dart
-- ../services/api_service.dart
-- ../widgets/audio_file_player_widget.dart
-
-### Community 229 — test_simple_page (5 nodes, cohesion: 0.40)
-
-- test_simple_page
-- package:flutter/material.dart
-- services/api_service_debug.dart
-- widgets/audio_file_player_widget.dart
-- _TestSimplePageState()
-
-### Community 230 — check_existing_data() (5 nodes, cohesion: 0.40)
-
-- check_existing_data()
-- clean_invalid_utf8_data()
-- fix_sqlite_encoding()
-- main()
-- test_emoji_insertion()
-
-### Community 231 — test_correct_endpoints (5 nodes, cohesion: 0.50)
-
-- test_correct_endpoints
-- json
-- requests
-- main()
-- test_endpoint()
-
-### Community 232 — universite_filiere.g (5 nodes, cohesion: 0.40)
-
-- universite_filiere.g
-- universite_filiere.dart
-- UniversiteFiliere()
-- _$UniversiteFiliereFromJson()
-- _$UniversiteFiliereToJson()
-
-### Community 233 — summary_provider (5 nodes, cohesion: 0.40)
+### Community 209 — summary_provider (5 nodes, cohesion: 0.40)
 
 - summary_provider
 - package:flutter_riverpod/flutter_riverpod.dart
@@ -3041,23 +2858,7 @@
 - package:resume_plus_clean/services/api_service.dart
 - package:shared_preferences/shared_preferences.dart
 
-### Community 234 — edit_summary_screen (5 nodes, cohesion: 0.40)
-
-- edit_summary_screen
-- _EditSummaryScreenState()
-- package:flutter/material.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 235 — subscription_provider (5 nodes, cohesion: 0.40)
-
-- subscription_provider
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/home/providers/summary_provider.dart
-- package:resume_plus_clean/models/abonnement.dart
-- package:resume_plus_clean/services/api_service.dart
-
-### Community 236 — MainFlutterWindow (5 nodes, cohesion: 0.40)
+### Community 210 — MainFlutterWindow (5 nodes, cohesion: 0.40)
 
 - MainFlutterWindow
 - awakeFromNib
@@ -3065,7 +2866,31 @@
 - FlutterMacOS
 - MainFlutterWindow
 
-### Community 237 — deepseek_service (5 nodes, cohesion: 0.40)
+### Community 211 — audio_playback_test_page (5 nodes, cohesion: 0.40)
+
+- audio_playback_test_page
+- _AudioPlaybackTestPageState()
+- package:flutter/material.dart
+- ../services/api_service.dart
+- ../widgets/audio_file_player_widget.dart
+
+### Community 212 — fix_user_university (5 nodes, cohesion: 0.40)
+
+- fix_user_university
+- courses.models.Universite
+- django
+- django.contrib.auth.models.User
+- os
+
+### Community 213 — tts_reader_widget (5 nodes, cohesion: 0.40)
+
+- tts_reader_widget
+- package:flutter/material.dart
+- package:resume_plus_clean/services/text_to_speech_service.dart
+- _TtsButtonState()
+- _TtsReaderWidgetState()
+
+### Community 214 — deepseek_service (5 nodes, cohesion: 0.40)
 
 - deepseek_service
 - django.conf.settings
@@ -3073,7 +2898,31 @@
 - os
 - requests
 
-### Community 238 — check_database_users() (5 nodes, cohesion: 0.40)
+### Community 215 — 0019_course_m2m_relations (5 nodes, cohesion: 0.40)
+
+- 0019_course_m2m_relations
+- django.db.migrations
+- django.db.models
+- migrate_fk_to_m2m()
+- Migration
+
+### Community 216 — Summary (5 nodes, cohesion: 0.40)
+
+- Summary
+- .author_badge()
+- .can_generate_exercises()
+- .get_author_display_for_user()
+- .__str__()
+
+### Community 217 — 0007_transcription_summary_transcription (5 nodes, cohesion: 0.40)
+
+- 0007_transcription_summary_transcription
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 218 — check_database_users() (5 nodes, cohesion: 0.40)
 
 - check_database_users()
 - generate_curl_commands()
@@ -3081,21 +2930,181 @@
 - test_server_basic()
 - test_tokens_quickly()
 
-### Community 239 — ._clean_transcript() (5 nodes, cohesion: 0.60)
+### Community 219 — ProfesseurFilieresAdmin (5 nodes, cohesion: 0.40)
 
-- ._clean_transcript()
-- ._extract_main_ideas()
-- ._generate_intelligent_summary()
-- ._generate_local_summary()
-- ._structure_summary()
+- ProfesseurFilieresAdmin
+- .get_queryset()
+- .has_add_permission()
+- .has_change_permission()
+- .has_delete_permission()
 
-### Community 240 — enhanced_auth_widget (5 nodes, cohesion: 0.40)
+### Community 220 — AbonnementListCreateView (5 nodes, cohesion: 0.40)
+
+- AbonnementListCreateView
+- .get_queryset()
+- .list()
+- .perform_create()
+- initiate_subscription_payment_view()
+
+### Community 221 — test_courses_api (5 nodes, cohesion: 0.50)
+
+- test_courses_api
+- json
+- requests
+- main()
+- test_endpoint()
+
+### Community 222 — service_provider (5 nodes, cohesion: 0.40)
+
+- service_provider
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/home/providers/summary_provider.dart
+- package:resume_plus_clean/models/service.dart
+- package:resume_plus_clean/services/api_service.dart
+
+### Community 223 — 0014_professeur_filieres_fix (5 nodes, cohesion: 0.40)
+
+- 0014_professeur_filieres_fix
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 224 — 0005_purchase_service (5 nodes, cohesion: 0.40)
+
+- 0005_purchase_service
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 225 — fix_user_promotion (5 nodes, cohesion: 0.40)
+
+- fix_user_promotion
+- courses.models.Promotion
+- django
+- django.contrib.auth.models.User
+- os
+
+### Community 226 — 0009_add_course_fk_fields (5 nodes, cohesion: 0.40)
+
+- 0009_add_course_fk_fields
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 227 — filiere_promotion.g (5 nodes, cohesion: 0.40)
+
+- filiere_promotion.g
+- FilierePromotion()
+- _$FilierePromotionFromJson()
+- _$FilierePromotionToJson()
+- filiere_promotion.dart
+
+### Community 228 — 0010_professeurfilieres_alter_professeur_filieres (5 nodes, cohesion: 0.40)
+
+- 0010_professeurfilieres_alter_professeur_filieres
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 229 — 0005_universitefiliere_filierepromotion_and_more (5 nodes, cohesion: 0.40)
+
+- 0005_universitefiliere_filierepromotion_and_more
+- django.db.migrations
+- django.db.models
+- django.db.models.deletion
+- Migration
+
+### Community 230 — enhanced_auth_widget (5 nodes, cohesion: 0.40)
 
 - enhanced_auth_widget
 - _EnhancedAuthWidgetState()
 - package:flutter/material.dart
 - package:flutter_riverpod/flutter_riverpod.dart
 - package:resume_plus_clean/providers/api_provider.dart
+
+### Community 231 — debug_access (5 nodes, cohesion: 0.40)
+
+- debug_access
+- courses.models.Course
+- django
+- django.contrib.auth.models.User
+- os
+
+### Community 232 — urls (5 nodes, cohesion: 0.40)
+
+- urls
+- django.urls.include
+- django.urls.path
+- rest_framework.routers.DefaultRouter
+- ..views
+
+### Community 233 — UniversiteFiliereTest (5 nodes, cohesion: 0.40)
+
+- UniversiteFiliereTest
+- .setUp()
+- .setUpTestData()
+- .test_relation_universite_filiere()
+- .test_relation_universite_filiere_creation()
+
+### Community 234 — test_correct_endpoints (5 nodes, cohesion: 0.50)
+
+- test_correct_endpoints
+- json
+- requests
+- main()
+- test_endpoint()
+
+### Community 235 — otp_service (5 nodes, cohesion: 0.40)
+
+- otp_service
+- ApiService()
+- package:dio/dio.dart
+- package:flutter/foundation.dart
+- package:resume_plus_clean/services/api_service.dart
+
+### Community 236 — enhanced_auth_demo_page (5 nodes, cohesion: 0.40)
+
+- enhanced_auth_demo_page
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/providers/api_provider.dart
+- package:resume_plus_clean/widgets/enhanced_auth_widget.dart
+
+### Community 237 — AppDelegate (5 nodes, cohesion: 0.40)
+
+- AppDelegate
+- application
+- FirebaseCore
+- Flutter
+- UIKit
+
+### Community 238 — ai_content_view (5 nodes, cohesion: 0.40)
+
+- ai_content_view
+- _AiContentViewState()
+- package:flutter/material.dart
+- package:google_fonts/google_fonts.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 239 — PurchaseNotificationTest (5 nodes, cohesion: 0.40)
+
+- PurchaseNotificationTest
+- .setUp()
+- .test_multiple_purchases_notifications()
+- .test_purchase_without_summary()
+- .test_summary_purchase_notification()
+
+### Community 240 — check_existing_data() (5 nodes, cohesion: 0.40)
+
+- check_existing_data()
+- clean_invalid_utf8_data()
+- fix_sqlite_encoding()
+- main()
+- test_emoji_insertion()
 
 ### Community 241 — 0002_remove_userprofile_role_and_more (5 nodes, cohesion: 0.40)
 
@@ -3105,23 +3114,15 @@
 - django.db.models.deletion
 - Migration
 
-### Community 242 — service_provider (5 nodes, cohesion: 0.40)
+### Community 242 — edit_summary_screen (5 nodes, cohesion: 0.40)
 
-- service_provider
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/home/providers/summary_provider.dart
-- package:resume_plus_clean/models/service.dart
+- edit_summary_screen
+- _EditSummaryScreenState()
+- package:flutter/material.dart
 - package:resume_plus_clean/services/api_service.dart
+- package:resume_plus_clean/theme/app_theme.dart
 
-### Community 243 — 0009_add_course_fk_fields (5 nodes, cohesion: 0.40)
-
-- 0009_add_course_fk_fields
-- django.db.migrations
-- django.db.models
-- django.db.models.deletion
-- Migration
-
-### Community 244 — test_api (5 nodes, cohesion: 0.40)
+### Community 243 — test_api (5 nodes, cohesion: 0.40)
 
 - test_api
 - json
@@ -3129,63 +3130,31 @@
 - test_abonnements_api()
 - test_services_api()
 
-### Community 245 — 0019_course_m2m_relations (5 nodes, cohesion: 0.40)
+### Community 244 — 0004_alter_purchase_summary (5 nodes, cohesion: 0.40)
 
-- 0019_course_m2m_relations
-- django.db.migrations
-- django.db.models
-- migrate_fk_to_m2m()
-- Migration
-
-### Community 246 — diagnostic_complet (5 nodes, cohesion: 0.40)
-
-- diagnostic_complet
-- datetime
-- json
-- jwt
-- requests
-
-### Community 247 — otp_service (5 nodes, cohesion: 0.40)
-
-- otp_service
-- ApiService()
-- package:dio/dio.dart
-- package:flutter/foundation.dart
-- package:resume_plus_clean/services/api_service.dart
-
-### Community 248 — UniversiteFiliereTest (5 nodes, cohesion: 0.40)
-
-- UniversiteFiliereTest
-- .setUp()
-- .setUpTestData()
-- .test_relation_universite_filiere()
-- .test_relation_universite_filiere_creation()
-
-### Community 249 — 0014_professeur_filieres_fix (5 nodes, cohesion: 0.40)
-
-- 0014_professeur_filieres_fix
+- 0004_alter_purchase_summary
 - django.db.migrations
 - django.db.models
 - django.db.models.deletion
 - Migration
 
-### Community 250 — PurchaseNotificationTest (5 nodes, cohesion: 0.40)
+### Community 245 — subscription_provider (5 nodes, cohesion: 0.40)
 
-- PurchaseNotificationTest
-- .setUp()
-- .test_multiple_purchases_notifications()
-- .test_purchase_without_summary()
-- .test_summary_purchase_notification()
+- subscription_provider
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/home/providers/summary_provider.dart
+- package:resume_plus_clean/models/abonnement.dart
+- package:resume_plus_clean/services/api_service.dart
 
-### Community 251 — test_courses_api (5 nodes, cohesion: 0.50)
+### Community 246 — test_simple_page (5 nodes, cohesion: 0.40)
 
-- test_courses_api
-- json
-- requests
-- main()
-- test_endpoint()
+- test_simple_page
+- package:flutter/material.dart
+- services/api_service_debug.dart
+- widgets/audio_file_player_widget.dart
+- _TestSimplePageState()
 
-### Community 252 — widget_test (5 nodes, cohesion: 0.40)
+### Community 247 — widget_test (5 nodes, cohesion: 0.40)
 
 - widget_test
 - package:flutter/material.dart
@@ -3193,7 +3162,7 @@
 - package:resume_plus_clean/main.dart
 - main()
 
-### Community 253 — simple_login_service (5 nodes, cohesion: 0.40)
+### Community 248 — simple_login_service (5 nodes, cohesion: 0.40)
 
 - simple_login_service
 - ApiService()
@@ -3201,7 +3170,31 @@
 - package:resume_plus_clean/services/api_service.dart
 - package:resume_plus_clean/services/storage_service.dart
 
-### Community 254 — test_api_only (5 nodes, cohesion: 0.50)
+### Community 249 — universite_filiere.g (5 nodes, cohesion: 0.40)
+
+- universite_filiere.g
+- universite_filiere.dart
+- UniversiteFiliere()
+- _$UniversiteFiliereFromJson()
+- _$UniversiteFiliereToJson()
+
+### Community 250 — check_accessible_courses (5 nodes, cohesion: 0.40)
+
+- check_accessible_courses
+- courses.models.Course
+- django
+- django.contrib.auth.models.User
+- os
+
+### Community 251 — exercise_result_screen (5 nodes, cohesion: 0.40)
+
+- exercise_result_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/models/exercise.dart
+- package:resume_plus_clean/theme/app_theme.dart
+- package:resume_plus_clean/widgets/secure_screen_wrapper.dart
+
+### Community 252 — test_api_only (5 nodes, cohesion: 0.50)
 
 - test_api_only
 - json
@@ -3209,20 +3202,33 @@
 - main()
 - test_endpoint()
 
-### Community 255 — debug_access (5 nodes, cohesion: 0.40)
+### Community 253 — 0002_filiere_promotion_universite (4 nodes, cohesion: 0.50)
 
-- debug_access
-- courses.models.Course
-- django
-- django.contrib.auth.models.User
-- os
+- 0002_filiere_promotion_universite
+- django.db.migrations
+- django.db.models
+- Migration
 
-### Community 256 — subscription_card (4 nodes, cohesion: 0.50)
+### Community 254 — web_audio_service (4 nodes, cohesion: 0.50)
 
-- subscription_card
-- package:flutter/material.dart
-- package:intl/intl.dart
-- package:resume_plus_clean/models/abonnement.dart
+- web_audio_service
+- package:flutter/foundation.dart
+- _instance()
+- _isPaused()
+
+### Community 255 — test_correct_courses_endpoint (4 nodes, cohesion: 0.50)
+
+- test_correct_courses_endpoint
+- json
+- requests
+- test_correct_courses_endpoint()
+
+### Community 256 — 0008_add_session_processing_fields (4 nodes, cohesion: 0.50)
+
+- 0008_add_session_processing_fields
+- django.db.migrations
+- django.db.models
+- Migration
 
 ### Community 257 — simple_data_page (4 nodes, cohesion: 0.50)
 
@@ -3231,267 +3237,264 @@
 - package:resume_plus_clean/services/simple_login_service.dart
 - _SimpleDataPageState()
 
-### Community 258 — web_audio_service (4 nodes, cohesion: 0.50)
-
-- web_audio_service
-- package:flutter/foundation.dart
-- _instance()
-- _isPaused()
-
-### Community 259 — create_exercise_service (4 nodes, cohesion: 0.50)
-
-- create_exercise_service
-- django
-- os
-- payments.models.Service
-
-### Community 260 — app_theme (4 nodes, cohesion: 0.50)
-
-- app_theme
-- BorderRadius()
-- package:flutter/material.dart
-- package:google_fonts/google_fonts.dart
-
-### Community 261 — audio_player_widget (4 nodes, cohesion: 0.50)
-
-- audio_player_widget
-- _AudioPlayerWidgetState()
-- package:flutter/material.dart
-- ../services/audio_service.dart
-
-### Community 262 — test_services_endpoint (4 nodes, cohesion: 0.50)
-
-- test_services_endpoint
-- json
-- requests
-- test_services_with_auth()
-
-### Community 263 — 0003_userprofile_reset_code_and_more (4 nodes, cohesion: 0.50)
-
-- 0003_userprofile_reset_code_and_more
-- django.db.migrations
-- django.db.models
-- Migration
-
-### Community 264 — secure_screen_wrapper (4 nodes, cohesion: 0.50)
-
-- secure_screen_wrapper
-- package:flutter/material.dart
-- package:resume_plus_clean/services/screen_security_service.dart
-- _SecureScreenWrapperState()
-
-### Community 265 — test_flutter_api (4 nodes, cohesion: 0.50)
-
-- test_flutter_api
-- lib/services/api_service.dart
-- package:flutter/material.dart
-- main()
-
-### Community 266 — 0008_add_session_processing_fields (4 nodes, cohesion: 0.50)
-
-- 0008_add_session_processing_fields
-- django.db.migrations
-- django.db.models
-- Migration
-
-### Community 267 — 0006_migrate_existing_relations (4 nodes, cohesion: 0.50)
-
-- 0006_migrate_existing_relations
-- django.db.migrations
-- migrate_existing_relations()
-- Migration
-
-### Community 268 — find_courses_endpoint (4 nodes, cohesion: 0.50)
-
-- find_courses_endpoint
-- find_courses_endpoint()
-- json
-- requests
-
-### Community 269 — manage (4 nodes, cohesion: 0.50)
-
-- manage
-- os
-- sys
-- main()
-
-### Community 270 — debug_page (4 nodes, cohesion: 0.50)
-
-- debug_page
-- _DebugPageState()
-- package:dio/dio.dart
-- package:flutter/material.dart
-
-### Community 271 — test_summaries_response (4 nodes, cohesion: 0.50)
-
-- test_summaries_response
-- json
-- requests
-- test_summaries_endpoint()
-
-### Community 272 — 0003_alter_purchase_payment_method_alter_service_currency (4 nodes, cohesion: 0.50)
-
-- 0003_alter_purchase_payment_method_alter_service_currency
-- django.db.migrations
-- django.db.models
-- Migration
-
-### Community 273 — file_helper_io (4 nodes, cohesion: 0.50)
-
-- file_helper_io
-- dart:io
-- dart:typed_data
-- readFileBytes()
-
-### Community 274 — api_error_view (4 nodes, cohesion: 0.50)
-
-- api_error_view
-- package:flutter/material.dart
-- package:resume_plus_clean/exceptions/api_exception.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 275 — test_correct_courses_endpoint (4 nodes, cohesion: 0.50)
-
-- test_correct_courses_endpoint
-- json
-- requests
-- test_correct_courses_endpoint()
-
-### Community 276 — audio_file_player_widget (4 nodes, cohesion: 0.50)
-
-- audio_file_player_widget
-- _AudioFilePlayerWidgetState()
-- package:flutter/material.dart
-- ../services/audio_file_player_service.dart
-
-### Community 277 — 0002_filiere_promotion_universite (4 nodes, cohesion: 0.50)
-
-- 0002_filiere_promotion_universite
-- django.db.migrations
-- django.db.models
-- Migration
-
-### Community 278 — course_tile (4 nodes, cohesion: 0.50)
-
-- course_tile
-- package:flutter/material.dart
-- package:resume_plus_clean/features/course/screens/course_summaries_screen.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 279 — celery (4 nodes, cohesion: 0.50)
-
-- celery
-- debug_task()
-- celery.Celery
-- os
-
-### Community 280 — theme_selector (4 nodes, cohesion: 0.50)
-
-- theme_selector
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/settings/providers/theme_provider.dart
-
-### Community 281 — admin (4 nodes, cohesion: 0.50)
-
-- admin
-- django.contrib.admin
-- .models.SecurityLog
-- SecurityLogAdmin
-
-### Community 282 — theme_provider (4 nodes, cohesion: 0.50)
-
-- theme_provider
-- package:flutter/material.dart
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:shared_preferences/shared_preferences.dart
-
-### Community 283 — apps (4 nodes, cohesion: 0.50)
-
-- apps
-- django.apps.AppConfig
-- PaymentsConfig
-- .ready()
-
-### Community 284 — 0013_make_professeur_optional (4 nodes, cohesion: 0.50)
-
-- 0013_make_professeur_optional
-- django.db.migrations
-- django.db.models
-- Migration
-
-### Community 285 — check_user_profile (4 nodes, cohesion: 0.50)
+### Community 258 — check_user_profile (4 nodes, cohesion: 0.50)
 
 - check_user_profile
 - django
 - django.contrib.auth.models.User
 - os
 
-### Community 286 — simple_login_page (4 nodes, cohesion: 0.50)
+### Community 259 — simple_login_page (4 nodes, cohesion: 0.50)
 
 - simple_login_page
 - package:flutter/material.dart
 - package:resume_plus_clean/services/simple_login_service.dart
 - _SimpleLoginPageState()
 
-### Community 287 — purchase_badge_provider (4 nodes, cohesion: 0.50)
+### Community 260 — celery (4 nodes, cohesion: 0.50)
 
-- purchase_badge_provider
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/services/api_service.dart
-- package:shared_preferences/shared_preferences.dart
+- celery
+- debug_task()
+- celery.Celery
+- os
 
-### Community 288 — test_endpoints_existence (4 nodes, cohesion: 0.50)
-
-- test_endpoints_existence
-- json
-- requests
-- test_all_endpoints()
-
-### Community 289 — 0005_userprofile_profile_picture (4 nodes, cohesion: 0.50)
+### Community 261 — 0005_userprofile_profile_picture (4 nodes, cohesion: 0.50)
 
 - 0005_userprofile_profile_picture
 - django.db.migrations
 - django.db.models
 - Migration
 
-### Community 290 — 0012_add_summary_title_price_to_session (4 nodes, cohesion: 0.50)
+### Community 262 — 0003_alter_purchase_payment_method_alter_service_currency (4 nodes, cohesion: 0.50)
 
-- 0012_add_summary_title_price_to_session
+- 0003_alter_purchase_payment_method_alter_service_currency
 - django.db.migrations
 - django.db.models
 - Migration
 
-### Community 291 — 0004_userprofile_otp_attempts_userprofile_otp_code_and_more (4 nodes, cohesion: 0.50)
+### Community 263 — course_tile (4 nodes, cohesion: 0.50)
+
+- course_tile
+- package:flutter/material.dart
+- package:resume_plus_clean/features/course/screens/course_summaries_screen.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 264 — theme_provider (4 nodes, cohesion: 0.50)
+
+- theme_provider
+- package:flutter/material.dart
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:shared_preferences/shared_preferences.dart
+
+### Community 265 — debug_page (4 nodes, cohesion: 0.50)
+
+- debug_page
+- _DebugPageState()
+- package:dio/dio.dart
+- package:flutter/material.dart
+
+### Community 266 — 0013_make_professeur_optional (4 nodes, cohesion: 0.50)
+
+- 0013_make_professeur_optional
+- django.db.migrations
+- django.db.models
+- Migration
+
+### Community 267 — audio_file_player_widget (4 nodes, cohesion: 0.50)
+
+- audio_file_player_widget
+- _AudioFilePlayerWidgetState()
+- package:flutter/material.dart
+- ../services/audio_file_player_service.dart
+
+### Community 268 — admin (4 nodes, cohesion: 0.50)
+
+- admin
+- django.contrib.admin
+- .models.SecurityLog
+- SecurityLogAdmin
+
+### Community 269 — secure_screen_wrapper (4 nodes, cohesion: 0.50)
+
+- secure_screen_wrapper
+- package:flutter/material.dart
+- package:resume_plus_clean/services/screen_security_service.dart
+- _SecureScreenWrapperState()
+
+### Community 270 — test_summaries_response (4 nodes, cohesion: 0.50)
+
+- test_summaries_response
+- json
+- requests
+- test_summaries_endpoint()
+
+### Community 271 — purchase_badge_provider (4 nodes, cohesion: 0.50)
+
+- purchase_badge_provider
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/services/api_service.dart
+- package:shared_preferences/shared_preferences.dart
+
+### Community 272 — 0004_userprofile_otp_attempts_userprofile_otp_code_and_more (4 nodes, cohesion: 0.50)
 
 - 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
 - django.db.migrations
 - django.db.models
 - Migration
 
-### Community 292 — wsgi (3 nodes, cohesion: 0.67)
+### Community 273 — create_exercise_service (4 nodes, cohesion: 0.50)
 
-- wsgi
-- django.core.wsgi.get_wsgi_application
+- create_exercise_service
+- django
 - os
+- payments.models.Service
 
-### Community 293 — auth_providers (3 nodes, cohesion: 0.67)
+### Community 274 — test_flutter_api (4 nodes, cohesion: 0.50)
 
-- auth_providers
+- test_flutter_api
+- lib/services/api_service.dart
+- package:flutter/material.dart
+- main()
+
+### Community 275 — test_services_endpoint (4 nodes, cohesion: 0.50)
+
+- test_services_endpoint
+- json
+- requests
+- test_services_with_auth()
+
+### Community 276 — 0012_add_summary_title_price_to_session (4 nodes, cohesion: 0.50)
+
+- 0012_add_summary_title_price_to_session
+- django.db.migrations
+- django.db.models
+- Migration
+
+### Community 277 — manage (4 nodes, cohesion: 0.50)
+
+- manage
+- os
+- sys
+- main()
+
+### Community 278 — api_error_view (4 nodes, cohesion: 0.50)
+
+- api_error_view
+- package:flutter/material.dart
+- package:resume_plus_clean/exceptions/api_exception.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 279 — file_helper_io (4 nodes, cohesion: 0.50)
+
+- file_helper_io
+- dart:io
+- dart:typed_data
+- readFileBytes()
+
+### Community 280 — subscription_card (4 nodes, cohesion: 0.50)
+
+- subscription_card
+- package:flutter/material.dart
+- package:intl/intl.dart
+- package:resume_plus_clean/models/abonnement.dart
+
+### Community 281 — find_courses_endpoint (4 nodes, cohesion: 0.50)
+
+- find_courses_endpoint
+- find_courses_endpoint()
+- json
+- requests
+
+### Community 282 — theme_selector (4 nodes, cohesion: 0.50)
+
+- theme_selector
+- package:flutter/material.dart
 - package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/features/auth/repositories/auth_repository.dart
+- package:resume_plus_clean/features/settings/providers/theme_provider.dart
 
-### Community 294 — MainActivity (3 nodes, cohesion: 0.67)
+### Community 283 — test_endpoints_existence (4 nodes, cohesion: 0.50)
 
-- MainActivity
-- io.flutter.embedding.android.FlutterActivity
-- MainActivity
+- test_endpoints_existence
+- json
+- requests
+- test_all_endpoints()
 
-### Community 295 — utils (3 nodes, cohesion: 0.67)
+### Community 284 — apps (4 nodes, cohesion: 0.50)
+
+- apps
+- django.apps.AppConfig
+- PaymentsConfig
+- .ready()
+
+### Community 285 — app_theme (4 nodes, cohesion: 0.50)
+
+- app_theme
+- BorderRadius()
+- package:flutter/material.dart
+- package:google_fonts/google_fonts.dart
+
+### Community 286 — audio_player_widget (4 nodes, cohesion: 0.50)
+
+- audio_player_widget
+- _AudioPlayerWidgetState()
+- package:flutter/material.dart
+- ../services/audio_service.dart
+
+### Community 287 — 0006_migrate_existing_relations (4 nodes, cohesion: 0.50)
+
+- 0006_migrate_existing_relations
+- django.db.migrations
+- migrate_existing_relations()
+- Migration
+
+### Community 288 — 0003_userprofile_reset_code_and_more (4 nodes, cohesion: 0.50)
+
+- 0003_userprofile_reset_code_and_more
+- django.db.migrations
+- django.db.models
+- Migration
+
+### Community 289 — settings_postgresql (3 nodes, cohesion: 0.67)
+
+- settings_postgresql
+- os
+- pathlib.Path
+
+### Community 290 — production_settings (3 nodes, cohesion: 0.67)
+
+- production_settings
+- os
+- .settings
+
+### Community 291 — apps (3 nodes, cohesion: 0.67)
+
+- apps
+- django.apps.AppConfig
+- UsersConfig
+
+### Community 292 — api_exception (3 nodes, cohesion: 0.67)
+
+- api_exception
+- ApiExceptionType
+- package:dio/dio.dart
+
+### Community 293 — utils (3 nodes, cohesion: 0.67)
 
 - utils
 - string
 - vector
+
+### Community 294 — upload_screen (3 nodes, cohesion: 0.67)
+
+- upload_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart
+
+### Community 295 — api_service copy (3 nodes, cohesion: 0.67)
+
+- api_service copy
+- package:dio/dio.dart
+- package:resume_plus_clean/services/storage_service.dart
 
 ### Community 296 — user (3 nodes, cohesion: 0.67)
 
@@ -3499,125 +3502,125 @@
 - groupe()
 - id()
 
-### Community 297 — main (3 nodes, cohesion: 0.67)
-
-- main
-- my_application.h
-- main()
-
-### Community 298 — api_service copy (3 nodes, cohesion: 0.67)
-
-- api_service copy
-- package:dio/dio.dart
-- package:resume_plus_clean/services/storage_service.dart
-
-### Community 299 — api_exception (3 nodes, cohesion: 0.67)
-
-- api_exception
-- ApiExceptionType
-- package:dio/dio.dart
-
-### Community 300 — upload_screen (3 nodes, cohesion: 0.67)
-
-- upload_screen
-- package:flutter/material.dart
-- package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart
-
-### Community 301 — terms_of_service_screen (3 nodes, cohesion: 0.67)
-
-- terms_of_service_screen
-- package:flutter/material.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 302 — privacy_policy_screen (3 nodes, cohesion: 0.67)
-
-- privacy_policy_screen
-- package:flutter/material.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 303 — apps (3 nodes, cohesion: 0.67)
-
-- apps
-- CoursesConfig
-- django.apps.AppConfig
-
-### Community 304 — exercise_urls (3 nodes, cohesion: 0.67)
-
-- exercise_urls
-- django.urls.path
-- ..exercise_views
-
-### Community 305 — demo_data_service (3 nodes, cohesion: 0.67)
-
-- demo_data_service
-- package:resume_plus_clean/models/summary.dart'
-- _instance()
-
-### Community 306 — about_screen (3 nodes, cohesion: 0.67)
-
-- about_screen
-- package:flutter/material.dart
-- package:resume_plus_clean/theme/app_theme.dart
-
-### Community 307 — apps (3 nodes, cohesion: 0.67)
-
-- apps
-- django.apps.AppConfig
-- UsersConfig
-
-### Community 308 — settings_postgresql (3 nodes, cohesion: 0.67)
-
-- settings_postgresql
-- os
-- pathlib.Path
-
-### Community 309 — snackbar_service (3 nodes, cohesion: 0.67)
-
-- snackbar_service
-- package:flutter/material.dart
-- _scaffoldMessengerKey()
-
-### Community 310 — apps (3 nodes, cohesion: 0.67)
-
-- apps
-- django.apps.AppConfig
-- NotificationsConfig
-
-### Community 311 — purchased_summaries_provider (3 nodes, cohesion: 0.67)
-
-- purchased_summaries_provider
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/services/api_service.dart
-
-### Community 312 — production_settings (3 nodes, cohesion: 0.67)
-
-- production_settings
-- os
-- .settings
-
-### Community 313 — apps (3 nodes, cohesion: 0.67)
+### Community 297 — apps (3 nodes, cohesion: 0.67)
 
 - apps
 - django.apps.AppConfig
 - SecurityConfig
 
-### Community 314 — file_helper_stub (3 nodes, cohesion: 0.67)
+### Community 298 — purchased_summaries_provider (3 nodes, cohesion: 0.67)
 
-- file_helper_stub
-- dart:typed_data
-- readFileBytes()
+- purchased_summaries_provider
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/services/api_service.dart
 
-### Community 315 — 0015_merge_20260523_2104 (3 nodes, cohesion: 0.67)
+### Community 299 — api_provider (3 nodes, cohesion: 0.67)
+
+- api_provider
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/services/api_service.dart
+
+### Community 300 — main (3 nodes, cohesion: 0.67)
+
+- main
+- my_application.h
+- main()
+
+### Community 301 — MainActivity (3 nodes, cohesion: 0.67)
+
+- MainActivity
+- io.flutter.embedding.android.FlutterActivity
+- MainActivity
+
+### Community 302 — demo_data_service (3 nodes, cohesion: 0.67)
+
+- demo_data_service
+- package:resume_plus_clean/models/summary.dart'
+- _instance()
+
+### Community 303 — 0015_merge_20260523_2104 (3 nodes, cohesion: 0.67)
 
 - 0015_merge_20260523_2104
 - django.db.migrations
 - Migration
 
-### Community 316 — test_seed_creation (3 nodes, cohesion: 0.67)
+### Community 304 — file_helper_stub (3 nodes, cohesion: 0.67)
+
+- file_helper_stub
+- dart:typed_data
+- readFileBytes()
+
+### Community 305 — test_local_server (3 nodes, cohesion: 0.67)
+
+- test_local_server
+- requests
+- quick_test()
+
+### Community 306 — terms_of_service_screen (3 nodes, cohesion: 0.67)
+
+- terms_of_service_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 307 — wsgi (3 nodes, cohesion: 0.67)
+
+- wsgi
+- django.core.wsgi.get_wsgi_application
+- os
+
+### Community 308 — exercise_urls (3 nodes, cohesion: 0.67)
+
+- exercise_urls
+- django.urls.path
+- ..exercise_views
+
+### Community 309 — about_screen (3 nodes, cohesion: 0.67)
+
+- about_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 310 — urls (3 nodes, cohesion: 0.67)
+
+- urls
+- django.urls.path
+- ..views
+
+### Community 311 — urls (3 nodes, cohesion: 0.67)
+
+- urls
+- django.urls.path
+- ..views
+
+### Community 312 — privacy_policy_screen (3 nodes, cohesion: 0.67)
+
+- privacy_policy_screen
+- package:flutter/material.dart
+- package:resume_plus_clean/theme/app_theme.dart
+
+### Community 313 — test_seed_creation (3 nodes, cohesion: 0.67)
 
 - test_seed_creation
 - pymysql
 - test_database_content()
+
+### Community 314 — auth_providers (3 nodes, cohesion: 0.67)
+
+- auth_providers
+- package:flutter_riverpod/flutter_riverpod.dart
+- package:resume_plus_clean/features/auth/repositories/auth_repository.dart
+
+### Community 315 — apps (3 nodes, cohesion: 0.67)
+
+- apps
+- django.apps.AppConfig
+- NotificationsConfig
+
+### Community 316 — snackbar_service (3 nodes, cohesion: 0.67)
+
+- snackbar_service
+- package:flutter/material.dart
+- _scaffoldMessengerKey()
 
 ### Community 317 — urls (3 nodes, cohesion: 0.67)
 
@@ -3625,156 +3628,138 @@
 - django.urls.path
 - ..views
 
-### Community 318 — test_local_server (3 nodes, cohesion: 0.67)
+### Community 318 — apps (3 nodes, cohesion: 0.67)
 
-- test_local_server
-- requests
-- quick_test()
+- apps
+- CoursesConfig
+- django.apps.AppConfig
 
-### Community 319 — urls (3 nodes, cohesion: 0.67)
-
-- urls
-- django.urls.path
-- ..views
-
-### Community 320 — urls (3 nodes, cohesion: 0.67)
-
-- urls
-- django.urls.path
-- ..views
-
-### Community 321 — api_provider (3 nodes, cohesion: 0.67)
-
-- api_provider
-- package:flutter_riverpod/flutter_riverpod.dart
-- package:resume_plus_clean/services/api_service.dart
-
-### Community 322 — __init__ (2 nodes, cohesion: 1.00)
-
-- __init__
-- .celery.app
-
-### Community 323 — course (2 nodes, cohesion: 1.00)
-
-- course
-- id()
-
-### Community 324 — flutter_usage_example (2 nodes, cohesion: 1.00)
-
-- flutter_usage_example
-- testAuthentication()
-
-### Community 325 — abonnement (2 nodes, cohesion: 1.00)
-
-- abonnement
-- id()
-
-### Community 326 — my_application (2 nodes, cohesion: 1.00)
-
-- my_application
-- gtk/gtk.h
-
-### Community 327 — generated_plugin_registrant (2 nodes, cohesion: 1.00)
-
-- generated_plugin_registrant
-- flutter/plugin_registry.h
-
-### Community 328 — gunicorn.conf (2 nodes, cohesion: 1.00)
-
-- gunicorn.conf
-- multiprocessing
-
-### Community 329 — generated_plugin_registrant (2 nodes, cohesion: 1.00)
-
-- generated_plugin_registrant
-- flutter_linux/flutter_linux.h
-
-### Community 330 — payment_method (2 nodes, cohesion: 1.00)
-
-- payment_method
-- PaymentMethodType
-
-### Community 331 — service (2 nodes, cohesion: 1.00)
-
-- service
-- id()
-
-### Community 332 — api_service_debug (2 nodes, cohesion: 1.00)
-
-- api_service_debug
-- package:dio/dio.dart
-
-### Community 333 — professeur (2 nodes, cohesion: 1.00)
-
-- professeur
-- id()
-
-### Community 334 — simple_seed (2 nodes, cohesion: 1.00)
-
-- simple_seed
-- pymysql
-
-### Community 335 — logger (2 nodes, cohesion: 1.00)
-
-- logger
-- package:flutter/foundation.dart
-
-### Community 336 — badge_icon (2 nodes, cohesion: 1.00)
+### Community 319 — badge_icon (2 nodes, cohesion: 1.00)
 
 - badge_icon
 - package:flutter/material.dart
 
-### Community 337 — exercise (1 nodes, cohesion: 1.00)
+### Community 320 — __init__ (2 nodes, cohesion: 1.00)
 
-- exercise
+- __init__
+- .celery.app
 
-### Community 338 — promotion (1 nodes, cohesion: 1.00)
+### Community 321 — service (2 nodes, cohesion: 1.00)
 
-- promotion
+- service
+- id()
 
-### Community 339 — filiere (1 nodes, cohesion: 1.00)
+### Community 322 — flutter_usage_example (2 nodes, cohesion: 1.00)
+
+- flutter_usage_example
+- testAuthentication()
+
+### Community 323 — generated_plugin_registrant (2 nodes, cohesion: 1.00)
+
+- generated_plugin_registrant
+- flutter_linux/flutter_linux.h
+
+### Community 324 — my_application (2 nodes, cohesion: 1.00)
+
+- my_application
+- gtk/gtk.h
+
+### Community 325 — simple_seed (2 nodes, cohesion: 1.00)
+
+- simple_seed
+- pymysql
+
+### Community 326 — professeur (2 nodes, cohesion: 1.00)
+
+- professeur
+- id()
+
+### Community 327 — payment_method (2 nodes, cohesion: 1.00)
+
+- payment_method
+- PaymentMethodType
+
+### Community 328 — api_service_debug (2 nodes, cohesion: 1.00)
+
+- api_service_debug
+- package:dio/dio.dart
+
+### Community 329 — gunicorn.conf (2 nodes, cohesion: 1.00)
+
+- gunicorn.conf
+- multiprocessing
+
+### Community 330 — course (2 nodes, cohesion: 1.00)
+
+- course
+- id()
+
+### Community 331 — generated_plugin_registrant (2 nodes, cohesion: 1.00)
+
+- generated_plugin_registrant
+- flutter/plugin_registry.h
+
+### Community 332 — abonnement (2 nodes, cohesion: 1.00)
+
+- abonnement
+- id()
+
+### Community 333 — logger (2 nodes, cohesion: 1.00)
+
+- logger
+- package:flutter/foundation.dart
+
+### Community 334 — resource (1 nodes, cohesion: 1.00)
+
+- resource
+
+### Community 335 — filiere (1 nodes, cohesion: 1.00)
 
 - filiere
+
+### Community 336 — sw (1 nodes, cohesion: 1.00)
+
+- sw
+
+### Community 337 — purchase (1 nodes, cohesion: 1.00)
+
+- purchase
+
+### Community 338 — summary (1 nodes, cohesion: 1.00)
+
+- summary
+
+### Community 339 — GeneratedPluginRegistrant (1 nodes, cohesion: 1.00)
+
+- GeneratedPluginRegistrant
 
 ### Community 340 — app_notification (1 nodes, cohesion: 1.00)
 
 - app_notification
 
-### Community 341 — purchase (1 nodes, cohesion: 1.00)
+### Community 341 — universite (1 nodes, cohesion: 1.00)
 
-- purchase
+- universite
 
 ### Community 342 — GeneratedPluginRegistrant (1 nodes, cohesion: 1.00)
 
 - GeneratedPluginRegistrant
 
-### Community 343 — summary (1 nodes, cohesion: 1.00)
+### Community 343 — Runner-Bridging-Header (1 nodes, cohesion: 1.00)
 
-- summary
+- Runner-Bridging-Header
 
-### Community 344 — universite (1 nodes, cohesion: 1.00)
-
-- universite
-
-### Community 345 — __init__ (1 nodes, cohesion: 1.00)
+### Community 344 — __init__ (1 nodes, cohesion: 1.00)
 
 - __init__
 
-### Community 346 — resource (1 nodes, cohesion: 1.00)
+### Community 345 — promotion (1 nodes, cohesion: 1.00)
 
-- resource
+- promotion
 
-### Community 347 — sw (1 nodes, cohesion: 1.00)
+### Community 346 — exercise (1 nodes, cohesion: 1.00)
 
-- sw
-
-### Community 348 — GeneratedPluginRegistrant (1 nodes, cohesion: 1.00)
-
-- GeneratedPluginRegistrant
-
-### Community 349 — Runner-Bridging-Header (1 nodes, cohesion: 1.00)
-
-- Runner-Bridging-Header
+- exercise
 
 ## 🕳️ Knowledge Gaps
 
@@ -3799,19 +3784,19 @@
 
 | File | Tokens |
 |------|--------|
-| input | 0 |
 | output | 0 |
+| input | 0 |
 | **Total** | **0** |
 
 ## ❓ Suggested Questions
 
-1. How does 'backend_users_tests_py' relate to 3 different communities (AuthAPITest, SubscriptionExpirationTest, tests)?
-1. How does 'backend_courses_audio_processing_py_audioprocessor' relate to 3 different communities (AudioProcessor, audio_processing, ._clean_transcript())?
-1. How does 'backend_notifications_test_payment_notifications_py' relate to 3 different communities (test_payment_notifications, PurchaseNotificationTest, SubscriptionNotificationTest)?
+1. How does 'backend_notifications_test_payment_notifications_py' relate to 3 different communities (SubscriptionNotificationTest, PurchaseNotificationTest, test_payment_notifications)?
+1. How does 'backend_users_tests_py' relate to 3 different communities (tests, SubscriptionExpirationTest, AuthAPITest)?
+1. How does 'backend_courses_admin_py' relate to 3 different communities (admin, ExerciseAdmin, ProfesseurFilieresAdmin)?
+1. How does 'backend_courses_admin_py_professeuradmin_get_queryset' relate to 3 different communities (ExerciseAdmin, ProfesseurFilieresAdmin, admin)?
 1. Can you verify the inferred relationships of 'Destroy()' (degree 43)?
 1. Can you verify the inferred relationships of 'Create()' (degree 42)?
 1. Can you verify the inferred relationships of 'MessageHandler()' (degree 41)?
-1. What role does 'purchase' play? It has no connections in the graph.
 
 ---
 _Generated by graphify-rs_

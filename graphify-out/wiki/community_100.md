@@ -1,27 +1,27 @@
-# Community 100: record_audio_screen_web_safe
+# Community 100: web_audio_recorder
 
 **Members:** 9
 
 ## Nodes
 
-- **record_audio_screen_web_safe** (`lib_features_upload_screens_record_audio_screen_web_safe_dart`, File, degree: 8)
-- **package:flutter/foundation.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/course_selection_screen.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_RecordAudioScreenWebSafeState()** (`lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate`, Function, degree: 1)
+- **web_audio_recorder** (`lib_services_web_audio_recorder_dart`, File, degree: 8)
+- **dart:async** (`lib_services_web_audio_recorder_dart_import_dart_async`, Module, degree: 1)
+- **dart:typed_data** (`lib_services_web_audio_recorder_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_web_audio_recorder_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_web_audio_recorder_dart_instance`, Function, degree: 1)
+- **_isPaused()** (`lib_services_web_audio_recorder_dart_ispaused`, Function, degree: 1)
+- **_isRecording()** (`lib_services_web_audio_recorder_dart_isrecording`, Function, degree: 1)
+- **kIsWeb()** (`lib_services_web_audio_recorder_dart_kisweb`, Function, degree: 1)
+- **_recordingStartTime()** (`lib_services_web_audio_recorder_dart_recordingstarttime`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_models_course_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_features_upload_screens_course_selection_screen_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_upload_screens_record_audio_screen_web_safe_dart → lib_features_upload_screens_record_audio_screen_web_safe_dart_recordaudioscreenwebsafestate (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_dart_async (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_dart_typed_data (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_instance (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_kisweb (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_isrecording (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_ispaused (defines)
+- lib_services_web_audio_recorder_dart → lib_services_web_audio_recorder_dart_recordingstarttime (defines)
 

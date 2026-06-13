@@ -1,8 +1,8 @@
-# Community 337: exercise
+# Community 337: purchase
 
 **Members:** 1
 
 ## Nodes
 
-- **exercise** (`lib_models_exercise_dart`, File, degree: 0)
+- **purchase** (`lib_models_purchase_dart`, File, degree: 0)
 

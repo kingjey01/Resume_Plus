@@ -1,19 +1,19 @@
-# Community 246: diagnostic_complet
+# Community 246: test_simple_page
 
 **Members:** 5
 
 ## Nodes
 
-- **diagnostic_complet** (`backend_diagnostic_complet_py`, File, degree: 12)
-- **datetime** (`backend_diagnostic_complet_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_diagnostic_complet_py_import_json`, Module, degree: 1)
-- **jwt** (`backend_diagnostic_complet_py_import_jwt`, Module, degree: 1)
-- **requests** (`backend_diagnostic_complet_py_import_requests`, Module, degree: 1)
+- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
+- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
+- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_requests (imports)
-- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_json (imports)
-- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_jwt (imports)
-- backend_diagnostic_complet_py → backend_diagnostic_complet_py_import_datetime (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
+- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
 

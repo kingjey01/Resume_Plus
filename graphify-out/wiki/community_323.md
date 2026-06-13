@@ -1,13 +1,13 @@
-# Community 323: course
+# Community 323: generated_plugin_registrant
 
 **Members:** 2
 
 ## Nodes
 
-- **course** (`lib_models_course_dart`, File, degree: 1)
-- **id()** (`lib_models_course_dart_id`, Function, degree: 1)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_h`, File, degree: 1)
+- **flutter_linux/flutter_linux.h** (`linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_course_dart → lib_models_course_dart_id (defines)
+- linux_flutter_generated_plugin_registrant_h → linux_flutter_generated_plugin_registrant_h_import_flutter_linux_flutter_linux_h (imports)
 

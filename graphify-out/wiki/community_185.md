@@ -1,21 +1,21 @@
-# Community 185: flutter_window
+# Community 185: 0017_universite_filieres_m2m
 
 **Members:** 6
 
 ## Nodes
 
-- **flutter_window** (`windows_runner_flutter_window_h`, File, degree: 5)
-- **FlutterWindow()** (`windows_runner_flutter_window_h_flutterwindow`, Function, degree: 1)
-- **flutter/dart_project.h** (`windows_runner_flutter_window_h_import_flutter_dart_project_h`, Module, degree: 1)
-- **flutter/flutter_view_controller.h** (`windows_runner_flutter_window_h_import_flutter_flutter_view_controller_h`, Module, degree: 1)
-- **memory** (`windows_runner_flutter_window_h_import_memory`, Module, degree: 1)
-- **win32_window.h** (`windows_runner_flutter_window_h_import_win32_window_h`, Module, degree: 1)
+- **0017_universite_filieres_m2m** (`backend_courses_migrations_0017_universite_filieres_m2m_py`, File, degree: 5)
+- **copy_universite_filiere_to_m2m()** (`backend_courses_migrations_0017_universite_filieres_m2m_py_copy_universite_filiere_to_m2m`, Function, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0017_universite_filieres_m2m_py_migration`, Class, degree: 1)
+- **restore_universite_filiere_from_m2m()** (`backend_courses_migrations_0017_universite_filieres_m2m_py_restore_universite_filiere_from_m2m`, Function, degree: 1)
 
 ## Relationships
 
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_flutter_dart_project_h (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_flutter_flutter_view_controller_h (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_memory (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_import_win32_window_h (imports)
-- windows_runner_flutter_window_h → windows_runner_flutter_window_h_flutterwindow (defines)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_models (imports)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_copy_universite_filiere_to_m2m (defines)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_restore_universite_filiere_from_m2m (defines)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_migration (defines)
 

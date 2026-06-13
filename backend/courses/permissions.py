@@ -215,7 +215,7 @@ class HasActiveSubscription(permissions.BasePermission):
         from django.utils import timezone
 
         now = timezone.now()
-        exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+        exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
         if not exercise_service:
             return False
 

@@ -1,17 +1,17 @@
-# Community 283: apps
+# Community 283: test_endpoints_existence
 
 **Members:** 4
 
 ## Nodes
 
-- **apps** (`backend_payments_apps_py`, File, degree: 2)
-- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
-- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
-- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
+- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
+- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
+- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
-- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
-- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
+- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
 

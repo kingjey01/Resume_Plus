@@ -45,7 +45,7 @@ class SummaryCard extends StatelessWidget {
             children: [
               // Image / placeholder avec gradient
               Container(
-                height: 90,
+                height: 80,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   gradient: LinearGradient(

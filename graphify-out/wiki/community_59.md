@@ -1,31 +1,36 @@
-# Community 59: generated_plugin_registrant
+# Community 59: check_permissions_detailed
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_cc`, File, degree: 10)
-- **audioplayers_windows/audioplayers_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h`, Module, degree: 1)
-- **file_selector_windows/file_selector_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h`, Module, degree: 1)
-- **firebase_core/firebase_core_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h`, Module, degree: 1)
-- **flutter_secure_storage_windows/flutter_secure_storage_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h`, Module, degree: 1)
-- **flutter_tts/flutter_tts_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h`, Module, degree: 1)
-- **generated_plugin_registrant.h** (`windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
-- **permission_handler_windows/permission_handler_windows_plugin.h** (`windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h`, Module, degree: 1)
-- **record_windows/record_windows_plugin_c_api.h** (`windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h`, Module, degree: 1)
-- **url_launcher_windows/url_launcher_windows.h** (`windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h`, Module, degree: 1)
-- **RegisterPlugins()** (`windows_flutter_generated_plugin_registrant_cc_registerplugins`, Function, degree: 1)
+- **check_permissions_detailed** (`backend_check_permissions_detailed_py`, File, degree: 11)
+- **check_file_permissions()** (`backend_check_permissions_detailed_py_check_file_permissions`, Function, degree: 2)
+- **check_write_permission()** (`backend_check_permissions_detailed_py_check_write_permission`, Function, degree: 2)
+- **get_current_user_info()** (`backend_check_permissions_detailed_py_get_current_user_info`, Function, degree: 2)
+- **django** (`backend_check_permissions_detailed_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_check_permissions_detailed_py_import_django_conf_settings`, Module, degree: 1)
+- **grp** (`backend_check_permissions_detailed_py_import_grp`, Module, degree: 1)
+- **os** (`backend_check_permissions_detailed_py_import_os`, Module, degree: 1)
+- **pwd** (`backend_check_permissions_detailed_py_import_pwd`, Module, degree: 1)
+- **stat** (`backend_check_permissions_detailed_py_import_stat`, Module, degree: 1)
+- **sys** (`backend_check_permissions_detailed_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_check_permissions_detailed_py_main`, Function, degree: 4)
 
 ## Relationships
 
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_audioplayers_windows_audioplayers_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_file_selector_windows_file_selector_windows_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_firebase_core_firebase_core_plugin_c_api_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_windows_flutter_secure_storage_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_flutter_tts_flutter_tts_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_permission_handler_windows_permission_handler_windows_plugin_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_record_windows_record_windows_plugin_c_api_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_import_url_launcher_windows_url_launcher_windows_h (imports)
-- windows_flutter_generated_plugin_registrant_cc → windows_flutter_generated_plugin_registrant_cc_registerplugins (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_os (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_sys (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_django (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_pwd (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_grp (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_stat (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_django_conf_settings (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_check_file_permissions (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_check_write_permission (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_get_current_user_info (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_main (defines)
+- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_check_write_permission (calls)
+- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_check_file_permissions (calls)
+- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_get_current_user_info (calls)
 

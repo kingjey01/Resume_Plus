@@ -1,35 +1,27 @@
-# Community 101: DeepgramService
+# Community 101: notification_service
 
 **Members:** 9
 
 ## Nodes
 
-- **DeepgramService** (`backend_courses_deepgram_service_py_deepgramservice`, Class, degree: 9)
-- **._extract_confidence()** (`backend_courses_deepgram_service_py_deepgramservice_extract_confidence`, Method, degree: 3)
-- **._extract_transcript()** (`backend_courses_deepgram_service_py_deepgramservice_extract_transcript`, Method, degree: 3)
-- **._extract_words()** (`backend_courses_deepgram_service_py_deepgramservice_extract_words`, Method, degree: 2)
-- **._get_mime_type()** (`backend_courses_deepgram_service_py_deepgramservice_get_mime_type`, Method, degree: 2)
-- **.__init__()** (`backend_courses_deepgram_service_py_deepgramservice_init`, Method, degree: 1)
-- **.is_configured()** (`backend_courses_deepgram_service_py_deepgramservice_is_configured`, Method, degree: 3)
-- **.transcribe_bytes()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes`, Method, degree: 4)
-- **.transcribe_file()** (`backend_courses_deepgram_service_py_deepgramservice_transcribe_file`, Method, degree: 6)
+- **notification_service** (`lib_services_notification_service_dart`, File, degree: 8)
+- **dart:async** (`lib_services_notification_service_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_notification_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/utils/logger.dart** (`lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_notification_service_dart_instance`, Function, degree: 1)
+- **_poll()** (`lib_services_notification_service_dart_poll`, Function, degree: 1)
+- **_unreadCount()** (`lib_services_notification_service_dart_unreadcount`, Function, degree: 1)
+- **_updateCount()** (`lib_services_notification_service_dart_updatecount`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_init (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_is_configured (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_file (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (defines)
-- backend_courses_deepgram_service_py_deepgramservice → backend_courses_deepgram_service_py_deepgramservice_extract_words (defines)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_get_mime_type (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_words (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_file → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_is_configured (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_transcript (calls)
-- backend_courses_deepgram_service_py_deepgramservice_transcribe_bytes → backend_courses_deepgram_service_py_deepgramservice_extract_confidence (calls)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_dart_async (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_instance (defines)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_unreadcount (defines)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_poll (defines)
+- lib_services_notification_service_dart → lib_services_notification_service_dart_updatecount (defines)
 

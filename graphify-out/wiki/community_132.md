@@ -1,28 +1,25 @@
-# Community 132: AuthAPITest
+# Community 132: migrate_courses_to_fk
 
 **Members:** 8
 
 ## Nodes
 
-- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
-- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
-- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
-- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
-- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
-- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
-- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
-- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
+- **migrate_courses_to_fk** (`backend_scripts_migrate_courses_to_fk_py`, File, degree: 7)
+- **courses.models.Course** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_scripts_migrate_courses_to_fk_py_import_django`, Module, degree: 1)
+- **os** (`backend_scripts_migrate_courses_to_fk_py_import_os`, Module, degree: 1)
+- **migrate_courses()** (`backend_scripts_migrate_courses_to_fk_py_migrate_courses`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
-- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
-- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
-- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_os (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_django (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_course (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_universite (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_filiere (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_import_courses_models_promotion (imports)
+- backend_scripts_migrate_courses_to_fk_py → backend_scripts_migrate_courses_to_fk_py_migrate_courses (defines)
 

@@ -1,27 +1,31 @@
-# Community 94: purchase_summary_screen
+# Community 94: debug_api_calls
 
 **Members:** 9
 
 ## Nodes
 
-- **purchase_summary_screen** (`lib_features_purchases_screens_purchase_summary_screen_dart`, File, degree: 8)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchaseSummaryScreenState()** (`lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate`, Function, degree: 1)
+- **debug_api_calls** (`backend_debug_api_calls_py`, File, degree: 8)
+- **check_django_urls()** (`backend_debug_api_calls_py_check_django_urls`, Function, degree: 2)
+- **generate_flutter_debug_code()** (`backend_debug_api_calls_py_generate_flutter_debug_code`, Function, degree: 2)
+- **datetime** (`backend_debug_api_calls_py_import_datetime`, Module, degree: 1)
+- **json** (`backend_debug_api_calls_py_import_json`, Module, degree: 1)
+- **requests** (`backend_debug_api_calls_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_debug_api_calls_py_main`, Function, degree: 5)
+- **simulate_flutter_calls()** (`backend_debug_api_calls_py_simulate_flutter_calls`, Function, degree: 2)
+- **test_all_possible_urls()** (`backend_debug_api_calls_py_test_all_possible_urls`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
-- lib_features_purchases_screens_purchase_summary_screen_dart → lib_features_purchases_screens_purchase_summary_screen_dart_purchasesummaryscreenstate (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_requests (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_json (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_import_datetime (imports)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_test_all_possible_urls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_simulate_flutter_calls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_check_django_urls (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_generate_flutter_debug_code (defines)
+- backend_debug_api_calls_py → backend_debug_api_calls_py_main (defines)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_simulate_flutter_calls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_check_django_urls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_test_all_possible_urls (calls)
+- backend_debug_api_calls_py_main → backend_debug_api_calls_py_generate_flutter_debug_code (calls)
 

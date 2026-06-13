@@ -1,17 +1,17 @@
-# Community 284: 0013_make_professeur_optional
+# Community 284: apps
 
 **Members:** 4
 
 ## Nodes
 
-- **0013_make_professeur_optional** (`backend_courses_migrations_0013_make_professeur_optional_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0013_make_professeur_optional_py_migration`, Class, degree: 1)
+- **apps** (`backend_payments_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
+- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_import_django_db_models (imports)
-- backend_courses_migrations_0013_make_professeur_optional_py → backend_courses_migrations_0013_make_professeur_optional_py_migration (defines)
+- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
+- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
+- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
 

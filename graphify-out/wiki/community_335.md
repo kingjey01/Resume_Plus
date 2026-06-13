@@ -1,13 +1,8 @@
-# Community 335: logger
+# Community 335: filiere
 
-**Members:** 2
+**Members:** 1
 
 ## Nodes
 
-- **logger** (`lib_utils_logger_dart`, File, degree: 1)
-- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-
-## Relationships
-
-- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
+- **filiere** (`lib_models_filiere_dart`, File, degree: 0)
 

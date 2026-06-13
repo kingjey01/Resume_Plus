@@ -1,15 +1,15 @@
-# Community 301: terms_of_service_screen
+# Community 301: MainActivity
 
 **Members:** 3
 
 ## Nodes
 
-- **terms_of_service_screen** (`lib_features_settings_screens_terms_of_service_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
+- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
 

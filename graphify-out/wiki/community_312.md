@@ -1,15 +1,15 @@
-# Community 312: production_settings
+# Community 312: privacy_policy_screen
 
 **Members:** 3
 
 ## Nodes
 
-- **production_settings** (`backend_production_settings_py`, File, degree: 2)
-- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
-- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
+- **privacy_policy_screen** (`lib_features_settings_screens_privacy_policy_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
-- backend_production_settings_py → backend_production_settings_py_import_os (imports)
+- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

@@ -1,25 +1,25 @@
-# Community 131: audio_service
+# Community 131: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **audio_service** (`lib_services_audio_service_dart`, File, degree: 7)
-- **_currentText()** (`lib_services_audio_service_dart_currenttext`, Function, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_tts/flutter_tts.dart** (`lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart`, Module, degree: 1)
-- **web_audio_service.dart** (`lib_services_audio_service_dart_import_web_audio_service_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_audio_service_dart_instance`, Function, degree: 1)
-- **_isInitialized()** (`lib_services_audio_service_dart_isinitialized`, Function, degree: 1)
-- **_isPaused()** (`lib_services_audio_service_dart_ispaused`, Function, degree: 1)
+- **admin** (`backend_payments_admin_py`, File, degree: 7)
+- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
+- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
+- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
+- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
+- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart (imports)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_import_web_audio_service_dart (imports)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_instance (defines)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_isinitialized (defines)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_ispaused (defines)
-- lib_services_audio_service_dart → lib_services_audio_service_dart_currenttext (defines)
+- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
+- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
+- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
+- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
 

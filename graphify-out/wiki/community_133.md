@@ -1,25 +1,25 @@
-# Community 133: check_db_encoding
+# Community 133: manual_entry_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
-- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
-- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
-- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
-- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
+- **manual_entry_screen** (`lib_features_upload_screens_manual_entry_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/course.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/professeur.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_ManualEntryScreenState()** (`lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_course_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_models_professeur_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_manual_entry_screen_dart → lib_features_upload_screens_manual_entry_screen_dart_manualentryscreenstate (defines)
 

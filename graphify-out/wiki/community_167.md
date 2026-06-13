@@ -1,23 +1,23 @@
-# Community 167: settings_production
+# Community 167: main
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_production** (`backend_settings_production_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_production_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_production_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_production_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_production_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_production_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_production_py_import_pymysql`, Module, degree: 1)
+- **main** (`windows_runner_main_cpp`, File, degree: 6)
+- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
+- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
+- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
 
 ## Relationships
 
-- backend_settings_production_py → backend_settings_production_py_import_pathlib_path (imports)
-- backend_settings_production_py → backend_settings_production_py_import_datetime_timedelta (imports)
-- backend_settings_production_py → backend_settings_production_py_import_decouple_config (imports)
-- backend_settings_production_py → backend_settings_production_py_import_decouple_csv (imports)
-- backend_settings_production_py → backend_settings_production_py_import_os (imports)
-- backend_settings_production_py → backend_settings_production_py_import_pymysql (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
 

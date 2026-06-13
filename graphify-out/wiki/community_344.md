@@ -1,8 +1,8 @@
-# Community 344: universite
+# Community 344: __init__
 
 **Members:** 1
 
 ## Nodes
 
-- **universite** (`lib_models_universite_dart`, File, degree: 0)
+- **__init__** (`backend_courses_management_commands_init_py`, File, degree: 0)
 
