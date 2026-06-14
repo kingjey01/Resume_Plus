@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:resume_plus_clean/models/exercise.dart';
 import 'package:resume_plus_clean/services/api_service.dart';
+import 'package:resume_plus_clean/features/exercises/screens/exercise_quiz_screen.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/widgets/secure_screen_wrapper.dart';
 
 class ExerciseResultScreen extends StatefulWidget {
   final ExerciseResult result;
-  final int summaryId;
-  final String difficulty;
+  final int? summaryId;
+  final String? difficulty;
 
   const ExerciseResultScreen({
     super.key,
     required this.result,
-    required this.summaryId,
-    required this.difficulty,
+    this.summaryId,
+    this.difficulty,
   });
 
   @override
@@ -28,7 +29,7 @@ class _ExerciseResultScreenState extends State<ExerciseResultScreen> {
     setState(() => _isRegenerating = true);
     try {
       final data = await _apiService.generateExercise(
-        widget.summaryId,
+        widget.summaryId!,
         difficulty: widget.difficulty,
         forceRegenerate: true,
       );
@@ -78,9 +79,9 @@ class _ExerciseResultScreenState extends State<ExerciseResultScreen> {
               MaterialPageRoute(
                 builder: (_) => ExerciseQuizScreen(
                   exerciseId: exerciseId,
-                  exerciseTitle: 'QCM - ${widget.difficulty.toUpperCase()}',
-                  summaryId: widget.summaryId,
-                  difficulty: widget.difficulty,
+                  exerciseTitle: 'QCM - ${widget.difficulty!.toUpperCase()}',
+                  summaryId: widget.summaryId!,
+                  difficulty: widget.difficulty!,
                 ),
               ),
             );
@@ -218,24 +219,26 @@ class _ExerciseResultScreenState extends State<ExerciseResultScreen> {
             child: SafeArea(
               child: Column(
                 children: [
-                  // Bouton Régénérer
-                  SizedBox(
-                    width: double.infinity,
-                    child: ElevatedButton.icon(
-                      onPressed: _isRegenerating ? null : _regenerateExercise,
-                      icon: _isRegenerating
-                          ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
-                          : const Icon(Icons.refresh_rounded, size: 20),
-                      label: Text(_isRegenerating ? 'Génération en cours...' : 'Régénérer un nouvel exercice'),
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: AppTheme.primaryBlue,
-                        foregroundColor: Colors.white,
-                        padding: const EdgeInsets.symmetric(vertical: 16),
-                        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                  // Bouton Régénérer (seulement si summaryId et difficulty sont disponibles)
+                  if (widget.summaryId != null && widget.difficulty != null)
+                    SizedBox(
+                      width: double.infinity,
+                      child: ElevatedButton.icon(
+                        onPressed: _isRegenerating ? null : _regenerateExercise,
+                        icon: _isRegenerating
+                            ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
+                            : const Icon(Icons.refresh_rounded, size: 20),
+                        label: Text(_isRegenerating ? 'Génération en cours...' : 'Régénérer un nouvel exercice'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: AppTheme.primaryBlue,
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(vertical: 16),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                        ),
                       ),
                     ),
-                  ),
-                  const SizedBox(height: 10),
+                  if (widget.summaryId != null && widget.difficulty != null)
+                    const SizedBox(height: 10),
                   // Bouton Retour
                   SizedBox(
                     width: double.infinity,
