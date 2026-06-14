@@ -374,11 +374,17 @@ Le résumé doit être en français et faire environ 30-50% de la longueur de la
         - Retourner un JSON strict parsable
         """
         
-        # Mapper la difficulté au niveau pédagogique
+        # Mapper la difficulté au niveau pédagogique avec instructions détaillées
         difficulty_labels = {
-            'easy': 'FACILE — questions directes sur les définitions, faits basiques et concepts fondamentaux. Réponses évidentes pour un étudiant qui a lu le résumé.',
-            'medium': 'MOYEN — questions sur la compréhension, l\'application et l\'analyse. Nécessite de relier plusieurs concepts du résumé.',
-            'hard': 'DIFFICILE — questions complexes sur la synthèse, l\'évaluation et l\'analyse critique. Pièges subtils et distinctions fines entre concepts proches.',
+            'easy': 'FACILE — Questions de base uniquement. Définitions simples, faits évidents du résumé, reconnaissance directe. '
+                    'Les réponses doivent être immédiatement identifiables par un étudiant ayant lu le résumé. '
+                    'AUCUNE question d\'analyse ou de synthèse. Distracteurs très différents de la bonne réponse.',
+            'medium': 'MOYEN — Questions de compréhension et d\'application. Relier des concepts, expliquer des relations, '
+                      'identifier des causes/conséquences. Les distracteurs sont plausibles mais un étudiant attentif '
+                      'peut les écarter. Questions qui nécessitent de comprendre le "pourquoi" pas juste le "quoi".',
+            'hard': 'DIFFICILE — Questions d\'analyse, synthèse et évaluation. Cas complexes, pièges subtils, '
+                    'distinctions fines entre concepts proches. Les distracteurs sont très proches de la bonne réponse. '
+                    'Nécessite un raisonnement en plusieurs étapes. Questions qui testent la maîtrise approfondie.',
         }
         difficulty_text = difficulty_labels.get(difficulty, difficulty_labels['medium'])
         

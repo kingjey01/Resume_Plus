@@ -25,8 +25,9 @@ def generate_exercise_view(request, summary_id):
     Accessible uniquement aux utilisateurs abonnés
     """
     try:
-        # Lire le niveau de difficulté demandé
+        # Lire le niveau de difficulté demandé et force_regenerate
         difficulty = request.data.get('difficulty', 'medium') if request.data else 'medium'
+        force_regenerate = request.data.get('force_regenerate', False) if request.data else False
         
         # Vérifier que le résumé existe et est validé
         summary = get_object_or_404(Summary, id=summary_id, is_validated=True)
@@ -38,15 +39,19 @@ def generate_exercise_view(request, summary_id):
                 'subscription_required': True
             }, status=status.HTTP_403_FORBIDDEN)
         
-        # Vérifier si un exercice existe déjà
-        existing_exercise = Exercise.objects.filter(summary=summary).first()
-        if existing_exercise:
+        # Vérifier si un exercice existe déjà avec la même difficulté
+        existing_exercise = Exercise.objects.filter(
+            summary=summary, difficulty=difficulty
+        ).first()
+        
+        if existing_exercise and not force_regenerate:
             if existing_exercise.status == 'completed':
                 return Response({
                     'message': 'Exercice déjà disponible',
                     'exercise_id': existing_exercise.id,
                     'status': 'completed',
                     'generated_by_ai': existing_exercise.generated_by_ai,
+                    'difficulty': difficulty,
                 }, status=status.HTTP_200_OK)
             elif existing_exercise.status == 'generating':
                 return Response({
@@ -54,6 +59,7 @@ def generate_exercise_view(request, summary_id):
                     'exercise_id': existing_exercise.id,
                     'status': 'generating',
                     'generated_by_ai': existing_exercise.generated_by_ai,
+                    'difficulty': difficulty,
                 }, status=status.HTTP_202_ACCEPTED)
             elif existing_exercise.status == 'failed':
                 # Relancer la génération si elle a échoué
@@ -67,13 +73,19 @@ def generate_exercise_view(request, summary_id):
                     'exercise_id': existing_exercise.id,
                     'status': 'generating',
                     'generated_by_ai': existing_exercise.generated_by_ai,
+                    'difficulty': difficulty,
                 }, status=status.HTTP_202_ACCEPTED)
+        
+        # Si force_regenerate ou difficulté différente, supprimer l'ancien exercice
+        if force_regenerate and existing_exercise:
+            existing_exercise.delete()
         
         # Créer l'exercice en statut 'generating' immédiatement
         exercise = Exercise.objects.create(
             summary=summary,
             titre=f"Exercices - {summary.titre}",
             description=f"Questions à choix multiples basées sur le résumé: {summary.titre}",
+            difficulty=difficulty,
             status='generating'
         )
 

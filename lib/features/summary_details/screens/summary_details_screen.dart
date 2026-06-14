@@ -177,12 +177,13 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
         throw Exception(data['error'] ?? 'Aucun exercice retourné');
       }
 
+      final d = difficulty ?? 'medium';
       if (exerciseStatus == 'completed') {
         // Exercice prêt — naviguer directement
-        _navigateToQuiz(exerciseId);
+        _navigateToQuiz(exerciseId, difficulty: d);
       } else if (exerciseStatus == 'generating') {
         // Exercice en cours de génération — poller jusqu'à completion
-        await _pollExerciseStatus(exerciseId);
+        await _pollExerciseStatus(exerciseId, d);
       } else {
         throw Exception(data['error'] ?? 'Statut inconnu: $exerciseStatus');
       }
@@ -195,7 +196,7 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
     }
   }
 
-  Future<void> _pollExerciseStatus(int exerciseId) async {
+  Future<void> _pollExerciseStatus(int exerciseId, String difficulty) async {
     const maxAttempts = 30; // 30 * 3s = 90s max (DeepSeek peut prendre jusqu'à 60s)
     for (int i = 0; i < maxAttempts; i++) {
       await Future.delayed(const Duration(seconds: 3));
@@ -205,7 +206,7 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
         final exercise = await _apiService.getExercise(exerciseId);
         final s = exercise['status'] ?? '';
         if (s == 'completed') {
-          _navigateToQuiz(exerciseId);
+          _navigateToQuiz(exerciseId, difficulty: difficulty);
           return;
         } else if (s == 'failed') {
           throw Exception('La génération a échoué. Veuillez réessayer.');
@@ -219,13 +220,15 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
     throw Exception('Délai dépassé. La génération prend trop de temps.');
   }
 
-  void _navigateToQuiz(int exerciseId) {
+  void _navigateToQuiz(int exerciseId, {String difficulty = 'medium'}) {
     if (!mounted) return;
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (_) => ExerciseQuizScreen(
           exerciseId: exerciseId,
           exerciseTitle: 'QCM - ${widget.summary.title}',
+          summaryId: widget.summary.id,
+          difficulty: difficulty,
         ),
       ),
     );

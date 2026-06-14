@@ -1128,12 +1128,15 @@ class ApiService {
     }
   }
 
-  Future<Map<String, dynamic>> generateExercise(int summaryId, {String? difficulty}) async {
+  Future<Map<String, dynamic>> generateExercise(int summaryId, {String? difficulty, bool forceRegenerate = false}) async {
     try {
-      print('🔄 Génération exercice pour summary $summaryId (difficulty: $difficulty)');
+      print('🔄 Génération exercice pour summary $summaryId (difficulty: $difficulty, force: $forceRegenerate)');
+      final data = <String, dynamic>{};
+      if (difficulty != null) data['difficulty'] = difficulty;
+      if (forceRegenerate) data['force_regenerate'] = true;
       final response = await _dio.post(
         '/summaries/$summaryId/generate-exercise/',
-        data: difficulty != null ? {'difficulty': difficulty} : null,
+        data: data.isNotEmpty ? data : null,
       );
       
       print('📊 Status code: ${response.statusCode}');

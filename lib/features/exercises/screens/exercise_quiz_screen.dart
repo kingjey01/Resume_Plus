@@ -8,11 +8,15 @@ import 'package:resume_plus_clean/widgets/secure_screen_wrapper.dart';
 class ExerciseQuizScreen extends StatefulWidget {
   final int exerciseId;
   final String exerciseTitle;
+  final int summaryId;
+  final String difficulty;
 
   const ExerciseQuizScreen({
     super.key,
     required this.exerciseId,
     required this.exerciseTitle,
+    required this.summaryId,
+    required this.difficulty,
   });
 
   @override
@@ -108,7 +112,11 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
         final exerciseResult = ExerciseResult.fromJson(result);
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (_) => ExerciseResultScreen(result: exerciseResult),
+            builder: (_) => ExerciseResultScreen(
+              result: exerciseResult,
+              summaryId: widget.summaryId,
+              difficulty: widget.difficulty,
+            ),
           ),
         );
       }
