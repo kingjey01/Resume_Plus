@@ -39,9 +39,11 @@ def generate_exercise_view(request, summary_id):
                 'subscription_required': True
             }, status=status.HTTP_403_FORBIDDEN)
         
-        # Vérifier si un exercice existe déjà avec la même difficulté
+        # Vérifier si CET utilisateur a déjà un exercice pour ce résumé+difficulté
         existing_exercise = Exercise.objects.filter(
-            summary=summary, difficulty=difficulty
+            summary=summary,
+            created_by=request.user,
+            difficulty=difficulty
         ).first()
         
         if existing_exercise and not force_regenerate:
@@ -76,13 +78,14 @@ def generate_exercise_view(request, summary_id):
                     'difficulty': difficulty,
                 }, status=status.HTTP_202_ACCEPTED)
         
-        # Si force_regenerate ou difficulté différente, supprimer l'ancien exercice
+        # Si force_regenerate, supprimer uniquement l'exercice de CET utilisateur
         if force_regenerate and existing_exercise:
             existing_exercise.delete()
         
-        # Créer l'exercice en statut 'generating' immédiatement
+        # Créer un exercice propre à cet utilisateur
         exercise = Exercise.objects.create(
             summary=summary,
+            created_by=request.user,
             titre=f"Exercices - {summary.titre}",
             description=f"Questions à choix multiples basées sur le résumé: {summary.titre}",
             difficulty=difficulty,
@@ -123,6 +126,10 @@ def get_exercise_view(request, exercise_id):
     """
     try:
         exercise = get_object_or_404(Exercise, id=exercise_id)
+
+        # S'assurer que l'exercice appartient à cet utilisateur (ou est legacy sans propriétaire)
+        if exercise.created_by is not None and exercise.created_by != request.user:
+            return Response({'error': 'Exercice introuvable'}, status=status.HTTP_404_NOT_FOUND)
 
         # Si encore en génération, retourner juste le statut (pour le polling Flutter)
         if exercise.status != 'completed':
@@ -182,6 +189,11 @@ def submit_exercise_view(request, exercise_id):
     """
     try:
         exercise = get_object_or_404(Exercise, id=exercise_id, status='completed')
+
+        # S'assurer que l'exercice appartient à cet utilisateur
+        if exercise.created_by is not None and exercise.created_by != request.user:
+            return Response({'error': 'Exercice introuvable'}, status=status.HTTP_404_NOT_FOUND)
+
         answers = request.data.get('answers', {})
         
         if not answers:

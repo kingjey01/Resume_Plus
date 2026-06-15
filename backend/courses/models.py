@@ -407,6 +407,7 @@ class Exercise(models.Model):
     ]
     
     summary = models.ForeignKey(Summary, on_delete=models.CASCADE, related_name='exercises')
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='exercises', null=True, blank=True)
     titre = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     difficulty = models.CharField(max_length=20, default='medium', choices=[('easy', 'Facile'), ('medium', 'Moyen'), ('hard', 'Difficile')])
