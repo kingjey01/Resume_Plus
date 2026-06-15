@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_plus_clean/features/auth/providers/auth_provider.dart';
 import 'package:resume_plus_clean/models/user.dart';
 import 'package:resume_plus_clean/features/home/providers/summary_provider.dart';
+import 'package:resume_plus_clean/providers/tab_refresh_provider.dart';
 import 'package:resume_plus_clean/features/home/widgets/summary_card.dart';
 import 'package:resume_plus_clean/features/home/widgets/course_tile.dart';
 import 'package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart';
@@ -155,6 +156,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
         print('🔄 [Home] Nouvel utilisateur détecté (id=${next.value!.id}) — rechargement des données');
         _apiService.clearSession();
         _loadUserProfile();
+        ref.invalidate(summariesProvider);
+      }
+    });
+
+    // Rafraîchir les données à chaque fois qu'on arrive sur l'onglet Accueil
+    ref.listen<int>(homeRefreshProvider, (prev, next) {
+      if (prev != next) {
+        print('🔄 [Home] Onglet Accueil sélectionné — rafraîchissement');
+        _loadCourses();
         ref.invalidate(summariesProvider);
       }
     });

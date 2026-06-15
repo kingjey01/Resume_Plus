@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:resume_plus_clean/features/home/providers/summary_provider.dart';
+import 'package:resume_plus_clean/providers/tab_refresh_provider.dart';
 import 'package:resume_plus_clean/features/home/widgets/summary_card.dart';
 import 'package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart';
 import 'package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart';
@@ -38,6 +39,14 @@ class _AllSummariesScreenState extends ConsumerState<AllSummariesScreen>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final topPadding = MediaQuery.of(context).padding.top;
+
+    // Rafraîchir les données à chaque fois qu'on arrive sur l'onglet Résumés
+    ref.listen<int>(summariesRefreshProvider, (prev, next) {
+      if (prev != next) {
+        ref.invalidate(summariesProvider);
+        ref.invalidate(purchasedSummariesProvider);
+      }
+    });
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,

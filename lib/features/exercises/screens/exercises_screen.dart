@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_plus_clean/models/exercise.dart';
 import 'package:resume_plus_clean/services/api_service.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
+import 'package:resume_plus_clean/providers/tab_refresh_provider.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart';
 
-class ExercisesScreen extends StatefulWidget {
+class ExercisesScreen extends ConsumerStatefulWidget {
   const ExercisesScreen({super.key});
 
   @override
-  State<ExercisesScreen> createState() => _ExercisesScreenState();
+  ConsumerState<ExercisesScreen> createState() => _ExercisesScreenState();
 }
 
-class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProviderStateMixin {
+class _ExercisesScreenState extends ConsumerState<ExercisesScreen> with SingleTickerProviderStateMixin {
   final ApiService _apiService = ApiService();
   List<ExerciseAttempt> _attempts = [];
   bool _isLoading = true;
@@ -83,6 +85,13 @@ class _ExercisesScreenState extends State<ExercisesScreen> with SingleTickerProv
   @override
   Widget build(BuildContext context) {
     final topPadding = MediaQuery.of(context).padding.top;
+
+    // Rafraîchir les données à chaque fois qu'on arrive sur l'onglet Exercices
+    ref.listen<int>(exercisesRefreshProvider, (prev, next) {
+      if (prev != next) {
+        _loadData();
+      }
+    });
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,

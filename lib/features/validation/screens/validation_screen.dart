@@ -1,22 +1,24 @@
 import 'dart:async';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_plus_clean/services/api_service.dart';
+import 'package:resume_plus_clean/providers/tab_refresh_provider.dart';
 import 'package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/widgets/api_error_view.dart';
 import 'package:resume_plus_clean/mixins/error_handler_mixin.dart';
 
-class ValidationScreen extends StatefulWidget {
+class ValidationScreen extends ConsumerStatefulWidget {
   final int? initialSummaryId;
 
   const ValidationScreen({super.key, this.initialSummaryId});
 
   @override
-  State<ValidationScreen> createState() => _ValidationScreenState();
+  ConsumerState<ValidationScreen> createState() => _ValidationScreenState();
 }
 
-class _ValidationScreenState extends State<ValidationScreen> with ErrorHandlerMixin {
+class _ValidationScreenState extends ConsumerState<ValidationScreen> with ErrorHandlerMixin {
   final ApiService _apiService = ApiService();
   final TextEditingController _searchController = TextEditingController();
   List<Map<String, dynamic>> _summaries = [];
@@ -159,6 +161,14 @@ class _ValidationScreenState extends State<ValidationScreen> with ErrorHandlerMi
   @override
   Widget build(BuildContext context) {
     final topPadding = MediaQuery.of(context).padding.top;
+
+    // Rafraîchir les données à chaque fois qu'on arrive sur l'onglet Validation
+    ref.listen<int>(summariesRefreshProvider, (prev, next) {
+      if (prev != next) {
+        _loadSummaries();
+      }
+    });
+
     // Appliquer le filtre de recherche pour les compteurs
     List<Map<String, dynamic>> searchFiltered = _summaries;
     if (_searchController.text.isNotEmpty) {
