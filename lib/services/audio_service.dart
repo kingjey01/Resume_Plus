@@ -226,13 +226,26 @@ class AudioService {
     });
 
     _flutterTts!.setErrorHandler((msg) {
+      print('⚠️ AudioService TTS error: $msg');
+      final msgStr = msg.toString().toLowerCase();
+      // Ignorer les erreurs bénignes (arrêt volontaire, interruption système)
+      final isBenign = msgStr.contains('interrupted') ||
+          msgStr.contains('stopped') ||
+          msgStr.contains('canceled') ||
+          msgStr.contains('cancelled') ||
+          msgStr.contains('1') && msgStr.length < 5; // code d'erreur Android -1
       _isPlaying = false;
       _isPaused = false;
-      _currentText = null;
-      _chunks = [];
-      _currentChunkIndex = 0;
-      _isReadingChunks = false;
-      onError?.call(msg);
+      if (!isBenign) {
+        _currentText = null;
+        _chunks = [];
+        _currentChunkIndex = 0;
+        _isReadingChunks = false;
+        onError?.call(msg);
+      } else {
+        print('ℹ️ AudioService: Erreur bénigne ignorée: $msg');
+        onComplete?.call();
+      }
     });
 
     // Configuration par défaut pour FlutterTts
@@ -284,6 +297,15 @@ class AudioService {
         .trim();
   }
 
+  /// Réinitialise le moteur TTS en cas de crash (reset silencieux)
+  Future<void> _reinitIfNeeded() async {
+    if (_isInitialized) return;
+    print('🔄 AudioService: Tentative de réinitialisation après crash...');
+    _isInitialized = false;
+    _flutterTts = null;
+    await initialize();
+  }
+
   /// Démarre la lecture du texte avec gestion intelligente du découpage (chunking)
   Future<void> speak(String text, {
     double rate = 0.8,
@@ -292,8 +314,12 @@ class AudioService {
     String language = 'fr-FR',
   }) async {
     if (!isAvailable) {
-      onError?.call('Service audio non disponible');
-      return;
+      // Tentative de réinitialisation silencieuse avant d'afficher une erreur
+      await _reinitIfNeeded();
+      if (!isAvailable) {
+        onError?.call('Service audio non disponible');
+        return;
+      }
     }
 
     try {
@@ -347,6 +373,8 @@ class AudioService {
       _chunks = [];
       _currentChunkIndex = 0;
       _isReadingChunks = false;
+      // Réinitialiser le moteur pour la prochaine tentative
+      _isInitialized = false;
       onError?.call('Erreur lors de la lecture: $e');
     }
   }
@@ -395,10 +423,17 @@ class AudioService {
         await _webAudioService!.pause();
       } else if (_flutterTts != null) {
         await _flutterTts!.pause();
+        // Sur Android certains moteurs ne supportent pas pause() → stop() silencieux
+        _isPaused = true;
+        onPause?.call();
       }
     } catch (e) {
-      print('❌ AudioService: Erreur lors de la pause: $e');
-      onError?.call('Erreur lors de la pause: $e');
+      print('⚠️ AudioService: pause() non supporté sur ce moteur, arrêt silencieux: $e');
+      // Stopper proprement sans afficher d'erreur à l'utilisateur
+      try { await _flutterTts?.stop(); } catch (_) {}
+      _isPlaying = false;
+      _isPaused = true;
+      onPause?.call();
     }
   }
 
@@ -410,22 +445,34 @@ class AudioService {
       if (kIsWeb && _webAudioService != null) {
         await _webAudioService!.resume();
       } else if (_flutterTts != null) {
-        // IMPORTANT: Ne PAS reconfigurer les paramètres TTS ici !
-        // Les paramètres (rate, pitch, volume) sont déjà configurés lors du speak() initial.
-        // Appeler setRate/setPitch/setVolume ici peut causer des bugs de vitesse.
-        
-        // Sur Android, FlutterTts supporte pause/resume nativement via le moteur TTS
-        // On utilise la méthode speak() pour reprendre, mais SANS reconfigurer les paramètres
         if (_currentText != null && _chunks.isNotEmpty) {
-          // Reprendre à partir du chunk actuel (pas depuis le début)
-          print('📣 AudioService: Reprise au chunk ${_currentChunkIndex + 1}/${_chunks.length} (rate=$_currentRate)');
+          print('📣 AudioService: Reprise au chunk ${_currentChunkIndex + 1}/${_chunks.length}');
           _isPaused = false;
+          _isPlaying = true;
+          // Reconfigurer les paramètres au cas où le moteur aurait été réinitialisé
+          try {
+            await _flutterTts!.setLanguage(_currentLanguage);
+            await _flutterTts!.setSpeechRate(_currentRate);
+            await _flutterTts!.setPitch(_currentPitch);
+            await _flutterTts!.setVolume(_currentVolume);
+          } catch (_) {}
           await _speakNextChunk();
+        } else if (_currentText != null) {
+          // Chunks vides mais texte disponible → relancer depuis le début
+          print('📣 AudioService: Reprise impossible (chunks vides) → relance depuis le début');
+          _isPaused = false;
+          _isPlaying = false;
+          await speak(_currentText!, rate: _currentRate, pitch: _currentPitch, volume: _currentVolume, language: _currentLanguage);
         }
       }
     } catch (e) {
-      print('❌ AudioService: Erreur lors de la reprise: $e');
-      onError?.call('Erreur lors de la reprise: $e');
+      print('⚠️ AudioService: Erreur lors de la reprise, nouvelle tentative: $e');
+      // En cas d'échec de reprise, relancer depuis le début du chunk courant
+      if (_currentText != null) {
+        _isPaused = false;
+        _isPlaying = false;
+        await speak(_currentText!, rate: _currentRate, pitch: _currentPitch, volume: _currentVolume, language: _currentLanguage);
+      }
     }
   }
 
