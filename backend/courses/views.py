@@ -12,6 +12,7 @@ import logging
 import mimetypes
 
 logger = logging.getLogger(__name__)
+from django.contrib.auth.models import User
 from .models import (
     Course, Session, Summary, Universite, Promotion, Filiere,
     Service, Abonnement, Professeur, Dispense
