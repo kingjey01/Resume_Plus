@@ -14,7 +14,7 @@ import mimetypes
 logger = logging.getLogger(__name__)
 from .models import (
     Course, Session, Summary, Universite, Promotion, Filiere,
-    Service, Abonnement, Professeur
+    Service, Abonnement, Professeur, Dispense
 )
 from payments.models import Purchase
 from .serializers import (
@@ -74,6 +74,23 @@ class CourseListCreateView(generics.ListCreateAPIView):
             course.promotions.add(profile.promotion)
         if profile.filiere:
             course.filieres.add(profile.filiere)
+
+        # Auto-créer une Dispense si un professeur existe déjà (Objectif 5)
+        if profile.universite and profile.filiere and profile.promotion:
+            professeur = Professeur.objects.filter(
+                universite=profile.universite,
+                filieres=profile.filiere
+            ).first()
+            if professeur:
+                Dispense.objects.get_or_create(
+                    professeur=professeur,
+                    cours=course,
+                    promotion=profile.promotion,
+                    defaults={
+                        'universite': profile.universite,
+                        'filiere': profile.filiere,
+                    }
+                )
 
 
 class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
@@ -1499,3 +1516,217 @@ def get_summaries_for_validation_view(request):
         return Response({
             'error': 'Erreur interne du serveur'
         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+# ============================================================
+# ONBOARDING — Parcours de première utilisation (Objectif 1)
+# ============================================================
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def onboarding_status_view(request):
+    """
+    Vérifie si l'utilisateur CP a déjà des données.
+    Retourne les étapes complétées pour le parcours de première utilisation.
+    """
+    try:
+        user = request.user
+        if not hasattr(user, 'profile'):
+            return Response({'error': 'Profil non trouvé'}, status=404)
+
+        profile = user.profile
+
+        has_professeur = Professeur.objects.filter(
+            universite=profile.universite
+        ).exists() if profile.universite else False
+
+        has_course = Course.objects.filter(
+            universites=profile.universite,
+            filieres=profile.filiere,
+            promotions=profile.promotion
+        ).exists() if (profile.universite and profile.filiere and profile.promotion) else False
+
+        has_session = Session.objects.filter(
+            course__universites=profile.universite,
+            course__filieres=profile.filiere,
+            course__promotions=profile.promotion
+        ).exists() if (profile.universite and profile.filiere and profile.promotion) else False
+
+        has_summary = Summary.objects.filter(
+            course__universites=profile.universite,
+            course__filieres=profile.filiere,
+            course__promotions=profile.promotion
+        ).exists() if (profile.universite and profile.filiere and profile.promotion) else False
+
+        all_completed = has_professeur and has_course and has_session and has_summary
+
+        return Response({
+            'is_first_use': not (has_professeur or has_course or has_session or has_summary),
+            'steps': {
+                'has_professeur': has_professeur,
+                'has_course': has_course,
+                'has_session': has_session,
+                'has_summary': has_summary,
+            },
+            'all_completed': all_completed,
+            'groupe': profile.groupe,
+        })
+
+    except Exception as e:
+        logger.error(f"Erreur onboarding_status: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# PROFESSEUR — Création simplifiée (Objectif 2)
+# ============================================================
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def create_professeur_simple_view(request):
+    """
+    Création simplifiée d'un professeur.
+    L'utilisateur renseigne uniquement : nom_complet, telephone, specialite.
+    Le backend crée automatiquement le User Django et le Professeur,
+    en associant l'université de l'utilisateur connecté.
+    """
+    try:
+        user = request.user
+        if not hasattr(user, 'profile') or not user.profile.universite:
+            return Response({
+                'error': 'Votre profil ne contient pas d\'université. Contactez un administrateur.'
+            }, status=400)
+
+        profile = user.profile
+        nom_complet = request.data.get('nom_complet', '').strip()
+        telephone = request.data.get('telephone', '').strip()
+        specialite = request.data.get('specialite', '').strip()
+
+        if not nom_complet:
+            return Response({'error': 'Le nom complet est requis.'}, status=400)
+
+        import re
+        base_username = re.sub(r'[^a-zA-Z0-9]', '', nom_complet.lower())[:20]
+        username = base_username
+        counter = 1
+        while User.objects.filter(username=username).exists():
+            username = f"{base_username}{counter}"
+            counter += 1
+
+        prof_user = User.objects.create(
+            username=username,
+            first_name=nom_complet.split()[0] if ' ' in nom_complet else nom_complet,
+            last_name=' '.join(nom_complet.split()[1:]) if ' ' in nom_complet else '',
+            email=f"{username}@resumeplus.local",
+            is_active=True,
+        )
+        prof_user.set_password(User.objects.make_random_password())
+        prof_user.save()
+
+        from users.models import UserProfile
+        UserProfile.objects.get_or_create(
+            user=prof_user,
+            defaults={
+                'groupe': 'Prof',
+                'phone': telephone,
+                'universite': profile.universite,
+                'filiere': profile.filiere,
+                'promotion': profile.promotion,
+            }
+        )
+
+        professeur = Professeur.objects.create(
+            user=prof_user,
+            telephone=telephone,
+            specialite=specialite,
+            universite=profile.universite,
+        )
+
+        if profile.filiere:
+            professeur.filieres.add(profile.filiere)
+
+        # Auto-créer une Dispense si un cours existe déjà (Objectif 5)
+        if profile.universite and profile.filiere and profile.promotion:
+            cours = Course.objects.filter(
+                universites=profile.universite,
+                filieres=profile.filiere,
+                promotions=profile.promotion
+            ).first()
+            if cours:
+                Dispense.objects.get_or_create(
+                    professeur=professeur,
+                    cours=cours,
+                    promotion=profile.promotion,
+                    defaults={
+                        'universite': profile.universite,
+                        'filiere': profile.filiere,
+                    }
+                )
+
+        serializer = ProfesseurSerializer(professeur)
+        return Response({
+            'message': 'Professeur créé avec succès.',
+            'professeur': serializer.data,
+        }, status=201)
+
+    except Exception as e:
+        logger.error(f"Erreur création professeur simplifié: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# DISPENSE — Création automatique (Objectif 5)
+# ============================================================
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def create_dispense_view(request):
+    """
+    Crée une dispense (liaison professeur-cours).
+    Utilisé après la création du premier professeur et du premier cours.
+    """
+    try:
+        user = request.user
+        if not hasattr(user, 'profile'):
+            return Response({'error': 'Profil non trouvé'}, status=404)
+
+        profile = user.profile
+        professeur_id = request.data.get('professeur_id')
+        cours_id = request.data.get('cours_id')
+
+        if not professeur_id or not cours_id:
+            return Response({'error': 'professeur_id et cours_id sont requis.'}, status=400)
+
+        professeur = get_object_or_404(Professeur, id=professeur_id)
+        cours = get_object_or_404(Course, id=cours_id)
+
+        if not profile.universite or not profile.filiere or not profile.promotion:
+            return Response({'error': 'Profil incomplet (université/filière/promotion).'}, status=400)
+
+        dispense, created = Dispense.objects.get_or_create(
+            professeur=professeur,
+            cours=cours,
+            promotion=profile.promotion,
+            defaults={
+                'universite': profile.universite,
+                'filiere': profile.filiere,
+            }
+        )
+
+        if created:
+            logger.info(f"Dispense créée: {dispense}")
+            return Response({
+                'message': 'Dispense créée avec succès.',
+                'dispense_id': dispense.id,
+                'created': True,
+            }, status=201)
+        else:
+            return Response({
+                'message': 'Cette dispense existe déjà.',
+                'dispense_id': dispense.id,
+                'created': False,
+            })
+
+    except Exception as e:
+        logger.error(f"Erreur création dispense: {e}")
+        return Response({'error': str(e)}, status=500)

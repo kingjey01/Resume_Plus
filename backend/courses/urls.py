@@ -41,6 +41,13 @@ urlpatterns = [
     
     # Professeurs
     path('professeurs/', views.ProfesseurListView.as_view(), name='professeur-list'),
+    path('professeurs/create-simple/', views.create_professeur_simple_view, name='professeur-create-simple'),
+    
+    # Onboarding
+    path('onboarding/status/', views.onboarding_status_view, name='onboarding-status'),
+    
+    # Dispenses
+    path('dispenses/create/', views.create_dispense_view, name='dispense-create'),
     
     # AI endpoint
     path('generate-summary/', views.generate_summary_from_audio, name='generate-summary'),

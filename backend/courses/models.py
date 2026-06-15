@@ -304,6 +304,48 @@ class Professeur(models.Model):
         ordering = ['user__last_name', 'user__first_name']
 
 
+class Dispense(models.Model):
+    """
+    Table métier de liaison entre Professeur, Cours, Université, Filière et Promotion.
+    Source officielle pour déterminer quel professeur dispense quel cours.
+    """
+    professeur = models.ForeignKey(
+        Professeur,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    cours = models.ForeignKey(
+        Course,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    universite = models.ForeignKey(
+        Universite,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    filiere = models.ForeignKey(
+        Filiere,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    promotion = models.ForeignKey(
+        Promotion,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Dispense"
+        verbose_name_plural = "Dispenses"
+        unique_together = ('cours', 'professeur', 'promotion')
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.professeur} dispense {self.cours} ({self.promotion})"
+
+
 class Service(models.Model):
     nom = models.CharField(max_length=200, unique=True)
     description = models.TextField(blank=True, null=True)
