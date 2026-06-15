@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_plus_clean/features/home/screens/home_screen.dart';
+import 'package:resume_plus_clean/features/onboarding/cp_onboarding_flow.dart';
 import 'package:resume_plus_clean/features/summaries/screens/all_summaries_screen.dart';
 import 'package:resume_plus_clean/features/purchases/screens/purchases_screen.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercises_screen.dart';
@@ -262,18 +263,41 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen> {
   Future<void> _loadUserProfile() async {
     try {
       final profile = await _apiService.getUserProfile();
+      final role = profile['profile']?['groupe'] ?? 'ETUDIANT';
       setState(() {
-        _userRole = profile['profile']?['groupe'] ?? 'ETUDIANT';
+        _userRole = role;
         _isLoadingProfile = false;
-        // Définir l'index de l'onglet "Mes Achats"
         _purchasesTabIndex = _userRole == 'CP' ? 3 : 2;
       });
+      // Vérifier si c'est la première utilisation du CP
+      if (role == 'CP') {
+        _checkCPOnboarding();
+      }
     } catch (e) {
       setState(() {
         _userRole = 'ETUDIANT';
         _isLoadingProfile = false;
         _purchasesTabIndex = 2;
       });
+    }
+  }
+
+  Future<void> _checkCPOnboarding() async {
+    try {
+      final status = await _apiService.getOnboardingStatus();
+      if (status['is_first_use'] == true && mounted) {
+        await Future.delayed(const Duration(milliseconds: 500));
+        if (mounted) {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              fullscreenDialog: true,
+              builder: (_) => const CPOnboardingFlow(),
+            ),
+          );
+        }
+      }
+    } catch (_) {
+      // Silencieux : si l'API échoue on n'interrompt pas l'utilisateur
     }
   }
 

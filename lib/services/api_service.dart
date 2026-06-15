@@ -1302,4 +1302,77 @@ class ApiService {
       AppLogger.error('markAllNotificationsRead error', e);
     }
   }
+
+  // ─── Onboarding CP ─────────────────────────────────────────────────────────
+
+  Future<Map<String, dynamic>> getOnboardingStatus() async {
+    try {
+      final response = await _dio.get('/onboarding/status/');
+      if (response.statusCode == 200) {
+        return response.data as Map<String, dynamic>;
+      }
+      throw Exception('Erreur onboarding status');
+    } on DioException {
+      rethrow;
+    }
+  }
+
+  Future<Map<String, dynamic>> createProfesseurSimple({
+    required String nomComplet,
+    required String telephone,
+    required String specialite,
+  }) async {
+    try {
+      final response = await _dio.post('/professeurs/create-simple/', data: {
+        'nom_complet': nomComplet,
+        'telephone': telephone,
+        'specialite': specialite,
+      });
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        return response.data as Map<String, dynamic>;
+      }
+      throw Exception('Erreur création professeur: ${response.statusCode}');
+    } on DioException catch (e) {
+      final msg = e.response?.data?['error'] ?? e.message;
+      throw Exception(msg);
+    }
+  }
+
+  Future<Map<String, dynamic>> createCourse({
+    required String nom,
+    String? description,
+  }) async {
+    try {
+      final response = await _dio.post('/course-list/', data: {
+        'nom': nom,
+        if (description != null && description.isNotEmpty)
+          'description': description,
+      });
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        return response.data as Map<String, dynamic>;
+      }
+      throw Exception('Erreur création cours: ${response.statusCode}');
+    } on DioException catch (e) {
+      final msg = e.response?.data?['error'] ?? e.message;
+      throw Exception(msg);
+    }
+  }
+
+  Future<Map<String, dynamic>> createDispense({
+    required int professeurId,
+    required int coursId,
+  }) async {
+    try {
+      final response = await _dio.post('/dispenses/create/', data: {
+        'professeur_id': professeurId,
+        'cours_id': coursId,
+      });
+      if (response.statusCode == 200 || response.statusCode == 201) {
+        return response.data as Map<String, dynamic>;
+      }
+      throw Exception('Erreur création dispense');
+    } on DioException {
+      rethrow;
+    }
+  }
 }
