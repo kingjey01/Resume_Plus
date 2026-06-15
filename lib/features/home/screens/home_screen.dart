@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:resume_plus_clean/features/auth/providers/auth_provider.dart';
+import 'package:resume_plus_clean/models/user.dart';
 import 'package:resume_plus_clean/features/home/providers/summary_provider.dart';
 import 'package:resume_plus_clean/features/home/widgets/summary_card.dart';
 import 'package:resume_plus_clean/features/home/widgets/course_tile.dart';
@@ -137,6 +139,26 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
     final theme = Theme.of(context);
     final topPadding = MediaQuery.of(context).padding.top;
 
+    // Recharger les données quand la session utilisateur change (login d'un autre compte)
+    ref.listen<int>(userSessionVersionProvider, (prev, next) {
+      if (prev != next) {
+        print('🔄 [Home] Changement de session détecté ($prev → $next) — rechargement des données');
+        _apiService.clearSession();
+        _loadUserProfile();
+        ref.invalidate(summariesProvider);
+      }
+    });
+
+    // Écouter les changements d'état auth pour détecter un nouvel utilisateur
+    ref.listen<AsyncValue<User?>>(authProvider, (prev, next) {
+      if (prev?.value?.id != next.value?.id && next.value != null) {
+        print('🔄 [Home] Nouvel utilisateur détecté (id=${next.value!.id}) — rechargement des données');
+        _apiService.clearSession();
+        _loadUserProfile();
+        ref.invalidate(summariesProvider);
+      }
+    });
+
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
       floatingActionButton: _isLoadingProfile
@@ -248,7 +270,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
           ),
         ),
       ),
-    );
+    ),
+  );
   }
 
   Widget _buildCurvedHeader(BuildContext context, double topPadding) {

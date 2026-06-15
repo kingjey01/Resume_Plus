@@ -11,6 +11,7 @@ import 'package:resume_plus_clean/services/notification_service.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/providers/purchase_badge_provider.dart';
 import 'package:resume_plus_clean/features/home/providers/summary_provider.dart';
+import 'package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart';
 import 'package:resume_plus_clean/widgets/badge_icon.dart';
 
 class MainNavigationScreen extends ConsumerStatefulWidget {
@@ -235,8 +236,10 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen> {
   void initState() {
     super.initState();
     _loadUserProfile();
-    // Charger les compteurs de badges au démarrage
+    // Invalider les providers de données pour garantir des données fraîches après login
     Future.microtask(() {
+      ref.invalidate(summariesProvider);
+      ref.invalidate(purchasedSummariesProvider);
       ref.read(purchaseBadgeCountProvider.notifier).loadBadgeCount();
       ref.read(validatedSummariesBadgeProvider.notifier).refreshBadge();
       ref.read(createdSummariesBadgeProvider.notifier).refreshBadge();
