@@ -1757,6 +1757,82 @@ def create_dispense_view(request):
 
 
 # ============================================================
+# PROFESSEUR — Suppression (CRUD Écran Création)
+# ============================================================
+
+@api_view(['DELETE'])
+@permission_classes([permissions.IsAuthenticated])
+def delete_professeur_view(request, professeur_id):
+    """Supprime un professeur appartenant à l'université de l'utilisateur connecté."""
+    try:
+        profile = request.user.profile
+        if not profile.universite:
+            return Response({'error': 'Profil incomplet'}, status=400)
+        professeur = get_object_or_404(Professeur, id=professeur_id, universite=profile.universite)
+        professeur.delete()
+        return Response({'message': 'Professeur supprimé.'}, status=200)
+    except Exception as e:
+        logger.error(f"Erreur suppression professeur: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# DISPENSE — Liste + Suppression (CRUD Écran Association)
+# ============================================================
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def list_dispenses_view(request):
+    """Liste les dispenses du contexte académique de l'utilisateur connecté."""
+    try:
+        profile = request.user.profile
+        if not profile.universite or not profile.filiere or not profile.promotion:
+            return Response([], status=200)
+        dispenses = Dispense.objects.filter(
+            universite=profile.universite,
+            filiere=profile.filiere,
+            promotion=profile.promotion,
+        ).select_related('professeur__user', 'cours').order_by('-created_at')
+        data = [
+            {
+                'id': d.id,
+                'professeur_id': d.professeur.id,
+                'professeur_name': d.professeur.user.get_full_name() or d.professeur.user.username,
+                'professeur_specialite': d.professeur.specialite or '',
+                'cours_id': d.cours.id,
+                'cours_nom': d.cours.nom,
+                'cours_filiere': d.cours.filiere,
+            }
+            for d in dispenses
+        ]
+        return Response(data, status=200)
+    except Exception as e:
+        logger.error(f"Erreur liste dispenses: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+@api_view(['DELETE'])
+@permission_classes([permissions.IsAuthenticated])
+def delete_dispense_view(request, dispense_id):
+    """Supprime une dispense appartenant au contexte académique de l'utilisateur."""
+    try:
+        profile = request.user.profile
+        if not profile.universite or not profile.filiere or not profile.promotion:
+            return Response({'error': 'Profil incomplet'}, status=400)
+        dispense = get_object_or_404(
+            Dispense, id=dispense_id,
+            universite=profile.universite,
+            filiere=profile.filiere,
+            promotion=profile.promotion,
+        )
+        dispense.delete()
+        return Response({'message': 'Association supprimée.'}, status=200)
+    except Exception as e:
+        logger.error(f"Erreur suppression dispense: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
 # RESOLVE PROFESSOR — Récupération automatique (Objectif 7)
 # ============================================================
 
