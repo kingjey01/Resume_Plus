@@ -178,8 +178,14 @@ class _CreateCoursScreenState extends State<CreateCoursScreen> {
                             color: AppTheme.primaryBlue.withOpacity(0.08),
                             shape: BoxShape.circle,
                           ),
-                          child: const Icon(Icons.menu_book_rounded,
-                              size: 40, color: AppTheme.primaryBlue),
+                          child: ClipOval(
+                            child: Image.asset(
+                              'assets/cours.PNG',
+                              width: 80,
+                              height: 80,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
                         const SizedBox(width: 16),
                         const Expanded(

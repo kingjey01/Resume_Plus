@@ -187,8 +187,14 @@ class _CreateProfesseurScreenState extends State<CreateProfesseurScreen> {
                             color: AppTheme.primaryBlue.withOpacity(0.08),
                             shape: BoxShape.circle,
                           ),
-                          child: const Icon(Icons.person_rounded,
-                              size: 44, color: AppTheme.primaryBlue),
+                          child: ClipOval(
+                            child: Image.asset(
+                              'assets/professeur.PNG',
+                              width: 80,
+                              height: 80,
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
                         const SizedBox(width: 16),
                         const Expanded(

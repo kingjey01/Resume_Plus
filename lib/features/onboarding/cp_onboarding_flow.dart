@@ -185,8 +185,14 @@ class _CPOnboardingFlowState extends State<CPOnboardingFlow> {
                         color: AppTheme.primaryBlue.withOpacity(0.08),
                         shape: BoxShape.circle,
                       ),
-                      child: const Icon(Icons.person_rounded,
-                          size: 48, color: AppTheme.primaryBlue),
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/professeur.PNG',
+                          width: 90,
+                          height: 90,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                   ],
                 ),
@@ -307,8 +313,14 @@ class _CPOnboardingFlowState extends State<CPOnboardingFlow> {
                         color: AppTheme.primaryBlue.withOpacity(0.08),
                         shape: BoxShape.circle,
                       ),
-                      child: const Icon(Icons.menu_book_rounded,
-                          size: 44, color: AppTheme.primaryBlue),
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/cours.PNG',
+                          width: 90,
+                          height: 90,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                   ],
                 ),
