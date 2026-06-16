@@ -48,6 +48,7 @@ urlpatterns = [
     
     # Dispenses
     path('dispenses/create/', views.create_dispense_view, name='dispense-create'),
+    path('resolve-professor/', views.resolve_professor_view, name='resolve-professor'),
     
     # AI endpoint
     path('generate-summary/', views.generate_summary_from_audio, name='generate-summary'),

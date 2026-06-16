@@ -563,14 +563,37 @@ def upload_audio_session(request):
         
         # Créer la session avec l'enregistrement (statut = pending / EN_ATTENTE)
         from django.utils import timezone
+        
+        # Auto-résoudre le professeur via Dispense si non fourni (Objectif 7)
+        professeur_nom = request.data.get('professeur_nom', '')
+        resolved_professeur_fk = professeur_id
+        resolved_professeur_text = professeur_nom
+        
+        if not professeur_id:
+            profile = request.user.profile
+            if profile.universite and profile.filiere and profile.promotion:
+                dispense = Dispense.objects.filter(
+                    cours=course,
+                    universite=profile.universite,
+                    filiere=profile.filiere,
+                    promotion=profile.promotion
+                ).select_related('professeur__user').first()
+                if dispense:
+                    resolved_professeur_fk = dispense.professeur.id
+                    resolved_professeur_text = (
+                        dispense.professeur.user.get_full_name()
+                        or dispense.professeur.user.username
+                    )
+                    logger.info(f"🎓 Professeur auto-résolu via Dispense: {resolved_professeur_text}")
+        
         session_data = {
             'course': course.id,
             'date': timezone.now(),
-            'professeur': f"{request.user.first_name} {request.user.last_name}" if request.user.first_name else request.user.username,
+            'professeur': resolved_professeur_text if resolved_professeur_text else '',
             'audio_file': audio_file
         }
-        if professeur_id:
-            session_data['professeur_fk'] = professeur_id
+        if resolved_professeur_fk:
+            session_data['professeur_fk'] = resolved_professeur_fk
         
         serializer = SessionCreateSerializer(data=session_data, context={'request': request})
         if serializer.is_valid():
@@ -1731,3 +1754,47 @@ def create_dispense_view(request):
     except Exception as e:
         logger.error(f"Erreur création dispense: {e}")
         return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# RESOLVE PROFESSOR — Récupération automatique (Objectif 7)
+# ============================================================
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def resolve_professor_view(request):
+    """
+    Recherche automatique du professeur associé à un cours
+    via la table Dispense, en fonction du contexte académique de l'utilisateur.
+    """
+    course_id = request.query_params.get('course_id')
+    if not course_id:
+        return Response({'error': 'course_id requis'}, status=400)
+
+    try:
+        course = Course.objects.get(id=course_id)
+    except Course.DoesNotExist:
+        return Response({'error': 'Cours introuvable'}, status=404)
+
+    profile = request.user.profile
+    if not profile.universite or not profile.filiere or not profile.promotion:
+        return Response({'found': False, 'professor': None})
+
+    dispense = Dispense.objects.filter(
+        cours=course,
+        universite=profile.universite,
+        filiere=profile.filiere,
+        promotion=profile.promotion
+    ).select_related('professeur__user').first()
+
+    if dispense:
+        prof = dispense.professeur
+        return Response({
+            'found': True,
+            'professor': {
+                'id': prof.id,
+                'name': prof.user.get_full_name() or prof.user.username,
+                'professeur_fk': prof.id,
+            }
+        })
+    return Response({'found': False, 'professor': None})

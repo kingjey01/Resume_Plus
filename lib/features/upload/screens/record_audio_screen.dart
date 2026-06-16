@@ -54,6 +54,12 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
   Professeur? _selectedProfesseur;
   List<Professeur> _professeurs = [];
   bool _isLoadingProfesseurs = false;
+  
+  // Auto-résolution du professeur via Dispense (Objectif 7)
+  String? _autoResolvedProfessorName;
+  int? _autoResolvedProfessorId;
+  bool _isResolvingProfessor = false;
+  final TextEditingController _professorNameController = TextEditingController();
   Uint8List? _recordedBytes;
   String? _recordedMimeType;
   int _recordDuration = 0;
@@ -242,7 +248,6 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       MaterialPageRoute(
         builder: (ctx) => CourseSelectionScreen(
           onCourseSelected: (course) {
-            // Utiliser ctx (context de CourseSelectionScreen) pour pop
             Navigator.of(ctx).pop(course);
           },
         ),
@@ -252,8 +257,31 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     if (selectedCourse != null && mounted) {
       setState(() {
         _selectedCourse = selectedCourse;
+        _autoResolvedProfessorName = null;
+        _autoResolvedProfessorId = null;
+        _selectedProfesseur = null;
+        _professorNameController.clear();
+        _isResolvingProfessor = true;
       });
       SnackbarService.show('✅ Cours sélectionné: ${selectedCourse.nom}', isError: false);
+      
+      // Auto-résoudre le professeur via Dispense (Objectif 7)
+      try {
+        final result = await _apiService.resolveProfessor(selectedCourse.id);
+        if (!mounted) return;
+        if (result['found'] == true && result['professor'] != null) {
+          final prof = result['professor'] as Map<String, dynamic>;
+          setState(() {
+            _autoResolvedProfessorName = prof['name'] as String?;
+            _autoResolvedProfessorId = prof['professeur_fk'] as int?;
+            _isResolvingProfessor = false;
+          });
+        } else {
+          setState(() => _isResolvingProfessor = false);
+        }
+      } catch (_) {
+        if (mounted) setState(() => _isResolvingProfessor = false);
+      }
     }
   }
 
@@ -557,6 +585,14 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       if (_selectedProfesseur != null) {
         metadata['professeur_id'] = _selectedProfesseur!.id;
       }
+      // Envoyer le professeur auto-résolu ou le nom saisi manuellement (Objectif 7)
+      if (_autoResolvedProfessorId != null) {
+        metadata['professeur_id'] = _autoResolvedProfessorId!;
+      }
+      final profName = _professorNameController.text.trim();
+      if (profName.isNotEmpty) {
+        metadata['professeur_nom'] = profName;
+      }
 
       final response = await _apiService.uploadAudio(
         audioBytes: _recordedBytes!,
@@ -676,6 +712,7 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     _pulseController.dispose();
     _titleController.dispose();
     _priceController.dispose();
+    _professorNameController.dispose();
     // Ne pas disposer le recorder car c'est un singleton - juste reset
     _audioRecorder.reset();
     _audioPlayer.dispose();
@@ -822,62 +859,51 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
               
               const SizedBox(height: 16),
 
-              // Sélection du professeur (facultatif)
-              _isLoadingProfesseurs
-                  ? const Center(
-                      child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: CircularProgressIndicator(),
-                      ),
-                    )
-                  : _professeurs.isEmpty
-                      ? Container(
-                          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade100,
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Colors.grey.shade300),
-                          ),
-                          child: Row(
-                            children: [
-                              Icon(Icons.person_off, color: Colors.grey.shade600),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Text(
-                                  'Aucun professeur disponible',
-                                  style: TextStyle(color: Colors.grey.shade700),
-                                ),
-                              ),
-                              TextButton(
-                                onPressed: () => _loadProfesseurs(),
-                                child: const Text('Réessayer'),
-                              ),
-                            ],
-                          ),
-                        )
-                      : DropdownButtonFormField<Professeur>(
-                          value: _selectedProfesseur,
-                          decoration: InputDecoration(
-                            labelText: 'Sélectionner un professeur (facultatif)',
-                            hintText: 'Choisir le professeur enseignant',
-                            prefixIcon: const Icon(Icons.person),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            filled: true,
-                          ),
-                          items: _professeurs.map((professeur) {
-                            return DropdownMenuItem<Professeur>(
-                              value: professeur,
-                              child: Text(professeur.displayInfo),
-                            );
-                          }).toList(),
-                          onChanged: (Professeur? newValue) {
-                            setState(() {
-                              _selectedProfesseur = newValue;
-                            });
-                          },
+              // Professeur (auto-résolu ou saisie libre) — Objectif 7
+              if (_isResolvingProfessor)
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  child: Center(child: CircularProgressIndicator()),
+                )
+              else if (_autoResolvedProfessorName != null)
+                // Cas 1 : Professeur trouvé via Dispense → affichage en lecture seule
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  decoration: BoxDecoration(
+                    color: AppTheme.success.withOpacity(0.08),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: AppTheme.success.withOpacity(0.3)),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.check_circle, color: AppTheme.success, size: 20),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Professeur', style: TextStyle(fontSize: 11, color: AppTheme.textLight)),
+                            Text(_autoResolvedProfessorName!, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14)),
+                          ],
                         ),
+                      ),
+                    ],
+                  ),
+                )
+              else
+                // Cas 2 : Aucune dispense → champ libre
+                TextFormField(
+                  controller: _professorNameController,
+                  decoration: InputDecoration(
+                    labelText: 'Nom du professeur',
+                    hintText: 'Ex: Mme Judith',
+                    prefixIcon: const Icon(Icons.person),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    filled: true,
+                  ),
+                ),
               
               const SizedBox(height: 24),
 

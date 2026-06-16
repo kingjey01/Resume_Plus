@@ -994,6 +994,20 @@ class ApiService {
     }
   }
 
+  Future<Map<String, dynamic>> resolveProfessor(int courseId) async {
+    try {
+      final response = await _dio.get('/courses/resolve-professor/', queryParameters: {
+        'course_id': courseId,
+      });
+      if (response.statusCode == 200) {
+        return response.data as Map<String, dynamic>;
+      }
+      return {'found': false, 'professor': null};
+    } on DioException {
+      return {'found': false, 'professor': null};
+    }
+  }
+
   // ============================================
   // Achats et Paiements
   // ============================================
