@@ -1389,4 +1389,43 @@ class ApiService {
       rethrow;
     }
   }
+
+  Future<void> deleteProfesseur(int professeurId) async {
+    try {
+      await _dio.delete('/courses/professeurs/$professeurId/delete/');
+    } on DioException catch (e) {
+      final msg = e.response?.data?['error'] ?? e.message;
+      throw Exception(msg);
+    }
+  }
+
+  Future<void> deleteCourse(int courseId) async {
+    try {
+      await _dio.delete('/courses/$courseId/');
+    } on DioException catch (e) {
+      final msg = e.response?.data?['error'] ?? e.message;
+      throw Exception(msg);
+    }
+  }
+
+  Future<List<dynamic>> listDispenses() async {
+    try {
+      final response = await _dio.get('/courses/dispenses/');
+      if (response.statusCode == 200) {
+        return response.data as List<dynamic>;
+      }
+      return [];
+    } on DioException {
+      return [];
+    }
+  }
+
+  Future<void> deleteDispense(int dispenseId) async {
+    try {
+      await _dio.delete('/courses/dispenses/$dispenseId/delete/');
+    } on DioException catch (e) {
+      final msg = e.response?.data?['error'] ?? e.message;
+      throw Exception(msg);
+    }
+  }
 }
