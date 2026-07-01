@@ -1,25 +1,25 @@
-# Community 116: exercise_generator
+# Community 116: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **exercise_generator** (`backend_courses_exercise_generator_py`, File, degree: 8)
-- **generate_exercises_for_summary()** (`backend_courses_exercise_generator_py_generate_exercises_for_summary`, Function, degree: 1)
-- **.deepseek_service.deepseek_service** (`backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service`, Module, degree: 1)
-- **json** (`backend_courses_exercise_generator_py_import_json`, Module, degree: 1)
-- **logging** (`backend_courses_exercise_generator_py_import_logging`, Module, degree: 1)
-- **.models.Exercise** (`backend_courses_exercise_generator_py_import_models_exercise`, Module, degree: 1)
-- **.models.ExerciseQuestion** (`backend_courses_exercise_generator_py_import_models_exercisequestion`, Module, degree: 1)
-- **.models.Summary** (`backend_courses_exercise_generator_py_import_models_summary`, Module, degree: 1)
+- **admin** (`backend_users_admin_py`, File, degree: 7)
+- **CustomUserAdmin** (`backend_users_admin_py_customuseradmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_users_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **django.contrib.auth.admin.UserAdmin** (`backend_users_admin_py_import_django_contrib_auth_admin_useradmin`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_admin_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_admin_py_import_models_userprofile`, Module, degree: 1)
+- **UserProfileAdmin** (`backend_users_admin_py_userprofileadmin`, Class, degree: 1)
+- **UserProfileInline** (`backend_users_admin_py_userprofileinline`, Class, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_json (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercise (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_exercisequestion (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_models_summary (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_deepseek_service_deepseek_service (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_import_logging (imports)
-- backend_courses_exercise_generator_py → backend_courses_exercise_generator_py_generate_exercises_for_summary (defines)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_admin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_admin_useradmin (imports)
+- backend_users_admin_py → backend_users_admin_py_import_django_contrib_auth_models_user (imports)
+- backend_users_admin_py → backend_users_admin_py_import_models_userprofile (imports)
+- backend_users_admin_py → backend_users_admin_py_userprofileinline (defines)
+- backend_users_admin_py → backend_users_admin_py_customuseradmin (defines)
+- backend_users_admin_py → backend_users_admin_py_userprofileadmin (defines)
 

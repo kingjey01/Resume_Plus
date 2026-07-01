@@ -1,13 +1,15 @@
-# Community 319: badge_icon
+# Community 319: main
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

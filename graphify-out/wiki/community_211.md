@@ -1,19 +1,21 @@
-# Community 211: audio_playback_test_page
+# Community 211: auth_repository
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **audio_playback_test_page** (`lib_pages_audio_playback_test_page_dart`, File, degree: 4)
-- **_AudioPlaybackTestPageState()** (`lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **../services/api_service.dart** (`lib_pages_audio_playback_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
-- **../widgets/audio_file_player_widget.dart** (`lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
+- **auth_repository** (`lib_features_auth_repositories_auth_repository_dart`, File, degree: 5)
+- **dart:async** (`lib_features_auth_repositories_auth_repository_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/user.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_services_api_service_dart (imports)
-- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate (defines)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_dart_async (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_models_user_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_auth_repositories_auth_repository_dart → lib_features_auth_repositories_auth_repository_dart_import_package_dio_dio_dart (imports)
 

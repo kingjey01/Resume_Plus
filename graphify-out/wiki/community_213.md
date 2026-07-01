@@ -1,19 +1,21 @@
-# Community 213: tts_reader_widget
+# Community 213: models
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **tts_reader_widget** (`lib_widgets_tts_reader_widget_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/text_to_speech_service.dart** (`lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart`, Module, degree: 1)
-- **_TtsButtonState()** (`lib_widgets_tts_reader_widget_dart_ttsbuttonstate`, Function, degree: 1)
-- **_TtsReaderWidgetState()** (`lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate`, Function, degree: 1)
+- **models** (`backend_security_models_py`, File, degree: 4)
+- **django.contrib.auth.models.User** (`backend_security_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.db.models** (`backend_security_models_py_import_django_db_models`, Module, degree: 1)
+- **Meta** (`backend_security_models_py_meta`, Class, degree: 1)
+- **SecurityLog** (`backend_security_models_py_securitylog`, Class, degree: 2)
+- **.__str__()** (`backend_security_models_py_securitylog_str`, Method, degree: 1)
 
 ## Relationships
 
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_flutter_material_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_import_package_resume_plus_clean_services_text_to_speech_service_dart (imports)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsreaderwidgetstate (defines)
-- lib_widgets_tts_reader_widget_dart → lib_widgets_tts_reader_widget_dart_ttsbuttonstate (defines)
+- backend_security_models_py → backend_security_models_py_import_django_db_models (imports)
+- backend_security_models_py → backend_security_models_py_import_django_contrib_auth_models_user (imports)
+- backend_security_models_py → backend_security_models_py_securitylog (defines)
+- backend_security_models_py_securitylog → backend_security_models_py_securitylog_str (defines)
+- backend_security_models_py → backend_security_models_py_meta (defines)
 

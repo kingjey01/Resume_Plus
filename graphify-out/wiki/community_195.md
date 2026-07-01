@@ -1,21 +1,21 @@
-# Community 195: main()
+# Community 195: 0001_initial
 
 **Members:** 6
 
 ## Nodes
 
-- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
-- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
-- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
-- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
-- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
-- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
+- **0001_initial** (`backend_payments_migrations_0001_initial_py`, File, degree: 5)
+- **django.conf.settings** (`backend_payments_migrations_0001_initial_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_payments_migrations_0001_initial_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0001_initial_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0001_initial_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0001_initial_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
-- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
+- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_conf_settings (imports)
+- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_db_models (imports)
+- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0001_initial_py → backend_payments_migrations_0001_initial_py_migration (defines)
 

@@ -1,15 +1,17 @@
-# Community 295: api_service copy
+# Community 295: test_correct_courses_endpoint
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **api_service copy** (`lib_services_api_service_copy_dart`, File, degree: 2)
-- **package:dio/dio.dart** (`lib_services_api_service_copy_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **test_correct_courses_endpoint** (`backend_test_correct_courses_endpoint_py`, File, degree: 3)
+- **json** (`backend_test_correct_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_correct_courses_endpoint_py_import_requests`, Module, degree: 1)
+- **test_correct_courses_endpoint()** (`backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_dio_dio_dart (imports)
-- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_requests (imports)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_import_json (imports)
+- backend_test_correct_courses_endpoint_py → backend_test_correct_courses_endpoint_py_test_correct_courses_endpoint (defines)
 

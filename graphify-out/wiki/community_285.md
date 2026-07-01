@@ -1,17 +1,17 @@
-# Community 285: app_theme
+# Community 285: find_courses_endpoint
 
 **Members:** 4
 
 ## Nodes
 
-- **app_theme** (`lib_theme_app_theme_dart`, File, degree: 3)
-- **BorderRadius()** (`lib_theme_app_theme_dart_borderradius`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_theme_app_theme_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:google_fonts/google_fonts.dart** (`lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart`, Module, degree: 1)
+- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
+- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
+- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
 
 ## Relationships
 
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_flutter_material_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_import_package_google_fonts_google_fonts_dart (imports)
-- lib_theme_app_theme_dart → lib_theme_app_theme_dart_borderradius (defines)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
+- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
 

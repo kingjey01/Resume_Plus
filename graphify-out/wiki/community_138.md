@@ -1,25 +1,29 @@
-# Community 138: fix_encoding_sqlite
+# Community 138: test_production_api
 
 **Members:** 8
 
 ## Nodes
 
-- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
-- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
-- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
+- **test_production_api** (`backend_test_production_api_py`, File, degree: 7)
+- **json** (`backend_test_production_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_production_api_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_production_api_py_main`, Function, degree: 5)
+- **test_audio_files_access()** (`backend_test_production_api_py_test_audio_files_access`, Function, degree: 2)
+- **test_encoding_in_api_response()** (`backend_test_production_api_py_test_encoding_in_api_response`, Function, degree: 2)
+- **test_flutter_api_simulation()** (`backend_test_production_api_py_test_flutter_api_simulation`, Function, degree: 2)
+- **test_sessions_endpoint()** (`backend_test_production_api_py_test_sessions_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
-- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
+- backend_test_production_api_py → backend_test_production_api_py_import_requests (imports)
+- backend_test_production_api_py → backend_test_production_api_py_import_json (imports)
+- backend_test_production_api_py → backend_test_production_api_py_test_sessions_endpoint (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_audio_files_access (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_flutter_api_simulation (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_encoding_in_api_response (defines)
+- backend_test_production_api_py → backend_test_production_api_py_main (defines)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_audio_files_access (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_encoding_in_api_response (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_flutter_api_simulation (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_sessions_endpoint (calls)
 

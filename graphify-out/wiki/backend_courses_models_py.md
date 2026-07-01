@@ -18,6 +18,7 @@
 - backend_courses_models_py → backend_courses_models_py_transcription (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_summary (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_professeur (defines, Extracted)
+- backend_courses_models_py → backend_courses_models_py_dispense (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_service (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_abonnement (defines, Extracted)
 - backend_courses_models_py → backend_courses_models_py_exercise (defines, Extracted)

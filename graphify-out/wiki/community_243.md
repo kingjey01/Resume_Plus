@@ -1,19 +1,19 @@
-# Community 243: test_api
+# Community 243: 0010_professeurfilieres_alter_professeur_filieres
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api** (`backend_test_api_py`, File, degree: 4)
-- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
-- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
-- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
+- **0010_professeurfilieres_alter_professeur_filieres** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_api_py → backend_test_api_py_import_requests (imports)
-- backend_test_api_py → backend_test_api_py_import_json (imports)
-- backend_test_api_py → backend_test_api_py_test_services_api (defines)
-- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models (imports)
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py → backend_courses_migrations_0010_professeurfilieres_alter_professeur_filieres_py_migration (defines)
 

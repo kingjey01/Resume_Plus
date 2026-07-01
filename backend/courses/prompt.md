@@ -1530,3 +1530,323 @@ afin de faciliter les affectations et les notifications en masse dans l'administ
 ========historique de paiement
 - dans résumé achaté et historique de paement:
 * le resumé chargé dans ces onglet doit venir de la base de donéé , et affcihé les donnée de l'utilisateur connecté et non d'afficher tout du cache sans vérifié l'utilisateur connecté 
+
+
+
+
+
+# Objectif 1 : Parcours de première utilisation
+
+Lorsqu'un CP se connecte pour la première fois et qu'il ne possède :
+
+* aucun professeur
+* aucun cours
+* aucune séance
+* aucun résumé
+
+Afficher un écran d'accueil de type Empty State.
+
+Titre :
+
+Bienvenue sur Résumé Plus
+
+Description :
+
+Commencez par créer votre premier professeur et votre premier cours afin d'enregistrer vos premières séances.
+
+Actions :
+- continuer 
+
+1. Créer mon premier professeur(écrant 1)
+2. Créer mon premier cours(écrant 2)
+3. Félicitation (si les opérations précedente on reussie, ecrant 3 avec le bouton créer ma premiere séance/enregistrement et aller à l'acceuil)
+
+Le système doit guider l'utilisateur étape par étape.
+
+---
+
+# Objectif 2 : Création simplifiée d'un professeur
+
+Lors de la création d'un professeur, l'utilisateur renseigne uniquement :
+
+* Nom complet
+* Téléphone
+* Spécialité
+
+Le backend doit automatiquement :
+
+1. Créer un utilisateur Django associé au professeur.
+2. Créer l'objet Professeur.
+3. Associer automatiquement l'université de l'utilisateur connecté.
+
+Exemple :
+
+```python
+prof_user = User.objects.create(
+    username=...
+)
+
+professeur = Professeur.objects.create(
+    user=prof_user,
+    universite=current_user.universite
+)
+```
+
+Ne jamais demander à l'utilisateur :
+
+* Université
+* Filière
+* Promotion
+
+Ces informations doivent être récupérées automatiquement depuis le profil de l'utilisateur connecté.
+
+---
+
+# Objectif 3 : Création simplifiée d'un cours
+
+Le formulaire de création d'un cours ne doit afficher que :
+
+* Nom du cours
+* Description
+
+Masquer complètement :
+
+* Université
+* Filière
+* Promotion
+
+Le backend doit remplir automatiquement ces informations à partir du profil de l'utilisateur connecté.
+
+Exemple :
+
+```python
+cours.universite = current_user.universite
+cours.filiere = current_user.filiere
+cours.promotion = current_user.promotion
+```
+
+Conserver toutes les relations existantes.
+
+Ne supprimer aucun champ existant.
+
+---
+
+# Objectif 4 : Création d'une table métier Dispense
+
+Ne pas modifier les modèles Course et Professeur existants.
+
+Ajouter une nouvelle table métier :
+
+```python
+class Dispense(models.Model):
+
+    professeur = models.ForeignKey(
+        Professeur,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+
+    cours = models.ForeignKey(
+        Course,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+
+    universite = models.ForeignKey(
+        Universite,
+        on_delete=models.CASCADE
+    )
+
+    filiere = models.ForeignKey(
+        Filiere,
+        on_delete=models.CASCADE
+    )
+
+    promotion = models.ForeignKey(
+        Promotion,
+        on_delete=models.CASCADE
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = (
+            'cours',
+            'professeur',
+            'promotion'
+        )
+```
+
+Cette table devient la source officielle de liaison entre :
+
+* Professeur
+* Cours
+* Université
+* Filière
+* Promotion
+
+---
+
+# Objectif 5 : Création automatique de Dispense
+
+Après la création du premier cours et du premier professeur :
+
+Créer automatiquement une ligne dans la table Dispense.
+
+Exemple :
+
+```python
+Dispense.objects.create(
+    professeur=professeur,
+    cours=cours,
+    universite=current_user.universite,
+    filiere=current_user.filiere,
+    promotion=current_user.promotion
+)
+```
+
+Cette opération peut être réalisée :
+
+* dans la vue
+* dans un service métier
+
+Éviter les signaux si possible.
+
+---
+
+Avant toute modification, analyser les modèles existants et vérifier que toutes les fonctionnalités actuelles continuent de fonctionner.
+NB: commence d'abord le backend puis le frontend, avant de commencé coté création de ces interface(3) previent moin car je doit t'envoyer les image(maquette) comment je veux que mes interface soit 
+
+
+# Objectif 6 : Création simplifiée d'une séance
+
+Le modèle Session existe déjà :
+
+```python
+class Session(models.Model):
+    course = models.ForeignKey(...)
+    professeur_fk = models.ForeignKey(..., null=True, blank=True)
+    professeur = models.CharField(...)
+```
+
+Ne modifier aucun champ existant.
+
+
+---
+
+# Objectif 7 : Récupération automatique du professeur
+
+Lorsque l'utilisateur sélectionne un cours :
+
+Rechercher automatiquement dans la table Dispense :
+
+```python
+dispense = Dispense.objects.filter(
+    cours=course,
+    universite=current_user.universite,
+    filiere=current_user.filiere,
+    promotion=current_user.promotion
+).first()
+```
+
+---
+
+## Cas 1 : Une liaison existe
+
+Si une ligne Dispense est trouvée :
+
+```python
+session.professeur_fk = dispense.professeur
+
+session.professeur = (
+    dispense.professeur.user.get_full_name()
+    or dispense.professeur.user.username
+)
+```
+
+Le nom du professeur doit être affiché automatiquement dans l'interface.
+
+L'utilisateur ne doit pas sélectionner le professeur.
+
+---
+
+## Cas 2 : Aucune liaison trouvée
+
+Si aucune ligne Dispense n'existe :
+
+```python
+session.professeur_fk = None
+```
+
+Afficher un champ libre :
+
+Nom du professeur
+
+L'utilisateur peut saisir manuellement :
+
+```text
+Mme Judith
+```
+
+Puis enregistrer :
+
+```python
+session.professeur = "Mme Judith"
+session.professeur_fk = None
+```
+
+---
+
+# Objectif 8 : Compatibilité totale avec les anciennes données
+
+Tous les anciens enregistrements doivent continuer à fonctionner.
+
+Même lorsque :
+
+```python
+professeur_fk = None
+```
+
+La valeur :
+
+```python
+professeur
+```
+
+doit continuer à être utilisée comme valeur affichée.
+
+Ne jamais casser :
+
+* les anciennes séances
+* les anciens résumés
+* les API existantes
+* les migrations existantes
+
+
+L'utilisateur ne doit voir que les données appartenant à son contexte académique.
+
+---
+
+# Contraintes importantes
+
+NE PAS :
+
+* supprimer de colonnes
+* modifier les clés primaires
+* casser les relations existantes
+* renommer les modèles existants
+* supprimer les FK existantes
+* casser les API
+* casser les migrations existantes
+
+FAIRE UNIQUEMENT :
+
+* ajouter la table Dispense
+* simplifier les formulaires
+* automatiser les relations
+* pré-remplir les données à partir de l'utilisateur connecté
+* récupérer automatiquement le professeur associé à un cours
+* conserver une compatibilité totale avec l'existant
+
+Avant toute modification, analyser les modèles existants et vérifier que toutes les fonctionnalités actuelles continuent de fonctionner.
+NB: commence d'abord le backend puis le frontend, avant de commencé coté frontend previent moin car je doit t'envoyer les image comment je veux que mes interface soit 

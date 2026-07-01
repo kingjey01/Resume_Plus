@@ -1,21 +1,23 @@
-# Community 178: settings_corrected
+# Community 178: middleware
 
-**Members:** 6
+**Members:** 7
 
 ## Nodes
 
-- **settings_corrected** (`backend_settings_corrected_py`, File, degree: 5)
-- **datetime.timedelta** (`backend_settings_corrected_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_corrected_py_import_decouple_config`, Module, degree: 1)
-- **os** (`backend_settings_corrected_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_corrected_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_corrected_py_import_pymysql`, Module, degree: 1)
+- **middleware** (`backend_users_middleware_py`, File, degree: 4)
+- **datetime** (`backend_users_middleware_py_import_datetime`, Module, degree: 1)
+- **django.utils.deprecation.MiddlewareMixin** (`backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin`, Module, degree: 1)
+- **logging** (`backend_users_middleware_py_import_logging`, Module, degree: 1)
+- **JWTAuthenticationMiddleware** (`backend_users_middleware_py_jwtauthenticationmiddleware`, Class, degree: 3)
+- **.process_request()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_request`, Method, degree: 1)
+- **.process_response()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_response`, Method, degree: 1)
 
 ## Relationships
 
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pathlib_path (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_datetime_timedelta (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_decouple_config (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_os (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pymysql (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_logging (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_datetime (imports)
+- backend_users_middleware_py → backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin (imports)
+- backend_users_middleware_py → backend_users_middleware_py_jwtauthenticationmiddleware (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_request (defines)
+- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_response (defines)
 

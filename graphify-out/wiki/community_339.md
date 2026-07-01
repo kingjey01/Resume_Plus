@@ -1,8 +1,13 @@
-# Community 339: GeneratedPluginRegistrant
+# Community 339: __init__
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **GeneratedPluginRegistrant** (`ios_runner_generatedpluginregistrant_m`, File, degree: 0)
+- **__init__** (`backend_resume_backend_init_py`, File, degree: 1)
+- **.celery.app** (`backend_resume_backend_init_py_import_celery_app`, Module, degree: 1)
+
+## Relationships
+
+- backend_resume_backend_init_py → backend_resume_backend_init_py_import_celery_app (imports)
 

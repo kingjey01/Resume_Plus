@@ -75,6 +75,7 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
   // Champs obligatoires pour le résumé
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _priceController = TextEditingController(text: '0');
+  double _minimumPrice = 3000; // Valeur par défaut, mise à jour via API
   final _formKey = GlobalKey<FormState>();
   
   // Sauvegarde locale - Liste des 5 derniers enregistrements
@@ -96,6 +97,17 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     _initializeAnimations();
     _setupRecorderCallbacks();
     _loadProfesseurs();
+    _loadPricingConfig();
+  }
+
+  Future<void> _loadPricingConfig() async {
+    final minPrice = await _apiService.getMinimumResumePrice();
+    if (mounted) {
+      setState(() {
+        _minimumPrice = minPrice;
+        _priceController.text = minPrice.toStringAsFixed(0);
+      });
+    }
   }
 
   Future<void> _loadProfesseurs({int retryCount = 0}) async {
@@ -692,7 +704,7 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
         _isFileUploaded = false;
         _uploadedFileName = null;
         _titleController.clear();
-        _priceController.text = '0';
+        _priceController.text = _minimumPrice.toStringAsFixed(0);
       });
 
       // Arrêter la lecture si en cours
@@ -826,15 +838,15 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
               
               const SizedBox(height: 16),
               
-              // Prix du résumé (obligatoire, minimum 3000 CDF)
+              // Prix du résumé (minimum dynamique depuis ResumePricingConfig)
               TextFormField(
                 controller: _priceController,
                 decoration: InputDecoration(
                   labelText: 'Prix du résumé (CDF) *',
-                  hintText: 'Minimum 3000 CDF',
+                  hintText: 'Prix minimum : ${_minimumPrice.toStringAsFixed(0)} CDF',
                   prefixIcon: const Icon(Icons.attach_money),
                   suffixText: 'CDF',
-                  helperText: 'Le prix minimum est 3000 CDF. Les résumés gratuits ne sont pas autorisés.',
+                  helperText: 'Prix minimum : ${_minimumPrice.toStringAsFixed(0)} CDF. Les résumés gratuits ne sont pas autorisés.',
                   helperMaxLines: 2,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -850,8 +862,8 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
                   if (price == null) {
                     return 'Entrez un prix valide (nombre)';
                   }
-                  if (price < 3000) {
-                    return 'Le prix minimum est 3000 CDF';
+                  if (price < _minimumPrice) {
+                    return 'Le prix minimum est ${_minimumPrice.toStringAsFixed(0)} CDF';
                   }
                   return null;
                 },

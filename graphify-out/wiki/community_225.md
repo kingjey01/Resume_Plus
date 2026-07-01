@@ -1,19 +1,19 @@
-# Community 225: fix_user_promotion
+# Community 225: urls
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_user_promotion** (`backend_fix_user_promotion_py`, File, degree: 4)
-- **courses.models.Promotion** (`backend_fix_user_promotion_py_import_courses_models_promotion`, Module, degree: 1)
-- **django** (`backend_fix_user_promotion_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_user_promotion_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_user_promotion_py_import_os`, Module, degree: 1)
+- **urls** (`backend_courses_urls_py`, File, degree: 4)
+- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
+- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
+- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
+- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_os (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_user_promotion_py → backend_fix_user_promotion_py_import_courses_models_promotion (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
+- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
 

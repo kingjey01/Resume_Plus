@@ -1,29 +1,29 @@
-# Community 70: service_card
+# Community 70: debug_api_response
 
 **Members:** 10
 
 ## Nodes
 
-- **service_card** (`lib_features_subscriptions_widgets_service_card_dart`, File, degree: 9)
-- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **debug_api_response** (`backend_debug_api_response_py`, File, degree: 9)
+- **django** (`backend_debug_api_response_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_debug_api_response_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_debug_api_response_py_import_os`, Module, degree: 1)
+- **payments.models.Abonnement** (`backend_debug_api_response_py_import_payments_models_abonnement`, Module, degree: 1)
+- **payments.models.Service** (`backend_debug_api_response_py_import_payments_models_service`, Module, degree: 1)
+- **payments.serializers.AbonnementSerializer** (`backend_debug_api_response_py_import_payments_serializers_abonnementserializer`, Module, degree: 1)
+- **payments.serializers.ServiceSerializer** (`backend_debug_api_response_py_import_payments_serializers_serviceserializer`, Module, degree: 1)
+- **sys** (`backend_debug_api_response_py_import_sys`, Module, degree: 1)
+- **test_api_responses()** (`backend_debug_api_response_py_test_api_responses`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
-- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_os (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_sys (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_service (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_models_abonnement (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_serviceserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_payments_serializers_abonnementserializer (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_import_django_contrib_auth_models_user (imports)
+- backend_debug_api_response_py → backend_debug_api_response_py_test_api_responses (defines)
 

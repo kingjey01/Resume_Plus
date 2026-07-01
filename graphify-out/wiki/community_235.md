@@ -1,19 +1,19 @@
-# Community 235: otp_service
+# Community 235: AppDelegate
 
 **Members:** 5
 
 ## Nodes
 
-- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
-- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
-- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **AppDelegate** (`ios_runner_appdelegate_swift`, File, degree: 4)
+- **application** (`ios_runner_appdelegate_swift_application`, Function, degree: 1)
+- **FirebaseCore** (`ios_runner_appdelegate_swift_import_firebasecore`, Module, degree: 1)
+- **Flutter** (`ios_runner_appdelegate_swift_import_flutter`, Module, degree: 1)
+- **UIKit** (`ios_runner_appdelegate_swift_import_uikit`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_application (defines)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_flutter (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_uikit (imports)
+- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_firebasecore (imports)
 

@@ -1,17 +1,17 @@
-# Community 288: 0003_userprofile_reset_code_and_more
+# Community 288: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
 
 **Members:** 4
 
 ## Nodes
 
-- **0003_userprofile_reset_code_and_more** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration`, Class, degree: 1)
+- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration (defines)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
 

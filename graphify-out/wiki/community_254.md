@@ -1,17 +1,19 @@
-# Community 254: web_audio_service
+# Community 254: universite_filiere.g
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **web_audio_service** (`lib_services_web_audio_service_dart`, File, degree: 3)
-- **package:flutter/foundation.dart** (`lib_services_web_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **_instance()** (`lib_services_web_audio_service_dart_instance`, Function, degree: 1)
-- **_isPaused()** (`lib_services_web_audio_service_dart_ispaused`, Function, degree: 1)
+- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
+- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
+- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
+- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
+- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_instance (defines)
-- lib_services_web_audio_service_dart → lib_services_web_audio_service_dart_ispaused (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
 

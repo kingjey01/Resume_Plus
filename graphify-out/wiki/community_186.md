@@ -1,21 +1,21 @@
-# Community 186: 0011_exercise_service_is_active_summary_is_validated_and_more
+# Community 186: screen_security_service
 
 **Members:** 6
 
 ## Nodes
 
-- **0011_exercise_service_is_active_summary_is_validated_and_more** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.migrations** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_migration`, Class, degree: 1)
+- **screen_security_service** (`lib_services_screen_security_service_dart`, File, degree: 5)
+- **dart:io** (`lib_services_screen_security_service_dart_import_dart_io`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_screen_security_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_services_screen_security_service_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:screen_protector/screen_protector.dart** (`lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart`, Module, degree: 1)
+- **_isSecured()** (`lib_services_screen_security_service_dart_issecured`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_conf_settings (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py → backend_courses_migrations_0011_exercise_service_is_active_summary_is_validated_and_more_py_migration (defines)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_dart_io (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_services_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_issecured (defines)
 

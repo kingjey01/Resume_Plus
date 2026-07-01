@@ -1,15 +1,15 @@
-# Community 308: exercise_urls
+# Community 308: wsgi
 
 **Members:** 3
 
 ## Nodes
 
-- **exercise_urls** (`backend_courses_exercise_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_courses_exercise_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..exercise_views** (`backend_courses_exercise_urls_py_import_exercise_views`, Module, degree: 1)
+- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
+- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
+- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_django_urls_path (imports)
-- backend_courses_exercise_urls_py → backend_courses_exercise_urls_py_import_exercise_views (imports)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
 

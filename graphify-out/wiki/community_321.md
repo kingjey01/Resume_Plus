@@ -1,13 +1,15 @@
-# Community 321: service
+# Community 321: terms_of_service_screen
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **service** (`lib_models_service_dart`, File, degree: 1)
-- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
+- **terms_of_service_screen** (`lib_features_settings_screens_terms_of_service_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_service_dart → lib_models_service_dart_id (defines)
+- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_terms_of_service_screen_dart → lib_features_settings_screens_terms_of_service_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

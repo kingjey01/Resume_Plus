@@ -1,26 +1,25 @@
-# Community 127: serializers
+# Community 127: migrate_courses_fk
 
 **Members:** 8
 
 ## Nodes
 
-- **serializers** (`backend_security_serializers_py`, File, degree: 5)
-- **CreateSecurityLogSerializer** (`backend_security_serializers_py_createsecuritylogserializer`, Class, degree: 3)
-- **.create()** (`backend_security_serializers_py_createsecuritylogserializer_create`, Method, degree: 2)
-- **.get_client_ip()** (`backend_security_serializers_py_createsecuritylogserializer_get_client_ip`, Method, degree: 2)
-- **.models.SecurityLog** (`backend_security_serializers_py_import_models_securitylog`, Module, degree: 1)
-- **rest_framework.serializers** (`backend_security_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
-- **Meta** (`backend_security_serializers_py_meta`, Class, degree: 1)
-- **SecurityLogSerializer** (`backend_security_serializers_py_securitylogserializer`, Class, degree: 1)
+- **migrate_courses_fk** (`backend_courses_management_commands_migrate_courses_fk_py`, File, degree: 6)
+- **Command** (`backend_courses_management_commands_migrate_courses_fk_py_command`, Class, degree: 2)
+- **.handle()** (`backend_courses_management_commands_migrate_courses_fk_py_command_handle`, Method, degree: 1)
+- **courses.models.Course** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course`, Module, degree: 1)
+- **courses.models.Filiere** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite`, Module, degree: 1)
+- **django.core.management.base.BaseCommand** (`backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand`, Module, degree: 1)
 
 ## Relationships
 
-- backend_security_serializers_py → backend_security_serializers_py_import_rest_framework_serializers (imports)
-- backend_security_serializers_py → backend_security_serializers_py_import_models_securitylog (imports)
-- backend_security_serializers_py → backend_security_serializers_py_securitylogserializer (defines)
-- backend_security_serializers_py → backend_security_serializers_py_meta (defines)
-- backend_security_serializers_py → backend_security_serializers_py_createsecuritylogserializer (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_create (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (defines)
-- backend_security_serializers_py_createsecuritylogserializer_create → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (calls)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_django_core_management_base_basecommand (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_course (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_universite (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_filiere (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_import_courses_models_promotion (imports)
+- backend_courses_management_commands_migrate_courses_fk_py → backend_courses_management_commands_migrate_courses_fk_py_command (defines)
+- backend_courses_management_commands_migrate_courses_fk_py_command → backend_courses_management_commands_migrate_courses_fk_py_command_handle (defines)
 

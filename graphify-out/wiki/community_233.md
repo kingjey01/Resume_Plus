@@ -1,19 +1,19 @@
-# Community 233: UniversiteFiliereTest
+# Community 233: PurchaseNotificationTest
 
 **Members:** 5
 
 ## Nodes
 
-- **UniversiteFiliereTest** (`backend_courses_tests_py_universitefilieretest`, Class, degree: 5)
-- **.setUp()** (`backend_courses_tests_py_universitefilieretest_setup`, Method, degree: 1)
-- **.setUpTestData()** (`backend_courses_tests_py_universitefilieretest_setuptestdata`, Method, degree: 1)
-- **.test_relation_universite_filiere()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere`, Method, degree: 1)
-- **.test_relation_universite_filiere_creation()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation`, Method, degree: 1)
+- **PurchaseNotificationTest** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest`, Class, degree: 5)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_purchases_notifications()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications`, Method, degree: 1)
+- **.test_purchase_without_summary()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary`, Method, degree: 1)
+- **.test_summary_purchase_notification()** (`backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setup (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setuptestdata (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_summary_purchase_notification (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_multiple_purchases_notifications (defines)
+- backend_notifications_test_payment_notifications_py_purchasenotificationtest → backend_notifications_test_payment_notifications_py_purchasenotificationtest_test_purchase_without_summary (defines)
 

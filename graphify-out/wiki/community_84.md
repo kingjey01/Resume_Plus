@@ -1,29 +1,29 @@
-# Community 84: signals
+# Community 84: upload_choice_screen
 
 **Members:** 10
 
 ## Nodes
 
-- **signals** (`backend_payments_signals_py`, File, degree: 9)
-- **datetime.timedelta** (`backend_payments_signals_py_import_datetime_timedelta`, Module, degree: 1)
-- **django.db.models.signals.post_save** (`backend_payments_signals_py_import_django_db_models_signals_post_save`, Module, degree: 1)
-- **django.dispatch.receiver** (`backend_payments_signals_py_import_django_dispatch_receiver`, Module, degree: 1)
-- **django.utils.timezone** (`backend_payments_signals_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_payments_signals_py_import_logging`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_signals_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_signals_py_import_models_purchase`, Module, degree: 1)
-- **on_abonnement_created_or_updated()** (`backend_payments_signals_py_on_abonnement_created_or_updated`, Function, degree: 1)
-- **on_purchase_completed()** (`backend_payments_signals_py_on_purchase_completed`, Function, degree: 1)
+- **upload_choice_screen** (`lib_features_upload_screens_upload_choice_screen_dart`, File, degree: 9)
+- **package:flutter/foundation.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/associate_prof_cours_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_associate_prof_cours_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/create_cours_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_cours_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/create_professeur_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_professeur_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/record_audio_screen.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_signals_py → backend_payments_signals_py_import_logging (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_django_db_models_signals_post_save (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_django_dispatch_receiver (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_django_utils_timezone (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_datetime_timedelta (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_models_abonnement (imports)
-- backend_payments_signals_py → backend_payments_signals_py_import_models_purchase (imports)
-- backend_payments_signals_py → backend_payments_signals_py_on_abonnement_created_or_updated (defines)
-- backend_payments_signals_py → backend_payments_signals_py_on_purchase_completed (defines)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_foundation_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_associate_prof_cours_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_cours_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_professeur_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_features_upload_screens_upload_choice_screen_dart → lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

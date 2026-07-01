@@ -3,7 +3,7 @@
 - **ID:** `backend_courses_deepseek_service_py_deepseekservice_translate_summary`
 - **Type:** Method
 - **File:** `.\backend\courses\deepseek_service.py`
-- **Location:** L433
+- **Location:** L439
 
 ## Relationships
 

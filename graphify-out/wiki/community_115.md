@@ -1,27 +1,25 @@
-# Community 115: tasks
+# Community 115: fix_encoding_sqlite
 
 **Members:** 8
 
 ## Nodes
 
-- **tasks** (`backend_courses_tasks_py`, File, degree: 7)
-- **generate_summary_task()** (`backend_courses_tasks_py_generate_summary_task`, Function, degree: 1)
-- **celery.shared_task** (`backend_courses_tasks_py_import_celery_shared_task`, Module, degree: 1)
-- **django.utils.timezone** (`backend_courses_tasks_py_import_django_utils_timezone`, Module, degree: 1)
-- **logging** (`backend_courses_tasks_py_import_logging`, Module, degree: 1)
-- **process_audio_session_task()** (`backend_courses_tasks_py_process_audio_session_task`, Function, degree: 2)
-- **transcribe_audio_task()** (`backend_courses_tasks_py_transcribe_audio_task`, Function, degree: 2)
-- **_validate_and_fix_duration()** (`backend_courses_tasks_py_validate_and_fix_duration`, Function, degree: 3)
+- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
+- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_tasks_py → backend_courses_tasks_py_import_logging (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_celery_shared_task (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_import_django_utils_timezone (imports)
-- backend_courses_tasks_py → backend_courses_tasks_py_validate_and_fix_duration (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_transcribe_audio_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_generate_summary_task (defines)
-- backend_courses_tasks_py → backend_courses_tasks_py_process_audio_session_task (defines)
-- backend_courses_tasks_py_transcribe_audio_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
-- backend_courses_tasks_py_process_audio_session_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
 

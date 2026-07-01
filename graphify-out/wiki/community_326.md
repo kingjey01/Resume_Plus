@@ -1,13 +1,13 @@
-# Community 326: professeur
+# Community 326: tab_refresh_provider
 
 **Members:** 2
 
 ## Nodes
 
-- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
-- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
+- **tab_refresh_provider** (`lib_providers_tab_refresh_provider_dart`, File, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_tab_refresh_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
+- lib_providers_tab_refresh_provider_dart → lib_providers_tab_refresh_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
 

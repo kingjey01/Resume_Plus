@@ -220,23 +220,23 @@ class _ExerciseResultScreenState extends State<ExerciseResultScreen> {
               child: Column(
                 children: [
                   // Bouton Régénérer (seulement si summaryId et difficulty sont disponibles)
-                  if (widget.summaryId != null && widget.difficulty != null)
-                    SizedBox(
-                      width: double.infinity,
-                      child: ElevatedButton.icon(
-                        onPressed: _isRegenerating ? null : _regenerateExercise,
-                        icon: _isRegenerating
-                            ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
-                            : const Icon(Icons.refresh_rounded, size: 20),
-                        label: Text(_isRegenerating ? 'Génération en cours...' : 'Régénérer un nouvel exercice'),
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppTheme.primaryBlue,
-                          foregroundColor: Colors.white,
-                          padding: const EdgeInsets.symmetric(vertical: 16),
-                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
-                        ),
-                      ),
-                    ),
+                  // if (widget.summaryId != null && widget.difficulty != null)
+                  //   SizedBox(
+                  //     width: double.infinity,
+                  //     child: ElevatedButton.icon(
+                  //       onPressed: _isRegenerating ? null : _regenerateExercise,
+                  //       icon: _isRegenerating
+                  //           ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white))
+                  //           : const Icon(Icons.refresh_rounded, size: 20),
+                  //       label: Text(_isRegenerating ? 'Génération en cours...' : 'Régénérer un nouvel exercice'),
+                  //       style: ElevatedButton.styleFrom(
+                  //         backgroundColor: AppTheme.primaryBlue,
+                  //         foregroundColor: Colors.white,
+                  //         padding: const EdgeInsets.symmetric(vertical: 16),
+                  //         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                  //       ),
+                  //     ),
+                  //   ),
                   if (widget.summaryId != null && widget.difficulty != null)
                     const SizedBox(height: 10),
                   // Bouton Retour

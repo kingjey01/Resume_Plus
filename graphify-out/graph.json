@@ -1107,21 +1107,21 @@
       "id": "backend_courses_deepseek_service_py_deepseekservice_translate_summary",
       "label": ".translate_summary()",
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L433",
+      "source_location": "L439",
       "node_type": "method"
     },
     {
       "id": "backend_courses_deepseek_service_py_deepseekservice_reformulate_summary",
       "label": ".reformulate_summary()",
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L460",
+      "source_location": "L466",
       "node_type": "method"
     },
     {
       "id": "backend_courses_deepseek_service_py_deepseekservice_simplify_summary",
       "label": ".simplify_summary()",
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L487",
+      "source_location": "L493",
       "node_type": "method"
     },
     {
@@ -1197,35 +1197,35 @@
       "id": "backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai",
       "label": "._generate_questions_with_ai()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L79",
+      "source_location": "L80",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response",
       "label": "._parse_ai_response()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L111",
+      "source_location": "L112",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_exercisegenerator_validate_question_structure",
       "label": "._validate_question_structure()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L139",
+      "source_location": "L140",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions",
       "label": "._generate_mock_questions()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L168",
+      "source_location": "L169",
       "node_type": "method"
     },
     {
       "id": "backend_courses_exercise_generator_py_generate_exercises_for_summary",
       "label": "generate_exercises_for_summary()",
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L315",
+      "source_location": "L325",
       "node_type": "function"
     },
     {
@@ -1391,42 +1391,42 @@
       "id": "backend_courses_exercise_views_py_get_exercise_view",
       "label": "get_exercise_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L108",
+      "source_location": "L123",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_submit_exercise_view",
       "label": "submit_exercise_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L167",
+      "source_location": "L186",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_get_attempt_result_view",
       "label": "get_attempt_result_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L228",
+      "source_location": "L252",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_get_exercise_attempts_view",
       "label": "get_exercise_attempts_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L275",
+      "source_location": "L299",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_check_exercise_subscription_view",
       "label": "check_exercise_subscription_view()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L309",
+      "source_location": "L333",
       "node_type": "function"
     },
     {
       "id": "backend_courses_exercise_views_py_has_exercise_subscription",
       "label": "has_exercise_subscription()",
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L364",
+      "source_location": "L388",
       "node_type": "function"
     },
     {
@@ -2498,6 +2498,108 @@
       "node_type": "class"
     },
     {
+      "id": "backend_courses_migrations_0020_add_difficulty_to_exercise_py",
+      "label": "0020_add_difficulty_to_exercise",
+      "source_file": ".\\backend\\courses\\migrations\\0020_add_difficulty_to_exercise.py",
+      "node_type": "file"
+    },
+    {
+      "id": "backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_migrations",
+      "label": "django.db.migrations",
+      "source_file": ".\\backend\\courses\\migrations\\0020_add_difficulty_to_exercise.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_models",
+      "label": "django.db.models",
+      "source_file": ".\\backend\\courses\\migrations\\0020_add_difficulty_to_exercise.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0020_add_difficulty_to_exercise_py_migration",
+      "label": "Migration",
+      "source_file": ".\\backend\\courses\\migrations\\0020_add_difficulty_to_exercise.py",
+      "source_location": "L6",
+      "node_type": "class"
+    },
+    {
+      "id": "backend_courses_migrations_0021_add_dispense_model_py",
+      "label": "0021_add_dispense_model",
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "node_type": "file"
+    },
+    {
+      "id": "backend_courses_migrations_0021_add_dispense_model_py_import_django_db_migrations",
+      "label": "django.db.migrations",
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0021_add_dispense_model_py_import_django_db_models",
+      "label": "django.db.models",
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0021_add_dispense_model_py_import_django_db_models_deletion",
+      "label": "django.db.models.deletion",
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0021_add_dispense_model_py_migration",
+      "label": "Migration",
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L7",
+      "node_type": "class"
+    },
+    {
+      "id": "backend_courses_migrations_0022_exercise_created_by_py",
+      "label": "0022_exercise_created_by",
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "node_type": "file"
+    },
+    {
+      "id": "backend_courses_migrations_0022_exercise_created_by_py_import_django_conf_settings",
+      "label": "django.conf.settings",
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0022_exercise_created_by_py_import_django_db_migrations",
+      "label": "django.db.migrations",
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0022_exercise_created_by_py_import_django_db_models",
+      "label": "django.db.models",
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0022_exercise_created_by_py_import_django_db_models_deletion",
+      "label": "django.db.models.deletion",
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_migrations_0022_exercise_created_by_py_migration",
+      "label": "Migration",
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L6",
+      "node_type": "class"
+    },
+    {
       "id": "backend_courses_models_py",
       "label": "models",
       "source_file": ".\\backend\\courses\\models.py",
@@ -2700,94 +2802,108 @@
       "node_type": "method"
     },
     {
+      "id": "backend_courses_models_py_dispense",
+      "label": "Dispense",
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L307",
+      "node_type": "class"
+    },
+    {
+      "id": "backend_courses_models_py_dispense_str",
+      "label": ".__str__()",
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L345",
+      "node_type": "method"
+    },
+    {
       "id": "backend_courses_models_py_service",
       "label": "Service",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L307",
+      "source_location": "L349",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_service_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L315",
+      "source_location": "L357",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_abonnement",
       "label": "Abonnement",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L324",
+      "source_location": "L366",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_abonnement_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L341",
+      "source_location": "L383",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_abonnement_is_active",
       "label": ".is_active()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L345",
+      "source_location": "L387",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exercise",
       "label": "Exercise",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L356",
+      "source_location": "L398",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_exercise_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L375",
+      "source_location": "L419",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exercise_questions_count",
       "label": ".questions_count()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L379",
+      "source_location": "L423",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exercisequestion",
       "label": "ExerciseQuestion",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L388",
+      "source_location": "L432",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_exercisequestion_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L403",
+      "source_location": "L447",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exerciseattempt",
       "label": "ExerciseAttempt",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L412",
+      "source_location": "L456",
       "node_type": "class"
     },
     {
       "id": "backend_courses_models_py_exerciseattempt_str",
       "label": ".__str__()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L422",
+      "source_location": "L466",
       "node_type": "method"
     },
     {
       "id": "backend_courses_models_py_exerciseattempt_calculate_score",
       "label": ".calculate_score()",
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L425",
+      "source_location": "L469",
       "node_type": "method"
     },
     {
@@ -3674,563 +3790,647 @@
       "node_type": "module"
     },
     {
+      "id": "backend_courses_views_py_import_django_contrib_auth_models_user",
+      "label": "django.contrib.auth.models.User",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L15",
+      "node_type": "module"
+    },
+    {
       "id": "backend_courses_views_py_import_models_course",
       "label": ".models.Course",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_session",
       "label": ".models.Session",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_summary",
       "label": ".models.Summary",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_universite",
       "label": ".models.Universite",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_promotion",
       "label": ".models.Promotion",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_filiere",
       "label": ".models.Filiere",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_service",
       "label": ".models.Service",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_abonnement",
       "label": ".models.Abonnement",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_models_professeur",
       "label": ".models.Professeur",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
+      "node_type": "module"
+    },
+    {
+      "id": "backend_courses_views_py_import_models_dispense",
+      "label": ".models.Dispense",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_payments_models_purchase",
       "label": "payments.models.Purchase",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_courseserializer",
       "label": ".serializers.CourseSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_sessionserializer",
       "label": ".serializers.SessionSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_sessioncreateserializer",
       "label": ".serializers.SessionCreateSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_summaryserializer",
       "label": ".serializers.SummarySerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_summarycreateserializer",
       "label": ".serializers.SummaryCreateSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_universiteserializer",
       "label": ".serializers.UniversiteSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_promotionserializer",
       "label": ".serializers.PromotionSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_filiereserializer",
       "label": ".serializers.FiliereSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_serviceserializer",
       "label": ".serializers.ServiceSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_abonnementserializer",
       "label": ".serializers.AbonnementSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_abonnementcreateserializer",
       "label": ".serializers.AbonnementCreateSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_filierewithuniversiteserializer",
       "label": ".serializers.FiliereWithUniversiteSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_serializers_professeurserializer",
       "label": ".serializers.ProfesseurSerializer",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_permissions_isownerorreadonly",
       "label": ".permissions.IsOwnerOrReadOnly",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_permissions_cancreatesummary",
       "label": ".permissions.CanCreateSummary",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_permissions_canaccesssummary",
       "label": ".permissions.CanAccessSummary",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_permissions_isadminorreadonly",
       "label": ".permissions.IsAdminOrReadOnly",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_permissions_hasuniversityaccess",
       "label": ".permissions.HasUniversityAccess",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_import_permissions_canmodifyobject",
       "label": ".permissions.CanModifyObject",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "node_type": "module"
     },
     {
       "id": "backend_courses_views_py_courselistcreateview",
       "label": "CourseListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_courselistcreateview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L40",
+      "source_location": "L41",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_courselistcreateview_perform_create",
       "label": ".perform_create()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L64",
+      "source_location": "L65",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_views_py_coursecreateview",
+      "label": "CourseCreateView",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L98",
+      "node_type": "class"
+    },
+    {
+      "id": "backend_courses_views_py_coursecreateview_get_queryset",
+      "label": ".get_queryset()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L107",
+      "node_type": "method"
+    },
+    {
+      "id": "backend_courses_views_py_coursecreateview_perform_create",
+      "label": ".perform_create()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L131",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_coursedetailview",
       "label": "CourseDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L79",
+      "source_location": "L162",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_coursedetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L83",
+      "source_location": "L166",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_sessionlistcreateview",
       "label": "SessionListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L108",
+      "source_location": "L191",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_sessionlistcreateview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L117",
+      "source_location": "L200",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_sessiondetailview",
       "label": "SessionDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L140",
+      "source_location": "L223",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_sessiondetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L144",
+      "source_location": "L227",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarylistcreateview",
       "label": "SummaryListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L166",
+      "source_location": "L249",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_summarylistcreateview_get_serializer_class",
       "label": ".get_serializer_class()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L175",
+      "source_location": "L258",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarylistcreateview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L180",
+      "source_location": "L263",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarydetailview",
       "label": "SummaryDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L218",
+      "source_location": "L301",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_summarydetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L222",
+      "source_location": "L305",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summaryachetesview",
       "label": "SummaryAchetesView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L245",
+      "source_location": "L328",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_summaryachetesview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L255",
+      "source_location": "L338",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_summarygratuitsview",
       "label": "SummaryGratuitsView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L270",
+      "source_location": "L353",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_generate_summary_from_audio",
       "label": "generate_summary_from_audio()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L284",
+      "source_location": "L367",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_universiteviewset",
       "label": "UniversiteViewSet",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L330",
+      "source_location": "L413",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_universiteviewset_filieres",
       "label": ".filieres()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L340",
+      "source_location": "L423",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_universiteviewset_add_filiere",
       "label": ".add_filiere()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L348",
+      "source_location": "L431",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_filiereviewset",
       "label": "FiliereViewSet",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L370",
+      "source_location": "L453",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_filiereviewset_promotions",
       "label": ".promotions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L380",
+      "source_location": "L463",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_filiereviewset_add_promotion",
       "label": ".add_promotion()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L388",
+      "source_location": "L471",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_promotionviewset",
       "label": "PromotionViewSet",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L410",
+      "source_location": "L493",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_promotionviewset_filieres",
       "label": ".filieres()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L421",
+      "source_location": "L504",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_servicelistcreateview",
       "label": "ServiceListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L430",
+      "source_location": "L513",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_servicelistcreateview_get_permissions",
       "label": ".get_permissions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L439",
+      "source_location": "L522",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_servicedetailview",
       "label": "ServiceDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L446",
+      "source_location": "L529",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_servicedetailview_get_permissions",
       "label": ".get_permissions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L451",
+      "source_location": "L534",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_abonnementlistcreateview",
       "label": "AbonnementListCreateView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L459",
+      "source_location": "L542",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_abonnementlistcreateview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L467",
+      "source_location": "L550",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_abonnementlistcreateview_get_serializer_class",
       "label": ".get_serializer_class()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L471",
+      "source_location": "L554",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_abonnementdetailview",
       "label": "AbonnementDetailView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L477",
+      "source_location": "L560",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_abonnementdetailview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L481",
+      "source_location": "L564",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_upload_audio_session",
       "label": "upload_audio_session()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L489",
+      "source_location": "L572",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_audio_sessions",
       "label": "get_audio_sessions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L687",
+      "source_location": "L793",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_process_audio_session",
       "label": "process_audio_session()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L740",
+      "source_location": "L846",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_retry_failed_session",
       "label": "retry_failed_session()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L846",
+      "source_location": "L952",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_sessions_queue",
       "label": "get_sessions_queue()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L965",
+      "source_location": "L1071",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_audio_file",
       "label": "get_audio_file()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1024",
+      "source_location": "L1130",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_serve_audio_file",
       "label": "serve_audio_file()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1101",
+      "source_location": "L1207",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_audio_processing_stats",
       "label": "get_audio_processing_stats()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1139",
+      "source_location": "L1245",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_batch_process_audio_sessions",
       "label": "batch_process_audio_sessions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1161",
+      "source_location": "L1267",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_auto_process_pending_sessions",
       "label": "auto_process_pending_sessions()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1192",
+      "source_location": "L1298",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_cleanup_old_audio_files",
       "label": "cleanup_old_audio_files()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1222",
+      "source_location": "L1328",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_professeurlistview",
       "label": "ProfesseurListView",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1251",
+      "source_location": "L1357",
       "node_type": "class"
     },
     {
       "id": "backend_courses_views_py_professeurlistview_get_queryset",
       "label": ".get_queryset()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1264",
+      "source_location": "L1370",
       "node_type": "method"
     },
     {
       "id": "backend_courses_views_py_validate_summary_view",
       "label": "validate_summary_view()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1297",
+      "source_location": "L1403",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_edit_summary_view",
       "label": "edit_summary_view()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1358",
+      "source_location": "L1464",
       "node_type": "function"
     },
     {
       "id": "backend_courses_views_py_get_summaries_for_validation_view",
       "label": "get_summaries_for_validation_view()",
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1432",
+      "source_location": "L1538",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_views_py_onboarding_status_view",
+      "label": "onboarding_status_view()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1616",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_views_py_create_professeur_simple_view",
+      "label": "create_professeur_simple_view()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1675",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_views_py_create_dispense_view",
+      "label": "create_dispense_view()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1772",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_views_py_delete_professeur_view",
+      "label": "delete_professeur_view()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1830",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_views_py_list_dispenses_view",
+      "label": "list_dispenses_view()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1850",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_views_py_delete_dispense_view",
+      "label": "delete_dispense_view()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1881",
+      "node_type": "function"
+    },
+    {
+      "id": "backend_courses_views_py_resolve_professor_view",
+      "label": "resolve_professor_view()",
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1906",
       "node_type": "function"
     },
     {
@@ -13539,80 +13739,101 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_onboarding_cp_onboarding_flow_dart",
+      "label": "package:resume_plus_clean/features/onboarding/cp_onboarding_flow.dart",
+      "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_summaries_screens_all_summaries_screen_dart",
       "label": "package:resume_plus_clean/features/summaries/screens/all_summaries_screen.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L4",
+      "source_location": "L5",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_purchases_screens_purchases_screen_dart",
       "label": "package:resume_plus_clean/features/purchases/screens/purchases_screen.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L5",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercises_screen_dart",
       "label": "package:resume_plus_clean/features/exercises/screens/exercises_screen.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L6",
+      "source_location": "L7",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_validation_screens_validation_screen_dart",
       "label": "package:resume_plus_clean/features/validation/screens/validation_screen.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L7",
+      "source_location": "L8",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "label": "package:resume_plus_clean/services/api_service.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L8",
+      "source_location": "L9",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_notification_service_dart",
       "label": "package:resume_plus_clean/services/notification_service.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L9",
+      "source_location": "L10",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L10",
+      "source_location": "L11",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart",
       "label": "package:resume_plus_clean/providers/purchase_badge_provider.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L11",
+      "source_location": "L12",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
       "label": "package:resume_plus_clean/features/home/providers/summary_provider.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L12",
+      "source_location": "L13",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
+      "label": "package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart",
+      "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
+      "source_location": "L14",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_widgets_badge_icon_dart",
       "label": "package:resume_plus_clean/widgets/badge_icon.dart",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L13",
+      "source_location": "L15",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
+      "label": "package:resume_plus_clean/providers/tab_refresh_provider.dart",
+      "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "lib_features_app_screens_main_navigation_screen_dart_mainnavigationscreenstate",
       "label": "_MainNavigationScreenState()",
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L22",
+      "source_location": "L25",
       "node_type": "function"
     },
     {
@@ -14200,45 +14421,59 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart",
+      "label": "package:flutter_riverpod/flutter_riverpod.dart",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart",
       "label": "package:resume_plus_clean/models/exercise.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L2",
+      "source_location": "L3",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "label": "package:resume_plus_clean/services/api_service.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L3",
+      "source_location": "L4",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L4",
+      "source_location": "L5",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
+      "label": "package:resume_plus_clean/providers/tab_refresh_provider.dart",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart",
       "label": "package:resume_plus_clean/features/exercises/screens/exercise_subscription_screen.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L5",
+      "source_location": "L7",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart",
       "label": "package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L6",
+      "source_location": "L8",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate",
       "label": "_ExercisesScreenState()",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L12",
+      "source_location": "L14",
       "node_type": "function"
     },
     {
@@ -14293,7 +14528,7 @@
       "id": "lib_features_exercises_screens_exercise_quiz_screen_dart_exercisequizscreenstate",
       "label": "_ExerciseQuizScreenState()",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercise_quiz_screen.dart",
-      "source_location": "L19",
+      "source_location": "L23",
       "node_type": "function"
     },
     {
@@ -14317,18 +14552,39 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "label": "package:resume_plus_clean/services/api_service.dart",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_quiz_screen_dart",
+      "label": "package:resume_plus_clean/features/exercises/screens/exercise_quiz_screen.dart",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
-      "source_location": "L3",
+      "source_location": "L5",
       "node_type": "module"
     },
     {
       "id": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart",
       "label": "package:resume_plus_clean/widgets/secure_screen_wrapper.dart",
       "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
-      "source_location": "L4",
+      "source_location": "L6",
       "node_type": "module"
+    },
+    {
+      "id": "lib_features_exercises_screens_exercise_result_screen_dart_exerciseresultscreenstate",
+      "label": "_ExerciseResultScreenState()",
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
+      "source_location": "L21",
+      "node_type": "function"
     },
     {
       "id": "lib_features_exercises_screens_exercise_subscription_screen_dart",
@@ -14488,94 +14744,115 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart",
+      "label": "package:resume_plus_clean/features/auth/providers/auth_provider.dart",
+      "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_models_user_dart",
+      "label": "package:resume_plus_clean/models/user.dart",
+      "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
+      "source_location": "L5",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
       "label": "package:resume_plus_clean/features/home/providers/summary_provider.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L4",
+      "source_location": "L6",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
+      "label": "package:resume_plus_clean/providers/tab_refresh_provider.dart",
+      "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
+      "source_location": "L7",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
       "label": "package:resume_plus_clean/features/home/widgets/summary_card.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L5",
+      "source_location": "L8",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_course_tile_dart",
       "label": "package:resume_plus_clean/features/home/widgets/course_tile.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L6",
+      "source_location": "L9",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart",
       "label": "package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L7",
+      "source_location": "L10",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_audio_sessions_screen_dart",
       "label": "package:resume_plus_clean/features/upload/screens/audio_sessions_screen.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L8",
+      "source_location": "L11",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_settings_screens_settings_screen_dart",
       "label": "package:resume_plus_clean/features/settings/screens/settings_screen.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L9",
+      "source_location": "L12",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "label": "package:resume_plus_clean/services/api_service.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L10",
+      "source_location": "L13",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_auth_screens_profile_completion_screen_dart",
       "label": "package:resume_plus_clean/features/auth/screens/profile_completion_screen.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L11",
+      "source_location": "L14",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L12",
+      "source_location": "L15",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart",
       "label": "package:resume_plus_clean/features/notifications/providers/notification_provider.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L13",
+      "source_location": "L16",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notifications_screen_dart",
       "label": "package:resume_plus_clean/features/notifications/screens/notifications_screen.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L14",
+      "source_location": "L17",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_notification_service_dart",
       "label": "package:resume_plus_clean/services/notification_service.dart",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L15",
+      "source_location": "L18",
       "node_type": "module"
     },
     {
       "id": "lib_features_home_screens_home_screen_dart_homescreenstate",
       "label": "_HomeScreenState()",
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L21",
+      "source_location": "L24",
       "node_type": "function"
     },
     {
@@ -14812,6 +15089,61 @@
       "node_type": "function"
     },
     {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart",
+      "label": "cp_onboarding_flow",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "node_type": "file"
+    },
+    {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_services_dart",
+      "label": "package:flutter/services.dart",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "label": "package:resume_plus_clean/services/api_service.dart",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "label": "package:resume_plus_clean/theme/app_theme.dart",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart_cponboardingflowstate",
+      "label": "_CPOnboardingFlowState()",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L10",
+      "node_type": "function"
+    },
+    {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart_widgetext",
+      "label": "_WidgetExt",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L802",
+      "node_type": "class"
+    },
+    {
+      "id": "lib_features_onboarding_cp_onboarding_flow_dart_widgetext_f",
+      "label": ".f()",
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L803",
+      "node_type": "method"
+    },
+    {
       "id": "lib_features_onboarding_onboarding_screen_dart",
       "label": "onboarding_screen",
       "source_file": ".\\lib\\features\\onboarding\\onboarding_screen.dart",
@@ -14942,24 +15274,31 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
+      "label": "package:resume_plus_clean/providers/tab_refresh_provider.dart",
+      "source_file": ".\\lib\\features\\purchases\\screens\\purchases_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
       "label": "package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart",
       "source_file": ".\\lib\\features\\purchases\\screens\\purchases_screen.dart",
-      "source_location": "L4",
+      "source_location": "L5",
       "node_type": "module"
     },
     {
       "id": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\purchases\\screens\\purchases_screen.dart",
-      "source_location": "L5",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate",
       "label": "_PurchasesScreenState()",
       "source_file": ".\\lib\\features\\purchases\\screens\\purchases_screen.dart",
-      "source_location": "L11",
+      "source_location": "L12",
       "node_type": "function"
     },
     {
@@ -15799,45 +16138,52 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
+      "label": "package:resume_plus_clean/providers/tab_refresh_provider.dart",
+      "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
+      "source_location": "L5",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
       "label": "package:resume_plus_clean/features/home/widgets/summary_card.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L5",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
       "label": "package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L6",
+      "source_location": "L7",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
       "label": "package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L7",
+      "source_location": "L8",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L8",
+      "source_location": "L9",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
       "label": "package:resume_plus_clean/widgets/api_error_view.dart",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L9",
+      "source_location": "L10",
       "node_type": "module"
     },
     {
       "id": "lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate",
       "label": "_AllSummariesScreenState()",
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L15",
+      "source_location": "L16",
       "node_type": "function"
     },
     {
@@ -16028,6 +16374,47 @@
       "node_type": "function"
     },
     {
+      "id": "lib_features_upload_screens_associate_prof_cours_screen_dart",
+      "label": "associate_prof_cours_screen",
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "node_type": "file"
+    },
+    {
+      "id": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_services_dart",
+      "label": "package:flutter/services.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "label": "package:resume_plus_clean/services/api_service.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "label": "package:resume_plus_clean/theme/app_theme.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_associate_prof_cours_screen_dart_associateprofcoursscreenstate",
+      "label": "_AssociateProfCoursScreenState()",
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L10",
+      "node_type": "function"
+    },
+    {
       "id": "lib_features_upload_screens_audio_sessions_screen_dart",
       "label": "audio_sessions_screen",
       "source_file": ".\\lib\\features\\upload\\screens\\audio_sessions_screen.dart",
@@ -16135,6 +16522,88 @@
       "label": "_CourseSelectionScreenState()",
       "source_file": ".\\lib\\features\\upload\\screens\\course_selection_screen.dart",
       "source_location": "L16",
+      "node_type": "function"
+    },
+    {
+      "id": "lib_features_upload_screens_create_cours_screen_dart",
+      "label": "create_cours_screen",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "node_type": "file"
+    },
+    {
+      "id": "lib_features_upload_screens_create_cours_screen_dart_import_package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_cours_screen_dart_import_package_flutter_services_dart",
+      "label": "package:flutter/services.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_cours_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "label": "package:resume_plus_clean/services/api_service.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_cours_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "label": "package:resume_plus_clean/theme/app_theme.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_cours_screen_dart_createcoursscreenstate",
+      "label": "_CreateCoursScreenState()",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L10",
+      "node_type": "function"
+    },
+    {
+      "id": "lib_features_upload_screens_create_professeur_screen_dart",
+      "label": "create_professeur_screen",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "node_type": "file"
+    },
+    {
+      "id": "lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_material_dart",
+      "label": "package:flutter/material.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_services_dart",
+      "label": "package:flutter/services.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L2",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "label": "package:resume_plus_clean/services/api_service.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "label": "package:resume_plus_clean/theme/app_theme.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_create_professeur_screen_dart_createprofesseurscreenstate",
+      "label": "_CreateProfesseurScreenState()",
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L10",
       "node_type": "function"
     },
     {
@@ -16400,31 +16869,52 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_associate_prof_cours_screen_dart",
+      "label": "package:resume_plus_clean/features/upload/screens/associate_prof_cours_screen.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
+      "source_location": "L3",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_cours_screen_dart",
+      "label": "package:resume_plus_clean/features/upload/screens/create_cours_screen.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_professeur_screen_dart",
+      "label": "package:resume_plus_clean/features/upload/screens/create_professeur_screen.dart",
+      "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
+      "source_location": "L5",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart",
       "label": "package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart",
       "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
-      "source_location": "L3",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart",
       "label": "package:resume_plus_clean/features/upload/screens/record_audio_screen.dart",
       "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
-      "source_location": "L4",
+      "source_location": "L7",
       "node_type": "module"
     },
     {
       "id": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart",
       "label": "package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart",
       "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
-      "source_location": "L5",
+      "source_location": "L8",
       "node_type": "module"
     },
     {
       "id": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
-      "source_location": "L6",
+      "source_location": "L9",
       "node_type": "module"
     },
     {
@@ -16509,45 +16999,59 @@
       "node_type": "module"
     },
     {
+      "id": "lib_features_validation_screens_validation_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart",
+      "label": "package:flutter_riverpod/flutter_riverpod.dart",
+      "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
+      "source_location": "L4",
+      "node_type": "module"
+    },
+    {
       "id": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "label": "package:resume_plus_clean/services/api_service.dart",
       "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
-      "source_location": "L4",
+      "source_location": "L5",
+      "node_type": "module"
+    },
+    {
+      "id": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
+      "label": "package:resume_plus_clean/providers/tab_refresh_provider.dart",
+      "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
+      "source_location": "L6",
       "node_type": "module"
     },
     {
       "id": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart",
       "label": "package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart",
       "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
-      "source_location": "L5",
+      "source_location": "L7",
       "node_type": "module"
     },
     {
       "id": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "label": "package:resume_plus_clean/theme/app_theme.dart",
       "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
-      "source_location": "L6",
+      "source_location": "L8",
       "node_type": "module"
     },
     {
       "id": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
       "label": "package:resume_plus_clean/widgets/api_error_view.dart",
       "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
-      "source_location": "L7",
+      "source_location": "L9",
       "node_type": "module"
     },
     {
       "id": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart",
       "label": "package:resume_plus_clean/mixins/error_handler_mixin.dart",
       "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
-      "source_location": "L8",
+      "source_location": "L10",
       "node_type": "module"
     },
     {
       "id": "lib_features_validation_screens_validation_screen_dart_validationscreenstate",
       "label": "_ValidationScreenState()",
       "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
-      "source_location": "L16",
+      "source_location": "L18",
       "node_type": "function"
     },
     {
@@ -17404,6 +17908,19 @@
       "node_type": "module"
     },
     {
+      "id": "lib_providers_tab_refresh_provider_dart",
+      "label": "tab_refresh_provider",
+      "source_file": ".\\lib\\providers\\tab_refresh_provider.dart",
+      "node_type": "file"
+    },
+    {
+      "id": "lib_providers_tab_refresh_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart",
+      "label": "package:flutter_riverpod/flutter_riverpod.dart",
+      "source_file": ".\\lib\\providers\\tab_refresh_provider.dart",
+      "source_location": "L1",
+      "node_type": "module"
+    },
+    {
       "id": "lib_services_api_service_copy_dart",
       "label": "api_service copy",
       "source_file": ".\\lib\\services\\api_service copy.dart",
@@ -17633,21 +18150,21 @@
       "id": "lib_services_audio_service_dart_isinitialized",
       "label": "_isInitialized()",
       "source_file": ".\\lib\\services\\audio_service.dart",
-      "source_location": "L266",
+      "source_location": "L279",
       "node_type": "function"
     },
     {
       "id": "lib_services_audio_service_dart_ispaused",
       "label": "_isPaused()",
       "source_file": ".\\lib\\services\\audio_service.dart",
-      "source_location": "L272",
+      "source_location": "L285",
       "node_type": "function"
     },
     {
       "id": "lib_services_audio_service_dart_currenttext",
       "label": "_currentText()",
       "source_file": ".\\lib\\services\\audio_service.dart",
-      "source_location": "L275",
+      "source_location": "L288",
       "node_type": "function"
     },
     {
@@ -18663,7 +19180,7 @@
       "id": "lib_widgets_tts_reader_widget_dart_ttsbuttonstate",
       "label": "_TtsButtonState()",
       "source_file": ".\\lib\\widgets\\tts_reader_widget.dart",
-      "source_location": "L198",
+      "source_location": "L267",
       "node_type": "function"
     },
     {
@@ -21508,7 +22025,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L433",
+      "source_location": "L439",
       "weight": 1.0
     },
     {
@@ -21518,7 +22035,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L460",
+      "source_location": "L466",
       "weight": 1.0
     },
     {
@@ -21528,12 +22045,21 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "source_location": "L487",
+      "source_location": "L493",
       "weight": 1.0
     },
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_init",
       "target": "backend_courses_deepseek_service_py_deepseekservice_get_api_key",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".\\backend\\courses\\deepseek_service.py",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
+      "target": "backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21552,15 +22078,6 @@
     {
       "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
       "target": "backend_courses_deepseek_service_py_deepseekservice_clean_text",
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.7,
-      "source_file": ".\\backend\\courses\\deepseek_service.py",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_courses_deepseek_service_py_deepseekservice_generate_summary",
-      "target": "backend_courses_deepseek_service_py_deepseekservice_build_summary_prompt",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21781,7 +22298,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L79",
+      "source_location": "L80",
       "weight": 1.0
     },
     {
@@ -21791,7 +22308,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L111",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
@@ -21801,7 +22318,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L139",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -21811,7 +22328,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L168",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -21821,7 +22338,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_generator.py",
-      "source_location": "L315",
+      "source_location": "L325",
       "weight": 1.0
     },
     {
@@ -21835,7 +22352,7 @@
     },
     {
       "source": "backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai",
-      "target": "backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response",
+      "target": "backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -21844,7 +22361,7 @@
     },
     {
       "source": "backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai",
-      "target": "backend_courses_exercise_generator_py_exercisegenerator_generate_mock_questions",
+      "target": "backend_courses_exercise_generator_py_exercisegenerator_parse_ai_response",
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.7,
@@ -22077,7 +22594,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L108",
+      "source_location": "L123",
       "weight": 1.0
     },
     {
@@ -22087,7 +22604,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L167",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -22097,7 +22614,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L228",
+      "source_location": "L252",
       "weight": 1.0
     },
     {
@@ -22107,7 +22624,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L275",
+      "source_location": "L299",
       "weight": 1.0
     },
     {
@@ -22117,7 +22634,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L309",
+      "source_location": "L333",
       "weight": 1.0
     },
     {
@@ -22127,7 +22644,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\exercise_views.py",
-      "source_location": "L364",
+      "source_location": "L388",
       "weight": 1.0
     },
     {
@@ -23595,6 +24112,126 @@
       "weight": 1.0
     },
     {
+      "source": "backend_courses_migrations_0020_add_difficulty_to_exercise_py",
+      "target": "backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_migrations",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0020_add_difficulty_to_exercise.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0020_add_difficulty_to_exercise_py",
+      "target": "backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_models",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0020_add_difficulty_to_exercise.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0020_add_difficulty_to_exercise_py",
+      "target": "backend_courses_migrations_0020_add_difficulty_to_exercise_py_migration",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0020_add_difficulty_to_exercise.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0021_add_dispense_model_py",
+      "target": "backend_courses_migrations_0021_add_dispense_model_py_import_django_db_migrations",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0021_add_dispense_model_py",
+      "target": "backend_courses_migrations_0021_add_dispense_model_py_import_django_db_models",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0021_add_dispense_model_py",
+      "target": "backend_courses_migrations_0021_add_dispense_model_py_import_django_db_models_deletion",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0021_add_dispense_model_py",
+      "target": "backend_courses_migrations_0021_add_dispense_model_py_migration",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0021_add_dispense_model.py",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0022_exercise_created_by_py",
+      "target": "backend_courses_migrations_0022_exercise_created_by_py_import_django_conf_settings",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0022_exercise_created_by_py",
+      "target": "backend_courses_migrations_0022_exercise_created_by_py_import_django_db_migrations",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0022_exercise_created_by_py",
+      "target": "backend_courses_migrations_0022_exercise_created_by_py_import_django_db_models",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0022_exercise_created_by_py",
+      "target": "backend_courses_migrations_0022_exercise_created_by_py_import_django_db_models_deletion",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_migrations_0022_exercise_created_by_py",
+      "target": "backend_courses_migrations_0022_exercise_created_by_py_migration",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\migrations\\0022_exercise_created_by.py",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
       "source": "backend_courses_models_py",
       "target": "backend_courses_models_py_import_django_db_models",
       "relation": "imports",
@@ -23876,7 +24513,7 @@
     },
     {
       "source": "backend_courses_models_py",
-      "target": "backend_courses_models_py_service",
+      "target": "backend_courses_models_py_dispense",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -23885,38 +24522,8 @@
       "weight": 1.0
     },
     {
-      "source": "backend_courses_models_py_service",
-      "target": "backend_courses_models_py_service_str",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L315",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_courses_models_py",
-      "target": "backend_courses_models_py_abonnement",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L324",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_courses_models_py_abonnement",
-      "target": "backend_courses_models_py_abonnement_str",
-      "relation": "defines",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L341",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_courses_models_py_abonnement",
-      "target": "backend_courses_models_py_abonnement_is_active",
+      "source": "backend_courses_models_py_dispense",
+      "target": "backend_courses_models_py_dispense_str",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -23926,12 +24533,62 @@
     },
     {
       "source": "backend_courses_models_py",
+      "target": "backend_courses_models_py_service",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L349",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_models_py_service",
+      "target": "backend_courses_models_py_service_str",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L357",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_models_py",
+      "target": "backend_courses_models_py_abonnement",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L366",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_models_py_abonnement",
+      "target": "backend_courses_models_py_abonnement_str",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L383",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_models_py_abonnement",
+      "target": "backend_courses_models_py_abonnement_is_active",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\models.py",
+      "source_location": "L387",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_models_py",
       "target": "backend_courses_models_py_exercise",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L356",
+      "source_location": "L398",
       "weight": 1.0
     },
     {
@@ -23941,7 +24598,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L375",
+      "source_location": "L419",
       "weight": 1.0
     },
     {
@@ -23951,7 +24608,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L379",
+      "source_location": "L423",
       "weight": 1.0
     },
     {
@@ -23961,7 +24618,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L388",
+      "source_location": "L432",
       "weight": 1.0
     },
     {
@@ -23971,7 +24628,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L403",
+      "source_location": "L447",
       "weight": 1.0
     },
     {
@@ -23981,7 +24638,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L412",
+      "source_location": "L456",
       "weight": 1.0
     },
     {
@@ -23991,7 +24648,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L422",
+      "source_location": "L466",
       "weight": 1.0
     },
     {
@@ -24001,7 +24658,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\models.py",
-      "source_location": "L425",
+      "source_location": "L469",
       "weight": 1.0
     },
     {
@@ -25261,12 +25918,22 @@
     },
     {
       "source": "backend_courses_views_py",
-      "target": "backend_courses_views_py_import_models_course",
+      "target": "backend_courses_views_py_import_django_contrib_auth_models_user",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
       "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_import_models_course",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25276,7 +25943,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25286,7 +25953,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25296,7 +25963,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25306,7 +25973,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25316,7 +25983,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25326,7 +25993,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25336,7 +26003,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25346,7 +26013,17 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L15",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_import_models_dispense",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -25356,7 +26033,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -25366,7 +26043,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25376,7 +26053,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25386,7 +26063,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25396,7 +26073,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25406,7 +26083,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25416,7 +26093,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25426,7 +26103,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25436,7 +26113,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25446,7 +26123,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25456,7 +26133,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25466,7 +26143,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25476,7 +26153,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25486,7 +26163,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -25496,7 +26173,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -25506,7 +26183,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -25516,7 +26193,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -25526,7 +26203,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -25536,7 +26213,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -25546,7 +26223,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L27",
+      "source_location": "L28",
       "weight": 1.0
     },
     {
@@ -25556,7 +26233,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -25566,7 +26243,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L40",
+      "source_location": "L41",
       "weight": 1.0
     },
     {
@@ -25576,7 +26253,37 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L64",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_coursecreateview",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py_coursecreateview",
+      "target": "backend_courses_views_py_coursecreateview_get_queryset",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L107",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py_coursecreateview",
+      "target": "backend_courses_views_py_coursecreateview_perform_create",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L131",
       "weight": 1.0
     },
     {
@@ -25586,7 +26293,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L79",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -25596,7 +26303,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L83",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -25606,7 +26313,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L108",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
@@ -25616,7 +26323,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L117",
+      "source_location": "L200",
       "weight": 1.0
     },
     {
@@ -25626,7 +26333,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L140",
+      "source_location": "L223",
       "weight": 1.0
     },
     {
@@ -25636,7 +26343,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L144",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
@@ -25646,7 +26353,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L166",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -25656,7 +26363,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L175",
+      "source_location": "L258",
       "weight": 1.0
     },
     {
@@ -25666,7 +26373,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L180",
+      "source_location": "L263",
       "weight": 1.0
     },
     {
@@ -25676,7 +26383,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L218",
+      "source_location": "L301",
       "weight": 1.0
     },
     {
@@ -25686,7 +26393,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L222",
+      "source_location": "L305",
       "weight": 1.0
     },
     {
@@ -25696,7 +26403,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L245",
+      "source_location": "L328",
       "weight": 1.0
     },
     {
@@ -25706,7 +26413,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L255",
+      "source_location": "L338",
       "weight": 1.0
     },
     {
@@ -25716,7 +26423,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L270",
+      "source_location": "L353",
       "weight": 1.0
     },
     {
@@ -25726,7 +26433,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L284",
+      "source_location": "L367",
       "weight": 1.0
     },
     {
@@ -25736,7 +26443,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L330",
+      "source_location": "L413",
       "weight": 1.0
     },
     {
@@ -25746,7 +26453,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L340",
+      "source_location": "L423",
       "weight": 1.0
     },
     {
@@ -25756,7 +26463,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L348",
+      "source_location": "L431",
       "weight": 1.0
     },
     {
@@ -25766,7 +26473,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L370",
+      "source_location": "L453",
       "weight": 1.0
     },
     {
@@ -25776,7 +26483,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L380",
+      "source_location": "L463",
       "weight": 1.0
     },
     {
@@ -25786,7 +26493,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L388",
+      "source_location": "L471",
       "weight": 1.0
     },
     {
@@ -25796,7 +26503,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L410",
+      "source_location": "L493",
       "weight": 1.0
     },
     {
@@ -25806,7 +26513,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L421",
+      "source_location": "L504",
       "weight": 1.0
     },
     {
@@ -25816,7 +26523,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L430",
+      "source_location": "L513",
       "weight": 1.0
     },
     {
@@ -25826,7 +26533,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L439",
+      "source_location": "L522",
       "weight": 1.0
     },
     {
@@ -25836,7 +26543,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L446",
+      "source_location": "L529",
       "weight": 1.0
     },
     {
@@ -25846,7 +26553,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L451",
+      "source_location": "L534",
       "weight": 1.0
     },
     {
@@ -25856,7 +26563,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L459",
+      "source_location": "L542",
       "weight": 1.0
     },
     {
@@ -25866,7 +26573,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L467",
+      "source_location": "L550",
       "weight": 1.0
     },
     {
@@ -25876,7 +26583,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L471",
+      "source_location": "L554",
       "weight": 1.0
     },
     {
@@ -25886,7 +26593,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L477",
+      "source_location": "L560",
       "weight": 1.0
     },
     {
@@ -25896,7 +26603,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L481",
+      "source_location": "L564",
       "weight": 1.0
     },
     {
@@ -25906,7 +26613,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L489",
+      "source_location": "L572",
       "weight": 1.0
     },
     {
@@ -25916,7 +26623,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L687",
+      "source_location": "L793",
       "weight": 1.0
     },
     {
@@ -25926,7 +26633,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L740",
+      "source_location": "L846",
       "weight": 1.0
     },
     {
@@ -25936,7 +26643,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L846",
+      "source_location": "L952",
       "weight": 1.0
     },
     {
@@ -25946,7 +26653,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L965",
+      "source_location": "L1071",
       "weight": 1.0
     },
     {
@@ -25956,7 +26663,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1024",
+      "source_location": "L1130",
       "weight": 1.0
     },
     {
@@ -25966,7 +26673,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1101",
+      "source_location": "L1207",
       "weight": 1.0
     },
     {
@@ -25976,7 +26683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1139",
+      "source_location": "L1245",
       "weight": 1.0
     },
     {
@@ -25986,7 +26693,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1161",
+      "source_location": "L1267",
       "weight": 1.0
     },
     {
@@ -25996,7 +26703,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1192",
+      "source_location": "L1298",
       "weight": 1.0
     },
     {
@@ -26006,7 +26713,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1222",
+      "source_location": "L1328",
       "weight": 1.0
     },
     {
@@ -26016,7 +26723,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1251",
+      "source_location": "L1357",
       "weight": 1.0
     },
     {
@@ -26026,7 +26733,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1264",
+      "source_location": "L1370",
       "weight": 1.0
     },
     {
@@ -26036,7 +26743,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1297",
+      "source_location": "L1403",
       "weight": 1.0
     },
     {
@@ -26046,7 +26753,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1358",
+      "source_location": "L1464",
       "weight": 1.0
     },
     {
@@ -26056,7 +26763,77 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\backend\\courses\\views.py",
-      "source_location": "L1432",
+      "source_location": "L1538",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_onboarding_status_view",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1616",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_create_professeur_simple_view",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1675",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_create_dispense_view",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1772",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_delete_professeur_view",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1830",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_list_dispenses_view",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1850",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_delete_dispense_view",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1881",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_courses_views_py",
+      "target": "backend_courses_views_py_resolve_professor_view",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\backend\\courses\\views.py",
+      "source_location": "L1906",
       "weight": 1.0
     },
     {
@@ -39881,7 +40658,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_summaries_screens_all_summaries_screen_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_onboarding_cp_onboarding_flow_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39891,7 +40668,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_purchases_screens_purchases_screen_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_summaries_screens_all_summaries_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39901,7 +40678,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercises_screen_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_purchases_screens_purchases_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39911,7 +40688,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_validation_screens_validation_screen_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercises_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39921,7 +40698,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_validation_screens_validation_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39931,7 +40708,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_notification_service_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39941,7 +40718,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_services_notification_service_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39951,7 +40728,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39961,7 +40738,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39971,7 +40748,7 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
-      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_widgets_badge_icon_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -39981,12 +40758,42 @@
     },
     {
       "source": "lib_features_app_screens_main_navigation_screen_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_app_screens_main_navigation_screen_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_widgets_badge_icon_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_app_screens_main_navigation_screen_dart",
+      "target": "lib_features_app_screens_main_navigation_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_app_screens_main_navigation_screen_dart",
       "target": "lib_features_app_screens_main_navigation_screen_dart_mainnavigationscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\app\\screens\\main_navigation_screen.dart",
-      "source_location": "L22",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -40731,7 +41538,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40741,7 +41548,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_models_exercise_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40751,7 +41558,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40761,7 +41568,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40771,7 +41578,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
-      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40781,12 +41588,32 @@
     },
     {
       "source": "lib_features_exercises_screens_exercises_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_subscription_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercises_screen_dart",
+      "target": "lib_features_exercises_screens_exercises_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_result_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercises_screen_dart",
       "target": "lib_features_exercises_screens_exercises_screen_dart_exercisesscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\exercises\\screens\\exercises_screen.dart",
-      "source_location": "L12",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -40856,7 +41683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\exercises\\screens\\exercise_quiz_screen.dart",
-      "source_location": "L19",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -40881,7 +41708,7 @@
     },
     {
       "source": "lib_features_exercises_screens_exercise_result_screen_dart",
-      "target": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -40891,12 +41718,42 @@
     },
     {
       "source": "lib_features_exercises_screens_exercise_result_screen_dart",
-      "target": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart",
+      "target": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_quiz_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
       "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercise_result_screen_dart",
+      "target": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercise_result_screen_dart",
+      "target": "lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_exercises_screens_exercise_result_screen_dart",
+      "target": "lib_features_exercises_screens_exercise_result_screen_dart_exerciseresultscreenstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\exercises\\screens\\exercise_result_screen.dart",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -41091,7 +41948,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41101,7 +41958,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_models_user_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41111,7 +41968,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_course_tile_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41121,7 +41978,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41131,7 +41988,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_audio_sessions_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41141,7 +41998,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_settings_screens_settings_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_home_widgets_course_tile_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41151,7 +42008,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41161,7 +42018,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_auth_screens_profile_completion_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_upload_screens_audio_sessions_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41171,7 +42028,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_settings_screens_settings_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41181,7 +42038,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41191,7 +42048,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notifications_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_auth_screens_profile_completion_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41201,7 +42058,7 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
-      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_notification_service_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41211,12 +42068,42 @@
     },
     {
       "source": "lib_features_home_screens_home_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_home_screens_home_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notifications_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_home_screens_home_screen_dart",
+      "target": "lib_features_home_screens_home_screen_dart_import_package_resume_plus_clean_services_notification_service_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_home_screens_home_screen_dart",
       "target": "lib_features_home_screens_home_screen_dart_homescreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\home\\screens\\home_screen.dart",
-      "source_location": "L21",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -41510,6 +42397,76 @@
       "weight": 1.0
     },
     {
+      "source": "lib_features_onboarding_cp_onboarding_flow_dart",
+      "target": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_onboarding_cp_onboarding_flow_dart",
+      "target": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_onboarding_cp_onboarding_flow_dart",
+      "target": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_onboarding_cp_onboarding_flow_dart",
+      "target": "lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_onboarding_cp_onboarding_flow_dart",
+      "target": "lib_features_onboarding_cp_onboarding_flow_dart_cponboardingflowstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_onboarding_cp_onboarding_flow_dart",
+      "target": "lib_features_onboarding_cp_onboarding_flow_dart_widgetext",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L802",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_onboarding_cp_onboarding_flow_dart_widgetext",
+      "target": "lib_features_onboarding_cp_onboarding_flow_dart_widgetext_f",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\onboarding\\cp_onboarding_flow.dart",
+      "source_location": "L803",
+      "weight": 1.0
+    },
+    {
       "source": "lib_features_onboarding_onboarding_screen_dart",
       "target": "lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart",
       "relation": "imports",
@@ -41671,7 +42628,7 @@
     },
     {
       "source": "lib_features_purchases_screens_purchases_screen_dart",
-      "target": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
+      "target": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41681,7 +42638,7 @@
     },
     {
       "source": "lib_features_purchases_screens_purchases_screen_dart",
-      "target": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -41691,12 +42648,22 @@
     },
     {
       "source": "lib_features_purchases_screens_purchases_screen_dart",
+      "target": "lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\purchases\\screens\\purchases_screen.dart",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_purchases_screens_purchases_screen_dart",
       "target": "lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\purchases\\screens\\purchases_screen.dart",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -42741,7 +43708,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42751,7 +43718,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42761,7 +43728,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42771,7 +43738,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42781,7 +43748,7 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
-      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -42791,12 +43758,22 @@
     },
     {
       "source": "lib_features_summaries_screens_all_summaries_screen_dart",
+      "target": "lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_summaries_screens_all_summaries_screen_dart",
       "target": "lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\summaries\\screens\\all_summaries_screen.dart",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0
     },
     {
@@ -43050,6 +44027,56 @@
       "weight": 1.0
     },
     {
+      "source": "lib_features_upload_screens_associate_prof_cours_screen_dart",
+      "target": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_associate_prof_cours_screen_dart",
+      "target": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_associate_prof_cours_screen_dart",
+      "target": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_associate_prof_cours_screen_dart",
+      "target": "lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_associate_prof_cours_screen_dart",
+      "target": "lib_features_upload_screens_associate_prof_cours_screen_dart_associateprofcoursscreenstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\associate_prof_cours_screen.dart",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
       "source": "lib_features_upload_screens_audio_sessions_screen_dart",
       "target": "lib_features_upload_screens_audio_sessions_screen_dart_import_dart_async",
       "relation": "imports",
@@ -43187,6 +44214,106 @@
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\upload\\screens\\course_selection_screen.dart",
       "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_cours_screen_dart",
+      "target": "lib_features_upload_screens_create_cours_screen_dart_import_package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_cours_screen_dart",
+      "target": "lib_features_upload_screens_create_cours_screen_dart_import_package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_cours_screen_dart",
+      "target": "lib_features_upload_screens_create_cours_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_cours_screen_dart",
+      "target": "lib_features_upload_screens_create_cours_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_cours_screen_dart",
+      "target": "lib_features_upload_screens_create_cours_screen_dart_createcoursscreenstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_cours_screen.dart",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_professeur_screen_dart",
+      "target": "lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_material_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_professeur_screen_dart",
+      "target": "lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_services_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_professeur_screen_dart",
+      "target": "lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_professeur_screen_dart",
+      "target": "lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_create_professeur_screen_dart",
+      "target": "lib_features_upload_screens_create_professeur_screen_dart_createprofesseurscreenstate",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\create_professeur_screen.dart",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -43531,7 +44658,7 @@
     },
     {
       "source": "lib_features_upload_screens_upload_choice_screen_dart",
-      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart",
+      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_associate_prof_cours_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43541,7 +44668,7 @@
     },
     {
       "source": "lib_features_upload_screens_upload_choice_screen_dart",
-      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart",
+      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_cours_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43551,7 +44678,7 @@
     },
     {
       "source": "lib_features_upload_screens_upload_choice_screen_dart",
-      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart",
+      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_create_professeur_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43561,12 +44688,42 @@
     },
     {
       "source": "lib_features_upload_screens_upload_choice_screen_dart",
-      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_manual_entry_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_upload_choice_screen_dart",
+      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_upload_choice_screen_dart",
+      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_features_upload_screens_record_audio_screen_web_safe_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_upload_screens_upload_choice_screen_dart",
+      "target": "lib_features_upload_screens_upload_choice_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\upload\\screens\\upload_choice_screen.dart",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -43661,7 +44818,7 @@
     },
     {
       "source": "lib_features_validation_screens_validation_screen_dart",
-      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
+      "target": "lib_features_validation_screens_validation_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43671,7 +44828,7 @@
     },
     {
       "source": "lib_features_validation_screens_validation_screen_dart",
-      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart",
+      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43681,7 +44838,7 @@
     },
     {
       "source": "lib_features_validation_screens_validation_screen_dart",
-      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
+      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43691,7 +44848,7 @@
     },
     {
       "source": "lib_features_validation_screens_validation_screen_dart",
-      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
+      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43701,7 +44858,7 @@
     },
     {
       "source": "lib_features_validation_screens_validation_screen_dart",
-      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart",
+      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart",
       "relation": "imports",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -43711,12 +44868,32 @@
     },
     {
       "source": "lib_features_validation_screens_validation_screen_dart",
+      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_validation_screens_validation_screen_dart",
+      "target": "lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_features_validation_screens_validation_screen_dart",
       "target": "lib_features_validation_screens_validation_screen_dart_validationscreenstate",
       "relation": "defines",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\features\\validation\\screens\\validation_screen.dart",
-      "source_location": "L16",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -44690,6 +45867,16 @@
       "weight": 1.0
     },
     {
+      "source": "lib_providers_tab_refresh_provider_dart",
+      "target": "lib_providers_tab_refresh_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".\\lib\\providers\\tab_refresh_provider.dart",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "lib_services_api_service_copy_dart",
       "target": "lib_services_api_service_copy_dart_import_package_dio_dio_dart",
       "relation": "imports",
@@ -44976,7 +46163,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\services\\audio_service.dart",
-      "source_location": "L266",
+      "source_location": "L279",
       "weight": 1.0
     },
     {
@@ -44986,7 +46173,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\services\\audio_service.dart",
-      "source_location": "L272",
+      "source_location": "L285",
       "weight": 1.0
     },
     {
@@ -44996,7 +46183,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\services\\audio_service.dart",
-      "source_location": "L275",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -46216,7 +47403,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": ".\\lib\\widgets\\tts_reader_widget.dart",
-      "source_location": "L198",
+      "source_location": "L267",
       "weight": 1.0
     },
     {

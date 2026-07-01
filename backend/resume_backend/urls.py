@@ -9,6 +9,7 @@ from rest_framework import permissions
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from health_check import health_check
+from security.views import app_version_view, resume_pricing_config_view
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -34,6 +35,12 @@ urlpatterns = [
     
     # Health check endpoint
     path('api/health/', health_check, name='health-check'),
+
+    # Version de l'application mobile (public, pas d'auth requise)
+    path('api/app-version/', app_version_view, name='app-version'),
+
+    # Configuration prix minimum des résumés (public)
+    path('api/resume-pricing-config/', resume_pricing_config_view, name='resume-pricing-config'),
     
     # Swagger documentation
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),

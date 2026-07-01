@@ -1,33 +1,38 @@
-# Community 56: seed_production
+# Community 56: debug_audio_issues
 
 **Members:** 12
 
 ## Nodes
 
-- **seed_production** (`backend_seed_production_py`, File, degree: 17)
-- **courses.models.Filiere** (`backend_seed_production_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.FilierePromotion** (`backend_seed_production_py_import_courses_models_filierepromotion`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_seed_production_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_seed_production_py_import_courses_models_universite`, Module, degree: 1)
-- **courses.models.UniversiteFiliere** (`backend_seed_production_py_import_courses_models_universitefiliere`, Module, degree: 1)
-- **decimal.Decimal** (`backend_seed_production_py_import_decimal_decimal`, Module, degree: 1)
-- **django** (`backend_seed_production_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_seed_production_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_seed_production_py_import_os`, Module, degree: 1)
-- **payments.models.Service** (`backend_seed_production_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_seed_production_py_import_sys`, Module, degree: 1)
+- **debug_audio_issues** (`backend_debug_audio_issues_py`, File, degree: 11)
+- **check_database_audio_files()** (`backend_debug_audio_issues_py_check_database_audio_files`, Function, degree: 2)
+- **check_media_directory()** (`backend_debug_audio_issues_py_check_media_directory`, Function, degree: 2)
+- **create_test_audio_files()** (`backend_debug_audio_issues_py_create_test_audio_files`, Function, degree: 2)
+- **os** (`backend_debug_audio_issues_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_debug_audio_issues_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_debug_audio_issues_py_import_pymysql`, Module, degree: 1)
+- **requests** (`backend_debug_audio_issues_py_import_requests`, Module, degree: 1)
+- **sys** (`backend_debug_audio_issues_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_debug_audio_issues_py_main`, Function, degree: 6)
+- **test_api_endpoints()** (`backend_debug_audio_issues_py_test_api_endpoints`, Function, degree: 2)
+- **test_specific_audio_file()** (`backend_debug_audio_issues_py_test_specific_audio_file`, Function, degree: 2)
 
 ## Relationships
 
-- backend_seed_production_py → backend_seed_production_py_import_os (imports)
-- backend_seed_production_py → backend_seed_production_py_import_sys (imports)
-- backend_seed_production_py → backend_seed_production_py_import_django (imports)
-- backend_seed_production_py → backend_seed_production_py_import_decimal_decimal (imports)
-- backend_seed_production_py → backend_seed_production_py_import_django_contrib_auth_models_user (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_promotion (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_filiere (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_universite (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_universitefiliere (imports)
-- backend_seed_production_py → backend_seed_production_py_import_courses_models_filierepromotion (imports)
-- backend_seed_production_py → backend_seed_production_py_import_payments_models_service (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_os (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_sys (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pymysql (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pathlib_path (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_requests (imports)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_database_audio_files (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_media_directory (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_api_endpoints (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_create_test_audio_files (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_specific_audio_file (defines)
+- backend_debug_audio_issues_py → backend_debug_audio_issues_py_main (defines)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_api_endpoints (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_media_directory (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_create_test_audio_files (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_database_audio_files (calls)
+- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_specific_audio_file (calls)
 

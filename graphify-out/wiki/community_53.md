@@ -1,38 +1,33 @@
-# Community 53: debug_audio_issues
+# Community 53: all_summaries_screen
 
 **Members:** 12
 
 ## Nodes
 
-- **debug_audio_issues** (`backend_debug_audio_issues_py`, File, degree: 11)
-- **check_database_audio_files()** (`backend_debug_audio_issues_py_check_database_audio_files`, Function, degree: 2)
-- **check_media_directory()** (`backend_debug_audio_issues_py_check_media_directory`, Function, degree: 2)
-- **create_test_audio_files()** (`backend_debug_audio_issues_py_create_test_audio_files`, Function, degree: 2)
-- **os** (`backend_debug_audio_issues_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_debug_audio_issues_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_debug_audio_issues_py_import_pymysql`, Module, degree: 1)
-- **requests** (`backend_debug_audio_issues_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_debug_audio_issues_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_debug_audio_issues_py_main`, Function, degree: 6)
-- **test_api_endpoints()** (`backend_debug_audio_issues_py_test_api_endpoints`, Function, degree: 2)
-- **test_specific_audio_file()** (`backend_debug_audio_issues_py_test_specific_audio_file`, Function, degree: 2)
+- **all_summaries_screen** (`lib_features_summaries_screens_all_summaries_screen_dart`, File, degree: 11)
+- **_AllSummariesScreenState()** (`lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:intl/intl.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/providers/summary_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/tab_refresh_provider.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_os (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_sys (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pymysql (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_pathlib_path (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_import_requests (imports)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_database_audio_files (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_check_media_directory (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_api_endpoints (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_create_test_audio_files (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_test_specific_audio_file (defines)
-- backend_debug_audio_issues_py → backend_debug_audio_issues_py_main (defines)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_api_endpoints (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_media_directory (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_create_test_audio_files (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_check_database_audio_files (calls)
-- backend_debug_audio_issues_py_main → backend_debug_audio_issues_py_test_specific_audio_file (calls)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_intl_intl_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_providers_summary_provider_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
+- lib_features_summaries_screens_all_summaries_screen_dart → lib_features_summaries_screens_all_summaries_screen_dart_allsummariesscreenstate (defines)
 

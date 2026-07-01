@@ -1,29 +1,36 @@
-# Community 72: edit_profile_screen
+# Community 72: utils
 
 **Members:** 10
 
 ## Nodes
 
-- **edit_profile_screen** (`lib_features_settings_screens_edit_profile_screen_dart`, File, degree: 9)
-- **_EditProfileScreenState()** (`lib_features_settings_screens_edit_profile_screen_dart_editprofilescreenstate`, Function, degree: 1)
-- **dart:io** (`lib_features_settings_screens_edit_profile_screen_dart_import_dart_io`, Module, degree: 1)
-- **package:dio/dio.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/foundation.dart'** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:image_picker/image_picker.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_image_picker_image_picker_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **utils** (`windows_runner_utils_cpp`, File, degree: 9)
+- **CreateAndAttachConsole()** (`windows_runner_utils_cpp_createandattachconsole`, Function, degree: 5)
+- **GetCommandLineArguments()** (`windows_runner_utils_cpp_getcommandlinearguments`, Function, degree: 6)
+- **flutter_windows.h** (`windows_runner_utils_cpp_import_flutter_windows_h`, Module, degree: 1)
+- **io.h** (`windows_runner_utils_cpp_import_io_h`, Module, degree: 1)
+- **iostream** (`windows_runner_utils_cpp_import_iostream`, Module, degree: 1)
+- **stdio.h** (`windows_runner_utils_cpp_import_stdio_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_utils_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_utils_cpp_import_windows_h`, Module, degree: 1)
+- **Utf8FromUtf16()** (`windows_runner_utils_cpp_utf8fromutf16`, Function, degree: 6)
 
 ## Relationships
 
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_dart_io (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_flutter_foundation_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_image_picker_image_picker_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_settings_screens_edit_profile_screen_dart → lib_features_settings_screens_edit_profile_screen_dart_editprofilescreenstate (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_utils_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_flutter_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_io_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_stdio_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_windows_h (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_import_iostream (imports)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_createandattachconsole (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_getcommandlinearguments (defines)
+- windows_runner_utils_cpp → windows_runner_utils_cpp_utf8fromutf16 (defines)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (calls)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_getcommandlinearguments (uses)
+- windows_runner_utils_cpp_createandattachconsole → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_getcommandlinearguments → windows_runner_utils_cpp_utf8fromutf16 (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_createandattachconsole (uses)
+- windows_runner_utils_cpp_utf8fromutf16 → windows_runner_utils_cpp_getcommandlinearguments (uses)
 

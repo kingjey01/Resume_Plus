@@ -1,17 +1,17 @@
-# Community 281: find_courses_endpoint
+# Community 281: audio_player_widget
 
 **Members:** 4
 
 ## Nodes
 
-- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
-- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
-- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
+- **audio_player_widget** (`lib_widgets_audio_player_widget_dart`, File, degree: 3)
+- **_AudioPlayerWidgetState()** (`lib_widgets_audio_player_widget_dart_audioplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_service.dart** (`lib_widgets_audio_player_widget_dart_import_services_audio_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_import_services_audio_service_dart (imports)
+- lib_widgets_audio_player_widget_dart → lib_widgets_audio_player_widget_dart_audioplayerwidgetstate (defines)
 

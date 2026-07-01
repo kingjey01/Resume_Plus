@@ -638,12 +638,15 @@ class _CPOnboardingFlowState extends State<CPOnboardingFlow> {
           child: const Icon(Icons.check_rounded, color: Colors.white, size: 14),
         ),
         const SizedBox(width: 12),
-        Text(
-          text,
-          style: const TextStyle(
-            fontSize: 14,
-            fontWeight: FontWeight.w500,
-            color: AppTheme.textPrimary,
+        Expanded( // ← Permet au texte de passer à la ligne
+          child: Text(
+            text,
+            style: const TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+              color: AppTheme.textPrimary,
+            ),
+            softWrap: true,
           ),
         ),
       ],

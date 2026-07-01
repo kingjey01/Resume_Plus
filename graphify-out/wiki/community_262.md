@@ -1,17 +1,17 @@
-# Community 262: 0003_alter_purchase_payment_method_alter_service_currency
+# Community 262: debug_page
 
 **Members:** 4
 
 ## Nodes
 
-- **0003_alter_purchase_payment_method_alter_service_currency** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py`, File, degree: 3)
-- **django.db.migrations** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration`, Class, degree: 1)
+- **debug_page** (`lib_pages_debug_page_dart`, File, degree: 3)
+- **_DebugPageState()** (`lib_pages_debug_page_dart_debugpagestate`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_pages_debug_page_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_debug_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_migrations (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_import_django_db_models (imports)
-- backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py → backend_payments_migrations_0003_alter_purchase_payment_method_alter_service_currency_py_migration (defines)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_import_package_dio_dio_dart (imports)
+- lib_pages_debug_page_dart → lib_pages_debug_page_dart_debugpagestate (defines)
 

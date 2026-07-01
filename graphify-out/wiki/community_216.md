@@ -1,19 +1,19 @@
-# Community 216: Summary
+# Community 216: otp_service
 
 **Members:** 5
 
 ## Nodes
 
-- **Summary** (`backend_courses_models_py_summary`, Class, degree: 6)
-- **.author_badge()** (`backend_courses_models_py_summary_author_badge`, Method, degree: 1)
-- **.can_generate_exercises()** (`backend_courses_models_py_summary_can_generate_exercises`, Method, degree: 1)
-- **.get_author_display_for_user()** (`backend_courses_models_py_summary_get_author_display_for_user`, Method, degree: 1)
-- **.__str__()** (`backend_courses_models_py_summary_str`, Method, degree: 1)
+- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
+- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_models_py_summary → backend_courses_models_py_summary_str (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_can_generate_exercises (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_author_badge (defines)
-- backend_courses_models_py_summary → backend_courses_models_py_summary_get_author_display_for_user (defines)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
 

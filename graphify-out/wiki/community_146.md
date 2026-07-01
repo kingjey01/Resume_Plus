@@ -1,23 +1,25 @@
-# Community 146: SubscriptionExpirationTest
+# Community 146: splash_screen
 
-**Members:** 7
+**Members:** 8
 
 ## Nodes
 
-- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
-- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
-- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
-- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
-- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
-- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
-- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
+- **splash_screen** (`lib_features_splash_screens_splash_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/auto_login_service.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_SplashScreenState()** (`lib_features_splash_screens_splash_screen_dart_splashscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
-- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_splashscreenstate (defines)
 

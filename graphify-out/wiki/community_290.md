@@ -1,15 +1,17 @@
-# Community 290: production_settings
+# Community 290: 0008_add_session_processing_fields
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **production_settings** (`backend_production_settings_py`, File, degree: 2)
-- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
-- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
+- **0008_add_session_processing_fields** (`backend_courses_migrations_0008_add_session_processing_fields_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0008_add_session_processing_fields_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
-- backend_production_settings_py → backend_production_settings_py_import_os (imports)
+- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models (imports)
+- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_migration (defines)
 

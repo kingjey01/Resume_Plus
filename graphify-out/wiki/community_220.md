@@ -1,19 +1,19 @@
-# Community 220: AbonnementListCreateView
+# Community 220: fix_user_university
 
 **Members:** 5
 
 ## Nodes
 
-- **AbonnementListCreateView** (`backend_payments_views_py_abonnementlistcreateview`, Class, degree: 4)
-- **.get_queryset()** (`backend_payments_views_py_abonnementlistcreateview_get_queryset`, Method, degree: 1)
-- **.list()** (`backend_payments_views_py_abonnementlistcreateview_list`, Method, degree: 2)
-- **.perform_create()** (`backend_payments_views_py_abonnementlistcreateview_perform_create`, Method, degree: 1)
-- **initiate_subscription_payment_view()** (`backend_payments_views_py_initiate_subscription_payment_view`, Function, degree: 2)
+- **fix_user_university** (`backend_fix_user_university_py`, File, degree: 4)
+- **courses.models.Universite** (`backend_fix_user_university_py_import_courses_models_universite`, Module, degree: 1)
+- **django** (`backend_fix_user_university_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_fix_user_university_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_fix_user_university_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_get_queryset (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_perform_create (defines)
-- backend_payments_views_py_abonnementlistcreateview → backend_payments_views_py_abonnementlistcreateview_list (defines)
-- backend_payments_views_py_initiate_subscription_payment_view → backend_payments_views_py_abonnementlistcreateview_list (calls)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_os (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_django (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_django_contrib_auth_models_user (imports)
+- backend_fix_user_university_py → backend_fix_user_university_py_import_courses_models_universite (imports)
 

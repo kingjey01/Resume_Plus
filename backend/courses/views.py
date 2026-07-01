@@ -25,8 +25,24 @@ from .serializers import (
     AbonnementCreateSerializer, FiliereWithUniversiteSerializer,
     ProfesseurSerializer
 )
-from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary, 
+from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary,
                          IsAdminOrReadOnly, HasUniversityAccess, CanModifyObject)
+
+
+# ─── Helper : prix minimum dynamique depuis la base ──────────────────
+
+def get_minimum_resume_price():
+    """
+    Retourne le prix minimum configuré dans ResumePricingConfig.
+    Si aucune config active → valeur par défaut 3000.
+    Cette fonction est la source unique de vérité pour le seuil de prix.
+    """
+    try:
+        from security.models import ResumePricingConfig
+        config = ResumePricingConfig.objects.get(is_active=True)
+        return float(config.minimum_resume_price)
+    except Exception:
+        return 3000.00
 
 
 class CourseListCreateView(generics.ListCreateAPIView):
@@ -76,8 +92,11 @@ class CourseListCreateView(generics.ListCreateAPIView):
         if profile.filiere:
             course.filieres.add(profile.filiere)
 
-        # Auto-créer une Dispense si un professeur existe déjà (Objectif 5)
-        if profile.universite and profile.filiere and profile.promotion:
+        # === Mode ONBOARDING uniquement : auto-créer une Dispense si un professeur existe ===
+        # Le flag is_onboarding est envoyé par le frontend pendant le parcours de première connexion.
+        # Depuis le menu "+" → Créer, is_onboarding est absent/false → aucune Dispense créée.
+        is_onboarding = self.request.data.get('is_onboarding', False) in (True, 'true', 'True', 1, '1')
+        if is_onboarding and profile.universite and profile.filiere and profile.promotion:
             professeur = Professeur.objects.filter(
                 universite=profile.universite,
                 filieres=profile.filiere
@@ -92,8 +111,11 @@ class CourseListCreateView(generics.ListCreateAPIView):
                         'filiere': profile.filiere,
                     }
                 )
+                logger.info(f"🔗 [Onboarding] Dispense auto-créée: Professeur={professeur.id}, Cours={course.id}")
 
 
+
+                
 class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CourseSerializer
     permission_classes = [permissions.IsAuthenticated, HasUniversityAccess, CanModifyObject]
@@ -531,18 +553,19 @@ def upload_audio_session(request):
                 status=status.HTTP_400_BAD_REQUEST
             )
         
-        # Valider le prix (minimum 3000 CDF)
+        # Valider le prix via la config dynamique
         try:
             price = float(summary_price)
             if price < 0:
                 raise ValueError("Le prix ne peut pas être négatif")
-            # Si le prix est inférieur à 3000, le remplacer par 3000
-            if price < 3000:
-                logger.warning(f'⚠️ Prix {price} inférieur à 3000 CDF pour {request.user.username} — remplacé par 3000')
-                price = 3000
+            min_price = get_minimum_resume_price()
+            if price < min_price:
+                return Response({
+                    'error': f'Le prix minimum autorisé pour un résumé est de {int(min_price)} FC.'
+                }, status=status.HTTP_400_BAD_REQUEST)
         except (ValueError, TypeError):
             return Response(
-                {'error': 'summary_price doit être un nombre valide >= 0'}, 
+                {'error': 'summary_price doit être un nombre valide >= 0'},
                 status=status.HTTP_400_BAD_REQUEST
             )
         
@@ -1423,10 +1446,11 @@ def edit_summary_view(request, summary_id):
                     return Response({
                         'error': 'Le prix ne peut pas être négatif'
                     }, status=status.HTTP_400_BAD_REQUEST)
-                # Si le prix est inférieur à 3000, le remplacer par 3000
-                if price < 3000:
-                    logger.warning(f'⚠️ Prix {price} inférieur à 3000 CDF pour {request.user.username} — remplacé par 3000')
-                    price = 3000
+                min_price = get_minimum_resume_price()
+                if price < min_price:
+                    return Response({
+                        'error': f'Le prix minimum autorisé pour un résumé est de {int(min_price)} FC.'
+                    }, status=status.HTTP_400_BAD_REQUEST)
                 summary.prix = price
             except (ValueError, TypeError):
                 return Response({
@@ -1610,6 +1634,13 @@ def onboarding_status_view(request):
 def create_professeur_simple_view(request):
     """
     Création simplifiée d'un professeur.
+
+    Deux modes de fonctionnement :
+    - Mode ONBOARDING (is_onboarding=True) : crée automatiquement une Dispense
+      si un cours existe déjà. Utilisé pendant le parcours de première connexion.
+    - Mode GESTION (is_onboarding=False ou absent) : crée UNIQUEMENT le professeur.
+      Aucune association Dispense créée. Utilisé depuis le menu "+" → Créer.
+
     L'utilisateur renseigne uniquement : nom_complet, telephone, specialite.
     Le backend crée automatiquement le User Django et le Professeur,
     en associant l'université de l'utilisateur connecté.
@@ -1625,6 +1656,7 @@ def create_professeur_simple_view(request):
         nom_complet = request.data.get('nom_complet', '').strip()
         telephone = request.data.get('telephone', '').strip()
         specialite = request.data.get('specialite', '').strip()
+        is_onboarding = request.data.get('is_onboarding', False) in (True, 'true', 'True', 1, '1')
 
         if not nom_complet:
             return Response({'error': 'Le nom complet est requis.'}, status=400)
@@ -1669,8 +1701,8 @@ def create_professeur_simple_view(request):
         if profile.filiere:
             professeur.filieres.add(profile.filiere)
 
-        # Auto-créer une Dispense si un cours existe déjà (Objectif 5)
-        if profile.universite and profile.filiere and profile.promotion:
+        # === Mode ONBOARDING : auto-créer une Dispense si un cours existe déjà ===
+        if is_onboarding and profile.universite and profile.filiere and profile.promotion:
             cours = Course.objects.filter(
                 universites=profile.universite,
                 filieres=profile.filiere,
@@ -1686,6 +1718,7 @@ def create_professeur_simple_view(request):
                         'filiere': profile.filiere,
                     }
                 )
+                logger.info(f"🔗 [Onboarding] Dispense auto-créée: Professeur={professeur.id}, Cours={cours.id}")
 
         serializer = ProfesseurSerializer(professeur)
         return Response({
@@ -1696,6 +1729,8 @@ def create_professeur_simple_view(request):
     except Exception as e:
         logger.error(f"Erreur création professeur simplifié: {e}")
         return Response({'error': str(e)}, status=500)
+
+
 
 
 # ============================================================

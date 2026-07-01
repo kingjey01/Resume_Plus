@@ -13,6 +13,7 @@ urlpatterns = [
     path('', include(router.urls)),
     
     # Courses
+   
     path('course-list/', views.CourseListCreateView.as_view(), name='course-list-create'),
     path('courses/<int:pk>/', views.CourseDetailView.as_view(), name='course-detail'),
     

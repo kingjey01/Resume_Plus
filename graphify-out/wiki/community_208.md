@@ -1,19 +1,21 @@
-# Community 208: fix_settings_mysql
+# Community 208: onboarding_screen
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **fix_settings_mysql** (`backend_fix_settings_mysql_py`, File, degree: 4)
-- **create_env_file()** (`backend_fix_settings_mysql_py_create_env_file`, Function, degree: 1)
-- **fix_settings_mysql()** (`backend_fix_settings_mysql_py_fix_settings_mysql`, Function, degree: 1)
-- **os** (`backend_fix_settings_mysql_py_import_os`, Module, degree: 1)
-- **re** (`backend_fix_settings_mysql_py_import_re`, Module, degree: 1)
+- **onboarding_screen** (`lib_features_onboarding_onboarding_screen_dart`, File, degree: 5)
+- **package:flutter/material.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_OnboardingScreenState()** (`lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_os (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_import_re (imports)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_fix_settings_mysql (defines)
-- backend_fix_settings_mysql_py → backend_fix_settings_mysql_py_create_env_file (defines)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate (defines)
 

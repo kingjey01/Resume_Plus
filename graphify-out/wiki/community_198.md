@@ -1,21 +1,21 @@
-# Community 198: settings
+# Community 198: 0017_universite_filieres_m2m
 
 **Members:** 6
 
 ## Nodes
 
-- **settings** (`backend_resume_backend_settings_py`, File, degree: 5)
-- **celery.schedules.crontab** (`backend_resume_backend_settings_py_import_celery_schedules_crontab`, Module, degree: 1)
-- **datetime.timedelta** (`backend_resume_backend_settings_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_resume_backend_settings_py_import_decouple_config`, Module, degree: 1)
-- **os** (`backend_resume_backend_settings_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_resume_backend_settings_py_import_pathlib_path`, Module, degree: 1)
+- **0017_universite_filieres_m2m** (`backend_courses_migrations_0017_universite_filieres_m2m_py`, File, degree: 5)
+- **copy_universite_filiere_to_m2m()** (`backend_courses_migrations_0017_universite_filieres_m2m_py_copy_universite_filiere_to_m2m`, Function, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0017_universite_filieres_m2m_py_migration`, Class, degree: 1)
+- **restore_universite_filiere_from_m2m()** (`backend_courses_migrations_0017_universite_filieres_m2m_py_restore_universite_filiere_from_m2m`, Function, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_pathlib_path (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_datetime_timedelta (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_decouple_config (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_os (imports)
-- backend_resume_backend_settings_py → backend_resume_backend_settings_py_import_celery_schedules_crontab (imports)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_import_django_db_models (imports)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_copy_universite_filiere_to_m2m (defines)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_restore_universite_filiere_from_m2m (defines)
+- backend_courses_migrations_0017_universite_filieres_m2m_py → backend_courses_migrations_0017_universite_filieres_m2m_py_migration (defines)
 

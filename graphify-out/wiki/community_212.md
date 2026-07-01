@@ -1,19 +1,21 @@
-# Community 212: fix_user_university
+# Community 212: SubscriptionNotificationTest
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **fix_user_university** (`backend_fix_user_university_py`, File, degree: 4)
-- **courses.models.Universite** (`backend_fix_user_university_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_user_university_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_user_university_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_user_university_py_import_os`, Module, degree: 1)
+- **SubscriptionNotificationTest** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest`, Class, degree: 6)
+- **.setUp()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup`, Method, degree: 1)
+- **.test_multiple_subscriptions_notifications()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications`, Method, degree: 1)
+- **.test_subscription_expired_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification`, Method, degree: 1)
+- **.test_subscription_expiring_soon_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification`, Method, degree: 1)
+- **.test_subscription_paid_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification`, Method, degree: 1)
 
 ## Relationships
 
-- backend_fix_user_university_py → backend_fix_user_university_py_import_os (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_courses_models_universite (imports)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification (defines)
+- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications (defines)
 

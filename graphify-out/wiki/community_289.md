@@ -1,15 +1,17 @@
-# Community 289: settings_postgresql
+# Community 289: manage
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **settings_postgresql** (`backend_settings_postgresql_py`, File, degree: 2)
-- **os** (`backend_settings_postgresql_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_postgresql_py_import_pathlib_path`, Module, degree: 1)
+- **manage** (`backend_manage_py`, File, degree: 3)
+- **os** (`backend_manage_py_import_os`, Module, degree: 1)
+- **sys** (`backend_manage_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_manage_py_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_settings_postgresql_py → backend_settings_postgresql_py_import_os (imports)
-- backend_settings_postgresql_py → backend_settings_postgresql_py_import_pathlib_path (imports)
+- backend_manage_py → backend_manage_py_import_os (imports)
+- backend_manage_py → backend_manage_py_import_sys (imports)
+- backend_manage_py → backend_manage_py_main (defines)
 

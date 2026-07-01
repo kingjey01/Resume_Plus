@@ -1,8 +1,13 @@
-# Community 337: purchase
+# Community 337: payment_method
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **purchase** (`lib_models_purchase_dart`, File, degree: 0)
+- **payment_method** (`lib_models_payment_method_dart`, File, degree: 1)
+- **PaymentMethodType** (`lib_models_payment_method_dart_paymentmethodtype`, Enum, degree: 1)
+
+## Relationships
+
+- lib_models_payment_method_dart → lib_models_payment_method_dart_paymentmethodtype (defines)
 

@@ -1,19 +1,19 @@
-# Community 215: 0019_course_m2m_relations
+# Community 215: enhanced_auth_demo_page
 
 **Members:** 5
 
 ## Nodes
 
-- **0019_course_m2m_relations** (`backend_courses_migrations_0019_course_m2m_relations_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models`, Module, degree: 1)
-- **migrate_fk_to_m2m()** (`backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m`, Function, degree: 1)
-- **Migration** (`backend_courses_migrations_0019_course_m2m_relations_py_migration`, Class, degree: 1)
+- **enhanced_auth_demo_page** (`lib_pages_enhanced_auth_demo_page_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/api_provider.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/enhanced_auth_widget.dart** (`lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models (imports)
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m (defines)
-- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migration (defines)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_providers_api_provider_dart (imports)
+- lib_pages_enhanced_auth_demo_page_dart → lib_pages_enhanced_auth_demo_page_dart_import_package_resume_plus_clean_widgets_enhanced_auth_widget_dart (imports)
 

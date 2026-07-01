@@ -1,25 +1,25 @@
-# Community 141: admin
+# Community 141: exercise_result_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_notifications_admin_py`, File, degree: 7)
-- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_notifications_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.AppNotification** (`backend_notifications_admin_py_import_models_appnotification`, Module, degree: 1)
-- **.models.UserDevice** (`backend_notifications_admin_py_import_models_userdevice`, Module, degree: 1)
-- **.models.UserNotification** (`backend_notifications_admin_py_import_models_usernotification`, Module, degree: 1)
-- **UserDeviceAdmin** (`backend_notifications_admin_py_userdeviceadmin`, Class, degree: 1)
-- **UserNotificationAdmin** (`backend_notifications_admin_py_usernotificationadmin`, Class, degree: 1)
+- **exercise_result_screen** (`lib_features_exercises_screens_exercise_result_screen_dart`, File, degree: 7)
+- **_ExerciseResultScreenState()** (`lib_features_exercises_screens_exercise_result_screen_dart_exerciseresultscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/exercises/screens/exercise_quiz_screen.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_quiz_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/exercise.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/secure_screen_wrapper.dart** (`lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_admin_py → backend_notifications_admin_py_import_django_contrib_admin (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_userdevice (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_appnotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_usernotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_userdeviceadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_appnotificationadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_usernotificationadmin (defines)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_models_exercise_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_features_exercises_screens_exercise_quiz_screen_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_import_package_resume_plus_clean_widgets_secure_screen_wrapper_dart (imports)
+- lib_features_exercises_screens_exercise_result_screen_dart → lib_features_exercises_screens_exercise_result_screen_dart_exerciseresultscreenstate (defines)
 

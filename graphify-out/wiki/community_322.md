@@ -1,13 +1,15 @@
-# Community 322: flutter_usage_example
+# Community 322: production_settings
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
-- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
+- **production_settings** (`backend_production_settings_py`, File, degree: 2)
+- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
+- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
 
 ## Relationships
 
-- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
+- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
+- backend_production_settings_py → backend_production_settings_py_import_os (imports)
 

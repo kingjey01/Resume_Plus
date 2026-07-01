@@ -1,25 +1,25 @@
-# Community 144: check_db_services
+# Community 144: settings_production_fixed
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_services** (`backend_check_db_services_py`, File, degree: 13)
-- **django** (`backend_check_db_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_db_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_services_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_services_py_import_os`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_check_db_services_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_check_db_services_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_check_db_services_py_import_users_models_userprofile`, Module, degree: 1)
+- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
+- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
+- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
+- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
+- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
+- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
+- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
+- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_db_services_py → backend_check_db_services_py_import_os (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_sys (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_rest_framework_authtoken_models_token (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_users_models_userprofile (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_db_connection (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
+- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
 

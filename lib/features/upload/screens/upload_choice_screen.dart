@@ -170,38 +170,7 @@ class UploadChoiceScreen extends StatelessWidget {
             ),
 
             const SizedBox(height: 24),
-            
-            // Information
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: AppTheme.primaryBlue.withOpacity(0.08),
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 36, height: 36,
-                      decoration: BoxDecoration(
-                        color: AppTheme.primaryBlue.withOpacity(0.15),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Icon(Icons.info_outline_rounded, color: AppTheme.primaryBlue, size: 20),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        'Les résumés créés seront automatiquement payants (2500 CDF) et disponibles pour tous les utilisateurs.',
-                        style: TextStyle(color: AppTheme.primaryBlue.withOpacity(0.9), fontSize: 13),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            
+
             const SizedBox(height: 40),
           ],
         ),

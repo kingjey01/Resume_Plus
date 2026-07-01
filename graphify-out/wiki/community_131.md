@@ -1,25 +1,27 @@
-# Community 131: admin
+# Community 131: tasks
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **tasks** (`backend_courses_tasks_py`, File, degree: 7)
+- **generate_summary_task()** (`backend_courses_tasks_py_generate_summary_task`, Function, degree: 1)
+- **celery.shared_task** (`backend_courses_tasks_py_import_celery_shared_task`, Module, degree: 1)
+- **django.utils.timezone** (`backend_courses_tasks_py_import_django_utils_timezone`, Module, degree: 1)
+- **logging** (`backend_courses_tasks_py_import_logging`, Module, degree: 1)
+- **process_audio_session_task()** (`backend_courses_tasks_py_process_audio_session_task`, Function, degree: 2)
+- **transcribe_audio_task()** (`backend_courses_tasks_py_transcribe_audio_task`, Function, degree: 2)
+- **_validate_and_fix_duration()** (`backend_courses_tasks_py_validate_and_fix_duration`, Function, degree: 3)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- backend_courses_tasks_py → backend_courses_tasks_py_import_logging (imports)
+- backend_courses_tasks_py → backend_courses_tasks_py_import_celery_shared_task (imports)
+- backend_courses_tasks_py → backend_courses_tasks_py_import_django_utils_timezone (imports)
+- backend_courses_tasks_py → backend_courses_tasks_py_validate_and_fix_duration (defines)
+- backend_courses_tasks_py → backend_courses_tasks_py_transcribe_audio_task (defines)
+- backend_courses_tasks_py → backend_courses_tasks_py_generate_summary_task (defines)
+- backend_courses_tasks_py → backend_courses_tasks_py_process_audio_session_task (defines)
+- backend_courses_tasks_py_transcribe_audio_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
+- backend_courses_tasks_py_process_audio_session_task → backend_courses_tasks_py_validate_and_fix_duration (calls)
 

@@ -1,19 +1,21 @@
-# Community 214: deepseek_service
+# Community 214: AppDelegate
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
-- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
+- **AppDelegate** (`macos_runner_appdelegate_swift`, File, degree: 5)
+- **AppDelegate** (`macos_runner_appdelegate_swift_appdelegate`, Class, degree: 1)
+- **applicationShouldTerminateAfterLastWindowClosed** (`macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed`, Function, degree: 1)
+- **applicationSupportsSecureRestorableState** (`macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate`, Function, degree: 1)
+- **Cocoa** (`macos_runner_appdelegate_swift_import_cocoa`, Module, degree: 1)
+- **FlutterMacOS** (`macos_runner_appdelegate_swift_import_fluttermacos`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_appdelegate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationshouldterminateafterlastwindowclosed (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_applicationsupportssecurerestorablestate (defines)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_cocoa (imports)
+- macos_runner_appdelegate_swift → macos_runner_appdelegate_swift_import_fluttermacos (imports)
 

@@ -1,23 +1,23 @@
-# Community 171: audio_sessions_page
+# Community 171: AbonnementCreateSerializer
 
 **Members:** 7
 
 ## Nodes
 
-- **audio_sessions_page** (`lib_pages_audio_sessions_page_dart`, File, degree: 6)
-- **_AudioSessionsPageState()** (`lib_pages_audio_sessions_page_dart_audiosessionspagestate`, Function, degree: 1)
-- **dart:html'** (`lib_pages_audio_sessions_page_dart_import_dart_html`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_pages_audio_sessions_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_pages_audio_sessions_page_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
+- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
+- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
+- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
+- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
+- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
 
 ## Relationships
 
-- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_package_intl_intl_dart (imports)
-- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_import_dart_html (imports)
-- lib_pages_audio_sessions_page_dart → lib_pages_audio_sessions_page_dart_audiosessionspagestate (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
+- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
+- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
 

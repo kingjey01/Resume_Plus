@@ -132,11 +132,13 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final cs = theme.colorScheme;
     final topPadding = MediaQuery.of(context).padding.top;
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle.light,
       child: Scaffold(
-        backgroundColor: const Color(0xFFF5F7FA),
+        backgroundColor: cs.surface,
         body: Column(
           children: [
             // ── Header ──────────────────────────────────────────────────────
@@ -224,12 +226,12 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
                           const SizedBox(height: 24),
 
                           // ── Dropdown Professeur ──────────────────────────
-                          const Text(
+                          Text(
                             'Professeur',
                             style: TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.w600,
-                                color: AppTheme.textSecondary),
+                                color: cs.onSurfaceVariant),
                           ),
                           const SizedBox(height: 6),
                           _buildDropdown(
@@ -243,12 +245,12 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
                           const SizedBox(height: 16),
 
                           // ── Dropdown Cours ───────────────────────────────
-                          const Text(
+                          Text(
                             'Cours',
                             style: TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.w600,
-                                color: AppTheme.textSecondary),
+                                color: cs.onSurfaceVariant),
                           ),
                           const SizedBox(height: 6),
                           _buildDropdown(
@@ -294,12 +296,12 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
                           // ── Liste des associations ───────────────────────
                           Row(
                             children: [
-                              const Text(
+                              Text(
                                 'Associations existantes',
                                 style: TextStyle(
                                     fontSize: 16,
                                     fontWeight: FontWeight.w700,
-                                    color: AppTheme.textPrimary),
+                                    color: cs.onSurface),
                               ),
                               const SizedBox(width: 8),
                               if (!_isLoadingDispenses)
@@ -333,15 +335,14 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
                             Container(
                               padding: const EdgeInsets.all(20),
                               decoration: BoxDecoration(
-                                color: Colors.white,
+                                color: cs.surface,
                                 borderRadius: BorderRadius.circular(14),
-                                boxShadow: AppTheme.softShadow,
                               ),
-                              child: const Center(
+                              child: Center(
                                 child: Text(
                                   'Aucune association enregistrée.',
                                   style:
-                                      TextStyle(color: AppTheme.textLight),
+                                      TextStyle(color: cs.onSurfaceVariant),
                                 ),
                               ),
                             ),
@@ -365,24 +366,28 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
     required IconData icon,
     required void Function(Map<String, dynamic>?) onChanged,
   }) {
+    final theme = Theme.of(context);
+    final cs = theme.colorScheme;
+
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: cs.surface,
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.grey.shade200),
+        border: Border.all(color: theme.dividerTheme.color ?? Colors.grey.shade300),
       ),
       child: DropdownButtonHideUnderline(
         child: ButtonTheme(
           alignedDropdown: true,
           child: DropdownButton<Map<String, dynamic>>(
             value: value,
+            dropdownColor: cs.surface, // ← fond du menu déroulant adapté au thème
             hint: Row(
               children: [
-                Icon(icon, size: 20, color: AppTheme.textLight),
+                Icon(icon, size: 20, color: cs.onSurfaceVariant),
                 const SizedBox(width: 8),
                 Text(hint,
-                    style: const TextStyle(
-                        color: AppTheme.textLight, fontSize: 14.5)),
+                    style: TextStyle(
+                        color: cs.onSurfaceVariant, fontSize: 14.5)),
               ],
             ),
             isExpanded: true,
@@ -394,8 +399,8 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
                       child: Text(
                         label(item),
                         overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                            fontSize: 14, color: AppTheme.textPrimary),
+                        style: TextStyle(
+                            fontSize: 14, color: cs.onSurface), // ← s'adapte au mode
                       ),
                     ))
                 .toList(),
@@ -407,6 +412,7 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
   }
 
   Widget _buildDispenseCard(Map<String, dynamic> d) {
+    final cs = Theme.of(context).colorScheme;
     final id = d['id'] as int;
     final profName = d['professeur_name'] as String? ?? '';
     final coursNom = d['cours_nom'] as String? ?? '';
@@ -415,7 +421,7 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
       margin: const EdgeInsets.only(bottom: 10),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: cs.surface,
         borderRadius: BorderRadius.circular(14),
         boxShadow: AppTheme.softShadow,
       ),
@@ -435,8 +441,8 @@ class _AssociateProfCoursScreenState extends State<AssociateProfCoursScreen> {
           Expanded(
             child: RichText(
               text: TextSpan(
-                style: const TextStyle(
-                    fontSize: 14, color: AppTheme.textPrimary),
+                style: TextStyle(
+                    fontSize: 14, color: cs.onSurface),
                 children: [
                   TextSpan(
                     text: profName,

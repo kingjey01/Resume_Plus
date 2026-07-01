@@ -1,23 +1,23 @@
-# Community 175: error_handler_mixin
+# Community 175: SubscriptionExpirationTest
 
 **Members:** 7
 
 ## Nodes
 
-- **error_handler_mixin** (`lib_mixins_error_handler_mixin_dart`, File, degree: 6)
-- **ErrorHandlerMixin** (`lib_mixins_error_handler_mixin_dart_errorhandlermixin`, Class, degree: 1)
-- **package:dio/dio.dart** (`lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/utils/logger.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
+- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
+- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
+- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
+- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
+- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
+- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
+- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
 
 ## Relationships
 
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_errorhandlermixin (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
 

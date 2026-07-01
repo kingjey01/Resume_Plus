@@ -1,17 +1,19 @@
-# Community 257: simple_data_page
+# Community 257: 0007_transcription_summary_transcription
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **simple_data_page** (`lib_pages_simple_data_page_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_pages_simple_data_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
-- **_SimpleDataPageState()** (`lib_pages_simple_data_page_dart_simpledatapagestate`, Function, degree: 1)
+- **0007_transcription_summary_transcription** (`backend_courses_migrations_0007_transcription_summary_transcription_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0007_transcription_summary_transcription_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_simpledatapagestate (defines)
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models (imports)
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0007_transcription_summary_transcription_py → backend_courses_migrations_0007_transcription_summary_transcription_py_migration (defines)
 

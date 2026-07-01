@@ -1,19 +1,19 @@
-# Community 237: AppDelegate
+# Community 237: test_api
 
 **Members:** 5
 
 ## Nodes
 
-- **AppDelegate** (`ios_runner_appdelegate_swift`, File, degree: 4)
-- **application** (`ios_runner_appdelegate_swift_application`, Function, degree: 1)
-- **FirebaseCore** (`ios_runner_appdelegate_swift_import_firebasecore`, Module, degree: 1)
-- **Flutter** (`ios_runner_appdelegate_swift_import_flutter`, Module, degree: 1)
-- **UIKit** (`ios_runner_appdelegate_swift_import_uikit`, Module, degree: 1)
+- **test_api** (`backend_test_api_py`, File, degree: 4)
+- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
+- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
+- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
 
 ## Relationships
 
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_application (defines)
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_flutter (imports)
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_uikit (imports)
-- ios_runner_appdelegate_swift → ios_runner_appdelegate_swift_import_firebasecore (imports)
+- backend_test_api_py → backend_test_api_py_import_requests (imports)
+- backend_test_api_py → backend_test_api_py_import_json (imports)
+- backend_test_api_py → backend_test_api_py_test_services_api (defines)
+- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
 

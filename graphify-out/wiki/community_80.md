@@ -1,29 +1,36 @@
-# Community 80: notifications_screen
+# Community 80: create_courses()
 
 **Members:** 10
 
 ## Nodes
 
-- **notifications_screen** (`lib_features_notifications_screens_notifications_screen_dart`, File, degree: 9)
-- **dart:async** (`lib_features_notifications_screens_notifications_screen_dart_import_dart_async`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:intl/intl.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/notifications/providers/notification_provider.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/notifications/screens/notification_detail_screen.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/app_notification.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_NotificationsScreenState()** (`lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate`, Function, degree: 1)
+- **create_courses()** (`backend_seed_database_py_create_courses`, Function, degree: 3)
+- **create_filieres()** (`backend_seed_database_py_create_filieres`, Function, degree: 3)
+- **create_promotions()** (`backend_seed_database_py_create_promotions`, Function, degree: 3)
+- **create_relations()** (`backend_seed_database_py_create_relations`, Function, degree: 3)
+- **create_services()** (`backend_seed_database_py_create_services`, Function, degree: 3)
+- **create_sessions_and_summaries()** (`backend_seed_database_py_create_sessions_and_summaries`, Function, degree: 3)
+- **create_universites()** (`backend_seed_database_py_create_universites`, Function, degree: 3)
+- **create_users()** (`backend_seed_database_py_create_users`, Function, degree: 3)
+- **main()** (`backend_seed_database_py_main`, Function, degree: 12)
+- **print_section()** (`backend_seed_database_py_print_section`, Function, degree: 9)
 
 ## Relationships
 
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_dart_async (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_intl_intl_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_providers_notification_provider_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_features_notifications_screens_notification_detail_screen_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_models_app_notification_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_notifications_screens_notifications_screen_dart → lib_features_notifications_screens_notifications_screen_dart_notificationsscreenstate (defines)
+- backend_seed_database_py_create_universites → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_filieres → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_promotions → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_relations → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_courses → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_users → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_sessions_and_summaries → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_create_services → backend_seed_database_py_print_section (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_universites (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_users (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_sessions_and_summaries (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_promotions (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_courses (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_filieres (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_relations (calls)
+- backend_seed_database_py_main → backend_seed_database_py_create_services (calls)
 

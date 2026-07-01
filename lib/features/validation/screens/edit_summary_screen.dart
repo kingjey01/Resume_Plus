@@ -16,16 +16,25 @@ class _EditSummaryScreenState extends State<EditSummaryScreen> {
   late TextEditingController _titreController;
   late TextEditingController _texteController;
   late TextEditingController _prixController;
-  bool _isFree = false;
   bool _isSaving = false;
+
+  double _minimumPrice = 3000; // Valeur par défaut en attendant l'API
 
   @override
   void initState() {
     super.initState();
     _titreController = TextEditingController(text: widget.summary['titre'] ?? '');
     _texteController = TextEditingController(text: widget.summary['texte_resume'] ?? '');
-    _prixController = TextEditingController(text: (widget.summary['prix'] ?? 0).toString());
-    _isFree = widget.summary['is_free'] == true;
+    final currentPrice = widget.summary['prix'] ?? 0;
+    _prixController = TextEditingController(text: currentPrice.toString());
+    _loadPricingConfig();
+  }
+
+  Future<void> _loadPricingConfig() async {
+    final minPrice = await _apiService.getMinimumResumePrice();
+    if (mounted) {
+      setState(() => _minimumPrice = minPrice);
+    }
   }
 
   @override
@@ -44,11 +53,13 @@ class _EditSummaryScreenState extends State<EditSummaryScreen> {
       return;
     }
 
-    // Valider le prix (minimum 3000 CDF)
     final price = double.tryParse(_prixController.text) ?? 0.0;
-    if (price < 3000) {
+    if (price < _minimumPrice) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Le prix minimum est 3000 CDF'), backgroundColor: AppTheme.error),
+        SnackBar(
+          content: Text('Le prix minimum est ${_minimumPrice.toStringAsFixed(0)} CDF'),
+          backgroundColor: AppTheme.error,
+        ),
       );
       return;
     }
@@ -74,7 +85,10 @@ class _EditSummaryScreenState extends State<EditSummaryScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Erreur: $e'), backgroundColor: AppTheme.error),
+          SnackBar(
+            content: Text(ApiService.getErrorMessage(e)),
+            backgroundColor: AppTheme.error,
+          ),
         );
       }
     } finally {
@@ -87,9 +101,10 @@ class _EditSummaryScreenState extends State<EditSummaryScreen> {
     final topPadding = MediaQuery.of(context).padding.top;
     final authorType = widget.summary['author_type'] ?? 'cp';
     final isAi = authorType == 'ai';
+    final theme = Theme.of(context);
 
     return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: theme.scaffoldBackgroundColor,
       body: Column(
         children: [
           // Header
@@ -126,7 +141,7 @@ class _EditSummaryScreenState extends State<EditSummaryScreen> {
                     children: [
                       Text(
                         'Modifier le résumé',
-                        style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                        style: theme.textTheme.titleMedium?.copyWith(
                           color: Colors.white, fontWeight: FontWeight.w700,
                         ),
                       ),
@@ -181,16 +196,16 @@ class _EditSummaryScreenState extends State<EditSummaryScreen> {
                     ),
                   ),
                   const SizedBox(height: 20),
-                  // Prix (minimum 3000 CDF)
-                  const Text('Prix (CDF) *', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 14)),
+                  // Prix
+                  Text('Prix (CDF) *', style: TextStyle(fontWeight: FontWeight.w600, fontSize: 14)),
                   const SizedBox(height: 8),
                   TextField(
                     controller: _prixController,
                     keyboardType: TextInputType.number,
                     decoration: InputDecoration(
-                      hintText: 'Minimum 3000 CDF',
+                      hintText: 'Prix du résumé',
                       prefixIcon: const Icon(Icons.payments_rounded, size: 20),
-                      helperText: 'Le prix minimum est 3000 CDF. Aucun résumé ne peut être gratuit.',
+                      helperText: 'Prix minimum : ${_minimumPrice.toStringAsFixed(0)} CDF',
                       helperMaxLines: 2,
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
                     ),
@@ -225,7 +240,7 @@ class _EditSummaryScreenState extends State<EditSummaryScreen> {
           Container(
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: theme.colorScheme.surface,
               boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.06), blurRadius: 10, offset: const Offset(0, -4))],
             ),
             child: SafeArea(

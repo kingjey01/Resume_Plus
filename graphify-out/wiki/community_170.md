@@ -1,23 +1,23 @@
-# Community 170: setup_exercise_service
+# Community 170: main
 
 **Members:** 7
 
 ## Nodes
 
-- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
-- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
-- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
-- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
-- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
-- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
-- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
+- **main** (`windows_runner_main_cpp`, File, degree: 6)
+- **flutter/dart_project.h** (`windows_runner_main_cpp_import_flutter_dart_project_h`, Module, degree: 1)
+- **flutter/flutter_view_controller.h** (`windows_runner_main_cpp_import_flutter_flutter_view_controller_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_main_cpp_import_flutter_window_h`, Module, degree: 1)
+- **utils.h** (`windows_runner_main_cpp_import_utils_h`, Module, degree: 1)
+- **windows.h** (`windows_runner_main_cpp_import_windows_h`, Module, degree: 1)
+- **wWinMain()** (`windows_runner_main_cpp_wwinmain`, Function, degree: 1)
 
 ## Relationships
 
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
-- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_dart_project_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_flutter_view_controller_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_windows_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_flutter_window_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_import_utils_h (imports)
+- windows_runner_main_cpp → windows_runner_main_cpp_wwinmain (defines)
 

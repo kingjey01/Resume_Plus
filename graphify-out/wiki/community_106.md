@@ -1,30 +1,37 @@
-# Community 106: test_production_config
+# Community 106: FeatureTestSuite
 
 **Members:** 9
 
 ## Nodes
 
-- **test_production_config** (`backend_test_production_config_py`, File, degree: 8)
-- **datetime** (`backend_test_production_config_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_test_production_config_py_import_json`, Module, degree: 1)
-- **jwt** (`backend_test_production_config_py_import_jwt`, Module, degree: 1)
-- **requests** (`backend_test_production_config_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_production_config_py_main`, Function, degree: 4)
-- **test_cors_preflight()** (`backend_test_production_config_py_test_cors_preflight`, Function, degree: 2)
-- **test_jwt_validation()** (`backend_test_production_config_py_test_jwt_validation`, Function, degree: 2)
-- **test_server_logs_simulation()** (`backend_test_production_config_py_test_server_logs_simulation`, Function, degree: 2)
+- **FeatureTestSuite** (`backend_test_new_features_py_featuretestsuite`, Class, degree: 9)
+- **.__init__()** (`backend_test_new_features_py_featuretestsuite_init`, Method, degree: 1)
+- **.log_test()** (`backend_test_new_features_py_featuretestsuite_log_test`, Method, degree: 6)
+- **.run_all_tests()** (`backend_test_new_features_py_featuretestsuite_run_all_tests`, Method, degree: 6)
+- **.test_exercise_generation()** (`backend_test_new_features_py_featuretestsuite_test_exercise_generation`, Method, degree: 3)
+- **.test_exercise_service()** (`backend_test_new_features_py_featuretestsuite_test_exercise_service`, Method, degree: 3)
+- **.test_otp_system()** (`backend_test_new_features_py_featuretestsuite_test_otp_system`, Method, degree: 3)
+- **.test_summary_validation()** (`backend_test_new_features_py_featuretestsuite_test_summary_validation`, Method, degree: 3)
+- **.test_user_permissions()** (`backend_test_new_features_py_featuretestsuite_test_user_permissions`, Method, degree: 3)
 
 ## Relationships
 
-- backend_test_production_config_py → backend_test_production_config_py_import_requests (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_json (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_jwt (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_datetime (imports)
-- backend_test_production_config_py → backend_test_production_config_py_test_cors_preflight (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_jwt_validation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_server_logs_simulation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_main (defines)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_jwt_validation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_server_logs_simulation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_cors_preflight (calls)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_init (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_log_test (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_otp_system (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_exercise_service (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_summary_validation (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_exercise_generation (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_user_permissions (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_run_all_tests (defines)
+- backend_test_new_features_py_featuretestsuite_test_otp_system → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_exercise_service → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_summary_validation → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_exercise_generation → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_user_permissions → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_otp_system (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_exercise_service (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_summary_validation (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_user_permissions (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_exercise_generation (calls)
 

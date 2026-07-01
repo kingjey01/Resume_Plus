@@ -1,20 +1,19 @@
-# Community 234: test_correct_endpoints
+# Community 234: 0019_course_m2m_relations
 
 **Members:** 5
 
 ## Nodes
 
-- **test_correct_endpoints** (`backend_test_correct_endpoints_py`, File, degree: 4)
-- **json** (`backend_test_correct_endpoints_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_correct_endpoints_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_correct_endpoints_py_main`, Function, degree: 2)
-- **test_endpoint()** (`backend_test_correct_endpoints_py_test_endpoint`, Function, degree: 2)
+- **0019_course_m2m_relations** (`backend_courses_migrations_0019_course_m2m_relations_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models`, Module, degree: 1)
+- **migrate_fk_to_m2m()** (`backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m`, Function, degree: 1)
+- **Migration** (`backend_courses_migrations_0019_course_m2m_relations_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_requests (imports)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_import_json (imports)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_test_endpoint (defines)
-- backend_test_correct_endpoints_py → backend_test_correct_endpoints_py_main (defines)
-- backend_test_correct_endpoints_py_main → backend_test_correct_endpoints_py_test_endpoint (calls)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_import_django_db_models (imports)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migrate_fk_to_m2m (defines)
+- backend_courses_migrations_0019_course_m2m_relations_py → backend_courses_migrations_0019_course_m2m_relations_py_migration (defines)
 

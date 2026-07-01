@@ -1,15 +1,15 @@
-# Community 317: urls
+# Community 317: apps
 
 **Members:** 3
 
 ## Nodes
 
-- **urls** (`backend_security_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
+- **apps** (`backend_users_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_users_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **UsersConfig** (`backend_users_apps_py_usersconfig`, Class, degree: 1)
 
 ## Relationships
 
-- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
-- backend_security_urls_py → backend_security_urls_py_import_views (imports)
+- backend_users_apps_py → backend_users_apps_py_import_django_apps_appconfig (imports)
+- backend_users_apps_py → backend_users_apps_py_usersconfig (defines)
 

@@ -1,25 +1,25 @@
-# Community 119: check_db_encoding
+# Community 119: audio_service
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
-- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
-- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
-- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
-- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
-- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
+- **audio_service** (`lib_services_audio_service_dart`, File, degree: 7)
+- **_currentText()** (`lib_services_audio_service_dart_currenttext`, Function, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_audio_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter_tts/flutter_tts.dart** (`lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart`, Module, degree: 1)
+- **web_audio_service.dart** (`lib_services_audio_service_dart_import_web_audio_service_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_audio_service_dart_instance`, Function, degree: 1)
+- **_isInitialized()** (`lib_services_audio_service_dart_isinitialized`, Function, degree: 1)
+- **_isPaused()** (`lib_services_audio_service_dart_ispaused`, Function, degree: 1)
 
 ## Relationships
 
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
-- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_package_flutter_tts_flutter_tts_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_import_web_audio_service_dart (imports)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_instance (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_isinitialized (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_ispaused (defines)
+- lib_services_audio_service_dart → lib_services_audio_service_dart_currenttext (defines)
 

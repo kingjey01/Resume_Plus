@@ -1,15 +1,15 @@
-# Community 304: file_helper_stub
+# Community 304: MainActivity
 
 **Members:** 3
 
 ## Nodes
 
-- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
-- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
+- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
 

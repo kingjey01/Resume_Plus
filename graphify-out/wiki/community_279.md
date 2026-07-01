@@ -1,17 +1,17 @@
-# Community 279: file_helper_io
+# Community 279: 0006_migrate_existing_relations
 
 **Members:** 4
 
 ## Nodes
 
-- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
-- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
-- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
+- **0006_migrate_existing_relations** (`backend_courses_migrations_0006_migrate_existing_relations_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations`, Module, degree: 1)
+- **migrate_existing_relations()** (`backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations`, Function, degree: 1)
+- **Migration** (`backend_courses_migrations_0006_migrate_existing_relations_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
+- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migrate_existing_relations (defines)
+- backend_courses_migrations_0006_migrate_existing_relations_py → backend_courses_migrations_0006_migrate_existing_relations_py_migration (defines)
 

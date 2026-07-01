@@ -36,7 +36,7 @@ dependencies:
   file_picker: ^8.0.0
 
   # Text-to-Speech pour la lecture des résumés
-  flutter_tts: ^4.0.2
+  flutter_tts: ^4.2.0
 
   # Routing
   go_router: ^16.1.0
@@ -56,6 +56,9 @@ dependencies:
   
   # URL Launcher
   url_launcher: ^6.2.5
+
+  # Package Info (version installée)
+  package_info_plus: ^8.1.0
 
   # Firebase
   firebase_core: ^3.8.0
