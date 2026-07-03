@@ -345,9 +345,12 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
-                    'Vous n\'avez pas reçu le code ? ',
-                    style: TextStyle(color: AppTheme.textLight),
+                  Flexible(
+                    child: Text(
+                      "Vous n'avez pas reçu le code ? ",
+                      style: TextStyle(color: AppTheme.textLight),
+                      overflow: TextOverflow.visible,
+                    ),
                   ),
                   if (_canResend)
                     TextButton(

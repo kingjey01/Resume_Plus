@@ -343,7 +343,7 @@ def notify_subscription_paid(self, abonnement_id: int):
         # Create notification for THIS USER ONLY (not broadcast)
         notif = AppNotification.objects.create(
             title='✅ Abonnement activé',
-            body=f'Votre abonnement {service.nom} est maintenant actif jusqu\'au {abonnement.date_fin.strftime("%d/%m/%Y")}.',
+            body=f'Votre abonnement {service.nom} est maintenant actif, renouvelable après 30 jours.',
             notification_type='payment',
             sender=None,
         )

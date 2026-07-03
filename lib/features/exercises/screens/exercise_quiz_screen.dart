@@ -268,6 +268,8 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
   }
 
   Widget _buildQuestionCard(ExerciseQuestion question, int index) {
+    final theme = Theme.of(context);
+    final cs = theme.colorScheme;
     final selectedAnswer = _selectedAnswers[question.id.toString()];
 
     return SingleChildScrollView(
@@ -294,7 +296,7 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
           Text(
             question.questionText,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              color: Colors.black87,
+              color: cs.onSurface,
               fontWeight: FontWeight.w700,
               fontSize: 17,
               height: 1.5,
@@ -314,10 +316,10 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
                   decoration: BoxDecoration(
                     color: isSelected
                         ? AppTheme.primaryBlue.withOpacity(0.1)
-                        : Colors.white,
+                        : cs.surface,
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
-                      color: isSelected ? AppTheme.primaryBlue : Colors.grey.shade200,
+                      color: isSelected ? AppTheme.primaryBlue : theme.dividerTheme.color ?? Colors.grey.shade300,
                       width: isSelected ? 2 : 1,
                     ),
                     boxShadow: isSelected
@@ -329,14 +331,14 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
                       Container(
                         width: 36, height: 36,
                         decoration: BoxDecoration(
-                          color: isSelected ? AppTheme.primaryBlue : Colors.grey.shade100,
+                          color: isSelected ? AppTheme.primaryBlue : cs.surface.withOpacity(0.6),
                           shape: BoxShape.circle,
                         ),
                         child: Center(
                           child: Text(
                             entry.key,
                             style: TextStyle(
-                              color: isSelected ? Colors.white : AppTheme.textSecondary,
+                              color: isSelected ? Colors.white : cs.onSurfaceVariant,
                               fontWeight: FontWeight.w700, fontSize: 15,
                             ),
                           ),
@@ -347,7 +349,7 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
                         child: Text(
                           entry.value,
                           style: TextStyle(
-                            color: isSelected ? AppTheme.primaryBlue : Colors.black87,
+                            color: isSelected ? AppTheme.primaryBlue : cs.onSurface,
                             fontSize: 15, fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
                           ),
                         ),

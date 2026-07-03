@@ -111,43 +111,49 @@ class DeepSeekService:
     
     def _clean_text(self, text):
         """
-        Nettoie le texte généré par l'IA pour supprimer les artefacts Markdown
-        et améliorer le rendu visuel professionnel.
+        Nettoie le texte généré par l'IA.
+        PRÉSERVE les blocs de code, LaTeX et tableaux Markdown.
+        Nettoie uniquement les artefacts gênants (espaces multiples, lignes vides excessives).
         """
         import re
         if not text:
             return ""
-            
-        # 1. Supprimer les hashtags (#) utilisés pour les titres, mais garder le texte
-        text = re.sub(r'^#+\s*(.*?)\s*$', r'\1', text, flags=re.MULTILINE)
-        
-        # 2. Supprimer les doubles astérisques (**) pour le gras
-        text = text.replace('**', '')
-        
-        # 3. Supprimer les simples astérisques (*) s'ils ne sont pas des puces
-        # (souvent utilisés pour l'italique ou des décorations)
-        text = re.sub(r'(?<!^)\s*\*\s*', ' ', text, flags=re.MULTILINE)
-        
-        # 4. Supprimer les tirets de séparation (---) et autres lignes décoratives
-        text = re.sub(r'^[=\-_\*]{3,}\s*$', '', text, flags=re.MULTILINE)
-        
-        # 5. Normaliser les puces vers un seul style propre '•'
-        text = re.sub(r'^[ \t]*[-+*][ \t]+', '• ', text, flags=re.MULTILINE)
-        
-        # 6. Supprimer les caractères parasites communs et hashtags restants
-        text = text.replace('###', '').replace('##', '').replace('#', '')
-        
-        # 7. Normaliser les espaces et sauts de ligne
+
+        # 1. Protéger les blocs de code (```...```) en les remplaçant par un placeholder
+        code_blocks = []
+        def _save_code_block(m):
+            code_blocks.append(m.group(0))
+            return f'__CODE_BLOCK_{len(code_blocks)-1}__'
+        text = re.sub(r'```[\s\S]*?```', _save_code_block, text)
+
+        # 2. Protéger les formules LaTeX ($$...$$ ou $...$)
+        latex_blocks = []
+        def _save_latex(m):
+            latex_blocks.append(m.group(0))
+            return f'__LATEX_BLOCK_{len(latex_blocks)-1}__'
+        text = re.sub(r'\$\$[\s\S]*?\$\$', _save_latex, text)
+        text = re.sub(r'(?<!\$)\$(?!\$)[^\$]*(?<!\$)\$(?!\$)', _save_latex, text)
+
+        # 3. Protéger les tableaux Markdown (lignes avec |)
+        table_lines = []
+        def _save_table(m):
+            table_lines.append(m.group(0))
+            return f'__TABLE_BLOCK_{len(table_lines)-1}__'
+        # Capturer les lignes consécutives avec |
+        text = re.sub(r'((?:^.*\|.*\n?)+)', _save_table, text, flags=re.MULTILINE)
+
+        # 4. Nettoyage doux : espaces, lignes vides, puces mal formées
         text = re.sub(r' +', ' ', text)
         text = re.sub(r'\n{3,}', '\n\n', text)
-        
-        # 8. Embellir les sections (Introduction, Conclusion, etc.)
-        # On s'assure qu'elles sont bien isolées
-        sections = ['INTRODUCTION', 'DEVELOPPEMENT', 'POINTS IMPORTANTS', 'CONCLUSION', 'NOTIONS CLES']
-        for section in sections:
-            pattern = re.compile(rf'({section})', re.IGNORECASE)
-            text = pattern.sub(r'\1', text) # On normalise la casse si besoin
-        
+
+        # 5. Restaurer les blocs protégés
+        for i, block in enumerate(code_blocks):
+            text = text.replace(f'__CODE_BLOCK_{i}__', block)
+        for i, block in enumerate(latex_blocks):
+            text = text.replace(f'__LATEX_BLOCK_{i}__', block)
+        for i, block in enumerate(table_lines):
+            text = text.replace(f'__TABLE_BLOCK_{i}__', block)
+
         return text.strip()
     
     def _build_summary_prompt(self, transcription, course_name, professor, date):
@@ -162,34 +168,38 @@ class DeepSeekService:
         - Produire des paragraphes cohérents
         """
         
-        system_prompt = """Tu es un assistant pédagogique expert en création de résumés de cours universitaires professionnels.
-Ton rôle est de transformer une transcription audio brute en un résumé pédagogique fluide, élégant et facile à lire pour les étudiants.
+        system_prompt = """Tu es un assistant pédagogique expert en création de résumés universitaires professionnels.
+Ton rôle est de transformer une transcription audio brute en un résumé structuré, moderne et lisible.
 
-RÈGLES D'OR DE RÉDACTION (STRICTES):
-1. SUPPRESSION TOTALE DES SYMBOLES:
-   - JAMAIS de hashtags (#) pour les titres. Utilise des titres en majuscules ou simplement du texte en gras (sans astérisques).
-   - JAMAIS de doubles astérisques (**).
-   - JAMAIS de tirets de séparation (---).
-   - JAMAIS de symboles markdown parasites.
+RÈGLES DE FORMATAGE (STRICTES):
+1. UTILISE LE MARKDOWN DE FAÇON INTELLIGENTE:
+   - Titres de sections avec ## (pas de # simple).
+   - **Gras** pour les concepts clés et définitions importantes.
+   - Listes avec - pour les énumérations.
+   - Tableaux Markdown pour les comparaisons, données structurées.
+   - Citations avec > pour les définitions ou remarques importantes.
+   - Blocs de code avec ```python, ```javascript, ```sql, etc. pour les extraits de code.
+   - Formules mathématiques entre $$ pour les équations importantes.
 
-2. STYLE ET FLUIDITÉ:
-   - Écris dans un style "humain" et naturel, pas comme un robot IA.
-   - Utilise des transitions fluides entre les idées.
-   - Élimine toutes les répétitions et hésitations de la transcription.
-   - Le texte doit être continu et agréable, comme un livre de cours professionnel.
+2. CONTENU TECHNIQUE:
+   - Pour les cours de programmation : TOUS les extraits de code DOIVENT être dans des blocs ```langage.
+   - Pour les cours de maths/physique/chimie : utilise $$ LaTeX $$ pour les formules.
+   - Conserve l'indentation et la mise en forme des fonctions, algorithmes, commandes.
+   - Ne mélange JAMAIS un bloc de code avec un paragraphe classique.
 
 3. STRUCTURE PÉDAGOGIQUE:
-   - Introduction: Présente le sujet de manière engageante.
-   - Sections: Organise le contenu logiquement avec des titres clairs (ex: I. TITRE DE SECTION).
-   - Points Clés: Utilise des puces simples (•) uniquement quand c'est nécessaire.
-   - Conclusion: Une synthèse intelligente qui apporte de la valeur.
+   - Introduction brève du sujet.
+   - Sections organisées avec ## Titre de section.
+   - Points clés en listes avec -.
+   - Exemples concrets dans des blocs adaptés.
+   - Conclusion synthétique.
 
 4. QUALITÉ ACADÉMIQUE:
    - Conserve les concepts essentiels et les définitions précises.
    - Simplifie les passages complexes sans perdre en rigueur scientifique.
    - Utilise un vocabulaire riche et adapté au niveau universitaire.
 
-Format de sortie attendu: Un texte propre, bien espacé, sans aucun caractère spécial Markdown, prêt à être lu directement par un étudiant."""
+Format de sortie attendu: Texte au format Markdown structuré (comme ce message), prêt à être affiché par un lecteur Markdown."""
 
         user_prompt = f"""Voici une transcription d'un cours que tu dois résumer:
 
@@ -443,15 +453,14 @@ Réponds UNIQUEMENT avec le JSON, sans texte supplémentaire."""
         if not self.is_configured():
             return {'success': False, 'error': 'Service non configuré'}
 
-        system_prompt = f"""Tu es un traducteur académique expert. 
+        system_prompt = f"""Tu es un traducteur académique expert.
         Ta mission est de traduire le texte suivant en {target_language}.
-        
+
         RÈGLES:
-        1. Conserve le sens exact du contenu original.
+        1. Conserve le sens exact et le formatage Markdown du contenu original.
         2. Produis une traduction naturelle, fluide et humaine.
         3. Adapte les formulations au contexte universitaire.
-        4. ÉVITE les hashtags (#), les doubles astérisques (**) et les séparateurs (---).
-        5. Utilise un style pur et professionnel."""
+        4. Préserve les blocs de code, formules LaTeX, tableaux et citations Markdown."""
 
         user_prompt = f"Texte à traduire :\n\n{text}"
 
@@ -472,12 +481,12 @@ Réponds UNIQUEMENT avec le JSON, sans texte supplémentaire."""
 
         system_prompt = """Tu es un expert en pédagogie universitaire.
         Ta mission est de reformuler le texte suivant pour le rendre plus fluide, plus clair et plus engageant pour un étudiant.
-        
+
         RÈGLES:
         1. Ne perds aucune information essentielle.
         2. Améliore les transitions entre les idées.
         3. Utilise un style "humain" et naturel.
-        4. SUPPRIME TOUT : hashtags, astérisques, symboles markdown.
+        4. PRÉSERVE le formatage Markdown : blocs de code, formules LaTeX, tableaux, listes.
         5. Organise le texte de manière élégante et aérée."""
 
         user_prompt = f"Texte à reformuler :\n\n{text}"
@@ -499,12 +508,12 @@ Réponds UNIQUEMENT avec le JSON, sans texte supplémentaire."""
 
         system_prompt = """Tu es un vulgarisateur scientifique expert.
         Ta mission est de simplifier les concepts complexes du texte suivant sans sacrifier la précision.
-        
+
         RÈGLES:
         1. Explique les termes techniques.
         2. Utilise des analogies si nécessaire.
         3. Structure le texte en étapes logiques.
-        4. AUCUN symbole markdown (hashtags, astérisques, etc.).
+        4. PRÉSERVE le formatage Markdown : blocs de code, formules LaTeX, tableaux, listes.
         5. Rendu visuel propre et professionnel."""
 
         user_prompt = f"Texte à simplifier :\n\n{text}"

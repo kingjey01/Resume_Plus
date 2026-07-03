@@ -7,6 +7,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:dio/dio.dart';
 import 'package:resume_plus_clean/services/api_service.dart';
 import 'package:resume_plus_clean/services/snackbar_service.dart';
+import 'package:resume_plus_clean/services/audio_draft_service.dart';
 import 'package:resume_plus_clean/models/course.dart';
 import 'package:resume_plus_clean/models/professeur.dart';
 import 'package:resume_plus_clean/features/upload/screens/course_selection_screen.dart';
@@ -98,6 +99,60 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     _setupRecorderCallbacks();
     _loadProfesseurs();
     _loadPricingConfig();
+    _restoreDraft();
+  }
+
+  /// Restaure le dernier brouillon audio sauvegardé localement.
+  Future<void> _restoreDraft() async {
+    final draftService = AudioDraftService();
+    final hasDraft = await draftService.hasDraft();
+    if (!hasDraft || !mounted) return;
+
+    final draft = await draftService.loadDraftMetadata();
+    if (draft == null || !mounted) return;
+
+    // Restaurer le titre
+    if (draft.title != null && draft.title!.isNotEmpty) {
+      _titleController.text = draft.title!;
+    }
+
+    // Restaurer la durée
+    if (draft.duration > 0) {
+      _recordDuration = draft.duration;
+    }
+
+    // Restaurer le prix
+    if (draft.price != null && draft.price! > 0) {
+      _priceController.text = draft.price!.toStringAsFixed(0);
+    }
+
+    // Restaurer le cours
+    if (draft.courseId != null && draft.courseName != null) {
+      _selectedCourse = Course(
+        id: draft.courseId!,
+        nom: draft.courseName!,
+        filiere: '',
+        description: '',
+        university: '',
+        createdAt: DateTime.now(),
+      );
+    }
+
+    // Restaurer les bytes audio
+    if (draft.audioFilePath != null) {
+      try {
+        final file = File(draft.audioFilePath!);
+        if (await file.exists()) {
+          _recordedBytes = await file.readAsBytes();
+          _recordedMimeType = draft.mimeType ?? 'audio/m4a';
+          print('🎵 AudioDraft: brouillon restauré (${draft.audioFilePath})');
+        }
+      } catch (e) {
+        print('⚠️ AudioDraft: erreur restauration fichier: $e');
+      }
+    }
+
+    if (mounted) setState(() {});
   }
 
   Future<void> _loadPricingConfig() async {
@@ -230,6 +285,31 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       _recordedBytes = bytes;
       _recordedMimeType = mimeType;
     });
+    // Sauvegarder automatiquement le brouillon
+    _autoSaveDraft(bytes, mimeType);
+  }
+
+  /// Sauvegarde automatique du brouillon audio après chaque enregistrement.
+  Future<void> _autoSaveDraft(Uint8List bytes, String mimeType) async {
+    final draft = AudioDraft(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      audioBytes: bytes,
+      mimeType: mimeType,
+      fileName: 'recording_${DateTime.now().millisecondsSinceEpoch}.m4a',
+      courseId: _selectedCourse?.id,
+      courseName: _selectedCourse?.nom,
+      title: _titleController.text.trim(),
+      duration: _recordDuration,
+      professeurNom: _professorNameController.text.trim().isNotEmpty
+          ? _professorNameController.text.trim()
+          : _autoResolvedProfessorName,
+      professeurId: _autoResolvedProfessorId ?? _selectedProfesseur?.id,
+    );
+
+    final price = double.tryParse(_priceController.text.trim());
+    if (price != null) draft.price = price;
+
+    await AudioDraftService().saveDraft(draft);
   }
 
   void _onRecordingError(String error) {
@@ -693,6 +773,10 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       // Ajouter à la liste des enregistrements sauvegardés
       _addSavedRecording(savedRecording);
       
+      // Supprimer le brouillon local après envoi réussi
+      await AudioDraftService().deleteDraft();
+      print('🗑️ AudioDraft: brouillon supprimé après upload réussi');
+
       // Réinitialiser l'enregistrement en cours
       setState(() {
         _recordedBytes = null;
@@ -1182,6 +1266,52 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     );
   }
 
+  /// Bannière indiquant qu'un brouillon local existe, avec bouton de suppression.
+  Widget _buildDraftBanner() {
+    return FutureBuilder<bool>(
+      future: AudioDraftService().hasDraft(),
+      builder: (context, snapshot) {
+        if (snapshot.data != true) return const SizedBox.shrink();
+        return Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          decoration: BoxDecoration(
+            color: AppTheme.warning.withOpacity(0.12),
+            borderRadius: BorderRadius.circular(10),
+            border: Border.all(color: AppTheme.warning.withOpacity(0.3)),
+          ),
+          child: Row(
+            children: [
+              Icon(Icons.save_rounded, size: 16, color: AppTheme.warning),
+              const SizedBox(width: 8),
+              const Expanded(
+                child: Text(
+                  'Brouillon local enregistré',
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+                ),
+              ),
+              GestureDetector(
+                onTap: () async {
+                  await AudioDraftService().deleteDraft();
+                  if (mounted) {
+                    SnackbarService.show('Brouillon supprimé', isError: false);
+                  }
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(4),
+                  decoration: BoxDecoration(
+                    color: AppTheme.error.withOpacity(0.15),
+                    borderRadius: BorderRadius.circular(6),
+                  ),
+                  child: const Icon(Icons.delete_outline_rounded, size: 16, color: AppTheme.error),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   Widget _buildRecordingControls() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -1288,8 +1418,12 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
                     Text('Durée: ${_formatDuration(_recordDuration)}', style: const TextStyle(color: AppTheme.textLight, fontSize: 13)),
                   ],
                 ),
-                const SizedBox(height: 16),
-                
+                const SizedBox(height: 8),
+
+                // Indicateur de brouillon avec bouton supprimer
+                if (_recordedBytes != null) _buildDraftBanner(),
+                const SizedBox(height: 8),
+
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,
