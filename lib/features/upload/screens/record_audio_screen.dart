@@ -79,6 +79,11 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
   double _minimumPrice = 3000; // Valeur par défaut, mise à jour via API
   final _formKey = GlobalKey<FormState>();
   
+  // Brouillons audio locaux
+  List<AudioDraft> _localDrafts = [];
+  bool _isLoadingDrafts = false;
+  String? _activeDraftId; // ID du brouillon actuellement chargé dans le formulaire
+
   // Sauvegarde locale - Liste des 5 derniers enregistrements
   List<SavedRecording> _savedRecordings = [];
   static const int maxSavedRecordings = 5;
@@ -99,17 +104,25 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     _setupRecorderCallbacks();
     _loadProfesseurs();
     _loadPricingConfig();
-    _restoreDraft();
+    _loadDraftsList();
   }
 
-  /// Restaure le dernier brouillon audio sauvegardé localement.
-  Future<void> _restoreDraft() async {
-    final draftService = AudioDraftService();
-    final hasDraft = await draftService.hasDraft();
-    if (!hasDraft || !mounted) return;
+  /// Charge la liste des brouillons locaux depuis le service.
+  Future<void> _loadDraftsList() async {
+    if (!mounted) return;
+    setState(() => _isLoadingDrafts = true);
+    final drafts = await AudioDraftService().listDrafts();
+    if (mounted) {
+      setState(() {
+        _localDrafts = drafts;
+        _isLoadingDrafts = false;
+      });
+    }
+  }
 
-    final draft = await draftService.loadDraftMetadata();
-    if (draft == null || !mounted) return;
+  /// Charge un brouillon spécifique dans le formulaire.
+  Future<void> _loadDraftIntoForm(AudioDraft draft) async {
+    if (!mounted) return;
 
     // Restaurer le titre
     if (draft.title != null && draft.title!.isNotEmpty) {
@@ -139,18 +152,24 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     }
 
     // Restaurer les bytes audio
-    if (draft.audioFilePath != null) {
+    Uint8List? audioBytes = draft.audioBytes;
+    if (audioBytes == null && draft.audioFilePath != null) {
       try {
         final file = File(draft.audioFilePath!);
         if (await file.exists()) {
-          _recordedBytes = await file.readAsBytes();
-          _recordedMimeType = draft.mimeType ?? 'audio/m4a';
-          print('🎵 AudioDraft: brouillon restauré (${draft.audioFilePath})');
+          audioBytes = await file.readAsBytes();
         }
       } catch (e) {
-        print('⚠️ AudioDraft: erreur restauration fichier: $e');
+        print('⚠️ AudioDraft: erreur lecture fichier: $e');
       }
     }
+
+    if (audioBytes != null) {
+      _recordedBytes = audioBytes;
+      _recordedMimeType = draft.mimeType ?? 'audio/m4a';
+    }
+
+    _activeDraftId = draft.id;
 
     if (mounted) setState(() {});
   }
@@ -291,6 +310,18 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
 
   /// Sauvegarde automatique du brouillon audio après chaque enregistrement.
   Future<void> _autoSaveDraft(Uint8List bytes, String mimeType) async {
+    final draftService = AudioDraftService();
+
+    // Vérifier la limite avant d'ajouter
+    if (await draftService.isFull()) {
+      SnackbarService.show(
+        'Limite de ${AudioDraftService.maxDrafts} brouillons atteinte. '
+        'Envoyez ou supprimez un brouillon avant d\'en créer un nouveau.',
+        isError: true,
+      );
+      return;
+    }
+
     final draft = AudioDraft(
       id: DateTime.now().millisecondsSinceEpoch.toString(),
       audioBytes: bytes,
@@ -309,7 +340,11 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     final price = double.tryParse(_priceController.text.trim());
     if (price != null) draft.price = price;
 
-    await AudioDraftService().saveDraft(draft);
+    final added = await draftService.addDraft(draft);
+    if (added) {
+      _activeDraftId = draft.id;
+      await _loadDraftsList();
+    }
   }
 
   void _onRecordingError(String error) {
@@ -522,6 +557,16 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
   Future<void> _startRecording() async {
     if (_selectedCourse == null) {
       SnackbarService.show('⚠️ Veuillez d\'abord sélectionner un cours', isError: true);
+      return;
+    }
+
+    // Vérifier la limite de brouillons avant d'enregistrer
+    if (await AudioDraftService().isFull()) {
+      SnackbarService.show(
+        '⚠️ Limite de ${AudioDraftService.maxDrafts} brouillons atteinte. '
+        'Envoyez ou supprimez un brouillon avant d\'en créer un nouveau.',
+        isError: true,
+      );
       return;
     }
 
@@ -774,7 +819,17 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       _addSavedRecording(savedRecording);
       
       // Supprimer le brouillon local après envoi réussi
-      await AudioDraftService().deleteDraft();
+      if (_activeDraftId != null) {
+        await AudioDraftService().deleteDraft(_activeDraftId!);
+        _activeDraftId = null;
+      } else {
+        // Fallback : supprimer le plus ancien brouillon sans fichier
+        final drafts = await AudioDraftService().listDrafts();
+        if (drafts.isNotEmpty) {
+          await AudioDraftService().deleteDraft(drafts.first.id);
+        }
+      }
+      await _loadDraftsList();
       print('🗑️ AudioDraft: brouillon supprimé après upload réussi');
 
       // Réinitialiser l'enregistrement en cours
@@ -1266,49 +1321,116 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     );
   }
 
-  /// Bannière indiquant qu'un brouillon local existe, avec bouton de suppression.
-  Widget _buildDraftBanner() {
-    return FutureBuilder<bool>(
-      future: AudioDraftService().hasDraft(),
-      builder: (context, snapshot) {
-        if (snapshot.data != true) return const SizedBox.shrink();
-        return Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          decoration: BoxDecoration(
-            color: AppTheme.warning.withOpacity(0.12),
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: AppTheme.warning.withOpacity(0.3)),
-          ),
-          child: Row(
-            children: [
-              Icon(Icons.save_rounded, size: 16, color: AppTheme.warning),
-              const SizedBox(width: 8),
-              const Expanded(
-                child: Text(
-                  'Brouillon local enregistré',
-                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
-                ),
+  /// Panneau listant tous les brouillons audio locaux.
+  /// Chaque brouillon peut être chargé dans le formulaire ou supprimé.
+  Widget _buildDraftsPanel() {
+    if (_localDrafts.isEmpty) return const SizedBox.shrink();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Icon(Icons.save_rounded, size: 16, color: AppTheme.warning),
+            const SizedBox(width: 6),
+            Text(
+              'Brouillons locaux (${_localDrafts.length}/${AudioDraftService.maxDrafts})',
+              style: const TextStyle(
+                fontSize: 13, fontWeight: FontWeight.w600, color: AppTheme.textSecondary,
               ),
-              GestureDetector(
-                onTap: () async {
-                  await AudioDraftService().deleteDraft();
-                  if (mounted) {
-                    SnackbarService.show('Brouillon supprimé', isError: false);
-                  }
-                },
-                child: Container(
-                  padding: const EdgeInsets.all(4),
-                  decoration: BoxDecoration(
-                    color: AppTheme.error.withOpacity(0.15),
-                    borderRadius: BorderRadius.circular(6),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        ..._localDrafts.map((draft) => _buildDraftTile(draft)),
+      ],
+    );
+  }
+
+  /// Tuile compacte d'un brouillon local, responsive petit/moyen écran.
+  Widget _buildDraftTile(AudioDraft draft) {
+    final isActive = draft.id == _activeDraftId;
+    final theme = Theme.of(context);
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 6),
+      padding: const EdgeInsets.fromLTRB(10, 8, 4, 8),
+      decoration: BoxDecoration(
+        color: isActive ? AppTheme.primaryBlue.withOpacity(0.06) : theme.colorScheme.surface,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: isActive ? AppTheme.primaryBlue.withOpacity(0.3) : theme.dividerTheme.color ?? Colors.grey.shade200,
+          width: isActive ? 1.5 : 1,
+        ),
+      ),
+      child: Row(
+        children: [
+          // Icône
+          Icon(Icons.audio_file_rounded, size: 24,
+              color: isActive ? AppTheme.primaryBlue : AppTheme.textLight),
+          const SizedBox(width: 8),
+          // Texte
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  draft.title ?? draft.fileName ?? 'Sans titre',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    color: theme.colorScheme.onSurface,
                   ),
-                  child: const Icon(Icons.delete_outline_rounded, size: 16, color: AppTheme.error),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                 ),
-              ),
-            ],
+                const SizedBox(height: 1),
+                Flexible(
+                  child: Text(
+                    '${draft.durationFormatted} — ${draft.createdAt.toString().substring(0, 10)}',
+                    style: TextStyle(fontSize: 11, color: theme.colorScheme.onSurface.withOpacity(0.5)),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
           ),
-        );
-      },
+          // Charger
+          if (!isActive)
+            SizedBox(
+              width: 30, height: 30,
+              child: IconButton(
+                onPressed: () async {
+                  await _loadDraftIntoForm(draft);
+                  if (mounted) setState(() {});
+                },
+                icon: Icon(Icons.download_rounded, size: 16, color: AppTheme.primaryBlue),
+                tooltip: 'Charger',
+                padding: EdgeInsets.zero,
+              ),
+            ),
+          // Supprimer
+          SizedBox(
+            width: 30, height: 30,
+            child: IconButton(
+              onPressed: () async {
+                await AudioDraftService().deleteDraft(draft.id);
+                if (_activeDraftId == draft.id) {
+                  _activeDraftId = null;
+                }
+                await _loadDraftsList();
+                if (mounted) setState(() {});
+                SnackbarService.show('Brouillon supprimé', isError: false);
+              },
+              icon: Icon(Icons.delete_outline_rounded, size: 16, color: AppTheme.error),
+              tooltip: 'Supprimer',
+              padding: EdgeInsets.zero,
+            ),
+          ),
+        ],
+      ),
     );
   }
 
@@ -1420,8 +1542,8 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
                 ),
                 const SizedBox(height: 8),
 
-                // Indicateur de brouillon avec bouton supprimer
-                if (_recordedBytes != null) _buildDraftBanner(),
+                // Panneau des brouillons locaux
+                _buildDraftsPanel(),
                 const SizedBox(height: 8),
 
                 Wrap(

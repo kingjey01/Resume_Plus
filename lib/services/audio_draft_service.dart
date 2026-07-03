@@ -68,119 +68,168 @@ class AudioDraft {
         professeurNom: json['professeurNom'] as String?,
         professeurId: json['professeurId'] as int?,
       );
+
+  String get durationFormatted {
+    final h = duration ~/ 3600;
+    final m = (duration % 3600) ~/ 60;
+    if (h > 0) return '${h}h ${m}min';
+    return '${m} min';
+  }
 }
 
-/// Service de gestion des brouillons audio.
+/// Service de gestion des brouillons audio multiples.
 ///
-/// Sauvegarde locale :
-/// - fichier audio → `getApplicationDocumentsDirectory()/drafts/`
-/// - métadonnées → SharedPreferences (JSON)
+/// Chaque brouillon est indépendant, avec son propre ID.
+/// Limitée à [maxDrafts] brouillons simultanés.
 ///
-/// Le brouillon est supprimé après un envoi réussi ou une suppression volontaire.
+/// Stockage :
+/// - fichier audio → `getApplicationDocumentsDirectory()/drafts/{id}/`
+/// - métadonnées (liste JSON) → SharedPreferences
 class AudioDraftService {
-  static const String _draftKey = 'audio_draft_metadata';
+  static const String _draftListKey = 'audio_draft_list';
   static const String _draftDir = 'drafts';
+  static const int maxDrafts = 5;
 
   // ─── Singleton ──────────────────────────────────────────────────
   static final AudioDraftService _instance = AudioDraftService._internal();
   factory AudioDraftService() => _instance;
   AudioDraftService._internal();
 
-  // ─── Sauvegarder un brouillon ───────────────────────────────────
+  // ─── CRUD : Liste ───────────────────────────────────────────────
 
-  /// Sauvegarde un brouillon audio complet (fichier + métadonnées).
-  Future<void> saveDraft(AudioDraft draft) async {
-    // 1) Sauvegarder le fichier audio si présent
+  /// Récupère tous les brouillons (métadonnées uniquement).
+  Future<List<AudioDraft>> listDrafts() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString(_draftListKey);
+    if (raw == null) return [];
+
+    try {
+      final list = jsonDecode(raw) as List<dynamic>;
+      return list
+          .map((e) => AudioDraft.fromJson(e as Map<String, dynamic>))
+          .where((d) => d.id.isNotEmpty)
+          .toList()
+        ..sort((a, b) => b.createdAt.compareTo(a.createdAt));
+    } catch (e) {
+      print('⚠️ AudioDraft: erreur lecture liste: $e');
+      return [];
+    }
+  }
+
+  // ─── CRUD : Ajouter ─────────────────────────────────────────────
+
+  /// Ajoute un brouillon. Retourne `true` si succès, `false` si limite atteinte.
+  Future<bool> addDraft(AudioDraft draft) async {
+    final drafts = await listDrafts();
+
+    if (drafts.length >= maxDrafts) {
+      print('⚠️ AudioDraft: limite de $maxDrafts brouillons atteinte');
+      return false;
+    }
+
+    // Sauvegarder le fichier audio
     if (draft.audioBytes != null && draft.audioFilePath == null) {
       final filePath = await _writeAudioFile(
         draft.audioBytes!,
-        draft.fileName ?? 'recording_${draft.id}.m4a',
+        '${draft.id}.${_extensionFromMime(draft.mimeType ?? 'audio/m4a')}',
       );
       draft.audioFilePath = filePath;
     }
 
-    // 2) Sauvegarder les métadonnées
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_draftKey, jsonEncode(draft.toJson()));
-
-    print('💾 AudioDraft: brouillon sauvegardé (${draft.fileName})');
+    drafts.insert(0, draft);
+    await _persistList(drafts);
+    print('💾 AudioDraft: brouillon ajouté (${draft.fileName}) — total: ${drafts.length}');
+    return true;
   }
 
-  /// Sauvegarde juste les métadonnées (sans fichier audio).
-  Future<void> saveDraftMetadata(AudioDraft draft) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_draftKey, jsonEncode(draft.toJson()));
-  }
+  // ─── CRUD : Récupérer un brouillon ──────────────────────────────
 
-  // ─── Restaurer un brouillon ─────────────────────────────────────
-
-  /// Récupère le dernier brouillon (métadonnées).
-  Future<AudioDraft?> loadDraftMetadata() async {
-    final prefs = await SharedPreferences.getInstance();
-    final json = prefs.getString(_draftKey);
-    if (json == null) return null;
-
+  /// Récupère un brouillon par son ID.
+  Future<AudioDraft?> getDraft(String id) async {
+    final drafts = await listDrafts();
     try {
-      return AudioDraft.fromJson(jsonDecode(json) as Map<String, dynamic>);
-    } catch (e) {
-      print('⚠️ AudioDraft: erreur lecture métadonnées: $e');
+      return drafts.firstWhere((d) => d.id == id);
+    } catch (_) {
       return null;
     }
   }
 
-  /// Récupère les bytes audio du brouillon depuis le fichier local.
-  Future<Uint8List?> loadDraftAudio() async {
-    final draft = await loadDraftMetadata();
+  /// Récupère les bytes audio d'un brouillon.
+  Future<Uint8List?> loadDraftAudio(String id) async {
+    final draft = await getDraft(id);
     if (draft == null) return null;
 
-    // Si déjà en mémoire
     if (draft.audioBytes != null) return draft.audioBytes;
-
-    // Si chemin fichier
     if (draft.audioFilePath != null) {
       try {
         final file = File(draft.audioFilePath!);
-        if (await file.exists()) {
-          return await file.readAsBytes();
-        }
+        if (await file.exists()) return await file.readAsBytes();
       } catch (e) {
-        print('⚠️ AudioDraft: erreur lecture fichier: $e');
+        print('⚠️ AudioDraft: erreur lecture fichier $id: $e');
       }
     }
-
     return null;
   }
 
-  // ─── Supprimer un brouillon ─────────────────────────────────────
+  // ─── CRUD : Mettre à jour les métadonnées ───────────────────────
 
-  /// Supprime le brouillon (fichier + métadonnées).
-  Future<void> deleteDraft() async {
-    // 1) Récupérer les métadonnées pour avoir le chemin du fichier
-    final draft = await loadDraftMetadata();
+  /// Met à jour les métadonnées d'un brouillon existant.
+  Future<void> updateDraft(AudioDraft updated) async {
+    final drafts = await listDrafts();
+    final index = drafts.indexWhere((d) => d.id == updated.id);
+    if (index == -1) return;
 
-    // 2) Supprimer le fichier audio
+    drafts[index] = updated;
+    await _persistList(drafts);
+    print('💾 AudioDraft: brouillon mis à jour (${updated.id})');
+  }
+
+  // ─── CRUD : Supprimer ───────────────────────────────────────────
+
+  /// Supprime un brouillon par son ID (fichier + métadonnées).
+  Future<void> deleteDraft(String id) async {
+    // Supprimer le fichier audio
+    final draft = await getDraft(id);
     if (draft?.audioFilePath != null) {
       try {
         final file = File(draft!.audioFilePath!);
-        if (await file.exists()) {
-          await file.delete();
-          print('🗑️ AudioDraft: fichier supprimé');
-        }
+        if (await file.exists()) await file.delete();
       } catch (e) {
-        print('⚠️ AudioDraft: erreur suppression fichier: $e');
+        print('⚠️ AudioDraft: erreur suppression fichier $id: $e');
       }
     }
 
-    // 3) Supprimer les métadonnées
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.remove(_draftKey);
-    print('🗑️ AudioDraft: métadonnées supprimées');
+    // Supprimer de la liste
+    final drafts = await listDrafts();
+    drafts.removeWhere((d) => d.id == id);
+    await _persistList(drafts);
+    print('🗑️ AudioDraft: brouillon supprimé ($id) — restants: ${drafts.length}');
   }
 
-  /// Vérifie si un brouillon existe.
-  Future<bool> hasDraft() async {
+  // ─── CRUD : Compter ─────────────────────────────────────────────
+
+  /// Nombre de brouillons actuels.
+  Future<int> count() async {
+    final drafts = await listDrafts();
+    return drafts.length;
+  }
+
+  /// Vérifie si la limite est atteinte.
+  Future<bool> isFull() async {
+    return await count() >= maxDrafts;
+  }
+
+  /// Places disponibles.
+  Future<int> remaining() async {
+    return maxDrafts - await count();
+  }
+
+  // ─── Persistance ────────────────────────────────────────────────
+
+  Future<void> _persistList(List<AudioDraft> drafts) async {
     final prefs = await SharedPreferences.getInstance();
-    return prefs.containsKey(_draftKey);
+    final encoded = jsonEncode(drafts.map((d) => d.toJson()).toList());
+    await prefs.setString(_draftListKey, encoded);
   }
 
   // ─── Helper fichier ─────────────────────────────────────────────
@@ -194,7 +243,21 @@ class AudioDraftService {
 
     final file = File('${draftDir.path}/$fileName');
     await file.writeAsBytes(bytes);
-    print('💾 AudioDraft: fichier écrit (${file.path})');
     return file.path;
+  }
+
+  String _extensionFromMime(String mime) {
+    switch (mime) {
+      case 'audio/wav':
+        return 'wav';
+      case 'audio/mp3':
+      case 'audio/mpeg':
+        return 'mp3';
+      case 'audio/ogg':
+      case 'audio/webm':
+        return 'ogg';
+      default:
+        return 'm4a';
+    }
   }
 }

@@ -48,38 +48,60 @@ class _AiContentViewState extends State<AiContentView> {
     }
   }
 
-  /// Découpe le contenu en pages en respectant les sections (##).
-  /// Chaque page commence par un titre ## et contient au moins 300 caractères.
+  /// Découpe le contenu en pages.
+  ///
+  /// Méthode 1 (propre) : par sections `##` quand elles existent.
+  /// Méthode 2 (fallback) : par blocs de ~1800 caractères, en respectant
+  /// les sauts de paragraphe pour ne pas couper en milieu de phrase.
+  ///
+  /// Tant qu'il y a plus de 2000 caractères, il y a AU MOINS 2 pages.
+  static const int _charsPerPage = 1800;
+
   void _splitContent() {
     _pages.clear();
     final content = widget.content.trim();
     if (content.isEmpty) return;
 
-    // Détecter les sections avec ## (titres de niveau 2)
+    // ── Méthode 1 : découpage par sections ## ───────────────────
     final sectionPattern = RegExp(r'^##\s+(.*)$', multiLine: true);
     final matches = sectionPattern.allMatches(content).toList();
 
-    if (matches.isEmpty || content.length < 1000) {
-      // Pas de sections ou texte court → une seule page
-      _pages.add(content);
-      if (_currentPage >= _pages.length) _currentPage = 0;
-      return;
-    }
+    if (matches.length >= 2) {
+      // Assez de sections → page par section
+      for (int i = 0; i < matches.length; i++) {
+        final start = matches[i].start;
+        final end = (i + 1 < matches.length) ? matches[i + 1].start : content.length;
+        final section = content.substring(start, end).trim();
 
-    // Découper par sections
-    for (int i = 0; i < matches.length; i++) {
-      final start = matches[i].start;
-      final end = (i + 1 < matches.length) ? matches[i + 1].start : content.length;
-
-      // Si cette section est trop petite, fusionner avec la précédente
-      if (_pages.isNotEmpty && end - start < 300) {
-        _pages.last += '\n\n${content.substring(start, end)}';
-      } else {
-        _pages.add(content.substring(start, end).trim());
+        if (section.length < 300 && _pages.isNotEmpty) {
+          // Trop petite → fusionner avec la page précédente
+          _pages.last += '\n\n$section';
+        } else {
+          _pages.add(section);
+        }
       }
     }
 
+    // ── Méthode 2 : découpage par caractères (fallback) ─────────
+    if (_pages.length < 2 && content.length > _charsPerPage) {
+      _pages.clear();
+      final paragraphs = content.split('\n\n');
+      String buffer = '';
+
+      for (final para in paragraphs) {
+        if (buffer.length + para.length > _charsPerPage && buffer.isNotEmpty) {
+          _pages.add(buffer.trim());
+          buffer = '$para\n\n';
+        } else {
+          buffer += '$para\n\n';
+        }
+      }
+      if (buffer.trim().isNotEmpty) _pages.add(buffer.trim());
+    }
+
+    // ── Fallback final : tout en une seule page ─────────────────
     if (_pages.isEmpty) _pages.add(content);
+
     if (_currentPage >= _pages.length) _currentPage = 0;
   }
 
@@ -122,7 +144,6 @@ class _AiContentViewState extends State<AiContentView> {
       ),
       listBulletPadding: const EdgeInsets.only(right: 8),
       listIndent: 24,
-      nestedListPadding: const EdgeInsets.only(left: 16),
 
       // Gras et italique
       strong: GoogleFonts.poppins(
@@ -146,7 +167,6 @@ class _AiContentViewState extends State<AiContentView> {
         borderRadius: BorderRadius.circular(4),
       ),
       blockquotePadding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
-      blockquoteMargin: const EdgeInsets.symmetric(vertical: 8),
 
       // Code
       code: GoogleFonts.jetBrainsMono(
@@ -163,12 +183,6 @@ class _AiContentViewState extends State<AiContentView> {
         ),
       ),
       codeblockPadding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
-      codeblockMargin: const EdgeInsets.symmetric(vertical: 8),
-      codeblockTextStyle: GoogleFonts.jetBrainsMono(
-        fontSize: 13,
-        height: 1.5,
-        color: isDark ? const Color(0xFFE8E8E8) : const Color(0xFF1A1A2E),
-      ),
 
       // Tableaux
       tableHead: GoogleFonts.poppins(
@@ -186,9 +200,6 @@ class _AiContentViewState extends State<AiContentView> {
       ),
       tableColumnWidth: const FlexColumnWidth(),
       tableCellsPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-      tableHeadDecoration: BoxDecoration(
-        color: theme.colorScheme.primary.withOpacity(0.08),
-      ),
 
       // Ligne horizontale
       horizontalRuleDecoration: BoxDecoration(
