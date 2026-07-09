@@ -50,6 +50,8 @@ class ExerciseQuestion {
   // Only available after submission
   final String? correctAnswer;
   final String? explanation;
+  final String? codeLanguage;
+  final String? codeBlock;
 
   const ExerciseQuestion({
     required this.id,
@@ -58,6 +60,8 @@ class ExerciseQuestion {
     required this.order,
     this.correctAnswer,
     this.explanation,
+    this.codeLanguage,
+    this.codeBlock,
   });
 
   factory ExerciseQuestion.fromJson(Map<String, dynamic> json) {
@@ -66,11 +70,13 @@ class ExerciseQuestion {
 
     return ExerciseQuestion(
       id: json['id'] ?? 0,
-      questionText: json['question_text'] ?? '',
+      questionText: json['question_text'] ?? json['question'] ?? '',
       options: options,
       order: json['order'] ?? 0,
       correctAnswer: json['correct_answer'],
       explanation: json['explanation'],
+      codeLanguage: json['code_language'],
+      codeBlock: json['code_block'],
     );
   }
 }
@@ -147,6 +153,8 @@ class QuestionResult {
   final String correctAnswer;
   final bool isCorrect;
   final String? explanation;
+  final String? codeLanguage;
+  final String? codeBlock;
 
   const QuestionResult({
     required this.questionId,
@@ -155,16 +163,20 @@ class QuestionResult {
     required this.correctAnswer,
     required this.isCorrect,
     this.explanation,
+    this.codeLanguage,
+    this.codeBlock,
   });
 
   factory QuestionResult.fromJson(Map<String, dynamic> json) {
     return QuestionResult(
       questionId: json['question_id'] ?? 0,
-      questionText: json['question_text'] ?? '',
+      questionText: json['question_text'] ?? json['question'] ?? '',
       userAnswer: json['user_answer'],
       correctAnswer: json['correct_answer'] ?? '',
       isCorrect: json['is_correct'] ?? false,
       explanation: json['explanation'],
+      codeLanguage: json['code_language'],
+      codeBlock: json['code_block'],
     );
   }
 }

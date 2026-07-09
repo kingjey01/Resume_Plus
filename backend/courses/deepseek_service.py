@@ -386,7 +386,7 @@ Puis continue avec:
         prompt = self._build_exercises_prompt(resume_text, course_name, difficulty=difficulty)
 
         try:
-            response = self._call_api(prompt, temperature=0.7, max_tokens=2000, timeout=60)
+            response = self._call_api(prompt, temperature=0.2, max_tokens=5000, timeout=90)
             if response['success']:
                 return {'success': True, 'content': response['content']}
             else:
@@ -404,7 +404,9 @@ Puis continue avec:
                 'Le langage doit etre tres simple, comme pour un etudiant debutant. '
                 'Les reponses doivent etre faciles a trouver apres lecture du resume. '
                 'AUCUNE question piege, AUCUNE analyse complexe, AUCUNE formulation ambigue. '
-                'Les mauvaises reponses doivent etre clairement differentes de la bonne reponse.'
+                'Les mauvaises reponses doivent etre clairement differentes de la bonne reponse. '
+                'Pour les cours de programmation, les questions avec code doivent être très simples: '
+                'identifier ce que fait une ligne, reconnaître une variable, comprendre une sortie évidente.'
             ),
             'medium': (
                 'MOYEN - Questions de comprehension et d\'application simple. '
@@ -414,7 +416,9 @@ Puis continue avec:
                 'mais avec un langage simple. '
                 'Les distracteurs doivent etre plausibles, mais pas trop piegeux. '
                 'Chaque explication doit aider l\'etudiant a comprendre '
-                'comme si on lui expliquait calmement.'
+                'comme si on lui expliquait calmement. '
+                'Pour les cours de programmation, les questions avec code peuvent demander de lire un petit code, '
+                'prévoir son résultat ou choisir la bonne correction simple.'
             ),
             'hard': (
                 'DIFFICILE - Questions d\'analyse et de raisonnement. '
@@ -425,6 +429,8 @@ Puis continue avec:
                 'mais ils ne doivent pas etre injustes ni ambigus. '
                 'L\'explication doit detailler le raisonnement etape par etape '
                 'avec des mots simples.'
+                'Pour les cours de programmation, les questions avec code peuvent demander d’analyser un code court, '
+                'trouver une erreur, comprendre une logique en plusieurs étapes ou comparer deux solutions.'
             ),
         }
 
@@ -464,6 +470,11 @@ REGLES STRICTES A SUIVRE:
 16. INTERDICTION ABSOLUE: ne jamais utiliser \"Concept A\", \"Concept B\", \"Option A\",
     \"Option B\" ou tout placeholder generique.
 17. Chaque option doit etre un texte reel, precis et pertinent base sur le contenu du resume.
+18. Pour les cours de programmation, certaines questions peuvent contenir un extrait de code si cela aide à tester la compréhension.
+19. Ne mets jamais les extraits de code directement dans le texte de la question avec des blocs Markdown.
+20. Si une question contient du code, utilise les champs "code_language" et "code_block".
+21. Si une question ne contient pas de code, mets "code_language": null et "code_block": null.
+22. Le code doit être court, simple et basé uniquement sur le résumé.
 
 STYLE DES QUESTIONS:
 
@@ -485,6 +496,14 @@ STYLE DES EXPLICATIONS:
 * L'explication doit etre utile meme si l'etudiant a choisi la mauvaise reponse.
 
 
+IMPORTANT POUR LE CODE:
+- Le champ "code_block" doit contenir uniquement le code brut.
+- Ne pas utiliser ```python dans le JSON.
+- Utilise \\n pour les retours à la ligne dans le code.
+- Exemple:
+  "code_block": "x = 5\\nprint(x + 2)"
+
+
 FORMAT DE SORTIE OBLIGATOIRE:
 
 Tu dois retourner uniquement un JSON valide.
@@ -495,11 +514,31 @@ Aucun commentaire.
 Aucune virgule finale.
 Utilise uniquement des guillemets doubles pour les cles et les valeurs JSON.
 
+Le JSON doit être un tableau JSON valide.
+La valeur de "correct_answer" doit être uniquement "A", "B", "C" ou "D".
+Chaque objet doit contenir exactement les clés suivantes:
+"question", "code_language", "code_block", "options", "correct_answer", "explanation".
+Si la question ne contient pas de code:
+- "code_language": null
+- "code_block": null
+
+Si la question contient du code:
+- "code_language": "python" ou le langage adapté
+- "code_block": "code brut sans Markdown"
+
+Ne mets jamais ```python ou ```json dans le JSON.
+Ne retourne jamais un objet contenant "questions".
+Ne retourne jamais du Markdown.
+Ne retourne jamais de texte avant ou après le JSON.
+
+
 FORMAT JSON ATTENDU:
 
 [
 {{
 "question": "Texte clair et simple de la question ?",
+ "code_language": null,
+    "code_block": null,
 "options": {{
 "A": "Texte reel de l'option A base sur le resume",
 "B": "Texte reel de l'option B base sur le resume",

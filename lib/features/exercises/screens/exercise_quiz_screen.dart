@@ -4,6 +4,7 @@ import 'package:resume_plus_clean/services/api_service.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/widgets/secure_screen_wrapper.dart';
+import 'package:resume_plus_clean/widgets/tech_block_widget.dart';
 
 class ExerciseQuizScreen extends StatefulWidget {
   final int exerciseId;
@@ -301,6 +302,11 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
               fontSize: 17,
               height: 1.5,
             ),
+          ),
+          // Bloc technique (code, formule, algorithme)
+          TechBlockWidget(
+            codeLanguage: question.codeLanguage,
+            codeBlock: question.codeBlock,
           ),
           const SizedBox(height: 24),
           // Options
