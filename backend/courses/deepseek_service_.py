@@ -158,10 +158,6 @@ REGLES DE FORMATAGE STRICTES:
      avec des commentaires Python, donc avec #.
    * Exemple correct : print(eleve[\"Paul\"])  # Affiche 12
    * Apres chaque bloc de code, explique chaque ligne simplement.
-   * Après chaque bloc de code, explique chaque ligne importante sous forme de liste.
-     Exemple:
-      - Ligne 1 : ...
-      - Ligne 2 : ...
 
 5. QUALITE DU CONTENU:
 
@@ -190,54 +186,6 @@ REGLES DE FORMATAGE STRICTES:
       **Pourquoi c'est important**
       **A retenir**
    * Si ce format n'est pas respecte, la reponse est consideree comme incorrecte.
-
-
-FORMAT STRICT OBLIGATOIRE:
-Ta réponse doit obligatoirement suivre exactement cette structure.
-
-Tu n’as pas le droit d’utiliser:
-- Introduction
-- Conclusion
-- I.
-- II.
-- III.
-- IV.
-- V.
-
-Tu dois obligatoirement utiliser uniquement des titres avec ##.
-
-Pour chaque notion importante, tu dois obligatoirement écrire les sous-parties suivantes:
-
-- **Définition simple** :
-- **Explication facile** :
-- **Analogie** :
-- **Exemple concret** :
-- **Pourquoi c’est important** :
-- **À retenir** :
-
-Si tu ne respectes pas cette structure, ta réponse est incorrecte.
-
-EXEMPLE DE FORMAT ATTENDU:
-
-## Notion 1 : l’héritage
-
-- **Définition simple** :
-L’héritage permet à une classe enfant de récupérer ce qui existe déjà dans une classe parent.
-
-- **Explication facile** :
-Au lieu de recopier le même code plusieurs fois, on met le code commun dans une classe parent.
-
-- **Analogie** :
-Imagine une famille. Un enfant peut hériter de certaines caractéristiques de ses parents.
-
-- **Exemple concret** :
-Un guerrier peut être un type spécial de joueur. Il garde le pseudo, la vie et l’attaque du joueur, mais ajoute une armure.
-
-- **Pourquoi c’est important** :
-Cela évite de répéter le même code.
-
-- **À retenir** :
-L’héritage sert à réutiliser du code déjà existant.
 
 FORMAT DE SORTIE ATTENDU:
 Le resume doit etre en Markdown structure, en francais, pret a etre affiche dans un lecteur Markdown.
@@ -311,33 +259,14 @@ Tres important:
 * Chaque notion importante doit obligatoirement suivre le format:
   Definition simple, Explication facile, Analogie, Exemple concret,
   Pourquoi c'est important, A retenir.
-* Ne fais pas un resume classique en longs paragraphes.
-
-ATTENTION:
-Ne résume pas sous forme de cours académique.
-Ne fais pas de titres comme Introduction, Conclusion, I., II., III.
-Respecte exactement le modèle demandé pour chaque notion.
-Commence directement par:
-
-## Introduction simple
-
-Puis continue avec:
-
-## Idée principale du cours
-## Notion 1 : ...
-## Notion 2 : ...
-## Petit résumé final
-## Mini-glossaire
-
-
-"""
+* Ne fais pas un resume classique en longs paragraphes."""
 
         return {
             'system': system_prompt,
             'user': user_prompt
         }
 
-    def _call_api(self, prompt, temperature=0.1, max_tokens=8000, timeout=180):
+    def _call_api(self, prompt, temperature=0.3, max_tokens=4000, timeout=120):
         headers = {
             'Authorization': f'Bearer {self.api_key}',
             'Content-Type': 'application/json'
@@ -483,7 +412,6 @@ STYLE DES EXPLICATIONS:
 * Ne pas etre trop academique.
 * L'explication doit vraiment aider l'etudiant a comprendre la notion.
 * L'explication doit etre utile meme si l'etudiant a choisi la mauvaise reponse.
-
 
 FORMAT DE SORTIE OBLIGATOIRE:
 
