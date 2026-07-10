@@ -479,7 +479,7 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
 
                       if (result['success'] == true) {
                         Navigator.of(dialogContext).pop();
-                        _navigateToPaymentStatus(result);
+                        await _navigateToPaymentStatus(result);
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
@@ -515,7 +515,7 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
     );
   }
 
-  void _navigateToPaymentStatus(Map<String, dynamic> paymentData) {
+  Future<void> _navigateToPaymentStatus(Map<String, dynamic> paymentData) async {
     final reference = paymentData['reference']?.toString() ?? '';
     final summaryTitle = paymentData['summary_title']?.toString() ?? widget.summary.title;
     final amount = paymentData['amount']?.toString() ?? widget.summary.price.toStringAsFixed(0);
@@ -535,7 +535,9 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
     }
 
     if (reference.isNotEmpty) {
-      Navigator.of(context).push(
+      // Envoyer vers l'écran de statut et attendre le retour
+      // PaymentStatusScreen fait pop(true) si succès, pop(false) sinon
+      final paid = await Navigator.of(context).push<bool>(
         MaterialPageRoute(
           builder: (_) => PaymentStatusScreen(
             transactionRef: reference,
@@ -545,6 +547,13 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
           ),
         ),
       );
+
+      // Revenu de PaymentStatusScreen → rafraîchir immédiatement
+      if (mounted && paid == true) {
+        _checkPurchaseStatus();
+        // Déclencher un setState pour forcer le rebuild
+        setState(() {});
+      }
     }
   }
 
@@ -637,7 +646,7 @@ class _SummaryDetailsScreenState extends State<SummaryDetailsScreen> with ErrorH
                           ),
                           padding: const EdgeInsets.all(16),
                           child: AudioPlayerWidget(
-                            text: widget.summary.content,
+                            text: _fetchedContent ?? widget.summary.content,
                             title: 'Écouter le résumé',
                             rate: 0.5,
                             pitch: 1.0,

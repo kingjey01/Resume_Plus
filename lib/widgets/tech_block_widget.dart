@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:markdown/markdown.dart' as md;
 
 /// Widget réutilisable pour afficher du contenu technique (code, formule,
 /// algorithme, commande, pseudo-code) dans les QCM et leurs résultats.
 ///
+/// Utilise [MarkdownBody] avec le MÊME style que [AiContentView] pour garantir
+/// un rendu visuel identique à celui des détails de résumé.
+///
 /// S'affiche automatiquement si [codeBlock] est non nul et non vide.
-/// Utilise une police monospace (JetBrains Mono) et un fond distinct.
 class TechBlockWidget extends StatelessWidget {
   final String? codeLanguage;
   final String? codeBlock;
@@ -18,37 +22,60 @@ class TechBlockWidget extends StatelessWidget {
 
   bool get hasContent => codeBlock != null && codeBlock!.trim().isNotEmpty;
 
+  /// Style sheet identique à celui de AiContentView pour les blocs de code.
+  static MarkdownStyleSheet _codeStyleSheet(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
+    return MarkdownStyleSheet(
+      // Bloc de code (```...```)
+      codeblockDecoration: BoxDecoration(
+        color: isDark ? const Color(0xFF1E1E2E) : const Color(0xFFF5F5FA),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: isDark ? const Color(0xFF3A3A4E) : const Color(0xFFE0E0E8),
+          width: 1,
+        ),
+      ),
+      codeblockPadding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+
+      // Code inline
+      code: GoogleFonts.jetBrainsMono(
+        fontSize: 13,
+        color: isDark ? const Color(0xFFE8E8E8) : const Color(0xFF1A1A2E),
+        backgroundColor: isDark ? const Color(0xFF2A2A3E) : const Color(0xFFF0F0F5),
+      ),
+
+      // Désactiver les marges superflues
+      h1Padding: EdgeInsets.zero,
+      h2Padding: EdgeInsets.zero,
+      h3Padding: EdgeInsets.zero,
+      pPadding: EdgeInsets.zero,
+      blockSpacing: 0,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     if (!hasContent) return const SizedBox.shrink();
 
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
     final lang = codeLanguage?.trim().toLowerCase() ?? '';
-
-    // Icône selon le type
-    IconData icon;
-    if (lang == 'latex' || lang == 'formula') {
-      icon = Icons.functions_rounded;
-    } else if (lang == 'command' || lang == 'bash' || lang == 'shell') {
-      icon = Icons.terminal_rounded;
-    } else if (lang == 'algorithm' || lang == 'pseudocode') {
-      icon = Icons.account_tree_rounded;
-    } else {
-      icon = Icons.code_rounded;
-    }
-
-    // Étiquette du langage
     final label = _languageLabel(lang);
+    final icon = _languageIcon(lang);
+
+    // Envelopper le code dans un bloc de code Markdown
+    // pour que MarkdownBody le rende comme dans AiContentView
+    final markdownContent = '```$lang\n${codeBlock!.trim()}\n```';
 
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.symmetric(vertical: 8),
       decoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1A1A2E) : const Color(0xFFF5F5FA),
         borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          color: isDark ? const Color(0xFF3A3A4E) : const Color(0xFFE0E0E8),
+          color: Theme.of(context).brightness == Brightness.dark
+              ? const Color(0xFF3A3A4E)
+              : const Color(0xFFE0E0E8),
           width: 1,
         ),
       ),
@@ -61,7 +88,9 @@ class TechBlockWidget extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
             decoration: BoxDecoration(
-              color: isDark ? const Color(0xFF252540) : const Color(0xFFE8E8F0),
+              color: Theme.of(context).brightness == Brightness.dark
+                  ? const Color(0xFF252540)
+                  : const Color(0xFFE8E8F0),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(9),
                 topRight: Radius.circular(9),
@@ -69,36 +98,50 @@ class TechBlockWidget extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Icon(icon, size: 16, color: theme.colorScheme.primary),
+                Icon(icon, size: 16, color: Theme.of(context).colorScheme.primary),
                 const SizedBox(width: 6),
                 Text(
                   label,
                   style: GoogleFonts.poppins(
                     fontSize: 11,
                     fontWeight: FontWeight.w600,
-                    color: theme.colorScheme.primary,
+                    color: Theme.of(context).colorScheme.primary,
                     letterSpacing: 0.5,
                   ),
                 ),
               ],
             ),
           ),
-          // Contenu technique
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
-            child: SelectableText(
-              codeBlock!.trim(),
-              style: GoogleFonts.jetBrainsMono(
-                fontSize: 13,
-                height: 1.5,
-                color: isDark ? const Color(0xFFE8E8E8) : const Color(0xFF1A1A2E),
-              ),
-            ),
+          // Contenu technique rendu via flutter_markdown (comme AiContentView)
+          MarkdownBody(
+            data: markdownContent,
+            selectable: true,
+            styleSheet: _codeStyleSheet(context),
+            extensionSet: md.ExtensionSet.gitHubFlavored,
+            softLineBreak: true,
           ),
         ],
       ),
     );
+  }
+
+  IconData _languageIcon(String lang) {
+    switch (lang) {
+      case 'latex':
+      case 'formula':
+      case 'math':
+        return Icons.functions_rounded;
+      case 'command':
+      case 'bash':
+      case 'shell':
+      case 'terminal':
+        return Icons.terminal_rounded;
+      case 'algorithm':
+      case 'pseudocode':
+        return Icons.account_tree_rounded;
+      default:
+        return Icons.code_rounded;
+    }
   }
 
   String _languageLabel(String lang) {
@@ -136,9 +179,11 @@ class TechBlockWidget extends StatelessWidget {
       case 'bash':
       case 'shell':
       case 'command':
+      case 'terminal':
         return 'COMMANDE';
       case 'latex':
       case 'formula':
+      case 'math':
         return 'FORMULE';
       case 'algorithm':
         return 'ALGORITHME';
