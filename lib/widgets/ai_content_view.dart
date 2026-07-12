@@ -26,6 +26,68 @@ class AiContentView extends StatefulWidget {
     this.isSelectable = true,
   });
 
+  /// Style sheet Markdown complet (clair/sombre) utilisable par
+  /// AiContentView ET TechBlockWidget pour un rendu identique.
+  static MarkdownStyleSheet sharedStyleSheet(BuildContext context) {
+    final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+
+    return MarkdownStyleSheet(
+      p: GoogleFonts.poppins(
+        fontSize: 15, height: 1.7,
+        color: theme.colorScheme.onSurface, fontWeight: FontWeight.w400,
+      ),
+      pPadding: const EdgeInsets.symmetric(vertical: 2),
+      h2: GoogleFonts.poppins(
+        fontSize: 18, fontWeight: FontWeight.w700,
+        color: theme.colorScheme.primary, height: 1.3,
+      ),
+      h2Padding: const EdgeInsets.only(top: 20, bottom: 8),
+      h3: GoogleFonts.poppins(
+        fontSize: 16, fontWeight: FontWeight.w600,
+        color: theme.colorScheme.onSurface, height: 1.3,
+      ),
+      h3Padding: const EdgeInsets.only(top: 16, bottom: 6),
+      listBullet: GoogleFonts.poppins(
+        fontSize: 15, color: theme.colorScheme.primary, fontWeight: FontWeight.w700,
+      ),
+      listBulletPadding: const EdgeInsets.only(right: 8),
+      listIndent: 24,
+      strong: GoogleFonts.poppins(
+        fontWeight: FontWeight.w700, color: theme.colorScheme.onSurface,
+      ),
+      em: GoogleFonts.poppins(
+        fontStyle: FontStyle.italic, color: theme.colorScheme.onSurface,
+      ),
+      blockquoteDecoration: BoxDecoration(
+        color: theme.colorScheme.primary.withOpacity(0.06),
+        border: Border(left: BorderSide(color: theme.colorScheme.primary.withOpacity(0.4), width: 3)),
+        borderRadius: BorderRadius.circular(4),
+      ),
+      blockquotePadding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
+      code: GoogleFonts.jetBrainsMono(
+        fontSize: 13,
+        color: isDark ? const Color(0xFFE8E8E8) : const Color(0xFF1A1A2E),
+        backgroundColor: isDark ? const Color(0xFF2A2A3E) : const Color(0xFFF0F0F5),
+      ),
+      codeblockDecoration: BoxDecoration(
+        color: isDark ? const Color(0xFF1E1E2E) : const Color(0xFFF5F5FA),
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(color: isDark ? const Color(0xFF3A3A4E) : const Color(0xFFE0E0E8), width: 1),
+      ),
+      codeblockPadding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
+      tableHead: GoogleFonts.poppins(fontWeight: FontWeight.w600, fontSize: 13, color: theme.colorScheme.onSurface),
+      tableBody: GoogleFonts.poppins(fontSize: 13, color: theme.colorScheme.onSurface.withOpacity(0.85)),
+      tableBorder: TableBorder.all(color: theme.dividerTheme.color ?? (isDark ? Colors.grey.shade700 : Colors.grey.shade300), width: 1),
+      tableColumnWidth: const FlexColumnWidth(),
+      tableCellsPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+      horizontalRuleDecoration: BoxDecoration(
+        border: Border(top: BorderSide(color: theme.dividerTheme.color ?? Colors.grey.shade300, width: 1)),
+      ),
+      a: GoogleFonts.poppins(color: theme.colorScheme.primary, decoration: TextDecoration.underline),
+    );
+  }
+
   @override
   State<AiContentView> createState() => _AiContentViewState();
 }
@@ -105,122 +167,6 @@ class _AiContentViewState extends State<AiContentView> {
     if (_currentPage >= _pages.length) _currentPage = 0;
   }
 
-  /// Style sheet Markdown complet (clair/sombre) utilisable par
-  /// AiContentView ET TechBlockWidget pour un rendu identique.
-  static MarkdownStyleSheet sharedStyleSheet(BuildContext context) {
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-
-    return MarkdownStyleSheet(
-      // Texte général
-      p: GoogleFonts.poppins(
-        fontSize: 15,
-        height: 1.7,
-        color: theme.colorScheme.onSurface,
-        fontWeight: FontWeight.w400,
-      ),
-      pPadding: const EdgeInsets.symmetric(vertical: 2),
-
-      // Titres
-      h2: GoogleFonts.poppins(
-        fontSize: 18,
-        fontWeight: FontWeight.w700,
-        color: theme.colorScheme.primary,
-        height: 1.3,
-      ),
-      h2Padding: const EdgeInsets.only(top: 20, bottom: 8),
-      h3: GoogleFonts.poppins(
-        fontSize: 16,
-        fontWeight: FontWeight.w600,
-        color: theme.colorScheme.onSurface,
-        height: 1.3,
-      ),
-      h3Padding: const EdgeInsets.only(top: 16, bottom: 6),
-
-      // Listes
-      listBullet: GoogleFonts.poppins(
-        fontSize: 15,
-        color: theme.colorScheme.primary,
-        fontWeight: FontWeight.w700,
-      ),
-      listBulletPadding: const EdgeInsets.only(right: 8),
-      listIndent: 24,
-
-      // Gras et italique
-      strong: GoogleFonts.poppins(
-        fontWeight: FontWeight.w700,
-        color: theme.colorScheme.onSurface,
-      ),
-      em: GoogleFonts.poppins(
-        fontStyle: FontStyle.italic,
-        color: theme.colorScheme.onSurface,
-      ),
-
-      // Citations
-      blockquoteDecoration: BoxDecoration(
-        color: theme.colorScheme.primary.withOpacity(0.06),
-        border: Border(
-          left: BorderSide(
-            color: theme.colorScheme.primary.withOpacity(0.4),
-            width: 3,
-          ),
-        ),
-        borderRadius: BorderRadius.circular(4),
-      ),
-      blockquotePadding: const EdgeInsets.fromLTRB(14, 8, 14, 8),
-
-      // Code
-      code: GoogleFonts.jetBrainsMono(
-        fontSize: 13,
-        color: isDark ? const Color(0xFFE8E8E8) : const Color(0xFF1A1A2E),
-        backgroundColor: isDark ? const Color(0xFF2A2A3E) : const Color(0xFFF0F0F5),
-      ),
-      codeblockDecoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1E1E2E) : const Color(0xFFF5F5FA),
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(
-          color: isDark ? const Color(0xFF3A3A4E) : const Color(0xFFE0E0E8),
-          width: 1,
-        ),
-      ),
-      codeblockPadding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
-
-      // Tableaux
-      tableHead: GoogleFonts.poppins(
-        fontWeight: FontWeight.w600,
-        fontSize: 13,
-        color: theme.colorScheme.onSurface,
-      ),
-      tableBody: GoogleFonts.poppins(
-        fontSize: 13,
-        color: theme.colorScheme.onSurface.withOpacity(0.85),
-      ),
-      tableBorder: TableBorder.all(
-        color: theme.dividerTheme.color ?? (isDark ? Colors.grey.shade700 : Colors.grey.shade300),
-        width: 1,
-      ),
-      tableColumnWidth: const FlexColumnWidth(),
-      tableCellsPadding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-
-      // Ligne horizontale
-      horizontalRuleDecoration: BoxDecoration(
-        border: Border(
-          top: BorderSide(
-            color: theme.dividerTheme.color ?? Colors.grey.shade300,
-            width: 1,
-          ),
-        ),
-      ),
-
-      // Liens
-      a: GoogleFonts.poppins(
-        color: theme.colorScheme.primary,
-        decoration: TextDecoration.underline,
-      ),
-
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     if (widget.content.isEmpty) return const SizedBox.shrink();
@@ -239,7 +185,7 @@ class _AiContentViewState extends State<AiContentView> {
           child: MarkdownBody(
             data: pageContent,
             selectable: widget.isSelectable,
-            styleSheet: sharedStyleSheet(context),
+            styleSheet: AiContentView.sharedStyleSheet(context),
             extensionSet: md.ExtensionSet.gitHubFlavored,
             builders: {
               // Personnalisation supplémentaire si nécessaire
