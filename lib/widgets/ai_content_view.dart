@@ -105,8 +105,9 @@ class _AiContentViewState extends State<AiContentView> {
     if (_currentPage >= _pages.length) _currentPage = 0;
   }
 
-  /// Style sheet Markdown adapté au thème clair/sombre.
-  MarkdownStyleSheet _styleSheet(BuildContext context) {
+  /// Style sheet Markdown complet (clair/sombre) utilisable par
+  /// AiContentView ET TechBlockWidget pour un rendu identique.
+  static MarkdownStyleSheet sharedStyleSheet(BuildContext context) {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
@@ -238,7 +239,7 @@ class _AiContentViewState extends State<AiContentView> {
           child: MarkdownBody(
             data: pageContent,
             selectable: widget.isSelectable,
-            styleSheet: _styleSheet(context),
+            styleSheet: sharedStyleSheet(context),
             extensionSet: md.ExtensionSet.gitHubFlavored,
             builders: {
               // Personnalisation supplémentaire si nécessaire

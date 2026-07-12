@@ -441,6 +441,14 @@ class ExerciseQuestion(models.Model):
     option_d = models.CharField(max_length=500)
     correct_answer = models.CharField(max_length=1, choices=[('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D')])
     explanation = models.TextField(blank=True, null=True, help_text="Explication de la bonne réponse")
+    code_language = models.CharField(
+        max_length=50, blank=True, null=True,
+        help_text="Langage ou type du contenu technique (python, latex, sql, formula, algorithm, etc.)"
+    )
+    code_block = models.TextField(
+        blank=True, null=True,
+        help_text="Contenu technique (code source, formule, algorithme, commande, pseudo-code)"
+    )
     order = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     

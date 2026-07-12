@@ -50,6 +50,8 @@ class ExerciseGenerator:
                         option_d=question_data['options']['D'],
                         correct_answer=question_data['correct_answer'],
                         explanation=question_data.get('explanation', ''),
+                        code_language=question_data.get('code_language'),
+                        code_block=question_data.get('code_block'),
                         order=i
                     )
                 

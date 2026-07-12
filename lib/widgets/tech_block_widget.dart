@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:markdown/markdown.dart' as md;
+import 'ai_content_view.dart';
 
 /// Widget réutilisable pour afficher du contenu technique (code, formule,
 /// algorithme, commande, pseudo-code) dans les QCM et leurs résultats.
@@ -21,39 +22,6 @@ class TechBlockWidget extends StatelessWidget {
   });
 
   bool get hasContent => codeBlock != null && codeBlock!.trim().isNotEmpty;
-
-  /// Style sheet identique à celui de AiContentView pour les blocs de code.
-  static MarkdownStyleSheet _codeStyleSheet(BuildContext context) {
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-
-    return MarkdownStyleSheet(
-      // Bloc de code (```...```)
-      codeblockDecoration: BoxDecoration(
-        color: isDark ? const Color(0xFF1E1E2E) : const Color(0xFFF5F5FA),
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(
-          color: isDark ? const Color(0xFF3A3A4E) : const Color(0xFFE0E0E8),
-          width: 1,
-        ),
-      ),
-      codeblockPadding: const EdgeInsets.fromLTRB(16, 12, 16, 12),
-
-      // Code inline
-      code: GoogleFonts.jetBrainsMono(
-        fontSize: 13,
-        color: isDark ? const Color(0xFFE8E8E8) : const Color(0xFF1A1A2E),
-        backgroundColor: isDark ? const Color(0xFF2A2A3E) : const Color(0xFFF0F0F5),
-      ),
-
-      // Désactiver les marges superflues
-      h1Padding: EdgeInsets.zero,
-      h2Padding: EdgeInsets.zero,
-      h3Padding: EdgeInsets.zero,
-      pPadding: EdgeInsets.zero,
-      blockSpacing: 0,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -112,11 +80,11 @@ class TechBlockWidget extends StatelessWidget {
               ],
             ),
           ),
-          // Contenu technique rendu via flutter_markdown (comme AiContentView)
+          // Contenu technique rendu via flutter_markdown (MÊME style que AiContentView)
           MarkdownBody(
             data: markdownContent,
             selectable: true,
-            styleSheet: _codeStyleSheet(context),
+            styleSheet: AiContentView.sharedStyleSheet(context),
             extensionSet: md.ExtensionSet.gitHubFlavored,
             softLineBreak: true,
           ),

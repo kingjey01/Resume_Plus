@@ -154,7 +154,9 @@ def get_exercise_view(request, exercise_id):
                     'C': question.option_c,
                     'D': question.option_d
                 },
-                'order': question.order
+                'order': question.order,
+                'code_language': question.code_language,
+                'code_block': question.code_block,
             })
         
         return Response({
@@ -225,7 +227,9 @@ def submit_exercise_view(request, exercise_id):
                 'user_answer': user_answer,
                 'correct_answer': question.correct_answer,
                 'is_correct': is_correct,
-                'explanation': question.explanation
+                'explanation': question.explanation,
+                'code_language': question.code_language,
+                'code_block': question.code_block,
             })
         
         return Response({
@@ -276,6 +280,8 @@ def get_attempt_result_view(request, attempt_id):
                 'correct_answer': question.correct_answer,
                 'is_correct': is_correct,
                 'explanation': question.explanation,
+                'code_language': question.code_language,
+                'code_block': question.code_block,
             })
 
         correct_count = sum(1 for r in results if r['is_correct'])
