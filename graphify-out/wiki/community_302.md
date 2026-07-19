@@ -1,15 +1,15 @@
-# Community 302: main
+# Community 302: api_service copy
 
 **Members:** 3
 
 ## Nodes
 
-- **main** (`linux_runner_main_cc`, File, degree: 2)
-- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
-- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
+- **api_service copy** (`lib_services_api_service_copy_dart`, File, degree: 2)
+- **package:dio/dio.dart** (`lib_services_api_service_copy_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
-- linux_runner_main_cc → linux_runner_main_cc_main (defines)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_dio_dio_dart (imports)
+- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
 

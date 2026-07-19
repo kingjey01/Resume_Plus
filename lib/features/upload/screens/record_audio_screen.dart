@@ -7,6 +7,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:dio/dio.dart';
 import 'package:resume_plus_clean/services/api_service.dart';
 import 'package:resume_plus_clean/services/snackbar_service.dart';
+import 'package:resume_plus_clean/services/audio_draft_service.dart';
 import 'package:resume_plus_clean/models/course.dart';
 import 'package:resume_plus_clean/models/professeur.dart';
 import 'package:resume_plus_clean/features/upload/screens/course_selection_screen.dart';
@@ -54,6 +55,12 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
   Professeur? _selectedProfesseur;
   List<Professeur> _professeurs = [];
   bool _isLoadingProfesseurs = false;
+  
+  // Auto-résolution du professeur via Dispense (Objectif 7)
+  String? _autoResolvedProfessorName;
+  int? _autoResolvedProfessorId;
+  bool _isResolvingProfessor = false;
+  final TextEditingController _professorNameController = TextEditingController();
   Uint8List? _recordedBytes;
   String? _recordedMimeType;
   int _recordDuration = 0;
@@ -69,8 +76,14 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
   // Champs obligatoires pour le résumé
   final TextEditingController _titleController = TextEditingController();
   final TextEditingController _priceController = TextEditingController(text: '0');
+  double _minimumPrice = 3000; // Valeur par défaut, mise à jour via API
   final _formKey = GlobalKey<FormState>();
   
+  // Brouillons audio locaux
+  List<AudioDraft> _localDrafts = [];
+  bool _isLoadingDrafts = false;
+  String? _activeDraftId; // ID du brouillon actuellement chargé dans le formulaire
+
   // Sauvegarde locale - Liste des 5 derniers enregistrements
   List<SavedRecording> _savedRecordings = [];
   static const int maxSavedRecordings = 5;
@@ -90,6 +103,85 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     _initializeAnimations();
     _setupRecorderCallbacks();
     _loadProfesseurs();
+    _loadPricingConfig();
+    _loadDraftsList();
+  }
+
+  /// Charge la liste des brouillons locaux depuis le service.
+  Future<void> _loadDraftsList() async {
+    if (!mounted) return;
+    setState(() => _isLoadingDrafts = true);
+    final drafts = await AudioDraftService().listDrafts();
+    if (mounted) {
+      setState(() {
+        _localDrafts = drafts;
+        _isLoadingDrafts = false;
+      });
+    }
+  }
+
+  /// Charge un brouillon spécifique dans le formulaire.
+  Future<void> _loadDraftIntoForm(AudioDraft draft) async {
+    if (!mounted) return;
+
+    // Restaurer le titre
+    if (draft.title != null && draft.title!.isNotEmpty) {
+      _titleController.text = draft.title!;
+    }
+
+    // Restaurer la durée
+    if (draft.duration > 0) {
+      _recordDuration = draft.duration;
+    }
+
+    // Restaurer le prix
+    if (draft.price != null && draft.price! > 0) {
+      _priceController.text = draft.price!.toStringAsFixed(0);
+    }
+
+    // Restaurer le cours
+    if (draft.courseId != null && draft.courseName != null) {
+      _selectedCourse = Course(
+        id: draft.courseId!,
+        nom: draft.courseName!,
+        filiere: '',
+        description: '',
+        university: '',
+        createdAt: DateTime.now(),
+      );
+    }
+
+    // Restaurer les bytes audio
+    Uint8List? audioBytes = draft.audioBytes;
+    if (audioBytes == null && draft.audioFilePath != null) {
+      try {
+        final file = File(draft.audioFilePath!);
+        if (await file.exists()) {
+          audioBytes = await file.readAsBytes();
+        }
+      } catch (e) {
+        print('⚠️ AudioDraft: erreur lecture fichier: $e');
+      }
+    }
+
+    if (audioBytes != null) {
+      _recordedBytes = audioBytes;
+      _recordedMimeType = draft.mimeType ?? 'audio/m4a';
+    }
+
+    _activeDraftId = draft.id;
+
+    if (mounted) setState(() {});
+  }
+
+  Future<void> _loadPricingConfig() async {
+    final minPrice = await _apiService.getMinimumResumePrice();
+    if (mounted) {
+      setState(() {
+        _minimumPrice = minPrice;
+        _priceController.text = minPrice.toStringAsFixed(0);
+      });
+    }
   }
 
   Future<void> _loadProfesseurs({int retryCount = 0}) async {
@@ -212,6 +304,47 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       _recordedBytes = bytes;
       _recordedMimeType = mimeType;
     });
+    // Sauvegarder automatiquement le brouillon
+    _autoSaveDraft(bytes, mimeType);
+  }
+
+  /// Sauvegarde automatique du brouillon audio après chaque enregistrement.
+  Future<void> _autoSaveDraft(Uint8List bytes, String mimeType) async {
+    final draftService = AudioDraftService();
+
+    // Vérifier la limite avant d'ajouter
+    if (await draftService.isFull()) {
+      SnackbarService.show(
+        'Limite de ${AudioDraftService.maxDrafts} brouillons atteinte. '
+        'Envoyez ou supprimez un brouillon avant d\'en créer un nouveau.',
+        isError: true,
+      );
+      return;
+    }
+
+    final draft = AudioDraft(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      audioBytes: bytes,
+      mimeType: mimeType,
+      fileName: 'recording_${DateTime.now().millisecondsSinceEpoch}.m4a',
+      courseId: _selectedCourse?.id,
+      courseName: _selectedCourse?.nom,
+      title: _titleController.text.trim(),
+      duration: _recordDuration,
+      professeurNom: _professorNameController.text.trim().isNotEmpty
+          ? _professorNameController.text.trim()
+          : _autoResolvedProfessorName,
+      professeurId: _autoResolvedProfessorId ?? _selectedProfesseur?.id,
+    );
+
+    final price = double.tryParse(_priceController.text.trim());
+    if (price != null) draft.price = price;
+
+    final added = await draftService.addDraft(draft);
+    if (added) {
+      _activeDraftId = draft.id;
+      await _loadDraftsList();
+    }
   }
 
   void _onRecordingError(String error) {
@@ -242,7 +375,6 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       MaterialPageRoute(
         builder: (ctx) => CourseSelectionScreen(
           onCourseSelected: (course) {
-            // Utiliser ctx (context de CourseSelectionScreen) pour pop
             Navigator.of(ctx).pop(course);
           },
         ),
@@ -252,8 +384,31 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     if (selectedCourse != null && mounted) {
       setState(() {
         _selectedCourse = selectedCourse;
+        _autoResolvedProfessorName = null;
+        _autoResolvedProfessorId = null;
+        _selectedProfesseur = null;
+        _professorNameController.clear();
+        _isResolvingProfessor = true;
       });
       SnackbarService.show('✅ Cours sélectionné: ${selectedCourse.nom}', isError: false);
+      
+      // Auto-résoudre le professeur via Dispense (Objectif 7)
+      try {
+        final result = await _apiService.resolveProfessor(selectedCourse.id);
+        if (!mounted) return;
+        if (result['found'] == true && result['professor'] != null) {
+          final prof = result['professor'] as Map<String, dynamic>;
+          setState(() {
+            _autoResolvedProfessorName = prof['name'] as String?;
+            _autoResolvedProfessorId = prof['professeur_fk'] as int?;
+            _isResolvingProfessor = false;
+          });
+        } else {
+          setState(() => _isResolvingProfessor = false);
+        }
+      } catch (_) {
+        if (mounted) setState(() => _isResolvingProfessor = false);
+      }
     }
   }
 
@@ -402,6 +557,16 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
   Future<void> _startRecording() async {
     if (_selectedCourse == null) {
       SnackbarService.show('⚠️ Veuillez d\'abord sélectionner un cours', isError: true);
+      return;
+    }
+
+    // Vérifier la limite de brouillons avant d'enregistrer
+    if (await AudioDraftService().isFull()) {
+      SnackbarService.show(
+        '⚠️ Limite de ${AudioDraftService.maxDrafts} brouillons atteinte. '
+        'Envoyez ou supprimez un brouillon avant d\'en créer un nouveau.',
+        isError: true,
+      );
       return;
     }
 
@@ -557,6 +722,14 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       if (_selectedProfesseur != null) {
         metadata['professeur_id'] = _selectedProfesseur!.id;
       }
+      // Envoyer le professeur auto-résolu ou le nom saisi manuellement (Objectif 7)
+      if (_autoResolvedProfessorId != null) {
+        metadata['professeur_id'] = _autoResolvedProfessorId!;
+      }
+      final profName = _professorNameController.text.trim();
+      if (profName.isNotEmpty) {
+        metadata['professeur_nom'] = profName;
+      }
 
       final response = await _apiService.uploadAudio(
         audioBytes: _recordedBytes!,
@@ -645,6 +818,20 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
       // Ajouter à la liste des enregistrements sauvegardés
       _addSavedRecording(savedRecording);
       
+      // Supprimer le brouillon local après envoi réussi
+      if (_activeDraftId != null) {
+        await AudioDraftService().deleteDraft(_activeDraftId!);
+        _activeDraftId = null;
+      } else {
+        // Fallback : supprimer le plus ancien brouillon sans fichier
+        final drafts = await AudioDraftService().listDrafts();
+        if (drafts.isNotEmpty) {
+          await AudioDraftService().deleteDraft(drafts.first.id);
+        }
+      }
+      await _loadDraftsList();
+      print('🗑️ AudioDraft: brouillon supprimé après upload réussi');
+
       // Réinitialiser l'enregistrement en cours
       setState(() {
         _recordedBytes = null;
@@ -656,7 +843,7 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
         _isFileUploaded = false;
         _uploadedFileName = null;
         _titleController.clear();
-        _priceController.text = '0';
+        _priceController.text = _minimumPrice.toStringAsFixed(0);
       });
 
       // Arrêter la lecture si en cours
@@ -676,6 +863,7 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     _pulseController.dispose();
     _titleController.dispose();
     _priceController.dispose();
+    _professorNameController.dispose();
     // Ne pas disposer le recorder car c'est un singleton - juste reset
     _audioRecorder.reset();
     _audioPlayer.dispose();
@@ -789,15 +977,15 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
               
               const SizedBox(height: 16),
               
-              // Prix du résumé (obligatoire, minimum 3000 CDF)
+              // Prix du résumé (minimum dynamique depuis ResumePricingConfig)
               TextFormField(
                 controller: _priceController,
                 decoration: InputDecoration(
                   labelText: 'Prix du résumé (CDF) *',
-                  hintText: 'Minimum 3000 CDF',
+                  hintText: 'Prix minimum : ${_minimumPrice.toStringAsFixed(0)} CDF',
                   prefixIcon: const Icon(Icons.attach_money),
                   suffixText: 'CDF',
-                  helperText: 'Le prix minimum est 3000 CDF. Les résumés gratuits ne sont pas autorisés.',
+                  helperText: 'Prix minimum : ${_minimumPrice.toStringAsFixed(0)} CDF. Les résumés gratuits ne sont pas autorisés.',
                   helperMaxLines: 2,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -813,8 +1001,8 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
                   if (price == null) {
                     return 'Entrez un prix valide (nombre)';
                   }
-                  if (price < 3000) {
-                    return 'Le prix minimum est 3000 CDF';
+                  if (price < _minimumPrice) {
+                    return 'Le prix minimum est ${_minimumPrice.toStringAsFixed(0)} CDF';
                   }
                   return null;
                 },
@@ -822,62 +1010,51 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
               
               const SizedBox(height: 16),
 
-              // Sélection du professeur (facultatif)
-              _isLoadingProfesseurs
-                  ? const Center(
-                      child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: CircularProgressIndicator(),
-                      ),
-                    )
-                  : _professeurs.isEmpty
-                      ? Container(
-                          padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                          decoration: BoxDecoration(
-                            color: Colors.grey.shade100,
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Colors.grey.shade300),
-                          ),
-                          child: Row(
-                            children: [
-                              Icon(Icons.person_off, color: Colors.grey.shade600),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Text(
-                                  'Aucun professeur disponible',
-                                  style: TextStyle(color: Colors.grey.shade700),
-                                ),
-                              ),
-                              TextButton(
-                                onPressed: () => _loadProfesseurs(),
-                                child: const Text('Réessayer'),
-                              ),
-                            ],
-                          ),
-                        )
-                      : DropdownButtonFormField<Professeur>(
-                          value: _selectedProfesseur,
-                          decoration: InputDecoration(
-                            labelText: 'Sélectionner un professeur (facultatif)',
-                            hintText: 'Choisir le professeur enseignant',
-                            prefixIcon: const Icon(Icons.person),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            filled: true,
-                          ),
-                          items: _professeurs.map((professeur) {
-                            return DropdownMenuItem<Professeur>(
-                              value: professeur,
-                              child: Text(professeur.displayInfo),
-                            );
-                          }).toList(),
-                          onChanged: (Professeur? newValue) {
-                            setState(() {
-                              _selectedProfesseur = newValue;
-                            });
-                          },
+              // Professeur (auto-résolu ou saisie libre) — Objectif 7
+              if (_isResolvingProfessor)
+                const Padding(
+                  padding: EdgeInsets.symmetric(vertical: 12),
+                  child: Center(child: CircularProgressIndicator()),
+                )
+              else if (_autoResolvedProfessorName != null)
+                // Cas 1 : Professeur trouvé via Dispense → affichage en lecture seule
+                Container(
+                  padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+                  decoration: BoxDecoration(
+                    color: AppTheme.success.withOpacity(0.08),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(color: AppTheme.success.withOpacity(0.3)),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.check_circle, color: AppTheme.success, size: 20),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text('Professeur', style: TextStyle(fontSize: 11, color: AppTheme.textLight)),
+                            Text(_autoResolvedProfessorName!, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 14)),
+                          ],
                         ),
+                      ),
+                    ],
+                  ),
+                )
+              else
+                // Cas 2 : Aucune dispense → champ libre
+                TextFormField(
+                  controller: _professorNameController,
+                  decoration: InputDecoration(
+                    labelText: 'Nom du professeur',
+                    hintText: 'Ex: Mme Judith',
+                    prefixIcon: const Icon(Icons.person),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    filled: true,
+                  ),
+                ),
               
               const SizedBox(height: 24),
 
@@ -1144,6 +1321,119 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
     );
   }
 
+  /// Panneau listant tous les brouillons audio locaux.
+  /// Chaque brouillon peut être chargé dans le formulaire ou supprimé.
+  Widget _buildDraftsPanel() {
+    if (_localDrafts.isEmpty) return const SizedBox.shrink();
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Icon(Icons.save_rounded, size: 16, color: AppTheme.warning),
+            const SizedBox(width: 6),
+            Text(
+              'Brouillons locaux (${_localDrafts.length}/${AudioDraftService.maxDrafts})',
+              style: const TextStyle(
+                fontSize: 13, fontWeight: FontWeight.w600, color: AppTheme.textSecondary,
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        ..._localDrafts.map((draft) => _buildDraftTile(draft)),
+      ],
+    );
+  }
+
+  /// Tuile compacte d'un brouillon local, responsive petit/moyen écran.
+  Widget _buildDraftTile(AudioDraft draft) {
+    final isActive = draft.id == _activeDraftId;
+    final theme = Theme.of(context);
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 6),
+      padding: const EdgeInsets.fromLTRB(10, 8, 4, 8),
+      decoration: BoxDecoration(
+        color: isActive ? AppTheme.primaryBlue.withOpacity(0.06) : theme.colorScheme.surface,
+        borderRadius: BorderRadius.circular(10),
+        border: Border.all(
+          color: isActive ? AppTheme.primaryBlue.withOpacity(0.3) : theme.dividerTheme.color ?? Colors.grey.shade200,
+          width: isActive ? 1.5 : 1,
+        ),
+      ),
+      child: Row(
+        children: [
+          // Icône
+          Icon(Icons.audio_file_rounded, size: 24,
+              color: isActive ? AppTheme.primaryBlue : AppTheme.textLight),
+          const SizedBox(width: 8),
+          // Texte
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  draft.title ?? draft.fileName ?? 'Sans titre',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    color: theme.colorScheme.onSurface,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                const SizedBox(height: 1),
+                Flexible(
+                  child: Text(
+                    '${draft.durationFormatted} — ${draft.createdAt.toString().substring(0, 10)}',
+                    style: TextStyle(fontSize: 11, color: theme.colorScheme.onSurface.withOpacity(0.5)),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          // Charger
+          if (!isActive)
+            SizedBox(
+              width: 30, height: 30,
+              child: IconButton(
+                onPressed: () async {
+                  await _loadDraftIntoForm(draft);
+                  if (mounted) setState(() {});
+                },
+                icon: Icon(Icons.download_rounded, size: 16, color: AppTheme.primaryBlue),
+                tooltip: 'Charger',
+                padding: EdgeInsets.zero,
+              ),
+            ),
+          // Supprimer
+          SizedBox(
+            width: 30, height: 30,
+            child: IconButton(
+              onPressed: () async {
+                await AudioDraftService().deleteDraft(draft.id);
+                if (_activeDraftId == draft.id) {
+                  _activeDraftId = null;
+                }
+                await _loadDraftsList();
+                if (mounted) setState(() {});
+                SnackbarService.show('Brouillon supprimé', isError: false);
+              },
+              icon: Icon(Icons.delete_outline_rounded, size: 16, color: AppTheme.error),
+              tooltip: 'Supprimer',
+              padding: EdgeInsets.zero,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildRecordingControls() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -1250,8 +1540,12 @@ class _RecordAudioScreenState extends State<RecordAudioScreen> with TickerProvid
                     Text('Durée: ${_formatDuration(_recordDuration)}', style: const TextStyle(color: AppTheme.textLight, fontSize: 13)),
                   ],
                 ),
-                const SizedBox(height: 16),
-                
+                const SizedBox(height: 8),
+
+                // Panneau des brouillons locaux
+                _buildDraftsPanel(),
+                const SizedBox(height: 8),
+
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,

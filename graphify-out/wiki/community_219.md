@@ -1,19 +1,19 @@
-# Community 219: MainFlutterWindow
+# Community 219: 0005_universitefiliere_filierepromotion_and_more
 
 **Members:** 5
 
 ## Nodes
 
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift`, File, degree: 4)
-- **awakeFromNib** (`macos_runner_mainflutterwindow_swift_awakefromnib`, Function, degree: 1)
-- **Cocoa** (`macos_runner_mainflutterwindow_swift_import_cocoa`, Module, degree: 1)
-- **FlutterMacOS** (`macos_runner_mainflutterwindow_swift_import_fluttermacos`, Module, degree: 1)
-- **MainFlutterWindow** (`macos_runner_mainflutterwindow_swift_mainflutterwindow`, Class, degree: 1)
+- **0005_universitefiliere_filierepromotion_and_more** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py`, File, degree: 4)
+- **django.db.migrations** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_mainflutterwindow (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_awakefromnib (defines)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_cocoa (imports)
-- macos_runner_mainflutterwindow_swift → macos_runner_mainflutterwindow_swift_import_fluttermacos (imports)
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models (imports)
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models_deletion (imports)
+- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_migration (defines)
 

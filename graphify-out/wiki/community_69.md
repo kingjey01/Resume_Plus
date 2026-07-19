@@ -1,29 +1,29 @@
-# Community 69: fix_migration
+# Community 69: register_screen
 
 **Members:** 10
 
 ## Nodes
 
-- **fix_migration** (`backend_fix_migration_py`, File, degree: 9)
-- **clear_user_profiles()** (`backend_fix_migration_py_clear_user_profiles`, Function, degree: 1)
-- **create_initial_data()** (`backend_fix_migration_py_create_initial_data`, Function, degree: 1)
-- **courses.models.Filiere** (`backend_fix_migration_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_fix_migration_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_fix_migration_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_migration_py_import_django`, Module, degree: 1)
-- **os** (`backend_fix_migration_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_migration_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_fix_migration_py_import_users_models_userprofile`, Module, degree: 1)
+- **register_screen** (`lib_features_auth_screens_register_screen_dart`, File, degree: 9)
+- **../../../models/filiere.dart** (`lib_features_auth_screens_register_screen_dart_import_models_filiere_dart`, Module, degree: 1)
+- **../../../models/promotion.dart** (`lib_features_auth_screens_register_screen_dart_import_models_promotion_dart`, Module, degree: 1)
+- **../../../models/universite.dart** (`lib_features_auth_screens_register_screen_dart_import_models_universite_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_auth_screens_register_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_register_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_register_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **../../../services/api_service.dart** (`lib_features_auth_screens_register_screen_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../../../widgets/linked_dropdowns.dart** (`lib_features_auth_screens_register_screen_dart_import_widgets_linked_dropdowns_dart`, Module, degree: 1)
+- **_RegisterScreenState()** (`lib_features_auth_screens_register_screen_dart_registerscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_fix_migration_py → backend_fix_migration_py_import_os (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_sys (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_django (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_universite (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_promotion (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_courses_models_filiere (imports)
-- backend_fix_migration_py → backend_fix_migration_py_import_users_models_userprofile (imports)
-- backend_fix_migration_py → backend_fix_migration_py_create_initial_data (defines)
-- backend_fix_migration_py → backend_fix_migration_py_clear_user_profiles (defines)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_universite_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_promotion_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_models_filiere_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_services_api_service_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_widgets_linked_dropdowns_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_auth_screens_register_screen_dart → lib_features_auth_screens_register_screen_dart_registerscreenstate (defines)
 

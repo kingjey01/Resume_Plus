@@ -17,6 +17,7 @@ class _ManualEntryScreenState extends State<ManualEntryScreen> {
   final _titleController = TextEditingController();
   final _subjectController = TextEditingController();
   final _contentController = TextEditingController();
+  final _priceController = TextEditingController();
   final _apiService = ApiService();
 
   List<Course> _courses = [];
@@ -28,11 +29,14 @@ class _ManualEntryScreenState extends State<ManualEntryScreen> {
   Professeur? _selectedProfesseur;
   bool _isLoadingProfesseurs = false;
 
+  double _minimumPrice = 3000; // Valeur par défaut en attendant l'API
+
   @override
   void initState() {
     super.initState();
     _loadCourses();
     _loadProfesseurs();
+    _loadPricingConfig();
   }
 
   @override
@@ -40,7 +44,16 @@ class _ManualEntryScreenState extends State<ManualEntryScreen> {
     _titleController.dispose();
     _subjectController.dispose();
     _contentController.dispose();
+    _priceController.dispose();
     super.dispose();
+  }
+
+  Future<void> _loadPricingConfig() async {
+    final minPrice = await _apiService.getMinimumResumePrice();
+    if (mounted) {
+      setState(() => _minimumPrice = minPrice);
+      _priceController.text = minPrice.toStringAsFixed(0);
+    }
   }
 
   Future<void> _loadProfesseurs() async {
@@ -80,6 +93,12 @@ class _ManualEntryScreenState extends State<ManualEntryScreen> {
       return;
     }
 
+    final price = double.tryParse(_priceController.text.trim());
+    if (price == null) {
+      SnackbarService.show('Veuillez entrer un prix valide.', isError: true);
+      return;
+    }
+
     setState(() {
       _isSubmitting = true;
     });
@@ -89,13 +108,14 @@ class _ManualEntryScreenState extends State<ManualEntryScreen> {
         titre: _titleController.text.trim(),
         texteResume: _contentController.text.trim(),
         courseId: _selectedCourse!.id,
+        prix: price,
         professeurId: _selectedProfesseur?.id,
       );
-      
+
       SnackbarService.show('Résumé créé avec succès !', isError: false);
       Navigator.of(context).pop();
     } catch (e) {
-      SnackbarService.show('Erreur lors de la création: $e', isError: true);
+      SnackbarService.show('Erreur : ${ApiService.getErrorMessage(e)}', isError: true);
     } finally {
       setState(() {
         _isSubmitting = false;
@@ -242,6 +262,35 @@ class _ManualEntryScreenState extends State<ManualEntryScreen> {
                               }).toList(),
                               onChanged: (value) => setState(() => _selectedProfesseur = value),
                             ),
+                      const SizedBox(height: 16),
+
+                      // ── Prix du résumé ──────────────────────────────────
+                      TextFormField(
+                        controller: _priceController,
+                        keyboardType: const TextInputType.numberWithOptions(decimal: false),
+                        decoration: InputDecoration(
+                          labelText: 'Prix (CDF) *',
+                          prefixIcon: const Icon(Icons.payments_rounded),
+                          helperText: 'Prix minimum : ${_minimumPrice.toStringAsFixed(0)} CDF',
+                          helperMaxLines: 2,
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
+                        ),
+                        validator: (value) {
+                          if (value == null || value.trim().isEmpty) {
+                            return 'Le prix est obligatoire';
+                          }
+                          final p = double.tryParse(value);
+                          if (p == null) {
+                            return 'Entrez un nombre valide.';
+                          }
+                          if (p < _minimumPrice) {
+                            return 'Le prix minimum est ${_minimumPrice.toStringAsFixed(0)} CDF';
+                          }
+                          return null;
+                        },
+                      ),
                       const SizedBox(height: 16),
                       TextFormField(
                         controller: _contentController,

@@ -1,23 +1,23 @@
-# Community 171: models
+# Community 171: AbonnementCreateSerializer
 
 **Members:** 7
 
 ## Nodes
 
-- **models** (`backend_users_models_py`, File, degree: 7)
-- **courses.models.Filiere** (`backend_users_models_py_import_courses_models_filiere`, Module, degree: 1)
-- **courses.models.Promotion** (`backend_users_models_py_import_courses_models_promotion`, Module, degree: 1)
-- **courses.models.Universite** (`backend_users_models_py_import_courses_models_universite`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_users_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.models** (`backend_users_models_py_import_django_db_models`, Module, degree: 1)
-- **Meta** (`backend_users_models_py_meta`, Class, degree: 1)
+- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
+- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
+- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
+- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
+- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
+- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
+- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
 
 ## Relationships
 
-- backend_users_models_py → backend_users_models_py_import_django_contrib_auth_models_user (imports)
-- backend_users_models_py → backend_users_models_py_import_django_db_models (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_universite (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_promotion (imports)
-- backend_users_models_py → backend_users_models_py_import_courses_models_filiere (imports)
-- backend_users_models_py → backend_users_models_py_meta (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
+- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
+- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
+- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
 

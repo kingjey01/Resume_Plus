@@ -1,21 +1,21 @@
-# Community 186: models
+# Community 186: screen_security_service
 
 **Members:** 6
 
 ## Nodes
 
-- **models** (`backend_security_models_py`, File, degree: 4)
-- **django.contrib.auth.models.User** (`backend_security_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.models** (`backend_security_models_py_import_django_db_models`, Module, degree: 1)
-- **Meta** (`backend_security_models_py_meta`, Class, degree: 1)
-- **SecurityLog** (`backend_security_models_py_securitylog`, Class, degree: 2)
-- **.__str__()** (`backend_security_models_py_securitylog_str`, Method, degree: 1)
+- **screen_security_service** (`lib_services_screen_security_service_dart`, File, degree: 5)
+- **dart:io** (`lib_services_screen_security_service_dart_import_dart_io`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_screen_security_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_services_screen_security_service_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:screen_protector/screen_protector.dart** (`lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart`, Module, degree: 1)
+- **_isSecured()** (`lib_services_screen_security_service_dart_issecured`, Function, degree: 1)
 
 ## Relationships
 
-- backend_security_models_py → backend_security_models_py_import_django_db_models (imports)
-- backend_security_models_py → backend_security_models_py_import_django_contrib_auth_models_user (imports)
-- backend_security_models_py → backend_security_models_py_securitylog (defines)
-- backend_security_models_py_securitylog → backend_security_models_py_securitylog_str (defines)
-- backend_security_models_py → backend_security_models_py_meta (defines)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_dart_io (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_flutter_services_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_import_package_screen_protector_screen_protector_dart (imports)
+- lib_services_screen_security_service_dart → lib_services_screen_security_service_dart_issecured (defines)
 

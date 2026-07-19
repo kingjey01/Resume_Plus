@@ -1,30 +1,28 @@
-# Community 139: generate_report()
+# Community 139: AuthAPITest
 
 **Members:** 8
 
 ## Nodes
 
-- **generate_report()** (`backend_diagnostic_complet_py_generate_report`, Function, degree: 3)
-- **main()** (`backend_diagnostic_complet_py_main`, Function, degree: 7)
-- **print_section()** (`backend_diagnostic_complet_py_print_section`, Function, degree: 7)
-- **test_1_server_status()** (`backend_diagnostic_complet_py_test_1_server_status`, Function, degree: 3)
-- **test_2_login()** (`backend_diagnostic_complet_py_test_2_login`, Function, degree: 3)
-- **test_3_endpoints_without_auth()** (`backend_diagnostic_complet_py_test_3_endpoints_without_auth`, Function, degree: 3)
-- **test_4_auth_endpoints()** (`backend_diagnostic_complet_py_test_4_auth_endpoints`, Function, degree: 3)
-- **test_5_cors_headers()** (`backend_diagnostic_complet_py_test_5_cors_headers`, Function, degree: 3)
+- **AuthAPITest** (`backend_users_tests_py_authapitest`, Class, degree: 8)
+- **.setUp()** (`backend_users_tests_py_authapitest_setup`, Method, degree: 1)
+- **.test_login_user()** (`backend_users_tests_py_authapitest_test_login_user`, Method, degree: 4)
+- **.test_logout()** (`backend_users_tests_py_authapitest_test_logout`, Method, degree: 2)
+- **.test_logout_without_token()** (`backend_users_tests_py_authapitest_test_logout_without_token`, Method, degree: 2)
+- **.test_refresh_token()** (`backend_users_tests_py_authapitest_test_refresh_token`, Method, degree: 2)
+- **.test_refresh_token_invalid()** (`backend_users_tests_py_authapitest_test_refresh_token_invalid`, Method, degree: 1)
+- **.test_register_user()** (`backend_users_tests_py_authapitest_test_register_user`, Method, degree: 1)
 
 ## Relationships
 
-- backend_diagnostic_complet_py_test_1_server_status → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_2_login → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_3_endpoints_without_auth → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_4_auth_endpoints → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_test_5_cors_headers → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_generate_report → backend_diagnostic_complet_py_print_section (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_4_auth_endpoints (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_2_login (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_5_cors_headers (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_generate_report (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_1_server_status (calls)
-- backend_diagnostic_complet_py_main → backend_diagnostic_complet_py_test_3_endpoints_without_auth (calls)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_setup (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_register_user (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_refresh_token_invalid (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_logout_without_token (defines)
+- backend_users_tests_py_authapitest → backend_users_tests_py_authapitest_test_login_user (defines)
+- backend_users_tests_py_authapitest_test_refresh_token → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout → backend_users_tests_py_authapitest_test_login_user (calls)
+- backend_users_tests_py_authapitest_test_logout_without_token → backend_users_tests_py_authapitest_test_login_user (calls)
 

@@ -1,27 +1,27 @@
-# Community 110: debug_auth_headers
+# Community 110: profile_section
 
 **Members:** 9
 
 ## Nodes
 
-- **debug_auth_headers** (`backend_debug_auth_headers_py`, File, degree: 8)
-- **django** (`backend_debug_auth_headers_py_import_django`, Module, degree: 1)
-- **django.test.RequestFactory** (`backend_debug_auth_headers_py_import_django_test_requestfactory`, Module, degree: 1)
-- **os** (`backend_debug_auth_headers_py_import_os`, Module, degree: 1)
-- **rest_framework.authentication.TokenAuthentication** (`backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_debug_auth_headers_py_import_sys`, Module, degree: 1)
-- **test_different_auth_headers()** (`backend_debug_auth_headers_py_test_different_auth_headers`, Function, degree: 1)
-- **test_wsgi_headers()** (`backend_debug_auth_headers_py_test_wsgi_headers`, Function, degree: 1)
+- **profile_section** (`lib_features_settings_widgets_profile_section_dart`, File, degree: 8)
+- **package:flutter/material.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/settings/screens/edit_profile_screen.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_ProfileSectionState()** (`lib_features_settings_widgets_profile_section_dart_profilesectionstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_os (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_sys (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_django_test_requestfactory (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authtoken_models_token (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_import_rest_framework_authentication_tokenauthentication (imports)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_different_auth_headers (defines)
-- backend_debug_auth_headers_py → backend_debug_auth_headers_py_test_wsgi_headers (defines)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_profilesectionstate (defines)
 

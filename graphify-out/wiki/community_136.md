@@ -1,29 +1,25 @@
-# Community 136: test_production_api
+# Community 136: check_db_encoding
 
 **Members:** 8
 
 ## Nodes
 
-- **test_production_api** (`backend_test_production_api_py`, File, degree: 7)
-- **json** (`backend_test_production_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_production_api_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_production_api_py_main`, Function, degree: 5)
-- **test_audio_files_access()** (`backend_test_production_api_py_test_audio_files_access`, Function, degree: 2)
-- **test_encoding_in_api_response()** (`backend_test_production_api_py_test_encoding_in_api_response`, Function, degree: 2)
-- **test_flutter_api_simulation()** (`backend_test_production_api_py_test_flutter_api_simulation`, Function, degree: 2)
-- **test_sessions_endpoint()** (`backend_test_production_api_py_test_sessions_endpoint`, Function, degree: 2)
+- **check_db_encoding** (`backend_check_db_encoding_py`, File, degree: 7)
+- **check_database_encoding()** (`backend_check_db_encoding_py_check_database_encoding`, Function, degree: 1)
+- **generate_fix_sql()** (`backend_check_db_encoding_py_generate_fix_sql`, Function, degree: 1)
+- **django** (`backend_check_db_encoding_py_import_django`, Module, degree: 1)
+- **django.db.connection** (`backend_check_db_encoding_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_check_db_encoding_py_import_os`, Module, degree: 1)
+- **sys** (`backend_check_db_encoding_py_import_sys`, Module, degree: 1)
+- **traceback** (`backend_check_db_encoding_py_import_traceback`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_production_api_py → backend_test_production_api_py_import_requests (imports)
-- backend_test_production_api_py → backend_test_production_api_py_import_json (imports)
-- backend_test_production_api_py → backend_test_production_api_py_test_sessions_endpoint (defines)
-- backend_test_production_api_py → backend_test_production_api_py_test_audio_files_access (defines)
-- backend_test_production_api_py → backend_test_production_api_py_test_flutter_api_simulation (defines)
-- backend_test_production_api_py → backend_test_production_api_py_test_encoding_in_api_response (defines)
-- backend_test_production_api_py → backend_test_production_api_py_main (defines)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_audio_files_access (calls)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_encoding_in_api_response (calls)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_flutter_api_simulation (calls)
-- backend_test_production_api_py_main → backend_test_production_api_py_test_sessions_endpoint (calls)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_os (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_sys (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_django_db_connection (imports)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_check_database_encoding (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_generate_fix_sql (defines)
+- backend_check_db_encoding_py → backend_check_db_encoding_py_import_traceback (imports)
 

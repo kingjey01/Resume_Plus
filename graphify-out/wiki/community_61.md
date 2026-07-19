@@ -1,31 +1,36 @@
-# Community 61: login_screen
+# Community 61: check_permissions_detailed
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **login_screen** (`lib_features_auth_screens_login_screen_dart`, File, degree: 10)
-- **package:dio/dio.dart** (`lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/forgot_password_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/register_screen.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_LoginScreenState()** (`lib_features_auth_screens_login_screen_dart_loginscreenstate`, Function, degree: 1)
+- **check_permissions_detailed** (`backend_check_permissions_detailed_py`, File, degree: 11)
+- **check_file_permissions()** (`backend_check_permissions_detailed_py_check_file_permissions`, Function, degree: 2)
+- **check_write_permission()** (`backend_check_permissions_detailed_py_check_write_permission`, Function, degree: 2)
+- **get_current_user_info()** (`backend_check_permissions_detailed_py_get_current_user_info`, Function, degree: 2)
+- **django** (`backend_check_permissions_detailed_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_check_permissions_detailed_py_import_django_conf_settings`, Module, degree: 1)
+- **grp** (`backend_check_permissions_detailed_py_import_grp`, Module, degree: 1)
+- **os** (`backend_check_permissions_detailed_py_import_os`, Module, degree: 1)
+- **pwd** (`backend_check_permissions_detailed_py_import_pwd`, Module, degree: 1)
+- **stat** (`backend_check_permissions_detailed_py_import_stat`, Module, degree: 1)
+- **sys** (`backend_check_permissions_detailed_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_check_permissions_detailed_py_main`, Function, degree: 4)
 
 ## Relationships
 
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_dio_dio_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_register_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_features_auth_screens_forgot_password_screen_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
-- lib_features_auth_screens_login_screen_dart → lib_features_auth_screens_login_screen_dart_loginscreenstate (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_os (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_sys (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_django (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_pwd (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_grp (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_stat (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_import_django_conf_settings (imports)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_check_file_permissions (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_check_write_permission (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_get_current_user_info (defines)
+- backend_check_permissions_detailed_py → backend_check_permissions_detailed_py_main (defines)
+- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_check_write_permission (calls)
+- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_check_file_permissions (calls)
+- backend_check_permissions_detailed_py_main → backend_check_permissions_detailed_py_get_current_user_info (calls)
 

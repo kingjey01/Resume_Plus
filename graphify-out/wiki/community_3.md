@@ -1,16 +1,18 @@
 # Community 3: models
 
-**Members:** 41
+**Members:** 39
 
 ## Nodes
 
-- **models** (`backend_courses_models_py`, File, degree: 19)
+- **models** (`backend_courses_models_py`, File, degree: 18)
 - **Abonnement** (`backend_courses_models_py_abonnement`, Class, degree: 3)
 - **.is_active()** (`backend_courses_models_py_abonnement_is_active`, Method, degree: 1)
 - **.__str__()** (`backend_courses_models_py_abonnement_str`, Method, degree: 1)
 - **Course** (`backend_courses_models_py_course`, Class, degree: 3)
 - **.is_accessible_by_user()** (`backend_courses_models_py_course_is_accessible_by_user`, Method, degree: 1)
 - **.__str__()** (`backend_courses_models_py_course_str`, Method, degree: 1)
+- **Dispense** (`backend_courses_models_py_dispense`, Class, degree: 2)
+- **.__str__()** (`backend_courses_models_py_dispense_str`, Method, degree: 1)
 - **Exercise** (`backend_courses_models_py_exercise`, Class, degree: 3)
 - **.questions_count()** (`backend_courses_models_py_exercise_questions_count`, Method, degree: 1)
 - **.__str__()** (`backend_courses_models_py_exercise_str`, Method, degree: 1)
@@ -21,8 +23,6 @@
 - **.__str__()** (`backend_courses_models_py_exercisequestion_str`, Method, degree: 1)
 - **Filiere** (`backend_courses_models_py_filiere`, Class, degree: 2)
 - **.__str__()** (`backend_courses_models_py_filiere_str`, Method, degree: 1)
-- **FilierePromotion** (`backend_courses_models_py_filierepromotion`, Class, degree: 2)
-- **.__str__()** (`backend_courses_models_py_filierepromotion_str`, Method, degree: 1)
 - **django.contrib.auth.models.User** (`backend_courses_models_py_import_django_contrib_auth_models_user`, Module, degree: 1)
 - **django.db.models** (`backend_courses_models_py_import_django_db_models`, Module, degree: 1)
 - **Meta** (`backend_courses_models_py_meta`, Class, degree: 1)
@@ -43,8 +43,6 @@
 - **.__str__()** (`backend_courses_models_py_transcription_str`, Method, degree: 1)
 - **Universite** (`backend_courses_models_py_universite`, Class, degree: 2)
 - **.__str__()** (`backend_courses_models_py_universite_str`, Method, degree: 1)
-- **UniversiteFiliere** (`backend_courses_models_py_universitefiliere`, Class, degree: 2)
-- **.__str__()** (`backend_courses_models_py_universitefiliere_str`, Method, degree: 1)
 
 ## Relationships
 
@@ -57,10 +55,6 @@
 - backend_courses_models_py_filiere → backend_courses_models_py_filiere_str (defines)
 - backend_courses_models_py → backend_courses_models_py_universite (defines)
 - backend_courses_models_py_universite → backend_courses_models_py_universite_str (defines)
-- backend_courses_models_py → backend_courses_models_py_universitefiliere (defines)
-- backend_courses_models_py_universitefiliere → backend_courses_models_py_universitefiliere_str (defines)
-- backend_courses_models_py → backend_courses_models_py_filierepromotion (defines)
-- backend_courses_models_py_filierepromotion → backend_courses_models_py_filierepromotion_str (defines)
 - backend_courses_models_py → backend_courses_models_py_professeurfilieres (defines)
 - backend_courses_models_py_professeurfilieres → backend_courses_models_py_professeurfilieres_str (defines)
 - backend_courses_models_py → backend_courses_models_py_course (defines)
@@ -74,6 +68,8 @@
 - backend_courses_models_py_transcription → backend_courses_models_py_transcription_str (defines)
 - backend_courses_models_py → backend_courses_models_py_professeur (defines)
 - backend_courses_models_py_professeur → backend_courses_models_py_professeur_str (defines)
+- backend_courses_models_py → backend_courses_models_py_dispense (defines)
+- backend_courses_models_py_dispense → backend_courses_models_py_dispense_str (defines)
 - backend_courses_models_py → backend_courses_models_py_service (defines)
 - backend_courses_models_py_service → backend_courses_models_py_service_str (defines)
 - backend_courses_models_py → backend_courses_models_py_abonnement (defines)

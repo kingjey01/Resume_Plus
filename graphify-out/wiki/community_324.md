@@ -1,13 +1,15 @@
-# Community 324: my_application
+# Community 324: upload_screen
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **my_application** (`linux_runner_my_application_h`, File, degree: 1)
-- **gtk/gtk.h** (`linux_runner_my_application_h_import_gtk_gtk_h`, Module, degree: 1)
+- **upload_screen** (`lib_features_upload_screens_upload_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart`, Module, degree: 1)
 
 ## Relationships
 
-- linux_runner_my_application_h → linux_runner_my_application_h_import_gtk_gtk_h (imports)
+- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart (imports)
 

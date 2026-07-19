@@ -1,13 +1,15 @@
-# Community 318: logger
+# Community 318: file_helper_stub
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **logger** (`lib_utils_logger_dart`, File, degree: 1)
-- **package:flutter/foundation.dart** (`lib_utils_logger_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
+- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
+- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
 
 ## Relationships
 
-- lib_utils_logger_dart → lib_utils_logger_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
+- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
 

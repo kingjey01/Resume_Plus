@@ -1,17 +1,17 @@
-# Community 278: 0004_userprofile_otp_attempts_userprofile_otp_code_and_more
+# Community 278: file_helper_io
 
 **Members:** 4
 
 ## Nodes
 
-- **0004_userprofile_otp_attempts_userprofile_otp_code_and_more** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py`, File, degree: 3)
-- **django.db.migrations** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration`, Class, degree: 1)
+- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
+- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
+- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
+- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_migrations (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_import_django_db_models (imports)
-- backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py → backend_users_migrations_0004_userprofile_otp_attempts_userprofile_otp_code_and_more_py_migration (defines)
+- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
+- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
+- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
 

@@ -1,25 +1,25 @@
-# Community 115: check_db_services
+# Community 115: fix_encoding_sqlite
 
 **Members:** 8
 
 ## Nodes
 
-- **check_db_services** (`backend_check_db_services_py`, File, degree: 13)
-- **django** (`backend_check_db_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_db_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **django.db.connection** (`backend_check_db_services_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_check_db_services_py_import_os`, Module, degree: 1)
-- **rest_framework.authtoken.models.Token** (`backend_check_db_services_py_import_rest_framework_authtoken_models_token`, Module, degree: 1)
-- **sys** (`backend_check_db_services_py_import_sys`, Module, degree: 1)
-- **users.models.UserProfile** (`backend_check_db_services_py_import_users_models_userprofile`, Module, degree: 1)
+- **fix_encoding_sqlite** (`backend_fix_encoding_sqlite_py`, File, degree: 12)
+- **courses.models.Session** (`backend_fix_encoding_sqlite_py_import_courses_models_session`, Module, degree: 1)
+- **courses.models.Summary** (`backend_fix_encoding_sqlite_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_fix_encoding_sqlite_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_fix_encoding_sqlite_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.connection** (`backend_fix_encoding_sqlite_py_import_django_db_connection`, Module, degree: 1)
+- **os** (`backend_fix_encoding_sqlite_py_import_os`, Module, degree: 1)
+- **sys** (`backend_fix_encoding_sqlite_py_import_sys`, Module, degree: 1)
 
 ## Relationships
 
-- backend_check_db_services_py → backend_check_db_services_py_import_os (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_sys (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_rest_framework_authtoken_models_token (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_users_models_userprofile (imports)
-- backend_check_db_services_py → backend_check_db_services_py_import_django_db_connection (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_os (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_sys (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_conf_settings (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_django_db_connection (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_summary (imports)
+- backend_fix_encoding_sqlite_py → backend_fix_encoding_sqlite_py_import_courses_models_session (imports)
 

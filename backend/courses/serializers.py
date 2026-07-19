@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import (
-    Course, Session, Summary, Transcription, Universite, Promotion, Filiere, 
-    Service, Abonnement, UniversiteFiliere, FilierePromotion, Professeur
+    Course, Session, Summary, Transcription, Universite, Promotion, Filiere,
+    Service, Abonnement, Professeur
 )
 
 
@@ -18,20 +18,32 @@ class ProfesseurSerializer(serializers.ModelSerializer):
 
 
 class CourseSerializer(serializers.ModelSerializer):
-    # Nouveaux champs FK avec noms
-    universite_nom = serializers.CharField(source='universite_fk.nom', read_only=True, allow_null=True)
-    filiere_nom = serializers.CharField(source='filiere_fk.nom', read_only=True, allow_null=True)
-    promotion_nom = serializers.CharField(source='promotion_fk.nom', read_only=True, allow_null=True)
-    
+    # Noms lisibles depuis les M2M
+    universite_nom = serializers.SerializerMethodField()
+    filiere_nom = serializers.SerializerMethodField()
+    promotion_nom = serializers.SerializerMethodField()
+
     # Champs de compatibilité pour le frontend (anciens noms)
     university = serializers.CharField(read_only=True)
-    
+
     class Meta:
         model = Course
-        fields = ['id', 'nom', 'filiere', 'university', 'description', 
-                 'universite_fk', 'universite_nom', 'filiere_fk', 'filiere_nom', 
-                 'promotion_fk', 'promotion_nom', 'created_at', 'updated_at']
-        read_only_fields = ['universite_fk', 'filiere_fk', 'promotion_fk', 'university', 'filiere']
+        fields = ['id', 'nom', 'filiere', 'university', 'description',
+                 'universites', 'universite_nom', 'filieres', 'filiere_nom',
+                 'promotions', 'promotion_nom', 'created_at', 'updated_at']
+        read_only_fields = ['university', 'filiere']
+
+    def get_universite_nom(self, obj):
+        u = obj.universites.first()
+        return u.nom if u else None
+
+    def get_filiere_nom(self, obj):
+        f = obj.filieres.first()
+        return f.nom if f else None
+
+    def get_promotion_nom(self, obj):
+        p = obj.promotions.first()
+        return p.nom if p else None
 
 
 class SessionSerializer(serializers.ModelSerializer):
@@ -103,22 +115,37 @@ class SummarySerializer(serializers.ModelSerializer):
     author_name = serializers.CharField(source='author_user.username', read_only=True)
     transcription_id = serializers.IntegerField(source='transcription.id', read_only=True, allow_null=True)
     professeur_info = ProfesseurSerializer(source='professeur', read_only=True)
+    professor_display = serializers.SerializerMethodField()
+
+    def get_professor_display(self, obj):
+        """Retourne le nom du professeur (FK, session.professeur_fk, ou session.professeur texte)"""
+        # 1. Professeur direct sur le résumé
+        if obj.professeur:
+            return obj.professeur.user.get_full_name() or obj.professeur.user.username
+        # 2. Professeur FK sur la session liée
+        if obj.session and obj.session.professeur_fk:
+            return obj.session.professeur_fk.user.get_full_name() or obj.session.professeur_fk.user.username
+        # 3. Nom texte du professeur sur la session
+        if obj.session and obj.session.professeur:
+            return obj.session.professeur
+        return ''
 
     def get_filiere_name(self, obj):
-        """Retourne le nom de la filière via FK si disponible, sinon le champ texte"""
+        """Retourne le nom de la filière via M2M si disponible, sinon le champ texte"""
         try:
-            if obj.course and obj.course.filiere_fk:
-                return obj.course.filiere_fk.nom
+            if obj.course and obj.course.filieres.exists():
+                fil = obj.course.filieres.first()
+                return fil.nom if fil else ''
             if obj.course:
                 return obj.course.filiere or ''
         except Exception:
             pass
         return ''
-    
+
     class Meta:
         model = Summary
-        fields = ['id', 'titre', 'texte_resume', 'professeur', 'professeur_info', 'course', 'course_name',
-                 'filiere_name', 'session',
+        fields = ['id', 'titre', 'texte_resume', 'professeur', 'professeur_info', 'professor_display',
+                 'course', 'course_name', 'filiere_name', 'session',
                  'transcription_id', 'author_type', 'author_user', 'author_name', 'pdf_file', 'prix',
                  'is_free', 'is_validated', 'created_at', 'updated_at']
     
@@ -286,18 +313,6 @@ class FiliereSerializer(serializers.ModelSerializer):
         fields = ['id', 'nom', 'description', 'promotions', 'created_at']
 
 
-class UniversiteFiliereSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = UniversiteFiliere
-        fields = ['id', 'universite', 'filiere', 'created_at']
-
-
-class FilierePromotionSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = FilierePromotion
-        fields = ['id', 'filiere', 'promotion', 'created_at']
-
-
 class UniversiteSerializer(serializers.ModelSerializer):
     filieres = FiliereSerializer(many=True, read_only=True)
     
@@ -315,10 +330,10 @@ class FiliereWithUniversiteSerializer(serializers.ModelSerializer):
     
     def get_universites(self, obj):
         return [{
-            'id': uf.universite.id,
-            'nom': uf.universite.nom,
-            'adresse': uf.universite.adresse
-        } for uf in obj.universitefiliere_set.all()]
+            'id': u.id,
+            'nom': u.nom,
+            'adresse': u.adresse
+        } for u in obj.universites.all()]
 
 
 class ServiceSerializer(serializers.ModelSerializer):

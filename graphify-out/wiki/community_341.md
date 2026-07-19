@@ -1,8 +1,13 @@
-# Community 341: app_notification
+# Community 341: course
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **app_notification** (`lib_models_app_notification_dart`, File, degree: 0)
+- **course** (`lib_models_course_dart`, File, degree: 1)
+- **id()** (`lib_models_course_dart_id`, Function, degree: 1)
+
+## Relationships
+
+- lib_models_course_dart → lib_models_course_dart_id (defines)
 

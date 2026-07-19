@@ -1,21 +1,21 @@
-# Community 187: onboarding_screen
+# Community 187: main()
 
 **Members:** 6
 
 ## Nodes
 
-- **onboarding_screen** (`lib_features_onboarding_onboarding_screen_dart`, File, degree: 5)
-- **package:flutter/material.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_OnboardingScreenState()** (`lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate`, Function, degree: 1)
+- **main()** (`backend_test_notifications_simple_py_main`, Function, degree: 6)
+- **test_expired_notification()** (`backend_test_notifications_simple_py_test_expired_notification`, Function, degree: 2)
+- **test_expiring_soon_notification()** (`backend_test_notifications_simple_py_test_expiring_soon_notification`, Function, degree: 2)
+- **test_multiple_notifications()** (`backend_test_notifications_simple_py_test_multiple_notifications`, Function, degree: 2)
+- **test_purchase_notification()** (`backend_test_notifications_simple_py_test_purchase_notification`, Function, degree: 2)
+- **test_subscription_notification_creation()** (`backend_test_notifications_simple_py_test_subscription_notification_creation`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_onboarding_onboarding_screen_dart → lib_features_onboarding_onboarding_screen_dart_onboardingscreenstate (defines)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_multiple_notifications (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expiring_soon_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_purchase_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_expired_notification (calls)
+- backend_test_notifications_simple_py_main → backend_test_notifications_simple_py_test_subscription_notification_creation (calls)
 

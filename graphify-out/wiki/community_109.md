@@ -1,30 +1,31 @@
-# Community 109: test_production_config
+# Community 109: debug_wsgi_user
 
 **Members:** 9
 
 ## Nodes
 
-- **test_production_config** (`backend_test_production_config_py`, File, degree: 8)
-- **datetime** (`backend_test_production_config_py_import_datetime`, Module, degree: 1)
-- **json** (`backend_test_production_config_py_import_json`, Module, degree: 1)
-- **jwt** (`backend_test_production_config_py_import_jwt`, Module, degree: 1)
-- **requests** (`backend_test_production_config_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_production_config_py_main`, Function, degree: 4)
-- **test_cors_preflight()** (`backend_test_production_config_py_test_cors_preflight`, Function, degree: 2)
-- **test_jwt_validation()** (`backend_test_production_config_py_test_jwt_validation`, Function, degree: 2)
-- **test_server_logs_simulation()** (`backend_test_production_config_py_test_server_logs_simulation`, Function, degree: 2)
+- **debug_wsgi_user** (`backend_debug_wsgi_user_py`, File, degree: 8)
+- **check_python_path()** (`backend_debug_wsgi_user_py_check_python_path`, Function, degree: 2)
+- **django** (`backend_debug_wsgi_user_py_import_django`, Module, degree: 1)
+- **os** (`backend_debug_wsgi_user_py_import_os`, Module, degree: 1)
+- **sys** (`backend_debug_wsgi_user_py_import_sys`, Module, degree: 1)
+- **main()** (`backend_debug_wsgi_user_py_main`, Function, degree: 5)
+- **test_audio_processing_import()** (`backend_debug_wsgi_user_py_test_audio_processing_import`, Function, degree: 2)
+- **test_imports()** (`backend_debug_wsgi_user_py_test_imports`, Function, degree: 2)
+- **test_view_import()** (`backend_debug_wsgi_user_py_test_view_import`, Function, degree: 2)
 
 ## Relationships
 
-- backend_test_production_config_py → backend_test_production_config_py_import_requests (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_json (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_jwt (imports)
-- backend_test_production_config_py → backend_test_production_config_py_import_datetime (imports)
-- backend_test_production_config_py → backend_test_production_config_py_test_cors_preflight (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_jwt_validation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_test_server_logs_simulation (defines)
-- backend_test_production_config_py → backend_test_production_config_py_main (defines)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_jwt_validation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_server_logs_simulation (calls)
-- backend_test_production_config_py_main → backend_test_production_config_py_test_cors_preflight (calls)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_os (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_sys (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_import_django (imports)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_imports (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_audio_processing_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_test_view_import (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_check_python_path (defines)
+- backend_debug_wsgi_user_py → backend_debug_wsgi_user_py_main (defines)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_view_import (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_imports (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_check_python_path (calls)
+- backend_debug_wsgi_user_py_main → backend_debug_wsgi_user_py_test_audio_processing_import (calls)
 

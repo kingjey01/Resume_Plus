@@ -1,13 +1,15 @@
-# Community 323: api_service_debug
+# Community 323: privacy_policy_screen
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **api_service_debug** (`lib_services_api_service_debug_dart`, File, degree: 1)
-- **package:dio/dio.dart** (`lib_services_api_service_debug_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **privacy_policy_screen** (`lib_features_settings_screens_privacy_policy_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_debug_dart → lib_services_api_service_debug_dart_import_package_dio_dio_dart (imports)
+- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_privacy_policy_screen_dart → lib_features_settings_screens_privacy_policy_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

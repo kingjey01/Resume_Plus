@@ -25,6 +25,10 @@ def generate_exercise_view(request, summary_id):
     Accessible uniquement aux utilisateurs abonnés
     """
     try:
+        # Lire le niveau de difficulté demandé et force_regenerate
+        difficulty = request.data.get('difficulty', 'medium') if request.data else 'medium'
+        force_regenerate = request.data.get('force_regenerate', False) if request.data else False
+        
         # Vérifier que le résumé existe et est validé
         summary = get_object_or_404(Summary, id=summary_id, is_validated=True)
         
@@ -35,15 +39,21 @@ def generate_exercise_view(request, summary_id):
                 'subscription_required': True
             }, status=status.HTTP_403_FORBIDDEN)
         
-        # Vérifier si un exercice existe déjà
-        existing_exercise = Exercise.objects.filter(summary=summary).first()
-        if existing_exercise:
+        # Vérifier si CET utilisateur a déjà un exercice pour ce résumé+difficulté
+        existing_exercise = Exercise.objects.filter(
+            summary=summary,
+            created_by=request.user,
+            difficulty=difficulty
+        ).first()
+        
+        if existing_exercise and not force_regenerate:
             if existing_exercise.status == 'completed':
                 return Response({
                     'message': 'Exercice déjà disponible',
                     'exercise_id': existing_exercise.id,
                     'status': 'completed',
                     'generated_by_ai': existing_exercise.generated_by_ai,
+                    'difficulty': difficulty,
                 }, status=status.HTTP_200_OK)
             elif existing_exercise.status == 'generating':
                 return Response({
@@ -51,32 +61,40 @@ def generate_exercise_view(request, summary_id):
                     'exercise_id': existing_exercise.id,
                     'status': 'generating',
                     'generated_by_ai': existing_exercise.generated_by_ai,
+                    'difficulty': difficulty,
                 }, status=status.HTTP_202_ACCEPTED)
             elif existing_exercise.status == 'failed':
                 # Relancer la génération si elle a échoué
                 existing_exercise.status = 'generating'
                 existing_exercise.save()
                 def rerun_generation():
-                    generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise)
+                    generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise, difficulty=difficulty)
                 threading.Thread(target=rerun_generation, daemon=True).start()
                 return Response({
                     'message': 'Nouvelle génération lancée',
                     'exercise_id': existing_exercise.id,
                     'status': 'generating',
                     'generated_by_ai': existing_exercise.generated_by_ai,
+                    'difficulty': difficulty,
                 }, status=status.HTTP_202_ACCEPTED)
         
-        # Créer l'exercice en statut 'generating' immédiatement
+        # Si force_regenerate, supprimer uniquement l'exercice de CET utilisateur
+        if force_regenerate and existing_exercise:
+            existing_exercise.delete()
+        
+        # Créer un exercice propre à cet utilisateur
         exercise = Exercise.objects.create(
             summary=summary,
+            created_by=request.user,
             titre=f"Exercices - {summary.titre}",
             description=f"Questions à choix multiples basées sur le résumé: {summary.titre}",
+            difficulty=difficulty,
             status='generating'
         )
 
         # Lancer la génération en background (ne pas bloquer la requête)
         def run_generation():
-            generate_exercises_for_summary(summary_id, existing_exercise=exercise)
+            generate_exercises_for_summary(summary_id, existing_exercise=exercise, difficulty=difficulty)
 
         thread = threading.Thread(target=run_generation, daemon=True)
         thread.start()
@@ -86,6 +104,7 @@ def generate_exercise_view(request, summary_id):
             'exercise_id': exercise.id,
             'status': 'generating',
             'generated_by_ai': exercise.generated_by_ai,
+            'difficulty': difficulty,
         }, status=status.HTTP_201_CREATED)
             
     except Summary.DoesNotExist:
@@ -107,6 +126,10 @@ def get_exercise_view(request, exercise_id):
     """
     try:
         exercise = get_object_or_404(Exercise, id=exercise_id)
+
+        # S'assurer que l'exercice appartient à cet utilisateur (ou est legacy sans propriétaire)
+        if exercise.created_by is not None and exercise.created_by != request.user:
+            return Response({'error': 'Exercice introuvable'}, status=status.HTTP_404_NOT_FOUND)
 
         # Si encore en génération, retourner juste le statut (pour le polling Flutter)
         if exercise.status != 'completed':
@@ -131,7 +154,9 @@ def get_exercise_view(request, exercise_id):
                     'C': question.option_c,
                     'D': question.option_d
                 },
-                'order': question.order
+                'order': question.order,
+                'code_language': question.code_language,
+                'code_block': question.code_block,
             })
         
         return Response({
@@ -166,6 +191,11 @@ def submit_exercise_view(request, exercise_id):
     """
     try:
         exercise = get_object_or_404(Exercise, id=exercise_id, status='completed')
+
+        # S'assurer que l'exercice appartient à cet utilisateur
+        if exercise.created_by is not None and exercise.created_by != request.user:
+            return Response({'error': 'Exercice introuvable'}, status=status.HTTP_404_NOT_FOUND)
+
         answers = request.data.get('answers', {})
         
         if not answers:
@@ -197,7 +227,9 @@ def submit_exercise_view(request, exercise_id):
                 'user_answer': user_answer,
                 'correct_answer': question.correct_answer,
                 'is_correct': is_correct,
-                'explanation': question.explanation
+                'explanation': question.explanation,
+                'code_language': question.code_language,
+                'code_block': question.code_block,
             })
         
         return Response({
@@ -248,6 +280,8 @@ def get_attempt_result_view(request, attempt_id):
                 'correct_answer': question.correct_answer,
                 'is_correct': is_correct,
                 'explanation': question.explanation,
+                'code_language': question.code_language,
+                'code_block': question.code_block,
             })
 
         correct_count = sum(1 for r in results if r['is_correct'])
@@ -314,7 +348,7 @@ def check_exercise_subscription_view(request):
         # Vérifier s'il y a un abonnement expiré
         is_expired = False
         if not has_active:
-            exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+            exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
             if exercise_service:
                 is_expired = Abonnement.objects.filter(
                     user=user,
@@ -325,7 +359,7 @@ def check_exercise_subscription_view(request):
         subscription_info = None
         if has_active:
             # Récupérer les détails de l'abonnement (payments app)
-            exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+            exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
             if exercise_service:
                 active_subscription = Abonnement.objects.filter(
                     user=user,
@@ -364,7 +398,7 @@ def has_exercise_subscription(user):
     """
     try:
         # Vérifier l'abonnement au service d'exercices (payments app)
-        exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+        exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
         if not exercise_service:
             return False
         

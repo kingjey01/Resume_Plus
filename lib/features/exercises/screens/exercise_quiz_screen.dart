@@ -4,15 +4,20 @@ import 'package:resume_plus_clean/services/api_service.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercise_result_screen.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/widgets/secure_screen_wrapper.dart';
+import 'package:resume_plus_clean/widgets/tech_block_widget.dart';
 
 class ExerciseQuizScreen extends StatefulWidget {
   final int exerciseId;
   final String exerciseTitle;
+  final int summaryId;
+  final String difficulty;
 
   const ExerciseQuizScreen({
     super.key,
     required this.exerciseId,
     required this.exerciseTitle,
+    required this.summaryId,
+    required this.difficulty,
   });
 
   @override
@@ -108,7 +113,11 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
         final exerciseResult = ExerciseResult.fromJson(result);
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (_) => ExerciseResultScreen(result: exerciseResult),
+            builder: (_) => ExerciseResultScreen(
+              result: exerciseResult,
+              summaryId: widget.summaryId,
+              difficulty: widget.difficulty,
+            ),
           ),
         );
       }
@@ -260,6 +269,8 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
   }
 
   Widget _buildQuestionCard(ExerciseQuestion question, int index) {
+    final theme = Theme.of(context);
+    final cs = theme.colorScheme;
     final selectedAnswer = _selectedAnswers[question.id.toString()];
 
     return SingleChildScrollView(
@@ -286,11 +297,16 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
           Text(
             question.questionText,
             style: Theme.of(context).textTheme.titleMedium?.copyWith(
-              color: Colors.black87,
+              color: cs.onSurface,
               fontWeight: FontWeight.w700,
               fontSize: 17,
               height: 1.5,
             ),
+          ),
+          // Bloc technique (code, formule, algorithme)
+          TechBlockWidget(
+            codeLanguage: question.codeLanguage,
+            codeBlock: question.codeBlock,
           ),
           const SizedBox(height: 24),
           // Options
@@ -306,10 +322,10 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
                   decoration: BoxDecoration(
                     color: isSelected
                         ? AppTheme.primaryBlue.withOpacity(0.1)
-                        : Colors.white,
+                        : cs.surface,
                     borderRadius: BorderRadius.circular(14),
                     border: Border.all(
-                      color: isSelected ? AppTheme.primaryBlue : Colors.grey.shade200,
+                      color: isSelected ? AppTheme.primaryBlue : theme.dividerTheme.color ?? Colors.grey.shade300,
                       width: isSelected ? 2 : 1,
                     ),
                     boxShadow: isSelected
@@ -321,14 +337,14 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
                       Container(
                         width: 36, height: 36,
                         decoration: BoxDecoration(
-                          color: isSelected ? AppTheme.primaryBlue : Colors.grey.shade100,
+                          color: isSelected ? AppTheme.primaryBlue : cs.surface.withOpacity(0.6),
                           shape: BoxShape.circle,
                         ),
                         child: Center(
                           child: Text(
                             entry.key,
                             style: TextStyle(
-                              color: isSelected ? Colors.white : AppTheme.textSecondary,
+                              color: isSelected ? Colors.white : cs.onSurfaceVariant,
                               fontWeight: FontWeight.w700, fontSize: 15,
                             ),
                           ),
@@ -339,7 +355,7 @@ class _ExerciseQuizScreenState extends State<ExerciseQuizScreen> {
                         child: Text(
                           entry.value,
                           style: TextStyle(
-                            color: isSelected ? AppTheme.primaryBlue : Colors.black87,
+                            color: isSelected ? AppTheme.primaryBlue : cs.onSurface,
                             fontSize: 15, fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
                           ),
                         ),

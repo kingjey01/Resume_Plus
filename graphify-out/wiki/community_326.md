@@ -1,13 +1,13 @@
-# Community 326: badge_icon
+# Community 326: tab_refresh_provider
 
 **Members:** 2
 
 ## Nodes
 
-- **badge_icon** (`lib_widgets_badge_icon_dart`, File, degree: 1)
-- **package:flutter/material.dart** (`lib_widgets_badge_icon_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **tab_refresh_provider** (`lib_providers_tab_refresh_provider_dart`, File, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_tab_refresh_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_widgets_badge_icon_dart → lib_widgets_badge_icon_dart_import_package_flutter_material_dart (imports)
+- lib_providers_tab_refresh_provider_dart → lib_providers_tab_refresh_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
 

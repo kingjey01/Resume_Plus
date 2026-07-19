@@ -1,8 +1,13 @@
-# Community 340: universite
+# Community 340: simple_seed
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **universite** (`lib_models_universite_dart`, File, degree: 0)
+- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
+- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+
+## Relationships
+
+- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
 

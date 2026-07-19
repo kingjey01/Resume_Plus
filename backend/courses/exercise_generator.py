@@ -15,10 +15,11 @@ class ExerciseGenerator:
     def __init__(self):
         pass
         
-    def generate_exercises_for_summary(self, summary_id, existing_exercise=None):
+    def generate_exercises_for_summary(self, summary_id, existing_exercise=None, difficulty='medium'):
         """
         Génère 5-10 exercices QCM pour un résumé donné.
         Si existing_exercise est fourni, l'utilise directement (évite la double création).
+        difficulty: 'easy', 'medium', 'hard'
         """
         try:
             summary = Summary.objects.get(id=summary_id)
@@ -35,7 +36,7 @@ class ExerciseGenerator:
                 )
             
             # Générer les questions via DeepSeekService (même service que les résumés)
-            questions_data, generated_by_ai = self._generate_questions_with_ai(summary.texte_resume, summary.titre)
+            questions_data, generated_by_ai = self._generate_questions_with_ai(summary.texte_resume, summary.titre, difficulty=difficulty)
             
             if questions_data:
                 # Créer les questions
@@ -49,9 +50,12 @@ class ExerciseGenerator:
                         option_d=question_data['options']['D'],
                         correct_answer=question_data['correct_answer'],
                         explanation=question_data.get('explanation', ''),
+                        code_language=question_data.get('code_language'),
+                        code_block=question_data.get('code_block'),
                         order=i
                     )
                 
+                exercise.difficulty = difficulty
                 exercise.status = 'completed'
                 exercise.generated_by_ai = generated_by_ai
                 exercise.save()
@@ -75,7 +79,7 @@ class ExerciseGenerator:
                 exercise.save()
             return None
     
-    def _generate_questions_with_ai(self, resume_text, titre):
+    def _generate_questions_with_ai(self, resume_text, titre, difficulty='medium'):
         """
         Génère les questions via DeepSeekService (même service que les résumés).
         Retourne (questions_data, generated_by_ai).
@@ -83,28 +87,29 @@ class ExerciseGenerator:
         # Vérifier si DeepSeek est configuré (même logique que pour les résumés)
         if not deepseek_service.is_configured():
             logger.warning("DeepSeek non configuré — utilisation du fallback local pour les exercices")
-            return self._generate_mock_questions(titre, resume_text), False
+            return self._generate_mock_questions(titre, resume_text, difficulty=difficulty), False
         
         try:
             # Appeler DeepSeekService.generate_exercises (même pattern que generate_summary)
-            result = deepseek_service.generate_exercises(resume_text, titre)
-            
+            result = deepseek_service.generate_exercises(resume_text, titre, difficulty=difficulty)
+
             if result['success']:
                 # Parser la réponse JSON de DeepSeek
                 parsed = self._parse_ai_response(result['content'])
-                if parsed:
+                if parsed and len(parsed) >= 5:
                     logger.info(f"✅ {len(parsed)} questions générées par DeepSeek IA pour: {titre}")
                     return parsed, True
                 else:
-                    logger.warning(f"⚠️ Parsing échoué pour la réponse DeepSeek, fallback local")
-                    return self._generate_mock_questions(titre, resume_text), False
+                    reason = 'Parsing échoué' if not parsed else f"Seulement {len(parsed)} questions valides (< 5)"
+                    logger.warning(f"⚠️ {reason} pour la réponse DeepSeek, fallback local")
+                    return self._generate_mock_questions(titre, resume_text, difficulty=difficulty), False
             else:
                 logger.warning(f"⚠️ Échec DeepSeek exercices: {result['error']} — fallback local")
-                return self._generate_mock_questions(titre, resume_text), False
-                
+                return self._generate_mock_questions(titre, resume_text, difficulty=difficulty), False
+
         except Exception as e:
             logger.error(f"Erreur lors de l'appel DeepSeek pour exercices: {str(e)}")
-            return self._generate_mock_questions(titre, resume_text), False
+            return self._generate_mock_questions(titre, resume_text, difficulty=difficulty), False
     
     def _parse_ai_response(self, content):
         """Parse la réponse de l'IA"""
@@ -135,29 +140,51 @@ class ExerciseGenerator:
             return None
     
     def _validate_question_structure(self, question):
-        """Valide la structure d'une question"""
+        """Valide la structure d'une question et détecte les placeholders"""
         required_fields = ['question', 'options', 'correct_answer']
-        
+
         if not all(field in question for field in required_fields):
             return False
-        
+
         options = question['options']
         if not all(opt in options for opt in ['A', 'B', 'C', 'D']):
             return False
-        
+
         if question['correct_answer'] not in ['A', 'B', 'C', 'D']:
             return False
-        
+
+        # Détection de placeholders génériques
+        placeholder_patterns = ['concept a', 'concept b', 'concept c', 'concept d',
+                                   'option a', 'option b', 'option c', 'option d',
+                                   'réponse a', 'réponse b', 'réponse c', 'réponse d']
+        for opt in ['A', 'B', 'C', 'D']:
+            opt_text = str(options.get(opt, '')).lower()
+            if any(p in opt_text for p in placeholder_patterns):
+                logger.warning(f"Placeholder détecté dans option {opt}: '{options[opt]}' — question rejetée")
+                return False
+            if len(opt_text.strip()) < 3:
+                logger.warning(f"Option {opt} trop courte: '{options[opt]}' — question rejetée")
+                return False
+
         return True
     
-    def _generate_mock_questions(self, titre, resume_text=None):
+    def _generate_mock_questions(self, titre, resume_text=None, difficulty='medium'):
         """
         Génère des questions basées sur le contenu réel du résumé.
         Si le texte est disponible, extrait des phrases clés pour créer des QCM pertinents.
+        Adapte la difficulté selon le paramètre (easy/medium/hard).
         """
         import re, random
 
         questions = []
+        
+        # Paramètres de difficulté
+        difficulty_config = {
+            'easy': {'distractor_similarity': 'low', 'question_complexity': 'basic'},
+            'medium': {'distractor_similarity': 'medium', 'question_complexity': 'applied'},
+            'hard': {'distractor_similarity': 'high', 'question_complexity': 'advanced'},
+        }
+        config = difficulty_config.get(difficulty, difficulty_config['medium'])
 
         if resume_text and len(resume_text.strip()) > 100:
             # Extraire les phrases significatives du résumé (>40 chars, pas trop longues)
@@ -297,7 +324,7 @@ class ExerciseGenerator:
         return questions[:7]
 
 
-def generate_exercises_for_summary(summary_id, existing_exercise=None):
+def generate_exercises_for_summary(summary_id, existing_exercise=None, difficulty='medium'):
     """Fonction utilitaire pour générer des exercices"""
     generator = ExerciseGenerator()
-    return generator.generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise)
+    return generator.generate_exercises_for_summary(summary_id, existing_exercise=existing_exercise, difficulty=difficulty)

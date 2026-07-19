@@ -1,17 +1,17 @@
-# Community 267: test_endpoints_existence
+# Community 267: create_exercise_service
 
 **Members:** 4
 
 ## Nodes
 
-- **test_endpoints_existence** (`backend_test_endpoints_existence_py`, File, degree: 3)
-- **json** (`backend_test_endpoints_existence_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_endpoints_existence_py_import_requests`, Module, degree: 1)
-- **test_all_endpoints()** (`backend_test_endpoints_existence_py_test_all_endpoints`, Function, degree: 1)
+- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
+- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
+- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
+- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
 
 ## Relationships
 
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_requests (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_import_json (imports)
-- backend_test_endpoints_existence_py → backend_test_endpoints_existence_py_test_all_endpoints (defines)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
+- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
 

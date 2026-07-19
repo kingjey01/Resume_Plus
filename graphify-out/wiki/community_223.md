@@ -1,19 +1,19 @@
-# Community 223: 0005_universitefiliere_filierepromotion_and_more
+# Community 223: simple_login_service
 
 **Members:** 5
 
 ## Nodes
 
-- **0005_universitefiliere_filierepromotion_and_more** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py`, File, degree: 4)
-- **django.db.migrations** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models`, Module, degree: 1)
-- **django.db.models.deletion** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_migration`, Class, degree: 1)
+- **simple_login_service** (`lib_services_simple_login_service_dart`, File, degree: 4)
+- **ApiService()** (`lib_services_simple_login_service_dart_apiservice`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_services_simple_login_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models (imports)
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_import_django_db_models_deletion (imports)
-- backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py → backend_courses_migrations_0005_universitefiliere_filierepromotion_and_more_py_migration (defines)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_dio_dio_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_simple_login_service_dart → lib_services_simple_login_service_dart_apiservice (defines)
 

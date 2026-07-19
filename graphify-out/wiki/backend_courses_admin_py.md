@@ -14,8 +14,6 @@
 - backend_courses_admin_py → backend_courses_admin_py_universiteadmin (defines, Extracted)
 - backend_courses_admin_py → backend_courses_admin_py_promotionadmin (defines, Extracted)
 - backend_courses_admin_py → backend_courses_admin_py_filiereadmin (defines, Extracted)
-- backend_courses_admin_py → backend_courses_admin_py_universitefiliereadmin (defines, Extracted)
-- backend_courses_admin_py → backend_courses_admin_py_filierepromotionadmin (defines, Extracted)
 - backend_courses_admin_py → backend_courses_admin_py_transcriptionadmin (defines, Extracted)
 - backend_courses_admin_py → backend_courses_admin_py_exerciseadmin (defines, Extracted)
 - backend_courses_admin_py → backend_courses_admin_py_exercisequestionadmin (defines, Extracted)

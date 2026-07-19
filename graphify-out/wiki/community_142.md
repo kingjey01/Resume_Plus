@@ -1,25 +1,25 @@
-# Community 142: check_services
+# Community 142: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **check_services** (`backend_check_services_py`, File, degree: 7)
-- **check_services()** (`backend_check_services_py_check_services`, Function, degree: 1)
-- **django** (`backend_check_services_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_check_services_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_check_services_py_import_os`, Module, degree: 1)
-- **payments.models.Abonnement** (`backend_check_services_py_import_payments_models_abonnement`, Module, degree: 1)
-- **payments.models.Service** (`backend_check_services_py_import_payments_models_service`, Module, degree: 1)
-- **sys** (`backend_check_services_py_import_sys`, Module, degree: 1)
+- **admin** (`backend_notifications_admin_py`, File, degree: 7)
+- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_notifications_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.AppNotification** (`backend_notifications_admin_py_import_models_appnotification`, Module, degree: 1)
+- **.models.UserDevice** (`backend_notifications_admin_py_import_models_userdevice`, Module, degree: 1)
+- **.models.UserNotification** (`backend_notifications_admin_py_import_models_usernotification`, Module, degree: 1)
+- **UserDeviceAdmin** (`backend_notifications_admin_py_userdeviceadmin`, Class, degree: 1)
+- **UserNotificationAdmin** (`backend_notifications_admin_py_usernotificationadmin`, Class, degree: 1)
 
 ## Relationships
 
-- backend_check_services_py → backend_check_services_py_import_os (imports)
-- backend_check_services_py → backend_check_services_py_import_sys (imports)
-- backend_check_services_py → backend_check_services_py_import_django (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_service (imports)
-- backend_check_services_py → backend_check_services_py_import_payments_models_abonnement (imports)
-- backend_check_services_py → backend_check_services_py_import_django_contrib_auth_models_user (imports)
-- backend_check_services_py → backend_check_services_py_check_services (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_django_contrib_admin (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_userdevice (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_appnotification (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_import_models_usernotification (imports)
+- backend_notifications_admin_py → backend_notifications_admin_py_userdeviceadmin (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_appnotificationadmin (defines)
+- backend_notifications_admin_py → backend_notifications_admin_py_usernotificationadmin (defines)
 

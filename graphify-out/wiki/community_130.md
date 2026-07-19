@@ -1,26 +1,25 @@
-# Community 130: serializers
+# Community 130: admin
 
 **Members:** 8
 
 ## Nodes
 
-- **serializers** (`backend_security_serializers_py`, File, degree: 5)
-- **CreateSecurityLogSerializer** (`backend_security_serializers_py_createsecuritylogserializer`, Class, degree: 3)
-- **.create()** (`backend_security_serializers_py_createsecuritylogserializer_create`, Method, degree: 2)
-- **.get_client_ip()** (`backend_security_serializers_py_createsecuritylogserializer_get_client_ip`, Method, degree: 2)
-- **.models.SecurityLog** (`backend_security_serializers_py_import_models_securitylog`, Module, degree: 1)
-- **rest_framework.serializers** (`backend_security_serializers_py_import_rest_framework_serializers`, Module, degree: 1)
-- **Meta** (`backend_security_serializers_py_meta`, Class, degree: 1)
-- **SecurityLogSerializer** (`backend_security_serializers_py_securitylogserializer`, Class, degree: 1)
+- **admin** (`backend_payments_admin_py`, File, degree: 7)
+- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
+- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
+- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
+- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
+- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
+- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
+- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
 
 ## Relationships
 
-- backend_security_serializers_py → backend_security_serializers_py_import_rest_framework_serializers (imports)
-- backend_security_serializers_py → backend_security_serializers_py_import_models_securitylog (imports)
-- backend_security_serializers_py → backend_security_serializers_py_securitylogserializer (defines)
-- backend_security_serializers_py → backend_security_serializers_py_meta (defines)
-- backend_security_serializers_py → backend_security_serializers_py_createsecuritylogserializer (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_create (defines)
-- backend_security_serializers_py_createsecuritylogserializer → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (defines)
-- backend_security_serializers_py_createsecuritylogserializer_create → backend_security_serializers_py_createsecuritylogserializer_get_client_ip (calls)
+- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
+- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
+- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
+- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
+- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
 

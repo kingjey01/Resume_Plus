@@ -1,23 +1,23 @@
-# Community 176: middleware
+# Community 176: test_simple_audio_upload
 
 **Members:** 7
 
 ## Nodes
 
-- **middleware** (`backend_users_middleware_py`, File, degree: 4)
-- **datetime** (`backend_users_middleware_py_import_datetime`, Module, degree: 1)
-- **django.utils.deprecation.MiddlewareMixin** (`backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin`, Module, degree: 1)
-- **logging** (`backend_users_middleware_py_import_logging`, Module, degree: 1)
-- **JWTAuthenticationMiddleware** (`backend_users_middleware_py_jwtauthenticationmiddleware`, Class, degree: 3)
-- **.process_request()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_request`, Method, degree: 1)
-- **.process_response()** (`backend_users_middleware_py_jwtauthenticationmiddleware_process_response`, Method, degree: 1)
+- **test_simple_audio_upload** (`backend_test_simple_audio_upload_py`, File, degree: 11)
+- **io** (`backend_test_simple_audio_upload_py_import_io`, Module, degree: 1)
+- **json** (`backend_test_simple_audio_upload_py_import_json`, Module, degree: 1)
+- **random** (`backend_test_simple_audio_upload_py_import_random`, Module, degree: 1)
+- **requests** (`backend_test_simple_audio_upload_py_import_requests`, Module, degree: 1)
+- **struct** (`backend_test_simple_audio_upload_py_import_struct`, Module, degree: 1)
+- **wave** (`backend_test_simple_audio_upload_py_import_wave`, Module, degree: 1)
 
 ## Relationships
 
-- backend_users_middleware_py → backend_users_middleware_py_import_logging (imports)
-- backend_users_middleware_py → backend_users_middleware_py_import_datetime (imports)
-- backend_users_middleware_py → backend_users_middleware_py_import_django_utils_deprecation_middlewaremixin (imports)
-- backend_users_middleware_py → backend_users_middleware_py_jwtauthenticationmiddleware (defines)
-- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_request (defines)
-- backend_users_middleware_py_jwtauthenticationmiddleware → backend_users_middleware_py_jwtauthenticationmiddleware_process_response (defines)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_requests (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_json (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_io (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_wave (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_struct (imports)
+- backend_test_simple_audio_upload_py → backend_test_simple_audio_upload_py_import_random (imports)
 

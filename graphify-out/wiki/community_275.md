@@ -1,17 +1,17 @@
-# Community 275: test_flutter_api
+# Community 275: simple_login_page
 
 **Members:** 4
 
 ## Nodes
 
-- **test_flutter_api** (`test_flutter_api_dart`, File, degree: 3)
-- **lib/services/api_service.dart** (`test_flutter_api_dart_import_lib_services_api_service_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`test_flutter_api_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **main()** (`test_flutter_api_dart_main`, Function, degree: 1)
+- **simple_login_page** (`lib_pages_simple_login_page_dart`, File, degree: 3)
+- **package:flutter/material.dart** (`lib_pages_simple_login_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
+- **_SimpleLoginPageState()** (`lib_pages_simple_login_page_dart_simpleloginpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- test_flutter_api_dart → test_flutter_api_dart_import_package_flutter_material_dart (imports)
-- test_flutter_api_dart → test_flutter_api_dart_import_lib_services_api_service_dart (imports)
-- test_flutter_api_dart → test_flutter_api_dart_main (defines)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
+- lib_pages_simple_login_page_dart → lib_pages_simple_login_page_dart_simpleloginpagestate (defines)
 

@@ -1,15 +1,15 @@
-# Community 310: utils
+# Community 310: about_screen
 
 **Members:** 3
 
 ## Nodes
 
-- **utils** (`windows_runner_utils_h`, File, degree: 2)
-- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
-- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
+- **about_screen** (`lib_features_settings_screens_about_screen_dart`, File, degree: 2)
+- **package:flutter/material.dart** (`lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
-- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
+- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_settings_screens_about_screen_dart → lib_features_settings_screens_about_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
 

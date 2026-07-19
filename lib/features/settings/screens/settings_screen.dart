@@ -13,6 +13,7 @@ import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/features/settings/screens/privacy_policy_screen.dart';
 import 'package:resume_plus_clean/features/settings/screens/terms_of_service_screen.dart';
 import 'package:resume_plus_clean/features/settings/screens/delete_account_screen.dart';
+import 'package:resume_plus_clean/features/settings/screens/about_screen.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -250,12 +251,6 @@ class SettingsScreen extends ConsumerWidget {
                     ),
                     child: ListTile(
                       contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-                      shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(16),
-                          bottomRight: Radius.circular(16),
-                        ),
-                      ),
                       leading: Container(
                         width: 40,
                         height: 40,
@@ -276,6 +271,46 @@ class SettingsScreen extends ConsumerWidget {
                         child: Icon(Icons.arrow_forward_ios_rounded, size: 14, color: theme.colorScheme.onSurface.withOpacity(0.5)),
                       ),
                       onTap: () => _showHelpDialog(context),
+                    ),
+                  ),
+                  const Divider(height: 1, indent: 0),
+                  Material(
+                    color: Colors.transparent,
+                    borderRadius: const BorderRadius.only(
+                      bottomLeft: Radius.circular(16),
+                      bottomRight: Radius.circular(16),
+                    ),
+                    child: ListTile(
+                      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(16),
+                          bottomRight: Radius.circular(16),
+                        ),
+                      ),
+                      leading: Container(
+                        width: 40,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.primaryContainer.withOpacity(0.1),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Icon(Icons.info_outline_rounded, color: theme.colorScheme.primary, size: 20),
+                      ),
+                      title: Text('À propos', style: theme.textTheme.titleSmall?.copyWith(fontWeight: FontWeight.w600, color: theme.colorScheme.onSurface)),
+                      subtitle: Text('Objectif, guide d\'utilisation', style: theme.textTheme.bodySmall?.copyWith(color: theme.colorScheme.onSurface.withOpacity(0.6))),
+                      trailing: Container(
+                        width: 30,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          color: theme.colorScheme.surface,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: Icon(Icons.arrow_forward_ios_rounded, size: 14, color: theme.colorScheme.onSurface.withOpacity(0.5)),
+                      ),
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute(builder: (_) => const AboutScreen()),
+                      ),
                     ),
                   ),
                 ],
@@ -375,18 +410,6 @@ class SettingsScreen extends ConsumerWidget {
             color: theme.colorScheme.onSurface,
           ),
         ),
-      ],
-    );
-  }
-
-  void _showAboutDialog(BuildContext context) {
-    showAboutDialog(
-      context: context,
-      applicationName: 'Résumé+',
-      applicationVersion: '1.0.0',
-      applicationIcon: const Icon(Icons.description, size: 48),
-      children: const [
-        Text('Application de gestion de résumés de cours avec système d\'abonnements.'),
       ],
     );
   }

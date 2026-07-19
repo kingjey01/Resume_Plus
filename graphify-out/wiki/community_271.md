@@ -1,17 +1,17 @@
-# Community 271: find_courses_endpoint
+# Community 271: 0003_userprofile_reset_code_and_more
 
 **Members:** 4
 
 ## Nodes
 
-- **find_courses_endpoint** (`backend_find_courses_endpoint_py`, File, degree: 3)
-- **find_courses_endpoint()** (`backend_find_courses_endpoint_py_find_courses_endpoint`, Function, degree: 1)
-- **json** (`backend_find_courses_endpoint_py_import_json`, Module, degree: 1)
-- **requests** (`backend_find_courses_endpoint_py_import_requests`, Module, degree: 1)
+- **0003_userprofile_reset_code_and_more** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py`, File, degree: 3)
+- **django.db.migrations** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_requests (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_import_json (imports)
-- backend_find_courses_endpoint_py → backend_find_courses_endpoint_py_find_courses_endpoint (defines)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0003_userprofile_reset_code_and_more_py → backend_users_migrations_0003_userprofile_reset_code_and_more_py_migration (defines)
 

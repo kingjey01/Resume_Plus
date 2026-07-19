@@ -1,15 +1,17 @@
-# Community 290: file_helper_stub
+# Community 290: 0008_add_session_processing_fields
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **file_helper_stub** (`lib_services_file_helper_stub_dart`, File, degree: 2)
-- **dart:typed_data** (`lib_services_file_helper_stub_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_stub_dart_readfilebytes`, Function, degree: 1)
+- **0008_add_session_processing_fields** (`backend_courses_migrations_0008_add_session_processing_fields_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0008_add_session_processing_fields_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_stub_dart → lib_services_file_helper_stub_dart_readfilebytes (defines)
+- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models (imports)
+- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_migration (defines)
 

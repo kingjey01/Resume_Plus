@@ -1,19 +1,19 @@
-# Community 248: test_api
+# Community 248: widget_test
 
 **Members:** 5
 
 ## Nodes
 
-- **test_api** (`backend_test_api_py`, File, degree: 4)
-- **json** (`backend_test_api_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_api_py_import_requests`, Module, degree: 1)
-- **test_abonnements_api()** (`backend_test_api_py_test_abonnements_api`, Function, degree: 1)
-- **test_services_api()** (`backend_test_api_py_test_services_api`, Function, degree: 1)
+- **widget_test** (`test_widget_test_dart`, File, degree: 4)
+- **package:flutter/material.dart** (`test_widget_test_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_test/flutter_test.dart** (`test_widget_test_dart_import_package_flutter_test_flutter_test_dart`, Module, degree: 1)
+- **package:resume_plus_clean/main.dart** (`test_widget_test_dart_import_package_resume_plus_clean_main_dart`, Module, degree: 1)
+- **main()** (`test_widget_test_dart_main`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_api_py → backend_test_api_py_import_requests (imports)
-- backend_test_api_py → backend_test_api_py_import_json (imports)
-- backend_test_api_py → backend_test_api_py_test_services_api (defines)
-- backend_test_api_py → backend_test_api_py_test_abonnements_api (defines)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_material_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_flutter_test_flutter_test_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_import_package_resume_plus_clean_main_dart (imports)
+- test_widget_test_dart → test_widget_test_dart_main (defines)
 

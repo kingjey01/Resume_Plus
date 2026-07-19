@@ -342,13 +342,15 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
               
               const SizedBox(height: 24),
               
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+              Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'Vous n\'avez pas reçu le code ? ',
+                    "Vous n'avez pas reçu le code ?",
                     style: TextStyle(color: AppTheme.textLight),
+                    textAlign: TextAlign.center,
                   ),
+                  const SizedBox(height: 4),
                   if (_canResend)
                     TextButton(
                       onPressed: () => _resendCode(),

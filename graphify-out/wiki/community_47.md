@@ -1,35 +1,35 @@
-# Community 47: ExerciseAdmin
+# Community 47: tests
 
 **Members:** 13
 
 ## Nodes
 
-- **ExerciseAdmin** (`backend_courses_admin_py_exerciseadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_exerciseadmin_get_queryset`, Method, degree: 2)
-- **ExerciseQuestionAdmin** (`backend_courses_admin_py_exercisequestionadmin`, Class, degree: 3)
-- **.get_queryset()** (`backend_courses_admin_py_exercisequestionadmin_get_queryset`, Method, degree: 2)
-- **.question_text_short()** (`backend_courses_admin_py_exercisequestionadmin_question_text_short`, Method, degree: 1)
-- **.get_queryset()** (`backend_courses_admin_py_professeuradmin_get_queryset`, Method, degree: 7)
-- **ProfesseurFilieresAdmin** (`backend_courses_admin_py_professeurfilieresadmin`, Class, degree: 5)
-- **.get_queryset()** (`backend_courses_admin_py_professeurfilieresadmin_get_queryset`, Method, degree: 2)
-- **.has_add_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_add_permission`, Method, degree: 1)
-- **.has_change_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_change_permission`, Method, degree: 1)
-- **.has_delete_permission()** (`backend_courses_admin_py_professeurfilieresadmin_has_delete_permission`, Method, degree: 1)
-- **SummaryAdmin** (`backend_courses_admin_py_summaryadmin`, Class, degree: 2)
-- **.get_queryset()** (`backend_courses_admin_py_summaryadmin_get_queryset`, Method, degree: 2)
+- **tests** (`backend_users_tests_py`, File, degree: 12)
+- **courses.models.Filiere** (`backend_users_tests_py_import_courses_models_filiere`, Module, degree: 1)
+- **courses.models.Promotion** (`backend_users_tests_py_import_courses_models_promotion`, Module, degree: 1)
+- **courses.models.Universite** (`backend_users_tests_py_import_courses_models_universite`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_users_tests_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **django.test.TestCase** (`backend_users_tests_py_import_django_test_testcase`, Module, degree: 1)
+- **django.urls.reverse** (`backend_users_tests_py_import_django_urls_reverse`, Module, degree: 1)
+- **.models.UserProfile** (`backend_users_tests_py_import_models_userprofile`, Module, degree: 1)
+- **rest_framework.status** (`backend_users_tests_py_import_rest_framework_status`, Module, degree: 1)
+- **rest_framework.test.APITestCase** (`backend_users_tests_py_import_rest_framework_test_apitestcase`, Module, degree: 1)
+- **UserProfileModelTest** (`backend_users_tests_py_userprofilemodeltest`, Class, degree: 3)
+- **.setUp()** (`backend_users_tests_py_userprofilemodeltest_setup`, Method, degree: 1)
+- **.test_user_profile_creation()** (`backend_users_tests_py_userprofilemodeltest_test_user_profile_creation`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_admin_py_summaryadmin → backend_courses_admin_py_summaryadmin_get_queryset (defines)
-- backend_courses_admin_py_exerciseadmin → backend_courses_admin_py_exerciseadmin_get_queryset (defines)
-- backend_courses_admin_py_exercisequestionadmin → backend_courses_admin_py_exercisequestionadmin_question_text_short (defines)
-- backend_courses_admin_py_exercisequestionadmin → backend_courses_admin_py_exercisequestionadmin_get_queryset (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_add_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_change_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_has_delete_permission (defines)
-- backend_courses_admin_py_professeurfilieresadmin → backend_courses_admin_py_professeurfilieresadmin_get_queryset (defines)
-- backend_courses_admin_py_summaryadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exerciseadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_exercisequestionadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
-- backend_courses_admin_py_professeurfilieresadmin_get_queryset → backend_courses_admin_py_professeuradmin_get_queryset (calls)
+- backend_users_tests_py → backend_users_tests_py_import_django_test_testcase (imports)
+- backend_users_tests_py → backend_users_tests_py_import_django_contrib_auth_models_user (imports)
+- backend_users_tests_py → backend_users_tests_py_import_django_urls_reverse (imports)
+- backend_users_tests_py → backend_users_tests_py_import_rest_framework_test_apitestcase (imports)
+- backend_users_tests_py → backend_users_tests_py_import_rest_framework_status (imports)
+- backend_users_tests_py → backend_users_tests_py_import_models_userprofile (imports)
+- backend_users_tests_py → backend_users_tests_py_import_courses_models_universite (imports)
+- backend_users_tests_py → backend_users_tests_py_import_courses_models_filiere (imports)
+- backend_users_tests_py → backend_users_tests_py_import_courses_models_promotion (imports)
+- backend_users_tests_py → backend_users_tests_py_userprofilemodeltest (defines)
+- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_setup (defines)
+- backend_users_tests_py_userprofilemodeltest → backend_users_tests_py_userprofilemodeltest_test_user_profile_creation (defines)
 

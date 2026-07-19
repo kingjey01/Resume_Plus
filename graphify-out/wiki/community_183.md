@@ -1,23 +1,21 @@
-# Community 183: test_encoding_fix
+# Community 183: 0016_filiere_promotions_m2m
 
 **Members:** 6
 
 ## Nodes
 
-- **test_encoding_fix** (`backend_test_encoding_fix_py`, File, degree: 5)
-- **json** (`backend_test_encoding_fix_py_import_json`, Module, degree: 1)
-- **requests** (`backend_test_encoding_fix_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_test_encoding_fix_py_main`, Function, degree: 3)
-- **test_summary_retrieval()** (`backend_test_encoding_fix_py_test_summary_retrieval`, Function, degree: 2)
-- **test_summary_with_special_chars()** (`backend_test_encoding_fix_py_test_summary_with_special_chars`, Function, degree: 2)
+- **0016_filiere_promotions_m2m** (`backend_courses_migrations_0016_filiere_promotions_m2m_py`, File, degree: 5)
+- **copy_auto_to_through()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through`, Function, degree: 1)
+- **copy_through_to_auto()** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto`, Function, degree: 1)
+- **django.db.migrations** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0016_filiere_promotions_m2m_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_requests (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_json (imports)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_with_special_chars (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_retrieval (defines)
-- backend_test_encoding_fix_py → backend_test_encoding_fix_py_main (defines)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_with_special_chars (calls)
-- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_retrieval (calls)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_import_django_db_models (imports)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_through_to_auto (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_copy_auto_to_through (defines)
+- backend_courses_migrations_0016_filiere_promotions_m2m_py → backend_courses_migrations_0016_filiere_promotions_m2m_py_migration (defines)
 

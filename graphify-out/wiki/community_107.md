@@ -1,27 +1,27 @@
-# Community 107: profile_section
+# Community 107: text_to_speech_service
 
 **Members:** 9
 
 ## Nodes
 
-- **profile_section** (`lib_features_settings_widgets_profile_section_dart`, File, degree: 8)
-- **package:flutter/material.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/providers/auth_provider.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/settings/screens/edit_profile_screen.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_ProfileSectionState()** (`lib_features_settings_widgets_profile_section_dart_profilesectionstate`, Function, degree: 1)
+- **text_to_speech_service** (`lib_services_text_to_speech_service_dart`, File, degree: 8)
+- **_audioService()** (`lib_services_text_to_speech_service_dart_audioservice`, Function, degree: 1)
+- **audio_service.dart** (`lib_services_text_to_speech_service_dart_import_audio_service_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **_instance()** (`lib_services_text_to_speech_service_dart_instance`, Function, degree: 1)
+- **_language()** (`lib_services_text_to_speech_service_dart_language`, Function, degree: 1)
+- **_pitch()** (`lib_services_text_to_speech_service_dart_pitch`, Function, degree: 1)
+- **_rate()** (`lib_services_text_to_speech_service_dart_rate`, Function, degree: 1)
+- **_volume()** (`lib_services_text_to_speech_service_dart_volume`, Function, degree: 1)
 
 ## Relationships
 
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_material_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_auth_providers_auth_provider_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_features_settings_screens_edit_profile_screen_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_settings_widgets_profile_section_dart → lib_features_settings_widgets_profile_section_dart_profilesectionstate (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_import_audio_service_dart (imports)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_instance (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_audioservice (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_rate (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_pitch (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_volume (defines)
+- lib_services_text_to_speech_service_dart → lib_services_text_to_speech_service_dart_language (defines)
 

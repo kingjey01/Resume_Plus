@@ -1,21 +1,21 @@
-# Community 201: SubscriptionNotificationTest
+# Community 201: create_professeur_screen
 
 **Members:** 6
 
 ## Nodes
 
-- **SubscriptionNotificationTest** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest`, Class, degree: 6)
-- **.setUp()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup`, Method, degree: 1)
-- **.test_multiple_subscriptions_notifications()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications`, Method, degree: 1)
-- **.test_subscription_expired_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification`, Method, degree: 1)
-- **.test_subscription_expiring_soon_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification`, Method, degree: 1)
-- **.test_subscription_paid_notification()** (`backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification`, Method, degree: 1)
+- **create_professeur_screen** (`lib_features_upload_screens_create_professeur_screen_dart`, File, degree: 5)
+- **_CreateProfesseurScreenState()** (`lib_features_upload_screens_create_professeur_screen_dart_createprofesseurscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_setup (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_paid_notification (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expiring_soon_notification (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_subscription_expired_notification (defines)
-- backend_notifications_test_payment_notifications_py_subscriptionnotificationtest → backend_notifications_test_payment_notifications_py_subscriptionnotificationtest_test_multiple_subscriptions_notifications (defines)
+- lib_features_upload_screens_create_professeur_screen_dart → lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_create_professeur_screen_dart → lib_features_upload_screens_create_professeur_screen_dart_import_package_flutter_services_dart (imports)
+- lib_features_upload_screens_create_professeur_screen_dart → lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_create_professeur_screen_dart → lib_features_upload_screens_create_professeur_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_create_professeur_screen_dart → lib_features_upload_screens_create_professeur_screen_dart_createprofesseurscreenstate (defines)
 

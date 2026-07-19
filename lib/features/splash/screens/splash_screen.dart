@@ -3,7 +3,9 @@ import 'package:resume_plus_clean/features/onboarding/onboarding_screen.dart';
 import 'package:resume_plus_clean/features/app/screens/main_navigation_screen.dart';
 import 'package:resume_plus_clean/features/auth/screens/phone_login_screen.dart';
 import 'package:resume_plus_clean/services/auto_login_service.dart';
+import 'package:resume_plus_clean/services/version_service.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
+import 'force_update_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -32,14 +34,57 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     await Future.delayed(const Duration(milliseconds: 2500));
     if (!mounted) return;
 
-    final startState = await AutoLoginService.determineStartState();
+    // ═══════════════════════════════════════════════════════════════
+    // ÉTAPE 1 : Vérification de la version de l'application
+    // ═══════════════════════════════════════════════════════════════
+    final versionResult = await VersionService().checkVersion();
+    print('🔄 VersionCheck: résultat = $versionResult');
+    if (!mounted) return;
 
+    switch (versionResult) {
+      case VersionCheckResult.maintenance:
+        // Mode maintenance → écran plein écran, pas de contournement
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const ForceUpdateScreen(maintenance: true),
+          ),
+        );
+        return; // ⛔ On stoppe ici, pas d'accès à l'app
+
+      case VersionCheckResult.mandatory:
+        // Mise à jour OBLIGATOIRE → écran plein écran avec bouton store
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const ForceUpdateScreen(maintenance: false),
+          ),
+        );
+        return; // ⛔ On stoppe ici
+
+      case VersionCheckResult.optional:
+        // Mise à jour SUGGÉRÉE → dialogue informatif, puis continuer
+        if (mounted) {
+          await _showOptionalUpdateDialog();
+          if (!mounted) return;
+        }
+        break; // On continue vers l'auth
+
+      case VersionCheckResult.upToDate:
+      case VersionCheckResult.error:
+        // À jour ou API inaccessible → continuer normalement
+        break;
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    // ÉTAPE 2 : Déterminer l'état de connexion (flux existant)
+    // ═══════════════════════════════════════════════════════════════
+    final startState = await AutoLoginService.determineStartState();
     if (!mounted) return;
 
     switch (startState) {
       case AppStartState.loggedIn:
       case AppStartState.sessionRestored:
-        // Token valide ou session restaurée → espace personnel directement
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (_) => MainNavigationScreen(key: MainNavigationScreen.navKey)),
@@ -47,7 +92,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         break;
 
       case AppStartState.deviceKnownNeedsAuth:
-        // Device connu mais session expirée → page de saisie numéro (pré-rempli)
         final phone = await AutoLoginService.getRegisteredPhone();
         if (mounted) {
           Navigator.pushReplacement(
@@ -60,13 +104,71 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
         break;
 
       case AppStartState.newDevice:
-        // Nouvel appareil → onboarding
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (_) => const OnboardingScreen()),
         );
         break;
     }
+  }
+
+  /// Affiche un dialogue informatif pour une mise à jour optionnelle.
+  Future<void> _showOptionalUpdateDialog() async {
+    final config = VersionService().config;
+    final latestVersion = config?.latestVersion ?? '';
+
+    if (!mounted) return;
+
+    await showDialog(
+      context: context,
+      barrierDismissible: false, // Ne pas fermer en cliquant à côté
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: Row(
+          children: [
+            Icon(Icons.system_update, color: AppTheme.primaryBlue),
+            const SizedBox(width: 10),
+            const Expanded(
+              child: Text(
+                'Nouvelle version disponible',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
+        ),
+        content: Text(
+          'Une nouvelle version de Résumé Plus est disponible sur le store.\n\n'
+          'Téléchargez-la pour profiter des dernières fonctionnalités.',
+          style: const TextStyle(fontSize: 15, height: 1.4),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(),
+            child: const Text(
+              'Plus tard',
+              style: TextStyle(fontSize: 15),
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(ctx).pop();
+              VersionService().openStore();
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppTheme.primaryBlue,
+              foregroundColor: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12),
+              ),
+            ),
+            child: Text(
+              'Mettre à jour  v$latestVersion',
+              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 
   @override

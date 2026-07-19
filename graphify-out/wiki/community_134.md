@@ -1,25 +1,37 @@
-# Community 134: settings_production_fixed
+# Community 134: flutter_window
 
 **Members:** 8
 
 ## Nodes
 
-- **settings_production_fixed** (`backend_settings_production_fixed_py`, File, degree: 7)
-- **datetime.timedelta** (`backend_settings_production_fixed_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_production_fixed_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_production_fixed_py_import_decouple_csv`, Module, degree: 1)
-- **logging** (`backend_settings_production_fixed_py_import_logging`, Module, degree: 1)
-- **os** (`backend_settings_production_fixed_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_production_fixed_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_production_fixed_py_import_pymysql`, Module, degree: 1)
+- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
+- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
+- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
+- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
+- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
+- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
+- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
+- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
 
 ## Relationships
 
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pathlib_path (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_datetime_timedelta (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_config (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_decouple_csv (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_os (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_pymysql (imports)
-- backend_settings_production_fixed_py → backend_settings_production_fixed_py_import_logging (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
+- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
+- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
+- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
 

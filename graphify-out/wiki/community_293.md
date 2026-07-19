@@ -1,15 +1,17 @@
-# Community 293: MainActivity
+# Community 293: test_summaries_response
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
-- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
-- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
+- **test_summaries_response** (`backend_test_summaries_response_py`, File, degree: 3)
+- **json** (`backend_test_summaries_response_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_summaries_response_py_import_requests`, Module, degree: 1)
+- **test_summaries_endpoint()** (`backend_test_summaries_response_py_test_summaries_endpoint`, Function, degree: 1)
 
 ## Relationships
 
-- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
-- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_import_requests (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_import_json (imports)
+- backend_test_summaries_response_py → backend_test_summaries_response_py_test_summaries_endpoint (defines)
 

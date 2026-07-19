@@ -1,15 +1,17 @@
-# Community 292: upload_screen
+# Community 292: audio_file_player_widget
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **upload_screen** (`lib_features_upload_screens_upload_screen_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart** (`lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart`, Module, degree: 1)
+- **audio_file_player_widget** (`lib_widgets_audio_file_player_widget_dart`, File, degree: 3)
+- **_AudioFilePlayerWidgetState()** (`lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/audio_file_player_service.dart** (`lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_upload_screens_upload_screen_dart → lib_features_upload_screens_upload_screen_dart_import_package_resume_plus_clean_features_upload_screens_upload_choice_screen_dart (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_package_flutter_material_dart (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_import_services_audio_file_player_service_dart (imports)
+- lib_widgets_audio_file_player_widget_dart → lib_widgets_audio_file_player_widget_dart_audiofileplayerwidgetstate (defines)
 

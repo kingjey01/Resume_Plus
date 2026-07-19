@@ -1,23 +1,23 @@
-# Community 150: test_exercise_generation
+# Community 150: check_production_data()
 
 **Members:** 7
 
 ## Nodes
 
-- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
-- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
-- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
-- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
-- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
-- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
+- **check_production_data()** (`backend_fix_production_encoding_py_check_production_data`, Function, degree: 2)
+- **check_production_database()** (`backend_fix_production_encoding_py_check_production_database`, Function, degree: 2)
+- **clean_production_invalid_data()** (`backend_fix_production_encoding_py_clean_production_invalid_data`, Function, degree: 2)
+- **fix_production_encoding()** (`backend_fix_production_encoding_py_fix_production_encoding`, Function, degree: 2)
+- **main()** (`backend_fix_production_encoding_py_main`, Function, degree: 7)
+- **set_production_connection_encoding()** (`backend_fix_production_encoding_py_set_production_connection_encoding`, Function, degree: 2)
+- **test_production_emoji_insertion()** (`backend_fix_production_encoding_py_test_production_emoji_insertion`, Function, degree: 2)
 
 ## Relationships
 
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
-- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_test_production_emoji_insertion (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_clean_production_invalid_data (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_database (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_set_production_connection_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_fix_production_encoding (calls)
+- backend_fix_production_encoding_py_main → backend_fix_production_encoding_py_check_production_data (calls)
 

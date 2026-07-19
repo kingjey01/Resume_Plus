@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_plus_clean/features/splash/screens/splash_screen.dart';
 import 'package:resume_plus_clean/features/app/screens/main_navigation_screen.dart';
 import 'package:resume_plus_clean/features/auth/screens/phone_login_screen.dart';
@@ -74,6 +75,16 @@ class MyApp extends ConsumerWidget {
       themeMode: themeMode,
       debugShowCheckedModeBanner: false,
       scaffoldMessengerKey: SnackbarService.scaffoldMessengerKey,
+      locale: const Locale('fr', 'FR'),
+      supportedLocales: const [
+        Locale('fr', 'FR'),
+        Locale('en', 'US'),
+      ],
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
       home: const SplashScreen(),
       routes: {
         '/login': (context) => const PhoneLoginScreen(),

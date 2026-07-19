@@ -1,25 +1,25 @@
-# Community 137: test_advanced_audio_functionality
+# Community 137: purchases_screen
 
 **Members:** 8
 
 ## Nodes
 
-- **test_advanced_audio_functionality** (`backend_test_advanced_audio_functionality_py`, File, degree: 12)
-- **create_comprehensive_test_report()** (`backend_test_advanced_audio_functionality_py_create_comprehensive_test_report`, Function, degree: 1)
-- **json** (`backend_test_advanced_audio_functionality_py_import_json`, Module, degree: 1)
-- **os** (`backend_test_advanced_audio_functionality_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_test_advanced_audio_functionality_py_import_pathlib_path`, Module, degree: 1)
-- **requests** (`backend_test_advanced_audio_functionality_py_import_requests`, Module, degree: 1)
-- **sys** (`backend_test_advanced_audio_functionality_py_import_sys`, Module, degree: 1)
-- **wave** (`backend_test_advanced_audio_functionality_py_import_wave`, Module, degree: 1)
+- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 7)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/tab_refresh_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_os (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_sys (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_requests (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_json (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_wave (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_import_pathlib_path (imports)
-- backend_test_advanced_audio_functionality_py → backend_test_advanced_audio_functionality_py_create_comprehensive_test_report (defines)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
 

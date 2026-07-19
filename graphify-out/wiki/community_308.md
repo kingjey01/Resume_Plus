@@ -1,15 +1,15 @@
-# Community 308: user
+# Community 308: wsgi
 
 **Members:** 3
 
 ## Nodes
 
-- **user** (`lib_models_user_dart`, File, degree: 2)
-- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
-- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
+- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
+- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
+- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_models_user_dart → lib_models_user_dart_groupe (defines)
-- lib_models_user_dart → lib_models_user_dart_id (defines)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
+- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
 

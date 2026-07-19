@@ -1,37 +1,25 @@
-# Community 114: flutter_window
+# Community 114: cp_onboarding_flow
 
 **Members:** 8
 
 ## Nodes
 
-- **flutter_window** (`windows_runner_flutter_window_cpp`, File, degree: 7)
-- **FlutterWindow()** (`windows_runner_flutter_window_cpp_flutterwindow`, Function, degree: 7)
-- **flutter/generated_plugin_registrant.h** (`windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h`, Module, degree: 1)
-- **flutter_window.h** (`windows_runner_flutter_window_cpp_import_flutter_window_h`, Module, degree: 1)
-- **optional** (`windows_runner_flutter_window_cpp_import_optional`, Module, degree: 1)
-- **MessageHandler()** (`windows_runner_flutter_window_cpp_messagehandler`, Function, degree: 7)
-- **OnCreate()** (`windows_runner_flutter_window_cpp_oncreate`, Function, degree: 7)
-- **OnDestroy()** (`windows_runner_flutter_window_cpp_ondestroy`, Function, degree: 7)
+- **cp_onboarding_flow** (`lib_features_onboarding_cp_onboarding_flow_dart`, File, degree: 6)
+- **_CPOnboardingFlowState()** (`lib_features_onboarding_cp_onboarding_flow_dart_cponboardingflowstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_WidgetExt** (`lib_features_onboarding_cp_onboarding_flow_dart_widgetext`, Class, degree: 2)
+- **.f()** (`lib_features_onboarding_cp_onboarding_flow_dart_widgetext_f`, Method, degree: 1)
 
 ## Relationships
 
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_window_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_optional (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_import_flutter_generated_plugin_registrant_h (imports)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_flutterwindow (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_oncreate (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_ondestroy (defines)
-- windows_runner_flutter_window_cpp → windows_runner_flutter_window_cpp_messagehandler (defines)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_flutterwindow → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_ondestroy (uses)
-- windows_runner_flutter_window_cpp_oncreate → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_ondestroy → windows_runner_flutter_window_cpp_messagehandler (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_flutterwindow (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_oncreate (uses)
-- windows_runner_flutter_window_cpp_messagehandler → windows_runner_flutter_window_cpp_ondestroy (uses)
+- lib_features_onboarding_cp_onboarding_flow_dart → lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_material_dart (imports)
+- lib_features_onboarding_cp_onboarding_flow_dart → lib_features_onboarding_cp_onboarding_flow_dart_import_package_flutter_services_dart (imports)
+- lib_features_onboarding_cp_onboarding_flow_dart → lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_onboarding_cp_onboarding_flow_dart → lib_features_onboarding_cp_onboarding_flow_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_onboarding_cp_onboarding_flow_dart → lib_features_onboarding_cp_onboarding_flow_dart_cponboardingflowstate (defines)
+- lib_features_onboarding_cp_onboarding_flow_dart → lib_features_onboarding_cp_onboarding_flow_dart_widgetext (defines)
+- lib_features_onboarding_cp_onboarding_flow_dart_widgetext → lib_features_onboarding_cp_onboarding_flow_dart_widgetext_f (defines)
 

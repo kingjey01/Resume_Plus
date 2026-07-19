@@ -1,19 +1,19 @@
-# Community 230: fix_user_university
+# Community 230: 0002_remove_userprofile_role_and_more
 
 **Members:** 5
 
 ## Nodes
 
-- **fix_user_university** (`backend_fix_user_university_py`, File, degree: 4)
-- **courses.models.Universite** (`backend_fix_user_university_py_import_courses_models_universite`, Module, degree: 1)
-- **django** (`backend_fix_user_university_py_import_django`, Module, degree: 1)
-- **django.contrib.auth.models.User** (`backend_fix_user_university_py_import_django_contrib_auth_models_user`, Module, degree: 1)
-- **os** (`backend_fix_user_university_py_import_os`, Module, degree: 1)
+- **0002_remove_userprofile_role_and_more** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py`, File, degree: 4)
+- **django.db.migrations** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion`, Module, degree: 1)
+- **Migration** (`backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_fix_user_university_py → backend_fix_user_university_py_import_os (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_django_contrib_auth_models_user (imports)
-- backend_fix_user_university_py → backend_fix_user_university_py_import_courses_models_universite (imports)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_migrations (imports)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models (imports)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_import_django_db_models_deletion (imports)
+- backend_users_migrations_0002_remove_userprofile_role_and_more_py → backend_users_migrations_0002_remove_userprofile_role_and_more_py_migration (defines)
 

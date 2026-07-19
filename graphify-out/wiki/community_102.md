@@ -1,27 +1,27 @@
-# Community 102: AbonnementCreateSerializer
+# Community 102: payment_status_screen
 
 **Members:** 9
 
 ## Nodes
 
-- **AbonnementCreateSerializer** (`backend_courses_serializers_py_abonnementcreateserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementcreateserializer_create`, Method, degree: 3)
-- **AbonnementSerializer** (`backend_courses_serializers_py_abonnementserializer`, Class, degree: 2)
-- **.create()** (`backend_courses_serializers_py_abonnementserializer_create`, Method, degree: 2)
-- **SummaryCreateSerializer** (`backend_courses_serializers_py_summarycreateserializer`, Class, degree: 5)
-- **.create()** (`backend_courses_serializers_py_summarycreateserializer_create`, Method, degree: 2)
-- **.validate_professeur()** (`backend_courses_serializers_py_summarycreateserializer_validate_professeur`, Method, degree: 1)
-- **.validate_texte_resume()** (`backend_courses_serializers_py_summarycreateserializer_validate_texte_resume`, Method, degree: 1)
-- **.validate_titre()** (`backend_courses_serializers_py_summarycreateserializer_validate_titre`, Method, degree: 1)
+- **payment_status_screen** (`lib_features_purchases_screens_payment_status_screen_dart`, File, degree: 8)
+- **dart:async** (`lib_features_purchases_screens_payment_status_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/purchase_badge_provider.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **_PaymentState** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstate`, Enum, degree: 1)
+- **_PaymentStatusScreenState()** (`lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_professeur (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_texte_resume (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_validate_titre (defines)
-- backend_courses_serializers_py_summarycreateserializer → backend_courses_serializers_py_summarycreateserializer_create (defines)
-- backend_courses_serializers_py_abonnementserializer → backend_courses_serializers_py_abonnementserializer_create (defines)
-- backend_courses_serializers_py_abonnementcreateserializer → backend_courses_serializers_py_abonnementcreateserializer_create (defines)
-- backend_courses_serializers_py_summarycreateserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
-- backend_courses_serializers_py_abonnementserializer_create → backend_courses_serializers_py_abonnementcreateserializer_create (calls)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_dart_async (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_import_package_resume_plus_clean_providers_purchase_badge_provider_dart (imports)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstatusscreenstate (defines)
+- lib_features_purchases_screens_payment_status_screen_dart → lib_features_purchases_screens_payment_status_screen_dart_paymentstate (defines)
 

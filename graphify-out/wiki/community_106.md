@@ -1,32 +1,37 @@
-# Community 106: simple_auth_test
+# Community 106: FeatureTestSuite
 
 **Members:** 9
 
 ## Nodes
 
-- **simple_auth_test** (`backend_simple_auth_test_py`, File, degree: 8)
-- **analyze_error_response()** (`backend_simple_auth_test_py_analyze_error_response`, Function, degree: 2)
-- **json** (`backend_simple_auth_test_py_import_json`, Module, degree: 1)
-- **requests** (`backend_simple_auth_test_py_import_requests`, Module, degree: 1)
-- **main()** (`backend_simple_auth_test_py_main`, Function, degree: 6)
-- **suggest_solutions()** (`backend_simple_auth_test_py_suggest_solutions`, Function, degree: 2)
-- **test_auth_endpoint_without_token()** (`backend_simple_auth_test_py_test_auth_endpoint_without_token`, Function, degree: 2)
-- **test_server_basic()** (`backend_simple_auth_test_py_test_server_basic`, Function, degree: 2)
-- **test_token_with_different_methods()** (`backend_simple_auth_test_py_test_token_with_different_methods`, Function, degree: 2)
+- **FeatureTestSuite** (`backend_test_new_features_py_featuretestsuite`, Class, degree: 9)
+- **.__init__()** (`backend_test_new_features_py_featuretestsuite_init`, Method, degree: 1)
+- **.log_test()** (`backend_test_new_features_py_featuretestsuite_log_test`, Method, degree: 6)
+- **.run_all_tests()** (`backend_test_new_features_py_featuretestsuite_run_all_tests`, Method, degree: 6)
+- **.test_exercise_generation()** (`backend_test_new_features_py_featuretestsuite_test_exercise_generation`, Method, degree: 3)
+- **.test_exercise_service()** (`backend_test_new_features_py_featuretestsuite_test_exercise_service`, Method, degree: 3)
+- **.test_otp_system()** (`backend_test_new_features_py_featuretestsuite_test_otp_system`, Method, degree: 3)
+- **.test_summary_validation()** (`backend_test_new_features_py_featuretestsuite_test_summary_validation`, Method, degree: 3)
+- **.test_user_permissions()** (`backend_test_new_features_py_featuretestsuite_test_user_permissions`, Method, degree: 3)
 
 ## Relationships
 
-- backend_simple_auth_test_py → backend_simple_auth_test_py_import_requests (imports)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_import_json (imports)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_test_server_basic (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_test_auth_endpoint_without_token (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_test_token_with_different_methods (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_analyze_error_response (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_suggest_solutions (defines)
-- backend_simple_auth_test_py → backend_simple_auth_test_py_main (defines)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_server_basic (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_analyze_error_response (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_auth_endpoint_without_token (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_test_token_with_different_methods (calls)
-- backend_simple_auth_test_py_main → backend_simple_auth_test_py_suggest_solutions (calls)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_init (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_log_test (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_otp_system (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_exercise_service (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_summary_validation (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_exercise_generation (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_test_user_permissions (defines)
+- backend_test_new_features_py_featuretestsuite → backend_test_new_features_py_featuretestsuite_run_all_tests (defines)
+- backend_test_new_features_py_featuretestsuite_test_otp_system → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_exercise_service → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_summary_validation → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_exercise_generation → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_test_user_permissions → backend_test_new_features_py_featuretestsuite_log_test (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_otp_system (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_exercise_service (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_summary_validation (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_user_permissions (calls)
+- backend_test_new_features_py_featuretestsuite_run_all_tests → backend_test_new_features_py_featuretestsuite_test_exercise_generation (calls)
 

@@ -1,23 +1,23 @@
-# Community 174: error_handler_mixin
+# Community 174: setup_exercise_service
 
 **Members:** 7
 
 ## Nodes
 
-- **error_handler_mixin** (`lib_mixins_error_handler_mixin_dart`, File, degree: 6)
-- **ErrorHandlerMixin** (`lib_mixins_error_handler_mixin_dart_errorhandlermixin`, Class, degree: 1)
-- **package:dio/dio.dart** (`lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:flutter/material.dart** (`lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/exceptions/api_exception.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/utils/logger.dart** (`lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart`, Module, degree: 1)
+- **setup_exercise_service** (`backend_setup_exercise_service_py`, File, degree: 6)
+- **courses.models.Service** (`backend_setup_exercise_service_py_import_courses_models_service`, Module, degree: 1)
+- **django** (`backend_setup_exercise_service_py_import_django`, Module, degree: 1)
+- **django.db.transaction** (`backend_setup_exercise_service_py_import_django_db_transaction`, Module, degree: 1)
+- **os** (`backend_setup_exercise_service_py_import_os`, Module, degree: 1)
+- **sys** (`backend_setup_exercise_service_py_import_sys`, Module, degree: 1)
+- **setup_exercise_service()** (`backend_setup_exercise_service_py_setup_exercise_service`, Function, degree: 1)
 
 ## Relationships
 
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_dio_dio_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_flutter_material_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_exceptions_api_exception_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_import_package_resume_plus_clean_utils_logger_dart (imports)
-- lib_mixins_error_handler_mixin_dart → lib_mixins_error_handler_mixin_dart_errorhandlermixin (defines)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_os (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_sys (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_courses_models_service (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_import_django_db_transaction (imports)
+- backend_setup_exercise_service_py → backend_setup_exercise_service_py_setup_exercise_service (defines)
 

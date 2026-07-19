@@ -1,15 +1,15 @@
-# Community 296: api_service copy
+# Community 296: test_seed_creation
 
 **Members:** 3
 
 ## Nodes
 
-- **api_service copy** (`lib_services_api_service_copy_dart`, File, degree: 2)
-- **package:dio/dio.dart** (`lib_services_api_service_copy_dart_import_package_dio_dio_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/storage_service.dart** (`lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart`, Module, degree: 1)
+- **test_seed_creation** (`backend_test_seed_creation_py`, File, degree: 2)
+- **pymysql** (`backend_test_seed_creation_py_import_pymysql`, Module, degree: 1)
+- **test_database_content()** (`backend_test_seed_creation_py_test_database_content`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_dio_dio_dart (imports)
-- lib_services_api_service_copy_dart → lib_services_api_service_copy_dart_import_package_resume_plus_clean_services_storage_service_dart (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_import_pymysql (imports)
+- backend_test_seed_creation_py → backend_test_seed_creation_py_test_database_content (defines)
 

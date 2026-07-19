@@ -2,7 +2,7 @@ name: resume_plus_clean
 description: "Une application pour résumer des cours - Version propre."
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.0.2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -10,13 +10,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   # State Management
   flutter_riverpod: ^2.6.1
   # Networking
   dio: ^5.4.0
 
   # Storage
-  shared_preferences: ^2.5.3
+  shared_preferences: ^2.5.3  
 
   # UI & UX
   lottie: ^3.1.2
@@ -34,7 +36,7 @@ dependencies:
   file_picker: ^8.0.0
 
   # Text-to-Speech pour la lecture des résumés
-  flutter_tts: ^4.0.2
+  flutter_tts: ^4.2.0
 
   # Routing
   go_router: ^16.1.0
@@ -54,6 +56,9 @@ dependencies:
   
   # URL Launcher
   url_launcher: ^6.2.5
+
+  # Package Info (version installée)
+  package_info_plus: ^8.1.0
 
   # Firebase
   firebase_core: ^3.8.0
@@ -87,6 +92,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/
     - assets/animations/
     - assets/images/
 

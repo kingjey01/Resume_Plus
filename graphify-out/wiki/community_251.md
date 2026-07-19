@@ -1,19 +1,19 @@
-# Community 251: urls
+# Community 251: audio_playback_test_page
 
 **Members:** 5
 
 ## Nodes
 
-- **urls** (`backend_courses_urls_py`, File, degree: 4)
-- **django.urls.include** (`backend_courses_urls_py_import_django_urls_include`, Module, degree: 1)
-- **django.urls.path** (`backend_courses_urls_py_import_django_urls_path`, Module, degree: 1)
-- **rest_framework.routers.DefaultRouter** (`backend_courses_urls_py_import_rest_framework_routers_defaultrouter`, Module, degree: 1)
-- **..views** (`backend_courses_urls_py_import_views`, Module, degree: 1)
+- **audio_playback_test_page** (`lib_pages_audio_playback_test_page_dart`, File, degree: 4)
+- **_AudioPlaybackTestPageState()** (`lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/api_service.dart** (`lib_pages_audio_playback_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../widgets/audio_file_player_widget.dart** (`lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_path (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_django_urls_include (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_rest_framework_routers_defaultrouter (imports)
-- backend_courses_urls_py → backend_courses_urls_py_import_views (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_widgets_audio_file_player_widget_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_import_services_api_service_dart (imports)
+- lib_pages_audio_playback_test_page_dart → lib_pages_audio_playback_test_page_dart_audioplaybacktestpagestate (defines)
 

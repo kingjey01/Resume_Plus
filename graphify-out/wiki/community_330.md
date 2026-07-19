@@ -1,13 +1,13 @@
-# Community 330: professeur
+# Community 330: flutter_usage_example
 
 **Members:** 2
 
 ## Nodes
 
-- **professeur** (`lib_models_professeur_dart`, File, degree: 1)
-- **id()** (`lib_models_professeur_dart_id`, Function, degree: 1)
+- **flutter_usage_example** (`backend_flutter_usage_example_dart`, File, degree: 1)
+- **testAuthentication()** (`backend_flutter_usage_example_dart_testauthentication`, Function, degree: 1)
 
 ## Relationships
 
-- lib_models_professeur_dart → lib_models_professeur_dart_id (defines)
+- backend_flutter_usage_example_dart → backend_flutter_usage_example_dart_testauthentication (defines)
 

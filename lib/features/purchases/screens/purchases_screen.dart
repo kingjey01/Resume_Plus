@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart';
+import 'package:resume_plus_clean/providers/tab_refresh_provider.dart';
 import 'package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 
@@ -32,6 +33,13 @@ class _PurchasesScreenState extends ConsumerState<PurchasesScreen>
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final topPadding = MediaQuery.of(context).padding.top;
+
+    // Rafraîchir les données à chaque fois qu'on arrive sur l'onglet Achats
+    ref.listen<int>(purchasesRefreshProvider, (prev, next) {
+      if (prev != next) {
+        ref.invalidate(purchasedSummariesProvider);
+      }
+    });
 
     return Scaffold(
       backgroundColor: Theme.of(context).scaffoldBackgroundColor,

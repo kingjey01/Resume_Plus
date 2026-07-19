@@ -1,23 +1,23 @@
-# Community 152: storage_service
+# Community 152: recording_page
 
 **Members:** 7
 
 ## Nodes
 
-- **storage_service** (`lib_services_storage_service_dart`, File, degree: 6)
-- **accessToken()** (`lib_services_storage_service_dart_accesstoken`, Function, degree: 1)
-- **deleteTokens()** (`lib_services_storage_service_dart_deletetokens`, Function, degree: 1)
-- **dart:convert** (`lib_services_storage_service_dart_import_dart_convert`, Module, degree: 1)
-- **package:flutter/foundation.dart** (`lib_services_storage_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
-- **package:flutter_secure_storage/flutter_secure_storage.dart** (`lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart`, Module, degree: 1)
-- **package:shared_preferences/shared_preferences.dart** (`lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart`, Module, degree: 1)
+- **recording_page** (`lib_pages_recording_page_dart`, File, degree: 6)
+- **../features/upload/screens/record_audio_screen.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart`, Module, degree: 1)
+- **../features/upload/screens/record_audio_screen_web_safe.dart** (`lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_recording_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_recording_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **_RecordingPageState()** (`lib_pages_recording_page_dart_recordingpagestate`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_foundation_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_flutter_secure_storage_flutter_secure_storage_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_package_shared_preferences_shared_preferences_dart (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_import_dart_convert (imports)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_accesstoken (defines)
-- lib_services_storage_service_dart → lib_services_storage_service_dart_deletetokens (defines)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_import_features_upload_screens_record_audio_screen_web_safe_dart (imports)
+- lib_pages_recording_page_dart → lib_pages_recording_page_dart_recordingpagestate (defines)
 

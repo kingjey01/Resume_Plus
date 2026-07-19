@@ -1,25 +1,25 @@
-# Community 129: splash_screen
+# Community 129: audio_test_page
 
 **Members:** 8
 
 ## Nodes
 
-- **splash_screen** (`lib_features_splash_screens_splash_screen_dart`, File, degree: 7)
-- **package:flutter/material.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/app/screens/main_navigation_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/screens/phone_login_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/onboarding/onboarding_screen.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/auto_login_service.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_SplashScreenState()** (`lib_features_splash_screens_splash_screen_dart_splashscreenstate`, Function, degree: 1)
+- **audio_test_page** (`lib_pages_audio_test_page_dart`, File, degree: 7)
+- **_AudioTestPageState()** (`lib_pages_audio_test_page_dart_audiotestpagestate`, Function, degree: 1)
+- **dart:html'** (`lib_pages_audio_test_page_dart_import_dart_html`, Module, degree: 1)
+- **dart:typed_data** (`lib_pages_audio_test_page_dart_import_dart_typed_data`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_pages_audio_test_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **../services/api_service.dart** (`lib_pages_audio_test_page_dart_import_services_api_service_dart`, Module, degree: 1)
+- **../services/web_audio_recorder.dart** (`lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_onboarding_onboarding_screen_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_app_screens_main_navigation_screen_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_features_auth_screens_phone_login_screen_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_services_auto_login_service_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_splash_screens_splash_screen_dart → lib_features_splash_screens_splash_screen_dart_splashscreenstate (defines)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_foundation_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_package_flutter_material_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_typed_data (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_dart_html (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_web_audio_recorder_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_import_services_api_service_dart (imports)
+- lib_pages_audio_test_page_dart → lib_pages_audio_test_page_dart_audiotestpagestate (defines)
 

@@ -3,7 +3,7 @@
 - **ID:** `backend_courses_admin_py_professeurfilieresadmin`
 - **Type:** Class
 - **File:** `.\backend\courses\admin.py`
-- **Location:** L126
+- **Location:** L120
 
 ## Relationships
 

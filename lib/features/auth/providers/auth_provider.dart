@@ -43,6 +43,9 @@ final currentUserProvider = Provider<User?>((ref) {
   return authState.value;
 });
 
+/// Compteur incrémenté à chaque login pour forcer le rafraîchissement des données
+final userSessionVersionProvider = StateProvider<int>((ref) => 0);
+
 class AuthNotifier extends StateNotifier<AsyncValue<User?>> {
   final AuthRepository _authRepository;
   final StorageService _storageService;
@@ -102,6 +105,8 @@ class AuthNotifier extends StateNotifier<AsyncValue<User?>> {
       // Appel au repository pour la connexion
       final user = await _authRepository.login(username, password);
       
+      // Nettoyer le cache API de l'ancien utilisateur
+      _apiService.clearSession();
       // Mettre à jour l'état avec l'utilisateur connecté
       state = AsyncValue.data(user);
       // Enregistrer le token FCM maintenant que l'utilisateur est authentifié

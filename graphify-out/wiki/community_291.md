@@ -1,15 +1,17 @@
-# Community 291: 0015_merge_20260523_2104
+# Community 291: apps
 
-**Members:** 3
+**Members:** 4
 
 ## Nodes
 
-- **0015_merge_20260523_2104** (`backend_courses_migrations_0015_merge_20260523_2104_py`, File, degree: 2)
-- **django.db.migrations** (`backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0015_merge_20260523_2104_py_migration`, Class, degree: 1)
+- **apps** (`backend_payments_apps_py`, File, degree: 2)
+- **django.apps.AppConfig** (`backend_payments_apps_py_import_django_apps_appconfig`, Module, degree: 1)
+- **PaymentsConfig** (`backend_payments_apps_py_paymentsconfig`, Class, degree: 2)
+- **.ready()** (`backend_payments_apps_py_paymentsconfig_ready`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0015_merge_20260523_2104_py → backend_courses_migrations_0015_merge_20260523_2104_py_migration (defines)
+- backend_payments_apps_py → backend_payments_apps_py_import_django_apps_appconfig (imports)
+- backend_payments_apps_py → backend_payments_apps_py_paymentsconfig (defines)
+- backend_payments_apps_py_paymentsconfig → backend_payments_apps_py_paymentsconfig_ready (defines)
 

@@ -1,17 +1,17 @@
-# Community 276: admin
+# Community 276: 0020_add_difficulty_to_exercise
 
 **Members:** 4
 
 ## Nodes
 
-- **admin** (`backend_security_admin_py`, File, degree: 3)
-- **django.contrib.admin** (`backend_security_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.SecurityLog** (`backend_security_admin_py_import_models_securitylog`, Module, degree: 1)
-- **SecurityLogAdmin** (`backend_security_admin_py_securitylogadmin`, Class, degree: 1)
+- **0020_add_difficulty_to_exercise** (`backend_courses_migrations_0020_add_difficulty_to_exercise_py`, File, degree: 3)
+- **django.db.migrations** (`backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_models`, Module, degree: 1)
+- **Migration** (`backend_courses_migrations_0020_add_difficulty_to_exercise_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_security_admin_py → backend_security_admin_py_import_django_contrib_admin (imports)
-- backend_security_admin_py → backend_security_admin_py_import_models_securitylog (imports)
-- backend_security_admin_py → backend_security_admin_py_securitylogadmin (defines)
+- backend_courses_migrations_0020_add_difficulty_to_exercise_py → backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_migrations (imports)
+- backend_courses_migrations_0020_add_difficulty_to_exercise_py → backend_courses_migrations_0020_add_difficulty_to_exercise_py_import_django_db_models (imports)
+- backend_courses_migrations_0020_add_difficulty_to_exercise_py → backend_courses_migrations_0020_add_difficulty_to_exercise_py_migration (defines)
 

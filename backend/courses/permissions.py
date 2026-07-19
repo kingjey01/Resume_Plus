@@ -144,29 +144,29 @@ class HasUniversityAccess(permissions.BasePermission):
         """Vérification au niveau de l'objet"""
         if not request.user.is_authenticated:
             return False
-            
+
         if not hasattr(request.user, 'profile'):
             return False
-        
+
         profile = request.user.profile
-        
+
         # Pour les objets Course
-        if hasattr(obj, 'universite_fk') and hasattr(obj, 'promotion_fk') and hasattr(obj, 'filiere_fk'):
+        if hasattr(obj, 'universites') and hasattr(obj, 'filieres') and hasattr(obj, 'promotions'):
             return (
-                obj.universite_fk_id == profile.universite_id and
-                obj.promotion_fk_id == profile.promotion_id and
-                obj.filiere_fk_id == profile.filiere_id
+                obj.universites.filter(id=profile.universite_id).exists() and
+                obj.promotions.filter(id=profile.promotion_id).exists() and
+                obj.filieres.filter(id=profile.filiere_id).exists()
             )
-        
+
         # Pour les objets Summary ou Session (via course)
         if hasattr(obj, 'course'):
             course = obj.course
             return (
-                course.universite_fk_id == profile.universite_id and
-                course.promotion_fk_id == profile.promotion_id and
-                course.filiere_fk_id == profile.filiere_id
+                course.universites.filter(id=profile.universite_id).exists() and
+                course.promotions.filter(id=profile.promotion_id).exists() and
+                course.filieres.filter(id=profile.filiere_id).exists()
             )
-            
+
         return False
 
 
@@ -215,7 +215,7 @@ class HasActiveSubscription(permissions.BasePermission):
         from django.utils import timezone
 
         now = timezone.now()
-        exercise_service = Service.objects.filter(nom__icontains="exercice", is_active=True).first()
+        exercise_service = Service.objects.filter(nom__icontains="qcm", is_active=True).first()
         if not exercise_service:
             return False
 

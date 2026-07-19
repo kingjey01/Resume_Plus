@@ -1,17 +1,17 @@
-# Community 287: simple_data_page
+# Community 287: check_user_profile
 
 **Members:** 4
 
 ## Nodes
 
-- **simple_data_page** (`lib_pages_simple_data_page_dart`, File, degree: 3)
-- **package:flutter/material.dart** (`lib_pages_simple_data_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/simple_login_service.dart** (`lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart`, Module, degree: 1)
-- **_SimpleDataPageState()** (`lib_pages_simple_data_page_dart_simpledatapagestate`, Function, degree: 1)
+- **check_user_profile** (`backend_check_user_profile_py`, File, degree: 3)
+- **django** (`backend_check_user_profile_py_import_django`, Module, degree: 1)
+- **django.contrib.auth.models.User** (`backend_check_user_profile_py_import_django_contrib_auth_models_user`, Module, degree: 1)
+- **os** (`backend_check_user_profile_py_import_os`, Module, degree: 1)
 
 ## Relationships
 
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_flutter_material_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_import_package_resume_plus_clean_services_simple_login_service_dart (imports)
-- lib_pages_simple_data_page_dart → lib_pages_simple_data_page_dart_simpledatapagestate (defines)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_os (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django (imports)
+- backend_check_user_profile_py → backend_check_user_profile_py_import_django_contrib_auth_models_user (imports)
 

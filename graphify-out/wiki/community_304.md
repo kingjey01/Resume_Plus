@@ -1,15 +1,15 @@
-# Community 304: auth_providers
+# Community 304: MainActivity
 
 **Members:** 3
 
 ## Nodes
 
-- **auth_providers** (`lib_features_auth_providers_auth_providers_dart`, File, degree: 2)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/auth/repositories/auth_repository.dart** (`lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart`, Module, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt`, File, degree: 2)
+- **io.flutter.embedding.android.FlutterActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity`, Package, degree: 1)
+- **MainActivity** (`android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity`, Class, degree: 1)
 
 ## Relationships
 
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_auth_providers_auth_providers_dart → lib_features_auth_providers_auth_providers_dart_import_package_resume_plus_clean_features_auth_repositories_auth_repository_dart (imports)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_mainactivity (defines)
+- android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt → android_app_src_main_kotlin_com_resumeplus_jeycode_mainactivity_kt_import_io_flutter_embedding_android_flutteractivity (imports)
 

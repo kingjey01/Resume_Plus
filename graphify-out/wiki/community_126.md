@@ -1,25 +1,25 @@
-# Community 126: admin
+# Community 126: generated_plugin_registrant
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_notifications_admin_py`, File, degree: 7)
-- **AppNotificationAdmin** (`backend_notifications_admin_py_appnotificationadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_notifications_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.AppNotification** (`backend_notifications_admin_py_import_models_appnotification`, Module, degree: 1)
-- **.models.UserDevice** (`backend_notifications_admin_py_import_models_userdevice`, Module, degree: 1)
-- **.models.UserNotification** (`backend_notifications_admin_py_import_models_usernotification`, Module, degree: 1)
-- **UserDeviceAdmin** (`backend_notifications_admin_py_userdeviceadmin`, Class, degree: 1)
-- **UserNotificationAdmin** (`backend_notifications_admin_py_usernotificationadmin`, Class, degree: 1)
+- **generated_plugin_registrant** (`linux_flutter_generated_plugin_registrant_cc`, File, degree: 7)
+- **fl_register_plugins()** (`linux_flutter_generated_plugin_registrant_cc_fl_register_plugins`, Function, degree: 1)
+- **audioplayers_linux/audioplayers_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h`, Module, degree: 1)
+- **file_selector_linux/file_selector_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h`, Module, degree: 1)
+- **flutter_secure_storage_linux/flutter_secure_storage_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h`, Module, degree: 1)
+- **generated_plugin_registrant.h** (`linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h`, Module, degree: 1)
+- **record_linux/record_linux_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h`, Module, degree: 1)
+- **url_launcher_linux/url_launcher_plugin.h** (`linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_admin_py → backend_notifications_admin_py_import_django_contrib_admin (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_userdevice (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_appnotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_import_models_usernotification (imports)
-- backend_notifications_admin_py → backend_notifications_admin_py_userdeviceadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_appnotificationadmin (defines)
-- backend_notifications_admin_py → backend_notifications_admin_py_usernotificationadmin (defines)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_generated_plugin_registrant_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_audioplayers_linux_audioplayers_linux_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_file_selector_linux_file_selector_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_flutter_secure_storage_linux_flutter_secure_storage_linux_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_record_linux_record_linux_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_import_url_launcher_linux_url_launcher_plugin_h (imports)
+- linux_flutter_generated_plugin_registrant_cc → linux_flutter_generated_plugin_registrant_cc_fl_register_plugins (defines)
 

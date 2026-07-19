@@ -1,19 +1,19 @@
-# Community 216: UniversiteFiliereTest
+# Community 216: otp_service
 
 **Members:** 5
 
 ## Nodes
 
-- **UniversiteFiliereTest** (`backend_courses_tests_py_universitefilieretest`, Class, degree: 5)
-- **.setUp()** (`backend_courses_tests_py_universitefilieretest_setup`, Method, degree: 1)
-- **.setUpTestData()** (`backend_courses_tests_py_universitefilieretest_setuptestdata`, Method, degree: 1)
-- **.test_relation_universite_filiere()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere`, Method, degree: 1)
-- **.test_relation_universite_filiere_creation()** (`backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation`, Method, degree: 1)
+- **otp_service** (`lib_services_otp_service_dart`, File, degree: 4)
+- **ApiService()** (`lib_services_otp_service_dart_apiservice`, Function, degree: 1)
+- **package:dio/dio.dart** (`lib_services_otp_service_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/foundation.dart** (`lib_services_otp_service_dart_import_package_flutter_foundation_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setup (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere_creation (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_setuptestdata (defines)
-- backend_courses_tests_py_universitefilieretest → backend_courses_tests_py_universitefilieretest_test_relation_universite_filiere (defines)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_dio_dio_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_flutter_foundation_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_services_otp_service_dart → lib_services_otp_service_dart_apiservice (defines)
 

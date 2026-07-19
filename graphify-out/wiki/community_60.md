@@ -1,31 +1,33 @@
-# Community 60: UserProfile
+# Community 60: validation_screen
 
-**Members:** 11
+**Members:** 12
 
 ## Nodes
 
-- **UserProfile** (`backend_users_models_py_userprofile`, Class, degree: 11)
-- **.can_create_summary()** (`backend_users_models_py_userprofile_can_create_summary`, Method, degree: 1)
-- **.generate_otp()** (`backend_users_models_py_userprofile_generate_otp`, Method, degree: 1)
-- **.has_active_subscription()** (`backend_users_models_py_userprofile_has_active_subscription`, Method, degree: 1)
-- **.has_free_access()** (`backend_users_models_py_userprofile_has_free_access`, Method, degree: 1)
-- **.is_admin()** (`backend_users_models_py_userprofile_is_admin`, Method, degree: 1)
-- **.is_cp()** (`backend_users_models_py_userprofile_is_cp`, Method, degree: 1)
-- **.is_etudiant()** (`backend_users_models_py_userprofile_is_etudiant`, Method, degree: 1)
-- **.reset_otp()** (`backend_users_models_py_userprofile_reset_otp`, Method, degree: 1)
-- **.__str__()** (`backend_users_models_py_userprofile_str`, Method, degree: 1)
-- **.verify_otp()** (`backend_users_models_py_userprofile_verify_otp`, Method, degree: 1)
+- **validation_screen** (`lib_features_validation_screens_validation_screen_dart`, File, degree: 11)
+- **dart:async** (`lib_features_validation_screens_validation_screen_dart_import_dart_async`, Module, degree: 1)
+- **package:dio/dio.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart`, Module, degree: 1)
+- **package:flutter/material.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/validation/screens/edit_summary_screen.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/mixins/error_handler_mixin.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart`, Module, degree: 1)
+- **package:resume_plus_clean/providers/tab_refresh_provider.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **package:resume_plus_clean/widgets/api_error_view.dart** (`lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart`, Module, degree: 1)
+- **_ValidationScreenState()** (`lib_features_validation_screens_validation_screen_dart_validationscreenstate`, Function, degree: 1)
 
 ## Relationships
 
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_str (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_cp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_admin (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_is_etudiant (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_can_create_summary (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_free_access (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_generate_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_verify_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_reset_otp (defines)
-- backend_users_models_py_userprofile → backend_users_models_py_userprofile_has_active_subscription (defines)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_dart_async (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_dio_dio_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_providers_tab_refresh_provider_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_features_validation_screens_edit_summary_screen_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_widgets_api_error_view_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_import_package_resume_plus_clean_mixins_error_handler_mixin_dart (imports)
+- lib_features_validation_screens_validation_screen_dart → lib_features_validation_screens_validation_screen_dart_validationscreenstate (defines)
 

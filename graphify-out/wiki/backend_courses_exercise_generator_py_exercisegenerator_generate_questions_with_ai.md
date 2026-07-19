@@ -3,7 +3,7 @@
 - **ID:** `backend_courses_exercise_generator_py_exercisegenerator_generate_questions_with_ai`
 - **Type:** Method
 - **File:** `.\backend\courses\exercise_generator.py`
-- **Location:** L78
+- **Location:** L80
 
 ## Relationships
 

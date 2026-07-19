@@ -1,21 +1,21 @@
-# Community 182: settings_corrected
+# Community 182: associate_prof_cours_screen
 
 **Members:** 6
 
 ## Nodes
 
-- **settings_corrected** (`backend_settings_corrected_py`, File, degree: 5)
-- **datetime.timedelta** (`backend_settings_corrected_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_corrected_py_import_decouple_config`, Module, degree: 1)
-- **os** (`backend_settings_corrected_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_corrected_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_corrected_py_import_pymysql`, Module, degree: 1)
+- **associate_prof_cours_screen** (`lib_features_upload_screens_associate_prof_cours_screen_dart`, File, degree: 5)
+- **_AssociateProfCoursScreenState()** (`lib_features_upload_screens_associate_prof_cours_screen_dart_associateprofcoursscreenstate`, Function, degree: 1)
+- **package:flutter/material.dart** (`lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter/services.dart** (`lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_services_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pathlib_path (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_datetime_timedelta (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_decouple_config (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_os (imports)
-- backend_settings_corrected_py → backend_settings_corrected_py_import_pymysql (imports)
+- lib_features_upload_screens_associate_prof_cours_screen_dart → lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_material_dart (imports)
+- lib_features_upload_screens_associate_prof_cours_screen_dart → lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_flutter_services_dart (imports)
+- lib_features_upload_screens_associate_prof_cours_screen_dart → lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_upload_screens_associate_prof_cours_screen_dart → lib_features_upload_screens_associate_prof_cours_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- lib_features_upload_screens_associate_prof_cours_screen_dart → lib_features_upload_screens_associate_prof_cours_screen_dart_associateprofcoursscreenstate (defines)
 

@@ -47,7 +47,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               alignment: Alignment.topRight,
               child: TextButton(
                 onPressed: _skipOnboarding,
-                child: const Text('Passer', style: TextStyle(color: AppTheme.textLight, fontWeight: FontWeight.w600, fontSize: 14)),
+                child: Text('Passer', style: TextStyle(color: Theme.of(context).colorScheme.onSurface.withOpacity(0.5), fontWeight: FontWeight.w600, fontSize: 14)),
               ),
             ),
           ),
@@ -150,7 +150,8 @@ class OnboardingPageContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    
+    final cs = theme.colorScheme;
+
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 20),
@@ -176,7 +177,7 @@ class OnboardingPageContent extends StatelessWidget {
               data['title']!,
               style: theme.textTheme.headlineSmall?.copyWith(
                 fontWeight: FontWeight.w700,
-                color: AppTheme.textPrimary,
+                color: cs.onSurface, // ← s'adapte au mode clair/sombre
               ),
               textAlign: TextAlign.center,
             ),
@@ -184,7 +185,11 @@ class OnboardingPageContent extends StatelessWidget {
             Text(
               data['description']!,
               textAlign: TextAlign.center,
-              style: const TextStyle(fontSize: 15, color: AppTheme.textSecondary, height: 1.5),
+              style: TextStyle(
+                fontSize: 15,
+                color: cs.onSurface.withOpacity(0.7), // ← s'adapte au mode clair/sombre
+                height: 1.5,
+              ),
             ),
           ],
         ),

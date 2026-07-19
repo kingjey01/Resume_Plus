@@ -1,23 +1,23 @@
-# Community 159: purchases_screen
+# Community 159: filiere_promotion
 
 **Members:** 7
 
 ## Nodes
 
-- **purchases_screen** (`lib_features_purchases_screens_purchases_screen_dart`, File, degree: 6)
-- **package:flutter/material.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summaries/widgets/purchased_summary_card.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
-- **_PurchasesScreenState()** (`lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate`, Function, degree: 1)
+- **filiere_promotion** (`lib_models_filiere_promotion_dart`, File, degree: 6)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere.dart** (`lib_models_filiere_promotion_dart_import_filiere_dart`, Module, degree: 1)
+- **filiere_promotion.g.dart** (`lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart`, Module, degree: 1)
+- **package:json_annotation/json_annotation.dart** (`lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart`, Module, degree: 1)
+- **promotion.dart** (`lib_models_filiere_promotion_dart_import_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_providers_purchased_summaries_provider_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_features_summaries_widgets_purchased_summary_card_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_purchases_screens_purchases_screen_dart → lib_features_purchases_screens_purchases_screen_dart_purchasesscreenstate (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_package_json_annotation_json_annotation_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_promotion_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_import_filiere_promotion_g_dart (imports)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_dart → lib_models_filiere_promotion_dart_filierepromotiontojson (defines)
 

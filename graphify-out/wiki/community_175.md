@@ -1,28 +1,23 @@
-# Community 175: Command
+# Community 175: SubscriptionExpirationTest
 
 **Members:** 7
 
 ## Nodes
 
-- **Command** (`backend_courses_management_commands_seeddata_py_command`, Class, degree: 7)
-- **.create_courses()** (`backend_courses_management_commands_seeddata_py_command_create_courses`, Method, degree: 2)
-- **.create_purchases()** (`backend_courses_management_commands_seeddata_py_command_create_purchases`, Method, degree: 2)
-- **.create_sessions()** (`backend_courses_management_commands_seeddata_py_command_create_sessions`, Method, degree: 2)
-- **.create_summaries()** (`backend_courses_management_commands_seeddata_py_command_create_summaries`, Method, degree: 2)
-- **.create_users()** (`backend_courses_management_commands_seeddata_py_command_create_users`, Method, degree: 2)
-- **.handle()** (`backend_courses_management_commands_seeddata_py_command_handle`, Method, degree: 6)
+- **SubscriptionExpirationTest** (`backend_users_tests_py_subscriptionexpirationtest`, Class, degree: 7)
+- **.setUp()** (`backend_users_tests_py_subscriptionexpirationtest_setup`, Method, degree: 1)
+- **.test_active_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_active_subscription`, Method, degree: 1)
+- **.test_cp_admin_require_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription`, Method, degree: 1)
+- **.test_expired_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription`, Method, degree: 1)
+- **.test_inactive_status_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription`, Method, degree: 1)
+- **.test_no_subscription()** (`backend_users_tests_py_subscriptionexpirationtest_test_no_subscription`, Method, degree: 1)
 
 ## Relationships
 
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_handle (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_users (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_courses (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_sessions (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_summaries (defines)
-- backend_courses_management_commands_seeddata_py_command → backend_courses_management_commands_seeddata_py_command_create_purchases (defines)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_summaries (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_users (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_courses (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_sessions (calls)
-- backend_courses_management_commands_seeddata_py_command_handle → backend_courses_management_commands_seeddata_py_command_create_purchases (calls)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_setup (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_no_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_active_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_expired_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_inactive_status_subscription (defines)
+- backend_users_tests_py_subscriptionexpirationtest → backend_users_tests_py_subscriptionexpirationtest_test_cp_admin_require_subscription (defines)
 

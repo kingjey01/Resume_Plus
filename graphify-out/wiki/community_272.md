@@ -1,17 +1,17 @@
-# Community 272: create_exercise_service
+# Community 272: test_services_endpoint
 
 **Members:** 4
 
 ## Nodes
 
-- **create_exercise_service** (`backend_create_exercise_service_py`, File, degree: 3)
-- **django** (`backend_create_exercise_service_py_import_django`, Module, degree: 1)
-- **os** (`backend_create_exercise_service_py_import_os`, Module, degree: 1)
-- **payments.models.Service** (`backend_create_exercise_service_py_import_payments_models_service`, Module, degree: 1)
+- **test_services_endpoint** (`backend_test_services_endpoint_py`, File, degree: 3)
+- **json** (`backend_test_services_endpoint_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_services_endpoint_py_import_requests`, Module, degree: 1)
+- **test_services_with_auth()** (`backend_test_services_endpoint_py_test_services_with_auth`, Function, degree: 1)
 
 ## Relationships
 
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_os (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_django (imports)
-- backend_create_exercise_service_py → backend_create_exercise_service_py_import_payments_models_service (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_requests (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_import_json (imports)
+- backend_test_services_endpoint_py → backend_test_services_endpoint_py_test_services_with_auth (defines)
 

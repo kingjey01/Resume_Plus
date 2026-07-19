@@ -1,23 +1,23 @@
-# Community 157: settings_development
+# Community 157: 0002_service_abonnement
 
 **Members:** 7
 
 ## Nodes
 
-- **settings_development** (`backend_settings_development_py`, File, degree: 6)
-- **datetime.timedelta** (`backend_settings_development_py_import_datetime_timedelta`, Module, degree: 1)
-- **decouple.config** (`backend_settings_development_py_import_decouple_config`, Module, degree: 1)
-- **decouple.Csv** (`backend_settings_development_py_import_decouple_csv`, Module, degree: 1)
-- **os** (`backend_settings_development_py_import_os`, Module, degree: 1)
-- **pathlib.Path** (`backend_settings_development_py_import_pathlib_path`, Module, degree: 1)
-- **pymysql** (`backend_settings_development_py_import_pymysql`, Module, degree: 1)
+- **0002_service_abonnement** (`backend_payments_migrations_0002_service_abonnement_py`, File, degree: 6)
+- **django.conf.settings** (`backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings`, Module, degree: 1)
+- **django.db.migrations** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations`, Module, degree: 1)
+- **django.db.models** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models`, Module, degree: 1)
+- **django.db.models.deletion** (`backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion`, Module, degree: 1)
+- **django.utils.timezone** (`backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone`, Module, degree: 1)
+- **Migration** (`backend_payments_migrations_0002_service_abonnement_py_migration`, Class, degree: 1)
 
 ## Relationships
 
-- backend_settings_development_py → backend_settings_development_py_import_pathlib_path (imports)
-- backend_settings_development_py → backend_settings_development_py_import_datetime_timedelta (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_config (imports)
-- backend_settings_development_py → backend_settings_development_py_import_decouple_csv (imports)
-- backend_settings_development_py → backend_settings_development_py_import_os (imports)
-- backend_settings_development_py → backend_settings_development_py_import_pymysql (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_conf_settings (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_migrations (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_db_models_deletion (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_import_django_utils_timezone (imports)
+- backend_payments_migrations_0002_service_abonnement_py → backend_payments_migrations_0002_service_abonnement_py_migration (defines)
 

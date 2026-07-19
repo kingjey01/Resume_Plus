@@ -1,25 +1,29 @@
-# Community 138: course_summaries_screen
+# Community 138: test_production_api
 
 **Members:** 8
 
 ## Nodes
 
-- **course_summaries_screen** (`lib_features_course_screens_course_summaries_screen_dart`, File, degree: 7)
-- **_CourseSummariesScreenState()** (`lib_features_course_screens_course_summaries_screen_dart_coursesummariesscreenstate`, Function, degree: 1)
-- **package:flutter/material.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/home/widgets/summary_card.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart'** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/services/api_service.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **test_production_api** (`backend_test_production_api_py`, File, degree: 7)
+- **json** (`backend_test_production_api_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_production_api_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_production_api_py_main`, Function, degree: 5)
+- **test_audio_files_access()** (`backend_test_production_api_py_test_audio_files_access`, Function, degree: 2)
+- **test_encoding_in_api_response()** (`backend_test_production_api_py_test_encoding_in_api_response`, Function, degree: 2)
+- **test_flutter_api_simulation()** (`backend_test_production_api_py_test_flutter_api_simulation`, Function, degree: 2)
+- **test_sessions_endpoint()** (`backend_test_production_api_py_test_sessions_endpoint`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_material_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_features_home_widgets_summary_card_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
-- lib_features_course_screens_course_summaries_screen_dart → lib_features_course_screens_course_summaries_screen_dart_coursesummariesscreenstate (defines)
+- backend_test_production_api_py → backend_test_production_api_py_import_requests (imports)
+- backend_test_production_api_py → backend_test_production_api_py_import_json (imports)
+- backend_test_production_api_py → backend_test_production_api_py_test_sessions_endpoint (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_audio_files_access (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_flutter_api_simulation (defines)
+- backend_test_production_api_py → backend_test_production_api_py_test_encoding_in_api_response (defines)
+- backend_test_production_api_py → backend_test_production_api_py_main (defines)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_audio_files_access (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_encoding_in_api_response (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_flutter_api_simulation (calls)
+- backend_test_production_api_py_main → backend_test_production_api_py_test_sessions_endpoint (calls)
 

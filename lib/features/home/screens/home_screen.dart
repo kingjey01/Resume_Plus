@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:resume_plus_clean/features/auth/providers/auth_provider.dart';
+import 'package:resume_plus_clean/models/user.dart';
 import 'package:resume_plus_clean/features/home/providers/summary_provider.dart';
+import 'package:resume_plus_clean/providers/tab_refresh_provider.dart';
 import 'package:resume_plus_clean/features/home/widgets/summary_card.dart';
 import 'package:resume_plus_clean/features/home/widgets/course_tile.dart';
 import 'package:resume_plus_clean/features/upload/screens/upload_choice_screen.dart';
@@ -31,6 +34,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
   List<Map<String, dynamic>> _courses = [];
   bool _isLoadingCourses = true;
   bool _showAllCourses = false;
+  bool _isRefreshing = false;
 
   @override
   bool get wantKeepAlive => true;
@@ -107,6 +111,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
     }
   }
 
+  Future<void> _refreshAll() async {
+    print('🔄 Pull-to-refresh déclenché');
+    await ref.refresh(summariesProvider.future);
+    await _loadCourses();
+  }
+
   void _onSearchChanged(String query) {
     _debounceTimer?.cancel();
     final cursorPosition = _searchController.selection;
@@ -129,6 +139,35 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
     final summariesAsync = ref.watch(summariesProvider);
     final theme = Theme.of(context);
     final topPadding = MediaQuery.of(context).padding.top;
+
+    // Recharger les données quand la session utilisateur change (login d'un autre compte)
+    ref.listen<int>(userSessionVersionProvider, (prev, next) {
+      if (prev != next) {
+        print('🔄 [Home] Changement de session détecté ($prev → $next) — rechargement des données');
+        _apiService.clearSession();
+        _loadUserProfile();
+        ref.invalidate(summariesProvider);
+      }
+    });
+
+    // Écouter les changements d'état auth pour détecter un nouvel utilisateur
+    ref.listen<AsyncValue<User?>>(authProvider, (prev, next) {
+      if (prev?.value?.id != next.value?.id && next.value != null) {
+        print('🔄 [Home] Nouvel utilisateur détecté (id=${next.value!.id}) — rechargement des données');
+        _apiService.clearSession();
+        _loadUserProfile();
+        ref.invalidate(summariesProvider);
+      }
+    });
+
+    // Rafraîchir les données à chaque fois qu'on arrive sur l'onglet Accueil
+    ref.listen<int>(homeRefreshProvider, (prev, next) {
+      if (prev != next) {
+        print('🔄 [Home] Onglet Accueil sélectionné — rafraîchissement');
+        _loadCourses();
+        ref.invalidate(summariesProvider);
+      }
+    });
 
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
@@ -164,12 +203,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
             ],
           ),
         ),
-        data: (summaries) => SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // Header bleu courbé
-              _buildCurvedHeader(context, topPadding),
+        data: (summaries) => RefreshIndicator(
+          onRefresh: _refreshAll,
+          color: AppTheme.primaryBlue,
+          displacement: 40,
+          child: SingleChildScrollView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Header bleu courbé
+                _buildCurvedHeader(context, topPadding),
               
               const SizedBox(height: 20),
 
@@ -180,7 +224,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
                 _buildSectionHeader(context, 'Résumés récents', Icons.access_time_rounded, showViewAll: summaries.length > 4),
                 const SizedBox(height: 12),
                 SizedBox(
-                  height: 200,
+                  height: 230,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -236,7 +280,8 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
           ),
         ),
       ),
-    );
+    ),
+  );
   }
 
   Widget _buildCurvedHeader(BuildContext context, double topPadding) {
@@ -297,13 +342,14 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
                     children: [
                       _buildHeaderIconButton(
                         Icons.refresh_rounded,
-                        () {
-                          ref.invalidate(summariesProvider);
-                          setState(() {
-                            _isLoadingCourses = true;
-                          });
-                          _loadCourses();
+                        () async {
+                          if (_isRefreshing) return;
+                          setState(() => _isRefreshing = true);
+                          await ref.refresh(summariesProvider.future);
+                          await _loadCourses();
+                          if (mounted) setState(() => _isRefreshing = false);
                         },
+                        isLoading: _isRefreshing,
                       ),
                       const SizedBox(width: 8),
                       if (_userRole != 'ETUDIANT')
@@ -387,9 +433,9 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
     );
   }
 
-  Widget _buildHeaderIconButton(IconData icon, VoidCallback onTap) {
+  Widget _buildHeaderIconButton(IconData icon, VoidCallback onTap, {bool isLoading = false}) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: isLoading ? null : onTap,
       child: Container(
         width: 42,
         height: 42,
@@ -397,7 +443,15 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with AutomaticKeepAlive
           color: Colors.white.withOpacity(0.2),
           shape: BoxShape.circle,
         ),
-        child: Icon(icon, color: Colors.white, size: 22),
+        child: isLoading
+            ? const Padding(
+                padding: EdgeInsets.all(10),
+                child: CircularProgressIndicator(
+                  strokeWidth: 2,
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                ),
+              )
+            : Icon(icon, color: Colors.white, size: 22),
       ),
     );
   }

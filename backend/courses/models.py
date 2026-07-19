@@ -23,8 +23,7 @@ class Filiere(models.Model):
     description = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     promotions = models.ManyToManyField(
-        Promotion, 
-        through='FilierePromotion',
+        Promotion,
         related_name='filieres',
         blank=True
     )
@@ -42,8 +41,7 @@ class Universite(models.Model):
     nom = models.CharField(max_length=200, unique=True)
     adresse = models.TextField(blank=True, null=True)
     filieres = models.ManyToManyField(
-        Filiere, 
-        through='UniversiteFiliere',
+        Filiere,
         related_name='universites',
         blank=True
     )
@@ -56,34 +54,6 @@ class Universite(models.Model):
         verbose_name = "Université"
         verbose_name_plural = "Universités"
         ordering = ['nom']
-
-
-class UniversiteFiliere(models.Model):
-    universite = models.ForeignKey(Universite, on_delete=models.CASCADE)
-    filiere = models.ForeignKey(Filiere, on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ('universite', 'filiere')
-        verbose_name = "Relation Université-Filière"
-        verbose_name_plural = "Relations Université-Filières"
-
-    def __str__(self):
-        return f"{self.universite} - {self.filiere}"
-
-
-class FilierePromotion(models.Model):
-    filiere = models.ForeignKey(Filiere, on_delete=models.CASCADE)
-    promotion = models.ForeignKey(Promotion, on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        unique_together = ('filiere', 'promotion')
-        verbose_name = "Relation Filière-Promotion"
-        verbose_name_plural = "Relations Filières-Promotions"
-
-    def __str__(self):
-        return f"{self.filiere.nom} - {self.promotion.nom}"
 
 
 class ProfesseurFilieres(models.Model):
@@ -107,29 +77,31 @@ class Course(models.Model):
     filiere = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
     university = models.CharField(max_length=200)
-    # Relations strictes pour le contrôle d'accès (nouveaux champs)
-    universite_fk = models.ForeignKey(Universite, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
-    filiere_fk = models.ForeignKey(Filiere, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
-    promotion_fk = models.ForeignKey(Promotion, on_delete=models.CASCADE, related_name='courses', null=True, blank=True)
+    # Relations strictes pour le contrôle d'accès (ManyToMany)
+    universites = models.ManyToManyField(Universite, related_name='courses', blank=True)
+    filieres = models.ManyToManyField(Filiere, related_name='courses', blank=True)
+    promotions = models.ManyToManyField(Promotion, related_name='courses', blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    
+
     def __str__(self):
-        if self.filiere_fk and self.universite_fk:
-            return f"{self.nom} - {self.filiere_fk.nom} ({self.universite_fk.nom})"
+        uni = self.universites.first()
+        fil = self.filieres.first()
+        if uni and fil:
+            return f"{self.nom} - {fil.nom} ({uni.nom})"
         return f"{self.nom} - {self.filiere}"
-    
+
     def is_accessible_by_user(self, user):
         """Vérifie si l'utilisateur peut accéder à ce cours"""
         if not hasattr(user, 'profile'):
             return False
         profile = user.profile
-        # Si les nouveaux champs FK sont remplis, les utiliser
-        if self.universite_fk and self.promotion_fk and self.filiere_fk:
+        # Si les nouveaux champs M2M sont remplis, les utiliser
+        if self.universites.exists() and self.promotions.exists() and self.filieres.exists():
             return (
-                profile.universite_id == self.universite_fk_id and
-                profile.promotion_id == self.promotion_fk_id and
-                profile.filiere_id == self.filiere_fk_id
+                self.universites.filter(id=profile.universite_id).exists() and
+                self.promotions.filter(id=profile.promotion_id).exists() and
+                self.filieres.filter(id=profile.filiere_id).exists()
             )
         # Sinon, fallback sur les anciens champs texte
         return (
@@ -332,6 +304,48 @@ class Professeur(models.Model):
         ordering = ['user__last_name', 'user__first_name']
 
 
+class Dispense(models.Model):
+    """
+    Table métier de liaison entre Professeur, Cours, Université, Filière et Promotion.
+    Source officielle pour déterminer quel professeur dispense quel cours.
+    """
+    professeur = models.ForeignKey(
+        Professeur,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    cours = models.ForeignKey(
+        Course,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    universite = models.ForeignKey(
+        Universite,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    filiere = models.ForeignKey(
+        Filiere,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    promotion = models.ForeignKey(
+        Promotion,
+        on_delete=models.CASCADE,
+        related_name='dispenses'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        verbose_name = "Dispense"
+        verbose_name_plural = "Dispenses"
+        unique_together = ('cours', 'professeur', 'promotion')
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.professeur} dispense {self.cours} ({self.promotion})"
+
+
 class Service(models.Model):
     nom = models.CharField(max_length=200, unique=True)
     description = models.TextField(blank=True, null=True)
@@ -393,8 +407,10 @@ class Exercise(models.Model):
     ]
     
     summary = models.ForeignKey(Summary, on_delete=models.CASCADE, related_name='exercises')
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='exercises', null=True, blank=True)
     titre = models.CharField(max_length=200)
     description = models.TextField(blank=True, null=True)
+    difficulty = models.CharField(max_length=20, default='medium', choices=[('easy', 'Facile'), ('medium', 'Moyen'), ('hard', 'Difficile')])
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
     generated_by_ai = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -425,6 +441,14 @@ class ExerciseQuestion(models.Model):
     option_d = models.CharField(max_length=500)
     correct_answer = models.CharField(max_length=1, choices=[('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D')])
     explanation = models.TextField(blank=True, null=True, help_text="Explication de la bonne réponse")
+    code_language = models.CharField(
+        max_length=50, blank=True, null=True,
+        help_text="Langage ou type du contenu technique (python, latex, sql, formula, algorithm, etc.)"
+    )
+    code_block = models.TextField(
+        blank=True, null=True,
+        help_text="Contenu technique (code source, formule, algorithme, commande, pseudo-code)"
+    )
     order = models.IntegerField(default=0)
     created_at = models.DateTimeField(auto_now_add=True)
     

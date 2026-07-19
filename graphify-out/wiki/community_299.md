@@ -1,15 +1,15 @@
-# Community 299: snackbar_service
+# Community 299: urls
 
 **Members:** 3
 
 ## Nodes
 
-- **snackbar_service** (`lib_services_snackbar_service_dart`, File, degree: 2)
-- **package:flutter/material.dart** (`lib_services_snackbar_service_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **_scaffoldMessengerKey()** (`lib_services_snackbar_service_dart_scaffoldmessengerkey`, Function, degree: 1)
+- **urls** (`backend_security_urls_py`, File, degree: 2)
+- **django.urls.path** (`backend_security_urls_py_import_django_urls_path`, Module, degree: 1)
+- **..views** (`backend_security_urls_py_import_views`, Module, degree: 1)
 
 ## Relationships
 
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_import_package_flutter_material_dart (imports)
-- lib_services_snackbar_service_dart → lib_services_snackbar_service_dart_scaffoldmessengerkey (defines)
+- backend_security_urls_py → backend_security_urls_py_import_django_urls_path (imports)
+- backend_security_urls_py → backend_security_urls_py_import_views (imports)
 

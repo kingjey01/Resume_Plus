@@ -1,15 +1,15 @@
-# Community 301: wsgi
+# Community 301: utils
 
 **Members:** 3
 
 ## Nodes
 
-- **wsgi** (`backend_resume_backend_wsgi_py`, File, degree: 2)
-- **django.core.wsgi.get_wsgi_application** (`backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application`, Module, degree: 1)
-- **os** (`backend_resume_backend_wsgi_py_import_os`, Module, degree: 1)
+- **utils** (`windows_runner_utils_h`, File, degree: 2)
+- **string** (`windows_runner_utils_h_import_string`, Module, degree: 1)
+- **vector** (`windows_runner_utils_h_import_vector`, Module, degree: 1)
 
 ## Relationships
 
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_os (imports)
-- backend_resume_backend_wsgi_py → backend_resume_backend_wsgi_py_import_django_core_wsgi_get_wsgi_application (imports)
+- windows_runner_utils_h → windows_runner_utils_h_import_string (imports)
+- windows_runner_utils_h → windows_runner_utils_h_import_vector (imports)
 

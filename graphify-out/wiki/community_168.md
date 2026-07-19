@@ -1,23 +1,23 @@
-# Community 168: NotificationTargetingLogicTest
+# Community 168: test_exercise_generation
 
 **Members:** 7
 
 ## Nodes
 
-- **NotificationTargetingLogicTest** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest`, Class, degree: 7)
-- **.setUp()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup`, Method, degree: 1)
-- **.test_case_1_no_filters_global()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global`, Method, degree: 1)
-- **.test_case_2_universite_only()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only`, Method, degree: 1)
-- **.test_case_3_universite_filiere()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere`, Method, degree: 1)
-- **.test_case_4_universite_filiere_promotion()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion`, Method, degree: 1)
-- **.test_cp_receives_own_notification()** (`backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification`, Method, degree: 1)
+- **test_exercise_generation** (`backend_test_exercise_generation_py`, File, degree: 6)
+- **courses.exercise_generator.ExerciseGenerator** (`backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator`, Module, degree: 1)
+- **courses.models.Summary** (`backend_test_exercise_generation_py_import_courses_models_summary`, Module, degree: 1)
+- **django** (`backend_test_exercise_generation_py_import_django`, Module, degree: 1)
+- **django.conf.settings** (`backend_test_exercise_generation_py_import_django_conf_settings`, Module, degree: 1)
+- **os** (`backend_test_exercise_generation_py_import_os`, Module, degree: 1)
+- **run_test()** (`backend_test_exercise_generation_py_run_test`, Function, degree: 1)
 
 ## Relationships
 
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_setup (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_1_no_filters_global (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_2_universite_only (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_3_universite_filiere (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_case_4_universite_filiere_promotion (defines)
-- backend_notifications_test_notification_logic_py_notificationtargetinglogictest → backend_notifications_test_notification_logic_py_notificationtargetinglogictest_test_cp_receives_own_notification (defines)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_os (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_django_conf_settings (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_models_summary (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_import_courses_exercise_generator_exercisegenerator (imports)
+- backend_test_exercise_generation_py → backend_test_exercise_generation_py_run_test (defines)
 

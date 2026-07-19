@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume_plus_clean/features/home/screens/home_screen.dart';
+import 'package:resume_plus_clean/features/onboarding/cp_onboarding_flow.dart';
 import 'package:resume_plus_clean/features/summaries/screens/all_summaries_screen.dart';
 import 'package:resume_plus_clean/features/purchases/screens/purchases_screen.dart';
 import 'package:resume_plus_clean/features/exercises/screens/exercises_screen.dart';
@@ -10,7 +11,9 @@ import 'package:resume_plus_clean/services/notification_service.dart';
 import 'package:resume_plus_clean/theme/app_theme.dart';
 import 'package:resume_plus_clean/providers/purchase_badge_provider.dart';
 import 'package:resume_plus_clean/features/home/providers/summary_provider.dart';
+import 'package:resume_plus_clean/features/summaries/providers/purchased_summaries_provider.dart';
 import 'package:resume_plus_clean/widgets/badge_icon.dart';
+import 'package:resume_plus_clean/providers/tab_refresh_provider.dart';
 
 class MainNavigationScreen extends ConsumerStatefulWidget {
   const MainNavigationScreen({super.key});
@@ -42,7 +45,6 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen> {
   String _userRole = 'ETUDIANT';
   bool _isLoadingProfile = true;
   final ApiService _apiService = ApiService();
-  int _exercisesRefreshKey = 0;
 
   // CP:      Accueil(0), Résumés(1), Validation(2), Mes achats(3), Exercices(4)
   // Étudiant: Accueil(0), Résumés(1), Mes achats(2), Exercices(3)
@@ -53,14 +55,14 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen> {
         const AllSummariesScreen(),
         ValidationScreen(key: ValueKey('validation_$_validationSummaryId'), initialSummaryId: _validationSummaryId),
         const PurchasesScreen(),
-        ExercisesScreen(key: ValueKey('exercises_$_exercisesRefreshKey')),
+        const ExercisesScreen(),
       ];
     }
     return [
       const HomeScreen(),
       const AllSummariesScreen(),
       const PurchasesScreen(),
-      ExercisesScreen(key: ValueKey('exercises_$_exercisesRefreshKey')),
+      const ExercisesScreen(),
     ];
   }
 
@@ -234,8 +236,10 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen> {
   void initState() {
     super.initState();
     _loadUserProfile();
-    // Charger les compteurs de badges au démarrage
+    // Invalider les providers de données pour garantir des données fraîches après login
     Future.microtask(() {
+      ref.invalidate(summariesProvider);
+      ref.invalidate(purchasedSummariesProvider);
       ref.read(purchaseBadgeCountProvider.notifier).loadBadgeCount();
       ref.read(validatedSummariesBadgeProvider.notifier).refreshBadge();
       ref.read(createdSummariesBadgeProvider.notifier).refreshBadge();
@@ -262,18 +266,41 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen> {
   Future<void> _loadUserProfile() async {
     try {
       final profile = await _apiService.getUserProfile();
+      final role = profile['profile']?['groupe'] ?? 'ETUDIANT';
       setState(() {
-        _userRole = profile['profile']?['groupe'] ?? 'ETUDIANT';
+        _userRole = role;
         _isLoadingProfile = false;
-        // Définir l'index de l'onglet "Mes Achats"
         _purchasesTabIndex = _userRole == 'CP' ? 3 : 2;
       });
+      // Vérifier si c'est la première utilisation du CP
+      if (role == 'CP') {
+        _checkCPOnboarding();
+      }
     } catch (e) {
       setState(() {
         _userRole = 'ETUDIANT';
         _isLoadingProfile = false;
         _purchasesTabIndex = 2;
       });
+    }
+  }
+
+  Future<void> _checkCPOnboarding() async {
+    try {
+      final status = await _apiService.getOnboardingStatus();
+      if (status['is_first_use'] == true && mounted) {
+        await Future.delayed(const Duration(milliseconds: 500));
+        if (mounted) {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              fullscreenDialog: true,
+              builder: (_) => const CPOnboardingFlow(),
+            ),
+          );
+        }
+      }
+    } catch (_) {
+      // Silencieux : si l'API échoue on n'interrompt pas l'utilisateur
     }
   }
 
@@ -306,8 +333,31 @@ class _MainNavigationScreenState extends ConsumerState<MainNavigationScreen> {
             selectedIndex: _currentIndex,
             onDestinationSelected: (index) async {
               debugPrint('📍 [Nav] Onglet sélectionné: $index (role: $_userRole)');
-              if (index == _exercisesIndex) {
-                _exercisesRefreshKey++;
+              // Rafraîchir les données de l'onglet sélectionné
+              switch (index) {
+                case 0:
+                  ref.read(homeRefreshProvider.notifier).state++;
+                  break;
+                case 1:
+                  ref.read(summariesRefreshProvider.notifier).state++;
+                  break;
+                case 2:
+                  if (_userRole == 'CP') {
+                    ref.read(summariesRefreshProvider.notifier).state++;
+                  } else {
+                    ref.read(purchasesRefreshProvider.notifier).state++;
+                  }
+                  break;
+                case 3:
+                  if (_userRole == 'CP') {
+                    ref.read(purchasesRefreshProvider.notifier).state++;
+                  } else {
+                    ref.read(exercisesRefreshProvider.notifier).state++;
+                  }
+                  break;
+                case 4:
+                  ref.read(exercisesRefreshProvider.notifier).state++;
+                  break;
               }
               // Réinitialiser les badges à la consultation de l'onglet
               // IMPORTANT: NE PAS appeler refreshBadge() juste après resetBadge()

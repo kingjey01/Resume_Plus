@@ -1,25 +1,25 @@
-# Community 124: admin
+# Community 124: quick_test
 
 **Members:** 8
 
 ## Nodes
 
-- **admin** (`backend_payments_admin_py`, File, degree: 7)
-- **AbonnementAdmin** (`backend_payments_admin_py_abonnementadmin`, Class, degree: 1)
-- **django.contrib.admin** (`backend_payments_admin_py_import_django_contrib_admin`, Module, degree: 1)
-- **.models.Abonnement** (`backend_payments_admin_py_import_models_abonnement`, Module, degree: 1)
-- **.models.Purchase** (`backend_payments_admin_py_import_models_purchase`, Module, degree: 1)
-- **.models.Service** (`backend_payments_admin_py_import_models_service`, Module, degree: 1)
-- **PurchaseAdmin** (`backend_payments_admin_py_purchaseadmin`, Class, degree: 1)
-- **ServiceAdmin** (`backend_payments_admin_py_serviceadmin`, Class, degree: 1)
+- **quick_test** (`backend_quick_test_py`, File, degree: 7)
+- **http.server** (`backend_quick_test_py_import_http_server`, Module, degree: 1)
+- **os** (`backend_quick_test_py_import_os`, Module, degree: 1)
+- **socketserver** (`backend_quick_test_py_import_socketserver`, Module, degree: 1)
+- **threading** (`backend_quick_test_py_import_threading`, Module, degree: 1)
+- **time** (`backend_quick_test_py_import_time`, Module, degree: 1)
+- **webbrowser** (`backend_quick_test_py_import_webbrowser`, Module, degree: 1)
+- **start_server()** (`backend_quick_test_py_start_server`, Function, degree: 1)
 
 ## Relationships
 
-- backend_payments_admin_py → backend_payments_admin_py_import_django_contrib_admin (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_purchase (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_service (imports)
-- backend_payments_admin_py → backend_payments_admin_py_import_models_abonnement (imports)
-- backend_payments_admin_py → backend_payments_admin_py_purchaseadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_serviceadmin (defines)
-- backend_payments_admin_py → backend_payments_admin_py_abonnementadmin (defines)
+- backend_quick_test_py → backend_quick_test_py_import_http_server (imports)
+- backend_quick_test_py → backend_quick_test_py_import_socketserver (imports)
+- backend_quick_test_py → backend_quick_test_py_import_webbrowser (imports)
+- backend_quick_test_py → backend_quick_test_py_import_os (imports)
+- backend_quick_test_py → backend_quick_test_py_import_threading (imports)
+- backend_quick_test_py → backend_quick_test_py_import_time (imports)
+- backend_quick_test_py → backend_quick_test_py_start_server (defines)
 

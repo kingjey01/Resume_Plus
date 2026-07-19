@@ -1,15 +1,15 @@
-# Community 300: urls
+# Community 300: api_provider
 
 **Members:** 3
 
 ## Nodes
 
-- **urls** (`backend_notifications_urls_py`, File, degree: 2)
-- **django.urls.path** (`backend_notifications_urls_py_import_django_urls_path`, Module, degree: 1)
-- **..views** (`backend_notifications_urls_py_import_views`, Module, degree: 1)
+- **api_provider** (`lib_providers_api_provider_dart`, File, degree: 2)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_notifications_urls_py → backend_notifications_urls_py_import_django_urls_path (imports)
-- backend_notifications_urls_py → backend_notifications_urls_py_import_views (imports)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_providers_api_provider_dart → lib_providers_api_provider_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
 

@@ -1,19 +1,21 @@
-# Community 207: summary_card
+# Community 207: create_admin_user()
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **summary_card** (`lib_features_home_widgets_summary_card_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **package:resume_plus_clean/features/summary_details/screens/summary_details_screen.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart`, Module, degree: 1)
-- **package:resume_plus_clean/models/summary.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart`, Module, degree: 1)
-- **package:resume_plus_clean/theme/app_theme.dart** (`lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart`, Module, degree: 1)
+- **create_admin_user()** (`backend_seed_production_py_create_admin_user`, Function, degree: 2)
+- **main()** (`backend_seed_production_py_main`, Function, degree: 6)
+- **seed_filieres()** (`backend_seed_production_py_seed_filieres`, Function, degree: 2)
+- **seed_promotions()** (`backend_seed_production_py_seed_promotions`, Function, degree: 2)
+- **seed_services_abonnement()** (`backend_seed_production_py_seed_services_abonnement`, Function, degree: 2)
+- **seed_universites()** (`backend_seed_production_py_seed_universites`, Function, degree: 2)
 
 ## Relationships
 
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_flutter_material_dart (imports)
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_models_summary_dart (imports)
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_features_summary_details_screens_summary_details_screen_dart (imports)
-- lib_features_home_widgets_summary_card_dart → lib_features_home_widgets_summary_card_dart_import_package_resume_plus_clean_theme_app_theme_dart (imports)
+- backend_seed_production_py_main → backend_seed_production_py_seed_universites (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_filieres (calls)
+- backend_seed_production_py_main → backend_seed_production_py_create_admin_user (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_promotions (calls)
+- backend_seed_production_py_main → backend_seed_production_py_seed_services_abonnement (calls)
 

@@ -1,8 +1,13 @@
-# Community 338: Runner-Bridging-Header
+# Community 338: abonnement
 
-**Members:** 1
+**Members:** 2
 
 ## Nodes
 
-- **Runner-Bridging-Header** (`ios_runner_runner_bridging_header_h`, File, degree: 0)
+- **abonnement** (`lib_models_abonnement_dart`, File, degree: 1)
+- **id()** (`lib_models_abonnement_dart_id`, Function, degree: 1)
+
+## Relationships
+
+- lib_models_abonnement_dart → lib_models_abonnement_dart_id (defines)
 

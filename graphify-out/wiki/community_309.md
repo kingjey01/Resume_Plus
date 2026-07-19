@@ -1,15 +1,15 @@
-# Community 309: production_settings
+# Community 309: user
 
 **Members:** 3
 
 ## Nodes
 
-- **production_settings** (`backend_production_settings_py`, File, degree: 2)
-- **os** (`backend_production_settings_py_import_os`, Module, degree: 1)
-- **.settings** (`backend_production_settings_py_import_settings`, Module, degree: 1)
+- **user** (`lib_models_user_dart`, File, degree: 2)
+- **groupe()** (`lib_models_user_dart_groupe`, Function, degree: 1)
+- **id()** (`lib_models_user_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- backend_production_settings_py → backend_production_settings_py_import_settings (imports)
-- backend_production_settings_py → backend_production_settings_py_import_os (imports)
+- lib_models_user_dart → lib_models_user_dart_groupe (defines)
+- lib_models_user_dart → lib_models_user_dart_id (defines)
 

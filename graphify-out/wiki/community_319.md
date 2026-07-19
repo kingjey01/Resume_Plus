@@ -1,13 +1,15 @@
-# Community 319: generated_plugin_registrant
+# Community 319: main
 
-**Members:** 2
+**Members:** 3
 
 ## Nodes
 
-- **generated_plugin_registrant** (`windows_flutter_generated_plugin_registrant_h`, File, degree: 1)
-- **flutter/plugin_registry.h** (`windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h`, Module, degree: 1)
+- **main** (`linux_runner_main_cc`, File, degree: 2)
+- **my_application.h** (`linux_runner_main_cc_import_my_application_h`, Module, degree: 1)
+- **main()** (`linux_runner_main_cc_main`, Function, degree: 1)
 
 ## Relationships
 
-- windows_flutter_generated_plugin_registrant_h → windows_flutter_generated_plugin_registrant_h_import_flutter_plugin_registry_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_import_my_application_h (imports)
+- linux_runner_main_cc → linux_runner_main_cc_main (defines)
 

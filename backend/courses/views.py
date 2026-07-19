@@ -12,27 +12,43 @@ import logging
 import mimetypes
 
 logger = logging.getLogger(__name__)
+from django.contrib.auth.models import User
 from .models import (
-    Course, Session, Summary, Universite, Promotion, Filiere, 
-    Service, Abonnement, UniversiteFiliere, FilierePromotion, Professeur
+    Course, Session, Summary, Universite, Promotion, Filiere,
+    Service, Abonnement, Professeur, Dispense
 )
 from payments.models import Purchase
 from .serializers import (
     CourseSerializer, SessionSerializer, SessionCreateSerializer, SummarySerializer, 
     SummaryCreateSerializer, UniversiteSerializer, PromotionSerializer, 
     FiliereSerializer, ServiceSerializer, AbonnementSerializer, 
-    AbonnementCreateSerializer, UniversiteFiliereSerializer,
-    FilierePromotionSerializer, FiliereWithUniversiteSerializer,
+    AbonnementCreateSerializer, FiliereWithUniversiteSerializer,
     ProfesseurSerializer
 )
-from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary, 
+from .permissions import (IsOwnerOrReadOnly, CanCreateSummary, CanAccessSummary,
                          IsAdminOrReadOnly, HasUniversityAccess, CanModifyObject)
+
+
+# ─── Helper : prix minimum dynamique depuis la base ──────────────────
+
+def get_minimum_resume_price():
+    """
+    Retourne le prix minimum configuré dans ResumePricingConfig.
+    Si aucune config active → valeur par défaut 3000.
+    Cette fonction est la source unique de vérité pour le seuil de prix.
+    """
+    try:
+        from security.models import ResumePricingConfig
+        config = ResumePricingConfig.objects.get(is_active=True)
+        return float(config.minimum_resume_price)
+    except Exception:
+        return 3000.00
 
 
 class CourseListCreateView(generics.ListCreateAPIView):
     serializer_class = CourseSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
-    filterset_fields = ['filiere_fk', 'universite_fk', 'promotion_fk']
+    filterset_fields = []
     search_fields = ['nom', 'description']
     ordering_fields = ['nom', 'created_at']
     ordering = ['-created_at']
@@ -57,23 +73,49 @@ class CourseListCreateView(generics.ListCreateAPIView):
             return Course.objects.none()
         
         return Course.objects.filter(
-            universite_fk=profile.universite,
-            promotion_fk=profile.promotion,
-            filiere_fk=profile.filiere
+            universites=profile.universite,
+            promotions=profile.promotion,
+            filieres=profile.filiere
         )
     
     def perform_create(self, serializer):
         """Assigner automatiquement l'université, promotion et filière lors de la création"""
         profile = self.request.user.profile
-        serializer.save(
-            universite_fk=profile.universite,
-            promotion_fk=profile.promotion,
-            filiere_fk=profile.filiere,
+        course = serializer.save(
             university=profile.universite.nom if profile.universite else '',
             filiere=profile.filiere.nom if profile.filiere else ''
         )
+        if profile.universite:
+            course.universites.add(profile.universite)
+        if profile.promotion:
+            course.promotions.add(profile.promotion)
+        if profile.filiere:
+            course.filieres.add(profile.filiere)
+
+        # === Mode ONBOARDING uniquement : auto-créer une Dispense si un professeur existe ===
+        # Le flag is_onboarding est envoyé par le frontend pendant le parcours de première connexion.
+        # Depuis le menu "+" → Créer, is_onboarding est absent/false → aucune Dispense créée.
+        is_onboarding = self.request.data.get('is_onboarding', False) in (True, 'true', 'True', 1, '1')
+        if is_onboarding and profile.universite and profile.filiere and profile.promotion:
+            professeur = Professeur.objects.filter(
+                universite=profile.universite,
+                filieres=profile.filiere
+            ).first()
+            if professeur:
+                Dispense.objects.get_or_create(
+                    professeur=professeur,
+                    cours=course,
+                    promotion=profile.promotion,
+                    defaults={
+                        'universite': profile.universite,
+                        'filiere': profile.filiere,
+                    }
+                )
+                logger.info(f"🔗 [Onboarding] Dispense auto-créée: Professeur={professeur.id}, Cours={course.id}")
 
 
+
+                
 class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CourseSerializer
     permission_classes = [permissions.IsAuthenticated, HasUniversityAccess, CanModifyObject]
@@ -97,9 +139,9 @@ class CourseDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Course.objects.none()
         
         return Course.objects.filter(
-            universite_fk=profile.universite,
-            promotion_fk=profile.promotion,
-            filiere_fk=profile.filiere
+            universites=profile.universite,
+            promotions=profile.promotion,
+            filieres=profile.filiere
         )
 
 
@@ -129,9 +171,9 @@ class SessionListCreateView(generics.ListCreateAPIView):
             return Session.objects.none()
         
         return Session.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
         )
 
 
@@ -155,9 +197,9 @@ class SessionDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Session.objects.none()
         
         return Session.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
         )
 
 
@@ -195,9 +237,9 @@ class SummaryListCreateView(generics.ListCreateAPIView):
         #         return Summary.objects.none()
             
         #     return Summary.objects.filter(
-        #         course__universite_fk=profile.universite,
-        #         course__promotion_fk=profile.promotion,
-        #         course__filiere_fk=profile.filiere,
+        #         course__universites=profile.universite,
+        #         course__promotions=profile.promotion,
+        #         course__filieres=profile.filiere,
         #         is_validated=True
         #     )
         
@@ -206,9 +248,9 @@ class SummaryListCreateView(generics.ListCreateAPIView):
             return Summary.objects.none()
         
         return Summary.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere,
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere,
             is_validated=True
         )
 
@@ -234,9 +276,9 @@ class SummaryDetailView(generics.RetrieveUpdateDestroyAPIView):
             return Summary.objects.none()
         
         return Summary.objects.filter(
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
         )
 
 
@@ -324,19 +366,6 @@ def generate_summary_from_audio(request):
     return Response(SummarySerializer(summary).data, status=status.HTTP_201_CREATED)
 
 
-# Vues pour les relations ManyToMany
-class UniversiteFiliereViewSet(viewsets.ModelViewSet):
-    queryset = UniversiteFiliere.objects.all()
-    serializer_class = UniversiteFiliereSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-
-class FilierePromotionViewSet(viewsets.ModelViewSet):
-    queryset = FilierePromotion.objects.all()
-    serializer_class = FilierePromotionSerializer
-    permission_classes = [permissions.IsAuthenticated]
-
-
 # CRUD Views pour Universites
 class UniversiteViewSet(viewsets.ModelViewSet):
     queryset = Universite.objects.all()
@@ -362,20 +391,17 @@ class UniversiteViewSet(viewsets.ModelViewSet):
         filiere_id = request.data.get('filiere_id')
         if not filiere_id:
             return Response(
-                {"error": "Le paramètre 'filiere_id' est requis"}, 
+                {"error": "Le paramètre 'filiere_id' est requis"},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             filiere = Filiere.objects.get(id=filiere_id)
-            UniversiteFiliere.objects.get_or_create(
-                universite=universite,
-                filiere=filiere
-            )
+            universite.filieres.add(filiere)
             return Response({"status": "Filière ajoutée avec succès"}, status=status.HTTP_201_CREATED)
         except Filiere.DoesNotExist:
             return Response(
-                {"error": "Filière non trouvée"}, 
+                {"error": "Filière non trouvée"},
                 status=status.HTTP_404_NOT_FOUND
             )
 
@@ -405,20 +431,17 @@ class FiliereViewSet(viewsets.ModelViewSet):
         promotion_id = request.data.get('promotion_id')
         if not promotion_id:
             return Response(
-                {"error": "Le paramètre 'promotion_id' est requis"}, 
+                {"error": "Le paramètre 'promotion_id' est requis"},
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             promotion = Promotion.objects.get(id=promotion_id)
-            FilierePromotion.objects.get_or_create(
-                filiere=filiere,
-                promotion=promotion
-            )
+            filiere.promotions.add(promotion)
             return Response({"status": "Promotion ajoutée avec succès"}, status=status.HTTP_201_CREATED)
         except Promotion.DoesNotExist:
             return Response(
-                {"error": "Promotion non trouvée"}, 
+                {"error": "Promotion non trouvée"},
                 status=status.HTTP_404_NOT_FOUND
             )
 
@@ -438,7 +461,7 @@ class PromotionViewSet(viewsets.ModelViewSet):
     def filieres(self, request, pk=None):
         """Récupère toutes les filières associées à une promotion"""
         promotion = self.get_object()
-        filieres = Filiere.objects.filter(filierepromotion__promotion=promotion)
+        filieres = promotion.filieres.all()
         serializer = FiliereSerializer(filieres, many=True)
         return Response(serializer.data)
 
@@ -530,18 +553,19 @@ def upload_audio_session(request):
                 status=status.HTTP_400_BAD_REQUEST
             )
         
-        # Valider le prix (minimum 3000 CDF)
+        # Valider le prix via la config dynamique
         try:
             price = float(summary_price)
             if price < 0:
                 raise ValueError("Le prix ne peut pas être négatif")
-            # Si le prix est inférieur à 3000, le remplacer par 3000
-            if price < 3000:
-                logger.warning(f'⚠️ Prix {price} inférieur à 3000 CDF pour {request.user.username} — remplacé par 3000')
-                price = 3000
+            min_price = get_minimum_resume_price()
+            if price < min_price:
+                return Response({
+                    'error': f'Le prix minimum autorisé pour un résumé est de {int(min_price)} FC.'
+                }, status=status.HTTP_400_BAD_REQUEST)
         except (ValueError, TypeError):
             return Response(
-                {'error': 'summary_price doit être un nombre valide >= 0'}, 
+                {'error': 'summary_price doit être un nombre valide >= 0'},
                 status=status.HTTP_400_BAD_REQUEST
             )
         
@@ -562,14 +586,37 @@ def upload_audio_session(request):
         
         # Créer la session avec l'enregistrement (statut = pending / EN_ATTENTE)
         from django.utils import timezone
+        
+        # Auto-résoudre le professeur via Dispense si non fourni (Objectif 7)
+        professeur_nom = request.data.get('professeur_nom', '')
+        resolved_professeur_fk = professeur_id
+        resolved_professeur_text = professeur_nom
+        
+        if not professeur_id:
+            profile = request.user.profile
+            if profile.universite and profile.filiere and profile.promotion:
+                dispense = Dispense.objects.filter(
+                    cours=course,
+                    universite=profile.universite,
+                    filiere=profile.filiere,
+                    promotion=profile.promotion
+                ).select_related('professeur__user').first()
+                if dispense:
+                    resolved_professeur_fk = dispense.professeur.id
+                    resolved_professeur_text = (
+                        dispense.professeur.user.get_full_name()
+                        or dispense.professeur.user.username
+                    )
+                    logger.info(f"🎓 Professeur auto-résolu via Dispense: {resolved_professeur_text}")
+        
         session_data = {
             'course': course.id,
             'date': timezone.now(),
-            'professeur': f"{request.user.first_name} {request.user.last_name}" if request.user.first_name else request.user.username,
+            'professeur': resolved_professeur_text if resolved_professeur_text else '',
             'audio_file': audio_file
         }
-        if professeur_id:
-            session_data['professeur_fk'] = professeur_id
+        if resolved_professeur_fk:
+            session_data['professeur_fk'] = resolved_professeur_fk
         
         serializer = SessionCreateSerializer(data=session_data, context={'request': request})
         if serializer.is_valid():
@@ -771,9 +818,9 @@ def process_audio_session(request, session_id):
         else:
             session = Session.objects.get(
                 id=session_id,
-                course__universite_fk=profile.universite,
-                course__promotion_fk=profile.promotion,
-                course__filiere_fk=profile.filiere
+                course__universites=profile.universite,
+                course__promotions=profile.promotion,
+                course__filieres=profile.filiere
             )
         
         # Vérifier la durée de l'audio (max 3 heures = 10800 secondes)
@@ -878,11 +925,11 @@ def retry_failed_session(request, session_id):
         else:
             session = Session.objects.get(
                 id=session_id,
-                course__universite_fk=profile.universite,
-                course__promotion_fk=profile.promotion,
-                course__filiere_fk=profile.filiere
+                course__universites=profile.universite,
+                course__promotions=profile.promotion,
+                course__filieres=profile.filiere
             )
-        
+
         # Vérifier que la session est en échec ou en statut intermédiaire (transcrit mais résumé échoué)
         if session.processing_status not in ('failed', 'transcribed'):
             return Response({
@@ -990,9 +1037,9 @@ def get_sessions_queue(request):
         # Filtrage strict par université/promotion/filière via le cours
         base_queryset = Session.objects.filter(
             audio_file__isnull=False,
-            course__universite_fk=profile.universite,
-            course__promotion_fk=profile.promotion,
-            course__filiere_fk=profile.filiere
+            course__universites=profile.universite,
+            course__promotions=profile.promotion,
+            course__filieres=profile.filiere
         ).exclude(audio_file='')
         
         # Admin peut voir toutes les sessions
@@ -1052,9 +1099,9 @@ def get_audio_file(request, session_id):
         else:
             session = Session.objects.get(
                 id=session_id,
-                course__universite_fk=profile.universite,
-                course__promotion_fk=profile.promotion,
-                course__filiere_fk=profile.filiere
+                course__universites=profile.universite,
+                course__promotions=profile.promotion,
+                course__filieres=profile.filiere
             )
         
         if not session.audio_file:
@@ -1342,9 +1389,9 @@ def validate_summary_view(request, summary_id):
                     'title': '📚 Nouveau résumé disponible',
                     'body': f'Le résumé « {summary.titre} » du cours {course.nom} est maintenant disponible.',
                     'notification_type': 'summary_validated',
-                    'universite_id': course.universite_fk_id,
-                    'filiere_id': course.filiere_fk_id,
-                    'promotion_id': course.promotion_fk_id,
+                    'universite_id': course.universites.first().id if course.universites.exists() else None,
+                    'filiere_id': course.filieres.first().id if course.filieres.exists() else None,
+                    'promotion_id': course.promotions.first().id if course.promotions.exists() else None,
                     'summary_id': summary.id,
                     'course_id': course.id,
                 }, countdown=3)
@@ -1399,10 +1446,11 @@ def edit_summary_view(request, summary_id):
                     return Response({
                         'error': 'Le prix ne peut pas être négatif'
                     }, status=status.HTTP_400_BAD_REQUEST)
-                # Si le prix est inférieur à 3000, le remplacer par 3000
-                if price < 3000:
-                    logger.warning(f'⚠️ Prix {price} inférieur à 3000 CDF pour {request.user.username} — remplacé par 3000')
-                    price = 3000
+                min_price = get_minimum_resume_price()
+                if price < min_price:
+                    return Response({
+                        'error': f'Le prix minimum autorisé pour un résumé est de {int(min_price)} FC.'
+                    }, status=status.HTTP_400_BAD_REQUEST)
                 summary.prix = price
             except (ValueError, TypeError):
                 return Response({
@@ -1472,9 +1520,9 @@ def get_summaries_for_validation_view(request):
             summaries = summaries.filter(
                 Q(author_user=request.user) |
                 Q(
-                    course__universite_fk=profile.universite,
-                    course__promotion_fk=profile.promotion,
-                    course__filiere_fk=profile.filiere
+                    course__universites=profile.universite,
+                    course__promotions=profile.promotion,
+                    course__filieres=profile.filiere
                 )
             ).distinct()
             
@@ -1516,3 +1564,348 @@ def get_summaries_for_validation_view(request):
         return Response({
             'error': 'Erreur interne du serveur'
         }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+# ============================================================
+# ONBOARDING — Parcours de première utilisation (Objectif 1)
+# ============================================================
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def onboarding_status_view(request):
+    """
+    Vérifie si l'utilisateur CP a déjà des données.
+    Retourne les étapes complétées pour le parcours de première utilisation.
+    """
+    try:
+        user = request.user
+        if not hasattr(user, 'profile'):
+            return Response({'error': 'Profil non trouvé'}, status=404)
+
+        profile = user.profile
+
+        has_professeur = Professeur.objects.filter(
+            universite=profile.universite
+        ).exists() if profile.universite else False
+
+        has_course = Course.objects.filter(
+            universites=profile.universite,
+            filieres=profile.filiere,
+            promotions=profile.promotion
+        ).exists() if (profile.universite and profile.filiere and profile.promotion) else False
+
+        has_session = Session.objects.filter(
+            course__universites=profile.universite,
+            course__filieres=profile.filiere,
+            course__promotions=profile.promotion
+        ).exists() if (profile.universite and profile.filiere and profile.promotion) else False
+
+        has_summary = Summary.objects.filter(
+            course__universites=profile.universite,
+            course__filieres=profile.filiere,
+            course__promotions=profile.promotion
+        ).exists() if (profile.universite and profile.filiere and profile.promotion) else False
+
+        all_completed = has_professeur and has_course and has_session and has_summary
+
+        return Response({
+            'is_first_use': not (has_professeur or has_course or has_session or has_summary),
+            'steps': {
+                'has_professeur': has_professeur,
+                'has_course': has_course,
+                'has_session': has_session,
+                'has_summary': has_summary,
+            },
+            'all_completed': all_completed,
+            'groupe': profile.groupe,
+        })
+
+    except Exception as e:
+        logger.error(f"Erreur onboarding_status: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# PROFESSEUR — Création simplifiée (Objectif 2)
+# ============================================================
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def create_professeur_simple_view(request):
+    """
+    Création simplifiée d'un professeur.
+
+    Deux modes de fonctionnement :
+    - Mode ONBOARDING (is_onboarding=True) : crée automatiquement une Dispense
+      si un cours existe déjà. Utilisé pendant le parcours de première connexion.
+    - Mode GESTION (is_onboarding=False ou absent) : crée UNIQUEMENT le professeur.
+      Aucune association Dispense créée. Utilisé depuis le menu "+" → Créer.
+
+    L'utilisateur renseigne uniquement : nom_complet, telephone, specialite.
+    Le backend crée automatiquement le User Django et le Professeur,
+    en associant l'université de l'utilisateur connecté.
+    """
+    try:
+        user = request.user
+        if not hasattr(user, 'profile') or not user.profile.universite:
+            return Response({
+                'error': 'Votre profil ne contient pas d\'université. Contactez un administrateur.'
+            }, status=400)
+
+        profile = user.profile
+        nom_complet = request.data.get('nom_complet', '').strip()
+        telephone = request.data.get('telephone', '').strip()
+        specialite = request.data.get('specialite', '').strip()
+        is_onboarding = request.data.get('is_onboarding', False) in (True, 'true', 'True', 1, '1')
+
+        if not nom_complet:
+            return Response({'error': 'Le nom complet est requis.'}, status=400)
+
+        import re
+        base_username = re.sub(r'[^a-zA-Z0-9]', '', nom_complet.lower())[:20]
+        username = base_username
+        counter = 1
+        while User.objects.filter(username=username).exists():
+            username = f"{base_username}{counter}"
+            counter += 1
+
+        prof_user = User.objects.create(
+            username=username,
+            first_name=nom_complet.split()[0] if ' ' in nom_complet else nom_complet,
+            last_name=' '.join(nom_complet.split()[1:]) if ' ' in nom_complet else '',
+            email=f"{username}@resumeplus.local",
+            is_active=True,
+        )
+        prof_user.set_password(User.objects.make_random_password())
+        prof_user.save()
+
+        from users.models import UserProfile
+        UserProfile.objects.get_or_create(
+            user=prof_user,
+            defaults={
+                'groupe': 'Prof',
+                'phone': telephone,
+                'universite': profile.universite,
+                'filiere': profile.filiere,
+                'promotion': profile.promotion,
+            }
+        )
+
+        professeur = Professeur.objects.create(
+            user=prof_user,
+            telephone=telephone,
+            specialite=specialite,
+            universite=profile.universite,
+        )
+
+        if profile.filiere:
+            professeur.filieres.add(profile.filiere)
+
+        # === Mode ONBOARDING : auto-créer une Dispense si un cours existe déjà ===
+        if is_onboarding and profile.universite and profile.filiere and profile.promotion:
+            cours = Course.objects.filter(
+                universites=profile.universite,
+                filieres=profile.filiere,
+                promotions=profile.promotion
+            ).first()
+            if cours:
+                Dispense.objects.get_or_create(
+                    professeur=professeur,
+                    cours=cours,
+                    promotion=profile.promotion,
+                    defaults={
+                        'universite': profile.universite,
+                        'filiere': profile.filiere,
+                    }
+                )
+                logger.info(f"🔗 [Onboarding] Dispense auto-créée: Professeur={professeur.id}, Cours={cours.id}")
+
+        serializer = ProfesseurSerializer(professeur)
+        return Response({
+            'message': 'Professeur créé avec succès.',
+            'professeur': serializer.data,
+        }, status=201)
+
+    except Exception as e:
+        logger.error(f"Erreur création professeur simplifié: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+
+
+# ============================================================
+# DISPENSE — Création automatique (Objectif 5)
+# ============================================================
+
+@api_view(['POST'])
+@permission_classes([permissions.IsAuthenticated])
+def create_dispense_view(request):
+    """
+    Crée une dispense (liaison professeur-cours).
+    Utilisé après la création du premier professeur et du premier cours.
+    """
+    try:
+        user = request.user
+        if not hasattr(user, 'profile'):
+            return Response({'error': 'Profil non trouvé'}, status=404)
+
+        profile = user.profile
+        professeur_id = request.data.get('professeur_id')
+        cours_id = request.data.get('cours_id')
+
+        if not professeur_id or not cours_id:
+            return Response({'error': 'professeur_id et cours_id sont requis.'}, status=400)
+
+        professeur = get_object_or_404(Professeur, id=professeur_id)
+        cours = get_object_or_404(Course, id=cours_id)
+
+        if not profile.universite or not profile.filiere or not profile.promotion:
+            return Response({'error': 'Profil incomplet (université/filière/promotion).'}, status=400)
+
+        dispense, created = Dispense.objects.get_or_create(
+            professeur=professeur,
+            cours=cours,
+            promotion=profile.promotion,
+            defaults={
+                'universite': profile.universite,
+                'filiere': profile.filiere,
+            }
+        )
+
+        if created:
+            logger.info(f"Dispense créée: {dispense}")
+            return Response({
+                'message': 'Dispense créée avec succès.',
+                'dispense_id': dispense.id,
+                'created': True,
+            }, status=201)
+        else:
+            return Response({
+                'message': 'Cette dispense existe déjà.',
+                'dispense_id': dispense.id,
+                'created': False,
+            })
+
+    except Exception as e:
+        logger.error(f"Erreur création dispense: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# PROFESSEUR — Suppression (CRUD Écran Création)
+# ============================================================
+
+@api_view(['DELETE'])
+@permission_classes([permissions.IsAuthenticated])
+def delete_professeur_view(request, professeur_id):
+    """Supprime un professeur appartenant à l'université de l'utilisateur connecté."""
+    try:
+        profile = request.user.profile
+        if not profile.universite:
+            return Response({'error': 'Profil incomplet'}, status=400)
+        professeur = get_object_or_404(Professeur, id=professeur_id, universite=profile.universite)
+        professeur.delete()
+        return Response({'message': 'Professeur supprimé.'}, status=200)
+    except Exception as e:
+        logger.error(f"Erreur suppression professeur: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# DISPENSE — Liste + Suppression (CRUD Écran Association)
+# ============================================================
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def list_dispenses_view(request):
+    """Liste les dispenses du contexte académique de l'utilisateur connecté."""
+    try:
+        profile = request.user.profile
+        if not profile.universite or not profile.filiere or not profile.promotion:
+            return Response([], status=200)
+        dispenses = Dispense.objects.filter(
+            universite=profile.universite,
+            filiere=profile.filiere,
+            promotion=profile.promotion,
+        ).select_related('professeur__user', 'cours').order_by('-created_at')
+        data = [
+            {
+                'id': d.id,
+                'professeur_id': d.professeur.id,
+                'professeur_name': d.professeur.user.get_full_name() or d.professeur.user.username,
+                'professeur_specialite': d.professeur.specialite or '',
+                'cours_id': d.cours.id,
+                'cours_nom': d.cours.nom,
+                'cours_filiere': d.cours.filiere,
+            }
+            for d in dispenses
+        ]
+        return Response(data, status=200)
+    except Exception as e:
+        logger.error(f"Erreur liste dispenses: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+@api_view(['DELETE'])
+@permission_classes([permissions.IsAuthenticated])
+def delete_dispense_view(request, dispense_id):
+    """Supprime une dispense appartenant au contexte académique de l'utilisateur."""
+    try:
+        profile = request.user.profile
+        if not profile.universite or not profile.filiere or not profile.promotion:
+            return Response({'error': 'Profil incomplet'}, status=400)
+        dispense = get_object_or_404(
+            Dispense, id=dispense_id,
+            universite=profile.universite,
+            filiere=profile.filiere,
+            promotion=profile.promotion,
+        )
+        dispense.delete()
+        return Response({'message': 'Association supprimée.'}, status=200)
+    except Exception as e:
+        logger.error(f"Erreur suppression dispense: {e}")
+        return Response({'error': str(e)}, status=500)
+
+
+# ============================================================
+# RESOLVE PROFESSOR — Récupération automatique (Objectif 7)
+# ============================================================
+
+@api_view(['GET'])
+@permission_classes([permissions.IsAuthenticated])
+def resolve_professor_view(request):
+    """
+    Recherche automatique du professeur associé à un cours
+    via la table Dispense, en fonction du contexte académique de l'utilisateur.
+    """
+    course_id = request.query_params.get('course_id')
+    if not course_id:
+        return Response({'error': 'course_id requis'}, status=400)
+
+    try:
+        course = Course.objects.get(id=course_id)
+    except Course.DoesNotExist:
+        return Response({'error': 'Cours introuvable'}, status=404)
+
+    profile = request.user.profile
+    if not profile.universite or not profile.filiere or not profile.promotion:
+        return Response({'found': False, 'professor': None})
+
+    dispense = Dispense.objects.filter(
+        cours=course,
+        universite=profile.universite,
+        filiere=profile.filiere,
+        promotion=profile.promotion
+    ).select_related('professeur__user').first()
+
+    if dispense:
+        prof = dispense.professeur
+        return Response({
+            'found': True,
+            'professor': {
+                'id': prof.id,
+                'name': prof.user.get_full_name() or prof.user.username,
+                'professeur_fk': prof.id,
+            }
+        })
+    return Response({'found': False, 'professor': None})

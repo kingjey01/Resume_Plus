@@ -1,32 +1,29 @@
-# Community 87: fix_encoding_utf8_complete
+# Community 87: service_card
 
 **Members:** 10
 
 ## Nodes
 
-- **fix_encoding_utf8_complete** (`backend_fix_encoding_utf8_complete_py`, File, degree: 9)
-- **clean_invalid_utf8_data()** (`backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data`, Function, degree: 2)
-- **fix_database_encoding()** (`backend_fix_encoding_utf8_complete_py_fix_database_encoding`, Function, degree: 2)
-- **django** (`backend_fix_encoding_utf8_complete_py_import_django`, Module, degree: 1)
-- **django.conf.settings** (`backend_fix_encoding_utf8_complete_py_import_django_conf_settings`, Module, degree: 1)
-- **django.db.connection** (`backend_fix_encoding_utf8_complete_py_import_django_db_connection`, Module, degree: 1)
-- **os** (`backend_fix_encoding_utf8_complete_py_import_os`, Module, degree: 1)
-- **sys** (`backend_fix_encoding_utf8_complete_py_import_sys`, Module, degree: 1)
-- **main()** (`backend_fix_encoding_utf8_complete_py_main`, Function, degree: 4)
-- **test_emoji_insertion()** (`backend_fix_encoding_utf8_complete_py_test_emoji_insertion`, Function, degree: 2)
+- **service_card** (`lib_features_subscriptions_widgets_service_card_dart`, File, degree: 9)
+- **package:flutter/material.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart`, Module, degree: 1)
+- **package:flutter_riverpod/flutter_riverpod.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/purchases/screens/payment_status_screen.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart`, Module, degree: 1)
+- **package:resume_plus_clean/features/subscriptions/providers/subscription_provider.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/abonnement.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/payment_method.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart`, Module, degree: 1)
+- **package:resume_plus_clean/models/service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/api_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart`, Module, degree: 1)
+- **package:resume_plus_clean/services/snackbar_service.dart** (`lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_os (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_sys (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_conf_settings (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_import_django_db_connection (imports)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_fix_database_encoding (defines)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (defines)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (defines)
-- backend_fix_encoding_utf8_complete_py → backend_fix_encoding_utf8_complete_py_main (defines)
-- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_fix_database_encoding (calls)
-- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_clean_invalid_utf8_data (calls)
-- backend_fix_encoding_utf8_complete_py_main → backend_fix_encoding_utf8_complete_py_test_emoji_insertion (calls)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_material_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_flutter_riverpod_flutter_riverpod_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_abonnement_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_subscriptions_providers_subscription_provider_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_snackbar_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_services_api_service_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_models_payment_method_dart (imports)
+- lib_features_subscriptions_widgets_service_card_dart → lib_features_subscriptions_widgets_service_card_dart_import_package_resume_plus_clean_features_purchases_screens_payment_status_screen_dart (imports)
 

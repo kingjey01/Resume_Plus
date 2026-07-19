@@ -1,17 +1,21 @@
-# Community 253: 0008_add_session_processing_fields
+# Community 253: ._clean_transcript()
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **0008_add_session_processing_fields** (`backend_courses_migrations_0008_add_session_processing_fields_py`, File, degree: 3)
-- **django.db.migrations** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations`, Module, degree: 1)
-- **django.db.models** (`backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models`, Module, degree: 1)
-- **Migration** (`backend_courses_migrations_0008_add_session_processing_fields_py_migration`, Class, degree: 1)
+- **._clean_transcript()** (`backend_courses_audio_processing_py_audioprocessor_clean_transcript`, Method, degree: 3)
+- **._extract_main_ideas()** (`backend_courses_audio_processing_py_audioprocessor_extract_main_ideas`, Method, degree: 3)
+- **._generate_intelligent_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary`, Method, degree: 4)
+- **._generate_local_summary()** (`backend_courses_audio_processing_py_audioprocessor_generate_local_summary`, Method, degree: 5)
+- **._structure_summary()** (`backend_courses_audio_processing_py_audioprocessor_structure_summary`, Method, degree: 3)
 
 ## Relationships
 
-- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_migrations (imports)
-- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_import_django_db_models (imports)
-- backend_courses_migrations_0008_add_session_processing_fields_py → backend_courses_migrations_0008_add_session_processing_fields_py_migration (defines)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_local_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_structure_summary (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_extract_main_ideas (calls)
+- backend_courses_audio_processing_py_audioprocessor_generate_intelligent_summary → backend_courses_audio_processing_py_audioprocessor_clean_transcript (calls)
 

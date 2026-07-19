@@ -21,33 +21,32 @@ try:
     all_courses = Course.objects.all()
     print(f'Total courses in DB: {all_courses.count()}')
     
-    # Cours avec FK remplis
-    courses_with_fk = Course.objects.filter(
-        universite_fk__isnull=False,
-        promotion_fk__isnull=False,
-        filiere_fk__isnull=False
-    )
-    print(f'Courses with FK filled: {courses_with_fk.count()}')
-    
+    # Cours avec relations M2M remplies
+    courses_with_rel = Course.objects.exclude(universites=None).exclude(filieres=None).exclude(promotions=None)
+    print(f'Courses with M2M filled: {courses_with_rel.count()}')
+
     # Cours accessibles par cet utilisateur
     accessible_courses = Course.objects.filter(
-        universite_fk=profile.universite,
-        promotion_fk=profile.promotion,
-        filiere_fk=profile.filiere
+        universites=profile.universite,
+        promotions=profile.promotion,
+        filieres=profile.filiere
     )
     print(f'Accessible courses for {u.username}: {accessible_courses.count()}')
-    
+
     if accessible_courses.exists():
         print('\nAccessible courses:')
         for c in accessible_courses[:5]:
-            print(f'  - {c.nom} ({c.universite_fk.nom if c.universite_fk else "?"} / {c.filiere_fk.nom if c.filiere_fk else "?"})')
+            uni = c.universites.first()
+            fil = c.filieres.first()
+            print(f'  - {c.nom} ({uni.nom if uni else "?"} / {fil.nom if fil else "?"})')
     else:
         print('\nNo accessible courses found!')
         print('\nChecking promotion match:')
         print(f'User promotion: {profile.promotion} (ID: {profile.promotion.id})')
         print('\nAll courses promotions:')
-        for c in courses_with_fk[:5]:
-            print(f'  - {c.nom}: promotion_fk={c.promotion_fk} (ID: {c.promotion_fk.id if c.promotion_fk else None})')
+        for c in courses_with_rel[:5]:
+            promo = c.promotions.first()
+            print(f'  - {c.nom}: promotion={promo} (ID: {promo.id if promo else None})')
             
 except User.DoesNotExist:
     print('User cp_info not found')

@@ -1,19 +1,19 @@
-# Community 227: deepseek_service
+# Community 227: filiere_promotion.g
 
 **Members:** 5
 
 ## Nodes
 
-- **deepseek_service** (`backend_courses_deepseek_service_py`, File, degree: 5)
-- **django.conf.settings** (`backend_courses_deepseek_service_py_import_django_conf_settings`, Module, degree: 1)
-- **logging** (`backend_courses_deepseek_service_py_import_logging`, Module, degree: 1)
-- **os** (`backend_courses_deepseek_service_py_import_os`, Module, degree: 1)
-- **requests** (`backend_courses_deepseek_service_py_import_requests`, Module, degree: 1)
+- **filiere_promotion.g** (`lib_models_filiere_promotion_g_dart`, File, degree: 4)
+- **FilierePromotion()** (`lib_models_filiere_promotion_g_dart_filierepromotion`, Function, degree: 1)
+- **_$FilierePromotionFromJson()** (`lib_models_filiere_promotion_g_dart_filierepromotionfromjson`, Function, degree: 1)
+- **_$FilierePromotionToJson()** (`lib_models_filiere_promotion_g_dart_filierepromotiontojson`, Function, degree: 1)
+- **filiere_promotion.dart** (`lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart`, Module, degree: 1)
 
 ## Relationships
 
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_os (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_logging (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_requests (imports)
-- backend_courses_deepseek_service_py → backend_courses_deepseek_service_py_import_django_conf_settings (imports)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_import_filiere_promotion_dart (imports)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotionfromjson (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotion (defines)
+- lib_models_filiere_promotion_g_dart → lib_models_filiere_promotion_g_dart_filierepromotiontojson (defines)
 

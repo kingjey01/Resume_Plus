@@ -1,17 +1,19 @@
-# Community 254: file_helper_io
+# Community 254: universite_filiere.g
 
-**Members:** 4
+**Members:** 5
 
 ## Nodes
 
-- **file_helper_io** (`lib_services_file_helper_io_dart`, File, degree: 3)
-- **dart:io** (`lib_services_file_helper_io_dart_import_dart_io`, Module, degree: 1)
-- **dart:typed_data** (`lib_services_file_helper_io_dart_import_dart_typed_data`, Module, degree: 1)
-- **readFileBytes()** (`lib_services_file_helper_io_dart_readfilebytes`, Function, degree: 1)
+- **universite_filiere.g** (`lib_models_universite_filiere_g_dart`, File, degree: 4)
+- **universite_filiere.dart** (`lib_models_universite_filiere_g_dart_import_universite_filiere_dart`, Module, degree: 1)
+- **UniversiteFiliere()** (`lib_models_universite_filiere_g_dart_universitefiliere`, Function, degree: 1)
+- **_$UniversiteFiliereFromJson()** (`lib_models_universite_filiere_g_dart_universitefilierefromjson`, Function, degree: 1)
+- **_$UniversiteFiliereToJson()** (`lib_models_universite_filiere_g_dart_universitefilieretojson`, Function, degree: 1)
 
 ## Relationships
 
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_io (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_import_dart_typed_data (imports)
-- lib_services_file_helper_io_dart → lib_services_file_helper_io_dart_readfilebytes (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_import_universite_filiere_dart (imports)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilierefromjson (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefiliere (defines)
+- lib_models_universite_filiere_g_dart → lib_models_universite_filiere_g_dart_universitefilieretojson (defines)
 

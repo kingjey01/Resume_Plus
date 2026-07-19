@@ -1,13 +1,13 @@
-# Community 332: simple_seed
+# Community 332: service
 
 **Members:** 2
 
 ## Nodes
 
-- **simple_seed** (`backend_simple_seed_py`, File, degree: 1)
-- **pymysql** (`backend_simple_seed_py_import_pymysql`, Module, degree: 1)
+- **service** (`lib_models_service_dart`, File, degree: 1)
+- **id()** (`lib_models_service_dart_id`, Function, degree: 1)
 
 ## Relationships
 
-- backend_simple_seed_py → backend_simple_seed_py_import_pymysql (imports)
+- lib_models_service_dart → lib_models_service_dart_id (defines)
 

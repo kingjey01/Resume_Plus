@@ -1,5 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:resume_plus_clean/features/upload/screens/associate_prof_cours_screen.dart';
+import 'package:resume_plus_clean/features/upload/screens/create_cours_screen.dart';
+import 'package:resume_plus_clean/features/upload/screens/create_professeur_screen.dart';
 import 'package:resume_plus_clean/features/upload/screens/manual_entry_screen.dart';
 import 'package:resume_plus_clean/features/upload/screens/record_audio_screen.dart';
 import 'package:resume_plus_clean/features/upload/screens/record_audio_screen_web_safe.dart';
@@ -49,12 +52,12 @@ class UploadChoiceScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 16),
                   Text(
-                    'Créer un résumé',
+                    'Menu Créer',
                     style: theme.textTheme.headlineMedium?.copyWith(color: Colors.white, fontWeight: FontWeight.w700),
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    'Comment souhaitez-vous créer votre résumé ?',
+                    'Que souhaitez-vous faire ?',
                     style: TextStyle(color: Colors.white.withOpacity(0.8), fontSize: 14),
                   ),
                 ],
@@ -105,39 +108,69 @@ class UploadChoiceScreen extends StatelessWidget {
               ),
             ),
             
-            const SizedBox(height: 24),
-            
-            // Information
+            const SizedBox(height: 16),
+
+            // Option 3: Créer un professeur
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Container(
-                padding: const EdgeInsets.all(16),
-                decoration: BoxDecoration(
-                  color: AppTheme.primaryBlue.withOpacity(0.08),
-                  borderRadius: BorderRadius.circular(14),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      width: 36, height: 36,
-                      decoration: BoxDecoration(
-                        color: AppTheme.primaryBlue.withOpacity(0.15),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Icon(Icons.info_outline_rounded, color: AppTheme.primaryBlue, size: 20),
-                    ),
-                    const SizedBox(width: 12),
-                    Expanded(
-                      child: Text(
-                        'Les résumés créés seront automatiquement payants (2500 CDF) et disponibles pour tous les utilisateurs.',
-                        style: TextStyle(color: AppTheme.primaryBlue.withOpacity(0.9), fontSize: 13),
-                      ),
-                    ),
-                  ],
-                ),
+              child: _buildOptionCard(
+                context: context,
+                icon: Icons.person_add_rounded,
+                title: 'Créer un professeur',
+                description: 'Enregistrez un professeur et gérez la liste existante',
+                color: const Color(0xFF10B981),
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) => const CreateProfesseurScreen()),
+                  );
+                },
               ),
             ),
-            
+
+            const SizedBox(height: 16),
+
+            // Option 4: Créer un cours
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: _buildOptionCard(
+                context: context,
+                icon: Icons.menu_book_rounded,
+                title: 'Créer un cours',
+                description: 'Enregistrez un cours et gérez la liste existante',
+                color: const Color(0xFFF59E0B),
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) => const CreateCoursScreen()),
+                  );
+                },
+              ),
+            ),
+
+            const SizedBox(height: 16),
+
+            // Option 5: Associer professeur à cours
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: _buildOptionCard(
+                context: context,
+                icon: Icons.link_rounded,
+                title: 'Associer prof. à cours',
+                description: 'Liez un professeur à un cours pour le remplissage automatique',
+                color: const Color(0xFF8B5CF6),
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            const AssociateProfCoursScreen()),
+                  );
+                },
+              ),
+            ),
+
+            const SizedBox(height: 24),
+
             const SizedBox(height: 40),
           ],
         ),

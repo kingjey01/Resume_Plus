@@ -1,19 +1,23 @@
-# Community 210: test_simple_page
+# Community 210: test_encoding_fix
 
-**Members:** 5
+**Members:** 6
 
 ## Nodes
 
-- **test_simple_page** (`lib_test_simple_page_dart`, File, degree: 4)
-- **package:flutter/material.dart** (`lib_test_simple_page_dart_import_package_flutter_material_dart`, Module, degree: 1)
-- **services/api_service_debug.dart** (`lib_test_simple_page_dart_import_services_api_service_debug_dart`, Module, degree: 1)
-- **widgets/audio_file_player_widget.dart** (`lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart`, Module, degree: 1)
-- **_TestSimplePageState()** (`lib_test_simple_page_dart_testsimplepagestate`, Function, degree: 1)
+- **test_encoding_fix** (`backend_test_encoding_fix_py`, File, degree: 5)
+- **json** (`backend_test_encoding_fix_py_import_json`, Module, degree: 1)
+- **requests** (`backend_test_encoding_fix_py_import_requests`, Module, degree: 1)
+- **main()** (`backend_test_encoding_fix_py_main`, Function, degree: 3)
+- **test_summary_retrieval()** (`backend_test_encoding_fix_py_test_summary_retrieval`, Function, degree: 2)
+- **test_summary_with_special_chars()** (`backend_test_encoding_fix_py_test_summary_with_special_chars`, Function, degree: 2)
 
 ## Relationships
 
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_package_flutter_material_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_services_api_service_debug_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_import_widgets_audio_file_player_widget_dart (imports)
-- lib_test_simple_page_dart → lib_test_simple_page_dart_testsimplepagestate (defines)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_requests (imports)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_import_json (imports)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_with_special_chars (defines)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_test_summary_retrieval (defines)
+- backend_test_encoding_fix_py → backend_test_encoding_fix_py_main (defines)
+- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_with_special_chars (calls)
+- backend_test_encoding_fix_py_main → backend_test_encoding_fix_py_test_summary_retrieval (calls)
 
