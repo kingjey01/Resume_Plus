@@ -252,14 +252,18 @@ class VersionService {
 
     if (uri != null) {
       try {
-        if (await canLaunchUrl(uri)) {
-          await launchUrl(uri, mode: LaunchMode.externalApplication);
-          print('📲 VersionService: Store ouvert: $uri');
-        } else {
-          print('⚠️ VersionService: Impossible d\'ouvrir $uri');
-        }
+        // Tentative directe sans canLaunchUrl (plus fiable sur Android 11+)
+        await launchUrl(uri, mode: LaunchMode.externalApplication);
+        print('📲 VersionService: Store ouvert: $uri');
       } catch (e) {
         print('⚠️ VersionService: Erreur store: $e');
+        // Fallback: essayer avec un Intent explicite via le navigateur
+        try {
+          final fallbackUri = Uri.parse('https://play.google.com/store/apps/details?id=com.resumeplus.app');
+          await launchUrl(fallbackUri, mode: LaunchMode.externalApplication);
+        } catch (_) {
+          print('❌ VersionService: Fallback store echoue');
+        }
       }
     }
   }

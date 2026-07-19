@@ -315,3 +315,55 @@ URL_CALLBACK = config('URL_CALLBACK', default=[
 
 
 jeycodeking
+
+# Amélioration du système de brouillons audio et du rendu des résumés IA
+
+## 1. Sauvegarde automatique des enregistrements audio
+
+### Problème
+
+Actuellement, lorsqu'un utilisateur enregistre un audio puis quitte l'écran avant l'envoi (absence de connexion, fermeture de l'application, changement d'onglet, etc.), l'enregistrement est perdu.
+
+### Nouvelle logique
+
+Transformer l'enregistrement audio en **brouillon local**.
+
+À la fin d'un enregistrement :
+
+* sauvegarder automatiquement le fichier audio dans le stockage local ;
+* sauvegarder également les informations déjà saisies (cours, titre, prix, durée, etc.).
+
+Lorsque l'utilisateur revient dans l'écran **Enregistrement audio**, restaurer automatiquement le dernier brouillon.
+
+
+
+Le brouillon ne doit être supprimé que :
+
+* après un envoi réussi vers le serveur ;
+* ou si l'utilisateur le supprime volontairement.
+
+Ne créer aucune `Session` tant que l'audio n'a pas été envoyé avec succès.
+
+---
+
+## 2. Amélioration du prompt de génération des résumés IA
+
+Modifier le prompt système utilisé pour générer les résumés afin qu'il produise un contenu **structuré et facilement interprétable par Flutter**.
+
+Ajouter les consignes suivantes :
+
+* Encadrer tous les extraits de code (Python, Dart, Java, JavaScript, SQL, HTML, CSS, JSON, XML, Shell, etc.) dans des blocs de code Markdown (`lang ... `).
+* Encadrer les formules mathématiques, physiques ou chimiques avec une syntaxe clairement identifiable (LaTeX ou délimiteurs dédiés) afin qu'elles puissent être rendues correctement.
+* Générer les tableaux au format Markdown.
+* Utiliser les citations Markdown (`>`) lorsque cela est pertinent.
+* Ne jamais mélanger un bloc de code avec un paragraphe classique.
+* Conserver l'indentation et la mise en forme des fonctions, méthodes, commandes et algorithmes.
+
+Le frontend Flutter devra interpréter ce Markdown et afficher :
+
+* les blocs de code dans un conteneur dédié avec police monospace ;
+* les formules avec un widget de rendu mathématique ;
+* les tableaux sous forme de tableaux Flutter ;
+* les listes et citations avec leur style approprié.
+
+L'objectif est que les résumés techniques (programmation, mathématiques, physique, chimie, etc.) soient affichés avec un rendu professionnel, lisible et fidèle au contenu généré par l'IA.

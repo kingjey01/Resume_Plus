@@ -72,5 +72,15 @@
         </intent>
         <package android:name="com.google.android.tts" />
         <package android:name="com.samsung.SMT" />
+        <!-- Required for url_launcher on Android 11+ to open Play Store / browsers -->
+        <package android:name="com.android.vending" />
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" android:host="play.google.com" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="market" />
+        </intent>
     </queries>
 </manifest>
